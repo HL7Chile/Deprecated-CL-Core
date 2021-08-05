@@ -1,0 +1,68 @@
+# ╭─────────────────────────────────ImplementationGuide-hl7.fhir.uv.RE.json──────────────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see:                                                                    │
+# │  https://fshschool.org/docs/sushi/configuration/#full-configuration                            │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: hl7.fhir.uv.CoreCH
+canonical: http://minsal.cl/fhir/core/
+version: 0.22
+name: CoreCL
+
+title: Guía de Implementación Core-CL
+status: draft
+date: 2021-08
+publisher: Ministerio de Salud, Chile / HL7 Chile 
+contact:
+  - name: Pablo Pizzaro
+    telecom:
+      - system: email
+        value: ppizarro.delgado@minsal.cl
+description: Guía de Implementación para los perfiles Core que se van a requerir a nivel de desarrollo Nacional
+license: CC0-1.0
+fhirVersion: 4.0.1
+parameters:
+  apply-publisher: true
+  apply-contact: true
+  show-inherited-invariants: false
+copyrightYear: 2020+
+releaseLabel: ci-build
+
+# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
+# │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+menu:
+  Inicio: index.html
+  Objetivos : objetivos.html
+  Actores y Casos de Uso: casos.html
+  Operaciones y Terminologías: operaciones.html
+  Resumen de Artefactos:
+    Artefactos General: artifacts.html
+  Estructuras de Perfiles: 
+    Paciente_CH: StructureDefinition-RecetaPacientCh.html
+    Prestador_CH: StructureDefinition-RecetaPrestadorCh.html
+    Especialidad Prestador_CH: StructureDefinition-RecetaEspecialidadCh.html
+    Organización_Ch : StructureDefinition-RecetaOrganizacionCh.html
+    Medicamento_Ch : StructureDefinition-RecetaMedicamentoCh.html 
+    Localización_Ch : StructureDefinition-LocalizacionCoreCh.html
+  Extensiones:
+    Extensiones Generales: artifacts.html#3
+  Value Sets:
+    Value Sets Generales: artifacts.html#4
+ 
+  Ejemplos : 
+    Ejemplos Paciente_CH: StructureDefinition-RecetaPacientCh-examples.html
+    Ejemplos Prestador_CH: StructureDefinition-RecetaPrestadorCh-examples.html
+    Ejemplos Especialidad Médica_CH: StructureDefinition-RecetaEspecialidadCh-examples.html
+    Ejemplos Organización_CH: StructureDefinition-RecetaOrganizacionCh-examples.html
+    Ejemplos Medicamento_CH: StructureDefinition-RecetaMedicamentoCh-examples.html
+    Ejemplos Localización_CH: StructureDefinition-LocalizacionCoreCh-examples.html
+  
+  #Historia: http://hl7.org/fhir/us/example/history.html  
+  
+
+#Inicio: index.html
+  #Tabla de Contenidos: toc.html
+  #Resumen de Artefactos: artifacts.html
+  #Otros Recursos:
+  #  "FHIR Spec ": new-tab {{site.data.fhir.path}}index.html
