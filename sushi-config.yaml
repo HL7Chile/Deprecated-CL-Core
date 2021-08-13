@@ -1,0 +1,56 @@
+# ╭─────────────────────────────────ImplementationGuide-hl7.fhir.uv.RE.json──────────────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see:                                                                    │
+# │  https://fshschool.org/docs/sushi/configuration/#full-configuration                            │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: hl7.fhir.uv.CoreCH
+canonical: http://minsal.cl/fhir/core/
+version: 0.8 (Ballot Pendiente)
+name: CoreCL
+
+title: Guía de Implementación Core-CL
+status: draft
+date: 2021-08
+publisher: Ministerio de Salud, Chile / HL7 Chile 
+contact:
+  - name: Pablo Pizzaro
+    telecom:
+      - system: email
+        value: ppizarro.delgado@minsal.cl
+description: Guía de Implementación para los perfiles Core que se van a requerir a nivel de desarrollo Nacional
+license: CC0-1.0
+fhirVersion: 4.0.1
+parameters:
+  apply-publisher: true
+  apply-contact: true
+  show-inherited-invariants: false
+copyrightYear: 2020+
+releaseLabel: ci-build
+
+# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
+# │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+menu:
+  Inicio: index.html
+  Objetivos: objetivos.html
+  Generalidades: generalidades.html
+  Operaciones: operaciones.html
+  Artefactos:
+   Artefactos General: artifacts.html
+   Perfiles: perfiles.html
+   Extensiones: extensiones.html
+   Valuesets: valuesets.html
+  Ejemplos: ejemplos.html
+  Descargas: descargas.html
+ 
+  
+  
+  #Historia: http://hl7.org/fhir/us/example/history.html  
+  
+
+#Inicio: index.html
+  #Tabla de Contenidos: toc.html
+  #Resumen de Artefactos: artifacts.html
+  #Otros Recursos:
+  #  "FHIR Spec ": new-tab {{site.data.fhir.path}}index.html
