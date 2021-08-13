@@ -1,3 +1,32 @@
+# Control de Cambios
+Esta versión contiene las siguientes actualizaciones
+
+## Nuevo Formato de Guía
+Se generó un nuevo formato de guía en donde las paginas que se generan ahora son:
+
+* Inicio
+* Objetivos
+* Generalidades
+* Operaciones
+* Artefactos
+ * General
+ * Perfiles
+ * Extensiones
+ * ValueSets 
+* Ejemplos
+* Descargas
+
+## Cambios en los Recursos
+
+* Se generó un cambio en el qualifier del Prestador para asignar la definición de especialidad en ese elemento
+* Se ajusto el Ientification del Prestador para permitir identificacion por RUN y número RNPI
+* Se modifico la estructura de algunos elementos MS del perfil Location
+* Se generó mejor texto de definición y comentarios en los perfiles 
+* Correcciones menores de formato
+
+## Cambios en los ejemplos
+* Se ajustaron los ejemplos a los cambios generados en los perfiles. Esto en especial en el ejemplo del Pestador, del Paciente Nacional y de la Localización
+
 # FHIR_Core_CH
 Es el Core Nacional de FHIR en una versión Preliminar 0.2
 Este Repositorio se estructura con el contenido dela carpeta que se genera desde Shorthand Sushi, considerando el template, los input, el output de la versión y los archivos básicos para compilar y publicas
