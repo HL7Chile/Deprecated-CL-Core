@@ -1,0 +1,621 @@
+﻿CoreCL : Validation Results
+=========================================
+
+err = 380, warn = 38, info = 3
+IG Publisher Version: 1.1.77
+Generated Tue Aug 24 13:36:34 CLT 2021. FHIR version 4.0.1 for hl7.fhir.uv.CoreCH#0.22 (canonical = http://minsal.cl/fhir/core/)
+
+ Build Errors : 461 / 7 / 0
+ C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\ImplementationGuide-hl7.fhir.uv.CoreCH : 1 / 2 / 1
+ C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\Location-LocalizacionEjemploCH : 4 / 1 / 1
+ C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\Medication-MedicamentoRecetaCH : 5 / 1 / 2
+ C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\OperationDefinition-Operation : 0 / 2 / 1
+ C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\OperationDefinition-OperationDefinition : 0 / 2 / 1
+ C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\Organization-OrganizacionRecetaCH : 4 / 0 / 1
+ C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteRecetaCH : 13 / 2 / 1
+ C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteRecetaCHEx : 10 / 3 / 2
+ C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\Practitioner-PrestadorCH : 16 / 0 / 2
+ C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\PractitionerRole-EspecialidadCH : 1 / 2 / 1
+ C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-CodigoPaises : 1 / 0 / 1
+ C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-LocalizacionCoreCh : 1 / 2 / 1
+ C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-RecetaEspecialidadCh : 1 / 0 / 1
+ C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-RecetaMedicamentoCh : 1 / 0 / 1
+ C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-RecetaOrganizacionCh : 1 / 0 / 1
+ C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-RecetaPacientCh : 1 / 0 / 1
+ C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-RecetaPrestadorCh : 1 / 0 / 1
+ C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\ValueSet-COD-Cert-RNPI : 0 / 2 / 1
+ C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\ValueSet-COD-ISO-3166-N : 0 / 2 / 1
+ C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\ValueSet-CodNacComunas : 0 / 2 / 1
+ C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\ValueSet-CodProv : 0 / 2 / 1
+ C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\ValueSet-CodReg : 0 / 2 / 1
+ C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\ValueSet-DOCType-V2-0203 : 0 / 2 / 1
+ C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\ValueSet-Esp-Tabla-DEIS : 0 / 2 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource PractitionerRole/EspecialidadCH.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Location/LocalizacionEjemploCH.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Medication/MedicamentoRecetaCH.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/OrganizacionRecetaCH.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/PacienteRecetaCH.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/PacienteRecetaCHEx.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/PrestadorCH.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Location-LocalizacionEjemploCH.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Location-LocalizacionEjemploCH.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Location-LocalizacionEjemploCH.change.history.html#/html/body/div/div/div/p/a at Line 311, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Location-LocalizacionEjemploCH.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Location-LocalizacionEjemploCH.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Location-LocalizacionEjemploCH.html#/html/body/div/div/div/p/a at Line 298, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Location-LocalizacionEjemploCH.json.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Location-LocalizacionEjemploCH.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Location-LocalizacionEjemploCH.json.html#/html/body/div/div/div/p/a at Line 352, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Location-LocalizacionEjemploCH.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Location-LocalizacionEjemploCH.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Location-LocalizacionEjemploCH.ttl.html#/html/body/div/div/div/p/a at Line 363, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Location-LocalizacionEjemploCH.xml.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Location-LocalizacionEjemploCH.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Location-LocalizacionEjemploCH.xml.html#/html/body/div/div/div/p/a at Line 341, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Medication-MedicamentoRecetaCH.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Medication-MedicamentoRecetaCH.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Medication-MedicamentoRecetaCH.change.history.html#/html/body/div/div/div/p/a at Line 311, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Medication-MedicamentoRecetaCH.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Medication-MedicamentoRecetaCH.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Medication-MedicamentoRecetaCH.html#/html/body/div/div/div/p/a at Line 298, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Medication-MedicamentoRecetaCH.json.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Medication-MedicamentoRecetaCH.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Medication-MedicamentoRecetaCH.json.html#/html/body/div/div/div/p/a at Line 335, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Medication-MedicamentoRecetaCH.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Medication-MedicamentoRecetaCH.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Medication-MedicamentoRecetaCH.ttl.html#/html/body/div/div/div/p/a at Line 347, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Medication-MedicamentoRecetaCH.xml.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Medication-MedicamentoRecetaCH.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Medication-MedicamentoRecetaCH.xml.html#/html/body/div/div/div/p/a at Line 330, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\OperationDefinition-Operation.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\OperationDefinition-Operation.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\OperationDefinition-Operation.change.history.html#/html/body/div/div/div/p/a at Line 311, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\OperationDefinition-Operation.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\OperationDefinition-Operation.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\OperationDefinition-Operation.html#/html/body/div/div/div/p/a at Line 320, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\OperationDefinition-Operation.json.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\OperationDefinition-Operation.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\OperationDefinition-Operation.json.html#/html/body/div/div/div/p/a at Line 385, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\OperationDefinition-Operation.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\OperationDefinition-Operation.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\OperationDefinition-Operation.ttl.html#/html/body/div/div/div/p/a at Line 396, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\OperationDefinition-Operation.xml.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\OperationDefinition-Operation.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\OperationDefinition-Operation.xml.html#/html/body/div/div/div/p/a at Line 426, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\OperationDefinition-OperationDefinition.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\OperationDefinition-OperationDefinition.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\OperationDefinition-OperationDefinition.change.history.html#/html/body/div/div/div/p/a at Line 311, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\OperationDefinition-OperationDefinition.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\OperationDefinition-OperationDefinition.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\OperationDefinition-OperationDefinition.html#/html/body/div/div/div/p/a at Line 313, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\OperationDefinition-OperationDefinition.json.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\OperationDefinition-OperationDefinition.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\OperationDefinition-OperationDefinition.json.html#/html/body/div/div/div/p/a at Line 369, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\OperationDefinition-OperationDefinition.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\OperationDefinition-OperationDefinition.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\OperationDefinition-OperationDefinition.ttl.html#/html/body/div/div/div/p/a at Line 380, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\OperationDefinition-OperationDefinition.xml.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\OperationDefinition-OperationDefinition.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\OperationDefinition-OperationDefinition.xml.html#/html/body/div/div/div/p/a at Line 390, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Organization-OrganizacionRecetaCH.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Organization-OrganizacionRecetaCH.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Organization-OrganizacionRecetaCH.change.history.html#/html/body/div/div/div/p/a at Line 311, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Organization-OrganizacionRecetaCH.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Organization-OrganizacionRecetaCH.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Organization-OrganizacionRecetaCH.html#/html/body/div/div/div/p/a at Line 298, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Organization-OrganizacionRecetaCH.json.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Organization-OrganizacionRecetaCH.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Organization-OrganizacionRecetaCH.json.html#/html/body/div/div/div/p/a at Line 342, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Organization-OrganizacionRecetaCH.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Organization-OrganizacionRecetaCH.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Organization-OrganizacionRecetaCH.ttl.html#/html/body/div/div/div/p/a at Line 355, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Organization-OrganizacionRecetaCH.xml.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Organization-OrganizacionRecetaCH.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Organization-OrganizacionRecetaCH.xml.html#/html/body/div/div/div/p/a at Line 331, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Patient-PacienteRecetaCH.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Patient-PacienteRecetaCH.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Patient-PacienteRecetaCH.change.history.html#/html/body/div/div/div/p/a at Line 311, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Patient-PacienteRecetaCH.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Patient-PacienteRecetaCH.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Patient-PacienteRecetaCH.html#/html/body/div/div/div/p/a at Line 298, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Patient-PacienteRecetaCH.json.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Patient-PacienteRecetaCH.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Patient-PacienteRecetaCH.json.html#/html/body/div/div/div/p/a at Line 389, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Patient-PacienteRecetaCH.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Patient-PacienteRecetaCH.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Patient-PacienteRecetaCH.ttl.html#/html/body/div/div/div/p/a at Line 390, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Patient-PacienteRecetaCH.xml.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Patient-PacienteRecetaCH.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Patient-PacienteRecetaCH.xml.html#/html/body/div/div/div/p/a at Line 364, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Patient-PacienteRecetaCHEx.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Patient-PacienteRecetaCHEx.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Patient-PacienteRecetaCHEx.change.history.html#/html/body/div/div/div/p/a at Line 311, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Patient-PacienteRecetaCHEx.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Patient-PacienteRecetaCHEx.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Patient-PacienteRecetaCHEx.html#/html/body/div/div/div/p/a at Line 298, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Patient-PacienteRecetaCHEx.json.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Patient-PacienteRecetaCHEx.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Patient-PacienteRecetaCHEx.json.html#/html/body/div/div/div/p/a at Line 393, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Patient-PacienteRecetaCHEx.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Patient-PacienteRecetaCHEx.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Patient-PacienteRecetaCHEx.ttl.html#/html/body/div/div/div/p/a at Line 391, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Patient-PacienteRecetaCHEx.xml.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Patient-PacienteRecetaCHEx.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Patient-PacienteRecetaCHEx.xml.html#/html/body/div/div/div/p/a at Line 365, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Practitioner-PrestadorCH.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Practitioner-PrestadorCH.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Practitioner-PrestadorCH.change.history.html#/html/body/div/div/div/p/a at Line 311, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Practitioner-PrestadorCH.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Practitioner-PrestadorCH.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Practitioner-PrestadorCH.html#/html/body/div/div/div/p/a at Line 298, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Practitioner-PrestadorCH.json.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Practitioner-PrestadorCH.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Practitioner-PrestadorCH.json.html#/html/body/div/div/div/p/a at Line 389, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Practitioner-PrestadorCH.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Practitioner-PrestadorCH.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Practitioner-PrestadorCH.ttl.html#/html/body/div/div/div/p/a at Line 391, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Practitioner-PrestadorCH.xml.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Practitioner-PrestadorCH.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\Practitioner-PrestadorCH.xml.html#/html/body/div/div/div/p/a at Line 366, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\PractitionerRole-EspecialidadCH.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\PractitionerRole-EspecialidadCH.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\PractitionerRole-EspecialidadCH.change.history.html#/html/body/div/div/div/p/a at Line 311, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\PractitionerRole-EspecialidadCH.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\PractitionerRole-EspecialidadCH.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\PractitionerRole-EspecialidadCH.html#/html/body/div/div/div/p/a at Line 298, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\PractitionerRole-EspecialidadCH.json.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\PractitionerRole-EspecialidadCH.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\PractitionerRole-EspecialidadCH.json.html#/html/body/div/div/div/p/a at Line 335, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\PractitionerRole-EspecialidadCH.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\PractitionerRole-EspecialidadCH.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\PractitionerRole-EspecialidadCH.ttl.html#/html/body/div/div/div/p/a at Line 346, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\PractitionerRole-EspecialidadCH.xml.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\PractitionerRole-EspecialidadCH.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\PractitionerRole-EspecialidadCH.xml.html#/html/body/div/div/div/p/a at Line 328, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-CodigoPaises-definitions.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-CodigoPaises-definitions.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-CodigoPaises-definitions.html#/html/body/div/div/div/p/a at Line 361, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-CodigoPaises-mappings.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-CodigoPaises-mappings.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-CodigoPaises-mappings.html#/html/body/div/div/div/p/a at Line 321, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-CodigoPaises.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-CodigoPaises.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-CodigoPaises.html#/html/body/div/div/div/p/a at Line 565, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-CodigoPaises.profile.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-CodigoPaises.profile.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-CodigoPaises.profile.history.html#/html/body/div/div/div/p/a at Line 303, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-CodigoPaises.profile.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-CodigoPaises.profile.json.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-CodigoPaises.profile.json.html#/html/body/div/div/div/p/a at Line 661, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-CodigoPaises.profile.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-CodigoPaises.profile.ttl.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-CodigoPaises.profile.ttl.html#/html/body/div/div/div/p/a at Line 625, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-CodigoPaises.profile.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-CodigoPaises.profile.xml.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-CodigoPaises.profile.xml.html#/html/body/div/div/div/p/a at Line 608, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-LocalizacionCoreCh-definitions.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-LocalizacionCoreCh-definitions.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-LocalizacionCoreCh-definitions.html#/html/body/div/div/div/p/a at Line 1151, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-LocalizacionCoreCh-examples.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-LocalizacionCoreCh-examples.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-LocalizacionCoreCh-examples.html#/html/body/div/div/div/p/a at Line 329, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-LocalizacionCoreCh-mappings.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-LocalizacionCoreCh-mappings.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-LocalizacionCoreCh-mappings.html#/html/body/div/div/div/p/a at Line 409, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-LocalizacionCoreCh.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-LocalizacionCoreCh.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-LocalizacionCoreCh.html#/html/body/div/div/div/p/a at Line 983, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-LocalizacionCoreCh.profile.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-LocalizacionCoreCh.profile.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-LocalizacionCoreCh.profile.history.html#/html/body/div/div/div/p/a at Line 307, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-LocalizacionCoreCh.profile.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-LocalizacionCoreCh.profile.json.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-LocalizacionCoreCh.profile.json.html#/html/body/div/div/div/p/a at Line 4396, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-LocalizacionCoreCh.profile.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-LocalizacionCoreCh.profile.ttl.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-LocalizacionCoreCh.profile.ttl.html#/html/body/div/div/div/p/a at Line 3794, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-LocalizacionCoreCh.profile.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-LocalizacionCoreCh.profile.xml.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-LocalizacionCoreCh.profile.xml.html#/html/body/div/div/div/p/a at Line 3916, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaEspecialidadCh-definitions.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaEspecialidadCh-definitions.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaEspecialidadCh-definitions.html#/html/body/div/div/div/p/a at Line 697, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaEspecialidadCh-examples.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaEspecialidadCh-examples.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaEspecialidadCh-examples.html#/html/body/div/div/div/p/a at Line 329, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaEspecialidadCh-mappings.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaEspecialidadCh-mappings.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaEspecialidadCh-mappings.html#/html/body/div/div/div/p/a at Line 384, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaEspecialidadCh.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaEspecialidadCh.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaEspecialidadCh.html#/html/body/div/div/div/p/a at Line 737, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaEspecialidadCh.profile.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaEspecialidadCh.profile.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaEspecialidadCh.profile.history.html#/html/body/div/div/div/p/a at Line 307, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaEspecialidadCh.profile.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaEspecialidadCh.profile.json.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaEspecialidadCh.profile.json.html#/html/body/div/div/div/p/a at Line 2208, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaEspecialidadCh.profile.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaEspecialidadCh.profile.ttl.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaEspecialidadCh.profile.ttl.html#/html/body/div/div/div/p/a at Line 1970, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaEspecialidadCh.profile.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaEspecialidadCh.profile.xml.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaEspecialidadCh.profile.xml.html#/html/body/div/div/div/p/a at Line 2002, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaMedicamentoCh-definitions.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaMedicamentoCh-definitions.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaMedicamentoCh-definitions.html#/html/body/div/div/div/p/a at Line 884, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaMedicamentoCh-examples.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaMedicamentoCh-examples.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaMedicamentoCh-examples.html#/html/body/div/div/div/p/a at Line 329, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaMedicamentoCh-mappings.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaMedicamentoCh-mappings.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaMedicamentoCh-mappings.html#/html/body/div/div/div/p/a at Line 446, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaMedicamentoCh.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaMedicamentoCh.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaMedicamentoCh.html#/html/body/div/div/div/p/a at Line 846, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaMedicamentoCh.profile.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaMedicamentoCh.profile.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaMedicamentoCh.profile.history.html#/html/body/div/div/div/p/a at Line 307, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaMedicamentoCh.profile.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaMedicamentoCh.profile.json.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaMedicamentoCh.profile.json.html#/html/body/div/div/div/p/a at Line 3167, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaMedicamentoCh.profile.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaMedicamentoCh.profile.ttl.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaMedicamentoCh.profile.ttl.html#/html/body/div/div/div/p/a at Line 2753, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaMedicamentoCh.profile.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaMedicamentoCh.profile.xml.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaMedicamentoCh.profile.xml.html#/html/body/div/div/div/p/a at Line 2865, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaOrganizacionCh-definitions.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaOrganizacionCh-definitions.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaOrganizacionCh-definitions.html#/html/body/div/div/div/p/a at Line 884, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaOrganizacionCh-examples.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaOrganizacionCh-examples.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaOrganizacionCh-examples.html#/html/body/div/div/div/p/a at Line 329, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaOrganizacionCh-mappings.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaOrganizacionCh-mappings.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaOrganizacionCh-mappings.html#/html/body/div/div/div/p/a at Line 438, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaOrganizacionCh.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaOrganizacionCh.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaOrganizacionCh.html#/html/body/div/div/div/p/a at Line 815, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaOrganizacionCh.profile.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaOrganizacionCh.profile.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaOrganizacionCh.profile.history.html#/html/body/div/div/div/p/a at Line 307, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaOrganizacionCh.profile.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaOrganizacionCh.profile.json.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaOrganizacionCh.profile.json.html#/html/body/div/div/div/p/a at Line 3131, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaOrganizacionCh.profile.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaOrganizacionCh.profile.ttl.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaOrganizacionCh.profile.ttl.html#/html/body/div/div/div/p/a at Line 2735, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaOrganizacionCh.profile.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaOrganizacionCh.profile.xml.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaOrganizacionCh.profile.xml.html#/html/body/div/div/div/p/a at Line 2815, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPacientCh-definitions.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPacientCh-definitions.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPacientCh-definitions.html#/html/body/div/div/div/p/a at Line 1587, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPacientCh-examples.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPacientCh-examples.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPacientCh-examples.html#/html/body/div/div/div/p/a at Line 335, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPacientCh-mappings.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPacientCh-mappings.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPacientCh-mappings.html#/html/body/div/div/div/p/a at Line 549, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPacientCh.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPacientCh.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPacientCh.html#/html/body/div/div/div/p/a at Line 1227, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPacientCh.profile.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPacientCh.profile.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPacientCh.profile.history.html#/html/body/div/div/div/p/a at Line 307, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPacientCh.profile.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPacientCh.profile.json.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPacientCh.profile.json.html#/html/body/div/div/div/p/a at Line 6722, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPacientCh.profile.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPacientCh.profile.ttl.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPacientCh.profile.ttl.html#/html/body/div/div/div/p/a at Line 5744, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPacientCh.profile.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPacientCh.profile.xml.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPacientCh.profile.xml.html#/html/body/div/div/div/p/a at Line 5998, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPrestadorCh-definitions.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPrestadorCh-definitions.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPrestadorCh-definitions.html#/html/body/div/div/div/p/a at Line 1701, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPrestadorCh-examples.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPrestadorCh-examples.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPrestadorCh-examples.html#/html/body/div/div/div/p/a at Line 329, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPrestadorCh-mappings.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPrestadorCh-mappings.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPrestadorCh-mappings.html#/html/body/div/div/div/p/a at Line 598, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPrestadorCh.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPrestadorCh.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPrestadorCh.html#/html/body/div/div/div/p/a at Line 1298, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPrestadorCh.profile.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPrestadorCh.profile.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPrestadorCh.profile.history.html#/html/body/div/div/div/p/a at Line 307, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPrestadorCh.profile.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPrestadorCh.profile.json.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPrestadorCh.profile.json.html#/html/body/div/div/div/p/a at Line 7226, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPrestadorCh.profile.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPrestadorCh.profile.ttl.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPrestadorCh.profile.ttl.html#/html/body/div/div/div/p/a at Line 6157, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPrestadorCh.profile.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPrestadorCh.profile.xml.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\StructureDefinition-RecetaPrestadorCh.profile.xml.html#/html/body/div/div/div/p/a at Line 6429, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-COD-Cert-RNPI.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-COD-Cert-RNPI.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-COD-Cert-RNPI.change.history.html#/html/body/div/div/div/p/a at Line 311, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-COD-Cert-RNPI.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-COD-Cert-RNPI.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-COD-Cert-RNPI.html#/html/body/div/div/div/p/a at Line 361, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-COD-Cert-RNPI.json.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-COD-Cert-RNPI.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-COD-Cert-RNPI.json.html#/html/body/div/div/div/p/a at Line 333, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-COD-Cert-RNPI.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-COD-Cert-RNPI.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-COD-Cert-RNPI.ttl.html#/html/body/div/div/div/p/a at Line 342, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-COD-Cert-RNPI.xml.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-COD-Cert-RNPI.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-COD-Cert-RNPI.xml.html#/html/body/div/div/div/p/a at Line 329, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-COD-ISO-3166-N.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-COD-ISO-3166-N.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-COD-ISO-3166-N.change.history.html#/html/body/div/div/div/p/a at Line 311, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-COD-ISO-3166-N.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-COD-ISO-3166-N.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-COD-ISO-3166-N.html#/html/body/div/div/div/p/a at Line 361, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-COD-ISO-3166-N.json.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-COD-ISO-3166-N.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-COD-ISO-3166-N.json.html#/html/body/div/div/div/p/a at Line 333, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-COD-ISO-3166-N.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-COD-ISO-3166-N.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-COD-ISO-3166-N.ttl.html#/html/body/div/div/div/p/a at Line 342, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-COD-ISO-3166-N.xml.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-COD-ISO-3166-N.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-COD-ISO-3166-N.xml.html#/html/body/div/div/div/p/a at Line 327, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodNacComunas.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodNacComunas.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodNacComunas.change.history.html#/html/body/div/div/div/p/a at Line 311, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodNacComunas.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodNacComunas.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodNacComunas.html#/html/body/div/div/div/p/a at Line 364, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodNacComunas.json.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodNacComunas.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodNacComunas.json.html#/html/body/div/div/div/p/a at Line 333, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodNacComunas.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodNacComunas.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodNacComunas.ttl.html#/html/body/div/div/div/p/a at Line 342, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodNacComunas.xml.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodNacComunas.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodNacComunas.xml.html#/html/body/div/div/div/p/a at Line 327, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodProv.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodProv.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodProv.change.history.html#/html/body/div/div/div/p/a at Line 311, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodProv.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodProv.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodProv.html#/html/body/div/div/div/p/a at Line 364, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodProv.json.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodProv.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodProv.json.html#/html/body/div/div/div/p/a at Line 333, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodProv.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodProv.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodProv.ttl.html#/html/body/div/div/div/p/a at Line 342, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodProv.xml.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodProv.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodProv.xml.html#/html/body/div/div/div/p/a at Line 327, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodReg.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodReg.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodReg.change.history.html#/html/body/div/div/div/p/a at Line 311, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodReg.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodReg.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodReg.html#/html/body/div/div/div/p/a at Line 364, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodReg.json.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodReg.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodReg.json.html#/html/body/div/div/div/p/a at Line 333, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodReg.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodReg.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodReg.ttl.html#/html/body/div/div/div/p/a at Line 342, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodReg.xml.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodReg.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-CodReg.xml.html#/html/body/div/div/div/p/a at Line 327, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-DOCType-V2-0203.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-DOCType-V2-0203.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-DOCType-V2-0203.change.history.html#/html/body/div/div/div/p/a at Line 311, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-DOCType-V2-0203.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-DOCType-V2-0203.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-DOCType-V2-0203.html#/html/body/div/div/div/p/a at Line 365, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-DOCType-V2-0203.json.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-DOCType-V2-0203.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-DOCType-V2-0203.json.html#/html/body/div/div/div/p/a at Line 333, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-DOCType-V2-0203.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-DOCType-V2-0203.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-DOCType-V2-0203.ttl.html#/html/body/div/div/div/p/a at Line 342, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-DOCType-V2-0203.xml.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-DOCType-V2-0203.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-DOCType-V2-0203.xml.html#/html/body/div/div/div/p/a at Line 328, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-Esp-Tabla-DEIS.change.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-Esp-Tabla-DEIS.change.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-Esp-Tabla-DEIS.change.history.html#/html/body/div/div/div/p/a at Line 311, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-Esp-Tabla-DEIS.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-Esp-Tabla-DEIS.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-Esp-Tabla-DEIS.html#/html/body/div/div/div/p/a at Line 361, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-Esp-Tabla-DEIS.json.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-Esp-Tabla-DEIS.json.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-Esp-Tabla-DEIS.json.html#/html/body/div/div/div/p/a at Line 333, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-Esp-Tabla-DEIS.ttl.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-Esp-Tabla-DEIS.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-Esp-Tabla-DEIS.ttl.html#/html/body/div/div/div/p/a at Line 342, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-Esp-Tabla-DEIS.xml.html#/html/body/div/div/div/a/img at Line 58, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-Esp-Tabla-DEIS.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\ValueSet-Esp-Tabla-DEIS.xml.html#/html/body/div/div/div/p/a at Line 327, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\artifacts.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\artifacts.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\artifacts.html#/html/body/div/div/div/p/a at Line 531, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\casos.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\casos.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\casos.html#/html/body/div/div/div/div/div/p/img at Line 245, column 5: The image source 'logominsal.jpg' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\casos.html#/html/body/div/div/div/div/div/p/img at Line 246, column 2: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\casos.html#/html/body/div/div/div/div/div/p/img at Line 270, column 5: The image source 'ProcGeneral.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\casos.html#/html/body/div/div/div/div/div/ul/li/img at Line 319, column 2: The image source 'C:\FSH_Prof\FSH_Paciente\Paciente_CH\input\images\P_Prescripcion.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\casos.html#/html/body/div/div/div/div/div/ul/li/img at Line 340, column 2: The image source 'C:\FSH_Prof\FSH_Paciente\Paciente_CH\input\images\P_dispensacion.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\casos.html#/html/body/div/div/div/div/div/ul/li/img at Line 359, column 2: The image source 'C:\FSH_Prof\FSH_Paciente\Paciente_CH\input\images\P_Busqueda.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\casos.html#/html/body/div/div/div/div/div/ul/li/img at Line 379, column 2: The image source 'C:\FSH_Prof\FSH_Paciente\Paciente_CH\input\images\P_CambEstado.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\casos.html#/html/body/div/div/div/p/a at Line 435, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\index.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\index.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\index.html#/html/body/div/div/div/div/div/p/img at Line 245, column 5: The image source '.\logominsal.jpg' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\index.html#/html/body/div/div/div/div/div/p/img at Line 246, column 2: The image source '.\hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\index.html#/html/body/div/div/div/div/div/p/img at Line 270, column 5: The image source '../input/images/ProcGeneral.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\index.html#/html/body/div/div/div/div/div/ul/li/img at Line 319, column 2: The image source '.\P_Prescripcion.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\index.html#/html/body/div/div/div/div/div/ul/li/img at Line 340, column 2: The image source '.\P_dispensacion.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\index.html#/html/body/div/div/div/div/div/ul/li/img at Line 359, column 2: The image source '.\P_Busqueda.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\index.html#/html/body/div/div/div/div/div/ul/li/img at Line 379, column 2: The image source '.\P_CambEstado.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\index.html#/html/body/div/div/div/p/a at Line 435, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\objetivos.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\objetivos.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\objetivos.html#/html/body/div/div/div/div/div/p/img at Line 245, column 5: The image source 'logominsal.jpg' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\objetivos.html#/html/body/div/div/div/div/div/p/img at Line 246, column 2: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\objetivos.html#/html/body/div/div/div/div/div/p/img at Line 270, column 5: The image source 'ProcGeneral.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\objetivos.html#/html/body/div/div/div/div/div/ul/li/img at Line 319, column 2: The image source 'C:\FSH_Prof\FSH_Paciente\Paciente_CH\input\images\P_Prescripcion.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\objetivos.html#/html/body/div/div/div/div/div/ul/li/img at Line 340, column 2: The image source 'C:\FSH_Prof\FSH_Paciente\Paciente_CH\input\images\P_dispensacion.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\objetivos.html#/html/body/div/div/div/div/div/ul/li/img at Line 359, column 2: The image source 'C:\FSH_Prof\FSH_Paciente\Paciente_CH\input\images\P_Busqueda.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\objetivos.html#/html/body/div/div/div/div/div/ul/li/img at Line 379, column 2: The image source 'C:\FSH_Prof\FSH_Paciente\Paciente_CH\input\images\P_CambEstado.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\objetivos.html#/html/body/div/div/div/p/a at Line 435, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\operaciones.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\operaciones.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\operaciones.html#/html/body/div/div/div/div/div/p/img at Line 245, column 5: The image source 'logominsal.jpg' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\operaciones.html#/html/body/div/div/div/div/div/p/img at Line 246, column 2: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\operaciones.html#/html/body/div/div/div/div/div/p/img at Line 270, column 5: The image source 'ProcGeneral.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\operaciones.html#/html/body/div/div/div/div/div/ul/li/img at Line 319, column 2: The image source 'C:\FSH_Prof\FSH_Paciente\Paciente_CH\input\images\P_Prescripcion.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\operaciones.html#/html/body/div/div/div/div/div/ul/li/img at Line 340, column 2: The image source 'C:\FSH_Prof\FSH_Paciente\Paciente_CH\input\images\P_dispensacion.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\operaciones.html#/html/body/div/div/div/div/div/ul/li/img at Line 359, column 2: The image source 'C:\FSH_Prof\FSH_Paciente\Paciente_CH\input\images\P_Busqueda.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\operaciones.html#/html/body/div/div/div/div/div/ul/li/img at Line 379, column 2: The image source 'C:\FSH_Prof\FSH_Paciente\Paciente_CH\input\images\P_CambEstado.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\operaciones.html#/html/body/div/div/div/p/a at Line 435, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\terminologias.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\terminologias.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\terminologias.html#/html/body/div/div/div/div/div/p/img at Line 245, column 5: The image source 'logominsal.jpg' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\terminologias.html#/html/body/div/div/div/div/div/p/img at Line 246, column 2: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\terminologias.html#/html/body/div/div/div/div/div/p/img at Line 270, column 5: The image source 'ProcGeneral.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\terminologias.html#/html/body/div/div/div/div/div/ul/li/img at Line 319, column 2: The image source 'C:\FSH_Prof\FSH_Paciente\Paciente_CH\input\images\P_Prescripcion.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\terminologias.html#/html/body/div/div/div/div/div/ul/li/img at Line 340, column 2: The image source 'C:\FSH_Prof\FSH_Paciente\Paciente_CH\input\images\P_dispensacion.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\terminologias.html#/html/body/div/div/div/div/div/ul/li/img at Line 359, column 2: The image source 'C:\FSH_Prof\FSH_Paciente\Paciente_CH\input\images\P_Busqueda.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\terminologias.html#/html/body/div/div/div/div/div/ul/li/img at Line 379, column 2: The image source 'C:\FSH_Prof\FSH_Paciente\Paciente_CH\input\images\P_CambEstado.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\terminologias.html#/html/body/div/div/div/p/a at Line 435, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\toc.html#/html/body/div/div/div/a/img at Line 56, column 10: The image source 'minsal.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\toc.html#/html/body/div/div/div/a/img at Line 62, column 10: The image source 'hl7chile.png' cannot be resolved
+ERROR: C:\IGs\x_FHIR_Core_CH\output\toc.html#/html/body/div/div/div/p/a at Line 249, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+== C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\ImplementationGuide-hl7.fhir.uv.CoreCH.json ==
+ERROR: ImplementationGuide.where(url = 'http://minsal.cl/fhir/core//ImplementationGuide/hl7.fhir.uv.CoreCH'): Conformance resource C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\ImplementationGuide-hl7.fhir.uv.CoreCH.json - the canonical URL (http://minsal.cl/fhir/core/ImplementationGuide/hl7.fhir.uv.CoreCH) does not match the URL (http://minsal.cl/fhir/core//ImplementationGuide/hl7.fhir.uv.CoreCH)
+WARNING: ImplementationGuide/hl7.fhir.uv.CoreCH: ImplementationGuide.definition.resource[1].description: value should not start or finish with whitespace
+WARNING: ImplementationGuide.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+== C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\Location-LocalizacionEjemploCH.json ==
+WARNING: Location/LocalizacionEjemploCH: Location.type[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: Location/LocalizacionEjemploCH: Location.address.city: The value provided ('05109') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodNacComunas (http://minsal.cl/fhir/core//ValueSet/CodNacComunas), and a code is required from this value set) (error message = The code system "https://apis.digital.gob.cl/dpa/comunas/" in the include in "http://minsal.cl/fhir/core//ValueSet/CodNacComunas" is not known; The code system "https://apis.digital.gob.cl/dpa/comunas/" is not known (encountered paired with code = "05109"); The code provided (https://apis.digital.gob.cl/dpa/comunas/#05109) is not valid in the value set 'CodComunas' (from http://tx.fhir.org/r4))
+ERROR: Location/LocalizacionEjemploCH: Location.address.state: The value provided ('051') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodReg (http://minsal.cl/fhir/core//ValueSet/CodReg), and a code is required from this value set) (error message = The code system "https://apis.digital.gob.cl/dpa/regiones/" in the include in "http://minsal.cl/fhir/core//ValueSet/CodReg" is not known; The code system "https://apis.digital.gob.cl/dpa/regiones/" is not known (encountered paired with code = "051"); The code provided (https://apis.digital.gob.cl/dpa/regiones/#051) is not valid in the value set 'CodRegion' (from http://tx.fhir.org/r4))
+ERROR: Location/LocalizacionEjemploCH: Location.address.country: The value provided ('152') is not in the value set http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203 (http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203), and a code is required from this value set) (error message = The code system "https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html" in the include in "http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203" is not known; The code system "https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html" is not known (encountered paired with code = "152"); The code provided (https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html#152) is not valid in the value set 'ISO3166COD' (from http://tx.fhir.org/r4))
+ERROR: Location/LocalizacionEjemploCH: Location.managingOrganization: Unable to resolve resource 'http://MINSAL.cl/API/Organizaciones/Id22112'
+== C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\Medication-MedicamentoRecetaCH.json ==
+ERROR: Medication/MedicamentoRecetaCH: Medication.identifier[0]: Profile http://minsal.cl/fhir/core//StructureDefinition/RecetaMedicamentoCh, Element matches more than one slice - DescripcionId, ConceptId
+ERROR: Medication/MedicamentoRecetaCH: Medication.identifier[1]: Profile http://minsal.cl/fhir/core//StructureDefinition/RecetaMedicamentoCh, Element matches more than one slice - DescripcionId, ConceptId
+ERROR: Medication/MedicamentoRecetaCH: Medication: Medication.identifier:DescripcionId: max allowed = 1, but found 2 (from http://minsal.cl/fhir/core//StructureDefinition/RecetaMedicamentoCh)
+ERROR: Medication/MedicamentoRecetaCH: Medication: Medication.identifier:ConceptId: minimum required = 1, but only found 0 (from http://minsal.cl/fhir/core//StructureDefinition/RecetaMedicamentoCh)
+WARNING: Medication/MedicamentoRecetaCH: Medication.identifier[1].value: value should not start or finish with whitespace
+ERROR: Medication/MedicamentoRecetaCH: Medication.identifier[1].system: Value is 'http://minsal.cl/semantikos/concept-id' but must be 'http://minsal.cl/semantikos/description-id'
+INFORMATION: Medication/MedicamentoRecetaCH: Medication.code.coding[0]: Code System URI 'http://minsal.cl/semantikos/description-id' is unknown so the code cannot be validated
+== C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\OperationDefinition-Operation.json ==
+WARNING: OperationDefinition/Operation: OperationDefinition: opd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+WARNING: OperationDefinition.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+== C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\OperationDefinition-OperationDefinition.json ==
+WARNING: OperationDefinition/OperationDefinition: OperationDefinition: opd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+WARNING: OperationDefinition.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+== C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\Organization-OrganizacionRecetaCH.json ==
+ERROR: Organization/OrganizacionRecetaCH: Organization.address[0].city: The value provided ('07401') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodNacComunas (http://minsal.cl/fhir/core//ValueSet/CodNacComunas), and a code is required from this value set) (error message = Code System URI 'https://apis.digital.gob.cl/dpa/comunas/' is unknown so the code cannot be validated)
+ERROR: Organization/OrganizacionRecetaCH: Organization.address[0].district: The value provided ('074') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodProv (http://minsal.cl/fhir/core//ValueSet/CodProv), and a code is required from this value set) (error message = The code system "https://apis.digital.gob.cl/dpa/provincias/" in the include in "http://minsal.cl/fhir/core//ValueSet/CodProv" is not known; The code system "https://apis.digital.gob.cl/dpa/provincias/" is not known (encountered paired with code = "074"); The code provided (https://apis.digital.gob.cl/dpa/provincias/#074) is not valid in the value set 'CodProvincia' (from http://tx.fhir.org/r4))
+ERROR: Organization/OrganizacionRecetaCH: Organization.address[0].state: The value provided ('07') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodReg (http://minsal.cl/fhir/core//ValueSet/CodReg), and a code is required from this value set) (error message = Code System URI 'https://apis.digital.gob.cl/dpa/regiones/' is unknown so the code cannot be validated)
+ERROR: Organization/OrganizacionRecetaCH: Organization.address[0].country: The value provided ('152') is not in the value set http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203 (http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203), and a code is required from this value set) (error message = Code System URI 'https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html' is unknown so the code cannot be validated)
+== C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteRecetaCH.json ==
+ERROR: Patient.name[0].family.extension[0]: Unrecognised property '@value[x]'
+ERROR: Patient/PacienteRecetaCH: Patient.name[0]: Profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPacientCh, Element matches more than one slice - NombreOficial, NombreSocial
+ERROR: Patient/PacienteRecetaCH: Patient.name[1]: Profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPacientCh, Element matches more than one slice - NombreOficial, NombreSocial
+ERROR: Patient/PacienteRecetaCH: Patient: Patient.name:NombreOficial: max allowed = 1, but found 2 (from http://minsal.cl/fhir/core//StructureDefinition/RecetaPacientCh)
+WARNING: Patient/PacienteRecetaCH: Patient.identifier[0].type.extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Patient/PacienteRecetaCH: Patient.identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: Patient/PacienteRecetaCH: Patient.name[0].family.extension[0]: ext-1: 'Must have either extensions or value[x], not both' Rule 'Must have either extensions or value[x], not both' Failed
+ERROR: Patient/PacienteRecetaCH: Patient.name[0].family.extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/humanname-mothers-family' definition is for a simple extension, so it must contain a value, not extensions
+ERROR: Patient/PacienteRecetaCH: Patient.name[0].family.extension[0]: Extension.value[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/humanname-mothers-family)
+ERROR: Patient/PacienteRecetaCH: Patient.name[1]: Patient.name:NombreOficial.family: minimum required = 1, but only found 0 (from http://minsal.cl/fhir/core//StructureDefinition/RecetaPacientCh)
+ERROR: Patient/PacienteRecetaCH: Patient.name[1].use: Value is 'usual' but must be 'official'
+ERROR: Patient/PacienteRecetaCH: Patient.address[0].city: The value provided ('5101') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodNacComunas (http://minsal.cl/fhir/core//ValueSet/CodNacComunas), and a code is required from this value set) (error message = Code System URI 'https://apis.digital.gob.cl/dpa/comunas/' is unknown so the code cannot be validated)
+ERROR: Patient/PacienteRecetaCH: Patient.address[0].district: The value provided ('051') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodProv (http://minsal.cl/fhir/core//ValueSet/CodProv), and a code is required from this value set) (error message = Code System URI 'https://apis.digital.gob.cl/dpa/provincias/' is unknown so the code cannot be validated)
+ERROR: Patient/PacienteRecetaCH: Patient.address[0].state: The value provided ('5') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodReg (http://minsal.cl/fhir/core//ValueSet/CodReg), and a code is required from this value set) (error message = Code System URI 'https://apis.digital.gob.cl/dpa/regiones/' is unknown so the code cannot be validated)
+ERROR: Patient/PacienteRecetaCH: Patient.address[0].country: The value provided ('152') is not in the value set http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203 (http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203), and a code is required from this value set) (error message = Code System URI 'https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html' is unknown so the code cannot be validated)
+== C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteRecetaCHEx.json ==
+ERROR: Patient.name[0].family.extension[0]: Unrecognised property '@value[x]'
+ERROR: Patient/PacienteRecetaCHEx: Patient.name[0]: Profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPacientCh, Element matches more than one slice - NombreOficial, NombreSocial
+INFORMATION: Patient/PacienteRecetaCHEx: Patient.extension[0]: This element does not match any known slice defined in the profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPacientCh
+ERROR: Patient/PacienteRecetaCHEx: Patient.extension[0]: Extension.url must be an absolute URL
+WARNING: Patient/PacienteRecetaCHEx: Patient.extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Patient/PacienteRecetaCHEx: Patient.identifier[0].type.extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Patient/PacienteRecetaCHEx: Patient.identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: Patient/PacienteRecetaCHEx: Patient.name[0].family.extension[0]: ext-1: 'Must have either extensions or value[x], not both' Rule 'Must have either extensions or value[x], not both' Failed
+ERROR: Patient/PacienteRecetaCHEx: Patient.name[0].family.extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/humanname-mothers-family' definition is for a simple extension, so it must contain a value, not extensions
+ERROR: Patient/PacienteRecetaCHEx: Patient.name[0].family.extension[0]: Extension.value[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/humanname-mothers-family)
+ERROR: Patient/PacienteRecetaCHEx: Patient.address[0].city: The value provided ('15101') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodNacComunas (http://minsal.cl/fhir/core//ValueSet/CodNacComunas), and a code is required from this value set) (error message = Code System URI 'https://apis.digital.gob.cl/dpa/comunas/' is unknown so the code cannot be validated)
+ERROR: Patient/PacienteRecetaCHEx: Patient.address[0].district: The value provided ('151') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodProv (http://minsal.cl/fhir/core//ValueSet/CodProv), and a code is required from this value set) (error message = Code System URI 'https://apis.digital.gob.cl/dpa/provincias/' is unknown so the code cannot be validated)
+ERROR: Patient/PacienteRecetaCHEx: Patient.address[0].state: The value provided ('15') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodReg (http://minsal.cl/fhir/core//ValueSet/CodReg), and a code is required from this value set) (error message = Code System URI 'https://apis.digital.gob.cl/dpa/regiones/' is unknown so the code cannot be validated)
+ERROR: Patient/PacienteRecetaCHEx: Patient.address[0].country: The value provided ('152') is not in the value set http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203 (http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203), and a code is required from this value set) (error message = Code System URI 'https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html' is unknown so the code cannot be validated)
+== C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\Practitioner-PrestadorCH.json ==
+ERROR: Practitioner.name[0].family.extension[0]: Unrecognised property '@value[x]'
+ERROR: Practitioner/PrestadorCH: Practitioner.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([system]) for slice Practitioner.identifier:RUN in profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPrestadorCh - the discriminator [system] does not have fixed value, binding or existence assertions
+ERROR: Practitioner/PrestadorCH: Practitioner.identifier[1]: Slicing cannot be evaluated: Could not match discriminator ([system]) for slice Practitioner.identifier:RUN in profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPrestadorCh - the discriminator [system] does not have fixed value, binding or existence assertions
+ERROR: Practitioner/PrestadorCH: Practitioner.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([system]) for slice Practitioner.identifier:RNPI in profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPrestadorCh - the discriminator [system] does not have fixed value, binding or existence assertions
+ERROR: Practitioner/PrestadorCH: Practitioner.identifier[1]: Slicing cannot be evaluated: Could not match discriminator ([system]) for slice Practitioner.identifier:RNPI in profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPrestadorCh - the discriminator [system] does not have fixed value, binding or existence assertions
+ERROR: Practitioner/PrestadorCH: Practitioner.qualification[0]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.display]) for slice Practitioner.qualification:Cert in profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPrestadorCh - the discriminator [code.coding.display] does not have fixed value, binding or existence assertions
+ERROR: Practitioner/PrestadorCH: Practitioner.qualification[1]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.display]) for slice Practitioner.qualification:Cert in profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPrestadorCh - the discriminator [code.coding.display] does not have fixed value, binding or existence assertions
+ERROR: Practitioner/PrestadorCH: Practitioner.qualification[0]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.display]) for slice Practitioner.qualification:Esp in profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPrestadorCh - the discriminator [code.coding.display] does not have fixed value, binding or existence assertions
+ERROR: Practitioner/PrestadorCH: Practitioner.qualification[1]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.display]) for slice Practitioner.qualification:Esp in profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPrestadorCh - the discriminator [code.coding.display] does not have fixed value, binding or existence assertions
+INFORMATION: Practitioner/PrestadorCH: Practitioner: Practitioner.identifier:RUN: Unable to check minimum required (Practitioner.identifier) due to lack of slicing validation (from http://minsal.cl/fhir/core//StructureDefinition/RecetaPrestadorCh)
+ERROR: Practitioner/PrestadorCH: Practitioner.name[0].family.extension[0]: ext-1: 'Must have either extensions or value[x], not both' Rule 'Must have either extensions or value[x], not both' Failed
+ERROR: Practitioner/PrestadorCH: Practitioner.name[0].family.extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/humanname-mothers-family' definition is for a simple extension, so it must contain a value, not extensions
+ERROR: Practitioner/PrestadorCH: Practitioner.name[0].family.extension[0]: Extension.value[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/humanname-mothers-family)
+ERROR: Practitioner/PrestadorCH: Practitioner.address[0].city: The value provided ('091001') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodNacComunas (http://minsal.cl/fhir/core//ValueSet/CodNacComunas), and a code is required from this value set) (error message = Code System URI 'https://apis.digital.gob.cl/dpa/comunas/' is unknown so the code cannot be validated)
+ERROR: Practitioner/PrestadorCH: Practitioner.address[0].district: The value provided ('091') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodProv (http://minsal.cl/fhir/core//ValueSet/CodProv), and a code is required from this value set) (error message = Code System URI 'https://apis.digital.gob.cl/dpa/provincias/' is unknown so the code cannot be validated)
+ERROR: Practitioner/PrestadorCH: Practitioner.address[0].state: The value provided ('09') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodReg (http://minsal.cl/fhir/core//ValueSet/CodReg), and a code is required from this value set) (error message = Code System URI 'https://apis.digital.gob.cl/dpa/regiones/' is unknown so the code cannot be validated)
+ERROR: Practitioner/PrestadorCH: Practitioner.address[0].country: The value provided ('152') is not in the value set http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203 (http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203), and a code is required from this value set) (error message = Code System URI 'https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html' is unknown so the code cannot be validated)
+== C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\PractitionerRole-EspecialidadCH.json ==
+ERROR: PractitionerRole/EspecialidadCH: PractitionerRole.practitioner: Unable to resolve resource 'http://minsal/RNPI/Practitioner/3420'
+WARNING: PractitionerRole/EspecialidadCH: PractitionerRole.specialty[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: PractitionerRole/EspecialidadCH: PractitionerRole.specialty[1].coding[0]: A code with no system has no defined meaning. A system should be provided
+== C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-CodigoPaises.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+== C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-LocalizacionCoreCh.json ==
+WARNING: StructureDefinition/LocalizacionCoreCh: StructureDefinition.snapshot.element[18].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/LocalizacionCoreCh: StructureDefinition.differential.element[3].short: value should not start or finish with whitespace
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+== C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-RecetaEspecialidadCh.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+== C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-RecetaMedicamentoCh.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+== C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-RecetaOrganizacionCh.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+== C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-RecetaPacientCh.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+== C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-RecetaPrestadorCh.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+== C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\ValueSet-COD-Cert-RNPI.json ==
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+WARNING: ValueSet.where(id = 'COD-Cert-RNPI'): Error from server: Unable to provide support for code system https://rnpi.superdesalud.gob.cl/
+== C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\ValueSet-COD-ISO-3166-N.json ==
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+WARNING: ValueSet.where(id = 'COD-ISO-3166-N'): Error from server: Unable to provide support for code system http://hl7.org/fhir/ValueSet/iso3166-1-N
+== C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\ValueSet-CodNacComunas.json ==
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+WARNING: ValueSet.where(id = 'CodNacComunas'): Error from server: Unable to provide support for code system https://apis.digital.gob.cl/dpa/comunas/
+== C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\ValueSet-CodProv.json ==
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+WARNING: ValueSet.where(id = 'CodProv'): Error from server: Unable to provide support for code system https://apis.digital.gob.cl/dpa/provincias/
+== C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\ValueSet-CodReg.json ==
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+WARNING: ValueSet.where(id = 'CodReg'): Error from server: Unable to provide support for code system https://apis.digital.gob.cl/dpa/regiones/
+== C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\ValueSet-DOCType-V2-0203.json ==
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+WARNING: ValueSet.where(id = 'DOCType-V2-0203'): Error from server: Unable to provide support for code system https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html
+== C:\IGs\x_FHIR_Core_CH\fsh-generated\resources\ValueSet-Esp-Tabla-DEIS.json ==
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+WARNING: ValueSet.where(id = 'Esp-Tabla-DEIS'): Error from server: Unable to provide support for code system http://deis.cl/especialidades
