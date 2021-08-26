@@ -10,7 +10,11 @@
   "name": "CodRegion",
   "title": "Códigos de Regiones en Chile",
   "status": "active",
+<<<<<<< HEAD
   "date": "2021-08-26T15:10:39-04:00",
+=======
+  "date": "2021-08-24T13:35:22-04:00",
+>>>>>>> ac3c7ba5239d77bb8b92836d22e150aeda14a7da
   "contact": [
     {
       "name": "Pablo Pizzaro",

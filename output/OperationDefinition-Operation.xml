@@ -31,7 +31,11 @@ Esto libera al cliente de la necesidad de determinar lo que podría o debería p
   <title value="Operacion $everything: Encuentro de Informaci&#xF3;n de Pacientes"/>
   <status value="draft"/>
   <kind value="operation"/>
+<<<<<<< HEAD
   <date value="2021-08-26T15:10:39-04:00"/>
+=======
+  <date value="2021-08-24T13:35:22-04:00"/>
+>>>>>>> ac3c7ba5239d77bb8b92836d22e150aeda14a7da
   <contact>
     <name value="Pablo Pizzaro"/>
     <telecom>

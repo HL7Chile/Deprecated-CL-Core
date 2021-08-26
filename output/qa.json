@@ -3,8 +3,13 @@
   "name": "CoreCL",
   "package-id": "hl7.fhir.uv.CoreCH",
   "ig-ver": "0.22",
+<<<<<<< HEAD
   "date": "Thu, 26 Aug, 2021 15:10:39 -0400",
   "errs": 88,
+=======
+  "date": "Tue, 24 Aug, 2021 13:35:22 -0400",
+  "errs": 380,
+>>>>>>> ac3c7ba5239d77bb8b92836d22e150aeda14a7da
   "warnings": 38,
   "hints": 3,
   "version": "4.0.1",

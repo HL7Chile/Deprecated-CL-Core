@@ -18,7 +18,11 @@
   fhir:OperationDefinition.title [ fhir:value "Operacion $everything: Encuentro de Información de Pacientes"];
   fhir:OperationDefinition.status [ fhir:value "draft"];
   fhir:OperationDefinition.kind [ fhir:value "operation"];
+<<<<<<< HEAD
   fhir:OperationDefinition.date [ fhir:value "2021-08-26T15:10:39-04:00"^^xsd:dateTime];
+=======
+  fhir:OperationDefinition.date [ fhir:value "2021-08-24T13:35:22-04:00"^^xsd:dateTime];
+>>>>>>> ac3c7ba5239d77bb8b92836d22e150aeda14a7da
   fhir:OperationDefinition.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Pablo Pizzaro" ];

@@ -10,7 +10,11 @@
   <name value="TituloID"/>
   <title value="C&#xF3;digos de tipos de certificaciones segun la Super Intendecia de Salud"/>
   <status value="active"/>
+<<<<<<< HEAD
   <date value="2021-08-26T15:10:39-04:00"/>
+=======
+  <date value="2021-08-24T13:35:22-04:00"/>
+>>>>>>> ac3c7ba5239d77bb8b92836d22e150aeda14a7da
   <contact>
     <name value="Pablo Pizzaro"/>
     <telecom>

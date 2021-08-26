@@ -31,7 +31,15 @@ while [ "$#" -gt 0 ]; do
 done
 
 echo "Checking internet connection"
+<<<<<<< HEAD
 curl -sSf tx.fhir.org > /dev/null
+=======
+case "$OSTYPE" in
+	linux-gnu* ) ping tx.fhir.org -4 -c 1 -w 1000 >/dev/null ;;
+  darwin* )	ping tx.fhir.org -c 1 >/dev/null ;;
+	*) echo "unknown: $OSTYPE"; exit 1 ;;
+esac
+>>>>>>> ac3c7ba5239d77bb8b92836d22e150aeda14a7da
 
 if [ $? -ne 0 ] ; then
   echo "Offline (or the terminology server is down), unable to update.  Exiting"

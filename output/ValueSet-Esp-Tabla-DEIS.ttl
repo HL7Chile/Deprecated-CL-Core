@@ -17,7 +17,11 @@
   fhir:ValueSet.name [ fhir:value "TablaEspecialidades"];
   fhir:ValueSet.title [ fhir:value "Códigos de especialidades según DEIS"];
   fhir:ValueSet.status [ fhir:value "active"];
+<<<<<<< HEAD
   fhir:ValueSet.date [ fhir:value "2021-08-26T15:10:39-04:00"^^xsd:dateTime];
+=======
+  fhir:ValueSet.date [ fhir:value "2021-08-24T13:35:22-04:00"^^xsd:dateTime];
+>>>>>>> ac3c7ba5239d77bb8b92836d22e150aeda14a7da
   fhir:ValueSet.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Pablo Pizzaro" ];
