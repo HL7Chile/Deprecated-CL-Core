@@ -1,0 +1,121 @@
+[
+  {
+    "id": "Operation",
+    "type": "OperationDefinition",
+    "url": "http://hl7.org/fhir/OperationDefinition/Patient-everything",
+    "version": "0.22",
+    "name": "$everything"
+  },
+  {
+    "id": "OperationDefinition",
+    "type": "OperationDefinition",
+    "url": "http://hl7.org/fhir/OperationDefinition/Patient-match",
+    "version": "0.22",
+    "name": "$match"
+  },
+  {
+    "id": "hl7.fhir.uv.CoreCH",
+    "type": "ImplementationGuide",
+    "url": "http://minsal.cl/fhir/core//ImplementationGuide/hl7.fhir.uv.CoreCH",
+    "version": "0.22",
+    "name": "CoreCL"
+  },
+  {
+    "id": "CodigoPaises",
+    "type": "StructureDefinition",
+    "url": "http://minsal.cl/fhir/core//StructureDefinition/CodigoPaises",
+    "version": "0.22",
+    "name": "PaisOrigen"
+  },
+  {
+    "id": "LocalizacionCoreCh",
+    "type": "StructureDefinition",
+    "url": "http://minsal.cl/fhir/core//StructureDefinition/LocalizacionCoreCh",
+    "version": "0.22",
+    "name": "LocalizacionCH"
+  },
+  {
+    "id": "RecetaEspecialidadCh",
+    "type": "StructureDefinition",
+    "url": "http://minsal.cl/fhir/core//StructureDefinition/RecetaEspecialidadCh",
+    "version": "0.22",
+    "name": "EspecialidadRecetaCH"
+  },
+  {
+    "id": "RecetaMedicamentoCh",
+    "type": "StructureDefinition",
+    "url": "http://minsal.cl/fhir/core//StructureDefinition/RecetaMedicamentoCh",
+    "version": "0.22",
+    "name": "MedicamentoRecetaCH"
+  },
+  {
+    "id": "RecetaOrganizacionCh",
+    "type": "StructureDefinition",
+    "url": "http://minsal.cl/fhir/core//StructureDefinition/RecetaOrganizacionCh",
+    "version": "0.22",
+    "name": "OrganizaciondRecetaCH"
+  },
+  {
+    "id": "RecetaPacientCh",
+    "type": "StructureDefinition",
+    "url": "http://minsal.cl/fhir/core//StructureDefinition/RecetaPacientCh",
+    "version": "0.22",
+    "name": "PacienteRecetaCH"
+  },
+  {
+    "id": "RecetaPrestadorCh",
+    "type": "StructureDefinition",
+    "url": "http://minsal.cl/fhir/core//StructureDefinition/RecetaPrestadorCh",
+    "version": "0.22",
+    "name": "PrestadorCH"
+  },
+  {
+    "id": "COD-Cert-RNPI",
+    "type": "ValueSet",
+    "url": "http://minsal.cl/fhir/core//ValueSet/COD-Cert-RNPI",
+    "version": "0.22",
+    "name": "TituloID"
+  },
+  {
+    "id": "COD-ISO-3166-N",
+    "type": "ValueSet",
+    "url": "http://minsal.cl/fhir/core//ValueSet/COD-ISO-3166-N",
+    "version": "0.22",
+    "name": "TipoDocumento"
+  },
+  {
+    "id": "CodNacComunas",
+    "type": "ValueSet",
+    "url": "http://minsal.cl/fhir/core//ValueSet/CodNacComunas",
+    "version": "0.22",
+    "name": "CodComunas"
+  },
+  {
+    "id": "CodProv",
+    "type": "ValueSet",
+    "url": "http://minsal.cl/fhir/core//ValueSet/CodProv",
+    "version": "0.22",
+    "name": "CodProvincia"
+  },
+  {
+    "id": "CodReg",
+    "type": "ValueSet",
+    "url": "http://minsal.cl/fhir/core//ValueSet/CodReg",
+    "version": "0.22",
+    "name": "CodRegion"
+  },
+  {
+    "id": "DOCType-V2-0203",
+    "type": "ValueSet",
+    "url": "http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203",
+    "version": "0.22",
+    "name": "ISO3166COD"
+  },
+  {
+    "id": "Esp-Tabla-DEIS",
+    "type": "ValueSet",
+    "url": "http://minsal.cl/fhir/core//ValueSet/Esp-Tabla-DEIS",
+    "version": "0.22",
+    "name": "TablaEspecialidades"
+  }
+]

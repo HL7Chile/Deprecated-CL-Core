@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="OrganizacionRecetaCH"/>
+  <meta>
+    <profile value="http://minsal.cl/fhir/core//StructureDefinition/RecetaOrganizacionCh"/>
+  </meta>
+  <text>
+    <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">Organización: Centro de Salud Familiar Rio Bueno, identificado con código DEIS 1233, de la comuna de Linares dirección Calle Central 33, fono:45325775.</div>
+  </text>
+  <identifier>
+    <system value="http://minsal.cl/deis/codigodeis"/>
+    <value value="1233"/>
+  </identifier>
+  <active value="true"/>
+  <name value="Centro de Salud Familiar Rio Bueno de Linares"/>
+  <alias value="Rio Bueno CESFAM"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="45325775"/>
+    <use value="work"/>
+  </telecom>
+  <address>
+    <line value="Calle Central 33"/>
+    <city value="07401"/>
+    <district value="074"/>
+    <state value="07"/>
+    <country value="152"/>
+  </address>
+</Organization>

@@ -1,0 +1,260 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "hl7.fhir.uv.CoreCH",
+  "url": "http://minsal.cl/fhir/core//ImplementationGuide/hl7.fhir.uv.CoreCH",
+  "version": "0.22",
+  "name": "CoreCL",
+  "title": "Guía de Implementación Core-CL",
+  "status": "draft",
+  "date": "2021-08",
+  "contact": [
+    {
+      "name": "Pablo Pizzaro",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "ppizarro.delgado@minsal.cl"
+        }
+      ]
+    }
+  ],
+  "description": "Guía de Implementación para los perfiles Core que se van a requerir a nivel de desarrollo Nacional",
+  "packageId": "hl7.fhir.uv.CoreCH",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/RecetaEspecialidadCh"
+        },
+        "name": "Perfil Se destina para determinar la especialidad del Prescriptor para Receta Digital, extensible a Core Nacional",
+        "description": "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso de Especialidad Médica para la denominación de Prescriptor en Chile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/LocalizacionCoreCh"
+        },
+        "name": "Perfil de Localización de Objetos e Infraestructura",
+        "description": "Este perfil determina la ubicación especifica para un evento, objeto o Infraestructura específica. Este perfil permite vinlcular la localización especifica con una organización o espacio físico específico ",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/RecetaMedicamentoCh"
+        },
+        "name": "Perfil Se destina para generar el recuso de medicamento ha ser usado para el manejo de terminologpia de fármacos en farmacos registrados extensible a Core Nacional",
+        "description": "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica desde la visión del TFC que se usará para poder manejar farmacos ya registrados, y que deberán ser consultados por los prestadores a la hora de prescribir algno.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/RecetaOrganizacionCh"
+        },
+        "name": "Perfil Se destina para determinar rganizaciones para Receta Digital, extensible a Core Nacional",
+        "description": "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso de Organzación para cubrir las necesidades de una Organización Prestadora de salud o Dispensadora",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/RecetaPacientCh"
+        },
+        "name": "Perfil Paciente para Receta Digital, extensible a Core Nacional",
+        "description": "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso Paciente para un Historial Clínico Nacional",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/RecetaPrestadorCh"
+        },
+        "name": "Prestador Core CH",
+        "description": "Este PErfil fue creado para cubrir la descripción de un Prestador a nivel Nacional",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/CodigoPaises"
+        },
+        "name": "Codigo de Identificación de países",
+        "description": "Esta extensión incluye códigos de paises de origen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/CodNacComunas"
+        },
+        "name": "Códigos de Comunas en Chile",
+        "description": "Codigos definidos para identificar una comuna en Chile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/CodProv"
+        },
+        "name": "Códigos de Provincias en Chile",
+        "description": "Codigos definidos para identificar una provincia en Chile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/CodReg"
+        },
+        "name": "Códigos de Regiones en Chile",
+        "description": "Codigos definidos para identificar una comuna en Chile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/DOCType-V2-0203"
+        },
+        "name": "Códigos de Países Segun Norma ISO-3166 N",
+        "description": "Codigos para especificar tipos de identificadores usando lo definido en Hl7 V2.x",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Esp-Tabla-DEIS"
+        },
+        "name": "Códigos de especialidades según DEIS",
+        "description": "Códigos de especialidades médicas descritas segun DEIS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/COD-ISO-3166-N"
+        },
+        "name": "Códigos de Tipos de Documentos",
+        "description": "Codigos de paises para denominación segun la ISO-3166",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/COD-Cert-RNPI"
+        },
+        "name": "Códigos de tipos de certificaciones segun la Super Intendecia de Salud",
+        "description": "tipos de certficados reconocibles por la Super Intendecia como válidos para ejercer en Chile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "PractitionerRole/EspecialidadCH"
+        },
+        "name": "Ejemplo de Recurso de especialidad",
+        "exampleCanonical": "http://minsal.cl/fhir/core//StructureDefinition/RecetaEspecialidadCh"
+      },
+      {
+        "reference": {
+          "reference": "Location/LocalizacionEjemploCH"
+        },
+        "name": "Ejemplo de Recurso de organización prestadora de salud en la cual el paciente es atendido y se le hace la prescripción",
+        "exampleCanonical": "http://minsal.cl/fhir/core//StructureDefinition/LocalizacionCoreCh"
+      },
+      {
+        "reference": {
+          "reference": "Medication/MedicamentoRecetaCH"
+        },
+        "name": "Ejemplo de Recurso Paciente para Historia Clínica",
+        "exampleCanonical": "http://minsal.cl/fhir/core//StructureDefinition/RecetaMedicamentoCh"
+      },
+      {
+        "reference": {
+          "reference": "OperationDefinition/Operation"
+        },
+        "name": "$everything",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "OperationDefinition/OperationDefinition"
+        },
+        "name": "$match",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Organization/OrganizacionRecetaCH"
+        },
+        "name": "Ejemplo de Recurso de organización prestadora de salud en la cual el paciente es atendido y se le hace la prescripción",
+        "exampleCanonical": "http://minsal.cl/fhir/core//StructureDefinition/RecetaOrganizacionCh"
+      },
+      {
+        "reference": {
+          "reference": "Patient/PacienteRecetaCH"
+        },
+        "name": "Ejemplo de Recurso Paciente para Historia Clínica",
+        "exampleCanonical": "http://minsal.cl/fhir/core//StructureDefinition/RecetaPacientCh"
+      },
+      {
+        "reference": {
+          "reference": "Patient/PacienteRecetaCHEx"
+        },
+        "name": "Ejemplo de Recurso Paciente Extranjero",
+        "exampleCanonical": "http://minsal.cl/fhir/core//StructureDefinition/RecetaPacientCh"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/PrestadorCH"
+        },
+        "name": "Ejemplo de Recurso Prestador como base para un Core Nacional",
+        "exampleCanonical": "http://minsal.cl/fhir/core//StructureDefinition/RecetaPrestadorCh"
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "casos.html",
+          "title": "Casos",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "objetivos.html",
+          "title": "Objetivos",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "operaciones.html",
+          "title": "Operaciones",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "terminologias.html",
+          "title": "Terminologias",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2020+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      },
+      {
+        "code": "apply-publisher",
+        "value": "true"
+      },
+      {
+        "code": "apply-contact",
+        "value": "true"
+      },
+      {
+        "code": "show-inherited-invariants",
+        "value": "false"
+      }
+    ]
+  }
+}

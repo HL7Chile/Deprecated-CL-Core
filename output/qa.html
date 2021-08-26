@@ -1,0 +1,1495 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 142, errors = 88, warn = 38, info = 3 -->
+<head>
+  <title>CoreCL : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for CoreCL</h1>
+ <p>Generated Thu Aug 26 15:11:48 CLT 2021, FHIR version 4.0.1 for hl7.fhir.uv.CoreCH#0.22 (canonical = <a href="http://minsal.cl/fhir/core/">http://minsal.cl/fhir/core/</a> (<a href="http://minsal.cl/fhir/core//history.html">history</a>)). See <a href="c:\igs\_fhir_core_ch\output\qa.min.html">Errors Only</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.77</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.uv.CoreCH, Canonical = http://minsal.cl/fhir/core/</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Version Check:</td><td>0.22: <span stlye="color: marron; font-weight: bold">Version does not conform to semver rules</span></td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\IGs\_FHIR_Core_CH\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAI0lEQVR42u3QIQEAAAACIL/6/4MvTAQOkLYBAAB4kAAAANwMad9AqkRjgNAAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.CoreCH</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.22</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://minsal.cl/fhir/core/</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: fhir.base.template#0.2.1</para></div></td></tr>
+ <tr><td>Publication Rules:</td><td>Code = n/a. n/a - not an HL7.org or FHIR.org implementation guide
+ <br/><br/>The copyrightYear parameter ('2020+') in the IG resource is good</td></tr>
+ <tr><td>HTA Analysis:</td><td><a href="qa-hta.html">All OK</a></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://minsal.cl/fhir/core/ (Problem #1 with package-list.json at http://minsal.cl/fhir/core/: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 2 column 2 path $)</td></tr>
+ <tr><td>Summary:</td><td> broken links = 142, errors = 88, warn = 38, info = 3</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>169</b></td><td><b>7</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__IGs__FHIR_Core_CH_fsh-generated_resources_ImplementationGuide-hl7.fhir.uv.CoreCH"><b>C:\IGs\_FHIR_Core_CH\fsh-generated\resources\ImplementationGuide-hl7.fhir.uv.CoreCH</b></a></td><td><b>1</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__IGs__FHIR_Core_CH_fsh-generated_resources_Location-LocalizacionEjemploCH"><b>C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Location-LocalizacionEjemploCH</b></a></td><td><b>4</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__IGs__FHIR_Core_CH_fsh-generated_resources_Medication-MedicamentoRecetaCH"><b>C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Medication-MedicamentoRecetaCH</b></a></td><td><b>5</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__IGs__FHIR_Core_CH_fsh-generated_resources_OperationDefinition-Operation"><b>C:\IGs\_FHIR_Core_CH\fsh-generated\resources\OperationDefinition-Operation</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__IGs__FHIR_Core_CH_fsh-generated_resources_OperationDefinition-OperationDefinition"><b>C:\IGs\_FHIR_Core_CH\fsh-generated\resources\OperationDefinition-OperationDefinition</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__IGs__FHIR_Core_CH_fsh-generated_resources_Organization-OrganizacionRecetaCH"><b>C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Organization-OrganizacionRecetaCH</b></a></td><td><b>4</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__IGs__FHIR_Core_CH_fsh-generated_resources_Patient-PacienteRecetaCH"><b>C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteRecetaCH</b></a></td><td><b>13</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__IGs__FHIR_Core_CH_fsh-generated_resources_Patient-PacienteRecetaCHEx"><b>C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteRecetaCHEx</b></a></td><td><b>10</b></td><td><b>3</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__IGs__FHIR_Core_CH_fsh-generated_resources_Practitioner-PrestadorCH"><b>C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Practitioner-PrestadorCH</b></a></td><td><b>16</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__IGs__FHIR_Core_CH_fsh-generated_resources_PractitionerRole-EspecialidadCH"><b>C:\IGs\_FHIR_Core_CH\fsh-generated\resources\PractitionerRole-EspecialidadCH</b></a></td><td><b>1</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__IGs__FHIR_Core_CH_fsh-generated_resources_StructureDefinition-CodigoPaises"><b>C:\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-CodigoPaises</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__IGs__FHIR_Core_CH_fsh-generated_resources_StructureDefinition-LocalizacionCoreCh"><b>C:\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-LocalizacionCoreCh</b></a></td><td><b>1</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__IGs__FHIR_Core_CH_fsh-generated_resources_StructureDefinition-RecetaEspecialidadCh"><b>C:\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-RecetaEspecialidadCh</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__IGs__FHIR_Core_CH_fsh-generated_resources_StructureDefinition-RecetaMedicamentoCh"><b>C:\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-RecetaMedicamentoCh</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__IGs__FHIR_Core_CH_fsh-generated_resources_StructureDefinition-RecetaOrganizacionCh"><b>C:\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-RecetaOrganizacionCh</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__IGs__FHIR_Core_CH_fsh-generated_resources_StructureDefinition-RecetaPacientCh"><b>C:\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-RecetaPacientCh</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__IGs__FHIR_Core_CH_fsh-generated_resources_StructureDefinition-RecetaPrestadorCh"><b>C:\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-RecetaPrestadorCh</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__IGs__FHIR_Core_CH_fsh-generated_resources_ValueSet-COD-Cert-RNPI"><b>C:\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-COD-Cert-RNPI</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__IGs__FHIR_Core_CH_fsh-generated_resources_ValueSet-COD-ISO-3166-N"><b>C:\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-COD-ISO-3166-N</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__IGs__FHIR_Core_CH_fsh-generated_resources_ValueSet-CodNacComunas"><b>C:\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-CodNacComunas</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__IGs__FHIR_Core_CH_fsh-generated_resources_ValueSet-CodProv"><b>C:\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-CodProv</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__IGs__FHIR_Core_CH_fsh-generated_resources_ValueSet-CodReg"><b>C:\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-CodReg</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__IGs__FHIR_Core_CH_fsh-generated_resources_ValueSet-DOCType-V2-0203"><b>C:\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-DOCType-V2-0203</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__IGs__FHIR_Core_CH_fsh-generated_resources_ValueSet-Esp-Tabla-DEIS"><b>C:\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-Esp-Tabla-DEIS</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a></h2>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource PractitionerRole/EspecialidadCH.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Location/LocalizacionEjemploCH.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Medication/MedicamentoRecetaCH.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Organization/OrganizacionRecetaCH.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/PacienteRecetaCH.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/PacienteRecetaCHEx.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/PrestadorCH.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Location-LocalizacionEjemploCH.change.history.html#d3dccf47-ed5c-485b-abc9-afbf88e622aa">Location-LocalizacionEjemploCH.change.history.html#/html/body/div/div/div/p/a at Line 311, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Location-LocalizacionEjemploCH.html#d18f0dff-fbce-4f8a-a220-5ae77c7bd045">Location-LocalizacionEjemploCH.html#/html/body/div/div/div/p/a at Line 298, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Location-LocalizacionEjemploCH.json.html#b654afe3-a44a-4867-b3bd-6d55237d01d7">Location-LocalizacionEjemploCH.json.html#/html/body/div/div/div/p/a at Line 352, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Location-LocalizacionEjemploCH.ttl.html#922d1113-5867-47a5-b006-fbecfcf715b9">Location-LocalizacionEjemploCH.ttl.html#/html/body/div/div/div/p/a at Line 363, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Location-LocalizacionEjemploCH.xml.html#18b2a9c7-b1b8-482c-90e1-18ef546c9de2">Location-LocalizacionEjemploCH.xml.html#/html/body/div/div/div/p/a at Line 341, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-MedicamentoRecetaCH.change.history.html#f293000f-b38b-4e47-a0b2-fae72828dd82">Medication-MedicamentoRecetaCH.change.history.html#/html/body/div/div/div/p/a at Line 311, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-MedicamentoRecetaCH.html#f10cb5b0-9a2a-460d-9106-291915be2c31">Medication-MedicamentoRecetaCH.html#/html/body/div/div/div/p/a at Line 298, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-MedicamentoRecetaCH.json.html#2b522237-fd18-4a97-8e8c-c547c21f5f4a">Medication-MedicamentoRecetaCH.json.html#/html/body/div/div/div/p/a at Line 335, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-MedicamentoRecetaCH.ttl.html#9109dc5d-d008-4bd8-8453-181c5d97c0e2">Medication-MedicamentoRecetaCH.ttl.html#/html/body/div/div/div/p/a at Line 347, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-MedicamentoRecetaCH.xml.html#fc593083-c905-46d0-a527-2ad607d44dd1">Medication-MedicamentoRecetaCH.xml.html#/html/body/div/div/div/p/a at Line 330, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="OperationDefinition-Operation.change.history.html#c0f73c01-99bf-408b-99de-50aedd5fb911">OperationDefinition-Operation.change.history.html#/html/body/div/div/div/p/a at Line 311, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="OperationDefinition-Operation.html#5787194d-017c-451e-9db0-8e204044714d">OperationDefinition-Operation.html#/html/body/div/div/div/p/a at Line 320, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="OperationDefinition-Operation.json.html#0e7944a7-0309-4bed-8c87-053ecc1a67ca">OperationDefinition-Operation.json.html#/html/body/div/div/div/p/a at Line 385, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="OperationDefinition-Operation.ttl.html#cff17c3b-5d1b-4f56-8225-f0a4982377b2">OperationDefinition-Operation.ttl.html#/html/body/div/div/div/p/a at Line 396, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="OperationDefinition-Operation.xml.html#9473e57e-32b6-4a80-ac85-247e69f286b4">OperationDefinition-Operation.xml.html#/html/body/div/div/div/p/a at Line 426, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="OperationDefinition-OperationDefinition.change.history.html#0f10fdc3-32fa-4e1d-93f1-564520fafec4">OperationDefinition-OperationDefinition.change.history.html#/html/body/div/div/div/p/a at Line 311, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="OperationDefinition-OperationDefinition.html#667b1a57-0cb0-425c-ae4e-168ce633f9b4">OperationDefinition-OperationDefinition.html#/html/body/div/div/div/p/a at Line 313, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="OperationDefinition-OperationDefinition.json.html#16e03bae-189f-4a27-aef8-aa940d43779f">OperationDefinition-OperationDefinition.json.html#/html/body/div/div/div/p/a at Line 369, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="OperationDefinition-OperationDefinition.ttl.html#9b56c5d7-72de-479e-b2c6-6bf150fbc2ae">OperationDefinition-OperationDefinition.ttl.html#/html/body/div/div/div/p/a at Line 380, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="OperationDefinition-OperationDefinition.xml.html#dc4412d1-cfc6-41a2-9537-3235b397d53d">OperationDefinition-OperationDefinition.xml.html#/html/body/div/div/div/p/a at Line 390, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-OrganizacionRecetaCH.change.history.html#e379b843-c17b-403a-b84e-45ab1b28c99e">Organization-OrganizacionRecetaCH.change.history.html#/html/body/div/div/div/p/a at Line 311, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-OrganizacionRecetaCH.html#e86ec5a0-50cd-4569-8467-f70a269af0f6">Organization-OrganizacionRecetaCH.html#/html/body/div/div/div/p/a at Line 298, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-OrganizacionRecetaCH.json.html#ad306df0-f4d5-4ebe-a51e-81faa2031e28">Organization-OrganizacionRecetaCH.json.html#/html/body/div/div/div/p/a at Line 342, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-OrganizacionRecetaCH.ttl.html#357d51df-3a25-4b15-9afe-fcbc8b0992d4">Organization-OrganizacionRecetaCH.ttl.html#/html/body/div/div/div/p/a at Line 355, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-OrganizacionRecetaCH.xml.html#977281ad-b25f-401a-a325-7de4cccc6395">Organization-OrganizacionRecetaCH.xml.html#/html/body/div/div/div/p/a at Line 331, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteRecetaCH.change.history.html#8c4702ee-092f-4e8a-83ca-e1a4283d6a25">Patient-PacienteRecetaCH.change.history.html#/html/body/div/div/div/p/a at Line 311, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteRecetaCH.html#9cae9609-f34b-4294-b9aa-ac4d05a5e12c">Patient-PacienteRecetaCH.html#/html/body/div/div/div/p/a at Line 298, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteRecetaCH.json.html#16bc2a86-c502-4547-a528-1a7309fa8b57">Patient-PacienteRecetaCH.json.html#/html/body/div/div/div/p/a at Line 389, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteRecetaCH.ttl.html#c1299574-4ced-4412-8ccf-e78117c3e81f">Patient-PacienteRecetaCH.ttl.html#/html/body/div/div/div/p/a at Line 390, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteRecetaCH.xml.html#5135d5b9-5351-4338-a235-b36f24be0539">Patient-PacienteRecetaCH.xml.html#/html/body/div/div/div/p/a at Line 364, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteRecetaCHEx.change.history.html#bfc833d0-f165-4570-95e2-ec39720d9634">Patient-PacienteRecetaCHEx.change.history.html#/html/body/div/div/div/p/a at Line 311, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteRecetaCHEx.html#e21404d8-3fa1-4e78-a3d5-d35cec28797a">Patient-PacienteRecetaCHEx.html#/html/body/div/div/div/p/a at Line 298, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteRecetaCHEx.json.html#86bb65c6-7c02-453f-afb9-9367a3f8ab3e">Patient-PacienteRecetaCHEx.json.html#/html/body/div/div/div/p/a at Line 393, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteRecetaCHEx.ttl.html#629db636-8e20-4566-919a-38f2a49aa20e">Patient-PacienteRecetaCHEx.ttl.html#/html/body/div/div/div/p/a at Line 391, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteRecetaCHEx.xml.html#4cf07c86-2e91-456b-8425-092c68069e0d">Patient-PacienteRecetaCHEx.xml.html#/html/body/div/div/div/p/a at Line 365, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Practitioner-PrestadorCH.change.history.html#58043d38-0b3d-4a1c-a84d-78ecf242283c">Practitioner-PrestadorCH.change.history.html#/html/body/div/div/div/p/a at Line 311, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Practitioner-PrestadorCH.html#bdf903ba-0e92-4055-b209-2baf2a51e87a">Practitioner-PrestadorCH.html#/html/body/div/div/div/p/a at Line 298, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Practitioner-PrestadorCH.json.html#a95bdaa9-00d4-46c4-b1ad-127f49ca6b16">Practitioner-PrestadorCH.json.html#/html/body/div/div/div/p/a at Line 389, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Practitioner-PrestadorCH.ttl.html#ea2604d0-d230-4aed-9f22-0394a2143e0d">Practitioner-PrestadorCH.ttl.html#/html/body/div/div/div/p/a at Line 391, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Practitioner-PrestadorCH.xml.html#a129505a-d33e-40a1-9ac5-6ed66d207aed">Practitioner-PrestadorCH.xml.html#/html/body/div/div/div/p/a at Line 366, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="PractitionerRole-EspecialidadCH.change.history.html#3889e48b-077e-4ca7-a8f3-50d565904c00">PractitionerRole-EspecialidadCH.change.history.html#/html/body/div/div/div/p/a at Line 311, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="PractitionerRole-EspecialidadCH.html#7914411e-3819-4b9f-9a9d-fe5ee83103b7">PractitionerRole-EspecialidadCH.html#/html/body/div/div/div/p/a at Line 298, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="PractitionerRole-EspecialidadCH.json.html#fe9bd95e-5da3-425a-850d-f909ca31d3e1">PractitionerRole-EspecialidadCH.json.html#/html/body/div/div/div/p/a at Line 335, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="PractitionerRole-EspecialidadCH.ttl.html#6f43a5cd-3a91-42ec-af52-e36e9d853a7e">PractitionerRole-EspecialidadCH.ttl.html#/html/body/div/div/div/p/a at Line 346, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="PractitionerRole-EspecialidadCH.xml.html#fd2875b3-cc78-4aae-b1e3-31ccb8aa662a">PractitionerRole-EspecialidadCH.xml.html#/html/body/div/div/div/p/a at Line 328, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CodigoPaises-definitions.html#7cb00d09-7f48-4fff-b68c-6096b3f40bd1">StructureDefinition-CodigoPaises-definitions.html#/html/body/div/div/div/p/a at Line 390, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CodigoPaises-mappings.html#5282bfa8-b8ea-4925-b56a-cfb2de970dfb">StructureDefinition-CodigoPaises-mappings.html#/html/body/div/div/div/p/a at Line 350, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CodigoPaises.html#a9b69ee9-05c3-41b0-9c72-83080fd7536e">StructureDefinition-CodigoPaises.html#/html/body/div/div/div/p/a at Line 594, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CodigoPaises.profile.history.html#44b57f6d-29dc-49bd-b8b9-391e49834792">StructureDefinition-CodigoPaises.profile.history.html#/html/body/div/div/div/p/a at Line 332, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CodigoPaises.profile.json.html#6ca13590-0157-4774-89c0-e4490329dde6">StructureDefinition-CodigoPaises.profile.json.html#/html/body/div/div/div/p/a at Line 690, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CodigoPaises.profile.ttl.html#743b10ec-cbaa-4409-bd7d-fe9156b05a97">StructureDefinition-CodigoPaises.profile.ttl.html#/html/body/div/div/div/p/a at Line 654, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CodigoPaises.profile.xml.html#a9f0a451-d5f4-4624-8c0f-51dad3102fe7">StructureDefinition-CodigoPaises.profile.xml.html#/html/body/div/div/div/p/a at Line 637, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-LocalizacionCoreCh-definitions.html#ee7ba7cc-6bac-48d2-b8c7-7287f6e0047f">StructureDefinition-LocalizacionCoreCh-definitions.html#/html/body/div/div/div/p/a at Line 1186, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-LocalizacionCoreCh-examples.html#4c85f647-3c2a-4221-afcb-fd46c3ed0f12">StructureDefinition-LocalizacionCoreCh-examples.html#/html/body/div/div/div/p/a at Line 364, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-LocalizacionCoreCh-mappings.html#336f10fd-d904-4300-9d8f-1f0523a4acc2">StructureDefinition-LocalizacionCoreCh-mappings.html#/html/body/div/div/div/p/a at Line 444, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-LocalizacionCoreCh.html#6ac9ca8a-eddc-4e82-9396-c41caf6e08e8">StructureDefinition-LocalizacionCoreCh.html#/html/body/div/div/div/p/a at Line 1018, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-LocalizacionCoreCh.profile.history.html#62182847-9765-4dde-a2c9-d404d4d3e621">StructureDefinition-LocalizacionCoreCh.profile.history.html#/html/body/div/div/div/p/a at Line 342, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-LocalizacionCoreCh.profile.json.html#f786956a-be17-4ffe-aa13-db552bd5a5b8">StructureDefinition-LocalizacionCoreCh.profile.json.html#/html/body/div/div/div/p/a at Line 4431, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-LocalizacionCoreCh.profile.ttl.html#81b5678c-215c-4063-aa42-bdef30fae0c0">StructureDefinition-LocalizacionCoreCh.profile.ttl.html#/html/body/div/div/div/p/a at Line 3829, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-LocalizacionCoreCh.profile.xml.html#faf961e4-ce89-47b3-8db3-54a8284ea822">StructureDefinition-LocalizacionCoreCh.profile.xml.html#/html/body/div/div/div/p/a at Line 3951, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaEspecialidadCh-definitions.html#936bb170-5851-49dd-af18-5301ba48459e">StructureDefinition-RecetaEspecialidadCh-definitions.html#/html/body/div/div/div/p/a at Line 732, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaEspecialidadCh-examples.html#0613ab65-3f53-48a9-b22d-a2cc3ef53b87">StructureDefinition-RecetaEspecialidadCh-examples.html#/html/body/div/div/div/p/a at Line 364, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaEspecialidadCh-mappings.html#633a7c39-41f1-4c79-a407-94ceb9839cea">StructureDefinition-RecetaEspecialidadCh-mappings.html#/html/body/div/div/div/p/a at Line 419, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaEspecialidadCh.html#a3e73519-0cd5-4eb8-901c-0a6151da0577">StructureDefinition-RecetaEspecialidadCh.html#/html/body/div/div/div/p/a at Line 772, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaEspecialidadCh.profile.history.html#603e6905-2e36-4dd1-a85a-b64d85ec7b18">StructureDefinition-RecetaEspecialidadCh.profile.history.html#/html/body/div/div/div/p/a at Line 342, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaEspecialidadCh.profile.json.html#355df013-aaf6-4cf2-83b2-631fa5551964">StructureDefinition-RecetaEspecialidadCh.profile.json.html#/html/body/div/div/div/p/a at Line 2243, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaEspecialidadCh.profile.ttl.html#50ab6d98-d18d-42f5-9aac-32637b6f6b9d">StructureDefinition-RecetaEspecialidadCh.profile.ttl.html#/html/body/div/div/div/p/a at Line 2005, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaEspecialidadCh.profile.xml.html#7deaa593-1831-4f3d-b74d-2b80db301c8d">StructureDefinition-RecetaEspecialidadCh.profile.xml.html#/html/body/div/div/div/p/a at Line 2037, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaMedicamentoCh-definitions.html#fb415645-c2ae-423f-8420-7c42777c604f">StructureDefinition-RecetaMedicamentoCh-definitions.html#/html/body/div/div/div/p/a at Line 919, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaMedicamentoCh-examples.html#ac8371e4-f178-4ad8-a326-1f0857756f52">StructureDefinition-RecetaMedicamentoCh-examples.html#/html/body/div/div/div/p/a at Line 364, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaMedicamentoCh-mappings.html#d43bdb02-df16-402b-9f65-e1de0a3f3c1f">StructureDefinition-RecetaMedicamentoCh-mappings.html#/html/body/div/div/div/p/a at Line 481, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaMedicamentoCh.html#d969b952-65f6-406b-81bd-40552cc2ea7a">StructureDefinition-RecetaMedicamentoCh.html#/html/body/div/div/div/p/a at Line 881, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaMedicamentoCh.profile.history.html#37965d7a-5253-4db8-944e-a2d773d4c27d">StructureDefinition-RecetaMedicamentoCh.profile.history.html#/html/body/div/div/div/p/a at Line 342, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaMedicamentoCh.profile.json.html#8641148f-d73f-4434-9e38-3c83493b4811">StructureDefinition-RecetaMedicamentoCh.profile.json.html#/html/body/div/div/div/p/a at Line 3202, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaMedicamentoCh.profile.ttl.html#4dea1b2a-2a9d-402d-b509-efa37df08c76">StructureDefinition-RecetaMedicamentoCh.profile.ttl.html#/html/body/div/div/div/p/a at Line 2788, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaMedicamentoCh.profile.xml.html#96b52161-0d72-40f4-8943-c3006f70f02f">StructureDefinition-RecetaMedicamentoCh.profile.xml.html#/html/body/div/div/div/p/a at Line 2900, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaOrganizacionCh-definitions.html#e55309d2-60b3-446a-9586-18abf6be2490">StructureDefinition-RecetaOrganizacionCh-definitions.html#/html/body/div/div/div/p/a at Line 919, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaOrganizacionCh-examples.html#df55ae1e-8c29-482a-8288-6f825f27aa92">StructureDefinition-RecetaOrganizacionCh-examples.html#/html/body/div/div/div/p/a at Line 364, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaOrganizacionCh-mappings.html#ac1e6d38-261d-4639-b875-8bc7a2d45010">StructureDefinition-RecetaOrganizacionCh-mappings.html#/html/body/div/div/div/p/a at Line 473, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaOrganizacionCh.html#f9a55321-e8b0-4514-9aa3-ee4500da80ca">StructureDefinition-RecetaOrganizacionCh.html#/html/body/div/div/div/p/a at Line 850, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaOrganizacionCh.profile.history.html#d27dee9a-42e5-416c-b12d-faaad4321535">StructureDefinition-RecetaOrganizacionCh.profile.history.html#/html/body/div/div/div/p/a at Line 342, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaOrganizacionCh.profile.json.html#c29c4ff2-48e8-4a2f-97e2-b1b32bb8c73c">StructureDefinition-RecetaOrganizacionCh.profile.json.html#/html/body/div/div/div/p/a at Line 3166, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaOrganizacionCh.profile.ttl.html#5e58a92e-804b-4bd3-96db-58ab289b5958">StructureDefinition-RecetaOrganizacionCh.profile.ttl.html#/html/body/div/div/div/p/a at Line 2770, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaOrganizacionCh.profile.xml.html#d81ef104-a6be-4892-b01a-5ba733fea565">StructureDefinition-RecetaOrganizacionCh.profile.xml.html#/html/body/div/div/div/p/a at Line 2850, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaPacientCh-definitions.html#80ec70b8-5bc1-4f04-beb5-8da3fdbce84b">StructureDefinition-RecetaPacientCh-definitions.html#/html/body/div/div/div/p/a at Line 1622, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaPacientCh-examples.html#bd4c8cec-3785-4902-a4fd-5ad981a9396e">StructureDefinition-RecetaPacientCh-examples.html#/html/body/div/div/div/p/a at Line 370, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaPacientCh-mappings.html#fb7a52af-320c-40df-8ae2-4a646aef47fa">StructureDefinition-RecetaPacientCh-mappings.html#/html/body/div/div/div/p/a at Line 584, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaPacientCh.html#008ce3bd-da1e-44bf-b8a9-a236f9aaa320">StructureDefinition-RecetaPacientCh.html#/html/body/div/div/div/p/a at Line 1262, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaPacientCh.profile.history.html#6e1715d0-50c8-430d-8e9e-7bac97ba7ffb">StructureDefinition-RecetaPacientCh.profile.history.html#/html/body/div/div/div/p/a at Line 342, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaPacientCh.profile.json.html#66ecde1a-5e3e-4fb6-a682-68b90622e6bb">StructureDefinition-RecetaPacientCh.profile.json.html#/html/body/div/div/div/p/a at Line 6757, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaPacientCh.profile.ttl.html#7fcd4cb3-e8da-4913-89db-dc2755ed9a96">StructureDefinition-RecetaPacientCh.profile.ttl.html#/html/body/div/div/div/p/a at Line 5779, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaPacientCh.profile.xml.html#c0adfe9b-b7a7-47ec-a1c8-8e8274fb66d1">StructureDefinition-RecetaPacientCh.profile.xml.html#/html/body/div/div/div/p/a at Line 6033, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaPrestadorCh-definitions.html#d7f10d37-57c5-4e35-a5f6-ca19db11d7ff">StructureDefinition-RecetaPrestadorCh-definitions.html#/html/body/div/div/div/p/a at Line 1736, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaPrestadorCh-examples.html#3d55d57f-f715-4861-9191-67a674e5a1b4">StructureDefinition-RecetaPrestadorCh-examples.html#/html/body/div/div/div/p/a at Line 364, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaPrestadorCh-mappings.html#2f2aa627-bb72-444c-b9c7-8b895d46c0a1">StructureDefinition-RecetaPrestadorCh-mappings.html#/html/body/div/div/div/p/a at Line 633, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaPrestadorCh.html#1f7ce284-0e98-4f62-84c2-881294a400ce">StructureDefinition-RecetaPrestadorCh.html#/html/body/div/div/div/p/a at Line 1333, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaPrestadorCh.profile.history.html#132cfc83-c4a9-40db-b3f7-769011708261">StructureDefinition-RecetaPrestadorCh.profile.history.html#/html/body/div/div/div/p/a at Line 342, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaPrestadorCh.profile.json.html#ca59bacf-ccb4-4c6c-89fe-bab04d9908c6">StructureDefinition-RecetaPrestadorCh.profile.json.html#/html/body/div/div/div/p/a at Line 7261, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaPrestadorCh.profile.ttl.html#a27b144d-7374-4488-ae9b-b48635a34bfa">StructureDefinition-RecetaPrestadorCh.profile.ttl.html#/html/body/div/div/div/p/a at Line 6192, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaPrestadorCh.profile.xml.html#66043613-173e-4718-b75e-f47416f593e2">StructureDefinition-RecetaPrestadorCh.profile.xml.html#/html/body/div/div/div/p/a at Line 6464, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-COD-Cert-RNPI.change.history.html#6d934c65-423c-4177-bb5a-c4498b58b0f6">ValueSet-COD-Cert-RNPI.change.history.html#/html/body/div/div/div/p/a at Line 311, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-COD-Cert-RNPI.html#7825bd80-52ce-47ec-9dbd-1bb119c51510">ValueSet-COD-Cert-RNPI.html#/html/body/div/div/div/p/a at Line 361, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-COD-Cert-RNPI.json.html#85e81ad6-7588-45c8-a222-f1d83b228e8c">ValueSet-COD-Cert-RNPI.json.html#/html/body/div/div/div/p/a at Line 333, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-COD-Cert-RNPI.ttl.html#8225ea9b-abf1-4a9c-a967-45d03343af04">ValueSet-COD-Cert-RNPI.ttl.html#/html/body/div/div/div/p/a at Line 342, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-COD-Cert-RNPI.xml.html#5f101a90-b733-4d66-97d4-0d98c0d35e3f">ValueSet-COD-Cert-RNPI.xml.html#/html/body/div/div/div/p/a at Line 329, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-COD-ISO-3166-N.change.history.html#ce8a1ea0-9bf4-4893-a098-7b232ae60b89">ValueSet-COD-ISO-3166-N.change.history.html#/html/body/div/div/div/p/a at Line 311, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-COD-ISO-3166-N.html#3a2be5ef-a58e-4945-a766-5fb73b55b339">ValueSet-COD-ISO-3166-N.html#/html/body/div/div/div/p/a at Line 361, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-COD-ISO-3166-N.json.html#01bd7548-5518-489a-acb2-416962b1a706">ValueSet-COD-ISO-3166-N.json.html#/html/body/div/div/div/p/a at Line 333, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-COD-ISO-3166-N.ttl.html#e28829e6-6d34-491c-9bb0-afb8b2f18dc6">ValueSet-COD-ISO-3166-N.ttl.html#/html/body/div/div/div/p/a at Line 342, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-COD-ISO-3166-N.xml.html#4c314137-94ce-4037-a26e-f9f9dd337528">ValueSet-COD-ISO-3166-N.xml.html#/html/body/div/div/div/p/a at Line 327, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodNacComunas.change.history.html#e8e1f53a-ed89-47a8-924b-c5a60370aedf">ValueSet-CodNacComunas.change.history.html#/html/body/div/div/div/p/a at Line 311, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodNacComunas.html#415c7a21-c71d-44db-b5e8-f86e6193646a">ValueSet-CodNacComunas.html#/html/body/div/div/div/p/a at Line 364, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodNacComunas.json.html#af647059-9636-4a7f-ac84-3736982edd6f">ValueSet-CodNacComunas.json.html#/html/body/div/div/div/p/a at Line 333, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodNacComunas.ttl.html#72028e94-d7f8-4245-b2f1-a97c0a066bf5">ValueSet-CodNacComunas.ttl.html#/html/body/div/div/div/p/a at Line 342, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodNacComunas.xml.html#d1a30c84-5447-4fdd-ac4d-0711241bdfb8">ValueSet-CodNacComunas.xml.html#/html/body/div/div/div/p/a at Line 327, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodProv.change.history.html#05c98145-2292-44f2-9942-fc45eced598b">ValueSet-CodProv.change.history.html#/html/body/div/div/div/p/a at Line 311, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodProv.html#9b9a82fd-a49c-40a3-9793-5b5642bb877d">ValueSet-CodProv.html#/html/body/div/div/div/p/a at Line 364, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodProv.json.html#fdc4d3d5-90fe-4071-bc60-4e249ac999db">ValueSet-CodProv.json.html#/html/body/div/div/div/p/a at Line 333, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodProv.ttl.html#3fd83457-3489-4eda-8865-38bed4287c52">ValueSet-CodProv.ttl.html#/html/body/div/div/div/p/a at Line 342, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodProv.xml.html#b1c69356-f830-49b0-a0e1-6436fa3c4b2f">ValueSet-CodProv.xml.html#/html/body/div/div/div/p/a at Line 327, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodReg.change.history.html#339252e9-0c6f-4ce7-8735-59858d3cde3d">ValueSet-CodReg.change.history.html#/html/body/div/div/div/p/a at Line 311, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodReg.html#2e34e3ff-1473-4391-8115-1924edfb6777">ValueSet-CodReg.html#/html/body/div/div/div/p/a at Line 364, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodReg.json.html#282f1013-6775-4016-88bb-4e6feab5da85">ValueSet-CodReg.json.html#/html/body/div/div/div/p/a at Line 333, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodReg.ttl.html#1c60d6b9-fb67-4e0b-a39e-7a0d3160c152">ValueSet-CodReg.ttl.html#/html/body/div/div/div/p/a at Line 342, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodReg.xml.html#d6c63c2c-2673-4b0a-b831-0daafe148872">ValueSet-CodReg.xml.html#/html/body/div/div/div/p/a at Line 327, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-DOCType-V2-0203.change.history.html#d1b19036-d8be-46a2-befd-cca8e9d61203">ValueSet-DOCType-V2-0203.change.history.html#/html/body/div/div/div/p/a at Line 311, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-DOCType-V2-0203.html#309a765a-e6ed-4a6c-9780-c2c935f0ef12">ValueSet-DOCType-V2-0203.html#/html/body/div/div/div/p/a at Line 365, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-DOCType-V2-0203.json.html#ea7e860e-5cc0-4445-9f2a-ed1c75a47037">ValueSet-DOCType-V2-0203.json.html#/html/body/div/div/div/p/a at Line 333, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-DOCType-V2-0203.ttl.html#61506ac6-7985-4e18-905d-d099d70fb090">ValueSet-DOCType-V2-0203.ttl.html#/html/body/div/div/div/p/a at Line 342, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-DOCType-V2-0203.xml.html#b049f158-e0c9-431b-950a-c184b988af21">ValueSet-DOCType-V2-0203.xml.html#/html/body/div/div/div/p/a at Line 328, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-Esp-Tabla-DEIS.change.history.html#f19622ae-6ac5-425f-95e9-36b9762884fb">ValueSet-Esp-Tabla-DEIS.change.history.html#/html/body/div/div/div/p/a at Line 311, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-Esp-Tabla-DEIS.html#84582cc9-8bce-4d84-a05d-a48be9fc9c0f">ValueSet-Esp-Tabla-DEIS.html#/html/body/div/div/div/p/a at Line 361, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-Esp-Tabla-DEIS.json.html#84dc23b9-9ef1-4946-9992-fbcca7c1dd05">ValueSet-Esp-Tabla-DEIS.json.html#/html/body/div/div/div/p/a at Line 333, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-Esp-Tabla-DEIS.ttl.html#9b71881d-5520-4e1b-adf0-fa532670b568">ValueSet-Esp-Tabla-DEIS.ttl.html#/html/body/div/div/div/p/a at Line 342, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-Esp-Tabla-DEIS.xml.html#1085b73b-8b16-4336-a03a-c65d643c5b1f">ValueSet-Esp-Tabla-DEIS.xml.html#/html/body/div/div/div/p/a at Line 327, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#c6988c36-22e2-4843-bbde-f997298636b4">artifacts.html#/html/body/div/div/div/p/a at Line 531, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_FHIR_Core_CH\output\casos.html#b59b9042-8ff6-4db1-9622-82f82658740c">casos.html#/html/body/div/div/div/div/div/p/img at Line 270, column 5</a></b></td><td><b>error</b></td><td><b>The image source 'ProcGeneral.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_FHIR_Core_CH\output\casos.html#099e9c41-a948-49d0-b509-d434ac14f275">casos.html#/html/body/div/div/div/div/div/ul/li/img at Line 319, column 2</a></b></td><td><b>error</b></td><td><b>The image source 'C:\FSH_Prof\FSH_Paciente\Paciente_CH\input\images\P_Prescripcion.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_FHIR_Core_CH\output\casos.html#9a3c5395-aa57-454e-8c20-de1a9a943e52">casos.html#/html/body/div/div/div/div/div/ul/li/img at Line 340, column 2</a></b></td><td><b>error</b></td><td><b>The image source 'C:\FSH_Prof\FSH_Paciente\Paciente_CH\input\images\P_dispensacion.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_FHIR_Core_CH\output\casos.html#b546016b-3b9d-4702-ad6f-d30e18680768">casos.html#/html/body/div/div/div/div/div/ul/li/img at Line 359, column 2</a></b></td><td><b>error</b></td><td><b>The image source 'C:\FSH_Prof\FSH_Paciente\Paciente_CH\input\images\P_Busqueda.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_FHIR_Core_CH\output\casos.html#4f800462-78d8-46c9-b4f7-e2ba6648841f">casos.html#/html/body/div/div/div/div/div/ul/li/img at Line 379, column 2</a></b></td><td><b>error</b></td><td><b>The image source 'C:\FSH_Prof\FSH_Paciente\Paciente_CH\input\images\P_CambEstado.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="casos.html#0cbf8c36-1584-492b-a3f7-0ea85cc78a21">casos.html#/html/body/div/div/div/p/a at Line 435, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_FHIR_Core_CH\output\index.html#da8fde6b-13c1-42b4-956f-894351644ab0">index.html#/html/body/div/div/div/div/div/p/img at Line 245, column 5</a></b></td><td><b>error</b></td><td><b>The image source '.\logominsal.jpg' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_FHIR_Core_CH\output\index.html#da8fde6b-13c1-42b4-956f-894351644ab0">index.html#/html/body/div/div/div/div/div/p/img at Line 246, column 2</a></b></td><td><b>error</b></td><td><b>The image source '.\hl7chile.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_FHIR_Core_CH\output\index.html#3f59f573-dab4-410a-90b1-5b1af573b51d">index.html#/html/body/div/div/div/div/div/p/img at Line 270, column 5</a></b></td><td><b>error</b></td><td><b>The image source '../input/images/ProcGeneral.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_FHIR_Core_CH\output\index.html#dde3ca38-cafb-41ca-aab3-e5099276f5de">index.html#/html/body/div/div/div/div/div/ul/li/img at Line 319, column 2</a></b></td><td><b>error</b></td><td><b>The image source '.\P_Prescripcion.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_FHIR_Core_CH\output\index.html#c7248225-1e39-4e69-9688-6faf27c2f562">index.html#/html/body/div/div/div/div/div/ul/li/img at Line 340, column 2</a></b></td><td><b>error</b></td><td><b>The image source '.\P_dispensacion.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_FHIR_Core_CH\output\index.html#467894cd-4e43-43a1-bd55-eef2d28fc34b">index.html#/html/body/div/div/div/div/div/ul/li/img at Line 359, column 2</a></b></td><td><b>error</b></td><td><b>The image source '.\P_Busqueda.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_FHIR_Core_CH\output\index.html#54b379e4-dd9e-43f2-b6bf-d6f7292f6802">index.html#/html/body/div/div/div/div/div/ul/li/img at Line 379, column 2</a></b></td><td><b>error</b></td><td><b>The image source '.\P_CambEstado.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#c00bcd60-06c2-4bc3-9dd6-c558bcec23a2">index.html#/html/body/div/div/div/p/a at Line 435, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_FHIR_Core_CH\output\objetivos.html#b6d85b76-ae2d-40c4-9732-a0b55b925031">objetivos.html#/html/body/div/div/div/div/div/p/img at Line 270, column 5</a></b></td><td><b>error</b></td><td><b>The image source 'ProcGeneral.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_FHIR_Core_CH\output\objetivos.html#352b0cf7-7f12-410a-b4e5-1261ee01303e">objetivos.html#/html/body/div/div/div/div/div/ul/li/img at Line 319, column 2</a></b></td><td><b>error</b></td><td><b>The image source 'C:\FSH_Prof\FSH_Paciente\Paciente_CH\input\images\P_Prescripcion.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_FHIR_Core_CH\output\objetivos.html#4b8b771f-906d-4b8c-8dd2-ad21a9cc3dd9">objetivos.html#/html/body/div/div/div/div/div/ul/li/img at Line 340, column 2</a></b></td><td><b>error</b></td><td><b>The image source 'C:\FSH_Prof\FSH_Paciente\Paciente_CH\input\images\P_dispensacion.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_FHIR_Core_CH\output\objetivos.html#642a46c2-3bb7-4b43-bf39-c90a9636e2e7">objetivos.html#/html/body/div/div/div/div/div/ul/li/img at Line 359, column 2</a></b></td><td><b>error</b></td><td><b>The image source 'C:\FSH_Prof\FSH_Paciente\Paciente_CH\input\images\P_Busqueda.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_FHIR_Core_CH\output\objetivos.html#ec4c45c3-a0d7-41ae-a3b3-ab6346266bb8">objetivos.html#/html/body/div/div/div/div/div/ul/li/img at Line 379, column 2</a></b></td><td><b>error</b></td><td><b>The image source 'C:\FSH_Prof\FSH_Paciente\Paciente_CH\input\images\P_CambEstado.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="objetivos.html#40a24c36-c278-42d2-9422-83fc06cc6b11">objetivos.html#/html/body/div/div/div/p/a at Line 435, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_FHIR_Core_CH\output\operaciones.html#49a476f0-8fa8-4f7f-8db2-e5eb87766de8">operaciones.html#/html/body/div/div/div/div/div/p/img at Line 270, column 5</a></b></td><td><b>error</b></td><td><b>The image source 'ProcGeneral.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_FHIR_Core_CH\output\operaciones.html#7dd1963d-65e9-4e02-8ac3-898179a8b653">operaciones.html#/html/body/div/div/div/div/div/ul/li/img at Line 319, column 2</a></b></td><td><b>error</b></td><td><b>The image source 'C:\FSH_Prof\FSH_Paciente\Paciente_CH\input\images\P_Prescripcion.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_FHIR_Core_CH\output\operaciones.html#f9602f9e-37d7-4ef9-846b-5c6e5a4e8427">operaciones.html#/html/body/div/div/div/div/div/ul/li/img at Line 340, column 2</a></b></td><td><b>error</b></td><td><b>The image source 'C:\FSH_Prof\FSH_Paciente\Paciente_CH\input\images\P_dispensacion.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_FHIR_Core_CH\output\operaciones.html#95b71c41-9f30-4d99-b4dd-742911dd33bf">operaciones.html#/html/body/div/div/div/div/div/ul/li/img at Line 359, column 2</a></b></td><td><b>error</b></td><td><b>The image source 'C:\FSH_Prof\FSH_Paciente\Paciente_CH\input\images\P_Busqueda.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_FHIR_Core_CH\output\operaciones.html#526d00f1-515e-456c-a221-f7e51c8684ad">operaciones.html#/html/body/div/div/div/div/div/ul/li/img at Line 379, column 2</a></b></td><td><b>error</b></td><td><b>The image source 'C:\FSH_Prof\FSH_Paciente\Paciente_CH\input\images\P_CambEstado.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="operaciones.html#9f74d51a-b6d1-486e-a057-3cfc8f04cab1">operaciones.html#/html/body/div/div/div/p/a at Line 435, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_FHIR_Core_CH\output\terminologias.html#7170db98-3a6c-46f3-8b37-787463fc1934">terminologias.html#/html/body/div/div/div/div/div/p/img at Line 270, column 5</a></b></td><td><b>error</b></td><td><b>The image source 'ProcGeneral.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_FHIR_Core_CH\output\terminologias.html#030d7a2d-7de4-420c-90d9-b5d6f5315f59">terminologias.html#/html/body/div/div/div/div/div/ul/li/img at Line 319, column 2</a></b></td><td><b>error</b></td><td><b>The image source 'C:\FSH_Prof\FSH_Paciente\Paciente_CH\input\images\P_Prescripcion.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_FHIR_Core_CH\output\terminologias.html#3f54c7a8-c6b9-41b0-aad4-26c5cf10c5f6">terminologias.html#/html/body/div/div/div/div/div/ul/li/img at Line 340, column 2</a></b></td><td><b>error</b></td><td><b>The image source 'C:\FSH_Prof\FSH_Paciente\Paciente_CH\input\images\P_dispensacion.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_FHIR_Core_CH\output\terminologias.html#634933e7-d518-4e50-8956-63a73a67e0e7">terminologias.html#/html/body/div/div/div/div/div/ul/li/img at Line 359, column 2</a></b></td><td><b>error</b></td><td><b>The image source 'C:\FSH_Prof\FSH_Paciente\Paciente_CH\input\images\P_Busqueda.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\IGs\_FHIR_Core_CH\output\terminologias.html#ccaafd76-84fd-4258-aab3-ff71c8ef0c3e">terminologias.html#/html/body/div/div/div/div/div/ul/li/img at Line 379, column 2</a></b></td><td><b>error</b></td><td><b>The image source 'C:\FSH_Prof\FSH_Paciente\Paciente_CH\input\images\P_CambEstado.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="terminologias.html#e51beb57-c0ad-44f2-8d5c-5dbade1b01de">terminologias.html#/html/body/div/div/div/p/a at Line 435, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#88c60424-2545-44f3-b118-a67ceda10552">toc.html#/html/body/div/div/div/p/a at Line 249, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__FHIR_Core_CH_fsh-generated_resources_ImplementationGuide-hl7.fhir.uv.CoreCH"> </a>
+<h2><a href="ImplementationGuide-hl7.fhir.uv.CoreCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\ImplementationGuide-hl7.fhir.uv.CoreCH.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide.where(url = 'http://minsal.cl/fhir/core//ImplementationGuide/hl7.fhir.uv.CoreCH')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource C:\IGs\_FHIR_Core_CH\fsh-generated\resources\ImplementationGuide-hl7.fhir.uv.CoreCH.json - the canonical URL (http://minsal.cl/fhir/core/ImplementationGuide/hl7.fhir.uv.CoreCH) does not match the URL (http://minsal.cl/fhir/core//ImplementationGuide/hl7.fhir.uv.CoreCH)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide.definition.resource[1].description</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide.jurisdiction</b></td><td><b>warning</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__FHIR_Core_CH_fsh-generated_resources_Location-LocalizacionEjemploCH"> </a>
+<h2><a href="Location-LocalizacionEjemploCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Location-LocalizacionEjemploCH.json</a></h2>
+ <ul style="font-size: 7px"><li>Location: Validated against <i>this.</i><a href="StructureDefinition-LocalizacionCoreCh.html">Perfil de Localización de Objetos e Infraestructura</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Location.type[0].coding[0] (l19/c10)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Location.address.city (l36/c21)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('05109') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodNacComunas (http://minsal.cl/fhir/core//ValueSet/CodNacComunas), and a code is required from this value set) (error message = The code system &quot;https://apis.digital.gob.cl/dpa/comunas/&quot; in the include in &quot;http://minsal.cl/fhir/core//ValueSet/CodNacComunas&quot; is not known; The code system &quot;https://apis.digital.gob.cl/dpa/comunas/&quot; is not known (encountered paired with code = &quot;05109&quot;); The code provided (https://apis.digital.gob.cl/dpa/comunas/#05109) is not valid in the value set 'CodComunas' (from http://tx.fhir.org/r4))</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Location.address.state (l37/c20)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('051') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodReg (http://minsal.cl/fhir/core//ValueSet/CodReg), and a code is required from this value set) (error message = The code system &quot;https://apis.digital.gob.cl/dpa/regiones/&quot; in the include in &quot;http://minsal.cl/fhir/core//ValueSet/CodReg&quot; is not known; The code system &quot;https://apis.digital.gob.cl/dpa/regiones/&quot; is not known (encountered paired with code = &quot;051&quot;); The code provided (https://apis.digital.gob.cl/dpa/regiones/#051) is not valid in the value set 'CodRegion' (from http://tx.fhir.org/r4))</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Location.address.country (l40/c4)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('152') is not in the value set http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203 (http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203), and a code is required from this value set) (error message = The code system &quot;https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html&quot; in the include in &quot;http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203&quot; is not known; The code system &quot;https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html&quot; is not known (encountered paired with code = &quot;152&quot;); The code provided (https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html#152) is not valid in the value set 'ISO3166COD' (from http://tx.fhir.org/r4))</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Location.managingOrganization (l47/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'http://MINSAL.cl/API/Organizaciones/Id22112'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__FHIR_Core_CH_fsh-generated_resources_Medication-MedicamentoRecetaCH"> </a>
+<h2><a href="Medication-MedicamentoRecetaCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Medication-MedicamentoRecetaCH.json</a></h2>
+ <ul style="font-size: 7px"><li>Medication: Validated against <i>this.</i><a href="StructureDefinition-RecetaMedicamentoCh.html">Perfil Se destina para generar el recuso de medicamento ha ser usado para el manejo de terminologpia de fármacos en farmacos registrados extensible a Core Nacional</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Medication.identifier[0] (l14/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_MatchMultiple"><b>Profile http://minsal.cl/fhir/core//StructureDefinition/RecetaMedicamentoCh, Element matches more than one slice - DescripcionId, ConceptId</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Medication.identifier[1] (l19/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_MatchMultiple"><b>Profile http://minsal.cl/fhir/core//StructureDefinition/RecetaMedicamentoCh, Element matches more than one slice - DescripcionId, ConceptId</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Medication (l1/c2)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Maximum"><b>Medication.identifier:DescripcionId: max allowed = 1, but found 2 (from http://minsal.cl/fhir/core//StructureDefinition/RecetaMedicamentoCh)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Medication (l1/c2)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Medication.identifier:ConceptId: minimum required = 1, but only found 0 (from http://minsal.cl/fhir/core//StructureDefinition/RecetaMedicamentoCh)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Medication.identifier[1].value (l23/c6)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Medication.identifier[1].system (l21/c58)</b></td><td><b>error</b></td><td title="_DT_Fixed_Wrong"><b>Value is 'http://minsal.cl/semantikos/concept-id' but must be 'http://minsal.cl/semantikos/description-id'</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Medication.code.coding[0] (l28/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://minsal.cl/semantikos/description-id' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__FHIR_Core_CH_fsh-generated_resources_OperationDefinition-Operation"> </a>
+<h2><a href="OperationDefinition-Operation.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\OperationDefinition-Operation.json</a></h2>
+ <ul style="font-size: 7px"><li>OperationDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/operationdefinition.html">OperationDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>OperationDefinition</b></td><td><b>warning</b></td><td title="opd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>opd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>OperationDefinition.jurisdiction</b></td><td><b>warning</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__FHIR_Core_CH_fsh-generated_resources_OperationDefinition-OperationDefinition"> </a>
+<h2><a href="OperationDefinition-OperationDefinition.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\OperationDefinition-OperationDefinition.json</a></h2>
+ <ul style="font-size: 7px"><li>OperationDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/operationdefinition.html">OperationDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>OperationDefinition</b></td><td><b>warning</b></td><td title="opd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>opd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>OperationDefinition.jurisdiction</b></td><td><b>warning</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__FHIR_Core_CH_fsh-generated_resources_Organization-OrganizacionRecetaCH"> </a>
+<h2><a href="Organization-OrganizacionRecetaCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Organization-OrganizacionRecetaCH.json</a></h2>
+ <ul style="font-size: 7px"><li>Organization: Validated against <i>this.</i><a href="StructureDefinition-RecetaOrganizacionCh.html">Perfil Se destina para determinar rganizaciones para Receta Digital, extensible a Core Nacional</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Organization.address[0].city (l36/c23)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('07401') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodNacComunas (http://minsal.cl/fhir/core//ValueSet/CodNacComunas), and a code is required from this value set) (error message = Code System URI 'https://apis.digital.gob.cl/dpa/comunas/' is unknown so the code cannot be validated)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Organization.address[0].district (l37/c25)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('074') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodProv (http://minsal.cl/fhir/core//ValueSet/CodProv), and a code is required from this value set) (error message = The code system &quot;https://apis.digital.gob.cl/dpa/provincias/&quot; in the include in &quot;http://minsal.cl/fhir/core//ValueSet/CodProv&quot; is not known; The code system &quot;https://apis.digital.gob.cl/dpa/provincias/&quot; is not known (encountered paired with code = &quot;074&quot;); The code provided (https://apis.digital.gob.cl/dpa/provincias/#074) is not valid in the value set 'CodProvincia' (from http://tx.fhir.org/r4))</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Organization.address[0].state (l38/c21)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('07') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodReg (http://minsal.cl/fhir/core//ValueSet/CodReg), and a code is required from this value set) (error message = Code System URI 'https://apis.digital.gob.cl/dpa/regiones/' is unknown so the code cannot be validated)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Organization.address[0].country (l40/c6)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('152') is not in the value set http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203 (http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203), and a code is required from this value set) (error message = Code System URI 'https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html' is unknown so the code cannot be validated)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__FHIR_Core_CH_fsh-generated_resources_Patient-PacienteRecetaCH"> </a>
+<h2><a href="Patient-PacienteRecetaCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteRecetaCH.json</a></h2>
+ <ul style="font-size: 7px"><li>Patient: Validated against <i>this.</i><a href="StructureDefinition-RecetaPacientCh.html">Perfil Paciente para Receta Digital, extensible a Core Nacional</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient.name[0].family.extension[0] (l44/c12)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@value[x]'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient.name[0] (l36/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_MatchMultiple"><b>Profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPacientCh, Element matches more than one slice - NombreOficial, NombreSocial</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient.name[1] (l52/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_MatchMultiple"><b>Profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPacientCh, Element matches more than one slice - NombreOficial, NombreSocial</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient (l1/c2)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Maximum"><b>Patient.name:NombreOficial: max allowed = 1, but found 2 (from http://minsal.cl/fhir/core//StructureDefinition/RecetaPacientCh)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.identifier[0].type.extension[0].value.ofType(CodeableConcept).coding[0] (l17/c18)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.identifier[0].type.coding[0] (l26/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient.name[0].family.extension[0] (l41/c12)</b></td><td><b>error</b></td><td title="ext-1: 'Must have either extensions or value[x], not both' Rule 'Must have either extensions or value[x], not both' Failed"><b>ext-1: 'Must have either extensions or value[x], not both' Rule 'Must have either extensions or value[x], not both' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient.name[0].family.extension[0] (l41/c12)</b></td><td><b>error</b></td><td title="Extension_EXT_Simple"><b>The Extension 'http://hl7.org/fhir/StructureDefinition/humanname-mothers-family' definition is for a simple extension, so it must contain a value, not extensions</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient.name[0].family.extension[0] (l41/c12)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Extension.value[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/humanname-mothers-family)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient.name[1] (l52/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Patient.name:NombreOficial.family: minimum required = 1, but only found 0 (from http://minsal.cl/fhir/core//StructureDefinition/RecetaPacientCh)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient.name[1].use (l53/c22)</b></td><td><b>error</b></td><td title="_DT_Fixed_Wrong"><b>Value is 'usual' but must be 'official'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient.address[0].city (l80/c22)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('5101') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodNacComunas (http://minsal.cl/fhir/core//ValueSet/CodNacComunas), and a code is required from this value set) (error message = Code System URI 'https://apis.digital.gob.cl/dpa/comunas/' is unknown so the code cannot be validated)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient.address[0].district (l81/c25)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('051') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodProv (http://minsal.cl/fhir/core//ValueSet/CodProv), and a code is required from this value set) (error message = Code System URI 'https://apis.digital.gob.cl/dpa/provincias/' is unknown so the code cannot be validated)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient.address[0].state (l82/c20)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('5') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodReg (http://minsal.cl/fhir/core//ValueSet/CodReg), and a code is required from this value set) (error message = Code System URI 'https://apis.digital.gob.cl/dpa/regiones/' is unknown so the code cannot be validated)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient.address[0].country (l84/c6)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('152') is not in the value set http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203 (http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203), and a code is required from this value set) (error message = Code System URI 'https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html' is unknown so the code cannot be validated)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__FHIR_Core_CH_fsh-generated_resources_Patient-PacienteRecetaCHEx"> </a>
+<h2><a href="Patient-PacienteRecetaCHEx.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteRecetaCHEx.json</a></h2>
+ <ul style="font-size: 7px"><li>Patient: Validated against <i>this.</i><a href="StructureDefinition-RecetaPacientCh.html">Perfil Paciente para Receta Digital, extensible a Core Nacional</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient.name[0].family.extension[0] (l45/c12)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@value[x]'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient.name[0] (l37/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_MatchMultiple"><b>Profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPacientCh, Element matches more than one slice - NombreOficial, NombreSocial</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Patient.extension[0] (l56/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPacientCh</b> <span id="sl216" class="flip" onclick="flip('l216')">Show Reasoning</span><div id="l216" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://minsal.cl/fhir/core//StructureDefinition/RecetaPacientCh<ul><li>Patient.extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/patient-nationality' in url)</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient.extension[0]</b></td><td><b>error</b></td><td title="Extension_EXT_URL_Absolute"><b>Extension.url must be an absolute URL</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.extension[0].value.ofType(CodeableConcept).coding[0] (l60/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.identifier[0].type.extension[0].value.ofType(CodeableConcept).coding[0] (l17/c18)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.identifier[0].type.coding[0] (l26/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient.name[0].family.extension[0] (l42/c12)</b></td><td><b>error</b></td><td title="ext-1: 'Must have either extensions or value[x], not both' Rule 'Must have either extensions or value[x], not both' Failed"><b>ext-1: 'Must have either extensions or value[x], not both' Rule 'Must have either extensions or value[x], not both' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient.name[0].family.extension[0] (l42/c12)</b></td><td><b>error</b></td><td title="Extension_EXT_Simple"><b>The Extension 'http://hl7.org/fhir/StructureDefinition/humanname-mothers-family' definition is for a simple extension, so it must contain a value, not extensions</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient.name[0].family.extension[0] (l42/c12)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Extension.value[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/humanname-mothers-family)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient.address[0].city (l84/c23)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('15101') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodNacComunas (http://minsal.cl/fhir/core//ValueSet/CodNacComunas), and a code is required from this value set) (error message = Code System URI 'https://apis.digital.gob.cl/dpa/comunas/' is unknown so the code cannot be validated)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient.address[0].district (l85/c25)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('151') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodProv (http://minsal.cl/fhir/core//ValueSet/CodProv), and a code is required from this value set) (error message = Code System URI 'https://apis.digital.gob.cl/dpa/provincias/' is unknown so the code cannot be validated)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient.address[0].state (l86/c21)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('15') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodReg (http://minsal.cl/fhir/core//ValueSet/CodReg), and a code is required from this value set) (error message = Code System URI 'https://apis.digital.gob.cl/dpa/regiones/' is unknown so the code cannot be validated)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient.address[0].country (l88/c6)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('152') is not in the value set http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203 (http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203), and a code is required from this value set) (error message = Code System URI 'https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html' is unknown so the code cannot be validated)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__FHIR_Core_CH_fsh-generated_resources_Practitioner-PrestadorCH"> </a>
+<h2><a href="Practitioner-PrestadorCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Practitioner-PrestadorCH.json</a></h2>
+ <ul style="font-size: 7px"><li>Practitioner: Validated against <i>this.</i><a href="StructureDefinition-RecetaPrestadorCh.html">Prestador Core CH</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Practitioner.name[0].family.extension[0] (l18/c12)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@value[x]'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Practitioner.identifier[0] (l32/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator ([system]) for slice Practitioner.identifier:RUN in profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPrestadorCh - the discriminator [system] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Practitioner.identifier[1] (l37/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator ([system]) for slice Practitioner.identifier:RUN in profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPrestadorCh - the discriminator [system] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Practitioner.identifier[0] (l32/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator ([system]) for slice Practitioner.identifier:RNPI in profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPrestadorCh - the discriminator [system] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Practitioner.identifier[1] (l37/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator ([system]) for slice Practitioner.identifier:RNPI in profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPrestadorCh - the discriminator [system] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Practitioner.qualification[0] (l71/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator ([code.coding.display]) for slice Practitioner.qualification:Cert in profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPrestadorCh - the discriminator [code.coding.display] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Practitioner.qualification[1] (l80/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator ([code.coding.display]) for slice Practitioner.qualification:Cert in profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPrestadorCh - the discriminator [code.coding.display] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Practitioner.qualification[0] (l71/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator ([code.coding.display]) for slice Practitioner.qualification:Esp in profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPrestadorCh - the discriminator [code.coding.display] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Practitioner.qualification[1] (l80/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator ([code.coding.display]) for slice Practitioner.qualification:Esp in profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPrestadorCh - the discriminator [code.coding.display] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner (l1/c2)</b></td><td><b>information</b></td><td title="Validation_VAL_Profile_NoCheckMin"><b>Practitioner.identifier:RUN: Unable to check minimum required (Practitioner.identifier) due to lack of slicing validation (from http://minsal.cl/fhir/core//StructureDefinition/RecetaPrestadorCh)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Practitioner.name[0].family.extension[0] (l15/c12)</b></td><td><b>error</b></td><td title="ext-1: 'Must have either extensions or value[x], not both' Rule 'Must have either extensions or value[x], not both' Failed"><b>ext-1: 'Must have either extensions or value[x], not both' Rule 'Must have either extensions or value[x], not both' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Practitioner.name[0].family.extension[0] (l15/c12)</b></td><td><b>error</b></td><td title="Extension_EXT_Simple"><b>The Extension 'http://hl7.org/fhir/StructureDefinition/humanname-mothers-family' definition is for a simple extension, so it must contain a value, not extensions</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Practitioner.name[0].family.extension[0] (l15/c12)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Extension.value[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/humanname-mothers-family)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Practitioner.address[0].city (l64/c24)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('091001') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodNacComunas (http://minsal.cl/fhir/core//ValueSet/CodNacComunas), and a code is required from this value set) (error message = Code System URI 'https://apis.digital.gob.cl/dpa/comunas/' is unknown so the code cannot be validated)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Practitioner.address[0].district (l65/c25)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('091') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodProv (http://minsal.cl/fhir/core//ValueSet/CodProv), and a code is required from this value set) (error message = Code System URI 'https://apis.digital.gob.cl/dpa/provincias/' is unknown so the code cannot be validated)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Practitioner.address[0].state (l66/c21)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('09') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodReg (http://minsal.cl/fhir/core//ValueSet/CodReg), and a code is required from this value set) (error message = Code System URI 'https://apis.digital.gob.cl/dpa/regiones/' is unknown so the code cannot be validated)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Practitioner.address[0].country (l68/c6)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('152') is not in the value set http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203 (http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203), and a code is required from this value set) (error message = Code System URI 'https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html' is unknown so the code cannot be validated)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__FHIR_Core_CH_fsh-generated_resources_PractitionerRole-EspecialidadCH"> </a>
+<h2><a href="PractitionerRole-EspecialidadCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\PractitionerRole-EspecialidadCH.json</a></h2>
+ <ul style="font-size: 7px"><li>PractitionerRole: Validated against <i>this.</i><a href="StructureDefinition-RecetaEspecialidadCh.html">Perfil Se destina para determinar la especialidad del Prescriptor para Receta Digital, extensible a Core Nacional</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>PractitionerRole.practitioner (l14/c57)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'http://minsal/RNPI/Practitioner/3420'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>PractitionerRole.specialty[0].coding[0] (l20/c10)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>PractitionerRole.specialty[1].coding[0] (l28/c10)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__FHIR_Core_CH_fsh-generated_resources_StructureDefinition-CodigoPaises"> </a>
+<h2><a href="StructureDefinition-CodigoPaises.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-CodigoPaises.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__FHIR_Core_CH_fsh-generated_resources_StructureDefinition-LocalizacionCoreCh"> </a>
+<h2><a href="StructureDefinition-LocalizacionCoreCh.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-LocalizacionCoreCh.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[18].short</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[3].short</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__FHIR_Core_CH_fsh-generated_resources_StructureDefinition-RecetaEspecialidadCh"> </a>
+<h2><a href="StructureDefinition-RecetaEspecialidadCh.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-RecetaEspecialidadCh.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__FHIR_Core_CH_fsh-generated_resources_StructureDefinition-RecetaMedicamentoCh"> </a>
+<h2><a href="StructureDefinition-RecetaMedicamentoCh.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-RecetaMedicamentoCh.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__FHIR_Core_CH_fsh-generated_resources_StructureDefinition-RecetaOrganizacionCh"> </a>
+<h2><a href="StructureDefinition-RecetaOrganizacionCh.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-RecetaOrganizacionCh.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__FHIR_Core_CH_fsh-generated_resources_StructureDefinition-RecetaPacientCh"> </a>
+<h2><a href="StructureDefinition-RecetaPacientCh.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-RecetaPacientCh.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__FHIR_Core_CH_fsh-generated_resources_StructureDefinition-RecetaPrestadorCh"> </a>
+<h2><a href="StructureDefinition-RecetaPrestadorCh.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-RecetaPrestadorCh.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__FHIR_Core_CH_fsh-generated_resources_ValueSet-COD-Cert-RNPI"> </a>
+<h2><a href="ValueSet-COD-Cert-RNPI.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-COD-Cert-RNPI.json</a></h2>
+ <ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.jurisdiction</b></td><td><b>warning</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.where(id = 'COD-Cert-RNPI')</b></td><td><b>warning</b></td><td title=""><b>Error from server: Unable to provide support for code system https://rnpi.superdesalud.gob.cl/</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__FHIR_Core_CH_fsh-generated_resources_ValueSet-COD-ISO-3166-N"> </a>
+<h2><a href="ValueSet-COD-ISO-3166-N.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-COD-ISO-3166-N.json</a></h2>
+ <ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.jurisdiction</b></td><td><b>warning</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.where(id = 'COD-ISO-3166-N')</b></td><td><b>warning</b></td><td title=""><b>Error from server: Unable to provide support for code system http://hl7.org/fhir/ValueSet/iso3166-1-N</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__FHIR_Core_CH_fsh-generated_resources_ValueSet-CodNacComunas"> </a>
+<h2><a href="ValueSet-CodNacComunas.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-CodNacComunas.json</a></h2>
+ <ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.jurisdiction</b></td><td><b>warning</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.where(id = 'CodNacComunas')</b></td><td><b>warning</b></td><td title=""><b>Error from server: Unable to provide support for code system https://apis.digital.gob.cl/dpa/comunas/</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__FHIR_Core_CH_fsh-generated_resources_ValueSet-CodProv"> </a>
+<h2><a href="ValueSet-CodProv.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-CodProv.json</a></h2>
+ <ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.jurisdiction</b></td><td><b>warning</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.where(id = 'CodProv')</b></td><td><b>warning</b></td><td title=""><b>Error from server: Unable to provide support for code system https://apis.digital.gob.cl/dpa/provincias/</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__FHIR_Core_CH_fsh-generated_resources_ValueSet-CodReg"> </a>
+<h2><a href="ValueSet-CodReg.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-CodReg.json</a></h2>
+ <ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.jurisdiction</b></td><td><b>warning</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.where(id = 'CodReg')</b></td><td><b>warning</b></td><td title=""><b>Error from server: Unable to provide support for code system https://apis.digital.gob.cl/dpa/regiones/</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__FHIR_Core_CH_fsh-generated_resources_ValueSet-DOCType-V2-0203"> </a>
+<h2><a href="ValueSet-DOCType-V2-0203.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-DOCType-V2-0203.json</a></h2>
+ <ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.jurisdiction</b></td><td><b>warning</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.where(id = 'DOCType-V2-0203')</b></td><td><b>warning</b></td><td title=""><b>Error from server: Unable to provide support for code system https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__IGs__FHIR_Core_CH_fsh-generated_resources_ValueSet-Esp-Tabla-DEIS"> </a>
+<h2><a href="ValueSet-Esp-Tabla-DEIS.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-Esp-Tabla-DEIS.json</a></h2>
+ <ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.jurisdiction</b></td><td><b>warning</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.where(id = 'Esp-Tabla-DEIS')</b></td><td><b>warning</b></td><td title=""><b>Error from server: Unable to provide support for code system http://deis.cl/especialidades</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="Extension_EXT_Simple"> </a>
+<h2>Extension_EXT_Simple</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Patient-PacienteRecetaCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteRecetaCH.json</a></td><td><b>The Extension 'http://hl7.org/fhir/StructureDefinition/humanname-mothers-family' definition is for a simple extension, so it must contain a value, not extensions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Patient-PacienteRecetaCHEx.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteRecetaCHEx.json</a></td><td><b>The Extension 'http://hl7.org/fhir/StructureDefinition/humanname-mothers-family' definition is for a simple extension, so it must contain a value, not extensions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Practitioner-PrestadorCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Practitioner-PrestadorCH.json</a></td><td><b>The Extension 'http://hl7.org/fhir/StructureDefinition/humanname-mothers-family' definition is for a simple extension, so it must contain a value, not extensions</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Extension_EXT_URL_Absolute"> </a>
+<h2>Extension_EXT_URL_Absolute</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Patient-PacienteRecetaCHEx.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteRecetaCHEx.json</a></td><td><b>Extension.url must be an absolute URL</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="RESOURCE_CANONICAL_MISMATCH"> </a>
+<h2>RESOURCE_CANONICAL_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="ImplementationGuide-hl7.fhir.uv.CoreCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\ImplementationGuide-hl7.fhir.uv.CoreCH.json</a></td><td><b>Conformance resource C:\IGs\_FHIR_Core_CH\fsh-generated\resources\ImplementationGuide-hl7.fhir.uv.CoreCH.json - the canonical URL (http://minsal.cl/fhir/core/ImplementationGuide/hl7.fhir.uv.CoreCH) does not match the URL (http://minsal.cl/fhir/core//ImplementationGuide/hl7.fhir.uv.CoreCH)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="RESOURCE_JURISDICTION_MISMATCH"> </a>
+<h2>RESOURCE_JURISDICTION_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="ImplementationGuide-hl7.fhir.uv.CoreCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\ImplementationGuide-hl7.fhir.uv.CoreCH.json</a></td><td><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="OperationDefinition-Operation.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\OperationDefinition-Operation.json</a></td><td><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="OperationDefinition-OperationDefinition.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\OperationDefinition-OperationDefinition.json</a></td><td><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-CodigoPaises.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-CodigoPaises.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-LocalizacionCoreCh.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-LocalizacionCoreCh.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-RecetaEspecialidadCh.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-RecetaEspecialidadCh.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-RecetaMedicamentoCh.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-RecetaMedicamentoCh.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-RecetaOrganizacionCh.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-RecetaOrganizacionCh.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-RecetaPacientCh.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-RecetaPacientCh.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-RecetaPrestadorCh.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-RecetaPrestadorCh.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-COD-Cert-RNPI.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-COD-Cert-RNPI.json</a></td><td><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-COD-ISO-3166-N.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-COD-ISO-3166-N.json</a></td><td><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-CodNacComunas.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-CodNacComunas.json</a></td><td><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-CodProv.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-CodProv.json</a></td><td><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-CodReg.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-CodReg.json</a></td><td><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-DOCType-V2-0203.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-DOCType-V2-0203.json</a></td><td><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-Esp-Tabla-DEIS.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-Esp-Tabla-DEIS.json</a></td><td><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 &quot;World&quot;')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Reference_REF_CantResolve"> </a>
+<h2>Reference_REF_CantResolve</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Location-LocalizacionEjemploCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Location-LocalizacionEjemploCH.json</a></td><td><b>Unable to resolve resource 'http://MINSAL.cl/API/Organizaciones/Id22112'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="PractitionerRole-EspecialidadCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\PractitionerRole-EspecialidadCH.json</a></td><td><b>Unable to resolve resource 'http://minsal/RNPI/Practitioner/3420'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="SLICING_CANNOT_BE_EVALUATED"> </a>
+<h2>SLICING_CANNOT_BE_EVALUATED</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Practitioner-PrestadorCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Practitioner-PrestadorCH.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator ([system]) for slice Practitioner.identifier:RUN in profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPrestadorCh - the discriminator [system] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Practitioner-PrestadorCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Practitioner-PrestadorCH.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator ([system]) for slice Practitioner.identifier:RUN in profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPrestadorCh - the discriminator [system] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Practitioner-PrestadorCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Practitioner-PrestadorCH.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator ([system]) for slice Practitioner.identifier:RNPI in profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPrestadorCh - the discriminator [system] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Practitioner-PrestadorCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Practitioner-PrestadorCH.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator ([system]) for slice Practitioner.identifier:RNPI in profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPrestadorCh - the discriminator [system] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Practitioner-PrestadorCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Practitioner-PrestadorCH.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator ([code.coding.display]) for slice Practitioner.qualification:Cert in profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPrestadorCh - the discriminator [code.coding.display] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Practitioner-PrestadorCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Practitioner-PrestadorCH.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator ([code.coding.display]) for slice Practitioner.qualification:Cert in profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPrestadorCh - the discriminator [code.coding.display] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Practitioner-PrestadorCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Practitioner-PrestadorCH.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator ([code.coding.display]) for slice Practitioner.qualification:Esp in profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPrestadorCh - the discriminator [code.coding.display] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Practitioner-PrestadorCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Practitioner-PrestadorCH.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator ([code.coding.display]) for slice Practitioner.qualification:Esp in profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPrestadorCh - the discriminator [code.coding.display] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TERMINOLOGY_TX_SYSTEM_NO_CODE"> </a>
+<h2>TERMINOLOGY_TX_SYSTEM_NO_CODE</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Location-LocalizacionEjemploCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Location-LocalizacionEjemploCH.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-PacienteRecetaCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteRecetaCH.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-PacienteRecetaCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteRecetaCH.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-PacienteRecetaCHEx.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteRecetaCHEx.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-PacienteRecetaCHEx.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteRecetaCHEx.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-PacienteRecetaCHEx.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteRecetaCHEx.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="PractitionerRole-EspecialidadCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\PractitionerRole-EspecialidadCH.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="PractitionerRole-EspecialidadCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\PractitionerRole-EspecialidadCH.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_NoValid_16"> </a>
+<h2>Terminology_TX_NoValid_16</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Location-LocalizacionEjemploCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Location-LocalizacionEjemploCH.json</a></td><td><b>The value provided ('05109') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodNacComunas (http://minsal.cl/fhir/core//ValueSet/CodNacComunas), and a code is required from this value set) (error message = The code system &quot;https://apis.digital.gob.cl/dpa/comunas/&quot; in the include in &quot;http://minsal.cl/fhir/core//ValueSet/CodNacComunas&quot; is not known; The code system &quot;https://apis.digital.gob.cl/dpa/comunas/&quot; is not known (encountered paired with code = &quot;05109&quot;); The code provided (https://apis.digital.gob.cl/dpa/comunas/#05109) is not valid in the value set 'CodComunas' (from http://tx.fhir.org/r4))</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Location-LocalizacionEjemploCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Location-LocalizacionEjemploCH.json</a></td><td><b>The value provided ('051') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodReg (http://minsal.cl/fhir/core//ValueSet/CodReg), and a code is required from this value set) (error message = The code system &quot;https://apis.digital.gob.cl/dpa/regiones/&quot; in the include in &quot;http://minsal.cl/fhir/core//ValueSet/CodReg&quot; is not known; The code system &quot;https://apis.digital.gob.cl/dpa/regiones/&quot; is not known (encountered paired with code = &quot;051&quot;); The code provided (https://apis.digital.gob.cl/dpa/regiones/#051) is not valid in the value set 'CodRegion' (from http://tx.fhir.org/r4))</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Location-LocalizacionEjemploCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Location-LocalizacionEjemploCH.json</a></td><td><b>The value provided ('152') is not in the value set http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203 (http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203), and a code is required from this value set) (error message = The code system &quot;https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html&quot; in the include in &quot;http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203&quot; is not known; The code system &quot;https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html&quot; is not known (encountered paired with code = &quot;152&quot;); The code provided (https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html#152) is not valid in the value set 'ISO3166COD' (from http://tx.fhir.org/r4))</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Organization-OrganizacionRecetaCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Organization-OrganizacionRecetaCH.json</a></td><td><b>The value provided ('07401') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodNacComunas (http://minsal.cl/fhir/core//ValueSet/CodNacComunas), and a code is required from this value set) (error message = Code System URI 'https://apis.digital.gob.cl/dpa/comunas/' is unknown so the code cannot be validated)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Organization-OrganizacionRecetaCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Organization-OrganizacionRecetaCH.json</a></td><td><b>The value provided ('074') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodProv (http://minsal.cl/fhir/core//ValueSet/CodProv), and a code is required from this value set) (error message = The code system &quot;https://apis.digital.gob.cl/dpa/provincias/&quot; in the include in &quot;http://minsal.cl/fhir/core//ValueSet/CodProv&quot; is not known; The code system &quot;https://apis.digital.gob.cl/dpa/provincias/&quot; is not known (encountered paired with code = &quot;074&quot;); The code provided (https://apis.digital.gob.cl/dpa/provincias/#074) is not valid in the value set 'CodProvincia' (from http://tx.fhir.org/r4))</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Organization-OrganizacionRecetaCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Organization-OrganizacionRecetaCH.json</a></td><td><b>The value provided ('07') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodReg (http://minsal.cl/fhir/core//ValueSet/CodReg), and a code is required from this value set) (error message = Code System URI 'https://apis.digital.gob.cl/dpa/regiones/' is unknown so the code cannot be validated)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Organization-OrganizacionRecetaCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Organization-OrganizacionRecetaCH.json</a></td><td><b>The value provided ('152') is not in the value set http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203 (http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203), and a code is required from this value set) (error message = Code System URI 'https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html' is unknown so the code cannot be validated)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Patient-PacienteRecetaCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteRecetaCH.json</a></td><td><b>The value provided ('5101') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodNacComunas (http://minsal.cl/fhir/core//ValueSet/CodNacComunas), and a code is required from this value set) (error message = Code System URI 'https://apis.digital.gob.cl/dpa/comunas/' is unknown so the code cannot be validated)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Patient-PacienteRecetaCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteRecetaCH.json</a></td><td><b>The value provided ('051') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodProv (http://minsal.cl/fhir/core//ValueSet/CodProv), and a code is required from this value set) (error message = Code System URI 'https://apis.digital.gob.cl/dpa/provincias/' is unknown so the code cannot be validated)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Patient-PacienteRecetaCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteRecetaCH.json</a></td><td><b>The value provided ('5') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodReg (http://minsal.cl/fhir/core//ValueSet/CodReg), and a code is required from this value set) (error message = Code System URI 'https://apis.digital.gob.cl/dpa/regiones/' is unknown so the code cannot be validated)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Patient-PacienteRecetaCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteRecetaCH.json</a></td><td><b>The value provided ('152') is not in the value set http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203 (http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203), and a code is required from this value set) (error message = Code System URI 'https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html' is unknown so the code cannot be validated)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Patient-PacienteRecetaCHEx.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteRecetaCHEx.json</a></td><td><b>The value provided ('15101') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodNacComunas (http://minsal.cl/fhir/core//ValueSet/CodNacComunas), and a code is required from this value set) (error message = Code System URI 'https://apis.digital.gob.cl/dpa/comunas/' is unknown so the code cannot be validated)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Patient-PacienteRecetaCHEx.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteRecetaCHEx.json</a></td><td><b>The value provided ('151') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodProv (http://minsal.cl/fhir/core//ValueSet/CodProv), and a code is required from this value set) (error message = Code System URI 'https://apis.digital.gob.cl/dpa/provincias/' is unknown so the code cannot be validated)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Patient-PacienteRecetaCHEx.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteRecetaCHEx.json</a></td><td><b>The value provided ('15') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodReg (http://minsal.cl/fhir/core//ValueSet/CodReg), and a code is required from this value set) (error message = Code System URI 'https://apis.digital.gob.cl/dpa/regiones/' is unknown so the code cannot be validated)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Patient-PacienteRecetaCHEx.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteRecetaCHEx.json</a></td><td><b>The value provided ('152') is not in the value set http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203 (http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203), and a code is required from this value set) (error message = Code System URI 'https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html' is unknown so the code cannot be validated)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Practitioner-PrestadorCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Practitioner-PrestadorCH.json</a></td><td><b>The value provided ('091001') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodNacComunas (http://minsal.cl/fhir/core//ValueSet/CodNacComunas), and a code is required from this value set) (error message = Code System URI 'https://apis.digital.gob.cl/dpa/comunas/' is unknown so the code cannot be validated)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Practitioner-PrestadorCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Practitioner-PrestadorCH.json</a></td><td><b>The value provided ('091') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodProv (http://minsal.cl/fhir/core//ValueSet/CodProv), and a code is required from this value set) (error message = Code System URI 'https://apis.digital.gob.cl/dpa/provincias/' is unknown so the code cannot be validated)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Practitioner-PrestadorCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Practitioner-PrestadorCH.json</a></td><td><b>The value provided ('09') is not in the value set http://minsal.cl/fhir/core//ValueSet/CodReg (http://minsal.cl/fhir/core//ValueSet/CodReg), and a code is required from this value set) (error message = Code System URI 'https://apis.digital.gob.cl/dpa/regiones/' is unknown so the code cannot be validated)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Practitioner-PrestadorCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Practitioner-PrestadorCH.json</a></td><td><b>The value provided ('152') is not in the value set http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203 (http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203), and a code is required from this value set) (error message = Code System URI 'https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html' is unknown so the code cannot be validated)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_System_NotKnown"> </a>
+<h2>Terminology_TX_System_NotKnown</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Medication-MedicamentoRecetaCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Medication-MedicamentoRecetaCH.json</a></td><td><b>Code System URI 'http://minsal.cl/semantikos/description-id' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_String_WS"> </a>
+<h2>Type_Specific_Checks_DT_String_WS</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="ImplementationGuide-hl7.fhir.uv.CoreCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\ImplementationGuide-hl7.fhir.uv.CoreCH.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Medication-MedicamentoRecetaCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Medication-MedicamentoRecetaCH.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-LocalizacionCoreCh.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-LocalizacionCoreCh.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-LocalizacionCoreCh.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-LocalizacionCoreCh.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Validation_VAL_Profile_MatchMultiple"> </a>
+<h2>Validation_VAL_Profile_MatchMultiple</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Medication-MedicamentoRecetaCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Medication-MedicamentoRecetaCH.json</a></td><td><b>Profile http://minsal.cl/fhir/core//StructureDefinition/RecetaMedicamentoCh, Element matches more than one slice - DescripcionId, ConceptId</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Medication-MedicamentoRecetaCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Medication-MedicamentoRecetaCH.json</a></td><td><b>Profile http://minsal.cl/fhir/core//StructureDefinition/RecetaMedicamentoCh, Element matches more than one slice - DescripcionId, ConceptId</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Patient-PacienteRecetaCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteRecetaCH.json</a></td><td><b>Profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPacientCh, Element matches more than one slice - NombreOficial, NombreSocial</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Patient-PacienteRecetaCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteRecetaCH.json</a></td><td><b>Profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPacientCh, Element matches more than one slice - NombreOficial, NombreSocial</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Patient-PacienteRecetaCHEx.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteRecetaCHEx.json</a></td><td><b>Profile http://minsal.cl/fhir/core//StructureDefinition/RecetaPacientCh, Element matches more than one slice - NombreOficial, NombreSocial</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Validation_VAL_Profile_Maximum"> </a>
+<h2>Validation_VAL_Profile_Maximum</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Medication-MedicamentoRecetaCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Medication-MedicamentoRecetaCH.json</a></td><td><b>Medication.identifier:DescripcionId: max allowed = 1, but found 2 (from http://minsal.cl/fhir/core//StructureDefinition/RecetaMedicamentoCh)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Patient-PacienteRecetaCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteRecetaCH.json</a></td><td><b>Patient.name:NombreOficial: max allowed = 1, but found 2 (from http://minsal.cl/fhir/core//StructureDefinition/RecetaPacientCh)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Validation_VAL_Profile_Minimum"> </a>
+<h2>Validation_VAL_Profile_Minimum</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Medication-MedicamentoRecetaCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Medication-MedicamentoRecetaCH.json</a></td><td><b>Medication.identifier:ConceptId: minimum required = 1, but only found 0 (from http://minsal.cl/fhir/core//StructureDefinition/RecetaMedicamentoCh)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Patient-PacienteRecetaCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteRecetaCH.json</a></td><td><b>Extension.value[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/humanname-mothers-family)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Patient-PacienteRecetaCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteRecetaCH.json</a></td><td><b>Patient.name:NombreOficial.family: minimum required = 1, but only found 0 (from http://minsal.cl/fhir/core//StructureDefinition/RecetaPacientCh)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Patient-PacienteRecetaCHEx.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteRecetaCHEx.json</a></td><td><b>Extension.value[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/humanname-mothers-family)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Practitioner-PrestadorCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Practitioner-PrestadorCH.json</a></td><td><b>Extension.value[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/humanname-mothers-family)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Validation_VAL_Profile_NoCheckMin"> </a>
+<h2>Validation_VAL_Profile_NoCheckMin</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Practitioner-PrestadorCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Practitioner-PrestadorCH.json</a></td><td><b>Practitioner.identifier:RUN: Unable to check minimum required (Practitioner.identifier) due to lack of slicing validation (from http://minsal.cl/fhir/core//StructureDefinition/RecetaPrestadorCh)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_DT_Fixed_Wrong"> </a>
+<h2>_DT_Fixed_Wrong</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Medication-MedicamentoRecetaCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Medication-MedicamentoRecetaCH.json</a></td><td><b>Value is 'http://minsal.cl/semantikos/concept-id' but must be 'http://minsal.cl/semantikos/description-id'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Patient-PacienteRecetaCH.html">C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteRecetaCH.json</a></td><td><b>Value is 'usual' but must be 'official'</b></td>
+   </tr>
+</table>
+</body>
+</html>

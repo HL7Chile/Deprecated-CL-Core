@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "TablaEspecialidades",
+  "id": "Esp-Tabla-DEIS",
+  "title": "Códigos de especialidades según DEIS",
+  "description": "Códigos de especialidades médicas descritas segun DEIS",
+  "version": "0.22",
+  "url": "http://minsal.cl/fhir/core//ValueSet/Esp-Tabla-DEIS",
+  "compose": {
+    "include": [
+      {
+        "system": "http://deis.cl/especialidades"
+      }
+    ]
+  }
+}
