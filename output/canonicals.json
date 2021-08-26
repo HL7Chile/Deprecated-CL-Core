@@ -1,0 +1,121 @@
+[
+  {
+    "id": "Operation",
+    "type": "OperationDefinition",
+    "url": "http://hl7.org/fhir/OperationDefinition/Patient-everything",
+    "version": "0.8 (Ballot Pendiente)",
+    "name": "$everything"
+  },
+  {
+    "id": "OperationDefinition",
+    "type": "OperationDefinition",
+    "url": "http://hl7.org/fhir/OperationDefinition/Patient-match",
+    "version": "0.8 (Ballot Pendiente)",
+    "name": "$match"
+  },
+  {
+    "id": "hl7.fhir.uv.CoreCH",
+    "type": "ImplementationGuide",
+    "url": "http://minsal.cl/fhir/core//ImplementationGuide/hl7.fhir.uv.CoreCH",
+    "version": "0.8 (Ballot Pendiente)",
+    "name": "CoreCL"
+  },
+  {
+    "id": "CodigoPaises",
+    "type": "StructureDefinition",
+    "url": "http://minsal.cl/fhir/core//StructureDefinition/CodigoPaises",
+    "version": "0.8 (Ballot Pendiente)",
+    "name": "PaisOrigen"
+  },
+  {
+    "id": "CoreEspecialidadCl",
+    "type": "StructureDefinition",
+    "url": "http://minsal.cl/fhir/core//StructureDefinition/CoreEspecialidadCl",
+    "version": "0.8 (Ballot Pendiente)",
+    "name": "EspecialidadCL"
+  },
+  {
+    "id": "CoreLocalizacionCl",
+    "type": "StructureDefinition",
+    "url": "http://minsal.cl/fhir/core//StructureDefinition/CoreLocalizacionCl",
+    "version": "0.8 (Ballot Pendiente)",
+    "name": "LocalizacionCL"
+  },
+  {
+    "id": "CoreMedicamentoCl",
+    "type": "StructureDefinition",
+    "url": "http://minsal.cl/fhir/core//StructureDefinition/CoreMedicamentoCl",
+    "version": "0.8 (Ballot Pendiente)",
+    "name": "MedicamentoCL"
+  },
+  {
+    "id": "CoreOrganizacionCl",
+    "type": "StructureDefinition",
+    "url": "http://minsal.cl/fhir/core//StructureDefinition/CoreOrganizacionCl",
+    "version": "0.8 (Ballot Pendiente)",
+    "name": "OrganizacionCL"
+  },
+  {
+    "id": "CorePacienteCl",
+    "type": "StructureDefinition",
+    "url": "http://minsal.cl/fhir/core//StructureDefinition/CorePacienteCl",
+    "version": "0.8 (Ballot Pendiente)",
+    "name": "PacienteCl"
+  },
+  {
+    "id": "CorePrestadorCl",
+    "type": "StructureDefinition",
+    "url": "http://minsal.cl/fhir/core//StructureDefinition/CorePrestadorCl",
+    "version": "0.8 (Ballot Pendiente)",
+    "name": "PrestadorCL"
+  },
+  {
+    "id": "COD-Cert-RNPI",
+    "type": "ValueSet",
+    "url": "http://minsal.cl/fhir/core//ValueSet/COD-Cert-RNPI",
+    "version": "0.8 (Ballot Pendiente)",
+    "name": "TituloID"
+  },
+  {
+    "id": "COD-ISO-3166-N",
+    "type": "ValueSet",
+    "url": "http://minsal.cl/fhir/core//ValueSet/COD-ISO-3166-N",
+    "version": "0.8 (Ballot Pendiente)",
+    "name": "TipoDocumento"
+  },
+  {
+    "id": "CodNacComunas",
+    "type": "ValueSet",
+    "url": "http://minsal.cl/fhir/core//ValueSet/CodNacComunas",
+    "version": "0.8 (Ballot Pendiente)",
+    "name": "CodComunas"
+  },
+  {
+    "id": "CodProv",
+    "type": "ValueSet",
+    "url": "http://minsal.cl/fhir/core//ValueSet/CodProv",
+    "version": "0.8 (Ballot Pendiente)",
+    "name": "CodProvincia"
+  },
+  {
+    "id": "CodReg",
+    "type": "ValueSet",
+    "url": "http://minsal.cl/fhir/core//ValueSet/CodReg",
+    "version": "0.8 (Ballot Pendiente)",
+    "name": "CodRegion"
+  },
+  {
+    "id": "DOCType-V2-0203",
+    "type": "ValueSet",
+    "url": "http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203",
+    "version": "0.8 (Ballot Pendiente)",
+    "name": "ISO3166COD"
+  },
+  {
+    "id": "Esp-Tabla-DEIS",
+    "type": "ValueSet",
+    "url": "http://minsal.cl/fhir/core//ValueSet/Esp-Tabla-DEIS",
+    "version": "0.8 (Ballot Pendiente)",
+    "name": "TablaEspecialidades"
+  }
+]

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="EspecialidadCL"/>
+  <meta>
+    <profile value="http://minsal.cl/fhir/core//StructureDefinition/CoreEspecialidadCl"/>
+  </meta>
+  <text>
+    <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">Especialidad: Dra. Johanna Rojas declara dos especialidades: Médico Cirujano y Médico Cardiólogo</div>
+  </text>
+  <practitioner>
+    <reference value="http://minsal/RNPI/Practitioner/3420"/>
+    <display value="Johanna Rosa"/>
+  </practitioner>
+  <specialty>
+    <coding>
+      <code value="110"/>
+    </coding>
+    <text value="M&#xE9;dico Cirujano"/>
+  </specialty>
+  <specialty>
+    <coding>
+      <code value="25"/>
+    </coding>
+    <text value="M&#xE9;dico Cardi&#xF3;logo"/>
+  </specialty>
+</PractitionerRole>
