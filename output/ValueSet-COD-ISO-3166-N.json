@@ -1,0 +1,33 @@
+{
+  "resourceType": "ValueSet",
+  "id": "COD-ISO-3166-N",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <code>http://hl7.org/fhir/ValueSet/iso3166-1-N</code></li></ul></div>"
+  },
+  "url": "http://minsal.cl/fhir/core//ValueSet/COD-ISO-3166-N",
+  "version": "0.8 (Ballot Pendiente)",
+  "name": "TipoDocumento",
+  "title": "Códigos de Tipos de Documentos",
+  "status": "active",
+  "date": "2021-08-30T14:48:34-04:00",
+  "contact": [
+    {
+      "name": "Pablo Pizzaro",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "ppizarro.delgado@minsal.cl"
+        }
+      ]
+    }
+  ],
+  "description": "Codigos de paises para denominación segun la ISO-3166",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/ValueSet/iso3166-1-N"
+      }
+    ]
+  }
+}

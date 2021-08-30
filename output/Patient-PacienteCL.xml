@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="PacienteCL"/>
+  <meta>
+    <profile value="http://minsal.cl/fhir/core//StructureDefinition/CorePacienteCl"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: NNCH: 15.236.327-k (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Marietta Ximena Rosales (OFFICIAL), Mari </p><p><b>telecom</b>: ph: 943561833(MOBILE), <a href="mailto:mariRosal@mimail.com">mariRosal@mimail.com</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1983-03-24</p><p><b>address</b>: Av Los Chirimoyos, 32, casa 4 5101 5 152 (HOME)</p></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <extension url="http://minsal.cl/fhir/core//StructureDefinition/CodigoPaises">
+        <valueCodeableConcept>
+          <coding>
+            <code value="152"/>
+            <display value="Chile"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <coding>
+        <code value="NNCH"/>
+      </coding>
+    </type>
+    <value value="15.236.327-k"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <use value="official"/>
+    <family value="Rosales">
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-mothers-family"/>
+    </family>
+    <given value="Marietta"/>
+    <given value="Ximena"/>
+  </name>
+  <name>
+    <use value="usual"/>
+    <given value="Mari"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="943561833"/>
+    <use value="mobile"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="mariRosal@mimail.com"/>
+    <use value="work"/>
+  </telecom>
+  <gender value="female"/>
+  <birthDate value="1983-03-24"/>
+  <address>
+    <use value="home"/>
+    <line value="Av Los Chirimoyos, 32, casa 4"/>
+    <city value="5101"/>
+    <district value="051"/>
+    <state value="5"/>
+    <country value="152"/>
+  </address>
+</Patient>

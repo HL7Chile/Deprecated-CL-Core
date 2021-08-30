@@ -1,0 +1,52 @@
+{
+  "resourceType": "Location",
+  "id": "LocalizacionEjemploCL",
+  "meta": {
+    "profile": [
+      "http://minsal.cl/fhir/core//StructureDefinition/CoreLocalizacionCl"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 23144561</p><p><b>status</b>: active</p><p><b>name</b>: Gran Farmacia Gran</p><p><b>type</b>: <span title=\"Codes: \">Farmacia</span></p><p><b>telecom</b>: ph: (+56) 234221678</p><p><b>address</b>: Calle 10 Norte, 1240, Viña del Mar 05109 051 05 152 </p><h3>Positions</h3><table class=\"grid\"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td>42.2565</td><td>-71.550261</td></tr></table><p><b>managingOrganization</b>: <a href=\"http://MINSAL.cl/API/Organizaciones/Id22112\">http://MINSAL.cl/API/Organizaciones/Id22112</a></p></div>"
+  },
+  "identifier": [
+    {
+      "value": "23144561"
+    }
+  ],
+  "status": "active",
+  "name": "Gran Farmacia Gran",
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "PHARM",
+          "display": "Farmacia"
+        }
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "(+56) 234221678"
+    }
+  ],
+  "address": {
+    "line": [
+      "Calle 10 Norte, 1240, Viña del Mar"
+    ],
+    "city": "05109",
+    "state": "051",
+    "postalCode": "05",
+    "country": "152"
+  },
+  "position": {
+    "longitude": 42.2565,
+    "latitude": -71.550261
+  },
+  "managingOrganization": {
+    "reference": "http://MINSAL.cl/API/Organizaciones/Id22112"
+  }
+}

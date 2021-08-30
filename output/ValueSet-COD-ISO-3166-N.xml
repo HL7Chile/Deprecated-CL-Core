@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="COD-ISO-3166-N"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <code>http://hl7.org/fhir/ValueSet/iso3166-1-N</code></li></ul></div>
+  </text>
+  <url value="http://minsal.cl/fhir/core//ValueSet/COD-ISO-3166-N"/>
+  <version value="0.8 (Ballot Pendiente)"/>
+  <name value="TipoDocumento"/>
+  <title value="C&#xF3;digos de Tipos de Documentos"/>
+  <status value="active"/>
+  <date value="2021-08-30T14:48:34-04:00"/>
+  <contact>
+    <name value="Pablo Pizzaro"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ppizarro.delgado@minsal.cl"/>
+    </telecom>
+  </contact>
+  <description value="Codigos de paises para denominaci&#xF3;n segun la ISO-3166"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/ValueSet/iso3166-1-N"/>
+    </include>
+  </compose>
+</ValueSet>

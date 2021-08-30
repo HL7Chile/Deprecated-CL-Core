@@ -1,0 +1,12 @@
+{
+  "url": "http://minsal.cl/fhir/core//ImplementationGuide/hl7.fhir.uv.CoreCH",
+  "name": "CoreCL",
+  "package-id": "hl7.fhir.uv.CoreCH",
+  "ig-ver": "0.8 (Ballot Pendiente)",
+  "date": "Mon, 30 Aug, 2021 14:48:34 -0400",
+  "errs": 345,
+  "warnings": 38,
+  "hints": 4,
+  "version": "4.0.1",
+  "tool": "4.6.0 (3)"
+}
