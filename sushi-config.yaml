@@ -41,6 +41,10 @@ menu:
    Perfiles: perfiles.html
    Extensiones: extensiones.html
    Valuesets: valuesets.html
+  Perfiles: 
+    Prescripción: StructureDefinition-RecetaPrescripcionCl.html
+    Dispensación: StructureDefinition-DispensacionMedicamentoCl.html
+    Receta: StructureDefinition-RecetaCl.html   
   Ejemplos: ejemplos.html
   Descargas: descargas.html
  
