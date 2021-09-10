@@ -18,7 +18,7 @@
   fhir:OperationDefinition.title [ fhir:value "Operacion $match para encuentro del paciente en MPI"];
   fhir:OperationDefinition.status [ fhir:value "active"];
   fhir:OperationDefinition.kind [ fhir:value "operation"];
-  fhir:OperationDefinition.date [ fhir:value "2021-08-30T14:48:34-04:00"^^xsd:dateTime];
+  fhir:OperationDefinition.date [ fhir:value "2021-09-10T11:02:47-03:00"^^xsd:dateTime];
   fhir:OperationDefinition.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Pablo Pizzaro" ];

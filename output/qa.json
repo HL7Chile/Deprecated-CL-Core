@@ -3,7 +3,7 @@
   "name": "CoreCL",
   "package-id": "hl7.fhir.uv.CoreCH",
   "ig-ver": "0.8 (Ballot Pendiente)",
-  "date": "Mon, 30 Aug, 2021 14:48:34 -0400",
+  "date": "Fri, 10 Sep, 2021 11:02:47 -0300",
   "errs": 345,
   "warnings": 38,
   "hints": 4,
