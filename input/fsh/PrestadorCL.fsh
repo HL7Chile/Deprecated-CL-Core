@@ -8,9 +8,9 @@ Description:    "Este PErfil fue creado para cubrir la descripción de un Presta
 * identifier  MS
 
 * identifier 1..2 
-* identifier ^short = "Listados de Id de Prestador Habilitado"
-* identifier ^definition = "Este es el listado de Identificaciones de un Prestador. El reconocimiento en Chile se hace a travez de un Número RUN"
-* identifier ^comment = "Este elemento solo considera un identificador de tipo RUN" 
+* identifier ^short = "Id de los prestadores"
+* identifier ^definition = "Identificador para cada prestador. El identificador principal en Chile es el Registro Único Nacional (RUN), y además, se puede ingresar un ID extra para cada prestador, disponibilizado por Registro Nacional de Prestadores Institucionales (NRPI)"
+* identifier ^comment = "Este elemento permite ingresar dos identificadores, uno de tipo RUN y uno de tipo RNPI" 
 
 
 * identifier ^slicing.discriminator.type = #value

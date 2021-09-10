@@ -3,8 +3,8 @@
 # │  supported properties, see:                                                                    │
 # │  https://fshschool.org/docs/sushi/configuration/#full-configuration                            │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: hl7.fhir.uv.CoreCH
-canonical: http://minsal.cl/fhir/core/
+id: hl7.fhir.cl.CoreCH
+canonical: http://core.hl7chile.cl
 version: 0.8 (Ballot Pendiente)
 name: CoreCL
 
@@ -42,9 +42,12 @@ menu:
    Extensiones: extensiones.html
    Valuesets: valuesets.html
   Perfiles: 
-    Prescripción: StructureDefinition-RecetaPrescripcionCl.html
-    Dispensación: StructureDefinition-DispensacionMedicamentoCl.html
-    Receta: StructureDefinition-RecetaCl.html   
+    Paciente: StructureDefinition-CorePacienteCl.html
+    Prestador: file:///C:/IGs/_FHIR_Core_CH/output/StructureDefinition-CorePrestadorCl.html
+    Especialidad Prestador: file:///C:/IGs/_FHIR_Core_CH/output/StructureDefinition-CoreEspecialidadCl.html
+    Organización: file:///C:/IGs/_FHIR_Core_CH/output/StructureDefinition-CoreOrganizacionCl.html
+    Medicamento: file:///C:/IGs/_FHIR_Core_CH/output/StructureDefinition-CoreMedicamentoCl.html
+    Localización: file:///C:/IGs/_FHIR_Core_CH/output/StructureDefinition-CoreLocalizacionCl.html
   Ejemplos: ejemplos.html
   Descargas: descargas.html
  
