@@ -8,9 +8,9 @@
   <url value="http://minsal.cl/fhir/core//ValueSet/CodProv"/>
   <version value="0.8 (Ballot Pendiente)"/>
   <name value="CodProvincia"/>
-  <title value="C&#xF3;digos de Provincias en Chile"/>
+  <title value="Códigos de Provincias en Chile"/>
   <status value="active"/>
-  <date value="2021-08-30T14:48:34-04:00"/>
+  <date value="2021-09-13T12:21:03-03:00"/>
   <contact>
     <name value="Pablo Pizzaro"/>
     <telecom>
@@ -18,7 +18,7 @@
       <value value="ppizarro.delgado@minsal.cl"/>
     </telecom>
   </contact>
-  <description value="Codigos definidos para identificar una provincia en Chile"/>
+  <description value="Codigos definidos para identificar una provincia en Chile. Estos aún deben ser llevados a un ValueSet"/>
   <compose>
     <include>
       <system value="https://apis.digital.gob.cl/dpa/provincias/"/>

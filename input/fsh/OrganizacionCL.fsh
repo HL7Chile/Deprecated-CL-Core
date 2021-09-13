@@ -1,47 +1,61 @@
 Profile:        OrganizacionCL
 Parent:         Organization
 Id:             CoreOrganizacionCl
-Title:          "Perfil Se destina para determinar rganizaciones para Receta Digital, extensible a Core Nacional"
-Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso de Organzación para cubrir las necesidades de una Organización Prestadora de salud o Dispensadora"
+Title:          "Perfil de Organización de Salud en Chile"
+Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado para también cubrir las necesidades nacionales de un Recurso de Organzación en Salud"
 
-* active ^short = "estado de prestador o dispensador si esta facultado o no (true|false)"
+* active ^short = "Estado de si es una Organización Validada o no (true|false)"
+* active ^definition = "Indicador si una organización sigue vigente en su rol dentro del sistema de salud"
 
 * identifier and identifier.system and identifier.value MS
 * identifier 1..*
-* identifier ^short = "identificador de organizacion de salud (DEIS, RUT, Codigos para cietos tipos de REcintos, etc.)"
+* identifier ^short = "Identificador de organizacion de salud (DEIS, RUT, Codigos para cietos tipos de REcintos, etc.)"
+* identifier ^definition = "Identificador universal de la organización en Chile"
 * identifier.system ^short = "indicador del sistema de indentificación usado pora determinar el valor del identificador"
-* identifier.system ^definition = "Para el caso de Receta System debera contener dos posibles sistemas de identificacion: DEIS url http://minsal.cl/deis/codDeis o el de Farmacia XXXX XXXXX. En base a lo que se usará tiene que ser indicado en este campo)"
+* identifier.system ^definition = "Se debe aun definir un ValueSet para estos casos"
 
 * name and alias MS
 * name ^short = "Nombre Legal de la Organizacion" 
-* alias ^short = "Nombre de Fantasía"  		
+* name ^definition = "Nombre Legal de la Organización"
+* alias ^short = "Nombre de Fantasía" 
+* alias ^definition = "Nombre por lo que  popularmente es conocida la Organización y que no corresponde al nombre legal" 		
 
 * telecom MS
-* telecom ^short = "contactos de la organiazacon" 
-* telecom.use ^short = "uso del contacto descrito (home | work | temp | old | mobile)" 
+* telecom ^short = "Contactos de la organiazación" 
+* telecom ^definition = "Contactos de la organiazación" 
+* telecom.system ^short = "phone | fax | email | pager | url | sms | other  ContactPointSystem (Required)" 
+* telecom.system ^definition = "El tipo de medio de contacto el cual se notifica"
+
 
 
 * address and address.use and address.line and address.city and address.district and address.state and address.country MS
 
+
+
 * address.line ^short = "Calle o avenida, numero y casa o depto"
+* address.line ^definition = "Aquí se escribe toda la dirección completa"
 * address.city ^short = "Campo para Comuna de residencia"
-* address.city from CodComunas (required)
+* address.city ^definition = "Campo para Comuna de residencia. Se usa el valueSet de códigos de comunas definidos a nivel naciona. Este endPoint debe habilitarse "
+//* address.city from CodComunas (required)
 * address.district ^short = "Campo para Provincia de Residencia"
-* address.district from CodProvincia (required)
+* address.district ^definition = "Campo para Provincia de Residencia. Se usa el valueSet de códigos de comunas definidos a nivel naciona. Este endPoint debe habilitarse"
+//* address.district from CodProvincia (required)
 * address.state ^short = "Campo para Provincia de Región"
-* address.state from CodRegion (required)
+* address.state ^definition = "Campo para Provincia de Región. Se usa el valueSet de códigos de comunas definidos a nivel naciona. Este endPoint debe habilitarse"
+//* address.state from CodRegion (required)
 * address.country ^short = "Campo para País de Residencia"
-* address.country from ISO3166COD (required)
+* address.country ^definition = "Campo para País de Residencia"
+* address.country from urn:iso:std:iso:3166 (required)
+
 
 
 Instance : OrganizacionCl
 Title : "Ejemplo Organización Prestadora de Salud"
 InstanceOf : CoreOrganizacionCl
+Usage : #example
 
 	 
-	* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organización: Centro de Salud Familiar Rio Bueno, identificado con código DEIS 1233, de la comuna de Linares dirección Calle Central 33, fono:45325775.  </div>"
-	* text.status = #additional
-
+	
 * active = true
 * identifier.system = "http://minsal.cl/deis/codigodeis"
 * identifier.value = "1233"
@@ -56,9 +70,9 @@ InstanceOf : CoreOrganizacionCl
 	
 
 * address.line = "Calle Central 33"
-* address.city = #07401  //codigo de comuna por binding (linares)
-* address.district = #074  //codigo de comuna por binding (linares)
-* address.state = #07 //codigo por binding region (maule)
+* address.city = "07401"  //codigo de comuna por binding (linares, no validable aun)
+* address.district = "074"  //codigo de comuna por binding (linares, no validable aun)
+* address.state = "07" //codigo por binding region (maule)
 * address.country = #152	
 	
 	

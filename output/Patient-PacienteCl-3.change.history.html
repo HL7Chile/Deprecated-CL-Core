@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<!-- layouts\layout-changehistory.html --><!-- get modelType --><?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>HL7.FHIR.UV.CORECH\Códigos de Países Segun Norma ISO-3166 N - FHIR v4.0.1</title>
+    <title>HL7.FHIR.UV.CORECH\ - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -40,8 +40,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"10.13"}
-    h3,h4,h5,h6{--heading-prefix:"10.13"}</style>
+    <style type="text/css">h2{--heading-prefix:""}
+    h3,h4,h5,h6{--heading-prefix:""}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations 
@@ -51,13 +51,13 @@
     </a>
 </div> -->
 <div id="hl7-nav-left">
-    <a no-external="true" id="header-logo-left" href="http://minsal.cl"><a name="0754eeb1-d79d-4667-9031-d16e8495b5b2">​</a>
+    <a no-external="true" id="header-logo-left" href="http://minsal.cl"><a name="l78">​</a>
         <img src="minsal.png" alt="Visitar sitio web del Ministerio de Salud de Chile" height="80"/>
     </a>
 </div>
 
 <div id="hl7-nav-right">
-    <a no-external="true" id="header-logo-righ" href="http://hl7chile.cl"><a name="75e751fd-fb4c-43ec-b8c9-43267c29dcfe">​</a>
+    <a no-external="true" id="header-logo-righ" href="http://hl7chile.cl"><a name="l86">​</a>
         <img src="hl7chile.png" alt="Visitar HL7 Chile" height="80"/>
     </a>
 </div>
@@ -106,13 +106,13 @@
       <li>
         <a href="artifacts.html">Artefactos General</a>
       </li>
-      <li><a name="7efdaa9f-39ad-4fc3-b4ca-3d42c3d930c9">​</a>
+      <li><a name="l186">​</a>
         <a href="perfiles.html">Perfiles</a>
       </li>
-      <li><a name="35788bc7-266c-4164-89d9-18854cfb9dcc">​</a>
+      <li><a name="l192">​</a>
         <a href="extensiones.html">Extensiones</a>
       </li>
-      <li><a name="b7b9b969-c060-4101-a133-608e5e2acb56">​</a>
+      <li><a name="l198">​</a>
         <a href="valuesets.html">Valuesets</a>
       </li>
     </ul>
@@ -135,7 +135,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Resumen de artefactos</b></a></li><li><b>Códigos de Países Segun Norma ISO-3166 N</b></li>
+          
 
         </ul>
       </div>    <!-- /container -->
@@ -147,7 +147,8 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<div class="col-12">
+
+<div style="counter-reset: section 10" class="col-12">
     <!-- ReleaseHeader --><p id="publish-box">Guía de Implementación Core-CL - Local Development build (v0.8 (Ballot Pendiente)). See the <a href="http://minsal.cl/fhir/core//history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   
 
@@ -158,124 +159,44 @@
 
 <ul class="nav nav-tabs">
 
-  <li class="active">
-    <a href="#">Narrative Content</a>
+  <li>
+    <a href="Patient-PacienteCl-3.html">Narrative Content</a>
   </li>
 
 
   
     <li>
-      <a href="ValueSet-DOCType-V2-0203.xml.html">XML</a>
+      <a href="Patient-PacienteCl-3.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="ValueSet-DOCType-V2-0203.json.html">JSON</a>
+      <a href="Patient-PacienteCl-3.json.html">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="ValueSet-DOCType-V2-0203.ttl.html">TTL</a>
+      <a href="Patient-PacienteCl-3.ttl.html">TTL</a>
     </li>
   
 
 
 
 </ul>
+
 
   <a name="root"> </a>
-  <h2 id="root">ValueSet: Códigos de Países Segun Norma ISO-3166 N</h2>
-  <p>
-    <b>Summary</b>
-  </p>
-  <table class="grid">
-<tbody>
-<tr><td>Defining URL:</td><td>http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203</td></tr>
- <tr><td>Version:</td><td>0.8 (Ballot Pendiente)</td></tr>
- <tr><td>Name:</td><td>ISO3166COD</td></tr>
- <tr><td>Title:</td><td>Códigos de Países Segun Norma ISO-3166 N</td></tr>
- <tr><td>Status:</td><td>Active as of 2021-08-30T14:48:34-04:00</td></tr>
- <tr><td>Definition:</td><td><p>Codigos para especificar tipos de identificadores usando lo definido en Hl7 V2.x</p>
-</td></tr>
- <tr><td>Source Resource:</td><td><a href="ValueSet-DOCType-V2-0203.xml.html">XML</a> / <a href="ValueSet-DOCType-V2-0203.json.html">JSON</a> / <a href="ValueSet-DOCType-V2-0203.ttl.html">Turtle</a></td></tr>
-</tbody></table>
-
-
-  <p>
-    <b>References</b>
-  </p>
-  
-<ul>
- <li><a href="StructureDefinition-CodigoPaises.html">Codigo de Identificación de países</a></li>
- <li><a href="StructureDefinition-CoreLocalizacionCl.html">Perfil de Localización de Objetos e Infraestructura</a></li>
- <li><a href="StructureDefinition-CoreOrganizacionCl.html">Perfil Se destina para determinar rganizaciones para Receta Digital, extensible a Core Nacional</a></li>
- <li><a href="StructureDefinition-CorePacienteCl.html">Perfil Paciente para Receta Digital, extensible a Core Nacional</a></li>
- <li><a href="StructureDefinition-CorePrestadorCl.html">Prestador Core-CL</a></li>
-</ul>
-
-
-    <!-- insert intro if present -->
-  
-
-
-
-  <a name="definition"> </a>
-
-  <!-- Content Logical Definition heading in the fragment -->
-  <h3>Logical Definition (CLD)</h3>
-<div><ul><li>Include all codes defined in <code>https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html</code></li></ul></div>
-
-  <p>&nbsp;</p>
-  <a name="expansion"> </a>
-  <h3 id="expansion">Expansion</h3>
-
-  <p><span style="color: maroon; font-weight: bold" title="Publication Tooling Error: [Unable to expand imported value set: Error from server: Unable to provide support for code system https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html, Error from server: Unable to provide support for code system https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html]">No Expansion for this valueset (Unknown Code System  <!-- [Unable to expand imported value set: Error from server: Unable to provide support for code system https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html, Error from server: Unable to provide support for code system https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html] -->)</span></p>
-
-
-  <hr/>
-  <p>
-    Explanation of the columns that may appear on this page:
-  </p>
-  <table class="grid">
-    <tr>
-      <td>Level</td>
-      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
-          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
-    </tr>
-    <tr>
-      <td>Source</td>
-      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
-    </tr>
-    <tr>
-      <td>Code</td>
-      <td>The code (used as the code in the resource instance)</td>
-    </tr>
-    <tr>
-      <td>Display</td>
-      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
-    </tr>
-    <tr>
-      <td>Definition</td>
-      <td>An explanation of the meaning of the concept</td>
-    </tr>
-    <tr>
-      <td>Comments</td>
-      <td>Additional notes about how to use the code</td>
-    </tr>
-  </table>
-
-    <!-- insert notes if present -->
-  
-
-
+  <h2 id="root">: Patient/PacienteCl-3 - Change History</h2>
+  <p>History of changes for PacienteCl-3 .</p>
 
   
 
 </div>
+
 </div>
   <!-- /inner-wrapper -->
 </div>
@@ -292,6 +213,27 @@
 </script>
 
 <script type="text/javascript">
+    try {
+        var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
+    } catch (exception) {}
+
+    if (!currentTabIndex)
+        currentTabIndex = '0';
+
+    $('#tabs').tabs({
+        active: currentTabIndex,
+        activate: function(event, ui) {
+            var active = $('.selector').tabs('option', 'active');
+            currentTabIndex = ui.newTab.index();
+            document.activeElement.blur();
+            try {
+                sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
+            } catch (exception) {}
+        }
+    });
+</script>
+
+<script type="text/javascript">
     $(document).ready(function() {
         if (window.location.hash != "") {
             $('a[href="' + window.location.hash + '"]').click()
@@ -305,9 +247,9 @@
           <!-- container -->
         
         <div class="inner-wrapper">
-            <p><a name="748a7d39-5b38-4eaa-9141-f31b766050b8">​</a>
+            <p><a name="l355">​</a>
                 IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="ppizarro.delgado@minsal.cl"></a>. Package hl7.fhir.uv.CoreCH#0.8 (Ballot Pendiente)
-                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Mon, Aug 30, 2021 14:48-0400">30-08-2021</span>
+                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Mon, Sep 13, 2021 12:21-0300">13-09-2021</span>
                 <br/>
                 <span style="color: var(--footer-highlight-text-color)"></span>  Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de Contenidos</a> |
 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">Reportes QA</a> 

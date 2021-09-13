@@ -12,7 +12,7 @@
     <valueCodeableConcept>
       <coding>
         <code value="222"/>
-        <display value="El Salvador"/>
+        <display value="Salvadoreño"/>
       </coding>
     </valueCodeableConcept>
   </extension>

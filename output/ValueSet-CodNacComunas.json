@@ -10,7 +10,7 @@
   "name": "CodComunas",
   "title": "Códigos de Comunas en Chile",
   "status": "active",
-  "date": "2021-08-30T14:48:34-04:00",
+  "date": "2021-09-13T12:21:03-03:00",
   "contact": [
     {
       "name": "Pablo Pizzaro",
@@ -22,7 +22,7 @@
       ]
     }
   ],
-  "description": "Codigos definidos para identificar una comuna en Chile",
+  "description": "Codigos definidos para identificar una comuna en Chile. Estos aún deben ser llevados a un ValueSet",
   "compose": {
     "include": [
       {

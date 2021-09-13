@@ -2,7 +2,7 @@ Profile:        PrestadorCL
 Parent:         Practitioner
 Id:             CorePrestadorCl
 Title:          "Prestador Core-CL"
-Description:    "Este PErfil fue creado para cubrir la descripción de un Prestador a nivel Nacional"
+Description:    "Este Perfil fue creado para cubrir la descripción de un Prestador a nivel Nacional"
 
 
 * identifier  MS
@@ -87,8 +87,8 @@ Description:    "Este PErfil fue creado para cubrir la descripción de un Presta
 * address.district from CodProvincia (required)
 * address.state ^short = "Campo para Provincia de Región"
 * address.state from CodRegion (required)
-* address.country ^short = "Campo para País de Residencia"
-* address.country from ISO3166COD (required)
+* address.country ^short = "Campo para País     de Residencia"
+* address.country from urn:iso:std:iso:3166 (required)
 
 * qualification MS
 * qualification ^short = "certificados o títulos del Prestador o Especialidad obtenida"

@@ -17,7 +17,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: NNCH: 15.236.327-k (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Marietta Ximena Rosales (OFFICIAL), Mari </p><p><b>telecom</b>: ph: 943561833(MOBILE), <a href=\"mailto:mariRosal@mimail.com\">mariRosal@mimail.com</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1983-03-24</p><p><b>address</b>: Av Los Chirimoyos, 32, casa 4 5101 5 152 (HOME)</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: NNCH: 15.236.327-k (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Marietta María Ximena Rosales (OFFICIAL), Xime </p><p><b>telecom</b>: ph: 943561833(MOBILE), <a href=\"mailto:mariRosal@mimail.com\">mariRosal@mimail.com</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1983-03-24</p><p><b>address</b>: Av Los Chirimoyos, 32, casa 4 5101 5 152 (HOME)</p></div>"
   ];
   fhir:Patient.identifier [
      fhir:index 0;
@@ -56,14 +56,17 @@
        fhir:value "Marietta";
        fhir:index 0
      ], [
-       fhir:value "Ximena";
+       fhir:value "María";
        fhir:index 1
+     ], [
+       fhir:value "Ximena";
+       fhir:index 2
      ]
   ], [
      fhir:index 1;
      fhir:HumanName.use [ fhir:value "usual" ];
      fhir:HumanName.given [
-       fhir:value "Mari";
+       fhir:value "Xime";
        fhir:index 0
      ]
   ];

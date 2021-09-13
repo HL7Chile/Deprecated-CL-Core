@@ -51,13 +51,13 @@
     </a>
 </div> -->
 <div id="hl7-nav-left">
-    <a no-external="true" id="header-logo-left" href="http://minsal.cl"><a name="958afb25-2b9b-4166-b588-2625c2dc89bb">​</a>
+    <a no-external="true" id="header-logo-left" href="http://minsal.cl"><a name="l76">​</a>
         <img src="minsal.png" alt="Visitar sitio web del Ministerio de Salud de Chile" height="80"/>
     </a>
 </div>
 
 <div id="hl7-nav-right">
-    <a no-external="true" id="header-logo-righ" href="http://hl7chile.cl"><a name="07c47fda-1f5c-4d06-bd26-f41b96f0c380">​</a>
+    <a no-external="true" id="header-logo-righ" href="http://hl7chile.cl"><a name="l84">​</a>
         <img src="hl7chile.png" alt="Visitar HL7 Chile" height="80"/>
     </a>
 </div>
@@ -106,13 +106,13 @@
       <li>
         <a href="artifacts.html">Artefactos General</a>
       </li>
-      <li><a name="15a76d0d-ecb8-4746-8d75-9d389a6924be">​</a>
+      <li><a name="l184">​</a>
         <a href="perfiles.html">Perfiles</a>
       </li>
-      <li><a name="58b32aa7-757b-4879-ab5a-431db62e2a13">​</a>
+      <li><a name="l190">​</a>
         <a href="extensiones.html">Extensiones</a>
       </li>
-      <li><a name="f1f3d292-bbaa-48d5-9f77-eaf056e21c84">​</a>
+      <li><a name="l196">​</a>
         <a href="valuesets.html">Valuesets</a>
       </li>
     </ul>
@@ -162,70 +162,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">Behavior: Operation Definitions</a>
+         <a href="#1">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#2">Structures: Resource Profiles</a>
+         <a href="#2">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#3">Structures: Extension Definitions</a>
+         <a href="#3">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#4">Terminology: Value Sets</a>
-      </li>
-      <li>
-         <a href="#5">Example: Example Instances</a>
+         <a href="#4">Example: Example Instances</a>
       </li>
    </ul>
 </div>
 <div>
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
-   <h3>Behavior: Operation Definitions </h3>
-   <p>
-    <p>These are custom operations that can be supported by and/or invoked by systems conforming to this implementation guide</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="OperationDefinition-Operation.html" title="OperationDefinition/Operation">$everything</a>
-               </td>
-               <td>
-<p>Las principales diferencias entre esta operación y la simple búsqueda en el compartimento del paciente son</p>
-
-<p>•	A menos que el cliente solicite lo contrario, el servidor devuelve todo el conjunto de resultados en un solo paquete (en lugar de utilizar la paginación)</p>
-
-<p>•	Al servidor es responsable de determinar qué recursos debe devolver como recursos incluidos (en lugar de que el cliente especifique cuáles).
-Esto libera al cliente de la necesidad de determinar lo que podría o debería pedir, especialmente en lo que respecta a los recursos incluidos. Los servidores deben considerar la devolución de Provenance y AuditTrail apropiados en los recursos devueltos, aunque éstos no formen parte directamente del compartimento del paciente.</p>
-
-<p>Se supone que el servidor ha identificado y asegurado el contexto adecuadamente, y puede asociar el contexto de autorización con un único paciente, o determinar si el contexto tiene los derechos del paciente nominado, si lo hay, o puede determinar una lista apropiada de pacientes para los que proporcionar datos a partir del contexto de la solicitud. Si no hay un paciente nominado (GET /Patient/$everything) y el contexto no está asociado a un único registro de paciente, la lista real de pacientes es la de todos los pacientes a los que el usuario asociado a la solicitud tiene acceso. Puede tratarse de todos los pacientes de la familia a los que el paciente tiene acceso, o puede tratarse de todos los pacientes a los que un proveedor de atención tiene acceso, o de todos los pacientes del sistema de registros completo. En estos casos, el servidor puede optar por devolver un error en lugar de todos los registros. La especificación de la relación entre el contexto, un usuario y los registros de los pacientes está fuera del alcance de esta especificación (aunque véase la guía de implementación de Smart App Launch.</p>
-
-<p>Cuando esta operación se utiliza para acceder a varios registros de pacientes a la vez, el paquete de retorno podría ser bastante grande; los servidores pueden optar por exigir que dichas solicitudes se realicen de forma asíncrona y se asocien a formatos de datos masivos. Por otra parte, los clientes pueden optar por hojear el conjunto de resultados (o los servidores pueden exigirlo). La paginación de los resultados se realiza de la misma manera que la búsqueda, utilizando el parámetro _count y los enlaces Bundle. Los implementadores deben tener en cuenta que la paginación será más lenta que la simple devolución de todos los resultados a la vez (más tráfico de red, múltiples retrasos de latencia), pero puede ser necesaria para no agotar la memoria disponible leyendo o escribiendo toda la respuesta en un solo paquete. A diferencia de la búsqueda, no hay un orden inherente al usuario para la operación $everything. Los servidores pueden considerar la posibilidad de ordenar los recursos devueltos en orden descendente de la última actualización del registro, pero no están obligados a hacerlo.</p>
-
-<p>El parámetro *since se proporciona para soportar consultas periódicas para obtener información adicional que ha cambiado sobre el paciente desde la última consulta. Esto significa que el parámetro _since se basa en la hora del registro. El valor del parámetro *since debe ajustarse a la hora del servidor. Si se utiliza la respuesta directa, se trata de la marca de tiempo en la cabecera de la respuesta. Si se utiliza la interfaz asíncrona, se trata de la marca de tiempo de la transacción en la respuesta json. Los servidores deben asegurarse de que las marcas de tiempo se gestionen de forma que el cliente no pierda ningún cambio. Los clientes deben ser capaces de obtener la misma respuesta más de una vez en el caso de que la transacción caiga en un límite de tiempo. Los clientes deben asegurarse de que los demás parámetros de consulta sean constantes para garantizar un conjunto coherente de registros al realizar consultas periódicas.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="OperationDefinition-OperationDefinition.html" title="OperationDefinition/OperationDefinition">$match</a>
-               </td>
-               <td>
-<p>Un índice maestro de pacientes (MPI ) es un servicio utilizado para gestionar la identificación de pacientes en un contexto en el que existen múltiples bases de datos de pacientes.</p>
-
-<p>Las aplicaciones sanitarias y el middleware utilizan el MPI para cotejar los pacientes entre las bases de datos y para almacenar los datos de los nuevos pacientes a medida que se encuentran.</p>
-
-<p>Los MPI son aplicaciones muy especializadas, que a menudo se adaptan ampliamente a la combinación particular de pacientes de la institución. Las IPM también pueden funcionar a nivel regional y nacional.Para pedir a un MPI que haga coincidir un paciente, los clientes utilizan la operación $match, que acepta un recurso de paciente que puede estar sólo parcialmente completo.</p>
-
-<p>Los datos proporcionados se interpretan como una entrada MPI y son procesados por un algoritmo de algún tipo que utiliza los datos para determinar las coincidencias más apropiadas en el conjunto de pacientes. Tenga en cuenta que los diferentes algoritmos de emparejamiento MPI tienen diferentes entradas requeridas. La operación genérica $match no especifica ningún algoritmo en particular, ni un conjunto mínimo de información que debe proporcionarse cuando se pide que se realice una operación de coincidencia MPI, pero muchas implementaciones tendrán un conjunto de información mínima, que puede declararse en su definición de la operación $match especificando un perfil en el parámetro del recurso, indicando qué propiedades se requieren en la búsqueda. El recurso del paciente enviado a la operación no tiene que estar completo, ni tiene que pasar la validación (es decir, los campos obligatorios no tienen que ser rellenados), pero sí tiene que ser una instancia válida, ya que se utiliza como los datos de referencia para comparar.</p>
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="2"> </a>
    <h3>Structures: Resource Profiles </h3>
    <p>
     <p>These define constraints on FHIR resources for systems conforming to this implementation guide</p>
@@ -252,7 +204,7 @@ Esto libera al cliente de la necesidad de determinar lo que podría o debería p
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-CoreMedicamentoCl.html" title="StructureDefinition/CoreMedicamentoCl">Perfil Se destina para generar el recuso de medicamento ha ser usado para el manejo de terminologpia de fármacos en farmacos registrados extensible a Core Nacional</a>
+                  <a href="StructureDefinition-CoreMedicamentoCl.html" title="StructureDefinition/CoreMedicamentoCl">Medicamento Core Nacional</a>
                </td>
                <td>
 <p>Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica desde la visión del TFC que se usará para poder manejar farmacos ya registrados, y que deberán ser consultados por los prestadores a la hora de prescribir algno.</p>
@@ -260,15 +212,15 @@ Esto libera al cliente de la necesidad de determinar lo que podría o debería p
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-CoreOrganizacionCl.html" title="StructureDefinition/CoreOrganizacionCl">Perfil Se destina para determinar rganizaciones para Receta Digital, extensible a Core Nacional</a>
+                  <a href="StructureDefinition-CoreOrganizacionCl.html" title="StructureDefinition/CoreOrganizacionCl">Perfil de Organización de Salud en Chile</a>
                </td>
                <td>
-<p>Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso de Organzación para cubrir las necesidades de una Organización Prestadora de salud o Dispensadora</p>
+<p>Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado para también cubrir las necesidades nacionales de un Recurso de Organzación en Salud</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-CorePacienteCl.html" title="StructureDefinition/CorePacienteCl">Perfil Paciente para Receta Digital, extensible a Core Nacional</a>
+                  <a href="StructureDefinition-CorePacienteCl.html" title="StructureDefinition/CorePacienteCl">Perfil Paciente Para Core Nacional</a>
                </td>
                <td>
 <p>Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso Paciente para un Historial Clínico Nacional</p>
@@ -279,13 +231,13 @@ Esto libera al cliente de la necesidad de determinar lo que podría o debería p
                   <a href="StructureDefinition-CorePrestadorCl.html" title="StructureDefinition/CorePrestadorCl">Prestador Core-CL</a>
                </td>
                <td>
-<p>Este PErfil fue creado para cubrir la descripción de un Prestador a nivel Nacional</p>
+<p>Este Perfil fue creado para cubrir la descripción de un Prestador a nivel Nacional</p>
 </td>
             </tr>
          </tbody>
       </table>
    </p>
-   <a name="3"> </a>
+   <a name="2"> </a>
    <h3>Structures: Extension Definitions </h3>
    <p>
     <p>These define constraints on FHIR data types for systems conforming to this implementation guide</p>
@@ -305,7 +257,7 @@ Esto libera al cliente de la necesidad de determinar lo que podría o debería p
          </tbody>
       </table>
    </p>
-   <a name="4"> </a>
+   <a name="3"> </a>
    <h3>Terminology: Value Sets </h3>
    <p>
     <p>These define sets of codes used by systems conforming to this implementation guide</p>
@@ -319,7 +271,7 @@ Esto libera al cliente de la necesidad de determinar lo que podría o debería p
                   <a href="ValueSet-CodNacComunas.html" title="ValueSet/CodNacComunas">Códigos de Comunas en Chile</a>
                </td>
                <td>
-<p>Codigos definidos para identificar una comuna en Chile</p>
+<p>Codigos definidos para identificar una comuna en Chile. Estos aún deben ser llevados a un ValueSet</p>
 </td>
             </tr>
             <tr>
@@ -327,23 +279,15 @@ Esto libera al cliente de la necesidad de determinar lo que podría o debería p
                   <a href="ValueSet-CodProv.html" title="ValueSet/CodProv">Códigos de Provincias en Chile</a>
                </td>
                <td>
-<p>Codigos definidos para identificar una provincia en Chile</p>
+<p>Codigos definidos para identificar una provincia en Chile. Estos aún deben ser llevados a un ValueSet</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-CodReg.html" title="ValueSet/CodReg">Códigos de Regiones en Chile</a>
+                  <a href="ValueSet-CodReg.html" title="ValueSet/CodReg">Códigos de Regiones en ChileEstos aún deben ser llevados a un ValueSet</a>
                </td>
                <td>
 <p>Codigos definidos para identificar una comuna en Chile</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-DOCType-V2-0203.html" title="ValueSet/DOCType-V2-0203">Códigos de Países Segun Norma ISO-3166 N</a>
-               </td>
-               <td>
-<p>Codigos para especificar tipos de identificadores usando lo definido en Hl7 V2.x</p>
 </td>
             </tr>
             <tr>
@@ -352,14 +296,6 @@ Esto libera al cliente de la necesidad de determinar lo que podría o debería p
                </td>
                <td>
 <p>Códigos de especialidades médicas descritas segun DEIS</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-COD-ISO-3166-N.html" title="ValueSet/COD-ISO-3166-N">Códigos de Tipos de Documentos</a>
-               </td>
-               <td>
-<p>Codigos de paises para denominación segun la ISO-3166</p>
 </td>
             </tr>
             <tr>
@@ -373,7 +309,7 @@ Esto libera al cliente de la necesidad de determinar lo que podría o debería p
          </tbody>
       </table>
    </p>
-   <a name="5"> </a>
+   <a name="4"> </a>
    <h3>Example: Example Instances </h3>
    <p>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
@@ -399,17 +335,27 @@ Esto libera al cliente de la necesidad de determinar lo que podría o debería p
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="Medication-MedicamentoCl-2.html" title="Medication/MedicamentoCl-2">Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="Organization-OrganizacionCl.html" title="Organization/OrganizacionCl">Ejemplo Organización Prestadora de Salud</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Patient-PacienteCL.html" title="Patient/PacienteCL">Ejemplo de Recurso Paciente para Historia Clínica</a>
+                  <a href="Patient-PacienteCL.html" title="Patient/PacienteCL">Ejemplo de Recurso Paciente Nacional</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Patient-PacienteCL2.html" title="Patient/PacienteCL2">Ejemplo de Recurso Paciente Extranjero</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-PacienteCl-3.html" title="Patient/PacienteCl-3">Paciente Nacional, con datos actualizados, declarando nacionalidad</a>
                </td>
             </tr>
             <tr>
@@ -452,9 +398,9 @@ Esto libera al cliente de la necesidad de determinar lo que podría o debería p
           <!-- container -->
         
         <div class="inner-wrapper">
-            <p><a name="656e4390-e871-4cdc-aca8-2e8f9ba83121">​</a>
+            <p><a name="l721">​</a>
                 IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="ppizarro.delgado@minsal.cl"></a>. Package hl7.fhir.uv.CoreCH#0.8 (Ballot Pendiente)
-                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Mon, Aug 30, 2021 14:48-0400">30-08-2021</span>
+                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Mon, Sep 13, 2021 12:21-0300">13-09-2021</span>
                 <br/>
                 <span style="color: var(--footer-highlight-text-color)"></span>  Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de Contenidos</a> |
 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">Reportes QA</a> 

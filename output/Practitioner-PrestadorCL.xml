@@ -52,7 +52,7 @@
       <coding>
         <system value="https://api.minsal.cl/v1/catalogos/profesiones/"/>
         <code value="2112"/>
-        <display value="Certificado Profesional M&#xE9;dico Cirujano"/>
+        <display value="Certificado Profesional Médico Cirujano"/>
       </coding>
     </code>
   </qualification>
@@ -61,7 +61,7 @@
       <coding>
         <system value="https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/"/>
         <code value="122"/>
-        <display value="Cardi&#xF3;logia"/>
+        <display value="Cardiólogia"/>
       </coding>
     </code>
   </qualification>

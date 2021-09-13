@@ -1,19 +1,5 @@
 [
   {
-    "id": "Operation",
-    "type": "OperationDefinition",
-    "url": "http://hl7.org/fhir/OperationDefinition/Patient-everything",
-    "version": "0.8 (Ballot Pendiente)",
-    "name": "$everything"
-  },
-  {
-    "id": "OperationDefinition",
-    "type": "OperationDefinition",
-    "url": "http://hl7.org/fhir/OperationDefinition/Patient-match",
-    "version": "0.8 (Ballot Pendiente)",
-    "name": "$match"
-  },
-  {
     "id": "hl7.fhir.uv.CoreCH",
     "type": "ImplementationGuide",
     "url": "http://minsal.cl/fhir/core//ImplementationGuide/hl7.fhir.uv.CoreCH",
@@ -77,13 +63,6 @@
     "name": "TituloID"
   },
   {
-    "id": "COD-ISO-3166-N",
-    "type": "ValueSet",
-    "url": "http://minsal.cl/fhir/core//ValueSet/COD-ISO-3166-N",
-    "version": "0.8 (Ballot Pendiente)",
-    "name": "TipoDocumento"
-  },
-  {
     "id": "CodNacComunas",
     "type": "ValueSet",
     "url": "http://minsal.cl/fhir/core//ValueSet/CodNacComunas",
@@ -103,13 +82,6 @@
     "url": "http://minsal.cl/fhir/core//ValueSet/CodReg",
     "version": "0.8 (Ballot Pendiente)",
     "name": "CodRegion"
-  },
-  {
-    "id": "DOCType-V2-0203",
-    "type": "ValueSet",
-    "url": "http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203",
-    "version": "0.8 (Ballot Pendiente)",
-    "name": "ISO3166COD"
   },
   {
     "id": "Esp-Tabla-DEIS",

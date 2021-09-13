@@ -8,9 +8,9 @@
   <url value="http://minsal.cl/fhir/core//ValueSet/CodReg"/>
   <version value="0.8 (Ballot Pendiente)"/>
   <name value="CodRegion"/>
-  <title value="C&#xF3;digos de Regiones en Chile"/>
+  <title value="Códigos de Regiones en ChileEstos aún deben ser llevados a un ValueSet"/>
   <status value="active"/>
-  <date value="2021-08-30T14:48:34-04:00"/>
+  <date value="2021-09-13T12:21:03-03:00"/>
   <contact>
     <name value="Pablo Pizzaro"/>
     <telecom>

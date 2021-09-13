@@ -22,7 +22,7 @@
   <name value="EspecialidadCL"/>
   <title value="Perfil Se destina para determinar la especialidad del Prescriptor para Receta Digital, extensible a Core Nacional"/>
   <status value="active"/>
-  <date value="2021-08-30T14:48:34-04:00"/>
+  <date value="2021-09-13T12:21:03-03:00"/>
   <contact>
     <name value="Pablo Pizzaro"/>
     <telecom>
@@ -30,7 +30,7 @@
       <value value="ppizarro.delgado@minsal.cl"/>
     </telecom>
   </contact>
-  <description value="Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electr&#xF3;nica. Sin embargo, se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso de Especialidad M&#xE9;dica para la denominaci&#xF3;n de Prescriptor en Chile"/>
+  <description value="Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso de Especialidad Médica para la denominación de Prescriptor en Chile"/>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="v2"/>
@@ -620,7 +620,7 @@
     <element id="PractitionerRole.practitioner.reference">
       <path value="PractitionerRole.practitioner.reference"/>
       <short value="refrencia al uri del recurso Practitioner referenciado"/>
-      <definition value="Reference debe contener la identificaci&#xF3;n l&#xF3;gica del recurso al cual se le vinculan las especialidad. Comunmente es una URI"/>
+      <definition value="Reference debe contener la identificación lógica del recurso al cual se le vinculan las especialidad. Comunmente es una URI"/>
       <comment value="Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure &quot;/[type]/[id]&quot; then it should be assumed that the reference is to a FHIR RESTful server."/>
       <min value="0"/>
       <max value="1"/>
@@ -829,8 +829,8 @@
     </element>
     <element id="PractitionerRole.specialty">
       <path value="PractitionerRole.specialty"/>
-      <short value="definici&#xF3;n de la especialidad m&#xE9;dica seg&#xFA;n DEIS"/>
-      <definition value="definici&#xF3;n de la especialidad m&#xE9;dica seg&#xFA;n DEIS, en el decreto correspondiete. la tabla sigue siendo extensible ante futuros elementos agregados a esta"/>
+      <short value="definición de la especialidad médica según DEIS"/>
+      <definition value="definición de la especialidad médica según DEIS, en el decreto correspondiete. la tabla sigue siendo extensible ante futuros elementos agregados a esta"/>
       <min value="1"/>
       <max value="*"/>
       <base>
@@ -1509,7 +1509,7 @@
     <element id="PractitionerRole.practitioner.reference">
       <path value="PractitionerRole.practitioner.reference"/>
       <short value="refrencia al uri del recurso Practitioner referenciado"/>
-      <definition value="Reference debe contener la identificaci&#xF3;n l&#xF3;gica del recurso al cual se le vinculan las especialidad. Comunmente es una URI"/>
+      <definition value="Reference debe contener la identificación lógica del recurso al cual se le vinculan las especialidad. Comunmente es una URI"/>
       <mustSupport value="true"/>
     </element>
     <element id="PractitionerRole.practitioner.display">
@@ -1519,8 +1519,8 @@
     </element>
     <element id="PractitionerRole.specialty">
       <path value="PractitionerRole.specialty"/>
-      <short value="definici&#xF3;n de la especialidad m&#xE9;dica seg&#xFA;n DEIS"/>
-      <definition value="definici&#xF3;n de la especialidad m&#xE9;dica seg&#xFA;n DEIS, en el decreto correspondiete. la tabla sigue siendo extensible ante futuros elementos agregados a esta"/>
+      <short value="definición de la especialidad médica según DEIS"/>
+      <definition value="definición de la especialidad médica según DEIS, en el decreto correspondiete. la tabla sigue siendo extensible ante futuros elementos agregados a esta"/>
       <min value="1"/>
       <mustSupport value="true"/>
       <binding>

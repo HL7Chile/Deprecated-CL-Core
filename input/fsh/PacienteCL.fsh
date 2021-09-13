@@ -1,33 +1,42 @@
 Profile:        PacienteCl
 Parent:         Patient
 Id:             CorePacienteCl
-Title:          "Perfil Paciente para Receta Digital, extensible a Core Nacional"
+Title:          "Perfil Paciente Para Core Nacional"
 Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso Paciente para un Historial Clínico Nacional"
 
 * extension contains http://hl7.org/fhir/StructureDefinition/patient-nationality named nationality 0..
 * extension ^short = "Extensión de Nacionalidad para pacientes extranjeros"
 * extension ^definition = "para hacer uso de esta extensión se debe agregar el path: extension.url = ´nationality´"
-* extension.valueCodeableConcept.coding.system = "http://hl7.org/fhir/ValueSet/iso3166-1-N"
+* extension.valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
 * extension.valueCodeableConcept.coding.system ^short = "El sistema de códigos queda definido en la norma ISO3166-1-N"
+* extension.valueCodeableConcept.coding.system ^definition = "El sistema de códigos queda definido en la norma ISO3166-1-N, en donde el código sería el numero correspondiente designado para el país"
 * extension MS
 
 
 * identifier  and identifier.use   and identifier.type and identifier.extension  MS
 
-* identifier ^short = "Listados de Id de Paciente"
+* identifier ^short = "Listados de Id de Paciente. De poseer una CI con RUN vigente, este DEBE ser ingresado"
 * identifier ^definition = "Este es el listado de Identificaciones de un paciente. Se procura como R2 el RUN, pero en caso de no existir ese identificador se debe ocupar otro nacional u otro otorgado por país extranjero"
+* identifier ^comment = "En caso de que el paciente posea una CI con número RUN válido, este debe ser ingresado como identificador, independiente de que tenga otros identificadores, los cuales también pueden ser ingresados. La identificación implica el ingreso del tipo de documento, el país de origen de ese documento y ev valor del identificador"
 
 * identifier 1..* 
-* identifier.use ^short = "este es el propósito del identificador"
+* identifier.use ^short = "usual | official | temp | secondary | old (If known)"
 * identifier.use ^definition = "Se definirá este uso siempre como ´official´ debido a que cualquier ID presentado para motivos de este perfil deb ser de este tipo"
 * identifier.use = #official 
+* identifier.use ^comment = "Se definirá como official pues en una primera etapa solo se considerarán los identidicadores en esa categoría. Para una segunda etapa se abrirá este elemento para cualquier clase de identificador" 
 
 
 * identifier.type ^short = "Tipo de documento de Id (Extensible)"
-* identifier.type ^definition = "Se define como tipo de docunento de Id aquel definido en el Sistema de Codificación V2-0203 de Hl7. Este sistema es extensible"
-* identifier.type.coding.system from TipoDocumento (required)
+* identifier.type ^definition = "Se define como tipo de docunento de Id, aquel definido en el Sistema de Codificación V2-0203 de Hl7. Este sistema es extensible"
+* identifier.type.coding.system = "https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html"
+* identifier.type.coding.system ^short = "Sistema de identificación de tipos de documentos"
+* identifier.type.coding.system ^definition = "Sistema mediante el cual se obtienen los códigos para un determinado tipo de documento"
+* identifier.type.coding.system ^comment = "En la URL del sistema se describe el set de códigos. Por ejemplo si se desea usar Cédula de identidad el código es NNxxx en donde xxx corresponde al identificador del país según la norma iso3166-1-N. Dado lo anterior si fuera Chile, el tipo de documento sería NN152"
 * identifier.type.coding.code ^short = "Código de Tipo de Documento"
 * identifier.type.extension ^short = "País de Origen del Documento de Id" 
+* identifier.type.coding.code ^definition = "Código de Tipo de Documento"
+
+* identifier.type.extension ^definition = "Se usa esta extensión para agregarle al tipo de documento el país de origen de este" 
 * identifier.type.extension contains PaisOrigen named paises 1..1   
 
 
@@ -35,50 +44,79 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * name ^slicing.discriminator.type = #type
 * name ^slicing.discriminator.path = "use"
 * name ^slicing.rules = #open
-* name ^slicing.description = "Slice defindos en base a el elemento use"
+* name ^slicing.description = "Este slice se genera para diferenciar el nombre registrado Versus el nombre social"
 * name contains NombreOficial 1..1 MS and NombreSocial 0..1 MS
 
+* name ^short = "Nombres y Apellidos del Paciente considerando, según el caso: 1er Nombre, Nombres, 1er Apellido y 2o Apellido"
+* name ^definition = "Nombre del Paciente considerando, según el caso: 1er Nombre, Nombres, 1er Apellido y 2o Apellido"
+
+* name[NombreOficial] ^short = "Determinación del nombre registrado oficialmente del Paciente"
+* name[NombreOficial] ^definition = "Determinación del nombre registrado oficialmente del Paciente"
 * name[NombreOficial].use ^short = "uso del nombre del paciente"
-* name[NombreOficial].use ^definition = "este slice corresponde al nombre registrado al momento de nacer, por lo que se fuerza el valor official"
-* name[NombreOficial].use = #official  //fixed value
+* name[NombreOficial].use ^definition = "este slice corresponde al nombre registrado al momento de nacer, por lo que se fuerza el valor ´official´"
+* name[NombreOficial].use ^comment = "Para ser considerado como el slice determinado para el uso de nombre completo, el use DEBE ser de valor de código ´official´"
 * name[NombreOficial].family ^short = "1er Apellido"
 * name[NombreOficial].family ^definition = "Se define el primer apellido registrado al momento de nacer o aquel que se ha inscrito legalmente en el Registro Civil"
 * name[NombreOficial].family 1..1
 * name[NombreOficial].family.extension contains http://hl7.org/fhir/StructureDefinition/humanname-mothers-family named mothers-family 0..1
 * name[NombreOficial].family.extension ^short = "Extensión para 2o apellido"
+* name[NombreOficial].family.extension ^definition = "Extensión para la declaracion de un segundo apellido"
 * name[NombreOficial].given 1..
+* name[NombreOficial].given ^short = "Primer nombre y nombres del Paciente"
+* name[NombreOficial].given ^definition = "Todos los nombres de los pacientes no necesariamente solo el Primer Nombre"
 
+* name[NombreSocial] ^short = "Nombre con el cual se identifica al paciente sin ser este oficial. Se especifica slo en el uso del nombre"
+* name[NombreSocial] ^definition = "Nombre con el cual se identifica al paciente sin ser este oficial. Se especifica slo en el uso del nombre"
 * name[NombreSocial] ^short = "nombre recurrente que usa el paciente"
-* name[NombreSocial].use = #usual
 * name[NombreSocial].use ^short = "uso que se le da al nombre"
 * name[NombreSocial].use ^definition = "Este uso especifico se enfoca a la definición de un nombre social. Es por esta razón que el uso se fuerza a usual"
+* name[NombreSocial].use ^comment = "Para ser considerado como el slice determinado para el uso de nombre social, el use DEBE ser de valor de código ´usual´"
 * name[NombreSocial].text 0..0  
 * name[NombreSocial].family 0..0
 * name[NombreSocial].given 0..1
 * name[NombreSocial].given ^short = "Nombre Social"
+* name[NombreSocial].given ^definition = "Nombre Social"
 * name[NombreSocial].prefix 0..0
 * name[NombreSocial].suffix 0..0
 * name[NombreSocial].period 0..0
  
+ 
 * telecom and gender and birthDate  MS
-* telecom.use ^short = "uso del contacto descrito" 
-* gender 1..1
-* gender ^short = "sexo de nacimiento Registrado"
-* birthDate 1..1
+* telecom ^short = "Detalles de contacto del Paciente"
+* telecom ^definition = "Detalles del contacto de un paciente comunmente el o los mas usados (Ej: Teléfono fijo, móvil, email, etc.)"
+* telecom.use ^short = "home | work | temp | old | mobile (requerido)" 
+* telecom.use ^definition = "Propósito para el contacto que se ha definido" 
+* telecom.system ^short = "phone | fax | email | pager | url | sms | other (requerido)"
+* telecom.system ^definition = "Forma de telecomunicación para el punto de contacto: qué sistema de comunicación se requiere para hacer uso del contacto."
+* telecom.value ^short = "Dato del contato del paciente descrito"
+* telecom.value ^definition = "Valor del contacto como por ejemplo el numero de telefono fijo o de móvil o el email del Paciente"
 
+* gender 1..1
+* gender ^short = "Sexo de nacimiento Registrado, male | female | other | unknown (requerido)"
+* gender ^definition = "Sexo de nacimiento Registrado"
+
+* birthDate 1..1
+* birthDate ^short = "Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD"
+* birthDate ^definition = "Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD (Ej: 1996-08-21)"
 
 * address and address.use and address.line and address.city and address.district and address.state and address.country MS
 * address.use 1..1
 * address.use ^short = "Definición del tipo de domicilio home | work | temp | old (requerido)"
+* address.use ^definition = "Se especifica el tipo de dirección notificada. Esto debe ser segun los códigos definidos por HL7 FHIR"
 * address.line ^short = "Calle o avenida, numero y casa o depto"
+* address.line ^definition = "Aquí se escribe toda la dirección completa"
 * address.city ^short = "Campo para Comuna de residencia"
+* address.city ^definition = "Campo para Comuna de residencia. Se usa el valueSet de códigos de comunas definidos a nivel naciona. Este endPoint debe habilitarse "
 * address.city from CodComunas (required)
 * address.district ^short = "Campo para Provincia de Residencia"
+* address.district ^definition = "Campo para Provincia de Residencia. Se usa el valueSet de códigos de comunas definidos a nivel naciona. Este endPoint debe habilitarse"
 * address.district from CodProvincia (required)
 * address.state ^short = "Campo para Provincia de Región"
+* address.state ^definition = "Campo para Provincia de Región. Se usa el valueSet de códigos de comunas definidos a nivel naciona. Este endPoint debe habilitarse"
 * address.state from CodRegion (required)
 * address.country ^short = "Campo para País de Residencia"
-* address.country from ISO3166COD (required)
+* address.country ^definition = "Campo para País de Residencia"
+* address.country from urn:iso:std:iso:3166 (required)
 
 
 
@@ -88,51 +126,34 @@ Title:       "Codigo de Identificación de países"
 Description: "Esta extensión incluye códigos de paises de origen"
 * value[x] only CodeableConcept
 * value[x] ^short = "Código de País"
-* valueCodeableConcept from ISO3166COD (extensible)
+* valueCodeableConcept from urn:iso:std:iso:3166 (extensible)
 
 
-
-
-
-
-
-ValueSet:    TipoDocumento
-Title:       "Códigos de Tipos de Documentos"
-Id:          COD-ISO-3166-N
-Description: "Codigos de paises para denominación segun la ISO-3166"
-* codes from system http://hl7.org/fhir/ValueSet/iso3166-1-N     // vamos a tener que cambiar esto la 820 determina otros codigos del 2010
-
-
-
-ValueSet:    ISO3166COD
-Title:       "Códigos de Países Segun Norma ISO-3166 N"
-Id:          DOCType-V2-0203
-Description: "Codigos para especificar tipos de identificadores usando lo definido en Hl7 V2.x"
-* codes from system https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html     
+   
 
 ValueSet:    CodComunas
 Title:       "Códigos de Comunas en Chile"
 Id:          CodNacComunas
-Description: "Codigos definidos para identificar una comuna en Chile"
+Description: "Codigos definidos para identificar una comuna en Chile. Estos aún deben ser llevados a un ValueSet"
 * codes from system https://apis.digital.gob.cl/dpa/comunas/     // api nacional
 
 ValueSet:    CodProvincia
 Title:       "Códigos de Provincias en Chile"
 Id:          CodProv
-Description: "Codigos definidos para identificar una provincia en Chile"
+Description: "Codigos definidos para identificar una provincia en Chile. Estos aún deben ser llevados a un ValueSet"
 * codes from system https://apis.digital.gob.cl/dpa/provincias/   // api nacional
 
 ValueSet:    CodRegion
-Title:       "Códigos de Regiones en Chile"
+Title:       "Códigos de Regiones en ChileEstos aún deben ser llevados a un ValueSet"
 Id:          CodReg
 Description: "Codigos definidos para identificar una comuna en Chile"
 * codes from system https://apis.digital.gob.cl/dpa/regiones/     // api nacional
 
 
 	Instance : PacienteCL
-	Title : "Ejemplo de Recurso Paciente para Historia Clínica"
+	Title : "Ejemplo de Recurso Paciente Nacional"
 	InstanceOf : CorePacienteCl
-
+	Usage : #example
 
 	 
 	//Identificación por Cédula Chilena
@@ -148,16 +169,16 @@ Description: "Codigos definidos para identificar una comuna en Chile"
 //Nombre Oficial
 * name.use = #official
 * name.family = "Rosales"
-* name.family.extension[mothers-family].value[x] = "Bosh"
+* name.family.extension[mothers-family].value[x] = "Bosh" //uso de la extensión
 * name.given = "Marietta"
-* name.given[1] = "Ximena"
+* name.given[1] = "María"
+* name.given[2] = "Ximena"
 
 //nombre social
 * name[1].use = #usual
-* name[1].given = "Mari"
+* name[1].given = "Xime"
 
 //dos contactos, un celular y un email
-
 * telecom.system = #phone
 * telecom.use = #mobile
 * telecom.value = "943561833"
@@ -182,14 +203,14 @@ Description: "Codigos definidos para identificar una comuna en Chile"
 Instance : PacienteCL2
 Title : "Ejemplo de Recurso Paciente Extranjero"
 InstanceOf : CorePacienteCl
+Usage : #example
 
- 
-
+// Nacionalidad por medio de la extensión
 * extension.url = "nationality"
 * extension.valueCodeableConcept.coding.code = #222
-* extension.valueCodeableConcept.coding.display = "El Salvador"
+* extension.valueCodeableConcept.coding.display = "Salvadoreño"
  
-//Identificación por Pasaporte salvadoreño
+//Identificación por Pasaporte Salvadoreño
 * identifier.use = #official    //obligado
 * identifier.type.extension[PaisOrigen].valueCodeableConcept.coding.code = #222
 * identifier.type.extension[PaisOrigen].valueCodeableConcept.coding.display = "El Salvador"
@@ -230,7 +251,53 @@ InstanceOf : CorePacienteCl
 * address.country = #152
 
  
-Instance : OperationDefinition
+Instance: PacienteCl-3
+InstanceOf: CorePacienteCl
+Title : "Paciente Nacional, con datos actualizados, declarando nacionalidad"
+Usage: #example
+
+* meta.versionId = "2"
+* meta.lastUpdated = "2021-07-13T00:22:41.166Z"
+
+* extension.url = "nationality"
+* extension.valueCodeableConcept = #152 "Chile"
+
+* identifier.use = #official
+* identifier.type.extension[PaisOrigen].valueCodeableConcept.coding.code = #152
+* identifier.type.extension[PaisOrigen].valueCodeableConcept.coding.display = "Chile"
+* identifier.type = #NNCH "DNI"
+* identifier.value = "15602754-5"
+
+* active = true
+* name.use = #official
+* name.family = "PIZARRO"
+
+* name.family.extension[mothers-family].value[x] = "DELGADO" //uso de la extensión
+
+* name.given = "PABLO RODRIGO"
+
+* telecom.system = #email
+* telecom.value = "ppizarro.delgado@minsal.cl"
+* telecom.use = #work
+
+* gender = #male
+* birthDate = "1983-08-04"
+
+* address.use = #home
+* address.city = "13120"
+* address.district = "131"
+* address.state = "13"
+* address.country = "152"
+* deceasedBoolean = false 
+
+
+
+
+
+
+
+
+/* Instance : OperationDefinition
 Title : "$match"
 InstanceOf :  OperationDefinition
 Usage: #definition
@@ -252,7 +319,7 @@ Los datos proporcionados se interpretan como una entrada MPI y son procesados po
 
 * code = #match
 
-* comment = "La respuesta de una consulta ¨mpi¨ es un conjunto que contiene registros de pacientes, ordenados de más a menos probable. Si no hay coincidencias de pacientes, el MPI DEBERÁ devolver un conjunto de búsqueda vacío sin error, pero puede incluir un resultado de la operación con más consejos sobre la selección de pacientes. Todos los registros de pacientes TIENEN una puntuación de búsqueda de 0 a 1, donde 1 es la coincidencia más segura, junto con una extensión ¨match-grade¨ que indica la posición del MPI en la calidad de la coincidencia."
+* comment = "La respuesta de una consulta ¨MPI¨ es un conjunto que contiene registros de pacientes, ordenados de más a menos probable. Si no hay coincidencias de pacientes, el MPI DEBERÁ devolver un conjunto de búsqueda vacío sin error, pero puede incluir un resultado de la operación con más consejos sobre la selección de pacientes. Todos los registros de pacientes TIENEN una puntuación de búsqueda de 0 a 1, donde 1 es la coincidencia más segura, junto con una extensión ¨match-grade¨ que indica la posición del MPI en la calidad de la coincidencia."
 * system = false
 * type = true
 * instance = false
@@ -385,5 +452,5 @@ El parámetro *since se proporciona para soportar consultas periódicas para obt
 * parameter[5].max = "1"
 * parameter[5].documentation = "El tipo de Bundle es searchset"
 * parameter[5].type = #Bundle
-
+*/
 

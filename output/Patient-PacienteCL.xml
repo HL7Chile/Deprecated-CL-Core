@@ -6,7 +6,7 @@
     <profile value="http://minsal.cl/fhir/core//StructureDefinition/CorePacienteCl"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: NNCH: 15.236.327-k (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Marietta Ximena Rosales (OFFICIAL), Mari </p><p><b>telecom</b>: ph: 943561833(MOBILE), <a href="mailto:mariRosal@mimail.com">mariRosal@mimail.com</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1983-03-24</p><p><b>address</b>: Av Los Chirimoyos, 32, casa 4 5101 5 152 (HOME)</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: NNCH: 15.236.327-k (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Marietta María Ximena Rosales (OFFICIAL), Xime </p><p><b>telecom</b>: ph: 943561833(MOBILE), <a href="mailto:mariRosal@mimail.com">mariRosal@mimail.com</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1983-03-24</p><p><b>address</b>: Av Los Chirimoyos, 32, casa 4 5101 5 152 (HOME)</p></div>
   </text>
   <identifier>
     <use value="official"/>
@@ -32,11 +32,12 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/humanname-mothers-family"/>
     </family>
     <given value="Marietta"/>
+    <given value="María"/>
     <given value="Ximena"/>
   </name>
   <name>
     <use value="usual"/>
-    <given value="Mari"/>
+    <given value="Xime"/>
   </name>
   <telecom>
     <system value="phone"/>

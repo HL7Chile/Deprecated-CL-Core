@@ -26,7 +26,7 @@
        fhir:CodeableConcept.coding [
          fhir:index 0;
          fhir:Coding.code [ fhir:value "222" ];
-         fhir:Coding.display [ fhir:value "El Salvador" ]
+         fhir:Coding.display [ fhir:value "Salvadoreño" ]
        ]
      ]
   ];

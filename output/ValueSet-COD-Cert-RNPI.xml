@@ -8,9 +8,9 @@
   <url value="http://minsal.cl/fhir/core//ValueSet/COD-Cert-RNPI"/>
   <version value="0.8 (Ballot Pendiente)"/>
   <name value="TituloID"/>
-  <title value="C&#xF3;digos de tipos de certificaciones segun la Super Intendecia de Salud"/>
+  <title value="Códigos de tipos de certificaciones segun la Super Intendecia de Salud"/>
   <status value="active"/>
-  <date value="2021-08-30T14:48:34-04:00"/>
+  <date value="2021-09-13T12:21:03-03:00"/>
   <contact>
     <name value="Pablo Pizzaro"/>
     <telecom>
@@ -18,7 +18,7 @@
       <value value="ppizarro.delgado@minsal.cl"/>
     </telecom>
   </contact>
-  <description value="tipos de certficados reconocibles por la Super Intendecia como v&#xE1;lidos para ejercer en Chile"/>
+  <description value="tipos de certficados reconocibles por la Super Intendecia como válidos para ejercer en Chile"/>
   <compose>
     <include>
       <system value="https://rnpi.superdesalud.gob.cl/"/>

@@ -16,12 +16,12 @@
     <coding>
       <code value="110"/>
     </coding>
-    <text value="M&#xE9;dico Cirujano"/>
+    <text value="Médico Cirujano"/>
   </specialty>
   <specialty>
     <coding>
       <code value="25"/>
     </coding>
-    <text value="M&#xE9;dico Cardi&#xF3;logo"/>
+    <text value="Médico Cardiólogo"/>
   </specialty>
 </PractitionerRole>

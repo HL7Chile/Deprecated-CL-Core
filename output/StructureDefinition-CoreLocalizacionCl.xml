@@ -20,8 +20,8 @@
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-CoreLocalizacionCl-definitions.html#Location.address.line">line</a><a name="Location.address.line"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Calle o avenida, numero y casa o depto</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-CoreLocalizacionCl-definitions.html#Location.address.city">city</a><a name="Location.address.city"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Campo para Comuna de residencia<br/><span style="font-weight:bold">Binding: </span><a href="ValueSet-CodNacComunas.html">Códigos de Comunas en Chile</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>)</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-CoreLocalizacionCl-definitions.html#Location.address.district">district</a><a name="Location.address.district"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Campo para Provincia de Residencia<br/><span style="font-weight:bold">Binding: </span><a href="ValueSet-CodProv.html">Códigos de Provincias en Chile</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>)</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-CoreLocalizacionCl-definitions.html#Location.address.state">state</a><a name="Location.address.state"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Campo para Provincia de Región<br/><span style="font-weight:bold">Binding: </span><a href="ValueSet-CodReg.html">Códigos de Regiones en Chile</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>)</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-CoreLocalizacionCl-definitions.html#Location.address.country">country</a><a name="Location.address.country"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Campo para País de Residencia<br/><span style="font-weight:bold">Binding: </span><a href="ValueSet-DOCType-V2-0203.html">Códigos de Países Segun Norma ISO-3166 N</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-CoreLocalizacionCl-definitions.html#Location.address.state">state</a><a name="Location.address.state"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Campo para Provincia de Región<br/><span style="font-weight:bold">Binding: </span><a href="ValueSet-CodReg.html">Códigos de Regiones en ChileEstos aún deben ser llevados a un ValueSet</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-CoreLocalizacionCl-definitions.html#Location.address.country">country</a><a name="Location.address.country"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Campo para País de Residencia<br/><span style="font-weight:bold">Binding: </span><a href="urn:iso:std:iso:3166">urn:iso:std:iso:3166</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>)</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-CoreLocalizacionCl-definitions.html#Location.position" title="La localización geográfica absoluta de la Ubicación, expresada utilizando el datum WGS84 (Este es el mismo sistema de coordenadas utilizado en KML)">position</a><a name="Location.position"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Posición física del objeto infraestructura o evento en longitud y latitud</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-CoreLocalizacionCl-definitions.html#Location.position.longitude" title="Longitud. El dominio del valor y la interpretación son los mismos que para el texto del elemento longitud en KML">longitude</a><a name="Location.position.longitude"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#decimal">decimal</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Longitud valor decimal en WGS84 datum (World Geodetic System 1984)</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-CoreLocalizacionCl-definitions.html#Location.position.latitude" title="Latitud. El dominio del valor y la interpretación son los mismos que para el texto del elemento latitud en KML">latitude</a><a name="Location.position.latitude"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#decimal">decimal</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latitud valor decimal en formato WGS84 datum (World Geodetic System 1984)</td></tr>
@@ -40,9 +40,9 @@
   <url value="http://minsal.cl/fhir/core//StructureDefinition/CoreLocalizacionCl"/>
   <version value="0.8 (Ballot Pendiente)"/>
   <name value="LocalizacionCL"/>
-  <title value="Perfil de Localizaci&#xF3;n de Objetos e Infraestructura"/>
+  <title value="Perfil de Localización de Objetos e Infraestructura"/>
   <status value="active"/>
-  <date value="2021-08-30T14:48:34-04:00"/>
+  <date value="2021-09-13T12:21:03-03:00"/>
   <contact>
     <name value="Pablo Pizzaro"/>
     <telecom>
@@ -50,7 +50,7 @@
       <value value="ppizarro.delgado@minsal.cl"/>
     </telecom>
   </contact>
-  <description value="Este perfil determina la ubicaci&#xF3;n especifica para un evento, objeto o Infraestructura espec&#xED;fica. Este perfil permite vinlcular la localizaci&#xF3;n especifica con una organizaci&#xF3;n o espacio f&#xED;sico espec&#xED;fico "/>
+  <description value="Este perfil determina la ubicación especifica para un evento, objeto o Infraestructura específica. Este perfil permite vinlcular la localización especifica con una organización o espacio físico específico "/>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="rim"/>
@@ -392,8 +392,8 @@
     </element>
     <element id="Location.identifier">
       <path value="Location.identifier"/>
-      <short value="Corresponde a un numero de identificaci&#xF3;n dado por el miderfarm"/>
-      <definition value="Es el n&#xFA;mero de identificaci&#xF3;n la localizaci&#xF3;n de cada recinto de dispensaci&#xF3;n de f&#xE1;rmacos en salud"/>
+      <short value="Corresponde a un numero de identificación dado por el miderfarm"/>
+      <definition value="Es el número de identificación la localización de cada recinto de dispensación de fármacos en salud"/>
       <requirements value="Organization label locations in registries, need to keep track of those."/>
       <min value="1"/>
       <max value="1"/>
@@ -633,8 +633,8 @@
     </element>
     <element id="Location.identifier.value">
       <path value="Location.identifier.value"/>
-      <short value="n&#xFA;mero identificador"/>
-      <definition value="valor de identificaci&#xF3;n con el cual se asigna un identificador a este recurso"/>
+      <short value="número identificador"/>
+      <definition value="valor de identificación con el cual se asigna un identificador a este recurso"/>
       <comment value="If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value&#39;s primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](http://hl7.org/fhir/R4/extension-rendered-value.html). Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe."/>
       <min value="0"/>
       <max value="1"/>
@@ -752,7 +752,7 @@
     <element id="Location.status">
       <path value="Location.status"/>
       <short value="&#x9;draft | active | on-hold | revoked | completed | entered-in-error | unknown"/>
-      <definition value="Determina el estado de la localizaci&#xF3;n conforme a los c&#xF3;digos definidos por el est&#xE1;ndar"/>
+      <definition value="Determina el estado de la localización conforme a los códigos definidos por el estándar"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -836,7 +836,7 @@
     <element id="Location.name">
       <path value="Location.name"/>
       <short value="Nombre legal de la localizacion"/>
-      <definition value="Texto libre en el cual se puede colocar el nombre a la localizacion, ya sea del edificil, del la zona gegr&#xE1;fica como un parque o de un sector espec&#xED;fico llamado de cierta forma"/>
+      <definition value="Texto libre en el cual se puede colocar el nombre a la localizacion, ya sea del edificil, del la zona gegráfica como un parque o de un sector específico llamado de cierta forma"/>
       <comment value="If the name of a location changes, consider putting the old name in the alias column so that it can still be located through searches."/>
       <min value="0"/>
       <max value="1"/>
@@ -866,7 +866,7 @@
     </element>
     <element id="Location.alias">
       <path value="Location.alias"/>
-      <short value="Nombre de fantas&#xED;a de la localizaci&#xF3;n"/>
+      <short value="Nombre de fantasía de la localización"/>
       <definition value="Nombre no oficial del sector, que puede ser identificado de manera polular para contar con una referencia de la comunidad"/>
       <comment value="There are no dates associated with the alias/historic names, as this is not intended to track when names were used, but to assist in searching so that older names can still result in identifying the location."/>
       <requirements value="Over time locations and organizations go through many changes and can be known by different names.&#xA;&#xA;For searching knowing previous names that the location was known by can be very useful."/>
@@ -971,8 +971,8 @@
     </element>
     <element id="Location.type">
       <path value="Location.type"/>
-      <short value="tipo de funsi&#xF3;n segun V3 Value SetServiceDeliveryLocationRoleType (Extensible)"/>
-      <definition value="Indica el tipo de funsi&#xF3;n que se ejecuta en la locacalizaci&#xF3;n"/>
+      <short value="tipo de funsión segun V3 Value SetServiceDeliveryLocationRoleType (Extensible)"/>
+      <definition value="Indica el tipo de funsión que se ejecuta en la locacalización"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -1198,8 +1198,8 @@
     </element>
     <element id="Location.type.coding.system">
       <path value="Location.type.coding.system"/>
-      <short value="Sistema de c&#xF3;digos bajo el cual se identifica el tipo de funsi&#xF3;n"/>
-      <definition value="EndPoint al sistema de identificacion para las funsiones de localizaci&#xF3;n"/>
+      <short value="Sistema de códigos bajo el cual se identifica el tipo de funsión"/>
+      <definition value="EndPoint al sistema de identificacion para las funsiones de localización"/>
       <comment value="The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7&#39;s list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously."/>
       <requirements value="Need to be unambiguous about the source of the definition of the symbol."/>
       <min value="0"/>
@@ -1276,8 +1276,8 @@
     </element>
     <element id="Location.type.coding.code">
       <path value="Location.type.coding.code"/>
-      <short value="C&#xF3;digo del tipo"/>
-      <definition value="Valor del C&#xF3;digo"/>
+      <short value="Código del tipo"/>
+      <definition value="Valor del Código"/>
       <requirements value="Need to refer to a particular code in the system."/>
       <min value="0"/>
       <max value="1"/>
@@ -1318,8 +1318,8 @@
         <valueBoolean value="true"/>
       </extension>
       <path value="Location.type.coding.display"/>
-      <short value="Glosa del c&#xF3;digo"/>
-      <definition value="Texto que identifica en glosa al c&#xF3;digo expresado"/>
+      <short value="Glosa del código"/>
+      <definition value="Texto que identifica en glosa al código expresado"/>
       <requirements value="Need to be able to carry a human-readable meaning of the code for readers that do not know  the system."/>
       <min value="0"/>
       <max value="1"/>
@@ -1744,9 +1744,9 @@
     </element>
     <element id="Location.address">
       <path value="Location.address"/>
-      <short value="Direcci&#xF3;n de la Localizaci&#xF3;n"/>
-      <definition value="Direcci&#xF3;n espec&#xED;fica en la cual se encuentra la Localizaci&#xF3;n especificada"/>
-      <comment value="La direcci&#xF3;n debe ser espeficifada conforme a la normativa vigente. Para este caso se especifica el &#xB4;line&#xB4; en el cual en texto libre, se escribe toda la direcci&#xF3;n. Para la especificaci&#xF3;n, se define city = Comuna; district = Provincia; state = Regi&#xF3;n; country = Pa&#xED;s. Todos estos elementos se deben definir seg&#xFA;n los codigos asignados localmente "/>
+      <short value="Dirección de la Localización"/>
+      <definition value="Dirección específica en la cual se encuentra la Localización especificada"/>
+      <comment value="La dirección debe ser espeficifada conforme a la normativa vigente. Para este caso se especifica el ´line´ en el cual en texto libre, se escribe toda la dirección. Para la especificación, se define city = Comuna; district = Provincia; state = Región; country = País. Todos estos elementos se deben definir según los codigos asignados localmente "/>
       <requirements value="If locations can be visited, we need to keep track of their address."/>
       <min value="0"/>
       <max value="1"/>
@@ -2136,7 +2136,7 @@
     </element>
     <element id="Location.address.state">
       <path value="Location.address.state"/>
-      <short value="Campo para Provincia de Regi&#xF3;n"/>
+      <short value="Campo para Provincia de Región"/>
       <definition value="Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (e.g. US 2 letter state codes)."/>
       <alias value="Province"/>
       <alias value="Territory"/>
@@ -2230,7 +2230,7 @@
     </element>
     <element id="Location.address.country">
       <path value="Location.address.country"/>
-      <short value="Campo para Pa&#xED;s de Residencia"/>
+      <short value="Campo para País de Residencia"/>
       <definition value="Country - a nation as commonly understood or generally accepted."/>
       <comment value="ISO 3166 3 letter codes can be used in place of a human readable country name."/>
       <min value="0"/>
@@ -2256,7 +2256,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203"/>
+        <valueSet value="urn:iso:std:iso:3166"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -2364,8 +2364,8 @@
     </element>
     <element id="Location.position">
       <path value="Location.position"/>
-      <short value="Posici&#xF3;n f&#xED;sica del objeto infraestructura o evento en longitud y latitud"/>
-      <definition value="La localizaci&#xF3;n geogr&#xE1;fica absoluta de la Ubicaci&#xF3;n, expresada utilizando el datum WGS84 (Este es el mismo sistema de coordenadas utilizado en KML)"/>
+      <short value="Posición física del objeto infraestructura o evento en longitud y latitud"/>
+      <definition value="La localización geográfica absoluta de la Ubicación, expresada utilizando el datum WGS84 (Este es el mismo sistema de coordenadas utilizado en KML)"/>
       <requirements value="For mobile applications and automated route-finding knowing the exact location of the Location is required."/>
       <min value="0"/>
       <max value="1"/>
@@ -2504,7 +2504,7 @@
     <element id="Location.position.longitude">
       <path value="Location.position.longitude"/>
       <short value="Longitud valor decimal en WGS84 datum (World Geodetic System 1984)"/>
-      <definition value="Longitud. El dominio del valor y la interpretaci&#xF3;n son los mismos que para el texto del elemento longitud en KML"/>
+      <definition value="Longitud. El dominio del valor y la interpretación son los mismos que para el texto del elemento longitud en KML"/>
       <min value="1"/>
       <max value="1"/>
       <base>
@@ -2534,7 +2534,7 @@
     <element id="Location.position.latitude">
       <path value="Location.position.latitude"/>
       <short value="Latitud valor decimal en formato WGS84 datum (World Geodetic System 1984)"/>
-      <definition value="Latitud. El dominio del valor y la interpretaci&#xF3;n son los mismos que para el texto del elemento latitud en KML"/>
+      <definition value="Latitud. El dominio del valor y la interpretación son los mismos que para el texto del elemento latitud en KML"/>
       <min value="1"/>
       <max value="1"/>
       <base>
@@ -2592,9 +2592,9 @@
     </element>
     <element id="Location.managingOrganization">
       <path value="Location.managingOrganization"/>
-      <short value="Organizaci&#xF3;n a la cual la ubicaci&#xF3;n pertenece si es el caso. Esta relaci&#xF3;n se hace en base a una referencia a una Orgaizaci&#xF3;n"/>
-      <definition value="La organizaci&#xF3;n responsable de la provisi&#xF3;n y el mantenimiento de la ubicaci&#xF3;n."/>
-      <comment value="Se puede usar para indicar la organzaci&#xF3;n jer&#xE1;rquica superior"/>
+      <short value="Organización a la cual la ubicación pertenece si es el caso. Esta relación se hace en base a una referencia a una Orgaización"/>
+      <definition value="La organización responsable de la provisión y el mantenimiento de la ubicación."/>
+      <comment value="Se puede usar para indicar la organzación jerárquica superior"/>
       <requirements value="Need to know who manages the location."/>
       <min value="0"/>
       <max value="1"/>
@@ -2697,8 +2697,8 @@
     </element>
     <element id="Location.managingOrganization.reference">
       <path value="Location.managingOrganization.reference"/>
-      <short value="Orgaizaci&#xF3;n de referencia"/>
-      <definition value="La organizaci&#xF3;n responsable de la provisi&#xF3;n y el mantenimiento de la ubicaci&#xF3;n."/>
+      <short value="Orgaización de referencia"/>
+      <definition value="La organización responsable de la provisión y el mantenimiento de la ubicación."/>
       <comment value="Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure &quot;/[type]/[id]&quot; then it should be assumed that the reference is to a FHIR RESTful server."/>
       <min value="0"/>
       <max value="1"/>
@@ -2799,8 +2799,8 @@
         <valueBoolean value="true"/>
       </extension>
       <path value="Location.managingOrganization.display"/>
-      <short value="Nombre en Texto libre de la Orgaizaci&#xF3;n de referencia"/>
-      <definition value="Nombre en Texto libre de la Orgaizaci&#xF3;n de referencia"/>
+      <short value="Nombre en Texto libre de la Orgaización de referencia"/>
+      <definition value="Nombre en Texto libre de la Orgaización de referencia"/>
       <comment value="This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what&#39;s being referenced, not to fully describe it."/>
       <min value="0"/>
       <max value="1"/>
@@ -2863,8 +2863,8 @@
     </element>
     <element id="Location.hoursOfOperation">
       <path value="Location.hoursOfOperation"/>
-      <short value="horas de operaci&#xF3;n disponibles en la cual esta disponble la ubicaci&#xF3;n"/>
-      <definition value="&#xBF;Qu&#xE9; d&#xED;as/horas de la semana suele estar abierto este local?"/>
+      <short value="horas de operación disponibles en la cual esta disponble la ubicación"/>
+      <definition value="¿Qué días/horas de la semana suele estar abierto este local?"/>
       <comment value="This type of information is commonly found published in directories and on websites informing customers when the facility is available.&#xA;&#xA;Specific services within the location may have their own hours which could be shorter (or longer) than the locations hours."/>
       <min value="0"/>
       <max value="*"/>
@@ -3191,57 +3191,57 @@
     </element>
     <element id="Location.identifier">
       <path value="Location.identifier"/>
-      <short value="Corresponde a un numero de identificaci&#xF3;n dado por el miderfarm"/>
-      <definition value="Es el n&#xFA;mero de identificaci&#xF3;n la localizaci&#xF3;n de cada recinto de dispensaci&#xF3;n de f&#xE1;rmacos en salud"/>
+      <short value="Corresponde a un numero de identificación dado por el miderfarm"/>
+      <definition value="Es el número de identificación la localización de cada recinto de dispensación de fármacos en salud"/>
       <min value="1"/>
       <max value="1"/>
       <mustSupport value="true"/>
     </element>
     <element id="Location.identifier.value">
       <path value="Location.identifier.value"/>
-      <short value="n&#xFA;mero identificador"/>
-      <definition value="valor de identificaci&#xF3;n con el cual se asigna un identificador a este recurso"/>
+      <short value="número identificador"/>
+      <definition value="valor de identificación con el cual se asigna un identificador a este recurso"/>
     </element>
     <element id="Location.status">
       <path value="Location.status"/>
       <short value="&#x9;draft | active | on-hold | revoked | completed | entered-in-error | unknown"/>
-      <definition value="Determina el estado de la localizaci&#xF3;n conforme a los c&#xF3;digos definidos por el est&#xE1;ndar"/>
+      <definition value="Determina el estado de la localización conforme a los códigos definidos por el estándar"/>
       <mustSupport value="true"/>
     </element>
     <element id="Location.name">
       <path value="Location.name"/>
       <short value="Nombre legal de la localizacion"/>
-      <definition value="Texto libre en el cual se puede colocar el nombre a la localizacion, ya sea del edificil, del la zona gegr&#xE1;fica como un parque o de un sector espec&#xED;fico llamado de cierta forma"/>
+      <definition value="Texto libre en el cual se puede colocar el nombre a la localizacion, ya sea del edificil, del la zona gegráfica como un parque o de un sector específico llamado de cierta forma"/>
       <mustSupport value="true"/>
     </element>
     <element id="Location.alias">
       <path value="Location.alias"/>
-      <short value="Nombre de fantas&#xED;a de la localizaci&#xF3;n"/>
+      <short value="Nombre de fantasía de la localización"/>
       <definition value="Nombre no oficial del sector, que puede ser identificado de manera polular para contar con una referencia de la comunidad"/>
       <mustSupport value="true"/>
     </element>
     <element id="Location.type">
       <path value="Location.type"/>
-      <short value="tipo de funsi&#xF3;n segun V3 Value SetServiceDeliveryLocationRoleType (Extensible)"/>
-      <definition value="Indica el tipo de funsi&#xF3;n que se ejecuta en la locacalizaci&#xF3;n"/>
+      <short value="tipo de funsión segun V3 Value SetServiceDeliveryLocationRoleType (Extensible)"/>
+      <definition value="Indica el tipo de funsión que se ejecuta en la locacalización"/>
       <mustSupport value="true"/>
     </element>
     <element id="Location.type.coding.system">
       <path value="Location.type.coding.system"/>
-      <short value="Sistema de c&#xF3;digos bajo el cual se identifica el tipo de funsi&#xF3;n"/>
-      <definition value="EndPoint al sistema de identificacion para las funsiones de localizaci&#xF3;n"/>
+      <short value="Sistema de códigos bajo el cual se identifica el tipo de funsión"/>
+      <definition value="EndPoint al sistema de identificacion para las funsiones de localización"/>
       <patternUri value="http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType"/>
     </element>
     <element id="Location.type.coding.code">
       <path value="Location.type.coding.code"/>
-      <short value="C&#xF3;digo del tipo"/>
-      <definition value="Valor del C&#xF3;digo"/>
+      <short value="Código del tipo"/>
+      <definition value="Valor del Código"/>
       <mustSupport value="true"/>
     </element>
     <element id="Location.type.coding.display">
       <path value="Location.type.coding.display"/>
-      <short value="Glosa del c&#xF3;digo"/>
-      <definition value="Texto que identifica en glosa al c&#xF3;digo expresado"/>
+      <short value="Glosa del código"/>
+      <definition value="Texto que identifica en glosa al código expresado"/>
     </element>
     <element id="Location.telecom">
       <path value="Location.telecom"/>
@@ -3254,9 +3254,9 @@
     </element>
     <element id="Location.address">
       <path value="Location.address"/>
-      <short value="Direcci&#xF3;n de la Localizaci&#xF3;n"/>
-      <definition value="Direcci&#xF3;n espec&#xED;fica en la cual se encuentra la Localizaci&#xF3;n especificada"/>
-      <comment value="La direcci&#xF3;n debe ser espeficifada conforme a la normativa vigente. Para este caso se especifica el &#xB4;line&#xB4; en el cual en texto libre, se escribe toda la direcci&#xF3;n. Para la especificaci&#xF3;n, se define city = Comuna; district = Provincia; state = Regi&#xF3;n; country = Pa&#xED;s. Todos estos elementos se deben definir seg&#xFA;n los codigos asignados localmente "/>
+      <short value="Dirección de la Localización"/>
+      <definition value="Dirección específica en la cual se encuentra la Localización especificada"/>
+      <comment value="La dirección debe ser espeficifada conforme a la normativa vigente. Para este caso se especifica el ´line´ en el cual en texto libre, se escribe toda la dirección. Para la especificación, se define city = Comuna; district = Provincia; state = Región; country = País. Todos estos elementos se deben definir según los codigos asignados localmente "/>
       <mustSupport value="true"/>
     </element>
     <element id="Location.address.line">
@@ -3284,7 +3284,7 @@
     </element>
     <element id="Location.address.state">
       <path value="Location.address.state"/>
-      <short value="Campo para Provincia de Regi&#xF3;n"/>
+      <short value="Campo para Provincia de Región"/>
       <mustSupport value="true"/>
       <binding>
         <strength value="required"/>
@@ -3293,51 +3293,51 @@
     </element>
     <element id="Location.address.country">
       <path value="Location.address.country"/>
-      <short value="Campo para Pa&#xED;s de Residencia"/>
+      <short value="Campo para País de Residencia"/>
       <mustSupport value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://minsal.cl/fhir/core//ValueSet/DOCType-V2-0203"/>
+        <valueSet value="urn:iso:std:iso:3166"/>
       </binding>
     </element>
     <element id="Location.position">
       <path value="Location.position"/>
-      <short value="Posici&#xF3;n f&#xED;sica del objeto infraestructura o evento en longitud y latitud"/>
-      <definition value="La localizaci&#xF3;n geogr&#xE1;fica absoluta de la Ubicaci&#xF3;n, expresada utilizando el datum WGS84 (Este es el mismo sistema de coordenadas utilizado en KML)"/>
+      <short value="Posición física del objeto infraestructura o evento en longitud y latitud"/>
+      <definition value="La localización geográfica absoluta de la Ubicación, expresada utilizando el datum WGS84 (Este es el mismo sistema de coordenadas utilizado en KML)"/>
       <mustSupport value="true"/>
     </element>
     <element id="Location.position.longitude">
       <path value="Location.position.longitude"/>
       <short value="Longitud valor decimal en WGS84 datum (World Geodetic System 1984)"/>
-      <definition value="Longitud. El dominio del valor y la interpretaci&#xF3;n son los mismos que para el texto del elemento longitud en KML"/>
+      <definition value="Longitud. El dominio del valor y la interpretación son los mismos que para el texto del elemento longitud en KML"/>
       <mustSupport value="true"/>
     </element>
     <element id="Location.position.latitude">
       <path value="Location.position.latitude"/>
       <short value="Latitud valor decimal en formato WGS84 datum (World Geodetic System 1984)"/>
-      <definition value="Latitud. El dominio del valor y la interpretaci&#xF3;n son los mismos que para el texto del elemento latitud en KML"/>
+      <definition value="Latitud. El dominio del valor y la interpretación son los mismos que para el texto del elemento latitud en KML"/>
       <mustSupport value="true"/>
     </element>
     <element id="Location.managingOrganization">
       <path value="Location.managingOrganization"/>
-      <short value="Organizaci&#xF3;n a la cual la ubicaci&#xF3;n pertenece si es el caso. Esta relaci&#xF3;n se hace en base a una referencia a una Orgaizaci&#xF3;n"/>
-      <definition value="La organizaci&#xF3;n responsable de la provisi&#xF3;n y el mantenimiento de la ubicaci&#xF3;n."/>
-      <comment value="Se puede usar para indicar la organzaci&#xF3;n jer&#xE1;rquica superior"/>
+      <short value="Organización a la cual la ubicación pertenece si es el caso. Esta relación se hace en base a una referencia a una Orgaización"/>
+      <definition value="La organización responsable de la provisión y el mantenimiento de la ubicación."/>
+      <comment value="Se puede usar para indicar la organzación jerárquica superior"/>
     </element>
     <element id="Location.managingOrganization.reference">
       <path value="Location.managingOrganization.reference"/>
-      <short value="Orgaizaci&#xF3;n de referencia"/>
-      <definition value="La organizaci&#xF3;n responsable de la provisi&#xF3;n y el mantenimiento de la ubicaci&#xF3;n."/>
+      <short value="Orgaización de referencia"/>
+      <definition value="La organización responsable de la provisión y el mantenimiento de la ubicación."/>
     </element>
     <element id="Location.managingOrganization.display">
       <path value="Location.managingOrganization.display"/>
-      <short value="Nombre en Texto libre de la Orgaizaci&#xF3;n de referencia"/>
-      <definition value="Nombre en Texto libre de la Orgaizaci&#xF3;n de referencia"/>
+      <short value="Nombre en Texto libre de la Orgaización de referencia"/>
+      <definition value="Nombre en Texto libre de la Orgaización de referencia"/>
     </element>
     <element id="Location.hoursOfOperation">
       <path value="Location.hoursOfOperation"/>
-      <short value="horas de operaci&#xF3;n disponibles en la cual esta disponble la ubicaci&#xF3;n"/>
-      <definition value="&#xBF;Qu&#xE9; d&#xED;as/horas de la semana suele estar abierto este local?"/>
+      <short value="horas de operación disponibles en la cual esta disponble la ubicación"/>
+      <definition value="¿Qué días/horas de la semana suele estar abierto este local?"/>
       <mustSupport value="true"/>
     </element>
   </differential>

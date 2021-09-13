@@ -343,7 +343,7 @@
         "reference": {
           "reference": "StructureDefinition/CoreMedicamentoCl"
         },
-        "name": "Perfil Se destina para generar el recuso de medicamento ha ser usado para el manejo de terminologpia de fármacos en farmacos registrados extensible a Core Nacional",
+        "name": "Medicamento Core Nacional",
         "description": "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica desde la visión del TFC que se usará para poder manejar farmacos ya registrados, y que deberán ser consultados por los prestadores a la hora de prescribir algno.",
         "exampleBoolean": false
       },
@@ -357,8 +357,8 @@
         "reference": {
           "reference": "StructureDefinition/CoreOrganizacionCl"
         },
-        "name": "Perfil Se destina para determinar rganizaciones para Receta Digital, extensible a Core Nacional",
-        "description": "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso de Organzación para cubrir las necesidades de una Organización Prestadora de salud o Dispensadora",
+        "name": "Perfil de Organización de Salud en Chile",
+        "description": "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado para también cubrir las necesidades nacionales de un Recurso de Organzación en Salud",
         "exampleBoolean": false
       },
       {
@@ -371,7 +371,7 @@
         "reference": {
           "reference": "StructureDefinition/CorePacienteCl"
         },
-        "name": "Perfil Paciente para Receta Digital, extensible a Core Nacional",
+        "name": "Perfil Paciente Para Core Nacional",
         "description": "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso Paciente para un Historial Clínico Nacional",
         "exampleBoolean": false
       },
@@ -386,7 +386,7 @@
           "reference": "StructureDefinition/CorePrestadorCl"
         },
         "name": "Prestador Core-CL",
-        "description": "Este PErfil fue creado para cubrir la descripción de un Prestador a nivel Nacional",
+        "description": "Este Perfil fue creado para cubrir la descripción de un Prestador a nivel Nacional",
         "exampleBoolean": false
       },
       {
@@ -414,7 +414,7 @@
           "reference": "ValueSet/CodNacComunas"
         },
         "name": "Códigos de Comunas en Chile",
-        "description": "Codigos definidos para identificar una comuna en Chile",
+        "description": "Codigos definidos para identificar una comuna en Chile. Estos aún deben ser llevados a un ValueSet",
         "exampleBoolean": false
       },
       {
@@ -428,7 +428,7 @@
           "reference": "ValueSet/CodProv"
         },
         "name": "Códigos de Provincias en Chile",
-        "description": "Codigos definidos para identificar una provincia en Chile",
+        "description": "Codigos definidos para identificar una provincia en Chile. Estos aún deben ser llevados a un ValueSet",
         "exampleBoolean": false
       },
       {
@@ -441,22 +441,8 @@
         "reference": {
           "reference": "ValueSet/CodReg"
         },
-        "name": "Códigos de Regiones en Chile",
+        "name": "Códigos de Regiones en ChileEstos aún deben ser llevados a un ValueSet",
         "description": "Codigos definidos para identificar una comuna en Chile",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/DOCType-V2-0203"
-        },
-        "name": "Códigos de Países Segun Norma ISO-3166 N",
-        "description": "Codigos para especificar tipos de identificadores usando lo definido en Hl7 V2.x",
         "exampleBoolean": false
       },
       {
@@ -471,20 +457,6 @@
         },
         "name": "Códigos de especialidades según DEIS",
         "description": "Códigos de especialidades médicas descritas segun DEIS",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/COD-ISO-3166-N"
-        },
-        "name": "Códigos de Tipos de Documentos",
-        "description": "Codigos de paises para denominación segun la ISO-3166",
         "exampleBoolean": false
       },
       {
@@ -544,29 +516,14 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "OperationDefinition"
+            "valueString": "Medication"
           }
         ],
         "reference": {
-          "reference": "OperationDefinition/Operation"
+          "reference": "Medication/MedicamentoCl-2"
         },
-        "name": "$everything",
-        "description": "Las principales diferencias entre esta operación y la simple búsqueda en el compartimento del paciente son\n\n•\tA menos que el cliente solicite lo contrario, el servidor devuelve todo el conjunto de resultados en un solo paquete (en lugar de utilizar la paginación)\n\n•\tAl servidor es responsable de determinar qué recursos debe devolver como recursos incluidos (en lugar de que el cliente especifique cuáles).\nEsto libera al cliente de la necesidad de determinar lo que podría o debería pedir, especialmente en lo que respecta a los recursos incluidos. Los servidores deben considerar la devolución de Provenance y AuditTrail apropiados en los recursos devueltos, aunque éstos no formen parte directamente del compartimento del paciente.\n\nSe supone que el servidor ha identificado y asegurado el contexto adecuadamente, y puede asociar el contexto de autorización con un único paciente, o determinar si el contexto tiene los derechos del paciente nominado, si lo hay, o puede determinar una lista apropiada de pacientes para los que proporcionar datos a partir del contexto de la solicitud. Si no hay un paciente nominado (GET /Patient/$everything) y el contexto no está asociado a un único registro de paciente, la lista real de pacientes es la de todos los pacientes a los que el usuario asociado a la solicitud tiene acceso. Puede tratarse de todos los pacientes de la familia a los que el paciente tiene acceso, o puede tratarse de todos los pacientes a los que un proveedor de atención tiene acceso, o de todos los pacientes del sistema de registros completo. En estos casos, el servidor puede optar por devolver un error en lugar de todos los registros. La especificación de la relación entre el contexto, un usuario y los registros de los pacientes está fuera del alcance de esta especificación (aunque véase la guía de implementación de Smart App Launch.\n\nCuando esta operación se utiliza para acceder a varios registros de pacientes a la vez, el paquete de retorno podría ser bastante grande; los servidores pueden optar por exigir que dichas solicitudes se realicen de forma asíncrona y se asocien a formatos de datos masivos. Por otra parte, los clientes pueden optar por hojear el conjunto de resultados (o los servidores pueden exigirlo). La paginación de los resultados se realiza de la misma manera que la búsqueda, utilizando el parámetro _count y los enlaces Bundle. Los implementadores deben tener en cuenta que la paginación será más lenta que la simple devolución de todos los resultados a la vez (más tráfico de red, múltiples retrasos de latencia), pero puede ser necesaria para no agotar la memoria disponible leyendo o escribiendo toda la respuesta en un solo paquete. A diferencia de la búsqueda, no hay un orden inherente al usuario para la operación $everything. Los servidores pueden considerar la posibilidad de ordenar los recursos devueltos en orden descendente de la última actualización del registro, pero no están obligados a hacerlo.\n\nEl parámetro *since se proporciona para soportar consultas periódicas para obtener información adicional que ha cambiado sobre el paciente desde la última consulta. Esto significa que el parámetro _since se basa en la hora del registro. El valor del parámetro *since debe ajustarse a la hora del servidor. Si se utiliza la respuesta directa, se trata de la marca de tiempo en la cabecera de la respuesta. Si se utiliza la interfaz asíncrona, se trata de la marca de tiempo de la transacción en la respuesta json. Los servidores deben asegurarse de que las marcas de tiempo se gestionen de forma que el cliente no pierda ningún cambio. Los clientes deben ser capaces de obtener la misma respuesta más de una vez en el caso de que la transacción caiga en un límite de tiempo. Los clientes deben asegurarse de que los demás parámetros de consulta sean constantes para garantizar un conjunto coherente de registros al realizar consultas periódicas.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "OperationDefinition"
-          }
-        ],
-        "reference": {
-          "reference": "OperationDefinition/OperationDefinition"
-        },
-        "name": "$match",
-        "description": "Un índice maestro de pacientes (MPI ) es un servicio utilizado para gestionar la identificación de pacientes en un contexto en el que existen múltiples bases de datos de pacientes. \n\nLas aplicaciones sanitarias y el middleware utilizan el MPI para cotejar los pacientes entre las bases de datos y para almacenar los datos de los nuevos pacientes a medida que se encuentran. \n\nLos MPI son aplicaciones muy especializadas, que a menudo se adaptan ampliamente a la combinación particular de pacientes de la institución. Las IPM también pueden funcionar a nivel regional y nacional.Para pedir a un MPI que haga coincidir un paciente, los clientes utilizan la operación $match, que acepta un recurso de paciente que puede estar sólo parcialmente completo. \n\nLos datos proporcionados se interpretan como una entrada MPI y son procesados por un algoritmo de algún tipo que utiliza los datos para determinar las coincidencias más apropiadas en el conjunto de pacientes. Tenga en cuenta que los diferentes algoritmos de emparejamiento MPI tienen diferentes entradas requeridas. La operación genérica $match no especifica ningún algoritmo en particular, ni un conjunto mínimo de información que debe proporcionarse cuando se pide que se realice una operación de coincidencia MPI, pero muchas implementaciones tendrán un conjunto de información mínima, que puede declararse en su definición de la operación $match especificando un perfil en el parámetro del recurso, indicando qué propiedades se requieren en la búsqueda. El recurso del paciente enviado a la operación no tiene que estar completo, ni tiene que pasar la validación (es decir, los campos obligatorios no tienen que ser rellenados), pero sí tiene que ser una instancia válida, ya que se utiliza como los datos de referencia para comparar.",
-        "exampleBoolean": false
+        "name": "Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido",
+        "exampleCanonical": "http://minsal.cl/fhir/core//StructureDefinition/CoreMedicamentoCl"
       },
       {
         "extension": [
@@ -591,7 +548,7 @@
         "reference": {
           "reference": "Patient/PacienteCL"
         },
-        "name": "Ejemplo de Recurso Paciente para Historia Clínica",
+        "name": "Ejemplo de Recurso Paciente Nacional",
         "exampleCanonical": "http://minsal.cl/fhir/core//StructureDefinition/CorePacienteCl"
       },
       {
@@ -605,6 +562,19 @@
           "reference": "Patient/PacienteCL2"
         },
         "name": "Ejemplo de Recurso Paciente Extranjero",
+        "exampleCanonical": "http://minsal.cl/fhir/core//StructureDefinition/CorePacienteCl"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/PacienteCl-3"
+        },
+        "name": "Paciente Nacional, con datos actualizados, declarando nacionalidad",
         "exampleCanonical": "http://minsal.cl/fhir/core//StructureDefinition/CorePacienteCl"
       },
       {

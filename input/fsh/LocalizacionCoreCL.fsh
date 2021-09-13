@@ -53,7 +53,7 @@ Description:    "Este perfil determina la ubicación especifica para un evento, 
 * address.state ^short = "Campo para Provincia de Región"
 * address.state from CodRegion (required)
 * address.country ^short = "Campo para País de Residencia"
-* address.country from ISO3166COD (required)
+* address.country from urn:iso:std:iso:3166 (required)
 
 * position 0..1
 * position and position.longitude and position.latitude MS

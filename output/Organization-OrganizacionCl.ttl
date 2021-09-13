@@ -16,8 +16,8 @@
      ]
   ];
   fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "additional" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Organización: Centro de Salud Familiar Rio Bueno, identificado con código DEIS 1233, de la comuna de Linares dirección Calle Central 33, fono:45325775.</div>"
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1233</p><p><b>active</b>: true</p><p><b>name</b>: Centro de Salud Familiar Rio Bueno de Linares</p><p><b>alias</b>: Rio Bueno CESFAM</p><p><b>telecom</b>: ph: 45325775(WORK)</p><p><b>address</b>: Calle Central 33 07401 07 152 </p></div>"
   ];
   fhir:Organization.identifier [
      fhir:index 0;

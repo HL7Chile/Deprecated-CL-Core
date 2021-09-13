@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>HL7.FHIR.UV.CORECH\$match - FHIR v4.0.1</title>
+    <title>HL7.FHIR.UV.CORECH\Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -40,8 +40,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"10.2"}
-    h3,h4,h5,h6{--heading-prefix:"10.2"}</style>
+    <style type="text/css">h2{--heading-prefix:"10.16"}
+    h3,h4,h5,h6{--heading-prefix:"10.16"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations 
@@ -51,13 +51,13 @@
     </a>
 </div> -->
 <div id="hl7-nav-left">
-    <a no-external="true" id="header-logo-left" href="http://minsal.cl"><a name="434c2de3-6832-4615-aa75-5f6be984cd18">​</a>
+    <a no-external="true" id="header-logo-left" href="http://minsal.cl"><a name="l76">​</a>
         <img src="minsal.png" alt="Visitar sitio web del Ministerio de Salud de Chile" height="80"/>
     </a>
 </div>
 
 <div id="hl7-nav-right">
-    <a no-external="true" id="header-logo-righ" href="http://hl7chile.cl"><a name="c2c84b87-4d16-415b-ab16-697c1dddaf9b">​</a>
+    <a no-external="true" id="header-logo-righ" href="http://hl7chile.cl"><a name="l84">​</a>
         <img src="hl7chile.png" alt="Visitar HL7 Chile" height="80"/>
     </a>
 </div>
@@ -106,13 +106,13 @@
       <li>
         <a href="artifacts.html">Artefactos General</a>
       </li>
-      <li><a name="b0c7ee45-ddcd-4e92-b5ee-a608b6a1d225">​</a>
+      <li><a name="l184">​</a>
         <a href="perfiles.html">Perfiles</a>
       </li>
-      <li><a name="2f4eea91-0057-4b5f-a559-5fc894716c93">​</a>
+      <li><a name="l190">​</a>
         <a href="extensiones.html">Extensiones</a>
       </li>
-      <li><a name="a75ae9aa-4ff6-45e4-95be-d69af37bf5e4">​</a>
+      <li><a name="l196">​</a>
         <a href="valuesets.html">Valuesets</a>
       </li>
     </ul>
@@ -135,7 +135,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Resumen de artefactos</b></a></li><li><b>$match</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Resumen de artefactos</b></a></li><li><b>Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido</b></li>
 
         </ul>
       </div>    <!-- /container -->
@@ -166,21 +166,21 @@
 
   
     <li>
-      <a href="OperationDefinition-OperationDefinition.xml.html">XML</a>
+      <a href="Medication-MedicamentoCl-2.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="OperationDefinition-OperationDefinition.json.html">JSON</a>
+      <a href="Medication-MedicamentoCl-2.json.html">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="OperationDefinition-OperationDefinition.ttl.html">TTL</a>
+      <a href="Medication-MedicamentoCl-2.ttl.html">TTL</a>
     </li>
   
 
@@ -192,10 +192,8 @@
   <a name="root"> </a>
 
 
-  <h2 id="root">OperationDefinition: $match</h2>
+  <h2 id="root">Example Medication: Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido</h2>
 
-
-  
 
 
     <!-- insert intro if present -->
@@ -203,20 +201,7 @@
 
 
 
-  <div><h2>$match</h2><p>OPERATION: $match</p><p>The official URL for this operation definition is: </p><pre>http://hl7.org/fhir/OperationDefinition/Patient-match</pre><div><p>Un índice maestro de pacientes (MPI ) es un servicio utilizado para gestionar la identificación de pacientes en un contexto en el que existen múltiples bases de datos de pacientes.</p>
-<p>Las aplicaciones sanitarias y el middleware utilizan el MPI para cotejar los pacientes entre las bases de datos y para almacenar los datos de los nuevos pacientes a medida que se encuentran.</p>
-<p>Los MPI son aplicaciones muy especializadas, que a menudo se adaptan ampliamente a la combinación particular de pacientes de la institución. Las IPM también pueden funcionar a nivel regional y nacional.Para pedir a un MPI que haga coincidir un paciente, los clientes utilizan la operación $match, que acepta un recurso de paciente que puede estar sólo parcialmente completo.</p>
-<p>Los datos proporcionados se interpretan como una entrada MPI y son procesados por un algoritmo de algún tipo que utiliza los datos para determinar las coincidencias más apropiadas en el conjunto de pacientes. Tenga en cuenta que los diferentes algoritmos de emparejamiento MPI tienen diferentes entradas requeridas. La operación genérica $match no especifica ningún algoritmo en particular, ni un conjunto mínimo de información que debe proporcionarse cuando se pide que se realice una operación de coincidencia MPI, pero muchas implementaciones tendrán un conjunto de información mínima, que puede declararse en su definición de la operación $match especificando un perfil en el parámetro del recurso, indicando qué propiedades se requieren en la búsqueda. El recurso del paciente enviado a la operación no tiene que estar completo, ni tiene que pasar la validación (es decir, los campos obligatorios no tienen que ser rellenados), pero sí tiene que ser una instancia válida, ya que se utiliza como los datos de referencia para comparar.</p>
-</div><p>URL: [base]/Patient/$match</p><p>Parameters</p><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>resource</td><td>1..1</td><td><a href="http://hl7.org/fhir/R4/resource.html">Resource</a></td><td></td><td><div><p>Utilícelo para proporcionar un conjunto completo de datos de pacientes para que el IPM los compare (por ejemplo, envíe un registro de pacientes a Patient/$match).</p>
-</div></td></tr><tr><td>IN</td><td>onlyCertainMatches</td><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td></td><td><div><p>Si hay múltiples coincidencias potenciales, entonces la coincidencia no debería devolver los resultados con esta bandera establecida en true.  Cuando es falso, el servidor puede devolver múltiples resultados con cada resultado calificado en consecuencia.</p>
-</div></td></tr><tr><td>IN</td><td>count</td><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></td><td></td><td><div><p>El número máximo de registros a devolver. Si no se proporciona ningún valor, el servidor decide cuántas coincidencias devolver. Tenga en cuenta que los clientes deben tener cuidado al usar esto, ya que puede impedir que se devuelvan coincidencias probables -y válidas-.</p>
-</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></td><td></td><td><div><p>Un paquete contiene un conjunto de registros de pacientes que representan posibles coincidencias,
-opcionalmente puede contener también un OperationOutcome con más información sobre los resultados de la búsqueda
-(como advertencias o mensajes informativos, por ejemplo, un recuento de los registros que estaban cerca pero fueron eliminados)
-Si la operación no tiene éxito, se puede devolver un OperationOutcome junto con un código de estado BadRequest
-(por ejemplo, un problema de seguridad, o propiedades insuficientes en el fragmento del paciente - comprobar con el perfil)</p>
-</div></td></tr></table><div><p>La respuesta de una consulta ¨mpi¨ es un conjunto que contiene registros de pacientes, ordenados de más a menos probable. Si no hay coincidencias de pacientes, el MPI DEBERÁ devolver un conjunto de búsqueda vacío sin error, pero puede incluir un resultado de la operación con más consejos sobre la selección de pacientes. Todos los registros de pacientes TIENEN una puntuación de búsqueda de 0 a 1, donde 1 es la coincidencia más segura, junto con una extensión ¨match-grade¨ que indica la posición del MPI en la calidad de la coincidencia.</p>
-</div></div>
+  <div><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1703591000167111 (OFFICIAL), id: 696681000167108 (OFFICIAL)</p><p><b>code</b>: <span title="Codes: {http://minsal.cl/semantikos/description-id 1703591000167111}">Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido</span></p></div>
 
     <!-- insert notes if present -->
   
@@ -253,9 +238,9 @@ Si la operación no tiene éxito, se puede devolver un OperationOutcome junto co
           <!-- container -->
         
         <div class="inner-wrapper">
-            <p><a name="cdacdab8-a0c3-4064-8a5f-fa2ce3963c2a">​</a>
+            <p><a name="l378">​</a>
                 IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="ppizarro.delgado@minsal.cl"></a>. Package hl7.fhir.uv.CoreCH#0.8 (Ballot Pendiente)
-                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Mon, Aug 30, 2021 14:48-0400">30-08-2021</span>
+                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Mon, Sep 13, 2021 12:21-0300">13-09-2021</span>
                 <br/>
                 <span style="color: var(--footer-highlight-text-color)"></span>  Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de Contenidos</a> |
 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">Reportes QA</a> 

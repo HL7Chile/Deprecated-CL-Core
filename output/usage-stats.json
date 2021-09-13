@@ -28,19 +28,19 @@
     "Medication": [
       {
         "url": "http://minsal.cl/fhir/core//StructureDefinition/CoreMedicamentoCl",
-        "title": "Perfil Se destina para generar el recuso de medicamento ha ser usado para el manejo de terminologpia de fármacos en farmacos registrados extensible a Core Nacional"
+        "title": "Medicamento Core Nacional"
       }
     ],
     "Organization": [
       {
         "url": "http://minsal.cl/fhir/core//StructureDefinition/CoreOrganizacionCl",
-        "title": "Perfil Se destina para determinar rganizaciones para Receta Digital, extensible a Core Nacional"
+        "title": "Perfil de Organización de Salud en Chile"
       }
     ],
     "Patient": [
       {
         "url": "http://minsal.cl/fhir/core//StructureDefinition/CorePacienteCl",
-        "title": "Perfil Paciente para Receta Digital, extensible a Core Nacional"
+        "title": "Perfil Paciente Para Core Nacional"
       }
     ],
     "Practitioner": [
