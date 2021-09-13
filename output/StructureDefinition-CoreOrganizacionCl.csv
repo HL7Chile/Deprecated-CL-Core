@@ -146,7 +146,7 @@ Territory","",0,1,"Y","","Y","string {[]} {[]}
 ","Postal code for area","A postal code designating a region defined by the postal service.","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""9132""/>","","",,,,,"",,,,"Address.postalCode",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","XAD.5","AD.part[parttype = ZIP]","./PostalIdentificationCode"
 "Organization.address.country","","","",0,1,"Y","","Y","string {[]} {[]}
-","Campo para País de Residencia","Campo para País de Residencia","ISO 3166 3 letter codes can be used in place of a human readable country name.","","","","","","","","",,"required","","urn:iso:std:iso:3166","",,,,"Address.country",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Campo para País de Residencia","Campo para País de Residencia","ISO 3166 3 letter codes can be used in place of a human readable country name.","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/iso3166-1-N","",,,,"Address.country",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","XAD.6","AD.part[parttype = CNT]","./Country"
 "Organization.address.period","","","",0,1,"","","Y","Period {[]} {[]}
 ","Time period when address was/is in use","Time period when address was/is in use.","","Allows addresses to be placed in historical context.","","","","","<valuePeriod xmlns=""http://hl7.org/fhir"">

@@ -1,16 +1,16 @@
 ﻿CoreCL : Validation Results
 =========================================
 
-err = 330, warn = 52, info = 10
+err = 322, warn = 49, info = 6
 IG Publisher Version: 1.1.80
-Generated Mon Sep 13 12:21:47 CLST 2021. FHIR version 4.0.1 for hl7.fhir.uv.CoreCH#0.8 (Ballot Pendiente) (canonical = http://minsal.cl/fhir/core/)
+Generated Mon Sep 13 12:44:13 CLST 2021. FHIR version 4.0.1 for hl7.fhir.uv.CoreCH#0.8 (Ballot Pendiente) (canonical = http://minsal.cl/fhir/core/)
 
- Build Errors : 860 / 9 / 0
+ Build Errors : 856 / 9 / 0
  C:\GI_FHIR\FHIR_Core_CH\fsh-generated\resources\ImplementationGuide-hl7.fhir.uv.CoreCH : 1 / 2 / 1
  C:\GI_FHIR\FHIR_Core_CH\fsh-generated\resources\Location-LocalizacionEjemploCL : 3 / 2 / 1
- C:\GI_FHIR\FHIR_Core_CH\fsh-generated\resources\Medication-MedicamentoCl : 4 / 1 / 4
- C:\GI_FHIR\FHIR_Core_CH\fsh-generated\resources\Medication-MedicamentoCl-2 : 4 / 0 / 4
- C:\GI_FHIR\FHIR_Core_CH\fsh-generated\resources\Organization-OrganizacionCl : 0 / 1 / 1
+ C:\GI_FHIR\FHIR_Core_CH\fsh-generated\resources\Medication-MedicamentoCl : 0 / 1 / 2
+ C:\GI_FHIR\FHIR_Core_CH\fsh-generated\resources\Medication-MedicamentoCl-2 : 0 / 0 / 2
+ C:\GI_FHIR\FHIR_Core_CH\fsh-generated\resources\Organization-OrganizacionCl : 0 / 0 / 1
  C:\GI_FHIR\FHIR_Core_CH\fsh-generated\resources\Patient-PacienteCL : 11 / 4 / 1
  C:\GI_FHIR\FHIR_Core_CH\fsh-generated\resources\Patient-PacienteCL2 : 9 / 5 / 2
  C:\GI_FHIR\FHIR_Core_CH\fsh-generated\resources\Patient-PacienteCl-3 : 11 / 3 / 2
@@ -20,7 +20,7 @@ Generated Mon Sep 13 12:21:47 CLST 2021. FHIR version 4.0.1 for hl7.fhir.uv.Core
  C:\GI_FHIR\FHIR_Core_CH\fsh-generated\resources\StructureDefinition-CoreEspecialidadCl : 1 / 0 / 1
  C:\GI_FHIR\FHIR_Core_CH\fsh-generated\resources\StructureDefinition-CoreLocalizacionCl : 1 / 4 / 1
  C:\GI_FHIR\FHIR_Core_CH\fsh-generated\resources\StructureDefinition-CoreMedicamentoCl : 1 / 0 / 1
- C:\GI_FHIR\FHIR_Core_CH\fsh-generated\resources\StructureDefinition-CoreOrganizacionCl : 1 / 2 / 1
+ C:\GI_FHIR\FHIR_Core_CH\fsh-generated\resources\StructureDefinition-CoreOrganizacionCl : 1 / 0 / 1
  C:\GI_FHIR\FHIR_Core_CH\fsh-generated\resources\StructureDefinition-CorePacienteCl : 1 / 2 / 1
  C:\GI_FHIR\FHIR_Core_CH\fsh-generated\resources\StructureDefinition-CorePrestadorCl : 1 / 2 / 1
  C:\GI_FHIR\FHIR_Core_CH\fsh-generated\resources\ValueSet-COD-Cert-RNPI : 0 / 2 / 1
@@ -475,7 +475,7 @@ ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl-defi
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 10: The link 'perfiles.html' for "Perfiles" cannot be resolved
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 121, column 10: The link 'valuesets.html' for "Valuesets" cannot be resolved
-ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl-definitions.html#/html/body/div/div/div/p/a at Line 861, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl-definitions.html#/html/body/div/div/div/p/a at Line 863, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl-examples.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl-examples.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 10: The link 'perfiles.html' for "Perfiles" cannot be resolved
@@ -505,25 +505,25 @@ ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl.prof
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 119, column 10: The link 'perfiles.html' for "Perfiles" cannot be resolved
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 122, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 10: The link 'valuesets.html' for "Valuesets" cannot be resolved
-ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl.profile.json.html#/html/body/div/div/div/p/a at Line 3158, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl.profile.json.html#/html/body/div/div/div/p/a at Line 3164, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl.profile.ttl.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl.profile.ttl.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 119, column 10: The link 'perfiles.html' for "Perfiles" cannot be resolved
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 122, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 10: The link 'valuesets.html' for "Valuesets" cannot be resolved
-ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl.profile.ttl.html#/html/body/div/div/div/p/a at Line 2744, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl.profile.ttl.html#/html/body/div/div/div/p/a at Line 2750, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl.profile.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl.profile.xml.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 119, column 10: The link 'perfiles.html' for "Perfiles" cannot be resolved
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 122, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 10: The link 'valuesets.html' for "Valuesets" cannot be resolved
-ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl.profile.xml.html#/html/body/div/div/div/p/a at Line 2863, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl.profile.xml.html#/html/body/div/div/div/p/a at Line 2869, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl-definitions.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl-definitions.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 10: The link 'perfiles.html' for "Perfiles" cannot be resolved
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 121, column 10: The link 'valuesets.html' for "Valuesets" cannot be resolved
-ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 685, column 114: The link 'urn:iso:std:iso:3166' for "urn:iso:std:iso:3166" cannot be resolved
+ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 685, column 114: The link '' for "Iso3166-1-N" cannot be resolved
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl-definitions.html#/html/body/div/div/div/p/a at Line 861, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl-examples.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl-examples.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
@@ -542,12 +542,8 @@ ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl.htm
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 10: The link 'perfiles.html' for "Perfiles" cannot be resolved
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 121, column 10: The link 'valuesets.html' for "Valuesets" cannot be resolved
-ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 328, column 1923: The link 'urn:iso:std:iso:3166' for "urn:iso:std:iso:3166" cannot be resolved
-ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 380, column 1936: The link 'urn:iso:std:iso:3166' for "urn:iso:std:iso:3166" cannot be resolved
-ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 506, column 1804: The link 'urn:iso:std:iso:3166' for "urn:iso:std:iso:3166" cannot be resolved
-ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 546, column 1923: The link 'urn:iso:std:iso:3166' for "urn:iso:std:iso:3166" cannot be resolved
-ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 598, column 1936: The link 'urn:iso:std:iso:3166' for "urn:iso:std:iso:3166" cannot be resolved
-ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl.html#/html/body/div/div/div/p/a at Line 793, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 725, column 150: The link '??' for "Iso3166-1-N (missing link)" cannot be resolved
+ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl.html#/html/body/div/div/div/p/a at Line 792, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl.profile.history.html#/html/body/div/div/div/a/img at Line 60, column 10: The image source 'minsal.png' cannot be resolved
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl.profile.history.html#/html/body/div/div/div/a/img at Line 66, column 10: The image source 'hl7chile.png' cannot be resolved
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 10: The link 'perfiles.html' for "Perfiles" cannot be resolved
@@ -565,7 +561,7 @@ ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl.pro
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 119, column 10: The link 'perfiles.html' for "Perfiles" cannot be resolved
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 122, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 10: The link 'valuesets.html' for "Valuesets" cannot be resolved
-ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl.profile.ttl.html#/html/body/div/div/div/p/a at Line 2692, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl.profile.ttl.html#/html/body/div/div/div/p/a at Line 2696, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl.profile.xml.html#/html/body/div/div/div/a/img at Line 64, column 10: The image source 'minsal.png' cannot be resolved
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl.profile.xml.html#/html/body/div/div/div/a/img at Line 70, column 10: The image source 'hl7chile.png' cannot be resolved
 ERROR: C:\GI_FHIR\FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 119, column 10: The link 'perfiles.html' for "Perfiles" cannot be resolved
@@ -910,24 +906,11 @@ ERROR: Location/LocalizacionEjemploCL: Location.address.state: The value provide
 WARNING: Location/LocalizacionEjemploCL: Location.address.country: ValueSet urn:iso:std:iso:3166 not found by validator
 ERROR: Location/LocalizacionEjemploCL: Location.managingOrganization: Unable to resolve resource 'http://MINSAL.cl/API/Organizaciones/Id22112'
 == fsh-generated\resources\Medication-MedicamentoCl.json ==
-ERROR: Medication/MedicamentoCl: Medication.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([system]) for slice Medication.identifier:DescripcionId in profile http://minsal.cl/fhir/core//StructureDefinition/CoreMedicamentoCl - the discriminator [system] does not have fixed value, binding or existence assertions
-ERROR: Medication/MedicamentoCl: Medication.identifier[1]: Slicing cannot be evaluated: Could not match discriminator ([system]) for slice Medication.identifier:DescripcionId in profile http://minsal.cl/fhir/core//StructureDefinition/CoreMedicamentoCl - the discriminator [system] does not have fixed value, binding or existence assertions
-ERROR: Medication/MedicamentoCl: Medication.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([system]) for slice Medication.identifier:ConceptId in profile http://minsal.cl/fhir/core//StructureDefinition/CoreMedicamentoCl - the discriminator [system] does not have fixed value, binding or existence assertions
-ERROR: Medication/MedicamentoCl: Medication.identifier[1]: Slicing cannot be evaluated: Could not match discriminator ([system]) for slice Medication.identifier:ConceptId in profile http://minsal.cl/fhir/core//StructureDefinition/CoreMedicamentoCl - the discriminator [system] does not have fixed value, binding or existence assertions
-INFORMATION: Medication/MedicamentoCl: Medication: Medication.identifier:DescripcionId: Unable to check minimum required (Medication.identifier) due to lack of slicing validation (from http://minsal.cl/fhir/core//StructureDefinition/CoreMedicamentoCl)
-INFORMATION: Medication/MedicamentoCl: Medication: Medication.identifier:ConceptId: Unable to check minimum required (Medication.identifier) due to lack of slicing validation (from http://minsal.cl/fhir/core//StructureDefinition/CoreMedicamentoCl)
 WARNING: Medication/MedicamentoCl: Medication.identifier[1].value: value should not start or finish with whitespace
 INFORMATION: Medication/MedicamentoCl: Medication.code.coding[0]: Code System URI 'http://minsal.cl/semantikos/description-id' is unknown so the code cannot be validated
 == fsh-generated\resources\Medication-MedicamentoCl-2.json ==
-ERROR: Medication/MedicamentoCl-2: Medication.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([system]) for slice Medication.identifier:DescripcionId in profile http://minsal.cl/fhir/core//StructureDefinition/CoreMedicamentoCl - the discriminator [system] does not have fixed value, binding or existence assertions
-ERROR: Medication/MedicamentoCl-2: Medication.identifier[1]: Slicing cannot be evaluated: Could not match discriminator ([system]) for slice Medication.identifier:DescripcionId in profile http://minsal.cl/fhir/core//StructureDefinition/CoreMedicamentoCl - the discriminator [system] does not have fixed value, binding or existence assertions
-ERROR: Medication/MedicamentoCl-2: Medication.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([system]) for slice Medication.identifier:ConceptId in profile http://minsal.cl/fhir/core//StructureDefinition/CoreMedicamentoCl - the discriminator [system] does not have fixed value, binding or existence assertions
-ERROR: Medication/MedicamentoCl-2: Medication.identifier[1]: Slicing cannot be evaluated: Could not match discriminator ([system]) for slice Medication.identifier:ConceptId in profile http://minsal.cl/fhir/core//StructureDefinition/CoreMedicamentoCl - the discriminator [system] does not have fixed value, binding or existence assertions
-INFORMATION: Medication/MedicamentoCl-2: Medication: Medication.identifier:DescripcionId: Unable to check minimum required (Medication.identifier) due to lack of slicing validation (from http://minsal.cl/fhir/core//StructureDefinition/CoreMedicamentoCl)
-INFORMATION: Medication/MedicamentoCl-2: Medication: Medication.identifier:ConceptId: Unable to check minimum required (Medication.identifier) due to lack of slicing validation (from http://minsal.cl/fhir/core//StructureDefinition/CoreMedicamentoCl)
 INFORMATION: Medication/MedicamentoCl-2: Medication.code.coding[0]: Code System URI 'http://minsal.cl/semantikos/description-id' is unknown so the code cannot be validated
 == fsh-generated\resources\Organization-OrganizacionCl.json ==
-WARNING: Organization/OrganizacionCl: Organization.address[0].country: ValueSet urn:iso:std:iso:3166 not found by validator
 == fsh-generated\resources\Patient-PacienteCL.json ==
 ERROR: Patient.name[0].family.extension[0]: Unrecognised property '@value[x]'
 ERROR: Patient/PacienteCL: Patient.name[0]: Profile http://minsal.cl/fhir/core//StructureDefinition/CorePacienteCl, Element matches more than one slice - NombreOficial, NombreSocial
@@ -1006,8 +989,6 @@ ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdict
 == fsh-generated\resources\StructureDefinition-CoreMedicamentoCl.json ==
 ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
 == fsh-generated\resources\StructureDefinition-CoreOrganizacionCl.json ==
-WARNING: StructureDefinition/CoreOrganizacionCl: StructureDefinition.differential.element[15].binding: The valueSet reference urn:iso:std:iso:3166 on element Organization.address.country could not be resolved
-WARNING: StructureDefinition/CoreOrganizacionCl: StructureDefinition.snapshot.element[41].binding: The valueSet reference urn:iso:std:iso:3166 on element Organization.address.country could not be resolved
 ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.CoreCH, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: World) (for FSH: 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
 == fsh-generated\resources\StructureDefinition-CorePacienteCl.json ==
 WARNING: StructureDefinition/CorePacienteCl: StructureDefinition.differential.element[41].binding: The valueSet reference urn:iso:std:iso:3166 on element Patient.address.country could not be resolved

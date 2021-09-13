@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "CodRegion"];
   fhir:ValueSet.title [ fhir:value "Códigos de Regiones en ChileEstos aún deben ser llevados a un ValueSet"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-09-13T12:21:03-03:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-09-13T12:43:20-03:00"^^xsd:dateTime];
   fhir:ValueSet.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Pablo Pizzaro" ];

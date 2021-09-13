@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "PrestadorCL"];
   fhir:StructureDefinition.title [ fhir:value "Prestador Core-CL"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-09-13T12:21:03-03:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-09-13T12:43:20-03:00"^^xsd:dateTime];
   fhir:StructureDefinition.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Pablo Pizzaro" ];

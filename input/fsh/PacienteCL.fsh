@@ -116,7 +116,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * address.state from CodRegion (required)
 * address.country ^short = "Campo para País de Residencia"
 * address.country ^definition = "Campo para País de Residencia"
-* address.country from urn:iso:std:iso:3166 (required)
+* address.country from * address.country from http://hl7.org/fhir/ValueSet/iso3166-1-N (required) (required)
 
 
 

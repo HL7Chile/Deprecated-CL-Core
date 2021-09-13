@@ -71,7 +71,7 @@ InstanceOf : CoreMedicamentoCl
 
 * code.text = "Tareg - D 160 / 25 comprimido recubierto (Novartis)"
 * code.coding.system = "http://minsal.cl/semantikos/description-id"
-* code.coding.code = #1991971000167110
+* code.coding.code = #1991971000167110  
 * code.coding.display = "Tareg - D 160 / 25 comprimido recubierto (Novartis)"
 
 
