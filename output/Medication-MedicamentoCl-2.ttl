@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://minsal.cl/fhir/core/Medication/MedicamentoCl-2> a fhir:Medication;
+<http://core.hl7chile.cl/Medication/MedicamentoCl-2> a fhir:Medication;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "MedicamentoCl-2"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://minsal.cl/fhir/core//StructureDefinition/CoreMedicamentoCl";
+       fhir:value "http://core.hl7chile.cl/StructureDefinition/CoreMedicamentoCl";
        fhir:index 0;
-       fhir:link <http://minsal.cl/fhir/core//StructureDefinition/CoreMedicamentoCl>
+       fhir:link <http://core.hl7chile.cl/StructureDefinition/CoreMedicamentoCl>
      ]
   ];
   fhir:DomainResource.text [
@@ -41,7 +41,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://minsal.cl/fhir/core/Medication/MedicamentoCl-2.ttl> a owl:Ontology;
+<http://core.hl7chile.cl/Medication/MedicamentoCl-2.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

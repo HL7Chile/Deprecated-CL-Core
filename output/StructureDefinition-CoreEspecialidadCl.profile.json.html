@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>HL7.FHIR.UV.CORECH\Perfil Se destina para determinar la especialidad del Prescriptor para Receta Digital, extensible a Core Nacional - JSON Representation - FHIR v4.0.1</title>
+    <title>HL7.FHIR.CL.CORECH\Perfil Se destina para determinar la especialidad del Prescriptor para Receta Digital, extensible a Core Nacional - JSON Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -117,6 +117,31 @@
       </li>
     </ul>
   </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Perfiles
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a name="l214">​</a>
+        <a href="StructureDefinition-CorePacienteCl.html">Paciente</a>
+      </li>
+      <li><a name="l220">​</a>
+        <a href="StructureDefinition-CorePrestadorCl.html">Prestador</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-CoreEspecialidadCl.html">Especialidad Prestador</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-CoreOrganizacionCl.html">Organización</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-CoreMedicamentoCl.html">Medicamento</a>
+      </li>
+      <li><a name="l244">​</a>
+        <a href="StructureDefinition-CoreLocalizacionCl.html">Localización</a>
+      </li>
+    </ul>
+  </li>
   <li>
     <a href="ejemplos.html">Ejemplos</a>
   </li>
@@ -148,76 +173,41 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">Guía de Implementación Core-CL - Local Development build (v0.8 (Ballot Pendiente)). See the <a href="http://minsal.cl/fhir/core//history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
-  
-
-
-
-
-
-
-
-
-
-
+    <!-- ReleaseHeader --><p id="publish-box">Guía de Implementación Core-CL - Local Development build (v0.8 (Ballot Pendiente)). See the <a href="http://core.hl7chile.cl/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+        
+   
 
 <ul class="nav nav-tabs">
-
-  <li>
-    <a href="StructureDefinition-CoreEspecialidadCl.html">Content</a>
-  </li>
-
-
-
-  <li>
-    <a href="StructureDefinition-CoreEspecialidadCl-definitions.html">Detailed Descriptions</a>
-  </li>
-
-
-
-  
-    <li>
-      <a href="StructureDefinition-CoreEspecialidadCl-mappings.html">Mappings</a>
-    </li>
-  
-
-
-
-
-  
     
-      <li>
-        <a href="StructureDefinition-CoreEspecialidadCl-examples.html">Examples</a>
-      </li>
-    
-  
-
-
-
-
-  
     <li>
-      <a href="StructureDefinition-CoreEspecialidadCl.profile.xml.html">XML</a>
+        <a href="StructureDefinition-CoreEspecialidadCl.html">Contenido</a>
     </li>
-  
-
-
-  
+     
+    <li>
+        <a href="StructureDefinition-CoreEspecialidadCl-definitions.html">Descripción detallada</a>
+    </li>
+      
+    <li>
+        <a href="StructureDefinition-CoreEspecialidadCl-mappings.html">Mapeo</a>
+    </li>
+         
+    <li>
+        <a href="StructureDefinition-CoreEspecialidadCl-examples.html">Ejemplos</a>
+    </li>
+         
+    <li>
+        <a href="StructureDefinition-CoreEspecialidadCl.profile.xml.html">XML</a>
+    </li>
+       
     <li class="active">
-      <a href="#">JSON</a>
+        <a href="#">JSON</a>
     </li>
-  
-
-
-  
+       
     <li>
-      <a href="StructureDefinition-CoreEspecialidadCl.profile.ttl.html">TTL</a>
+        <a href="StructureDefinition-CoreEspecialidadCl.profile.ttl.html">TTL</a>
     </li>
-  
-
-
+      
 </ul>
-
 
 <a name="root"> </a>
 <h2 id="root">Resource Profile: EspecialidadCL - JSON Profile</h2>
@@ -249,12 +239,12 @@
       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "individual"
     }
   ],
-  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.url">url</a>" : "http://minsal.cl/fhir/core//StructureDefinition/CoreEspecialidadCl",
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.url">url</a>" : "http://core.hl7chile.cl/StructureDefinition/CoreEspecialidadCl",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">version</a>" : "0.8 (Ballot Pendiente)",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">name</a>" : "EspecialidadCL",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">title</a>" : "Perfil Se destina para determinar la especialidad del Prescriptor para Receta Digital, extensible a Core Nacional",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a>" : "2021-09-13T12:43:20-03:00",
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a>" : "2021-09-14T19:29:07-03:00",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>" : [
     {
       "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Pablo Pizzaro",
@@ -1273,7 +1263,7 @@
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "extensible",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "http://minsal.cl/fhir/core//ValueSet/Esp-Tabla-DEIS"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "http://core.hl7chile.cl/ValueSet/Esp-Tabla-DEIS"
         },
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
@@ -2110,7 +2100,7 @@
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "extensible",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "http://minsal.cl/fhir/core//ValueSet/Esp-Tabla-DEIS"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "http://core.hl7chile.cl/ValueSet/Esp-Tabla-DEIS"
         }
       }
     ]
@@ -2175,9 +2165,9 @@
           <!-- container -->
         
         <div class="inner-wrapper">
-            <p><a name="l4088">​</a>
-                IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="ppizarro.delgado@minsal.cl"></a>. Package hl7.fhir.uv.CoreCH#0.8 (Ballot Pendiente)
-                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Mon, Sep 13, 2021 12:43-0300">13-09-2021</span>
+            <p><a name="l4135">​</a>
+                IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="ppizarro.delgado@minsal.cl"></a>. Package hl7.fhir.cl.CoreCH#0.8 (Ballot Pendiente)
+                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Tue, Sep 14, 2021 19:29-0300">14-09-2021</span>
                 <br/>
                 <span style="color: var(--footer-highlight-text-color)"></span>  Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de Contenidos</a> |
 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">Reportes QA</a> 

@@ -27,12 +27,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="business"/>
   </extension>
-  <url value="http://minsal.cl/fhir/core//StructureDefinition/CoreOrganizacionCl"/>
+  <url value="http://core.hl7chile.cl/StructureDefinition/CoreOrganizacionCl"/>
   <version value="0.8 (Ballot Pendiente)"/>
   <name value="OrganizacionCL"/>
   <title value="Perfil de Organización de Salud en Chile"/>
   <status value="active"/>
-  <date value="2021-09-13T12:43:20-03:00"/>
+  <date value="2021-09-14T19:29:07-03:00"/>
   <contact>
     <name value="Pablo Pizzaro"/>
     <telecom>

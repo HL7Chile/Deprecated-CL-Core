@@ -3,7 +3,7 @@
   "id": "OrganizacionCl",
   "meta": {
     "profile": [
-      "http://minsal.cl/fhir/core//StructureDefinition/CoreOrganizacionCl"
+      "http://core.hl7chile.cl/StructureDefinition/CoreOrganizacionCl"
     ]
   },
   "text": {

@@ -43,11 +43,11 @@ menu:
    Valuesets: valuesets.html
   Perfiles: 
     Paciente: StructureDefinition-CorePacienteCl.html
-    Prestador: file:///C:/IGs/_FHIR_Core_CH/output/StructureDefinition-CorePrestadorCl.html
-    Especialidad Prestador: file:///C:/IGs/_FHIR_Core_CH/output/StructureDefinition-CoreEspecialidadCl.html
-    Organización: file:///C:/IGs/_FHIR_Core_CH/output/StructureDefinition-CoreOrganizacionCl.html
-    Medicamento: file:///C:/IGs/_FHIR_Core_CH/output/StructureDefinition-CoreMedicamentoCl.html
-    Localización: file:///C:/IGs/_FHIR_Core_CH/output/StructureDefinition-CoreLocalizacionCl.html
+    Prestador: StructureDefinition-CorePrestadorCl.html
+    Especialidad Prestador: StructureDefinition-CoreEspecialidadCl.html
+    Organización: StructureDefinition-CoreOrganizacionCl.html
+    Medicamento: StructureDefinition-CoreMedicamentoCl.html
+    Localización: StructureDefinition-CoreLocalizacionCl.html
   Ejemplos: ejemplos.html
   Descargas: descargas.html
  

@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>HL7.FHIR.UV.CORECH\Perfil de Organización de Salud en Chile - FHIR v4.0.1</title>
+    <title>HL7.FHIR.CL.CORECH\Perfil de Organización de Salud en Chile - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -40,8 +40,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"10.4"}
-    h3,h4,h5,h6{--heading-prefix:"10.4"}</style>
+    <style type="text/css">h2{--heading-prefix:"10.3"}
+    h3,h4,h5,h6{--heading-prefix:"10.3"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations 
@@ -117,6 +117,31 @@
       </li>
     </ul>
   </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Perfiles
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a name="l214">​</a>
+        <a href="StructureDefinition-CorePacienteCl.html">Paciente</a>
+      </li>
+      <li><a name="l220">​</a>
+        <a href="StructureDefinition-CorePrestadorCl.html">Prestador</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-CoreEspecialidadCl.html">Especialidad Prestador</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-CoreOrganizacionCl.html">Organización</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-CoreMedicamentoCl.html">Medicamento</a>
+      </li>
+      <li><a name="l244">​</a>
+        <a href="StructureDefinition-CoreLocalizacionCl.html">Localización</a>
+      </li>
+    </ul>
+  </li>
   <li>
     <a href="ejemplos.html">Ejemplos</a>
   </li>
@@ -148,87 +173,52 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">Guía de Implementación Core-CL - Local Development build (v0.8 (Ballot Pendiente)). See the <a href="http://minsal.cl/fhir/core//history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
-  
-
-
-
-
-
-
-
-
-
-
+    <!-- ReleaseHeader --><p id="publish-box">Guía de Implementación Core-CL - Local Development build (v0.8 (Ballot Pendiente)). See the <a href="http://core.hl7chile.cl/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+        
+   
 
 <ul class="nav nav-tabs">
-
-  <li class="active">
-    <a href="#">Content</a>
-  </li>
-
-
-
-  <li>
-    <a href="StructureDefinition-CoreOrganizacionCl-definitions.html">Detailed Descriptions</a>
-  </li>
-
-
-
-  
-    <li>
-      <a href="StructureDefinition-CoreOrganizacionCl-mappings.html">Mappings</a>
-    </li>
-  
-
-
-
-
-  
     
-      <li>
-        <a href="StructureDefinition-CoreOrganizacionCl-examples.html">Examples</a>
-      </li>
-    
-  
-
-
-
-
-  
-    <li>
-      <a href="StructureDefinition-CoreOrganizacionCl.profile.xml.html">XML</a>
+    <li class="active">
+        <a href="#">Contenido</a>
     </li>
-  
-
-
-  
+     
     <li>
-      <a href="StructureDefinition-CoreOrganizacionCl.profile.json.html">JSON</a>
+        <a href="StructureDefinition-CoreOrganizacionCl-definitions.html">Descripción detallada</a>
     </li>
-  
-
-
-  
+      
     <li>
-      <a href="StructureDefinition-CoreOrganizacionCl.profile.ttl.html">TTL</a>
+        <a href="StructureDefinition-CoreOrganizacionCl-mappings.html">Mapeo</a>
     </li>
-  
-
-
+         
+    <li>
+        <a href="StructureDefinition-CoreOrganizacionCl-examples.html">Ejemplos</a>
+    </li>
+         
+    <li>
+        <a href="StructureDefinition-CoreOrganizacionCl.profile.xml.html">XML</a>
+    </li>
+       
+    <li>
+        <a href="StructureDefinition-CoreOrganizacionCl.profile.json.html">JSON</a>
+    </li>
+       
+    <li>
+        <a href="StructureDefinition-CoreOrganizacionCl.profile.ttl.html">TTL</a>
+    </li>
+      
 </ul>
-
 
   <a name="root"> </a>
   <h2 id="root">Resource Profile: Perfil de Organización de Salud en Chile</h2>
 
 <table class="grid">
 <tbody>
-<tr><td>Defining URL:</td><td>http://minsal.cl/fhir/core//StructureDefinition/CoreOrganizacionCl</td></tr>
+<tr><td>Defining URL:</td><td>http://core.hl7chile.cl/StructureDefinition/CoreOrganizacionCl</td></tr>
  <tr><td>Version:</td><td>0.8 (Ballot Pendiente)</td></tr>
  <tr><td>Name:</td><td>OrganizacionCL</td></tr>
  <tr><td>Title:</td><td>Perfil de Organización de Salud en Chile</td></tr>
- <tr><td>Status:</td><td>Active as of 2021-09-13T12:43:20-03:00</td></tr>
+ <tr><td>Status:</td><td>Active as of 2021-09-14T19:29:07-03:00</td></tr>
  <tr><td>Definition:</td><td><p>Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado para también cubrir las necesidades nacionales de un Recurso de Organzación en Salud</p>
 </td></tr>
  <tr><td>Source Resource:</td><td><a href="StructureDefinition-CoreOrganizacionCl.profile.xml.html">XML</a> / <a href="StructureDefinition-CoreOrganizacionCl.profile.json.html">JSON</a> / <a href="StructureDefinition-CoreOrganizacionCl.profile.ttl.html">Turtle</a></td></tr>
@@ -238,7 +228,7 @@
   <p>
   The official URL for this profile is:
   </p>
-  <pre>http://minsal.cl/fhir/core//StructureDefinition/CoreOrganizacionCl</pre>
+  <pre>http://core.hl7chile.cl/StructureDefinition/CoreOrganizacionCl</pre>
 
   <!-- insert intro if present -->
 
@@ -717,7 +707,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>Organization.telecom.use</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Use of contact point."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-contact-point-use.html">ContactPointUse</a></td></tr>
 <tr><td>Organization.address.use</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The use of an address."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-address-use.html">AddressUse</a></td></tr>
 <tr><td>Organization.address.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The type of an address (physical / postal)."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-address-type.html">AddressType</a></td></tr>
-<tr><td>Organization.address.country</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a name="l4765">​</a><a style="opacity: 1.0" href="??">Iso3166-1-N (missing link)</a></td></tr>
+<tr><td>Organization.address.country</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a name="l4812">​</a><a style="opacity: 1.0" href="??">Iso3166-1-N (missing link)</a></td></tr>
 <tr><td>Organization.contact.purpose</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="The purpose for which you would contact a contact party."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-contactentity-type.html">ContactEntityType</a></td></tr>
 </table>
 
@@ -783,9 +773,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
           <!-- container -->
         
         <div class="inner-wrapper">
-            <p><a name="l4824">​</a>
-                IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="ppizarro.delgado@minsal.cl"></a>. Package hl7.fhir.uv.CoreCH#0.8 (Ballot Pendiente)
-                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Mon, Sep 13, 2021 12:43-0300">13-09-2021</span>
+            <p><a name="l4871">​</a>
+                IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="ppizarro.delgado@minsal.cl"></a>. Package hl7.fhir.cl.CoreCH#0.8 (Ballot Pendiente)
+                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Tue, Sep 14, 2021 19:29-0300">14-09-2021</span>
                 <br/>
                 <span style="color: var(--footer-highlight-text-color)"></span>  Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de Contenidos</a> |
 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">Reportes QA</a> 

@@ -1,52 +1,25 @@
 {
-  "package": "hl7.fhir.uv.CoreCH",
+  "package": "hl7.fhir.cl.CoreCH",
   "version": "0.8 (Ballot Pendiente)",
   "fhirVersion": "4.0.1",
-  "extensions": [
-    {
-      "url": "http://minsal.cl/fhir/core//StructureDefinition/CodigoPaises",
-      "title": "Codigo de Identificación de países",
-      "types": [
-        "CodeableConcept",
-        "CodeableConcept"
-      ]
-    }
-  ],
+  "extensions": [],
   "profiles": {
     "PractitionerRole": [
       {
-        "url": "http://minsal.cl/fhir/core//StructureDefinition/CoreEspecialidadCl",
+        "url": "http://core.hl7chile.cl/StructureDefinition/CoreEspecialidadCl",
         "title": "Perfil Se destina para determinar la especialidad del Prescriptor para Receta Digital, extensible a Core Nacional"
-      }
-    ],
-    "Location": [
-      {
-        "url": "http://minsal.cl/fhir/core//StructureDefinition/CoreLocalizacionCl",
-        "title": "Perfil de Localización de Objetos e Infraestructura"
       }
     ],
     "Medication": [
       {
-        "url": "http://minsal.cl/fhir/core//StructureDefinition/CoreMedicamentoCl",
+        "url": "http://core.hl7chile.cl/StructureDefinition/CoreMedicamentoCl",
         "title": "Medicamento Core Nacional"
       }
     ],
     "Organization": [
       {
-        "url": "http://minsal.cl/fhir/core//StructureDefinition/CoreOrganizacionCl",
+        "url": "http://core.hl7chile.cl/StructureDefinition/CoreOrganizacionCl",
         "title": "Perfil de Organización de Salud en Chile"
-      }
-    ],
-    "Patient": [
-      {
-        "url": "http://minsal.cl/fhir/core//StructureDefinition/CorePacienteCl",
-        "title": "Perfil Paciente Para Core Nacional"
-      }
-    ],
-    "Practitioner": [
-      {
-        "url": "http://minsal.cl/fhir/core//StructureDefinition/CorePrestadorCl",
-        "title": "Prestador Core-CL"
       }
     ]
   },
@@ -69,21 +42,8 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
     ],
-    "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family": [
-      "Patient.name.family",
-      "Practitioner.name.family"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/patient-nationality": [
-      "Patient"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/regex": [
-      "StructureDefinition.snapshot.element.type"
-    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
-      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
@@ -99,12 +59,6 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
-    ],
-    "http://minsal.cl/fhir/core//StructureDefinition/CodigoPaises": [
-      "Patient.identifier.type"
-    ],
-    "nationality": [
-      "Patient"
     ]
   }
 }

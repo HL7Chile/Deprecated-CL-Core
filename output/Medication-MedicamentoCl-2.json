@@ -3,7 +3,7 @@
   "id": "MedicamentoCl-2",
   "meta": {
     "profile": [
-      "http://minsal.cl/fhir/core//StructureDefinition/CoreMedicamentoCl"
+      "http://core.hl7chile.cl/StructureDefinition/CoreMedicamentoCl"
     ]
   },
   "text": {

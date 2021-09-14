@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://minsal.cl/fhir/core/StructureDefinition/CoreEspecialidadCl> a fhir:StructureDefinition;
+<http://core.hl7chile.cl/StructureDefinition/CoreEspecialidadCl> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "CoreEspecialidadCl"];
   fhir:DomainResource.text [
@@ -21,12 +21,12 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "individual" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://minsal.cl/fhir/core//StructureDefinition/CoreEspecialidadCl"];
+  fhir:StructureDefinition.url [ fhir:value "http://core.hl7chile.cl/StructureDefinition/CoreEspecialidadCl"];
   fhir:StructureDefinition.version [ fhir:value "0.8 (Ballot Pendiente)"];
   fhir:StructureDefinition.name [ fhir:value "EspecialidadCL"];
   fhir:StructureDefinition.title [ fhir:value "Perfil Se destina para determinar la especialidad del Prescriptor para Receta Digital, extensible a Core Nacional"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-09-13T12:43:20-03:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-09-14T19:29:07-03:00"^^xsd:dateTime];
   fhir:StructureDefinition.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Pablo Pizzaro" ];
@@ -1098,8 +1098,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://minsal.cl/fhir/core//ValueSet/Esp-Tabla-DEIS";
-           fhir:link <http://minsal.cl/fhir/core//ValueSet/Esp-Tabla-DEIS>
+           fhir:value "http://core.hl7chile.cl/ValueSet/Esp-Tabla-DEIS";
+           fhir:link <http://core.hl7chile.cl/ValueSet/Esp-Tabla-DEIS>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -1968,8 +1968,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://minsal.cl/fhir/core//ValueSet/Esp-Tabla-DEIS";
-           fhir:link <http://minsal.cl/fhir/core//ValueSet/Esp-Tabla-DEIS>
+           fhir:value "http://core.hl7chile.cl/ValueSet/Esp-Tabla-DEIS";
+           fhir:link <http://core.hl7chile.cl/ValueSet/Esp-Tabla-DEIS>
          ]
        ]
      ]
@@ -1977,7 +1977,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://minsal.cl/fhir/core/StructureDefinition/CoreEspecialidadCl.ttl> a owl:Ontology;
+<http://core.hl7chile.cl/StructureDefinition/CoreEspecialidadCl.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

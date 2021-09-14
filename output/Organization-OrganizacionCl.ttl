@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://minsal.cl/fhir/core/Organization/OrganizacionCl> a fhir:Organization;
+<http://core.hl7chile.cl/Organization/OrganizacionCl> a fhir:Organization;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "OrganizacionCl"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://minsal.cl/fhir/core//StructureDefinition/CoreOrganizacionCl";
+       fhir:value "http://core.hl7chile.cl/StructureDefinition/CoreOrganizacionCl";
        fhir:index 0;
-       fhir:link <http://minsal.cl/fhir/core//StructureDefinition/CoreOrganizacionCl>
+       fhir:link <http://core.hl7chile.cl/StructureDefinition/CoreOrganizacionCl>
      ]
   ];
   fhir:DomainResource.text [
@@ -50,7 +50,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://minsal.cl/fhir/core/Organization/OrganizacionCl.ttl> a owl:Ontology;
+<http://core.hl7chile.cl/Organization/OrganizacionCl.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

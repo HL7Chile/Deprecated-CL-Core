@@ -15,12 +15,12 @@
       "valueCode": "business"
     }
   ],
-  "url": "http://minsal.cl/fhir/core//StructureDefinition/CoreOrganizacionCl",
+  "url": "http://core.hl7chile.cl/StructureDefinition/CoreOrganizacionCl",
   "version": "0.8 (Ballot Pendiente)",
   "name": "OrganizacionCL",
   "title": "Perfil de Organización de Salud en Chile",
   "status": "active",
-  "date": "2021-09-13T12:43:20-03:00",
+  "date": "2021-09-14T19:29:07-03:00",
   "contact": [
     {
       "name": "Pablo Pizzaro",
