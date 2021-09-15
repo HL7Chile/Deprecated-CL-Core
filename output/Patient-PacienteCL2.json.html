@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>HL7.FHIR.UV.CORECH\Ejemplo de Recurso Paciente Extranjero - JSON Representation - FHIR v4.0.1</title>
+    <title>HL7.FHIR.CL.CORECH\Ejemplo de Recurso Paciente Extranjero - JSON Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -117,6 +117,31 @@
       </li>
     </ul>
   </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Perfiles
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="StructureDefinition-CorePacienteCl.html">Paciente</a>
+      </li>
+      <li><a name="l219">​</a>
+        <a href="file:///C:/IGs/_FHIR_Core_CH/output/StructureDefinition-CorePrestadorCl.html">Prestador</a>
+      </li>
+      <li><a name="l225">​</a>
+        <a href="file:///C:/IGs/_FHIR_Core_CH/output/StructureDefinition-CoreEspecialidadCl.html">Especialidad Prestador</a>
+      </li>
+      <li><a name="l231">​</a>
+        <a href="file:///C:/IGs/_FHIR_Core_CH/output/StructureDefinition-CoreOrganizacionCl.html">Organización</a>
+      </li>
+      <li><a name="l237">​</a>
+        <a href="file:///C:/IGs/_FHIR_Core_CH/output/StructureDefinition-CoreMedicamentoCl.html">Medicamento</a>
+      </li>
+      <li><a name="l243">​</a>
+        <a href="file:///C:/IGs/_FHIR_Core_CH/output/StructureDefinition-CoreLocalizacionCl.html">Localización</a>
+      </li>
+    </ul>
+  </li>
   <li>
     <a href="ejemplos.html">Ejemplos</a>
   </li>
@@ -148,7 +173,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-  <!-- ReleaseHeader --><p id="publish-box">Guía de Implementación Core-CL - Local Development build (v0.8 (Ballot Pendiente)). See the <a href="http://minsal.cl/fhir/core//history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <!-- ReleaseHeader --><p id="publish-box">Guía de Implementación Core-CL - Local Development build (v0.8 (Ballot Pendiente)). See the <a href="http://core.hl7chile.cl/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
 
 
 
@@ -206,16 +231,16 @@
   "<a href="http://hl7.org/fhir/R4/patient.html#Patient.id">id</a>" : "PacienteCL2",
   "<a href="http://hl7.org/fhir/R4/patient.html#Patient.meta">meta</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-      "http://minsal.cl/fhir/core//StructureDefinition/CorePacienteCl"
+      "http://core.hl7chile.cl/StructureDefinition/CorePacienteCl"
     ]
   },
   "<a href="http://hl7.org/fhir/R4/patient.html#Patient.text">text</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Pasaporte: P3334521.2 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Wilmer Andres de Dios Cabrales (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;telecom&lt;/b&gt;: &lt;a href=\"mailto:wilCAB12l@wilmermail.com\"&gt;wilCAB12l@wilmermail.com&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;gender&lt;/b&gt;: male&lt;/p&gt;&lt;p&gt;&lt;b&gt;birthDate&lt;/b&gt;: 1968-11-03&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: Calle 4 Norte, 52, pieza 802 15101 15 152 (TEMP)&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Codigo de Identificación de países&lt;/b&gt;: &lt;span title=\"Codes: \"&gt;Salvadoreño&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Pasaporte: P3334521.2 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Wilmer Andres de Dios Cabrales (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;telecom&lt;/b&gt;: &lt;a href=\"mailto:wilCAB12l@wilmermail.com\"&gt;wilCAB12l@wilmermail.com&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;gender&lt;/b&gt;: male&lt;/p&gt;&lt;p&gt;&lt;b&gt;birthDate&lt;/b&gt;: 1968-11-03&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: Calle 4 Norte, 52, pieza 802 15101 15 152 (TEMP)&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/patient.html#Patient.extension">extension</a>" : [
     {
-      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "nationality",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://core.hl7chile.cl/StructureDefinition/CodigoPaises",
       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
           {
@@ -232,7 +257,7 @@
       "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>" : {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.extension">extension</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://minsal.cl/fhir/core//StructureDefinition/CodigoPaises",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://core.hl7chile.cl/StructureDefinition/CodigoPaises",
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
               "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
                 {
@@ -261,7 +286,8 @@
       "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">_family</a>" : {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#string#string.extension">extension</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family"
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Rivas"
           }
         ]
       },
@@ -331,9 +357,9 @@
           <!-- container -->
         
         <div class="inner-wrapper">
-            <p><a name="l517">​</a>
-                IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="ppizarro.delgado@minsal.cl"></a>. Package hl7.fhir.uv.CoreCH#0.8 (Ballot Pendiente)
-                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Mon, Sep 13, 2021 12:43-0300">13-09-2021</span>
+            <p><a name="l567">​</a>
+                IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="ppizarro.delgado@minsal.cl"></a>. Package hl7.fhir.cl.CoreCH#0.8 (Ballot Pendiente)
+                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Wed, Sep 15, 2021 12:30-0300">15-09-2021</span>
                 <br/>
                 <span style="color: var(--footer-highlight-text-color)"></span>  Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de Contenidos</a> |
 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">Reportes QA</a> 

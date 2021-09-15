@@ -15,12 +15,12 @@
       "valueCode": "individual"
     }
   ],
-  "url": "http://minsal.cl/fhir/core//StructureDefinition/CoreEspecialidadCl",
+  "url": "http://core.hl7chile.cl/StructureDefinition/CoreEspecialidadCl",
   "version": "0.8 (Ballot Pendiente)",
   "name": "EspecialidadCL",
   "title": "Perfil Se destina para determinar la especialidad del Prescriptor para Receta Digital, extensible a Core Nacional",
   "status": "active",
-  "date": "2021-09-13T12:43:20-03:00",
+  "date": "2021-09-15T12:30:30-03:00",
   "contact": [
     {
       "name": "Pablo Pizzaro",
@@ -1039,7 +1039,7 @@
         "isSummary": true,
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://minsal.cl/fhir/core//ValueSet/Esp-Tabla-DEIS"
+          "valueSet": "http://core.hl7chile.cl/ValueSet/Esp-Tabla-DEIS"
         },
         "mapping": [
           {
@@ -1876,7 +1876,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://minsal.cl/fhir/core//ValueSet/Esp-Tabla-DEIS"
+          "valueSet": "http://core.hl7chile.cl/ValueSet/Esp-Tabla-DEIS"
         }
       }
     ]

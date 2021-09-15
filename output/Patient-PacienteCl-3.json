@@ -5,21 +5,21 @@
     "versionId": "2",
     "lastUpdated": "2021-07-13T00:22:41.166Z",
     "profile": [
-      "http://minsal.cl/fhir/core//StructureDefinition/CorePacienteCl"
+      "http://core.hl7chile.cl/StructureDefinition/CorePacienteCl"
     ]
   },
   "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: DNI: 15602754-5 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: PABLO RODRIGO PIZARRO (OFFICIAL)</p><p><b>telecom</b>: <a href=\"mailto:ppizarro.delgado@minsal.cl\">ppizarro.delgado@minsal.cl</a></p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1983-08-04</p><p><b>deceased</b>: false</p><p><b>address</b>: 13120 13 152 (HOME)</p></div>"
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Codigo de Identificación de países</b>: <span title=\"Codes: \">Chilena</span></p><p><b>identifier</b>: DNI: 15602754-5 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: PABLO RODRIGO PIZARRO (OFFICIAL)</p><p><b>telecom</b>: <a href=\"mailto:ppizarro.delgado@minsal.cl\">ppizarro.delgado@minsal.cl</a></p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1983-08-04</p><p><b>deceased</b>: false</p><p><b>address</b>: 13120 13 152 (HOME)</p></div>"
   },
   "extension": [
     {
-      "url": "nationality",
+      "url": "http://core.hl7chile.cl/StructureDefinition/CodigoPaises",
       "valueCodeableConcept": {
         "coding": [
           {
             "code": "152",
-            "display": "Chile"
+            "display": "Chilena"
           }
         ]
       }
@@ -31,12 +31,20 @@
       "type": {
         "extension": [
           {
-            "url": "http://minsal.cl/fhir/core//StructureDefinition/CodigoPaises"
+            "url": "http://core.hl7chile.cl/StructureDefinition/CodigoPaises",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "152",
+                  "display": "Chile"
+                }
+              ]
+            }
           }
         ],
         "coding": [
           {
-            "code": "NNCH",
+            "code": "NNCH152",
             "display": "DNI"
           }
         ]
@@ -52,7 +60,8 @@
       "_family": {
         "extension": [
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family"
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family",
+            "valueString": "DELGADO"
           }
         ]
       },

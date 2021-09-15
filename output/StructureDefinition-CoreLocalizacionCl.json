@@ -15,12 +15,12 @@
       "valueCode": "business"
     }
   ],
-  "url": "http://minsal.cl/fhir/core//StructureDefinition/CoreLocalizacionCl",
+  "url": "http://core.hl7chile.cl/StructureDefinition/CoreLocalizacionCl",
   "version": "0.8 (Ballot Pendiente)",
   "name": "LocalizacionCL",
   "title": "Perfil de Localización de Objetos e Infraestructura",
   "status": "active",
-  "date": "2021-09-13T12:43:20-03:00",
+  "date": "2021-09-15T12:30:30-03:00",
   "contact": [
     {
       "name": "Pablo Pizzaro",
@@ -2516,7 +2516,7 @@
         "isSummary": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://minsal.cl/fhir/core//ValueSet/CodNacComunas"
+          "valueSet": "http://core.hl7chile.cl/ValueSet/CodNacComunas"
         },
         "mapping": [
           {
@@ -2579,7 +2579,7 @@
         "isSummary": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://minsal.cl/fhir/core//ValueSet/CodProv"
+          "valueSet": "http://core.hl7chile.cl/ValueSet/CodProv"
         },
         "mapping": [
           {
@@ -2628,7 +2628,7 @@
         "isSummary": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://minsal.cl/fhir/core//ValueSet/CodReg"
+          "valueSet": "http://core.hl7chile.cl/ValueSet/CodReg"
         },
         "mapping": [
           {
@@ -4007,7 +4007,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://minsal.cl/fhir/core//ValueSet/CodNacComunas"
+          "valueSet": "http://core.hl7chile.cl/ValueSet/CodNacComunas"
         }
       },
       {
@@ -4017,7 +4017,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://minsal.cl/fhir/core//ValueSet/CodProv"
+          "valueSet": "http://core.hl7chile.cl/ValueSet/CodProv"
         }
       },
       {
@@ -4027,7 +4027,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://minsal.cl/fhir/core//ValueSet/CodReg"
+          "valueSet": "http://core.hl7chile.cl/ValueSet/CodReg"
         }
       },
       {

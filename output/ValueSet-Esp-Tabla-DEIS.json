@@ -5,12 +5,12 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <code>http://deis.cl/especialidades</code></li></ul></div>"
   },
-  "url": "http://minsal.cl/fhir/core//ValueSet/Esp-Tabla-DEIS",
+  "url": "http://core.hl7chile.cl/ValueSet/Esp-Tabla-DEIS",
   "version": "0.8 (Ballot Pendiente)",
   "name": "TablaEspecialidades",
   "title": "Códigos de especialidades según DEIS",
   "status": "active",
-  "date": "2021-09-13T12:43:20-03:00",
+  "date": "2021-09-15T12:30:30-03:00",
   "contact": [
     {
       "name": "Pablo Pizzaro",

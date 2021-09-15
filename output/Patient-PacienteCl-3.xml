@@ -5,25 +5,32 @@
   <meta>
     <versionId value="2"/>
     <lastUpdated value="2021-07-13T00:22:41.166Z"/>
-    <profile value="http://minsal.cl/fhir/core//StructureDefinition/CorePacienteCl"/>
+    <profile value="http://core.hl7chile.cl/StructureDefinition/CorePacienteCl"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: DNI: 15602754-5 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: PABLO RODRIGO PIZARRO (OFFICIAL)</p><p><b>telecom</b>: <a href="mailto:ppizarro.delgado@minsal.cl">ppizarro.delgado@minsal.cl</a></p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1983-08-04</p><p><b>deceased</b>: false</p><p><b>address</b>: 13120 13 152 (HOME)</p></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Codigo de Identificación de países</b>: <span title="Codes: ">Chilena</span></p><p><b>identifier</b>: DNI: 15602754-5 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: PABLO RODRIGO PIZARRO (OFFICIAL)</p><p><b>telecom</b>: <a href="mailto:ppizarro.delgado@minsal.cl">ppizarro.delgado@minsal.cl</a></p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1983-08-04</p><p><b>deceased</b>: false</p><p><b>address</b>: 13120 13 152 (HOME)</p></div>
   </text>
-  <extension url="nationality">
+  <extension url="http://core.hl7chile.cl/StructureDefinition/CodigoPaises">
     <valueCodeableConcept>
       <coding>
         <code value="152"/>
-        <display value="Chile"/>
+        <display value="Chilena"/>
       </coding>
     </valueCodeableConcept>
   </extension>
   <identifier>
     <use value="official"/>
     <type>
-      <extension url="http://minsal.cl/fhir/core//StructureDefinition/CodigoPaises"/>
+      <extension url="http://core.hl7chile.cl/StructureDefinition/CodigoPaises">
+        <valueCodeableConcept>
+          <coding>
+            <code value="152"/>
+            <display value="Chile"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
       <coding>
-        <code value="NNCH"/>
+        <code value="NNCH152"/>
         <display value="DNI"/>
       </coding>
     </type>
@@ -33,7 +40,9 @@
   <name>
     <use value="official"/>
     <family value="PIZARRO">
-      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-mothers-family"/>
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-mothers-family">
+        <valueString value="DELGADO"/>
+      </extension>
     </family>
     <given value="PABLO RODRIGO"/>
   </name>

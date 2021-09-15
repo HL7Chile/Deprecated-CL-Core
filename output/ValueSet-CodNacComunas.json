@@ -5,12 +5,12 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <code>https://apis.digital.gob.cl/dpa/comunas/</code></li></ul></div>"
   },
-  "url": "http://minsal.cl/fhir/core//ValueSet/CodNacComunas",
+  "url": "http://core.hl7chile.cl/ValueSet/CodNacComunas",
   "version": "0.8 (Ballot Pendiente)",
   "name": "CodComunas",
   "title": "Códigos de Comunas en Chile",
   "status": "active",
-  "date": "2021-09-13T12:43:20-03:00",
+  "date": "2021-09-15T12:30:30-03:00",
   "contact": [
     {
       "name": "Pablo Pizzaro",

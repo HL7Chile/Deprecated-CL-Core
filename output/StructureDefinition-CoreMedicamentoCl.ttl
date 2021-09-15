@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://minsal.cl/fhir/core/StructureDefinition/CoreMedicamentoCl> a fhir:StructureDefinition;
+<http://core.hl7chile.cl/StructureDefinition/CoreMedicamentoCl> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "CoreMedicamentoCl"];
   fhir:DomainResource.text [
@@ -21,12 +21,12 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "business" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://minsal.cl/fhir/core//StructureDefinition/CoreMedicamentoCl"];
+  fhir:StructureDefinition.url [ fhir:value "http://core.hl7chile.cl/StructureDefinition/CoreMedicamentoCl"];
   fhir:StructureDefinition.version [ fhir:value "0.8 (Ballot Pendiente)"];
   fhir:StructureDefinition.name [ fhir:value "MedicamentoCL"];
   fhir:StructureDefinition.title [ fhir:value "Medicamento Core Nacional"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-09-13T12:43:20-03:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-09-15T12:30:30-03:00"^^xsd:dateTime];
   fhir:StructureDefinition.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Pablo Pizzaro" ];
@@ -2957,7 +2957,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://minsal.cl/fhir/core/StructureDefinition/CoreMedicamentoCl.ttl> a owl:Ontology;
+<http://core.hl7chile.cl/StructureDefinition/CoreMedicamentoCl.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

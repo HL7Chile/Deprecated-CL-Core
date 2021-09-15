@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://minsal.cl/fhir/core/ValueSet/CodNacComunas> a fhir:ValueSet;
+<http://core.hl7chile.cl/ValueSet/CodNacComunas> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "CodNacComunas"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <code>https://apis.digital.gob.cl/dpa/comunas/</code></li></ul></div>"
   ];
-  fhir:ValueSet.url [ fhir:value "http://minsal.cl/fhir/core//ValueSet/CodNacComunas"];
+  fhir:ValueSet.url [ fhir:value "http://core.hl7chile.cl/ValueSet/CodNacComunas"];
   fhir:ValueSet.version [ fhir:value "0.8 (Ballot Pendiente)"];
   fhir:ValueSet.name [ fhir:value "CodComunas"];
   fhir:ValueSet.title [ fhir:value "Códigos de Comunas en Chile"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-09-13T12:43:20-03:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-09-15T12:30:30-03:00"^^xsd:dateTime];
   fhir:ValueSet.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Pablo Pizzaro" ];
@@ -37,7 +37,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://minsal.cl/fhir/core/ValueSet/CodNacComunas.ttl> a owl:Ontology;
+<http://core.hl7chile.cl/ValueSet/CodNacComunas.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

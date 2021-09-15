@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>HL7.FHIR.UV.CORECH\Perfil Se destina para determinar la especialidad del Prescriptor para Receta Digital, extensible a Core Nacional - XML Representation - FHIR v4.0.1</title>
+    <title>HL7.FHIR.CL.CORECH\Perfil Se destina para determinar la especialidad del Prescriptor para Receta Digital, extensible a Core Nacional - XML Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -117,6 +117,31 @@
       </li>
     </ul>
   </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Perfiles
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="StructureDefinition-CorePacienteCl.html">Paciente</a>
+      </li>
+      <li><a name="l220">​</a>
+        <a href="file:///C:/IGs/_FHIR_Core_CH/output/StructureDefinition-CorePrestadorCl.html">Prestador</a>
+      </li>
+      <li><a name="l226">​</a>
+        <a href="file:///C:/IGs/_FHIR_Core_CH/output/StructureDefinition-CoreEspecialidadCl.html">Especialidad Prestador</a>
+      </li>
+      <li><a name="l232">​</a>
+        <a href="file:///C:/IGs/_FHIR_Core_CH/output/StructureDefinition-CoreOrganizacionCl.html">Organización</a>
+      </li>
+      <li><a name="l238">​</a>
+        <a href="file:///C:/IGs/_FHIR_Core_CH/output/StructureDefinition-CoreMedicamentoCl.html">Medicamento</a>
+      </li>
+      <li><a name="l244">​</a>
+        <a href="file:///C:/IGs/_FHIR_Core_CH/output/StructureDefinition-CoreLocalizacionCl.html">Localización</a>
+      </li>
+    </ul>
+  </li>
   <li>
     <a href="ejemplos.html">Ejemplos</a>
   </li>
@@ -148,7 +173,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">Guía de Implementación Core-CL - Local Development build (v0.8 (Ballot Pendiente)). See the <a href="http://minsal.cl/fhir/core//history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">Guía de Implementación Core-CL - Local Development build (v0.8 (Ballot Pendiente)). See the <a href="http://core.hl7chile.cl/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   
 
 
@@ -253,14 +278,13 @@
              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category"&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="individual"/&gt;
   &lt;/extension&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.url">url</a>
-       <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://minsal.cl/fhir/core//StructureDefinition/CoreEspecialidadCl"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://core.hl7chile.cl/StructureDefinition/CoreEspecialidadCl"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="0.8 (Ballot Pendiente)"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="EspecialidadCL"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">title</a>
          <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Perfil Se destina para determinar la especialidad del Prescriptor para Receta Digital, extensible a Core Nacional"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="active"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2021-09-13T12:43:20-03:00"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2021-09-15T12:30:30-03:00"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Pablo Pizzaro"/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
@@ -1177,7 +1201,7 @@ Reference is intended to point to a structure that can potentially be expressed 
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="extensible"/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>="http://minsal.cl/fhir/core//ValueSet/Esp-Tabla-DEIS"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>="http://core.hl7chile.cl/ValueSet/Esp-Tabla-DEIS"/&gt;
       &lt;/binding&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>="v2"/&gt;
@@ -1905,7 +1929,7 @@ So the endpoint satisfies the need to be able to define the technical connection
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="extensible"/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>="http://minsal.cl/fhir/core//ValueSet/Esp-Tabla-DEIS"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>="http://core.hl7chile.cl/ValueSet/Esp-Tabla-DEIS"/&gt;
       &lt;/binding&gt;
     &lt;/element&gt;
   &lt;/differential&gt;
@@ -1969,9 +1993,9 @@ So the endpoint satisfies the need to be able to define the technical connection
           <!-- container -->
         
         <div class="inner-wrapper">
-            <p><a name="l7364">​</a>
-                IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="ppizarro.delgado@minsal.cl"></a>. Package hl7.fhir.uv.CoreCH#0.8 (Ballot Pendiente)
-                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Mon, Sep 13, 2021 12:43-0300">13-09-2021</span>
+            <p><a name="l7411">​</a>
+                IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="ppizarro.delgado@minsal.cl"></a>. Package hl7.fhir.cl.CoreCH#0.8 (Ballot Pendiente)
+                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Wed, Sep 15, 2021 12:30-0300">15-09-2021</span>
                 <br/>
                 <span style="color: var(--footer-highlight-text-color)"></span>  Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de Contenidos</a> |
 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">Reportes QA</a> 

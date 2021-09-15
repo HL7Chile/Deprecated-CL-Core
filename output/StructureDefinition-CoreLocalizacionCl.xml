@@ -37,12 +37,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="business"/>
   </extension>
-  <url value="http://minsal.cl/fhir/core//StructureDefinition/CoreLocalizacionCl"/>
+  <url value="http://core.hl7chile.cl/StructureDefinition/CoreLocalizacionCl"/>
   <version value="0.8 (Ballot Pendiente)"/>
   <name value="LocalizacionCL"/>
   <title value="Perfil de Localización de Objetos e Infraestructura"/>
   <status value="active"/>
-  <date value="2021-09-13T12:43:20-03:00"/>
+  <date value="2021-09-15T12:30:30-03:00"/>
   <contact>
     <name value="Pablo Pizzaro"/>
     <telecom>
@@ -2071,7 +2071,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://minsal.cl/fhir/core//ValueSet/CodNacComunas"/>
+        <valueSet value="http://core.hl7chile.cl/ValueSet/CodNacComunas"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -2123,7 +2123,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://minsal.cl/fhir/core//ValueSet/CodProv"/>
+        <valueSet value="http://core.hl7chile.cl/ValueSet/CodProv"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -2163,7 +2163,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://minsal.cl/fhir/core//ValueSet/CodReg"/>
+        <valueSet value="http://core.hl7chile.cl/ValueSet/CodReg"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -3270,7 +3270,7 @@
       <mustSupport value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://minsal.cl/fhir/core//ValueSet/CodNacComunas"/>
+        <valueSet value="http://core.hl7chile.cl/ValueSet/CodNacComunas"/>
       </binding>
     </element>
     <element id="Location.address.district">
@@ -3279,7 +3279,7 @@
       <mustSupport value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://minsal.cl/fhir/core//ValueSet/CodProv"/>
+        <valueSet value="http://core.hl7chile.cl/ValueSet/CodProv"/>
       </binding>
     </element>
     <element id="Location.address.state">
@@ -3288,7 +3288,7 @@
       <mustSupport value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://minsal.cl/fhir/core//ValueSet/CodReg"/>
+        <valueSet value="http://core.hl7chile.cl/ValueSet/CodReg"/>
       </binding>
     </element>
     <element id="Location.address.country">

@@ -17,12 +17,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="individual"/>
   </extension>
-  <url value="http://minsal.cl/fhir/core//StructureDefinition/CoreEspecialidadCl"/>
+  <url value="http://core.hl7chile.cl/StructureDefinition/CoreEspecialidadCl"/>
   <version value="0.8 (Ballot Pendiente)"/>
   <name value="EspecialidadCL"/>
   <title value="Perfil Se destina para determinar la especialidad del Prescriptor para Receta Digital, extensible a Core Nacional"/>
   <status value="active"/>
-  <date value="2021-09-13T12:43:20-03:00"/>
+  <date value="2021-09-15T12:30:30-03:00"/>
   <contact>
     <name value="Pablo Pizzaro"/>
     <telecom>
@@ -854,7 +854,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://minsal.cl/fhir/core//ValueSet/Esp-Tabla-DEIS"/>
+        <valueSet value="http://core.hl7chile.cl/ValueSet/Esp-Tabla-DEIS"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -1525,7 +1525,7 @@
       <mustSupport value="true"/>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://minsal.cl/fhir/core//ValueSet/Esp-Tabla-DEIS"/>
+        <valueSet value="http://core.hl7chile.cl/ValueSet/Esp-Tabla-DEIS"/>
       </binding>
     </element>
   </differential>

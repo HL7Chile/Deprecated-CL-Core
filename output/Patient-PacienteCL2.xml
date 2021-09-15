@@ -3,12 +3,12 @@
 <Patient xmlns="http://hl7.org/fhir">
   <id value="PacienteCL2"/>
   <meta>
-    <profile value="http://minsal.cl/fhir/core//StructureDefinition/CorePacienteCl"/>
+    <profile value="http://core.hl7chile.cl/StructureDefinition/CorePacienteCl"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Pasaporte: P3334521.2 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Wilmer Andres de Dios Cabrales (OFFICIAL)</p><p><b>telecom</b>: <a href="mailto:wilCAB12l@wilmermail.com">wilCAB12l@wilmermail.com</a></p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1968-11-03</p><p><b>address</b>: Calle 4 Norte, 52, pieza 802 15101 15 152 (TEMP)</p></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Codigo de Identificación de países</b>: <span title="Codes: ">Salvadoreño</span></p><p><b>identifier</b>: Pasaporte: P3334521.2 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Wilmer Andres de Dios Cabrales (OFFICIAL)</p><p><b>telecom</b>: <a href="mailto:wilCAB12l@wilmermail.com">wilCAB12l@wilmermail.com</a></p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1968-11-03</p><p><b>address</b>: Calle 4 Norte, 52, pieza 802 15101 15 152 (TEMP)</p></div>
   </text>
-  <extension url="nationality">
+  <extension url="http://core.hl7chile.cl/StructureDefinition/CodigoPaises">
     <valueCodeableConcept>
       <coding>
         <code value="222"/>
@@ -19,7 +19,7 @@
   <identifier>
     <use value="official"/>
     <type>
-      <extension url="http://minsal.cl/fhir/core//StructureDefinition/CodigoPaises">
+      <extension url="http://core.hl7chile.cl/StructureDefinition/CodigoPaises">
         <valueCodeableConcept>
           <coding>
             <code value="222"/>
@@ -38,7 +38,9 @@
   <name>
     <use value="official"/>
     <family value="Cabrales">
-      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-mothers-family"/>
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-mothers-family">
+        <valueString value="Rivas"/>
+      </extension>
     </family>
     <given value="Wilmer"/>
     <given value="Andres"/>

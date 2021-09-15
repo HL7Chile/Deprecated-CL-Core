@@ -3,7 +3,7 @@
   "id": "PacienteCL",
   "meta": {
     "profile": [
-      "http://minsal.cl/fhir/core//StructureDefinition/CorePacienteCl"
+      "http://core.hl7chile.cl/StructureDefinition/CorePacienteCl"
     ]
   },
   "text": {
@@ -16,7 +16,7 @@
       "type": {
         "extension": [
           {
-            "url": "http://minsal.cl/fhir/core//StructureDefinition/CodigoPaises",
+            "url": "http://core.hl7chile.cl/StructureDefinition/CodigoPaises",
             "valueCodeableConcept": {
               "coding": [
                 {
@@ -44,7 +44,8 @@
       "_family": {
         "extension": [
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family"
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family",
+            "valueString": "Bosh"
           }
         ]
       },

@@ -165,15 +165,15 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","AD.part[parttype = AL]"
 "Location.address.city","","Municpality
 ","",0,1,"Y","","Y","string {[]} {[]}
-","Campo para Comuna de residencia","The name of the city, town, suburb, village or other community or delivery center.","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Erewhon""/>","","",,"required","","http://minsal.cl/fhir/core//ValueSet/CodNacComunas","",,,,"Address.city",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Campo para Comuna de residencia","The name of the city, town, suburb, village or other community or delivery center.","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Erewhon""/>","","",,"required","","http://core.hl7chile.cl/ValueSet/CodNacComunas","",,,,"Address.city",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","AD.part[parttype = CTY]"
 "Location.address.district","","County
 ","",0,1,"Y","","Y","string {[]} {[]}
-","Campo para Provincia de Residencia","The name of the administrative area (county).","District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Madison""/>","","",,"required","","http://minsal.cl/fhir/core//ValueSet/CodProv","",,,,"Address.district",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Campo para Provincia de Residencia","The name of the administrative area (county).","District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Madison""/>","","",,"required","","http://core.hl7chile.cl/ValueSet/CodProv","",,,,"Address.district",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","AD.part[parttype = CNT | CPA]"
 "Location.address.state","","Province
 Territory","",0,1,"Y","","Y","string {[]} {[]}
-","Campo para Provincia de Región","Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (e.g. US 2 letter state codes).","","","","","","","","","",,"required","","http://minsal.cl/fhir/core//ValueSet/CodReg","",,,,"Address.state",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Campo para Provincia de Región","Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (e.g. US 2 letter state codes).","","","","","","","","","",,"required","","http://core.hl7chile.cl/ValueSet/CodReg","",,,,"Address.state",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","AD.part[parttype = STA]"
 "Location.address.postalCode","","Zip
 ","",0,1,"","","Y","string {[]} {[]}

@@ -1,16 +1,24 @@
+
+
 Profile:        PacienteCl
 Parent:         Patient
 Id:             CorePacienteCl
 Title:          "Perfil Paciente Para Core Nacional"
 Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso Paciente para un Historial Clínico Nacional"
 
-* extension contains http://hl7.org/fhir/StructureDefinition/patient-nationality named nationality 0..
+
+
+
+* extension contains PaisOrigen-Nacionalidad-Cl named nacionalidad 0..1   
+
+
 * extension ^short = "Extensión de Nacionalidad para pacientes extranjeros"
-* extension ^definition = "para hacer uso de esta extensión se debe agregar el path: extension.url = ´nationality´"
-* extension.valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
-* extension.valueCodeableConcept.coding.system ^short = "El sistema de códigos queda definido en la norma ISO3166-1-N"
-* extension.valueCodeableConcept.coding.system ^definition = "El sistema de códigos queda definido en la norma ISO3166-1-N, en donde el código sería el numero correspondiente designado para el país"
-* extension MS
+* extension ^definition = "para hacer uso de esta extensión se debe agregar el path: extension.url = ´nacionalidad´"
+
+//* extension[nacionalidad].valueCodeableConcept from  http://hl7.org/fhir/ValueSet/iso3166-1-N  
+//* extension.valueCodeableConcept.coding.system ^short = "El sistema de códigos queda definido en la norma ISO3166-1-N"
+//* extension.valueCodeableConcept.coding.system ^definition = "El sistema de códigos queda definido en la norma ISO3166-1-N, en donde el código sería el numero correspondiente designado para el país"
+//* extension MS
 
 
 * identifier  and identifier.use   and identifier.type and identifier.extension  MS
@@ -37,11 +45,11 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * identifier.type.coding.code ^definition = "Código de Tipo de Documento"
 
 * identifier.type.extension ^definition = "Se usa esta extensión para agregarle al tipo de documento el país de origen de este" 
-* identifier.type.extension contains PaisOrigen named paises 1..1   
+* identifier.type.extension contains PaisOrigen-Nacionalidad-Cl named paises 1..1   
 
 
 
-* name ^slicing.discriminator.type = #type
+* name ^slicing.discriminator.type = #value
 * name ^slicing.discriminator.path = "use"
 * name ^slicing.rules = #open
 * name ^slicing.description = "Este slice se genera para diferenciar el nombre registrado Versus el nombre social"
@@ -52,6 +60,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 * name[NombreOficial] ^short = "Determinación del nombre registrado oficialmente del Paciente"
 * name[NombreOficial] ^definition = "Determinación del nombre registrado oficialmente del Paciente"
+* name[NombreOficial].use = #official
 * name[NombreOficial].use ^short = "uso del nombre del paciente"
 * name[NombreOficial].use ^definition = "este slice corresponde al nombre registrado al momento de nacer, por lo que se fuerza el valor ´official´"
 * name[NombreOficial].use ^comment = "Para ser considerado como el slice determinado para el uso de nombre completo, el use DEBE ser de valor de código ´official´"
@@ -68,6 +77,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * name[NombreSocial] ^short = "Nombre con el cual se identifica al paciente sin ser este oficial. Se especifica slo en el uso del nombre"
 * name[NombreSocial] ^definition = "Nombre con el cual se identifica al paciente sin ser este oficial. Se especifica slo en el uso del nombre"
 * name[NombreSocial] ^short = "nombre recurrente que usa el paciente"
+* name[NombreSocial].use = #usual
 * name[NombreSocial].use ^short = "uso que se le da al nombre"
 * name[NombreSocial].use ^definition = "Este uso especifico se enfoca a la definición de un nombre social. Es por esta razón que el uso se fuerza a usual"
 * name[NombreSocial].use ^comment = "Para ser considerado como el slice determinado para el uso de nombre social, el use DEBE ser de valor de código ´usual´"
@@ -107,28 +117,29 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * address.line ^definition = "Aquí se escribe toda la dirección completa"
 * address.city ^short = "Campo para Comuna de residencia"
 * address.city ^definition = "Campo para Comuna de residencia. Se usa el valueSet de códigos de comunas definidos a nivel naciona. Este endPoint debe habilitarse "
-* address.city from CodComunas (required)
+//* address.city from CodComunas (required)
 * address.district ^short = "Campo para Provincia de Residencia"
 * address.district ^definition = "Campo para Provincia de Residencia. Se usa el valueSet de códigos de comunas definidos a nivel naciona. Este endPoint debe habilitarse"
-* address.district from CodProvincia (required)
+//* address.district from CodProvincia (required)
 * address.state ^short = "Campo para Provincia de Región"
 * address.state ^definition = "Campo para Provincia de Región. Se usa el valueSet de códigos de comunas definidos a nivel naciona. Este endPoint debe habilitarse"
-* address.state from CodRegion (required)
+//* address.state from CodRegion (required)
 * address.country ^short = "Campo para País de Residencia"
 * address.country ^definition = "Campo para País de Residencia"
-* address.country from * address.country from http://hl7.org/fhir/ValueSet/iso3166-1-N (required) (required)
+* address.country from http://hl7.org/fhir/ValueSet/iso3166-1-N (required)
 
 
 
-Extension:   PaisOrigen
+Extension:   PaisOrigen-Nacionalidad-Cl
 Id:          CodigoPaises
 Title:       "Codigo de Identificación de países"
 Description: "Esta extensión incluye códigos de paises de origen"
 * value[x] only CodeableConcept
 * value[x] ^short = "Código de País"
-* valueCodeableConcept from urn:iso:std:iso:3166 (extensible)
+* valueCodeableConcept from http://hl7.org/fhir/ValueSet/iso3166-1-N (extensible)
 
 
+ 
    
 
 ValueSet:    CodComunas
@@ -158,8 +169,8 @@ Description: "Codigos definidos para identificar una comuna en Chile"
 	 
 	//Identificación por Cédula Chilena
 * identifier.use = #official    //obligado
-* identifier.type.extension[PaisOrigen].valueCodeableConcept.coding.code = #152
-* identifier.type.extension[PaisOrigen].valueCodeableConcept.coding.display = "Chile"
+* identifier.type.extension[paises].valueCodeableConcept.coding.code = #152
+* identifier.type.extension[paises].valueCodeableConcept.coding.display = "Chile"
 * identifier.type.coding.code = #NNCH
 * identifier.value = "15.236.327-k"
 
@@ -167,16 +178,16 @@ Description: "Codigos definidos para identificar una comuna en Chile"
 * active = true
 
 //Nombre Oficial
-* name.use = #official
-* name.family = "Rosales"
-* name.family.extension[mothers-family].value[x] = "Bosh" //uso de la extensión
-* name.given = "Marietta"
+* name[NombreOficial].use = #official
+* name[NombreOficial].family = "Rosales"
+* name[NombreOficial].family.extension[mothers-family].valueString	 = "Bosh" //uso de la extensión
+* name[NombreOficial].given = "Marietta"
 * name.given[1] = "María"
 * name.given[2] = "Ximena"
 
 //nombre social
-* name[1].use = #usual
-* name[1].given = "Xime"
+* name[NombreSocial].use = #usual
+* name[NombreSocial].given = "Xime"
 
 //dos contactos, un celular y un email
 * telecom.system = #phone
@@ -194,9 +205,9 @@ Description: "Codigos definidos para identificar una comuna en Chile"
 // Una sola dirección
 * address.use = #home
 * address.line = "Av Los Chirimoyos, 32, casa 4"
-* address.city = #5101  //codigo de comuna por binding (valpo)
-* address.district = #051  //codigo de comuna por binding (valpo)
-* address.state = #5 //codigo por binding region (valparaiso)
+* address.city = "5101"  //codigo de comuna por binding (valpo)
+* address.district = "051"  //codigo de comuna por binding (valpo)
+* address.state = "5" //codigo por binding region (valparaiso)
 * address.country = #152
 
 
@@ -206,14 +217,15 @@ InstanceOf : CorePacienteCl
 Usage : #example
 
 // Nacionalidad por medio de la extensión
-* extension.url = "nationality"
-* extension.valueCodeableConcept.coding.code = #222
-* extension.valueCodeableConcept.coding.display = "Salvadoreño"
+
+* extension[nacionalidad].valueCodeableConcept.coding.code = #222
+* extension[nacionalidad].valueCodeableConcept.coding.display = "Salvadoreño"
+
  
 //Identificación por Pasaporte Salvadoreño
 * identifier.use = #official    //obligado
-* identifier.type.extension[PaisOrigen].valueCodeableConcept.coding.code = #222
-* identifier.type.extension[PaisOrigen].valueCodeableConcept.coding.display = "El Salvador"
+* identifier.type.extension[paises].valueCodeableConcept.coding.code = #222
+* identifier.type.extension[paises].valueCodeableConcept.coding.display = "El Salvador"
 * identifier.type.coding.code = #PPN
 * identifier.type.coding.display = "Pasaporte"
 * identifier.value = "P3334521.2"
@@ -222,12 +234,12 @@ Usage : #example
 * active = true
 
 //Nombre Oficial
-* name.use = #official
-* name.family = "Cabrales"
-* name.family.extension[mothers-family].value[x] = "Rivas"
-* name.given = "Wilmer"
-* name.given[1] = "Andres"
-* name.given[2] = "de Dios"
+* name[NombreOficial].use = #official
+* name[NombreOficial].family = "Cabrales"
+* name[NombreOficial].family.extension[mothers-family].valueString = "Rivas"
+* name[NombreOficial].given = "Wilmer"
+* name[NombreOficial].given[1] = "Andres"
+* name[NombreOficial].given[2] = "de Dios"
 
 
 //un contactos, un email
@@ -245,9 +257,9 @@ Usage : #example
 // Una sola dirección
 * address.use = #temp
 * address.line = "Calle 4 Norte, 52, pieza 802"
-* address.city = #15101  //codigo de comuna por binding (Arica)
-* address.district = #151  //codigo de comuna por binding (Arica)
-* address.state = #15 //codigo por binding region (Arica)
+* address.city = "15101"  //codigo de comuna por binding (Arica)
+* address.district = "151"  //codigo de comuna por binding (Arica)
+* address.state = "15" //codigo por binding region (Arica)
 * address.country = #152
 
  
@@ -259,22 +271,23 @@ Usage: #example
 * meta.versionId = "2"
 * meta.lastUpdated = "2021-07-13T00:22:41.166Z"
 
-* extension.url = "nationality"
-* extension.valueCodeableConcept = #152 "Chile"
+* extension[nacionalidad].valueCodeableConcept.coding.code = #152
+* extension[nacionalidad].valueCodeableConcept.coding.display = "Chilena"
 
 * identifier.use = #official
-* identifier.type.extension[PaisOrigen].valueCodeableConcept.coding.code = #152
-* identifier.type.extension[PaisOrigen].valueCodeableConcept.coding.display = "Chile"
-* identifier.type = #NNCH "DNI"
+* identifier.type.extension[paises].valueCodeableConcept.coding.code = #152
+* identifier.type.extension[paises].valueCodeableConcept.coding.display = "Chile"
+* identifier.type.coding.code = #NNCH152
+* identifier.type.coding.display = "DNI"
 * identifier.value = "15602754-5"
 
 * active = true
-* name.use = #official
-* name.family = "PIZARRO"
+* name[NombreOficial].use = #official
+* name[NombreOficial].family = "PIZARRO"
 
-* name.family.extension[mothers-family].value[x] = "DELGADO" //uso de la extensión
+* name[NombreOficial].family.extension[mothers-family].valueString = "DELGADO" //uso de la extensión
 
-* name.given = "PABLO RODRIGO"
+* name[NombreOficial].given = "PABLO RODRIGO"
 
 * telecom.system = #email
 * telecom.value = "ppizarro.delgado@minsal.cl"
@@ -287,7 +300,7 @@ Usage: #example
 * address.city = "13120"
 * address.district = "131"
 * address.state = "13"
-* address.country = "152"
+* address.country = #152
 * deceasedBoolean = false 
 
 

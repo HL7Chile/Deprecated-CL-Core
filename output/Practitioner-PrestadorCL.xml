@@ -3,7 +3,7 @@
 <Practitioner xmlns="http://hl7.org/fhir">
   <id value="PrestadorCL"/>
   <meta>
-    <profile value="http://minsal.cl/fhir/core//StructureDefinition/CorePrestadorCl"/>
+    <profile value="http://core.hl7chile.cl/StructureDefinition/CorePrestadorCl"/>
   </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 8336277-3 (OFFICIAL), id: 999999 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Johanna de los Angeles Silva (OFFICIAL)</p><p><b>telecom</b>: ph: 9345666(MOBILE), <a href="mailto:DraSilva@mimail.com">DraSilva@mimail.com</a></p><p><b>address</b>: Naranjos, 22, depto 32 091001 09 152 (HOME)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1974-08-12</p><blockquote><p><b>qualification</b></p><p><b>code</b>: <span title="Codes: {https://api.minsal.cl/v1/catalogos/profesiones/ 2112}">Certificado Profesional Médico Cirujano</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>code</b>: <span title="Codes: {https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/ 122}">Cardiólogia</span></p></blockquote></div>

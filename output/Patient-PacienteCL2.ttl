@@ -5,23 +5,23 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://minsal.cl/fhir/core/Patient/PacienteCL2> a fhir:Patient;
+<http://core.hl7chile.cl/Patient/PacienteCL2> a fhir:Patient;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "PacienteCL2"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://minsal.cl/fhir/core//StructureDefinition/CorePacienteCl";
+       fhir:value "http://core.hl7chile.cl/StructureDefinition/CorePacienteCl";
        fhir:index 0;
-       fhir:link <http://minsal.cl/fhir/core//StructureDefinition/CorePacienteCl>
+       fhir:link <http://core.hl7chile.cl/StructureDefinition/CorePacienteCl>
      ]
   ];
   fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Pasaporte: P3334521.2 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Wilmer Andres de Dios Cabrales (OFFICIAL)</p><p><b>telecom</b>: <a href=\"mailto:wilCAB12l@wilmermail.com\">wilCAB12l@wilmermail.com</a></p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1968-11-03</p><p><b>address</b>: Calle 4 Norte, 52, pieza 802 15101 15 152 (TEMP)</p></div>"
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Codigo de Identificación de países</b>: <span title=\"Codes: \">Salvadoreño</span></p><p><b>identifier</b>: Pasaporte: P3334521.2 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Wilmer Andres de Dios Cabrales (OFFICIAL)</p><p><b>telecom</b>: <a href=\"mailto:wilCAB12l@wilmermail.com\">wilCAB12l@wilmermail.com</a></p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1968-11-03</p><p><b>address</b>: Calle 4 Norte, 52, pieza 802 15101 15 152 (TEMP)</p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
-     fhir:Extension.url [ fhir:value "nationality" ];
+     fhir:Extension.url [ fhir:value "http://core.hl7chile.cl/StructureDefinition/CodigoPaises" ];
      fhir:Extension.valueCodeableConcept [
        fhir:CodeableConcept.coding [
          fhir:index 0;
@@ -36,7 +36,7 @@
      fhir:Identifier.type [
        fhir:Element.extension [
          fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://minsal.cl/fhir/core//StructureDefinition/CodigoPaises" ];
+         fhir:Extension.url [ fhir:value "http://core.hl7chile.cl/StructureDefinition/CodigoPaises" ];
          fhir:Extension.valueCodeableConcept [
            fhir:CodeableConcept.coding [
              fhir:index 0;
@@ -61,7 +61,8 @@
        fhir:value "Cabrales";
        fhir:Element.extension [
          fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family" ]
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family" ];
+         fhir:Extension.valueString [ fhir:value "Rivas" ]
        ]
      ];
      fhir:HumanName.given [
@@ -98,7 +99,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://minsal.cl/fhir/core/Patient/PacienteCL2.ttl> a owl:Ontology;
+<http://core.hl7chile.cl/Patient/PacienteCL2.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

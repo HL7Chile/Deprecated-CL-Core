@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>HL7.FHIR.UV.CORECH\Prestador Core-CL - Definitions - FHIR v4.0.1</title>
+    <title>HL7.FHIR.CL.CORECH\Prestador Core-CL - Definitions - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -117,6 +117,31 @@
       </li>
     </ul>
   </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Perfiles
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="StructureDefinition-CorePacienteCl.html">Paciente</a>
+      </li>
+      <li><a name="l220">​</a>
+        <a href="file:///C:/IGs/_FHIR_Core_CH/output/StructureDefinition-CorePrestadorCl.html">Prestador</a>
+      </li>
+      <li><a name="l226">​</a>
+        <a href="file:///C:/IGs/_FHIR_Core_CH/output/StructureDefinition-CoreEspecialidadCl.html">Especialidad Prestador</a>
+      </li>
+      <li><a name="l232">​</a>
+        <a href="file:///C:/IGs/_FHIR_Core_CH/output/StructureDefinition-CoreOrganizacionCl.html">Organización</a>
+      </li>
+      <li><a name="l238">​</a>
+        <a href="file:///C:/IGs/_FHIR_Core_CH/output/StructureDefinition-CoreMedicamentoCl.html">Medicamento</a>
+      </li>
+      <li><a name="l244">​</a>
+        <a href="file:///C:/IGs/_FHIR_Core_CH/output/StructureDefinition-CoreLocalizacionCl.html">Localización</a>
+      </li>
+    </ul>
+  </li>
   <li>
     <a href="ejemplos.html">Ejemplos</a>
   </li>
@@ -148,7 +173,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 4" class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">Guía de Implementación Core-CL - Local Development build (v0.8 (Ballot Pendiente)). See the <a href="http://minsal.cl/fhir/core//history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">Guía de Implementación Core-CL - Local Development build (v0.8 (Ballot Pendiente)). See the <a href="http://core.hl7chile.cl/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   
 
 
@@ -315,7 +340,7 @@ A human language.
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Practitioner.identifier"> </a><span style="color: grey">10.</span> <b>Practitioner.identifier</b><a href="#Practitioner.identifier" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
-  <tr><td>Definition</td><td><p>Este es el listado de Identificaciones de un Prestador. El reconocimiento en Chile se hace a travez de un Número RUN</p>
+  <tr><td>Definition</td><td><p>Identificador para cada prestador. El identificador principal en Chile es el Registro Único Nacional (RUN), y además, se puede ingresar un ID extra para cada prestador, disponibilizado por Registro Nacional de Prestadores Institucionales (NRPI)</p>
 </td></tr>
   <tr><td>Note</td><td>This is a business identifier, not a resource identifier (see <a href="http://hl7.org/fhir/R4/resource.html#identifiers">discussion</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..2</td></tr>
@@ -323,7 +348,7 @@ A human language.
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Often, specific identities are assigned for the agent.</p>
 </td></tr>
-  <tr><td>Comments</td><td><p>Este elemento solo considera un identificador de tipo RUN</p>
+  <tr><td>Comments</td><td><p>Este elemento permite ingresar dos identificadores, uno de tipo RUN y uno de tipo RNPI</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
@@ -886,7 +911,7 @@ The type of an address (physical / postal).
   <tr><td>Definition</td><td><p>Country - a nation as commonly understood or generally accepted.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="l4513">​</a>The codes SHALL be taken from <a href="urn:iso:std:iso:3166">urn:iso:std:iso:3166</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="l4560">​</a>The codes SHALL be taken from <a href="urn:iso:std:iso:3166">urn:iso:std:iso:3166</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>ISO 3166 3 letter codes can be used in place of a human readable country name.</p>
@@ -1676,9 +1701,9 @@ A human language.
           <!-- container -->
         
         <div class="inner-wrapper">
-            <p><a name="l9244">​</a>
-                IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="ppizarro.delgado@minsal.cl"></a>. Package hl7.fhir.uv.CoreCH#0.8 (Ballot Pendiente)
-                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Mon, Sep 13, 2021 12:43-0300">13-09-2021</span>
+            <p><a name="l9291">​</a>
+                IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="ppizarro.delgado@minsal.cl"></a>. Package hl7.fhir.cl.CoreCH#0.8 (Ballot Pendiente)
+                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Wed, Sep 15, 2021 12:30-0300">15-09-2021</span>
                 <br/>
                 <span style="color: var(--footer-highlight-text-color)"></span>  Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de Contenidos</a> |
 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">Reportes QA</a> 

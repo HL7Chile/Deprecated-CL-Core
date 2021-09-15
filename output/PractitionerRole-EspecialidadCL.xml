@@ -3,7 +3,7 @@
 <PractitionerRole xmlns="http://hl7.org/fhir">
   <id value="EspecialidadCL"/>
   <meta>
-    <profile value="http://minsal.cl/fhir/core//StructureDefinition/CoreEspecialidadCl"/>
+    <profile value="http://core.hl7chile.cl/StructureDefinition/CoreEspecialidadCl"/>
   </meta>
   <text>
     <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">Especialidad: Dra. Johanna Rojas declara dos especialidades: Médico Cirujano y Médico Cardiólogo</div>
