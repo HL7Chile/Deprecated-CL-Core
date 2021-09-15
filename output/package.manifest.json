@@ -1,6 +1,10 @@
 {
   "version": "0.8 (Ballot Pendiente)",
   "fhirVersion": "[4.0.1]",
+<<<<<<< HEAD
   "date": "20210915123007",
+=======
+  "date": "20210914192837",
+>>>>>>> a14d037c0644ba904d4ee43095dba23caa85f738
   "name": "hl7.fhir.cl.CoreCH"
 }

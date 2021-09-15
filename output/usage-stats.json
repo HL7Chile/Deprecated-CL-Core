@@ -2,6 +2,7 @@
   "package": "hl7.fhir.cl.CoreCH",
   "version": "0.8 (Ballot Pendiente)",
   "fhirVersion": "4.0.1",
+<<<<<<< HEAD
   "extensions": [
     {
       "url": "http://core.hl7chile.cl/StructureDefinition/CodigoPaises",
@@ -12,6 +13,9 @@
       ]
     }
   ],
+=======
+  "extensions": [],
+>>>>>>> a14d037c0644ba904d4ee43095dba23caa85f738
   "profiles": {
     "PractitionerRole": [
       {
@@ -19,12 +23,15 @@
         "title": "Perfil Se destina para determinar la especialidad del Prescriptor para Receta Digital, extensible a Core Nacional"
       }
     ],
+<<<<<<< HEAD
     "Location": [
       {
         "url": "http://core.hl7chile.cl/StructureDefinition/CoreLocalizacionCl",
         "title": "Perfil de Localización de Objetos e Infraestructura"
       }
     ],
+=======
+>>>>>>> a14d037c0644ba904d4ee43095dba23caa85f738
     "Medication": [
       {
         "url": "http://core.hl7chile.cl/StructureDefinition/CoreMedicamentoCl",
@@ -36,6 +43,7 @@
         "url": "http://core.hl7chile.cl/StructureDefinition/CoreOrganizacionCl",
         "title": "Perfil de Organización de Salud en Chile"
       }
+<<<<<<< HEAD
     ],
     "Patient": [
       {
@@ -48,6 +56,8 @@
         "url": "http://core.hl7chile.cl/StructureDefinition/CorePrestadorCl",
         "title": "Prestador Core-CL"
       }
+=======
+>>>>>>> a14d037c0644ba904d4ee43095dba23caa85f738
     ]
   },
   "usage": {
@@ -73,6 +83,7 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
     ],
+<<<<<<< HEAD
     "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family": [
       "Patient.name.family",
       "Practitioner.name.family"
@@ -80,11 +91,10 @@
     "http://hl7.org/fhir/StructureDefinition/regex": [
       "StructureDefinition.snapshot.element.type"
     ],
+=======
+>>>>>>> a14d037c0644ba904d4ee43095dba23caa85f738
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
-      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"

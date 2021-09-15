@@ -7,6 +7,7 @@
     "name": "CoreCL"
   },
   {
+<<<<<<< HEAD
     "id": "CodigoPaises",
     "type": "StructureDefinition",
     "url": "http://core.hl7chile.cl/StructureDefinition/CodigoPaises",
@@ -14,6 +15,8 @@
     "name": "PaisOrigen-Nacionalidad-Cl"
   },
   {
+=======
+>>>>>>> a14d037c0644ba904d4ee43095dba23caa85f738
     "id": "CoreEspecialidadCl",
     "type": "StructureDefinition",
     "url": "http://core.hl7chile.cl/StructureDefinition/CoreEspecialidadCl",
@@ -21,6 +24,7 @@
     "name": "EspecialidadCL"
   },
   {
+<<<<<<< HEAD
     "id": "CoreLocalizacionCl",
     "type": "StructureDefinition",
     "url": "http://core.hl7chile.cl/StructureDefinition/CoreLocalizacionCl",
@@ -28,6 +32,8 @@
     "name": "LocalizacionCL"
   },
   {
+=======
+>>>>>>> a14d037c0644ba904d4ee43095dba23caa85f738
     "id": "CoreMedicamentoCl",
     "type": "StructureDefinition",
     "url": "http://core.hl7chile.cl/StructureDefinition/CoreMedicamentoCl",
@@ -42,6 +48,7 @@
     "name": "OrganizacionCL"
   },
   {
+<<<<<<< HEAD
     "id": "CorePacienteCl",
     "type": "StructureDefinition",
     "url": "http://core.hl7chile.cl/StructureDefinition/CorePacienteCl",
@@ -84,6 +91,8 @@
     "name": "CodRegion"
   },
   {
+=======
+>>>>>>> a14d037c0644ba904d4ee43095dba23caa85f738
     "id": "Esp-Tabla-DEIS",
     "type": "ValueSet",
     "url": "http://core.hl7chile.cl/ValueSet/Esp-Tabla-DEIS",

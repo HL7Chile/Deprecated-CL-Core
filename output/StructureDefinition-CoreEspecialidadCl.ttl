@@ -26,7 +26,11 @@
   fhir:StructureDefinition.name [ fhir:value "EspecialidadCL"];
   fhir:StructureDefinition.title [ fhir:value "Perfil Se destina para determinar la especialidad del Prescriptor para Receta Digital, extensible a Core Nacional"];
   fhir:StructureDefinition.status [ fhir:value "active"];
+<<<<<<< HEAD
   fhir:StructureDefinition.date [ fhir:value "2021-09-15T12:30:30-03:00"^^xsd:dateTime];
+=======
+  fhir:StructureDefinition.date [ fhir:value "2021-09-14T19:29:07-03:00"^^xsd:dateTime];
+>>>>>>> a14d037c0644ba904d4ee43095dba23caa85f738
   fhir:StructureDefinition.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Pablo Pizzaro" ];

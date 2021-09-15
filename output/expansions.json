@@ -1,8 +1,14 @@
 {
   "resourceType" : "Bundle",
+<<<<<<< HEAD
   "id" : "9d500240-59bb-44d7-958f-ad0e74f5122d",
   "meta" : {
     "lastUpdated" : "2021-09-15T12:30:30.158-03:00"
+=======
+  "id" : "15bdd2f5-8892-4fbd-9660-57e96c694948",
+  "meta" : {
+    "lastUpdated" : "2021-09-14T19:29:07.572-03:00"
+>>>>>>> a14d037c0644ba904d4ee43095dba23caa85f738
   },
   "type" : "collection"
 }

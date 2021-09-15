@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
+<<<<<<< HEAD
   <id value="9d500240-59bb-44d7-958f-ad0e74f5122d"/>
   <meta>
     <lastUpdated value="2021-09-15T12:30:30.158-03:00"/>
+=======
+  <id value="15bdd2f5-8892-4fbd-9660-57e96c694948"/>
+  <meta>
+    <lastUpdated value="2021-09-14T19:29:07.572-03:00"/>
+>>>>>>> a14d037c0644ba904d4ee43095dba23caa85f738
   </meta>
   <type value="collection"/>
 </Bundle>

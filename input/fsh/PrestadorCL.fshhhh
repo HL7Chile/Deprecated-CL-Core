@@ -9,28 +9,25 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 
 * identifier 1..2 
 * identifier ^short = "Id de los prestadores"
-* identifier ^definition = "Identificador para cada prestador. El identificador principal en Chile es el Registro Único Nacional (RUN), y además, se puede ingresar un ID extra para cada prestador, disponibilizado por Registro Nacional de Prestadores Institucionales (NRPI)"
+* identifier ^definition = "Identificador para cada prestador. El identificador principal en Chile es el Registro Único Nacional (RUN), identificador que es obligatorio. Además, se puede ingresar un ID extra para cada prestador, disponibilizado por Registro Nacional de Prestadores Institucionales (NRPI), este identificador es opcional"
 * identifier ^comment = "Este elemento permite ingresar dos identificadores, uno de tipo RUN y uno de tipo RNPI" 
 
 
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
-* identifier ^slicing.description = "Este slice define la posibilidad de agregar una identificacion basada en RUN o basada en el id de prestador de la SuperIntendecia de Salud"
+* identifier ^slicing.description = "Este slice permite agregar una identificacion basada RUN y/o basada en el RNPI"
 * identifier contains RUN 1..1 MS and RNPI 0..1 MS
 
-
-
-
 * identifier[RUN] 1..1
-* identifier[RUN] ^short = "Identificador del número RUN de Personas en Chile" 
-* identifier[RUN] ^definition = "Corresponde al identificador otorgado en la Cédula de Identidad como Número RUN"
-* identifier[RUN].use ^short = "este es el propósito del identificador"
+* identifier[RUN] ^short = "Identificador destinado a almacenar el número de RUN" 
+* identifier[RUN] ^definition = "Corresponde al identificador (RUN) otorgado el Registro Civil de Chile"
+* identifier[RUN].use ^short = "Se define el uso de este identificador"
 * identifier[RUN].use ^definition = "Se definirá este uso siempre como ´official´ debido a que cualquier ID presentado para motivos de este perfil deb ser de este tipo"
 * identifier[RUN].use = #official
 
 * identifier[RUN].system ^short = "endPoint sobre el cual se valida el número Identificador"
-* identifier[RUN].system ^definition = "Se define el el endPoint que apunta a la API que permite validar la existencia del número RUT"
+* identifier[RUN].system ^definition = "Se define la url a la cual apunta la API, con el fin de validar el RUN"
 * identifier[RUN].system ^comment = "Se define el el endPoint que apunta a la API que permite validar la existencia del número RUT. Por momento se usará la url = ´http://api_run/run´"
 * identifier[RUN].system = "https://api.minsal.cl/v1/prestadores/individuales/verificaciones/"
 

@@ -122,6 +122,7 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
+<<<<<<< HEAD
       <li>
         <a href="StructureDefinition-CorePacienteCl.html">Paciente</a>
       </li>
@@ -139,6 +140,25 @@
       </li>
       <li><a name="l243">​</a>
         <a href="file:///C:/IGs/_FHIR_Core_CH/output/StructureDefinition-CoreLocalizacionCl.html">Localización</a>
+=======
+      <li><a name="l213">​</a>
+        <a href="StructureDefinition-CorePacienteCl.html">Paciente</a>
+      </li>
+      <li><a name="l219">​</a>
+        <a href="StructureDefinition-CorePrestadorCl.html">Prestador</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-CoreEspecialidadCl.html">Especialidad Prestador</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-CoreOrganizacionCl.html">Organización</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-CoreMedicamentoCl.html">Medicamento</a>
+      </li>
+      <li><a name="l243">​</a>
+        <a href="StructureDefinition-CoreLocalizacionCl.html">Localización</a>
+>>>>>>> a14d037c0644ba904d4ee43095dba23caa85f738
       </li>
     </ul>
   </li>
@@ -190,13 +210,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#1">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#2">Structures: Extension Definitions</a>
+         <a href="#2">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#3">Terminology: Value Sets</a>
-      </li>
-      <li>
-         <a href="#4">Example: Example Instances</a>
+         <a href="#3">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -221,14 +238,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-CoreLocalizacionCl.html" title="StructureDefinition/CoreLocalizacionCl">Perfil de Localización de Objetos e Infraestructura</a>
-               </td>
-               <td>
-<p>Este perfil determina la ubicación especifica para un evento, objeto o Infraestructura específica. Este perfil permite vinlcular la localización especifica con una organización o espacio físico específico</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="StructureDefinition-CoreMedicamentoCl.html" title="StructureDefinition/CoreMedicamentoCl">Medicamento Core Nacional</a>
                </td>
                <td>
@@ -243,46 +252,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado para también cubrir las necesidades nacionales de un Recurso de Organzación en Salud</p>
 </td>
             </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-CorePacienteCl.html" title="StructureDefinition/CorePacienteCl">Perfil Paciente Para Core Nacional</a>
-               </td>
-               <td>
-<p>Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso Paciente para un Historial Clínico Nacional</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-CorePrestadorCl.html" title="StructureDefinition/CorePrestadorCl">Prestador Core-CL</a>
-               </td>
-               <td>
-<p>Este Perfil fue creado para cubrir la descripción de un Prestador a nivel Nacional</p>
-</td>
-            </tr>
          </tbody>
       </table>
    </p>
    <a name="2"> </a>
-   <h3>Structures: Extension Definitions </h3>
-   <p>
-    <p>These define constraints on FHIR data types for systems conforming to this implementation guide</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-CodigoPaises.html" title="StructureDefinition/CodigoPaises">Codigo de Identificación de países</a>
-               </td>
-               <td>
-<p>Esta extensión incluye códigos de paises de origen</p>
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="3"> </a>
    <h3>Terminology: Value Sets </h3>
    <p>
     <p>These define sets of codes used by systems conforming to this implementation guide</p>
@@ -293,48 +266,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-CodNacComunas.html" title="ValueSet/CodNacComunas">Códigos de Comunas en Chile</a>
-               </td>
-               <td>
-<p>Codigos definidos para identificar una comuna en Chile. Estos aún deben ser llevados a un ValueSet</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-CodProv.html" title="ValueSet/CodProv">Códigos de Provincias en Chile</a>
-               </td>
-               <td>
-<p>Codigos definidos para identificar una provincia en Chile. Estos aún deben ser llevados a un ValueSet</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-CodReg.html" title="ValueSet/CodReg">Códigos de Regiones en ChileEstos aún deben ser llevados a un ValueSet</a>
-               </td>
-               <td>
-<p>Codigos definidos para identificar una comuna en Chile</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="ValueSet-Esp-Tabla-DEIS.html" title="ValueSet/Esp-Tabla-DEIS">Códigos de especialidades según DEIS</a>
                </td>
                <td>
 <p>Códigos de especialidades médicas descritas segun DEIS</p>
 </td>
             </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-COD-Cert-RNPI.html" title="ValueSet/COD-Cert-RNPI">Códigos de tipos de certificaciones segun la Super Intendecia de Salud</a>
-               </td>
-               <td>
-<p>tipos de certficados reconocibles por la Super Intendecia como válidos para ejercer en Chile</p>
-</td>
-            </tr>
          </tbody>
       </table>
    </p>
-   <a name="4"> </a>
+   <a name="3"> </a>
    <h3>Example: Example Instances </h3>
    <p>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
@@ -350,11 +291,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Location-LocalizacionEjemploCL.html" title="Location/LocalizacionEjemploCL">Ejemplo Localización Farmacia</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="Medication-MedicamentoCl.html" title="Medication/MedicamentoCl">Ejemplo de comprimido Tareg - D 160</a>
                </td>
             </tr>
@@ -366,26 +302,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
                <td style="column-width:30%">
                   <a href="Organization-OrganizacionCl.html" title="Organization/OrganizacionCl">Ejemplo Organización Prestadora de Salud</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Patient-PacienteCL.html" title="Patient/PacienteCL">Ejemplo de Recurso Paciente Nacional</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Patient-PacienteCL2.html" title="Patient/PacienteCL2">Ejemplo de Recurso Paciente Extranjero</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Patient-PacienteCl-3.html" title="Patient/PacienteCl-3">Paciente Nacional, con datos actualizados, declarando nacionalidad</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Practitioner-PrestadorCL.html" title="Practitioner/PrestadorCL">Ejemplo de Recurso Prestador como base para un Core Nacional</a>
                </td>
             </tr>
          </tbody>
@@ -423,9 +339,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           <!-- container -->
         
         <div class="inner-wrapper">
+<<<<<<< HEAD
             <p><a name="l768">​</a>
                 IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="ppizarro.delgado@minsal.cl"></a>. Package hl7.fhir.cl.CoreCH#0.8 (Ballot Pendiente)
                 basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Wed, Sep 15, 2021 12:30-0300">15-09-2021</span>
+=======
+            <p><a name="l574">​</a>
+                IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="ppizarro.delgado@minsal.cl"></a>. Package hl7.fhir.cl.CoreCH#0.8 (Ballot Pendiente)
+                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Tue, Sep 14, 2021 19:29-0300">14-09-2021</span>
+>>>>>>> a14d037c0644ba904d4ee43095dba23caa85f738
                 <br/>
                 <span style="color: var(--footer-highlight-text-color)"></span>  Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de Contenidos</a> |
 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">Reportes QA</a> 

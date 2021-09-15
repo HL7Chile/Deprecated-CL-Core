@@ -20,7 +20,11 @@
   "name": "OrganizacionCL",
   "title": "Perfil de Organización de Salud en Chile",
   "status": "active",
+<<<<<<< HEAD
   "date": "2021-09-15T12:30:30-03:00",
+=======
+  "date": "2021-09-14T19:29:07-03:00",
+>>>>>>> a14d037c0644ba904d4ee43095dba23caa85f738
   "contact": [
     {
       "name": "Pablo Pizzaro",
