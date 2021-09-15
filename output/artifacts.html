@@ -51,13 +51,13 @@
     </a>
 </div> -->
 <div id="hl7-nav-left">
-    <a no-external="true" id="header-logo-left" href="http://minsal.cl"><a name="l76">​</a>
+    <a no-external="true" id="header-logo-left" href="http://minsal.cl">
         <img src="minsal.png" alt="Visitar sitio web del Ministerio de Salud de Chile" height="80"/>
     </a>
 </div>
 
 <div id="hl7-nav-right">
-    <a no-external="true" id="header-logo-righ" href="http://hl7chile.cl"><a name="l84">​</a>
+    <a no-external="true" id="header-logo-righ" href="http://hl7chile.cl">
         <img src="hl7chile.png" alt="Visitar HL7 Chile" height="80"/>
     </a>
 </div>
@@ -125,16 +125,16 @@
       <li><a name="l213">​</a>
         <a href="StructureDefinition-CorePacienteCl.html">Paciente</a>
       </li>
-      <li><a name="l219">​</a>
+      <li>
         <a href="StructureDefinition-CorePrestadorCl.html">Prestador</a>
       </li>
       <li>
         <a href="StructureDefinition-CoreEspecialidadCl.html">Especialidad Prestador</a>
       </li>
-      <li>
+      <li><a name="l231">​</a>
         <a href="StructureDefinition-CoreOrganizacionCl.html">Organización</a>
       </li>
-      <li>
+      <li><a name="l237">​</a>
         <a href="StructureDefinition-CoreMedicamentoCl.html">Medicamento</a>
       </li>
       <li><a name="l243">​</a>
@@ -210,7 +210,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-CoreEspecialidadCl.html" title="StructureDefinition/CoreEspecialidadCl">Perfil Se destina para determinar la especialidad del Prescriptor para Receta Digital, extensible a Core Nacional</a>
+                  <a href="StructureDefinition-CoreEspecialidadCl.html" title="StructureDefinition/CoreEspecialidadCl">Perfil utilizaco para asignar una o mas especialidades medicas a un prestador de salud.</a>
                </td>
                <td>
 <p>Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso de Especialidad Médica para la denominación de Prescriptor en Chile</p>
@@ -218,18 +218,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-CoreMedicamentoCl.html" title="StructureDefinition/CoreMedicamentoCl">Medicamento Core Nacional</a>
+                  <a href="StructureDefinition-CorePrestadorCl.html" title="StructureDefinition/CorePrestadorCl">Prestador Core-CL</a>
                </td>
                <td>
-<p>Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica desde la visión del TFC que se usará para poder manejar farmacos ya registrados, y que deberán ser consultados por los prestadores a la hora de prescribir algno.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-CoreOrganizacionCl.html" title="StructureDefinition/CoreOrganizacionCl">Perfil de Organización de Salud en Chile</a>
-               </td>
-               <td>
-<p>Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado para también cubrir las necesidades nacionales de un Recurso de Organzación en Salud</p>
+<p>Este Perfil fue creado para cubrir la descripción de un Prestador a nivel Nacional</p>
 </td>
             </tr>
          </tbody>
@@ -246,10 +238,42 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="ValueSet-COD-Comunas-deis.html" title="ValueSet/COD-Comunas-deis">Codificacion de Comunas</a>
+               </td>
+               <td>
+<p>Tabla con codificacion para todas las Comunas del pais</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-COD-provincias-deis.html" title="ValueSet/COD-provincias-deis">Codificacion de provincias</a>
+               </td>
+               <td>
+<p>Tabla con codificacion para todas las provincias del pais</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-COD-regiones-deis.html" title="ValueSet/COD-regiones-deis">Codificacion de regiones</a>
+               </td>
+               <td>
+<p>Tabla con codificacion para todas las regiones del pais</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="ValueSet-Esp-Tabla-DEIS.html" title="ValueSet/Esp-Tabla-DEIS">Códigos de especialidades según DEIS</a>
                </td>
                <td>
 <p>Códigos de especialidades médicas descritas segun DEIS</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-COD-Cert-RNPI.html" title="ValueSet/COD-Cert-RNPI">Códigos de tipos de certificaciones segun la Super Intendecia de Salud</a>
+               </td>
+               <td>
+<p>tipos de certficados reconocibles por la Super Intendecia como válidos para ejercer en Chile</p>
 </td>
             </tr>
          </tbody>
@@ -271,17 +295,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Medication-MedicamentoCl.html" title="Medication/MedicamentoCl">Ejemplo de comprimido Tareg - D 160</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Medication-MedicamentoCl-2.html" title="Medication/MedicamentoCl-2">Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Organization-OrganizacionCl.html" title="Organization/OrganizacionCl">Ejemplo Organización Prestadora de Salud</a>
+                  <a href="Practitioner-PrestadorCL.html" title="Practitioner/PrestadorCL">Ejemplo de Recurso Prestador como base para un Core Nacional</a>
                </td>
             </tr>
          </tbody>
@@ -319,9 +333,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           <!-- container -->
         
         <div class="inner-wrapper">
-            <p><a name="l574">​</a>
+            <p><a name="l601">​</a>
                 IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="ppizarro.delgado@minsal.cl"></a>. Package hl7.fhir.cl.CoreCH#0.8 (Ballot Pendiente)
-                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Tue, Sep 14, 2021 19:29-0300">14-09-2021</span>
+                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Wed, Sep 15, 2021 14:26-0300">15-09-2021</span>
                 <br/>
                 <span style="color: var(--footer-highlight-text-color)"></span>  Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de Contenidos</a> |
 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">Reportes QA</a> 

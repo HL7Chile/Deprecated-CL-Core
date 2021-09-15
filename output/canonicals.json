@@ -14,18 +14,39 @@
     "name": "EspecialidadCL"
   },
   {
-    "id": "CoreMedicamentoCl",
+    "id": "CorePrestadorCl",
     "type": "StructureDefinition",
-    "url": "http://core.hl7chile.cl/StructureDefinition/CoreMedicamentoCl",
+    "url": "http://core.hl7chile.cl/StructureDefinition/CorePrestadorCl",
     "version": "0.8 (Ballot Pendiente)",
-    "name": "MedicamentoCL"
+    "name": "PrestadorCL"
   },
   {
-    "id": "CoreOrganizacionCl",
-    "type": "StructureDefinition",
-    "url": "http://core.hl7chile.cl/StructureDefinition/CoreOrganizacionCl",
+    "id": "COD-Cert-RNPI",
+    "type": "ValueSet",
+    "url": "http://core.hl7chile.cl/ValueSet/COD-Cert-RNPI",
     "version": "0.8 (Ballot Pendiente)",
-    "name": "OrganizacionCL"
+    "name": "TituloID"
+  },
+  {
+    "id": "COD-Comunas-deis",
+    "type": "ValueSet",
+    "url": "http://core.hl7chile.cl/ValueSet/COD-Comunas-deis",
+    "version": "0.8 (Ballot Pendiente)",
+    "name": "CodComunas"
+  },
+  {
+    "id": "COD-provincias-deis",
+    "type": "ValueSet",
+    "url": "http://core.hl7chile.cl/ValueSet/COD-provincias-deis",
+    "version": "0.8 (Ballot Pendiente)",
+    "name": "CodProvincia"
+  },
+  {
+    "id": "COD-regiones-deis",
+    "type": "ValueSet",
+    "url": "http://core.hl7chile.cl/ValueSet/COD-regiones-deis",
+    "version": "0.8 (Ballot Pendiente)",
+    "name": "CodRegion"
   },
   {
     "id": "Esp-Tabla-DEIS",

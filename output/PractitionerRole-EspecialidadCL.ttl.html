@@ -40,8 +40,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"10.5"}
-    h3,h4,h5,h6{--heading-prefix:"10.5"}</style>
+    <style type="text/css">h2{--heading-prefix:"10.8"}
+    h3,h4,h5,h6{--heading-prefix:"10.8"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations 
@@ -51,13 +51,13 @@
     </a>
 </div> -->
 <div id="hl7-nav-left">
-    <a no-external="true" id="header-logo-left" href="http://minsal.cl"><a name="l76">​</a>
+    <a no-external="true" id="header-logo-left" href="http://minsal.cl">
         <img src="minsal.png" alt="Visitar sitio web del Ministerio de Salud de Chile" height="80"/>
     </a>
 </div>
 
 <div id="hl7-nav-right">
-    <a no-external="true" id="header-logo-righ" href="http://hl7chile.cl"><a name="l84">​</a>
+    <a no-external="true" id="header-logo-righ" href="http://hl7chile.cl">
         <img src="hl7chile.png" alt="Visitar HL7 Chile" height="80"/>
     </a>
 </div>
@@ -125,16 +125,16 @@
       <li><a name="l213">​</a>
         <a href="StructureDefinition-CorePacienteCl.html">Paciente</a>
       </li>
-      <li><a name="l219">​</a>
+      <li>
         <a href="StructureDefinition-CorePrestadorCl.html">Prestador</a>
       </li>
       <li>
         <a href="StructureDefinition-CoreEspecialidadCl.html">Especialidad Prestador</a>
       </li>
-      <li>
+      <li><a name="l231">​</a>
         <a href="StructureDefinition-CoreOrganizacionCl.html">Organización</a>
       </li>
-      <li>
+      <li><a name="l237">​</a>
         <a href="StructureDefinition-CoreMedicamentoCl.html">Medicamento</a>
       </li>
       <li><a name="l243">​</a>
@@ -243,19 +243,21 @@
        <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://core.hl7chile.cl/StructureDefinition/CoreEspecialidadCl&gt;     ]
   ];
   <a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.text">fhir:DomainResource.text</a> [
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "additional" ];
-     fhir:Narrative.div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;Especialidad: Dra. Johanna Rojas declara dos especialidades: Médico Cirujano y Médico Cardiólogo&lt;/div&gt;"
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "generated" ];
+     fhir:Narrative.div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;practitioner&lt;/b&gt;: &lt;a href=\"http://minsal/RNPI/Practitioner/3420\"&gt;Johanna Rosa Silva Reyes&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;specialty&lt;/b&gt;: &lt;span title=\"Codes: \"&gt;Médico Cirujano&lt;/span&gt;, &lt;span title=\"Codes: \"&gt;Médico Cardiólogo&lt;/span&gt;, &lt;span title=\"Codes: \"&gt;Médico internista&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"
   ];
+  <a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.active">fhir:PractitionerRole.active</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> "true"^^xsd:boolean];
   <a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.practitioner">fhir:PractitionerRole.practitioner</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://minsal/RNPI/Practitioner/3420&gt;;
      <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "http://minsal/RNPI/Practitioner/3420" ];
-     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Johanna Rosa" ]
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Johanna Rosa Silva Reyes" ]
   ];
   <a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.specialty">fhir:PractitionerRole.specialty</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "110" ]     ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "110" ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "test display" ]     ];
      <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Médico Cirujano" ]
   ], [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
@@ -263,6 +265,12 @@
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "25" ]     ];
      <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Médico Cardiólogo" ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "27" ]     ];
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Médico internista" ]
   ].
 
 # - ontology header ------------------------------------------------------------
@@ -309,9 +317,9 @@
           <!-- container -->
         
         <div class="inner-wrapper">
-            <p><a name="l517">​</a>
+            <p><a name="l550">​</a>
                 IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="ppizarro.delgado@minsal.cl"></a>. Package hl7.fhir.cl.CoreCH#0.8 (Ballot Pendiente)
-                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Tue, Sep 14, 2021 19:29-0300">14-09-2021</span>
+                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Wed, Sep 15, 2021 14:26-0300">15-09-2021</span>
                 <br/>
                 <span style="color: var(--footer-highlight-text-color)"></span>  Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de Contenidos</a> |
 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">Reportes QA</a> 

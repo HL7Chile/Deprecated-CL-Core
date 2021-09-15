@@ -40,8 +40,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"10.4"}
-    h3,h4,h5,h6{--heading-prefix:"10.4"}</style>
+    <style type="text/css">h2{--heading-prefix:"10.6"}
+    h3,h4,h5,h6{--heading-prefix:"10.6"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations 
@@ -51,13 +51,13 @@
     </a>
 </div> -->
 <div id="hl7-nav-left">
-    <a no-external="true" id="header-logo-left" href="http://minsal.cl"><a name="l76">​</a>
+    <a no-external="true" id="header-logo-left" href="http://minsal.cl">
         <img src="minsal.png" alt="Visitar sitio web del Ministerio de Salud de Chile" height="80"/>
     </a>
 </div>
 
 <div id="hl7-nav-right">
-    <a no-external="true" id="header-logo-righ" href="http://hl7chile.cl"><a name="l84">​</a>
+    <a no-external="true" id="header-logo-righ" href="http://hl7chile.cl">
         <img src="hl7chile.png" alt="Visitar HL7 Chile" height="80"/>
     </a>
 </div>
@@ -125,16 +125,16 @@
       <li><a name="l213">​</a>
         <a href="StructureDefinition-CorePacienteCl.html">Paciente</a>
       </li>
-      <li><a name="l219">​</a>
+      <li>
         <a href="StructureDefinition-CorePrestadorCl.html">Prestador</a>
       </li>
       <li>
         <a href="StructureDefinition-CoreEspecialidadCl.html">Especialidad Prestador</a>
       </li>
-      <li>
+      <li><a name="l231">​</a>
         <a href="StructureDefinition-CoreOrganizacionCl.html">Organización</a>
       </li>
-      <li>
+      <li><a name="l237">​</a>
         <a href="StructureDefinition-CoreMedicamentoCl.html">Medicamento</a>
       </li>
       <li><a name="l243">​</a>
@@ -223,7 +223,7 @@
  <tr><td>Version:</td><td>0.8 (Ballot Pendiente)</td></tr>
  <tr><td>Name:</td><td>TablaEspecialidades</td></tr>
  <tr><td>Title:</td><td>Códigos de especialidades según DEIS</td></tr>
- <tr><td>Status:</td><td>Active as of 2021-09-14T19:29:07-03:00</td></tr>
+ <tr><td>Status:</td><td>Active as of 2021-09-15T14:26:58-03:00</td></tr>
  <tr><td>Definition:</td><td><p>Códigos de especialidades médicas descritas segun DEIS</p>
 </td></tr>
  <tr><td>Source Resource:</td><td><a href="ValueSet-Esp-Tabla-DEIS.xml.html">XML</a> / <a href="ValueSet-Esp-Tabla-DEIS.json.html">JSON</a> / <a href="ValueSet-Esp-Tabla-DEIS.ttl.html">Turtle</a></td></tr>
@@ -235,7 +235,7 @@
   </p>
   
 <ul>
- <li><a href="StructureDefinition-CoreEspecialidadCl.html">Perfil Se destina para determinar la especialidad del Prescriptor para Receta Digital, extensible a Core Nacional</a></li>
+ <li><a href="StructureDefinition-CoreEspecialidadCl.html">Perfil utilizaco para asignar una o mas especialidades medicas a un prestador de salud.</a></li>
 </ul>
 
 
@@ -248,13 +248,13 @@
 
   <!-- Content Logical Definition heading in the fragment -->
   <h3>Logical Definition (CLD)</h3>
-<div><ul><li>Include all codes defined in <code>http://deis.cl/especialidades</code></li></ul></div>
+<div><ul><li>Include all codes defined in <code>https://minsal.cl/TablaEspecialidades</code></li></ul></div>
 
   <p>&nbsp;</p>
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <p><span style="color: maroon; font-weight: bold" title="Publication Tooling Error: [Error from server: Unable to provide support for code system http://deis.cl/especialidades]">No Expansion for this valueset (Unknown Code System  <!-- [Error from server: Unable to provide support for code system http://deis.cl/especialidades] -->)</span></p>
+  <p><span style="color: maroon; font-weight: bold" title="Publication Tooling Error: [Error from server: Unable to provide support for code system https://minsal.cl/TablaEspecialidades]">No Expansion for this valueset (Unknown Code System  <!-- [Error from server: Unable to provide support for code system https://minsal.cl/TablaEspecialidades] -->)</span></p>
 
 
   <hr/>
@@ -328,7 +328,7 @@
         <div class="inner-wrapper">
             <p><a name="l583">​</a>
                 IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="ppizarro.delgado@minsal.cl"></a>. Package hl7.fhir.cl.CoreCH#0.8 (Ballot Pendiente)
-                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Tue, Sep 14, 2021 19:29-0300">14-09-2021</span>
+                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Wed, Sep 15, 2021 14:26-0300">15-09-2021</span>
                 <br/>
                 <span style="color: var(--footer-highlight-text-color)"></span>  Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de Contenidos</a> |
 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">Reportes QA</a> 

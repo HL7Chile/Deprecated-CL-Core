@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "Esp-Tabla-DEIS"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <code>http://deis.cl/especialidades</code></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <code>https://minsal.cl/TablaEspecialidades</code></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "http://core.hl7chile.cl/ValueSet/Esp-Tabla-DEIS"];
   fhir:ValueSet.version [ fhir:value "0.8 (Ballot Pendiente)"];
   fhir:ValueSet.name [ fhir:value "TablaEspecialidades"];
   fhir:ValueSet.title [ fhir:value "Códigos de especialidades según DEIS"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-09-14T19:29:07-03:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-09-15T14:26:58-03:00"^^xsd:dateTime];
   fhir:ValueSet.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Pablo Pizzaro" ];
@@ -31,7 +31,7 @@
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://deis.cl/especialidades" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "https://minsal.cl/TablaEspecialidades" ]
      ]
   ] .
 

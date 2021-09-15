@@ -7,19 +7,13 @@
     "PractitionerRole": [
       {
         "url": "http://core.hl7chile.cl/StructureDefinition/CoreEspecialidadCl",
-        "title": "Perfil Se destina para determinar la especialidad del Prescriptor para Receta Digital, extensible a Core Nacional"
+        "title": "Perfil utilizaco para asignar una o mas especialidades medicas a un prestador de salud."
       }
     ],
-    "Medication": [
+    "Practitioner": [
       {
-        "url": "http://core.hl7chile.cl/StructureDefinition/CoreMedicamentoCl",
-        "title": "Medicamento Core Nacional"
-      }
-    ],
-    "Organization": [
-      {
-        "url": "http://core.hl7chile.cl/StructureDefinition/CoreOrganizacionCl",
-        "title": "Perfil de Organización de Salud en Chile"
+        "url": "http://core.hl7chile.cl/StructureDefinition/CorePrestadorCl",
+        "title": "Prestador Core-CL"
       }
     ]
   },
@@ -42,13 +36,19 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
     ],
+    "http://hl7.org/fhir/StructureDefinition/humanname-fathers-family": [
+      "Practitioner.name.family"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family": [
+      "Practitioner.name.family"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
-      "StructureDefinition.snapshot.element.type"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
