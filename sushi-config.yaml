@@ -5,19 +5,20 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.cl.CoreCH
 canonical: http://core.hl7chile.cl
-version: 0.8 (Ballot Pendiente)
+version: 0.85 (Ballot Pendiente)
 name: CoreCL
 
 title: Guía de Implementación Core-CL
 status: draft
-date: 2021-08
-publisher: Ministerio de Salud, Chile / HL7 Chile 
+date: 2021-09
+publisher: HL7 Chile / Ministerio de Salud, Chile  
 contact:
   - name: Pablo Pizzaro
     telecom:
       - system: email
         value: ppizarro.delgado@minsal.cl
 description: Guía de Implementación para los perfiles Core que se van a requerir a nivel de desarrollo Nacional
+jurisdiction: urn:iso:std:iso:3166#CL "Chile"
 license: CC0-1.0
 fhirVersion: 4.0.1
 parameters:

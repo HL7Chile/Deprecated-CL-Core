@@ -1,13 +1,13 @@
 ### Introducción
 <br>
 
-Esta **Guía Core-CL** nace de la necesidad de contar con perfiles de recursos transversales que cubran un amplio espectro de casos de uso que se deseen interoperar a nivel Chileno. Si bien el origen de los recursos perfilados hace relación con los necesarios para levantar el proyecto de Receta Electrónica Nacional, la idea es irla amplando en base, en la medida que se vaya avanzando hacia lo necesario para el Registro Clínico Electrónico Nacional.
+Esta **Guía Core-CL** nace de la necesidad de contar con perfiles de recursos transversales que cubran un amplio espectro de casos de uso que se deseen interoperar a nivel chileno. Si bien el origen de los recursos perfilados hace relación con los necesarios para levantar el proyecto de Receta Electrónica Nacional, la idea es irla amplando en base, en la medida que se vaya avanzando hacia lo necesario para el Registro Clínico Electrónico Nacional.
 
-Esta Guía se basa en la **Versión R4 de FHIR**, y define los requerimientos mínicmos de conformidad para los recursos qie se han generado para desarrollar la base de información transable para Receta Elecrónica y un amplio espectro de proyectos de alcance nacional. Además considera aspectos semánticos mínimos.
+Esta Guía se basa en la **Versión R4 de FHIR**, y define los requerimientos mínimos de conformidad para los recursos que se han generado para desarrollar la base de información transable para Receta Electrónica y un amplio espectro de proyectos de alcance nacional. Además, considera aspectos semánticos mínimos.
 
-En base a estos perfiles se genera la base fundamental para futuras Guías de Implementación y fueron producto del trabajo colaborativo entre el **Ministerio de Salud de Chile (MINSAL)** y el **Capítulo Chileno de HL7 (HL7 Chile)**.
+En base a estos perfiles se genera la base fundamental para futuras Guías de Implementación y fueron producto del trabajo colaborativo entre el **Capítulo Chileno de HL7 (HL7 Chile)** y el **Ministerio de Salud de Chile (MINSAL)**.
 
-### Cómo leer esta guía
+### Cómo leer esta Guía
 <br>
 
 Esta Guía sigue un formato especificado para **FHIR R4**, y se divide en varias paginas que proporcianan información **General del Core** y la explicacipon técnica de los **Artefactos Generados**. El menú se encuentra en la parte superior en la *barra de menú*.
@@ -22,7 +22,7 @@ Esta Guía sigue un formato especificado para **FHIR R4**, y se divide en varias
     * [Extensiones](extensiones.html): Descripción de todas las extensiones creadas para satisfacer las necesidades nacionales para los perfiles creados
     * [ValueSets](valuesets.html): Descripción de los sert de valores creados para poder hacer uso dentro de las necesidades locales de los perfiles creados.
 * [Ejemplos](ejemplos.html): Listado de ejemplos descritos a lo largo de la guía
-* [Descargas](descargas.html): Schematrones para decarga local 
+* [Descargas](descargas.html): Schematrones para descarga local 
 <br>
 <br>
 

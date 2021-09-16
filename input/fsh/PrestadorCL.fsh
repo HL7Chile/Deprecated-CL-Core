@@ -189,7 +189,7 @@ InstanceOf : CorePrestadorCl
 * identifier[RUN].use = #official    //obligado
 //* identifier[RUN].system = "https://api.minsal.cl/v1/personas/datos/basicos/run"
 * identifier[RUN].value = "8336277-3" // endPoint definido por perfil
-* identifier[RUN].system=http://api_run/run
+* identifier[RUN].system = "http://api_run/run"
 * identifier[RNPI].use = #secondary    //obligado
 //* identifier[RNPI].system = "https://apis.superdesalud.gob.cl/api/prestadores/registro/"
 * identifier[RNPI].value = "999999"  // endPoint definido por perfil
@@ -200,8 +200,8 @@ InstanceOf : CorePrestadorCl
 
 //Nombre Prestador
 * name.use = #official
-* name.family.extension[fathers-family].value[x] = "silva"
-* name.family.extension[mothers-family].value[x] = "Reyes"
+* name.family.extension[fathers-family].valueString = "silva"
+* name.family.extension[mothers-family].valueString = "Reyes"
 * name.given = "Johanna"
 * name.given[1] = "Rosa"
 
