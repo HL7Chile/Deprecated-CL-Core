@@ -134,7 +134,7 @@ Extension:   PaisOrigen-Nacionalidad-Cl
 Id:          CodigoPaises
 Title:       "Codigo de Identificación de países"
 Description: "Esta extensión incluye códigos de paises de origen"
-	* value[x] only CodeableConcept
+* value[x] only CodeableConcept
 * value[x] ^short = "Código de País"
 * valueCodeableConcept from http://hl7.org/fhir/ValueSet/iso3166-1-N (extensible)
 
