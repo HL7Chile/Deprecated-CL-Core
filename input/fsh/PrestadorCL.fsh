@@ -191,17 +191,10 @@ InstanceOf : CorePrestadorCl
 
 //Nombre Prestador
 * name.use = #official
-<<<<<<< HEAD
-* name.family.extension[fathers-family].valueString = "silva"
+
+
 * name.family.extension[mothers-family].valueString = "Reyes"
-=======
-* name.given = "Silva"
-<<<<<<< HEAD
-* name.family.extension[mothers-family].value[x] = "Reyes"
->>>>>>> 4abff90eed0fb696d748ff8305a02463696f001c
-=======
-* name.family.extension[mothers-family].valueString = "Reyes"
->>>>>>> a2bf4f7f315d68608f1a396575114e62c07aa84d
+
 * name.given = "Johanna"
 * name.given[1] = "Rosa"
 

@@ -119,17 +119,10 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * address.city ^definition = "Campo para Comuna de residencia. Se usa el valueSet de códigos de comunas definidos a nivel naciona. Este endPoint debe habilitarse "
 //* address.city from CodComunas (required)
 * address.district ^short = "Campo para Provincia de Residencia"
-<<<<<<< HEAD
-* address.district ^definition = "Campo para Provincia de Residencia. Se usa el valueSet de códigos de comunas definidos a nivel naciona. Este endPoint debe habilitarse"
-//* address.district from CodProvincia (required)
-* address.state ^short = "Campo para Provincia de Región"
-* address.state ^definition = "Campo para Provincia de Región. Se usa el valueSet de códigos de comunas definidos a nivel naciona. Este endPoint debe habilitarse"
-=======
 * address.district ^definition = "Campo para Provincia de Residencia. Se usa el valueSet de códigos de Provincias definidos a nivel naciona. Este endPoint debe habilitarse"
 //* address.district from CodProvincia (required)
 * address.state ^short = "Campo para la Región de Residencia"
 * address.state ^definition = "Campo para la Región. Se usa el valueSet de códigos de Regiones  definidos a nivel naciona. Este endPoint debe habilitarse"
->>>>>>> 4abff90eed0fb696d748ff8305a02463696f001c
 //* address.state from CodRegion (required)
 * address.country ^short = "Campo para País de Residencia"
 * address.country ^definition = "Campo para País de Residencia"
@@ -141,7 +134,7 @@ Extension:   PaisOrigen-Nacionalidad-Cl
 Id:          CodigoPaises
 Title:       "Codigo de Identificación de países"
 Description: "Esta extensión incluye códigos de paises de origen"
-* value[x] only CodeableConcept
+	* value[x] only CodeableConcept
 * value[x] ^short = "Código de País"
 * valueCodeableConcept from http://hl7.org/fhir/ValueSet/iso3166-1-N (extensible)
 
