@@ -632,7 +632,7 @@ Lo anterior es aplicable para un recurso ya creado el cual se alamacena con una 
 
         <td>GET [base]/Patient?identifier=http://minsal.cl/API/Paciente</td>
 
-        <td>99999999</td>
+        <td>|99999999</td>
 
         </tr>
 

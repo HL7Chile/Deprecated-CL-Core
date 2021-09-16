@@ -11,11 +11,11 @@ Los perfiles contienen ciertos elementos que son importantes de comprender a la 
 #### Vistas de los perfiles
 <br>
 
-Al revisar un perfil nos encontramos con la posibilidad de ver multiples vistas de este.
+Al revisar un perfil nos encontramos con la posibilidad de ver múltiples vistas de este.
 
 ##### Resumen de Texto
 
-Esta vista permite ver un resumen del Perfil como de que recurso proviene elementos *mandatorios*, *eliminados* y que deben ser *soportados*. Además resume las *extensiones* y *slices* generados en el diseño.
+Esta vista permite ver un resumen del Perfil como de que recurso proviene elementos *mandatorios*, *eliminados* y que deben ser *soportados*. Además, resume las *extensiones* y *slices* generados en el diseño.
 <br>
 <div align="center" >
   <img  style="border: 1px solid; color: black;" src="Resumen.png"> 
@@ -65,7 +65,7 @@ En la vista **Snapshot Table (Must Support)**, todos los elementos presentados e
 
 El CMD definido para cada recurso se deja caracterizado por la bandera **MS**que significa *Must Support*. Este indicador determina que el sistema que recibe ese elemento de un recurso **DEBE** soportar el poder procesarlo y almacenarlo.
 
-La existencia de un elemento o ruta con **MS** no determina la obligatriedad de que un recurso generado contenga el dato. Esto se define mediante la obligatoriedad del dato lo cual **DEBE** estar especificado en la cardinalidad
+La existencia de un elemento o ruta con **MS** no determina la obligatoriedad de que un recurso generado contenga el dato. Esto se define mediante la obligatoriedad del dato lo cual **DEBE** estar especificado en la cardinalidad
 <br>
 
 <div align="center" >
@@ -112,7 +112,8 @@ La *vinculación extensible* a una definición de conjunto de valores significa 
 
 ### Ejemplos
 <br>
-La guía desarrolla una serie de ejemplos por perfil desarrollado. Estos ejemplos muestra en código como un sistema hace uso de un perfil para generar un recurso. Estos ejemplos se acceden desde la página ejemplos o desde la lengueta ejemplo de cada perfil
+
+La guía desarrolla una serie de ejemplos por perfil desarrollado. Este ejemplo muestra en código como un sistema hace uso de un perfil para generar un recurso. Estos ejemplos se acceden desde la página ejemplos o desde la lengüeta ejemplo de cada perfil
 <br>
 <div align="center" >
   <img  style="border: 1px solid; color: black;" src="ejemplo.png"> 
@@ -121,7 +122,7 @@ La guía desarrolla una serie de ejemplos por perfil desarrollado. Estos ejemplo
 <br>
 
 <br>
-Ademas cada ejemplo viene descrito en 4 formatos:
+Además cada ejemplo viene descrito en 4 formatos:
 <br>
 
 * Narrativa del ejemplo: Texto Legible

@@ -53,7 +53,8 @@ Los requerimientos de conformidad describen las expectativas sobre la funcionali
 
 **Autores Primarios: Jorge Mansilla (HL7 Chile), César Galindo (HL7 Chile), Pablo Pizarro (MINSAL), Nicolás Soto (MINSAL)**
 
-Autores Secundarios:
+Autores Secundarios: Diego Olea (MINSAL), Franco Ulloa (MINSAL)
+
 
 
 
