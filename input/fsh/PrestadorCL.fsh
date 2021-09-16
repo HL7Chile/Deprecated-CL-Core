@@ -59,11 +59,10 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * name.use ^short = "Uso del nombre del prestador"
 * name.use ^definition = "Este es el uso que se le da al nombre del Prestador considerando que puede ser nombre oficial, temporal, seudonimo, entre otros, Pero por motivos legales este uso es Oficial "
 * name.use = #official  
-//* name.family ^short = "Primer Apellido"
-//* name.family ^definition = "Se debe ingresar el primer apellido, segun indica su identificacion personal"
-//* name.family 1..1
-* name.family.extension contains http://hl7.org/fhir/StructureDefinition/humanname-fathers-family named fathers-family 1..1
-* name.family.extension ^short = "Extensión para primer apellido"
+* name.family ^short = "Primer Apellido"
+* name.family ^definition = "Se debe ingresar el primer apellido, segun indica su identificacion personal"
+* name.family 1..1
+
 * name.family.extension contains http://hl7.org/fhir/StructureDefinition/humanname-mothers-family named mothers-family 0..1
 * name.family.extension ^short = "Extensión para segundo apellido"
 * name.given 1..
@@ -74,26 +73,33 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 
 
 * gender 1..1
-* gender ^short = "sexo de nacimiento Registrado"
-* gender ^definition = "En este elemento debe agregarse el sexo del prestador, las opciones son ´male | female | other | unknown´"
+* gender ^short = "Sexo de nacimiento Registrado, male | female | other | unknown (requerido)"
+* gender ^definition = "Sexo de nacimiento Registrado"
+
 * birthDate 1..1
-* birthDate ^short = "Fecha de nacimiento del prestador, el formato es AAAA-MM-DD"
-
-
+* birthDate ^short = "Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD"
+* birthDate ^definition = "Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD (Ej: 1996-08-21)"
 
 * address and address.use and address.line and address.city and address.district and address.state and address.country MS
 * address.use 1..1
-
-* address.use = #home
-* address.line ^short = "Calle o avenida, numero, casa o depto"
+* address.use ^short = "Definición del tipo de domicilio home | work | temp | old (requerido)"
+* address.use ^definition = "Se especifica el tipo de dirección notificada. Esto debe ser segun los códigos definidos por HL7 FHIR"
+* address.line ^short = "Calle o avenida, numero y casa o depto"
+* address.line ^definition = "Aquí se escribe toda la dirección completa"
 * address.city ^short = "Campo para Comuna de residencia"
-* address.city from CodComunas (required)
+* address.city ^definition = "Campo para Comuna de residencia. Se usa el valueSet de códigos de comunas definidos a nivel naciona. Este endPoint debe habilitarse "
+//* address.city from CodComunas (required)
 * address.district ^short = "Campo para Provincia de Residencia"
-* address.district from CodProvincia (required)
-* address.state ^short = "Campo para Provincia de Región"
-* address.state from CodRegion (required)
-* address.country ^short = "Campo para País de Residencia. Ingresa en codigo de 2 letras"
-* address.country from urn:iso:std:iso:3166 (required)
+* address.district ^definition = "Campo para Provincia de Residencia. Se usa el valueSet de códigos de Provincias definidos a nivel naciona. Este endPoint debe habilitarse"
+//* address.district from CodProvincia (required)
+* address.state ^short = "Campo para la Región de Residencia"
+* address.state ^definition = "Campo para la Región. Se usa el valueSet de códigos de Regiones  definidos a nivel naciona. Este endPoint debe habilitarse"
+//* address.state from CodRegion (required)
+* address.country ^short = "Campo para País de Residencia"
+* address.country ^definition = "Campo para País de Residencia"
+* address.country from http://hl7.org/fhir/ValueSet/iso3166-1-N (required)
+
+
 
 * qualification MS
 * qualification ^short = "certificados, títulos y/o Especialidad(es) obtenidas por el Prestador"
@@ -158,24 +164,6 @@ Description: "tipos de certficados reconocibles por la Super Intendecia como vá
 * codes from system https://rnpi.superdesalud.gob.cl
 
 
-ValueSet:    CodComunas
-Title:       "Codificacion de Comunas"
-Id:          COD-Comunas-deis
-Description: "Tabla con codificacion para todas las Comunas del pais"
-* codes from system https://minsal.cl/Comunas
-
-ValueSet:    CodRegion
-Title:       "Codificacion de regiones"
-Id:          COD-regiones-deis
-Description: "Tabla con codificacion para todas las regiones del pais"
-* codes from system https://minsal.cl/CodRegion
-
-ValueSet:    CodProvincia
-Title:       "Codificacion de provincias"
-Id:          COD-provincias-deis
-Description: "Tabla con codificacion para todas las provincias del pais"
-* codes from system https://minsal.cl/Provincia
-
 
 
 Instance : PrestadorCL
@@ -200,7 +188,7 @@ InstanceOf : CorePrestadorCl
 
 //Nombre Prestador
 * name.use = #official
-* name.family.extension[fathers-family].value[x] = "silva"
+* name.given = "Silva"
 * name.family.extension[mothers-family].value[x] = "Reyes"
 * name.given = "Johanna"
 * name.given[1] = "Rosa"
