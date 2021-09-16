@@ -103,7 +103,8 @@ InstanceOf : CoreLocalizacionCl
 * alias = "La gran"
 
 * type.coding.code = #PHARM
-* type.coding.display = "Farmacia"
+* type.coding.system = "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
+* type.coding.display = "Pharmacy"
 
 * telecom.system = #phone
 * telecom.value = "(+56) 234221678"
@@ -118,7 +119,7 @@ InstanceOf : CoreLocalizacionCl
 * position.longitude = 42.2565
 * position.latitude = -71.550261
 
-* managingOrganization.reference = "http://MINSAL.cl/API/Organizaciones/Id22112"
+* managingOrganization.reference = "https://fhir.cens.cl/baseR4/Organization/ORG-000/"
 
 * hoursOfOperation.daysOfWeek = #mon
 * hoursOfOperation.daysOfWeek = #tue
