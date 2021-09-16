@@ -106,9 +106,10 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * qualification ^definition = "Certificados, titulos y/o especialidades que el Prestador pueda validar"
 
 * qualification ^slicing.discriminator.type = #value
-* qualification ^slicing.discriminator.path = "code.coding.system"
+* qualification ^slicing.discriminator.path = "code.text"
 * qualification ^slicing.rules = #open
 * qualification ^slicing.description = "Debido a que los profeisonales de la salud pueden tener titulo y ademas poseer especialidades, es que se ha realizado un slice, con el fin de poder diferenciarlos."
+
 
 * qualification contains Cert 0..* MS and Esp 0..* MS
 
@@ -126,10 +127,11 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 */
 * qualification[Cert].code.coding.system ^short = "El sistema sobre el cual se verificarán los titulos o certificados de los Prestadores"
 * qualification[Cert].code.coding.system ^definition = "la url sobre la cual se encuentra el endPoint para el acceso a  los códigos de titulos y/o certificados de prestadores. El perfil especifica que se debe usar la siguiente url:  ´https://api.minsal.cl/v1/catalogos/profesiones/´"
-* qualification[Cert].code.coding.system = "https://api.minsal.cl/v1/catalogos/profesiones/"
+//* qualification[Cert].code.coding.system = "https://api.minsal.cl/v1/catalogos/profesiones/"
 
 * qualification[Cert].code.coding.display MS
 * qualification[Cert].code.coding.display 1..1
+* qualification[Cert].code.text = #Certificado(s)
 * qualification[Cert].code.coding.display ^short = "Nombre del titulo o certificado agregado"
 * qualification[Cert].code.coding.display ^definition = "Nombre del titulo o certificado agregado. Agregar un poco mas de informacion acerca del item que se esta agregando."
 
@@ -139,6 +141,7 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 
 
 //especialidades
+* qualification[Esp].code.text = #Especialidad(es)
 * qualification[Esp] ^short = "Especificación de la o las  especialidades que posea el prestador"
 * qualification[Esp] ^definition = "Listado de especialidades que posee el prestador. Solo se consideran aquellos que pueden ser demostrados en consulta a la casa de estudios pertinente"
 
@@ -149,7 +152,7 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 
 * qualification[Esp].code.coding.system ^short = "El sistema sobre el cual se verificarán las especialidades de los Prestadores"
 * qualification[Esp].code.coding.system ^definition = "la url sobre la cual se encuentra el endPoint para el acceso a  los códigos de especialidades de prestadores. El perfil especifica  ´https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/´"
-* qualification[Esp].code.coding.system = #https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/
+//* qualification[Esp].code.coding.system = #https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/
 * qualification[Esp].code.coding.display MS
 * qualification[Esp].code.coding.display 1..1
 * qualification[Esp].code.coding.display ^short = "Nombre de la especialidad"
@@ -189,7 +192,7 @@ InstanceOf : CorePrestadorCl
 //Nombre Prestador
 * name.use = #official
 * name.given = "Silva"
-* name.family.extension[mothers-family].value[x] = "Reyes"
+* name.family.extension[mothers-family].valueString = "Reyes"
 * name.given = "Johanna"
 * name.given[1] = "Rosa"
 
