@@ -1,7 +1,7 @@
 ### Aspectos a Considerar
 <br>
 
-Esta sección describe definiciones, interpretaciones y requisitos importantes comunes a todos los actores del Core-CH, utilizados en esta guía. Los verbos de conformidad - **SHALL** *(Debe)*, **SHOULD** *(Debería Si Condición)*, **MAY** *(Podría)* - utilizados en esta guía se definen en las reglas de conformidad de FHIR.
+Esta sección describe definiciones, interpretaciones y requisitos importantes comunes a todos los actores del Core-CL, utilizados en esta guía. Los verbos de conformidad - **SHALL** *(Debe)*, **SHOULD** *(Debería Si Condición)*, **MAY** *(Podría)* - utilizados en esta guía se definen en las reglas de conformidad de FHIR.
 <br>
 ### Definiciones Para comprender la Guía
 
@@ -63,7 +63,7 @@ En la vista **Snapshot Table (Must Support)**, todos los elementos presentados e
 ### Definición del Conjunto Mínimo de Datos
 <br>
 
-El CMD definido para cada recurso se deja caracterizado por la bandera **MS**que significa *Must Support*. Este indicador determina que el sistema que recibe ese elemento de un recurso **DEBE** soportar el poder procesarlo y almacenarlo.
+El CMD definido para cada recurso se deja caracterizado por la bandera **MS** que significa *Must Support*. Este indicador determina que el sistema que recibe ese elemento de un recurso **DEBE** soportar el poder procesarlo y almacenarlo.
 
 La existencia de un elemento o ruta con **MS** no determina la obligatoriedad de que un recurso generado contenga el dato. Esto se define mediante la obligatoriedad del dato lo cual **DEBE** estar especificado en la cardinalidad
 <br>
@@ -134,15 +134,15 @@ Además cada ejemplo viene descrito en 4 formatos:
 ~~~
 {
   "resourceType" : "Patient",
-  "id" : "PacienteRecetaCH",
+  "id" : "PacienteCL",
   "meta" : {
     "profile" : [
-      "http://minsal.cl/fhir/core//StructureDefinition/RecetaPacientCh"
+      "http://core.hl7chile.cl/StructureDefinition/CorePacienteCl"
     ]
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: NNCH: 15.236.327-k (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Marietta Ximena Rosales (OFFICIAL), Mari </p><p><b>telecom</b>: ph: 943561833(MOBILE), <a href=\"mailto:mariRosal@mimail.com\">mariRosal@mimail.com</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1983-03-24</p><p><b>address</b>: Av Los Chirimoyos, 32, casa 4 5101 5 152 (HOME)</p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: NNCH: 15.236.327-k (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Marietta María Ximena Rosales (OFFICIAL), Xime </p><p><b>telecom</b>: ph: 943561833(MOBILE), <a href=\"mailto:mariRosal@mimail.com\">mariRosal@mimail.com</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1983-03-24</p><p><b>address</b>: Av Los Chirimoyos, 32, casa 4 5101 5 152 (HOME)</p></div>"
   },
   "identifier" : [
     {
@@ -150,7 +150,7 @@ Además cada ejemplo viene descrito en 4 formatos:
       "type" : {
         "extension" : [
           {
-            "url" : "http://minsal.cl/fhir/core//StructureDefinition/CodigoPaises",
+            "url" : "http://core.hl7chile.cl/StructureDefinition/CodigoPaises",
             "valueCodeableConcept" : {
               "coding" : [
                 {
@@ -178,19 +178,21 @@ Además cada ejemplo viene descrito en 4 formatos:
       "_family" : {
         "extension" : [
           {
-            "url" : "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family"
+            "url" : "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family",
+            "valueString" : "Bosh"
           }
         ]
       },
       "given" : [
         "Marietta",
+        "María",
         "Ximena"
       ]
     },
     {
       "use" : "usual",
       "given" : [
-        "Mari"
+        "Xime"
       ]
     }
   ],

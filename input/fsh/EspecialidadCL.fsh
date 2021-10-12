@@ -9,25 +9,17 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * practitioner 1..1
 * practitioner ^short = "Referencia al Prestador al cual se le quiere crear una especialidad"
 * practitioner ^definition = "La referencia al prestador de salud, al cual se le quieren agregar titulos, especialidades o certificados."
-* practitioner.reference ^short = "Refrencia al uri del recurso Practitioner del prestador en cuestión"
+* practitioner.reference ^short = "Referencia al uri del recurso Practitioner del prestador en cuestión"
 * practitioner.reference ^definition = "La referencia es una URI comunmente, la cual hace referencia al Prestador en cuestion"	
 * practitioner.display ^short = "Nombre del prestador de salud"
 * practitioner.display ^definition = "Nombre completo del prestador de salud"
 
 * specialty MS
 * specialty 1..*
-* specialty ^short = "definición de la especialidad médica según DEIS"
-* specialty ^definition = "definición de la especialidad médica según DEIS, en el decreto correspondiete. la tabla sigue siendo extensible ante futuros elementos agregados a esta"
-* specialty from TablaEspecialidades (extensible)
+* specialty ^short = "Definición de la especialidad médica según DEIS"
+* specialty ^definition = "Definición de la especialidad médica según DEIS, en el decreto correspondiete. la tabla sigue siendo extensible ante futuros elementos agregados a esta"
+* specialty from TablaEspecialidadesMedicasCl (extensible)
 
-
-
-
-ValueSet:    TablaEspecialidades
-Title:       "Códigos de especialidades según DEIS"
-Id:          Esp-Tabla-DEIS
-Description: "Códigos de especialidades médicas descritas segun DEIS"
-* codes from system https://minsal.cl/TablaEspecialidades
 
 
 Instance : EspecialidadCL

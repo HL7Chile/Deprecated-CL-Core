@@ -13,7 +13,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 
 * extension ^short = "Extensión de Nacionalidad para pacientes extranjeros"
-* extension ^definition = "para hacer uso de esta extensión se debe agregar el path: extension.url = ´nacionalidad´"
+* extension ^definition = "Para hacer uso de esta extensión se debe agregar el path: extension.url = ´nacionalidad´"
 
 //* extension[nacionalidad].valueCodeableConcept from  http://hl7.org/fhir/ValueSet/iso3166-1-N  
 //* extension.valueCodeableConcept.coding.system ^short = "El sistema de códigos queda definido en la norma ISO3166-1-N"
@@ -35,8 +35,8 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 
 * identifier.type ^short = "Tipo de documento de Id (Extensible)"
-* identifier.type ^definition = "Se define como tipo de docunento de Id, aquel definido en el Sistema de Codificación V2-0203 de Hl7. Este sistema es extensible"
-* identifier.type.coding.system = "https://terminology.hl7.org/2.1.0/CodeSystem-v2-0203.html"
+* identifier.type ^definition = "Se define como tipo de documento de Id, aquel definido en el Sistema de Codificación V2-0203 de Hl7. Este sistema es extensible"
+* identifier.type.coding.system = "http://terminology.hl7.org/ValueSet/v2-0203"
 * identifier.type.coding.system ^short = "Sistema de identificación de tipos de documentos"
 * identifier.type.coding.system ^definition = "Sistema mediante el cual se obtienen los códigos para un determinado tipo de documento"
 * identifier.type.coding.system ^comment = "En la URL del sistema se describe el set de códigos. Por ejemplo si se desea usar Cédula de identidad el código es NNxxx en donde xxx corresponde al identificador del país según la norma iso3166-1-N. Dado lo anterior si fuera Chile, el tipo de documento sería NN152"
@@ -116,17 +116,17 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * address.line ^short = "Calle o avenida, numero y casa o depto"
 * address.line ^definition = "Aquí se escribe toda la dirección completa"
 * address.city ^short = "Campo para Comuna de residencia"
-* address.city ^definition = "Campo para Comuna de residencia. Se usa el valueSet de códigos de comunas definidos a nivel naciona. Este endPoint debe habilitarse "
-//* address.city from CodComunas (required)
+* address.city ^definition = "Campo para Comuna de residencia. Se usa el valueSet de códigos de comunas definidos a nivel nacional. Este endPoint debe habilitarse "
+* address.city from COM (required)
 * address.district ^short = "Campo para Provincia de Residencia"
-* address.district ^definition = "Campo para Provincia de Residencia. Se usa el valueSet de códigos de Provincias definidos a nivel naciona. Este endPoint debe habilitarse"
-//* address.district from CodProvincia (required)
+* address.district ^definition = "Campo para Provincia de Residencia. Se usa el valueSet de códigos de Provincias definidos a nivel nacional. Este endPoint debe habilitarse"
+* address.district from PROV (required)
 * address.state ^short = "Campo para la Región de Residencia"
-* address.state ^definition = "Campo para la Región. Se usa el valueSet de códigos de Regiones  definidos a nivel naciona. Este endPoint debe habilitarse"
-//* address.state from CodRegion (required)
+* address.state ^definition = "Campo para la Región. Se usa el valueSet de códigos de Regiones  definidos a nivel nacional. Este endPoint debe habilitarse"
+* address.state from REG (required)
 * address.country ^short = "Campo para País de Residencia"
 * address.country ^definition = "Campo para País de Residencia"
-* address.country from http://hl7.org/fhir/ValueSet/iso3166-1-N (required)
+* address.country from CP (required)
 
 
 
@@ -136,29 +136,13 @@ Title:       "Codigo de Identificación de países"
 Description: "Esta extensión incluye códigos de paises de origen"
 * value[x] only CodeableConcept
 * value[x] ^short = "Código de País"
-* valueCodeableConcept from http://hl7.org/fhir/ValueSet/iso3166-1-N (extensible)
+* valueCodeableConcept from CodPaises (extensible)
 
 
  
    
 
-ValueSet:    CodComunas
-Title:       "Códigos de Comunas en Chile"
-Id:          CodNacComunas
-Description: "Codigos definidos para identificar una comuna en Chile. Estos aún deben ser llevados a un ValueSet"
-* codes from system https://apis.digital.gob.cl/dpa/comunas/     // api nacional
 
-ValueSet:    CodProvincia
-Title:       "Códigos de Provincias en Chile"
-Id:          CodProv
-Description: "Codigos definidos para identificar una provincia en Chile. Estos aún deben ser llevados a un ValueSet"
-* codes from system https://apis.digital.gob.cl/dpa/provincias/   // api nacional
-
-ValueSet:    CodRegion
-Title:       "Códigos de Regiones en ChileEstos aún deben ser llevados a un ValueSet"
-Id:          CodReg
-Description: "Codigos definidos para identificar una comuna en Chile"
-* codes from system https://apis.digital.gob.cl/dpa/regiones/     // api nacional
 
 
 	Instance : PacienteCL
@@ -208,6 +192,7 @@ Description: "Codigos definidos para identificar una comuna en Chile"
 * address.city = "5101"  //codigo de comuna por binding (valpo)
 * address.district = "051"  //codigo de comuna por binding (valpo)
 * address.state = "5" //codigo por binding region (valparaiso)
+
 * address.country = #152
 
 

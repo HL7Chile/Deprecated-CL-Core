@@ -69,7 +69,7 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
  
 * telecom and gender and birthDate  MS
 * telecom ^definition = "Numero de contacto telefonico"
-* telecom.use ^short = "uso del contacto descrito, de debe utilizar ´phone´ y ´email´, en caso que agreguemos los dos datos."
+* telecom.use ^short = "Uso del contacto descrito, de debe utilizar ´phone´ y ´email´, en caso que agreguemos los dos datos."
 
 
 * gender 1..1
@@ -87,22 +87,22 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * address.line ^short = "Calle o avenida, numero y casa o depto"
 * address.line ^definition = "Aquí se escribe toda la dirección completa"
 * address.city ^short = "Campo para Comuna de residencia"
-* address.city ^definition = "Campo para Comuna de residencia. Se usa el valueSet de códigos de comunas definidos a nivel naciona. Este endPoint debe habilitarse "
-//* address.city from CodComunas (required)
+* address.city ^definition = "Campo para Comuna de residencia. Se usa el valueSet de códigos de comunas definidos a nivel nacional. Este endPoint debe habilitarse "
+* address.city from COM (required)
 * address.district ^short = "Campo para Provincia de Residencia"
-* address.district ^definition = "Campo para Provincia de Residencia. Se usa el valueSet de códigos de Provincias definidos a nivel naciona. Este endPoint debe habilitarse"
-//* address.district from CodProvincia (required)
+* address.district ^definition = "Campo para Provincia de Residencia. Se usa el valueSet de códigos de Provincias definidos a nivel nacional. Este endPoint debe habilitarse"
+* address.district from PROV (required)
 * address.state ^short = "Campo para la Región de Residencia"
-* address.state ^definition = "Campo para la Región. Se usa el valueSet de códigos de Regiones  definidos a nivel naciona. Este endPoint debe habilitarse"
-//* address.state from CodRegion (required)
+* address.state ^definition = "Campo para la Región. Se usa el valueSet de códigos de Regiones  definidos a nivel nacional. Este endPoint debe habilitarse"
+* address.state from REG (required)
 * address.country ^short = "Campo para País de Residencia"
 * address.country ^definition = "Campo para País de Residencia"
-* address.country from http://hl7.org/fhir/ValueSet/iso3166-1-N (required)
+* address.country from CP (required)
 
 
 
 * qualification MS
-* qualification ^short = "certificados, títulos y/o Especialidad(es) obtenidas por el Prestador"
+* qualification ^short = "Certificados, títulos y/o Especialidad(es) obtenidas por el Prestador"
 * qualification ^definition = "Certificados, titulos y/o especialidades que el Prestador pueda validar"
 
 * qualification ^slicing.discriminator.type = #value
@@ -116,14 +116,14 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * qualification[Cert] ^short = "Especificación de los Títulos o Certificados Profesionales que tiene el Prestador"
 * qualification[Cert] ^definition = "Listado de Títulos o Cetificados Profesionales que tiene el prestador. Solo se consideran aquellos que pueden ser demostrados en consulta a la casa de estudios pertinente"
 /*
-* qualification[Cert].identifier ^short = "identificador del certificado o títulos"
+* qualification[Cert].identifier ^short = "Identificador del certificado o títulos"
 * qualification[Cert].identifier ^definition = "identificación de los títulos o certificados profesionales indicando procedencia y casa de estudios"
 * qualification[Cert].identifier.type from TituloID (extensible) //necesito esta api o tabla o lo que sean
-* qualification[Cert].identifier.type ^short = "sistema de identificacion de certificados de prestadores"
+* qualification[Cert].identifier.type ^short = "Sistema de identificacion de certificados de prestadores"
 * qualification[Cert].identifier.type ^definition = "Sistema basado en la APi de RNPI correspondiente a los  certificados válidos según legislación chilena"
 
-* qualification[Cert].identifier.value ^short = "número de id del certificado"
-* qualification[Cert].identifier.value ^definition = "número de id del certificado"
+* qualification[Cert].identifier.value ^short = "Número de id del certificado"
+* qualification[Cert].identifier.value ^definition = "Número de id del certificado"
 */
 * qualification[Cert].code.coding.system ^short = "El sistema sobre el cual se verificarán los titulos o certificados de los Prestadores"
 * qualification[Cert].code.coding.system ^definition = "la url sobre la cual se encuentra el endPoint para el acceso a  los códigos de titulos y/o certificados de prestadores. El perfil especifica que se debe usar la siguiente url:  ´https://api.minsal.cl/v1/catalogos/profesiones/´"
@@ -145,8 +145,8 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * qualification[Esp] ^short = "Especificación de la o las  especialidades que posea el prestador"
 * qualification[Esp] ^definition = "Listado de especialidades que posee el prestador. Solo se consideran aquellos que pueden ser demostrados en consulta a la casa de estudios pertinente"
 
-* qualification[Esp].identifier ^short = "identificador de especialidades"
-* qualification[Esp].identifier ^definition = "identificación especialidades profesionales indicando procedencia y casa de estudios"
+* qualification[Esp].identifier ^short = "Identificador de especialidades"
+* qualification[Esp].identifier ^definition = "Identificación especialidades profesionales indicando procedencia y casa de estudios"
 
 * qualification[Esp].identifier.value ^short = "Codigo de la especialidad"
 
@@ -164,7 +164,7 @@ ValueSet:    TituloID
 Title:       "Códigos de tipos de certificaciones segun la Super Intendecia de Salud"
 Id:          COD-Cert-RNPI
 Description: "tipos de certficados reconocibles por la Super Intendecia como válidos para ejercer en Chile"
-* codes from system https://rnpi.superdesalud.gob.cl
+//* codes from system https://rnpi.superdesalud.gob.cl
 
 
 

@@ -36,14 +36,13 @@ releaseLabel: ci-build
 
 menu:
   Inicio: index.html
-  Objetivos: objetivos.html
-  Generalidades: generalidades.html
-  Operaciones: operaciones.html
+  Objetivos: Alcances-Objetivos.html
+  Generalidades: Aspectos-Generales.html
+  Operaciones: Consolidado-Operaciones.html
   Artefactos:
-   Artefactos General: artifacts.html
-   Perfiles: perfiles.html
+   Perfiles: Perfiles.html
    Extensiones: extensiones.html
-   Valuesets: valuesets.html
+   Valuesets: Set-De-Validacion-ValueSets.html
   Perfiles: 
     Paciente: StructureDefinition-CorePacienteCl.html
     Prestador: StructureDefinition-CorePrestadorCl.html
@@ -51,8 +50,9 @@ menu:
     Organización: StructureDefinition-CoreOrganizacionCl.html
     Medicamento: StructureDefinition-CoreMedicamentoCl.html
     Localización: StructureDefinition-CoreLocalizacionCl.html
-  Ejemplos: ejemplos.html
-  Descargas: descargas.html
+    Bundle: StructureDefinition-RecetaBundleCl.html
+  Ejemplos: Set-Ejemplos.html
+  Descargas: Todas-Descargas.html
  
   
   

@@ -11,8 +11,8 @@ Description:    "Este perfil determina la ubicación especifica para un evento, 
 * identifier ^definition = "Es el número de identificación la localización de cada recinto de dispensación de fármacos en salud"
 * identifier.system ^short = "URI para validar el identificador de cada farmacia."
 * identifier.system ^definition = "Endpoint disponibilizado por midefarm, con el fin de poder validar los codigos ingresados por las farmacias. Por el momento, la uri del system es http://miderfarm.cl/validador_id"
-* identifier.value ^short = "número identificador"
-* identifier.value ^definition = "valor de identificación con el cual se asigna un identificador a este recurso"
+* identifier.value ^short = "Número identificador"
+* identifier.value ^definition = "Valor de identificación con el cual se asigna un identificador a este recurso"
 
 
 
@@ -40,8 +40,8 @@ Description:    "Este perfil determina la ubicación especifica para un evento, 
 * type.coding.display ^definition = "Texto que identifica en glosa al código expresado"
 
 * telecom MS
-* telecom ^short = "contactos de la organiazación" 
-* telecom.use ^short = "uso del contacto descrito (home | work | temp | old | mobile)" 
+* telecom ^short = "Contactos de la organiazación" 
+* telecom.use ^short = "Uso del contacto descrito (home | work | temp | old | mobile)" 
 
 
 * address ^short = "Dirección de la Localización"
@@ -77,13 +77,13 @@ Description:    "Este perfil determina la ubicación especifica para un evento, 
 * position.latitude ^definition = "Latitud. El dominio del valor y la interpretación son los mismos que para el texto del elemento latitud en KML"
 
 
-* managingOrganization 1..1
+* managingOrganization 1..1 MS
 * managingOrganization ^short = "Organización a la cual la ubicación pertenece, si es el caso. Esta relación se hace en base a una referencia a una Orgaización"
 * managingOrganization ^definition = "La organización responsable de la localización."
 * managingOrganization ^comment = "Se puede usar para indicar la organzación jerárquica superior. Siempre debe existir una Organizacion jerarquicamente sobre la localizacion y en caso de no existir esta jerquia, se debe crear la organizacion, con los mismos datos del location."
 * managingOrganization.reference ^short = "Orgaización de referencia"
 * managingOrganization.reference ^definition = "La organización responsable de la localización."
-* managingOrganization.display ^short = "Nombre de la Orgaización de referencia"
+* managingOrganization.display ^short = "Nombre de la organización de referencia"
 * managingOrganization.display ^definition = "Nombre de la Orgaización de referencia"
 
 

@@ -14,15 +14,15 @@ Esta Guía sigue un formato especificado para **FHIR R4**, y se divide en varias
 <br>
 
 * [Home](index.html): Provee la introducción acerca de esta guía.
-* [Objetivos](objetivos.html): Describe los objetivos estratégicos de HL7, HL7 Internacional y el como esta guía se engancha con los objetivos estratégicos nacionales y organizacionales.
-* [Generalidades](generalidades.html): Se especifican algunos conceptos importantes para poder comprender la lectura de los artefactos con el fin de hacer uso de la guía para implementción
-* [Operaciones](operaciones.html): Define las operaciones mas usadas a nivel de los recursos, con el fin de consultar, crear, modificar, etc recursos en los Servidores de almacenamiento
-* [Artefactos](artifacts.html): Estas páginas proveen descripciones detalladas y definiciones formales para los artefectos FHIR definidos en la guía.
-    * [Perfiles](perfiles.html): Descripcion de los perfiles Core generados para Chile
+* [Objetivos](Alcances-Objetivos.html): Describe los objetivos estratégicos de HL7, HL7 Internacional y el como esta guía se engancha con los objetivos estratégicos nacionales y organizacionales.
+* [Generalidades](Aspectos-Generales.html): Se especifican algunos conceptos importantes para poder comprender la lectura de los artefactos con el fin de hacer uso de la guía con objetivos de implementación
+* Operaciones: Define las operaciones más usadas para el intercambo, manejo, consulta, actualización, etc. de Recursos Generados en un servidor.
+* Artefactos: Estas páginas proveen descripciones detalladas y definiciones formales para los artefectos FHIR definidos en la guía.
+    * [Perfiles](Perfiles.html): Descripción de los perfiles Core generados para Chile
     * [Extensiones](extensiones.html): Descripción de todas las extensiones creadas para satisfacer las necesidades nacionales para los perfiles creados
-    * [ValueSets](valuesets.html): Descripción de los sert de valores creados para poder hacer uso dentro de las necesidades locales de los perfiles creados.
-* [Ejemplos](ejemplos.html): Listado de ejemplos descritos a lo largo de la guía
-* [Descargas](descargas.html): Schematrones para descarga local 
+    * [ValueSets](Set-De-Validacion-ValueSets.html): Descripción de los sets de valores creados para poder hacer uso dentro de las necesidades locales de los perfiles creados.
+* [Ejemplos](Set-Ejemplos.html): Listado de ejemplos descritos a lo largo de la guía
+* [Descargas](Todas-Descargas.html): Schematrones para descarga local 
 <br>
 <br>
 

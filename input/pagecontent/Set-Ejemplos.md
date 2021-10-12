@@ -9,7 +9,7 @@ Los siguientes ejemplos se publican con esta Guía y todos están disponibles pa
 <br>
 
 #### Localización
-* [Localización de Farmacia](Location-LocalizacionEjemploCL.html)     
+* [Localización de Farmacia](Location-LocalizacionEjemploCL1.html)     
 
 #### Medicamento
 * [Medicamento comprimido Tareg - D 160](Medication-MedicamentoCl.html)<br>

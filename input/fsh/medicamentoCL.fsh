@@ -20,7 +20,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * identifier[DescripcionId] ^definition = "Este identificador se obtiene a travez del TFC por medio de un identificador de Descripción del fármaco"
 * identifier[DescripcionId].use = #official
 * identifier[DescripcionId].use ^short = "usual | official | temp | secondary | old"
-* identifier[DescripcionId].use ^definition = "Para este caso se fuerz a que su uso sea ´official´"
+* identifier[DescripcionId].use ^definition = "Para este caso se fuerza a que su uso sea ´official´"
 * identifier[DescripcionId].system   = "http://minsal.cl/semantikos/description-id"
 * identifier[DescripcionId].system ^short  = "http://minsal.cl/semantikos/description-id"
 * identifier[DescripcionId].system ^definition  = "http://minsal.cl/semantikos/description-id DEBE ser usada para este slice. Estos EndPoint deberán estar disponibles pronto"
@@ -32,7 +32,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * identifier[ConceptId] ^definition = "Este identificador se obtiene a travez del TFC por medio de un identificador del ConceptId del fármaco según SNOMED-CT"
 * identifier[ConceptId].use = #official
 * identifier[ConceptId].use ^short = "usual | official | temp | secondary | old"
-* identifier[ConceptId].use ^definition = "Para este caso se fuerz a que su uso sea ´official´"
+* identifier[ConceptId].use ^definition = "Para este caso se fuerza a que su uso sea ´official´"
 * identifier[ConceptId].system  = "http://minsal.cl/semantikos/concept-id"
 * identifier[ConceptId].system ^short = "http://minsal.cl/semantikos/concept-id"
 * identifier[ConceptId].system ^definition  = "http://minsal.cl/semantikos/concept-id DEBE ser usada para este slice. Estos EndPoint deberán estar disponibles pronto"

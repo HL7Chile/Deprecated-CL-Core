@@ -1,6 +1,6 @@
 ### Operaciones Básicas basada en Métodos 
 
-Las Operaciones que se pueden ejecutar como base en el manejo de recuros en FHIR se especifican desde el mismo estándar  travez de [Resumen de operaciones](https://www.hl7.org/fhir/http.html#summary) 
+Las Operaciones que se pueden ejecutar como base en el manejo de recuros en FHIR se especifican desde el mismo estándar  traves de [Resumen de operaciones](https://www.hl7.org/fhir/http.html#summary) 
 
  Como nota que  _todos_ los requests pueden incluir un opcional `Accept` como cabecera que indica el formato que se debe usar como respuesta (esto incluso se aplica a  `DELETE` dado que una OperationOutcome debe ser devuelta).
 
@@ -597,7 +597,7 @@ La aplicación específica de cada parametro, para cada una de las operaciones, 
 
 </table>
 
-Not: Esta Tabla lista los códigos de estado, pero otros mas pueden ser descrito por la especificación de HTTP. Códgos adicionales son comunmente errores de servidor y de protocolos de autentificación.
+Nota: Esta Tabla lista los códigos de estado, pero otros mas pueden ser descrito por la especificación de HTTP. Códigos adicionales son comunmente errores de servidor y de protocolos de autentificación.
 
 El listado de recursos se define en:
 
@@ -607,7 +607,7 @@ El listado de recursos se define en:
 
 Los Métodos y los parámetros para la consulta de recursos se describen a continuación y se basan en la busqueda sobre recurso Paciente:
 
-1.  Eneste caso los servidores **DEBEN** soportar buscar un recurso Patient usando el parametro de búsqueda **[`_id`]:
+1.  En este caso los servidores **DEBEN** soportar buscar un recurso Patient usando el parametro de búsqueda **[`_id`]:
 
     `GET [base]/Patient[id]`
 
@@ -653,7 +653,7 @@ Lo anterior es aplicable para un recurso ya creado el cual se alamacena con una 
 
 #### Agregado de Recursos (Creando Recursos para ser almacenados)
 
-POST [base]/Patient En el Body, un recurso paciente compatible con el/los perfiles definidos core definido en el Core-Ch (para este caso sería el perfil Paciete-Ch)
+POST [base]/Patient En el Body, un recurso paciente compatible con el/los perfiles definidos core definido en el Core-CL (para este caso sería el perfil Paciente-Cl)
 
 ### Terminologia
 
@@ -663,10 +663,10 @@ _Definición de Medicamentos:_ Se utiliza la Terminología de Farmacos Chilena (
 
 _Profesionales de la Salud:_ desplegados a travez de la Super Intendencia y el sistema Midas, este registro se expone por medio del recurso  FHIR Practitioner, y la especialidad por medio dek recurso PractitionerRole.
 
-_Establecimientos de Salud_: utiliza su identificación por medio de código DEIS, y su registro se expone a travez de los recursos FHIR Location y Organization, según corresponda.
+_Establecimientos de Salud_: utiliza su identificación por medio de código DEIS, y su registro se expone a traves de los recursos FHIR Location y Organization, según corresponda.
 
-_Farmacias_: utiliza el registro de famrmacias Farmanet y se expone como como los recursos FHIR Location y Organization.
+_Farmacias_: utiliza el registro de farmacias Farmanet y se expone como como los recursos FHIR Location y Organization.
 
-_Pacientes:_ Se identidican por medio de su número identificador que pude ser cualquier tipo de documento especificado en las tablas de HL7 V3 relcionados con identificadores de personas.
+_Pacientes:_ Se identifican por medio de su número identificador que pude ser cualquier tipo de documento especificado en las tablas de HL7 V3 relcionados con identificadores de personas.
 
 _Tablas Maestras específicas:_ se incluyen las de comunas, provincias y regiones, entre otras pertenecientes a la normativa Nacional que son expuestas en la GI y que deben ser en muchos casos levantadas a nivel local
