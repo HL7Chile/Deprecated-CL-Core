@@ -36,6 +36,9 @@ releaseLabel: ci-build
 
 menu:
   Inicio: index.html
+  Balloting: 
+    Balotaje: Balloting.html
+    Revisores: Balloting-Validadores.html
   Objetivos: Alcances-Objetivos.html
   Generalidades: Aspectos-Generales.html
   Operaciones: Consolidado-Operaciones.html

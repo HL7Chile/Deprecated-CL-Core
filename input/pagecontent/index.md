@@ -1,3 +1,24 @@
+## Guía en Proceso de Balotaje
+<br>
+
+**Para información sobre este proceso de revisón y validación, que durará desde el 25 de octubre al 22 de noviembre, referirse a:**
+<br>
+
+[Sobre Balotaje](balloting.html)
+<br>
+
+[Para Validadores](Balloting-Validadores.html)
+<br>
+
+Documentos Adicionales:
+
+* [Documento de Balotaje](https://drive.google.com/file/d/1SvWrZ_IDq9Fr8FsBEa16W18__Nv68rrG/view?usp=sharing)
+
+* [Formulario de Inscripción Comité Revisor](https://docs.google.com/forms/d/1s1DxEKBv06rAPTQfdLobPwwsaVWs8BhkPfrTRXqQlHQ/edit)
+
+* [Formulario de Balotaje](https://docs.google.com/forms/d/1MIVWu9eJ8Zo1_SJVWiqs9LECxah4oO-UoDUTX9BfzXE/edit)
+<br>
+<br>
 ### Introducción
 <br>
 
