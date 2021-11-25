@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="PacienteCl-3"/>
+  <meta>
+    <versionId value="2"/>
+    <lastUpdated value="2021-07-13T00:22:41.166Z"/>
+    <profile value="http://core.hl7chile.cl/StructureDefinition/CorePacienteCl"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Codigo de Identificación de países</b>: <span title="Codes: ">Chilena</span></p><p><b>identifier</b>: DNI: 15602754-5 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: PABLO RODRIGO PIZARRO (OFFICIAL)</p><p><b>telecom</b>: <a href="mailto:ppizarro.delgado@minsal.cl">ppizarro.delgado@minsal.cl</a></p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1983-08-04</p><p><b>deceased</b>: false</p><p><b>address</b>: 13120 13 152 (HOME)</p></div>
+  </text>
+  <extension url="http://core.hl7chile.cl/StructureDefinition/CodigoPaises">
+    <valueCodeableConcept>
+      <coding>
+        <code value="152"/>
+        <display value="Chilena"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <extension url="http://core.hl7chile.cl/StructureDefinition/CodigoPaises">
+        <valueCodeableConcept>
+          <coding>
+            <code value="152"/>
+            <display value="Chile"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <coding>
+        <code value="NNCH152"/>
+        <display value="DNI"/>
+      </coding>
+    </type>
+    <value value="15602754-5"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <use value="official"/>
+    <family value="PIZARRO">
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-mothers-family">
+        <valueString value="DELGADO"/>
+      </extension>
+    </family>
+    <given value="PABLO RODRIGO"/>
+  </name>
+  <telecom>
+    <system value="email"/>
+    <value value="ppizarro.delgado@minsal.cl"/>
+    <use value="work"/>
+  </telecom>
+  <gender value="male"/>
+  <birthDate value="1983-08-04"/>
+  <deceasedBoolean value="false"/>
+  <address>
+    <use value="home"/>
+    <city value="13120"/>
+    <district value="131"/>
+    <state value="13"/>
+    <country value="152"/>
+  </address>
+</Patient>

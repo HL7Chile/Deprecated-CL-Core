@@ -1,0 +1,771 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://core.hl7chile.cl/ImplementationGuide/hl7.fhir.cl.CoreCH> a fhir:ImplementationGuide;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "hl7.fhir.cl.CoreCH"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CoreCL</h2><p>The official URL for this implementation guide is: </p><pre>http://core.hl7chile.cl/ImplementationGuide/hl7.fhir.cl.CoreCH</pre><div><p>Guía de Implementación para los perfiles Core que se van a requerir a nivel de desarrollo Nacional</p>\n</div></div>"
+  ];
+  fhir:ImplementationGuide.url [ fhir:value "http://core.hl7chile.cl/ImplementationGuide/hl7.fhir.cl.CoreCH"];
+  fhir:ImplementationGuide.version [ fhir:value "0.85 (Ballot Pendiente)"];
+  fhir:ImplementationGuide.name [ fhir:value "CoreCL"];
+  fhir:ImplementationGuide.title [ fhir:value "Guía de Implementación Core-CL"];
+  fhir:ImplementationGuide.status [ fhir:value "draft"];
+  fhir:ImplementationGuide.date [ fhir:value "2021-09"^^xsd:gYearMonth];
+  fhir:ImplementationGuide.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Pablo Pizzaro" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "ppizarro.delgado@minsal.cl" ]
+     ]
+  ];
+  fhir:ImplementationGuide.description [ fhir:value "Guía de Implementación para los perfiles Core que se van a requerir a nivel de desarrollo Nacional"];
+  fhir:ImplementationGuide.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "CL" ];
+       fhir:Coding.display [ fhir:value "Chile" ]
+     ]
+  ];
+  fhir:ImplementationGuide.packageId [ fhir:value "hl7.fhir.cl.CoreCH"];
+  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
+  fhir:ImplementationGuide.fhirVersion [
+     fhir:value "4.0.1";
+     fhir:index 0
+  ];
+  fhir:ImplementationGuide.definition [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "copyrightyear" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "2020+" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "releaselabel" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "ci-build" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-publisher" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-contact" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "show-inherited-invariants" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "false" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "autoload-resources" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-qa" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/qa" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-temp" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/pages" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-output" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "output" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-suppressed-warnings" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-history" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "http://core.hl7chile.cl/history.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-html" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-md" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page-md.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-context" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-copyright" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-jurisdiction" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-license" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-version" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "active-tables" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ];
+     fhir:ImplementationGuide.definition.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://core.hl7chile.cl/StructureDefinition/RecetaBundleCl>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/RecetaBundleCl" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BundleCL" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Este Perfil describe como debe ser el recurso Bundle que permite transportar una serie de recursos de PRescripción para  conformar una receta" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://core.hl7chile.cl/StructureDefinition/CoreEspecialidadCl>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/CoreEspecialidadCl" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Perfil utilizaco para asignar una o mas especialidades medicas a un prestador de salud." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso de Especialidad Médica para la denominación de Prescriptor en Chile" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://core.hl7chile.cl/StructureDefinition/CoreLocalizacionCl>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/CoreLocalizacionCl" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Perfil de Localización de Objetos e Infraestructura" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Este perfil determina la ubicación especifica para un evento, objeto o Infraestructura específica. Este perfil permite vinlcular la localización especifica con una organización o espacio físico específico " ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://core.hl7chile.cl/StructureDefinition/CoreMedicamentoCl>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/CoreMedicamentoCl" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medicamento Core Nacional" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica desde la visión del TFC que se usará para poder manejar farmacos ya registrados, y que deberán ser consultados por los prestadores a la hora de prescribir algno." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://core.hl7chile.cl/StructureDefinition/CoreOrganizacionCl>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/CoreOrganizacionCl" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Perfil de Organización de Salud en Chile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado para también cubrir las necesidades nacionales de un Recurso de Organzación en Salud" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://core.hl7chile.cl/StructureDefinition/CorePacienteCl>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/CorePacienteCl" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Perfil Paciente Para Core Nacional" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso Paciente para un Historial Clínico Nacional" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://core.hl7chile.cl/StructureDefinition/CorePrestadorCl>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/CorePrestadorCl" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Prestador Core-CL" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Este Perfil fue creado para cubrir la descripción de un Prestador a nivel Nacional" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://core.hl7chile.cl/StructureDefinition/CodigoPaises>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/CodigoPaises" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Codigo de Identificación de países" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Esta extensión incluye códigos de paises de origen" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://core.hl7chile.cl/ValueSet/CodNacComunas>;
+         fhir:Reference.reference [ fhir:value "ValueSet/CodNacComunas" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Códigos de Comunas en Chile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codigos definidos para identificar una comuna en Chile. Estos aún deben ser llevados a un ValueSet" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://core.hl7chile.cl/ValueSet/CodPais>;
+         fhir:Reference.reference [ fhir:value "ValueSet/CodPais" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Códigos de Países" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codigos definidos para la identificación de países segun norma ISO3166-N" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://core.hl7chile.cl/ValueSet/CodProv>;
+         fhir:Reference.reference [ fhir:value "ValueSet/CodProv" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Códigos de Provincias en Chile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codigos definidos para identificar una provincia en Chile. Estos aún deben ser llevados a un ValueSet" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://core.hl7chile.cl/ValueSet/CodReg>;
+         fhir:Reference.reference [ fhir:value "ValueSet/CodReg" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Códigos de Regiones en ChileEstos aún deben ser llevados a un ValueSet" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codigos definidos para identificar una comuna en Chile" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://core.hl7chile.cl/ValueSet/Esp-Tabla-DEIS>;
+         fhir:Reference.reference [ fhir:value "ValueSet/Esp-Tabla-DEIS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Códigos de especialidades según DEIS" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Códigos de especialidades médicas descritas segun DEIS" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://core.hl7chile.cl/ValueSet/COD-Cert-RNPI>;
+         fhir:Reference.reference [ fhir:value "ValueSet/COD-Cert-RNPI" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Códigos de tipos de certificaciones segun la Super Intendecia de Salud" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "tipos de certficados reconocibles por la Super Intendecia como válidos para ejercer en Chile" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://core.hl7chile.cl/PractitionerRole/EspecialidadCL>;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/EspecialidadCL" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ejemplo de Recurso de especialidad" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://core.hl7chile.cl/StructureDefinition/CoreEspecialidadCl";
+         fhir:link <http://core.hl7chile.cl/StructureDefinition/CoreEspecialidadCl>
+       ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://core.hl7chile.cl/Location/LocalizacionEjemploCL1>;
+         fhir:Reference.reference [ fhir:value "Location/LocalizacionEjemploCL1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ejemplo Localización Farmacia" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://core.hl7chile.cl/StructureDefinition/CoreLocalizacionCl";
+         fhir:link <http://core.hl7chile.cl/StructureDefinition/CoreLocalizacionCl>
+       ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Medication" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://core.hl7chile.cl/Medication/MedicamentoCl>;
+         fhir:Reference.reference [ fhir:value "Medication/MedicamentoCl" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ejemplo de comprimido Tareg - D 160" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://core.hl7chile.cl/StructureDefinition/CoreMedicamentoCl";
+         fhir:link <http://core.hl7chile.cl/StructureDefinition/CoreMedicamentoCl>
+       ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Medication" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://core.hl7chile.cl/Medication/MedicamentoCl-2>;
+         fhir:Reference.reference [ fhir:value "Medication/MedicamentoCl-2" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://core.hl7chile.cl/StructureDefinition/CoreMedicamentoCl";
+         fhir:link <http://core.hl7chile.cl/StructureDefinition/CoreMedicamentoCl>
+       ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://core.hl7chile.cl/Organization/OrganizacionCl>;
+         fhir:Reference.reference [ fhir:value "Organization/OrganizacionCl" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ejemplo Organización Prestadora de Salud" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://core.hl7chile.cl/StructureDefinition/CoreOrganizacionCl";
+         fhir:link <http://core.hl7chile.cl/StructureDefinition/CoreOrganizacionCl>
+       ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://core.hl7chile.cl/Patient/PacienteCL>;
+         fhir:Reference.reference [ fhir:value "Patient/PacienteCL" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ejemplo de Recurso Paciente Nacional" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://core.hl7chile.cl/StructureDefinition/CorePacienteCl";
+         fhir:link <http://core.hl7chile.cl/StructureDefinition/CorePacienteCl>
+       ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://core.hl7chile.cl/Patient/PacienteCL2>;
+         fhir:Reference.reference [ fhir:value "Patient/PacienteCL2" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ejemplo de Recurso Paciente Extranjero" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://core.hl7chile.cl/StructureDefinition/CorePacienteCl";
+         fhir:link <http://core.hl7chile.cl/StructureDefinition/CorePacienteCl>
+       ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://core.hl7chile.cl/Patient/PacienteCl-3>;
+         fhir:Reference.reference [ fhir:value "Patient/PacienteCl-3" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Paciente Nacional, con datos actualizados, declarando nacionalidad" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://core.hl7chile.cl/StructureDefinition/CorePacienteCl";
+         fhir:link <http://core.hl7chile.cl/StructureDefinition/CorePacienteCl>
+       ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://core.hl7chile.cl/Practitioner/PrestadorCL>;
+         fhir:Reference.reference [ fhir:value "Practitioner/PrestadorCL" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ejemplo de Recurso Prestador como base para un Core Nacional" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://core.hl7chile.cl/StructureDefinition/CorePrestadorCl";
+         fhir:link <http://core.hl7chile.cl/StructureDefinition/CorePrestadorCl>
+       ]
+     ];
+     fhir:ImplementationGuide.definition.page [
+       fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
+       fhir:ImplementationGuide.definition.page.title [ fhir:value "Table of Contents" ];
+       fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ];
+       fhir:ImplementationGuide.definition.page.page [
+         fhir:index 0;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Home" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 1;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Alcances-Objetivos.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Alcances Objetivos" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 2;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Aspectos-Generales.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Aspectos Generales" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 3;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Balloting.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Balloting" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 4;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Balloting-Validadores.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Balloting Validadores" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 5;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Consolidado-Operaciones.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Consolidado Operaciones" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 6;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Extensiones.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Extensiones" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 7;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Perfiles.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Perfiles" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 8;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Set-De-Validacion-ValueSets.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Set De Validacion Value Sets" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 9;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Set-Ejemplos.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Set Ejemplos" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 10;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Todas-Descargas.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Todas Descargas" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ]
+     ];
+     fhir:ImplementationGuide.definition.parameter [
+       fhir:index 0;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/capabilities" ]
+     ], [
+       fhir:index 1;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/examples" ]
+     ], [
+       fhir:index 2;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/extensions" ]
+     ], [
+       fhir:index 3;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/models" ]
+     ], [
+       fhir:index 4;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/operations" ]
+     ], [
+       fhir:index 5;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/profiles" ]
+     ], [
+       fhir:index 6;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources" ]
+     ], [
+       fhir:index 7;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary" ]
+     ], [
+       fhir:index 8;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/maps" ]
+     ], [
+       fhir:index 9;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/testing" ]
+     ], [
+       fhir:index 10;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/history" ]
+     ], [
+       fhir:index 11;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "fsh-generated/resources" ]
+     ], [
+       fhir:index 12;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
+     ], [
+       fhir:index 13;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
+     ], [
+       fhir:index 14;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://core.hl7chile.cl/ImplementationGuide/hl7.fhir.cl.CoreCH.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

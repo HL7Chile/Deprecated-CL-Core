@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://core.hl7chile.cl/Medication/MedicamentoCl> a fhir:Medication;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "MedicamentoCl"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://core.hl7chile.cl/StructureDefinition/CoreMedicamentoCl";
+       fhir:index 0;
+       fhir:link <http://core.hl7chile.cl/StructureDefinition/CoreMedicamentoCl>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "additional" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Medicamento: Tareg - D 160 / 25 comprimido recubierto (Novartis), codigo TFC: 1991971000167110 y código TFC de concepto: 840851000167103, definición SNOMED producto biológico/farmacéutico (producto), código SOMOMED: 373873005</div>"
+  ];
+  fhir:Medication.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "http://minsal.cl/semantikos/description-id" ];
+     fhir:Identifier.value [ fhir:value "1991971000167110" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "http://minsal.cl/semantikos/concept-id" ];
+     fhir:Identifier.value [ fhir:value " 840851000167103" ]
+  ];
+  fhir:Medication.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://minsal.cl/semantikos/description-id" ];
+       fhir:Coding.code [ fhir:value "1991971000167110" ];
+       fhir:Coding.display [ fhir:value "Tareg - D 160 / 25 comprimido recubierto (Novartis)" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Tareg - D 160 / 25 comprimido recubierto (Novartis)" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://core.hl7chile.cl/Medication/MedicamentoCl.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

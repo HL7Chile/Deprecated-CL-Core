@@ -1,0 +1,106 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://core.hl7chile.cl/Patient/PacienteCL2> a fhir:Patient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "PacienteCL2"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://core.hl7chile.cl/StructureDefinition/CorePacienteCl";
+       fhir:index 0;
+       fhir:link <http://core.hl7chile.cl/StructureDefinition/CorePacienteCl>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Codigo de Identificación de países</b>: <span title=\"Codes: \">Salvadoreño</span></p><p><b>identifier</b>: Pasaporte: P3334521.2 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Wilmer Andres de Dios Cabrales (OFFICIAL)</p><p><b>telecom</b>: <a href=\"mailto:wilCAB12l@wilmermail.com\">wilCAB12l@wilmermail.com</a></p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1968-11-03</p><p><b>address</b>: Calle 4 Norte, 52, pieza 802 15101 15 152 (TEMP)</p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://core.hl7chile.cl/StructureDefinition/CodigoPaises" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "222" ];
+         fhir:Coding.display [ fhir:value "Salvadoreño" ]
+       ]
+     ]
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.type [
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://core.hl7chile.cl/StructureDefinition/CodigoPaises" ];
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.code [ fhir:value "222" ];
+             fhir:Coding.display [ fhir:value "El Salvador" ]
+           ]
+         ]
+       ];
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "PPN" ];
+         fhir:Coding.display [ fhir:value "Pasaporte" ]
+       ]
+     ];
+     fhir:Identifier.value [ fhir:value "P3334521.2" ]
+  ];
+  fhir:Patient.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.use [ fhir:value "official" ];
+     fhir:HumanName.family [
+       fhir:value "Cabrales";
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family" ];
+         fhir:Extension.valueString [ fhir:value "Rivas" ]
+       ]
+     ];
+     fhir:HumanName.given [
+       fhir:value "Wilmer";
+       fhir:index 0
+     ], [
+       fhir:value "Andres";
+       fhir:index 1
+     ], [
+       fhir:value "de Dios";
+       fhir:index 2
+     ]
+  ];
+  fhir:Patient.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "email" ];
+     fhir:ContactPoint.value [ fhir:value "wilCAB12l@wilmermail.com" ];
+     fhir:ContactPoint.use [ fhir:value "home" ]
+  ];
+  fhir:Patient.gender [ fhir:value "male"];
+  fhir:Patient.birthDate [ fhir:value "1968-11-03"^^xsd:date];
+  fhir:Patient.address [
+     fhir:index 0;
+     fhir:Address.use [ fhir:value "temp" ];
+     fhir:Address.line [
+       fhir:value "Calle 4 Norte, 52, pieza 802";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "15101" ];
+     fhir:Address.district [ fhir:value "151" ];
+     fhir:Address.state [ fhir:value "15" ];
+     fhir:Address.country [ fhir:value "152" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://core.hl7chile.cl/Patient/PacienteCL2.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

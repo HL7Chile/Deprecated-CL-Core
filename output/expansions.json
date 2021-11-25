@@ -1,0 +1,1840 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "9efff620-265d-48cc-8216-68c60ac8d886",
+  "meta" : {
+    "lastUpdated" : "2021-10-27T20:46:13.314-03:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://core.hl7chile.cl/ValueSet/COD-Cert-RNPI",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "COD-Cert-RNPI",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
+      },
+      "url" : "http://core.hl7chile.cl/ValueSet/COD-Cert-RNPI",
+      "version" : "0.85 (Ballot Pendiente)",
+      "name" : "TituloID",
+      "title" : "Códigos de tipos de certificaciones segun la Super Intendecia de Salud",
+      "status" : "active",
+      "date" : "2021-10-27T20:46:13-03:00",
+      "contact" : [{
+        "name" : "Pablo Pizzaro",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "ppizarro.delgado@minsal.cl"
+        }]
+      }],
+      "description" : "tipos de certficados reconocibles por la Super Intendecia como válidos para ejercer en Chile",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "CL",
+          "display" : "Chile"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:7e7d757c-28bd-453b-8940-d90aa3547bdb",
+        "timestamp" : "2021-10-27T20:46:37-03:00",
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://core.hl7chile.cl/ValueSet/CodPais",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "CodPais",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 249 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on http://hl7.org/fhir/ValueSet/iso3166-1-N v4.0.1 (ValueSet)</p><p>All codes in this table are from the system <code>urn:iso:std:iso:3166</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-004\"> </a>004</td><td>Afghanistan</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-008\"> </a>008</td><td>Albania</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-010\"> </a>010</td><td>Antarctica</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-012\"> </a>012</td><td>Algeria</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-016\"> </a>016</td><td>American Samoa</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-020\"> </a>020</td><td>Andorra</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-024\"> </a>024</td><td>Angola</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-028\"> </a>028</td><td>Antigua and Barbuda</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-031\"> </a>031</td><td>Azerbaijan</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-032\"> </a>032</td><td>Argentina</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-036\"> </a>036</td><td>Australia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-040\"> </a>040</td><td>Austria</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-044\"> </a>044</td><td>Bahamas</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-048\"> </a>048</td><td>Bahrain</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-050\"> </a>050</td><td>Bangladesh</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-051\"> </a>051</td><td>Armenia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-052\"> </a>052</td><td>Barbados</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-056\"> </a>056</td><td>Belgium</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-060\"> </a>060</td><td>Bermuda</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-064\"> </a>064</td><td>Bhutan</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-068\"> </a>068</td><td>Bolivia, Plurinational State of</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-070\"> </a>070</td><td>Bosnia and Herzegovina</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-072\"> </a>072</td><td>Botswana</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-074\"> </a>074</td><td>Bouvet Island</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-076\"> </a>076</td><td>Brazil</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-084\"> </a>084</td><td>Belize</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-086\"> </a>086</td><td>British Indian Ocean Territory</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-090\"> </a>090</td><td>Solomon Islands</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-092\"> </a>092</td><td>Virgin Islands, British</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-096\"> </a>096</td><td>Brunei Darussalam</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-100\"> </a>100</td><td>Bulgaria</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-104\"> </a>104</td><td>Myanmar</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-108\"> </a>108</td><td>Burundi</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-112\"> </a>112</td><td>Belarus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-116\"> </a>116</td><td>Cambodia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-120\"> </a>120</td><td>Cameroon</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-124\"> </a>124</td><td>Canada</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-132\"> </a>132</td><td>Cabo Verde</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-136\"> </a>136</td><td>Cayman Islands</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-140\"> </a>140</td><td>Central African Republic</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-144\"> </a>144</td><td>Sri Lanka</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-148\"> </a>148</td><td>Chad</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-152\"> </a>152</td><td>Chile</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-156\"> </a>156</td><td>China</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-158\"> </a>158</td><td>Taiwan, Province of China</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-162\"> </a>162</td><td>Christmas Island</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-166\"> </a>166</td><td>Cocos (Keeling) Islands</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-170\"> </a>170</td><td>Colombia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-174\"> </a>174</td><td>Comoros</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-175\"> </a>175</td><td>Mayotte</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-178\"> </a>178</td><td>Congo</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-180\"> </a>180</td><td>Congo, the Democratic Republic of the</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-184\"> </a>184</td><td>Cook Islands</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-188\"> </a>188</td><td>Costa Rica</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-191\"> </a>191</td><td>Croatia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-192\"> </a>192</td><td>Cuba</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-196\"> </a>196</td><td>Cyprus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-203\"> </a>203</td><td>Czechia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-204\"> </a>204</td><td>Benin</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-208\"> </a>208</td><td>Denmark</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-212\"> </a>212</td><td>Dominica</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-214\"> </a>214</td><td>Dominican Republic</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-218\"> </a>218</td><td>Ecuador</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-222\"> </a>222</td><td>El Salvador</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-226\"> </a>226</td><td>Equatorial Guinea</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-231\"> </a>231</td><td>Ethiopia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-232\"> </a>232</td><td>Eritrea</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-233\"> </a>233</td><td>Estonia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-234\"> </a>234</td><td>Faroe Islands</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-238\"> </a>238</td><td>Falkland Islands (Malvinas)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-239\"> </a>239</td><td>South Georgia and the South Sandwich Islands</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-242\"> </a>242</td><td>Fiji</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-246\"> </a>246</td><td>Finland</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-248\"> </a>248</td><td>Eland Islands</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-250\"> </a>250</td><td>France</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-254\"> </a>254</td><td>French Guiana</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-258\"> </a>258</td><td>French Polynesia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-260\"> </a>260</td><td>French Southern Territories</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-262\"> </a>262</td><td>Djibouti</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-266\"> </a>266</td><td>Gabon</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-268\"> </a>268</td><td>Georgia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-270\"> </a>270</td><td>Gambia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-275\"> </a>275</td><td>Palestine, State of</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-276\"> </a>276</td><td>Germany</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-288\"> </a>288</td><td>Ghana</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-292\"> </a>292</td><td>Gibraltar</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-296\"> </a>296</td><td>Kiribati</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-300\"> </a>300</td><td>Greece</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-304\"> </a>304</td><td>Greenland</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-308\"> </a>308</td><td>Grenada</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-312\"> </a>312</td><td>Guadeloupe</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-316\"> </a>316</td><td>Guam</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-320\"> </a>320</td><td>Guatemala</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-324\"> </a>324</td><td>Guinea</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-328\"> </a>328</td><td>Guyana</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-332\"> </a>332</td><td>Haiti</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-334\"> </a>334</td><td>Heard Island and McDonald Islands</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-336\"> </a>336</td><td>Holy See</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-340\"> </a>340</td><td>Honduras</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-344\"> </a>344</td><td>Hong Kong</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-348\"> </a>348</td><td>Hungary</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-352\"> </a>352</td><td>Iceland</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-356\"> </a>356</td><td>India</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-360\"> </a>360</td><td>Indonesia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-364\"> </a>364</td><td>Iran, Islamic Republic of</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-368\"> </a>368</td><td>Iraq</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-372\"> </a>372</td><td>Ireland</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-376\"> </a>376</td><td>Israel</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-380\"> </a>380</td><td>Italy</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-384\"> </a>384</td><td>Ctte d'Ivoire</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-388\"> </a>388</td><td>Jamaica</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-392\"> </a>392</td><td>Japan</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-398\"> </a>398</td><td>Kazakhstan</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-400\"> </a>400</td><td>Jordan</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-404\"> </a>404</td><td>Kenya</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-408\"> </a>408</td><td>Korea, Democratic People's Republic of</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-410\"> </a>410</td><td>Korea, Republic of</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-414\"> </a>414</td><td>Kuwait</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-417\"> </a>417</td><td>Kyrgyzstan</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-418\"> </a>418</td><td>Lao People's Democratic Republic</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-422\"> </a>422</td><td>Lebanon</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-426\"> </a>426</td><td>Lesotho</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-428\"> </a>428</td><td>Latvia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-430\"> </a>430</td><td>Liberia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-434\"> </a>434</td><td>Libya</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-438\"> </a>438</td><td>Liechtenstein</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-440\"> </a>440</td><td>Lithuania</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-442\"> </a>442</td><td>Luxembourg</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-446\"> </a>446</td><td>Macao</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-450\"> </a>450</td><td>Madagascar</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-454\"> </a>454</td><td>Malawi</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-458\"> </a>458</td><td>Malaysia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-462\"> </a>462</td><td>Maldives</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-466\"> </a>466</td><td>Mali</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-470\"> </a>470</td><td>Malta</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-474\"> </a>474</td><td>Martinique</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-478\"> </a>478</td><td>Mauritania</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-480\"> </a>480</td><td>Mauritius</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-484\"> </a>484</td><td>Mexico</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-492\"> </a>492</td><td>Monaco</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-496\"> </a>496</td><td>Mongolia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-498\"> </a>498</td><td>Moldova, Republic of</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-499\"> </a>499</td><td>Montenegro</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-500\"> </a>500</td><td>Montserrat</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-504\"> </a>504</td><td>Morocco</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-508\"> </a>508</td><td>Mozambique</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-512\"> </a>512</td><td>Oman</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-516\"> </a>516</td><td>Namibia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-520\"> </a>520</td><td>Nauru</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-524\"> </a>524</td><td>Nepal</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-528\"> </a>528</td><td>Netherlands</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-531\"> </a>531</td><td>Curagao</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-533\"> </a>533</td><td>Aruba</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-534\"> </a>534</td><td>Sint Maarten (Dutch part)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-535\"> </a>535</td><td>Bonaire, Sint Eustatius and Saba</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-540\"> </a>540</td><td>New Caledonia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-548\"> </a>548</td><td>Vanuatu</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-554\"> </a>554</td><td>New Zealand</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-558\"> </a>558</td><td>Nicaragua</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-562\"> </a>562</td><td>Niger</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-566\"> </a>566</td><td>Nigeria</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-570\"> </a>570</td><td>Niue</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-574\"> </a>574</td><td>Norfolk Island</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-578\"> </a>578</td><td>Norway</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-580\"> </a>580</td><td>Northern Mariana Islands</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-581\"> </a>581</td><td>United States Minor Outlying Islands</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-583\"> </a>583</td><td>Micronesia, Federated States of</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-584\"> </a>584</td><td>Marshall Islands</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-585\"> </a>585</td><td>Palau</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-586\"> </a>586</td><td>Pakistan</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-591\"> </a>591</td><td>Panama</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-598\"> </a>598</td><td>Papua New Guinea</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-600\"> </a>600</td><td>Paraguay</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-604\"> </a>604</td><td>Peru</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-608\"> </a>608</td><td>Philippines</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-612\"> </a>612</td><td>Pitcairn</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-616\"> </a>616</td><td>Poland</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-620\"> </a>620</td><td>Portugal</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-624\"> </a>624</td><td>Guinea-Bissau</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-626\"> </a>626</td><td>Timor-Leste</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-630\"> </a>630</td><td>Puerto Rico</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-634\"> </a>634</td><td>Qatar</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-638\"> </a>638</td><td>Riunion</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-642\"> </a>642</td><td>Romania</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-643\"> </a>643</td><td>Russian Federation</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-646\"> </a>646</td><td>Rwanda</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-652\"> </a>652</td><td>Saint Barthilemy</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-654\"> </a>654</td><td>Saint Helena, Ascension and Tristan da Cunha</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-659\"> </a>659</td><td>Saint Kitts and Nevis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-660\"> </a>660</td><td>Anguilla</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-662\"> </a>662</td><td>Saint Lucia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-663\"> </a>663</td><td>Saint Martin (French part)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-666\"> </a>666</td><td>Saint Pierre and Miquelon</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-670\"> </a>670</td><td>Saint Vincent and the Grenadines</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-674\"> </a>674</td><td>San Marino</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-678\"> </a>678</td><td>Sao Tome and Principe</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-682\"> </a>682</td><td>Saudi Arabia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-686\"> </a>686</td><td>Senegal</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-688\"> </a>688</td><td>Serbia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-690\"> </a>690</td><td>Seychelles</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-694\"> </a>694</td><td>Sierra Leone</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-702\"> </a>702</td><td>Singapore</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-703\"> </a>703</td><td>Slovakia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-704\"> </a>704</td><td>Viet Nam</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-705\"> </a>705</td><td>Slovenia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-706\"> </a>706</td><td>Somalia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-710\"> </a>710</td><td>South Africa</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-716\"> </a>716</td><td>Zimbabwe</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-724\"> </a>724</td><td>Spain</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-728\"> </a>728</td><td>South Sudan</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-729\"> </a>729</td><td>Sudan</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-732\"> </a>732</td><td>Western Sahara</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-740\"> </a>740</td><td>Suriname</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-744\"> </a>744</td><td>Svalbard and Jan Mayen</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-748\"> </a>748</td><td>Swaziland</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-752\"> </a>752</td><td>Sweden</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-756\"> </a>756</td><td>Switzerland</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-760\"> </a>760</td><td>Syrian Arab Republic</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-762\"> </a>762</td><td>Tajikistan</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-764\"> </a>764</td><td>Thailand</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-768\"> </a>768</td><td>Togo</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-772\"> </a>772</td><td>Tokelau</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-776\"> </a>776</td><td>Tonga</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-780\"> </a>780</td><td>Trinidad and Tobago</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-784\"> </a>784</td><td>United Arab Emirates</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-788\"> </a>788</td><td>Tunisia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-792\"> </a>792</td><td>Turkey</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-795\"> </a>795</td><td>Turkmenistan</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-796\"> </a>796</td><td>Turks and Caicos Islands</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-798\"> </a>798</td><td>Tuvalu</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-800\"> </a>800</td><td>Uganda</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-804\"> </a>804</td><td>Ukraine</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-807\"> </a>807</td><td>Macedonia, the former Yugoslav Republic of</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-818\"> </a>818</td><td>Egypt</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-826\"> </a>826</td><td>United Kingdom</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-831\"> </a>831</td><td>Guernsey</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-832\"> </a>832</td><td>Jersey</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-833\"> </a>833</td><td>Isle of Man</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-834\"> </a>834</td><td>Tanzania, United Republic of</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-840\"> </a>840</td><td>United States of America</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-850\"> </a>850</td><td>Virgin Islands, U.S.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-854\"> </a>854</td><td>Burkina Faso</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-858\"> </a>858</td><td>Uruguay</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-860\"> </a>860</td><td>Uzbekistan</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-862\"> </a>862</td><td>Venezuela, Bolivarian Republic of</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-876\"> </a>876</td><td>Wallis and Futuna</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-882\"> </a>882</td><td>Samoa</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-887\"> </a>887</td><td>Yemen</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-iso-std-iso-3166-894\"> </a>894</td><td>Zambia</td></tr></table></div>"
+      },
+      "url" : "http://core.hl7chile.cl/ValueSet/CodPais",
+      "version" : "0.85 (Ballot Pendiente)",
+      "name" : "CodPaises",
+      "title" : "Códigos de Países",
+      "status" : "active",
+      "date" : "2021-10-27T20:46:13-03:00",
+      "contact" : [{
+        "name" : "Pablo Pizzaro",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "ppizarro.delgado@minsal.cl"
+        }]
+      }],
+      "description" : "Codigos definidos para la identificación de países segun norma ISO3166-N",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "CL",
+          "display" : "Chile"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:86498cd7-f103-445a-b955-fdb89374d234",
+        "timestamp" : "2021-10-27T20:46:38-03:00",
+        "total" : 249,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.org/fhir/ValueSet/iso3166-1-N|4.0.1"
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        }],
+        "contains" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "004",
+          "display" : "Afghanistan"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "008",
+          "display" : "Albania"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "010",
+          "display" : "Antarctica"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "012",
+          "display" : "Algeria"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "016",
+          "display" : "American Samoa"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "020",
+          "display" : "Andorra"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "024",
+          "display" : "Angola"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "028",
+          "display" : "Antigua and Barbuda"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "031",
+          "display" : "Azerbaijan"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "032",
+          "display" : "Argentina"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "036",
+          "display" : "Australia"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "040",
+          "display" : "Austria"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "044",
+          "display" : "Bahamas"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "048",
+          "display" : "Bahrain"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "050",
+          "display" : "Bangladesh"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "051",
+          "display" : "Armenia"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "052",
+          "display" : "Barbados"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "056",
+          "display" : "Belgium"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "060",
+          "display" : "Bermuda"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "064",
+          "display" : "Bhutan"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "068",
+          "display" : "Bolivia, Plurinational State of"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "070",
+          "display" : "Bosnia and Herzegovina"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "072",
+          "display" : "Botswana"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "074",
+          "display" : "Bouvet Island"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "076",
+          "display" : "Brazil"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "084",
+          "display" : "Belize"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "086",
+          "display" : "British Indian Ocean Territory"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "090",
+          "display" : "Solomon Islands"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "092",
+          "display" : "Virgin Islands, British"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "096",
+          "display" : "Brunei Darussalam"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "100",
+          "display" : "Bulgaria"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "104",
+          "display" : "Myanmar"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "108",
+          "display" : "Burundi"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "112",
+          "display" : "Belarus"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "116",
+          "display" : "Cambodia"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "120",
+          "display" : "Cameroon"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "124",
+          "display" : "Canada"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "132",
+          "display" : "Cabo Verde"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "136",
+          "display" : "Cayman Islands"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "140",
+          "display" : "Central African Republic"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "144",
+          "display" : "Sri Lanka"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "148",
+          "display" : "Chad"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "152",
+          "display" : "Chile"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "156",
+          "display" : "China"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "158",
+          "display" : "Taiwan, Province of China"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "162",
+          "display" : "Christmas Island"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "166",
+          "display" : "Cocos (Keeling) Islands"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "170",
+          "display" : "Colombia"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "174",
+          "display" : "Comoros"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "175",
+          "display" : "Mayotte"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "178",
+          "display" : "Congo"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "180",
+          "display" : "Congo, the Democratic Republic of the"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "184",
+          "display" : "Cook Islands"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "188",
+          "display" : "Costa Rica"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "191",
+          "display" : "Croatia"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "192",
+          "display" : "Cuba"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "196",
+          "display" : "Cyprus"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "203",
+          "display" : "Czechia"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "204",
+          "display" : "Benin"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "208",
+          "display" : "Denmark"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "212",
+          "display" : "Dominica"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "214",
+          "display" : "Dominican Republic"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "218",
+          "display" : "Ecuador"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "222",
+          "display" : "El Salvador"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "226",
+          "display" : "Equatorial Guinea"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "231",
+          "display" : "Ethiopia"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "232",
+          "display" : "Eritrea"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "233",
+          "display" : "Estonia"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "234",
+          "display" : "Faroe Islands"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "238",
+          "display" : "Falkland Islands (Malvinas)"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "239",
+          "display" : "South Georgia and the South Sandwich Islands"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "242",
+          "display" : "Fiji"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "246",
+          "display" : "Finland"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "248",
+          "display" : "Eland Islands"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "250",
+          "display" : "France"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "254",
+          "display" : "French Guiana"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "258",
+          "display" : "French Polynesia"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "260",
+          "display" : "French Southern Territories"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "262",
+          "display" : "Djibouti"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "266",
+          "display" : "Gabon"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "268",
+          "display" : "Georgia"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "270",
+          "display" : "Gambia"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "275",
+          "display" : "Palestine, State of"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "276",
+          "display" : "Germany"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "288",
+          "display" : "Ghana"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "292",
+          "display" : "Gibraltar"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "296",
+          "display" : "Kiribati"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "300",
+          "display" : "Greece"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "304",
+          "display" : "Greenland"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "308",
+          "display" : "Grenada"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "312",
+          "display" : "Guadeloupe"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "316",
+          "display" : "Guam"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "320",
+          "display" : "Guatemala"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "324",
+          "display" : "Guinea"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "328",
+          "display" : "Guyana"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "332",
+          "display" : "Haiti"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "334",
+          "display" : "Heard Island and McDonald Islands"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "336",
+          "display" : "Holy See"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "340",
+          "display" : "Honduras"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "344",
+          "display" : "Hong Kong"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "348",
+          "display" : "Hungary"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "352",
+          "display" : "Iceland"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "356",
+          "display" : "India"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "360",
+          "display" : "Indonesia"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "364",
+          "display" : "Iran, Islamic Republic of"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "368",
+          "display" : "Iraq"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "372",
+          "display" : "Ireland"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "376",
+          "display" : "Israel"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "380",
+          "display" : "Italy"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "384",
+          "display" : "Ctte d'Ivoire"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "388",
+          "display" : "Jamaica"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "392",
+          "display" : "Japan"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "398",
+          "display" : "Kazakhstan"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "400",
+          "display" : "Jordan"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "404",
+          "display" : "Kenya"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "408",
+          "display" : "Korea, Democratic People's Republic of"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "410",
+          "display" : "Korea, Republic of"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "414",
+          "display" : "Kuwait"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "417",
+          "display" : "Kyrgyzstan"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "418",
+          "display" : "Lao People's Democratic Republic"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "422",
+          "display" : "Lebanon"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "426",
+          "display" : "Lesotho"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "428",
+          "display" : "Latvia"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "430",
+          "display" : "Liberia"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "434",
+          "display" : "Libya"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "438",
+          "display" : "Liechtenstein"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "440",
+          "display" : "Lithuania"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "442",
+          "display" : "Luxembourg"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "446",
+          "display" : "Macao"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "450",
+          "display" : "Madagascar"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "454",
+          "display" : "Malawi"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "458",
+          "display" : "Malaysia"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "462",
+          "display" : "Maldives"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "466",
+          "display" : "Mali"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "470",
+          "display" : "Malta"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "474",
+          "display" : "Martinique"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "478",
+          "display" : "Mauritania"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "480",
+          "display" : "Mauritius"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "484",
+          "display" : "Mexico"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "492",
+          "display" : "Monaco"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "496",
+          "display" : "Mongolia"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "498",
+          "display" : "Moldova, Republic of"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "499",
+          "display" : "Montenegro"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "500",
+          "display" : "Montserrat"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "504",
+          "display" : "Morocco"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "508",
+          "display" : "Mozambique"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "512",
+          "display" : "Oman"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "516",
+          "display" : "Namibia"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "520",
+          "display" : "Nauru"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "524",
+          "display" : "Nepal"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "528",
+          "display" : "Netherlands"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "531",
+          "display" : "Curagao"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "533",
+          "display" : "Aruba"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "534",
+          "display" : "Sint Maarten (Dutch part)"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "535",
+          "display" : "Bonaire, Sint Eustatius and Saba"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "540",
+          "display" : "New Caledonia"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "548",
+          "display" : "Vanuatu"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "554",
+          "display" : "New Zealand"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "558",
+          "display" : "Nicaragua"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "562",
+          "display" : "Niger"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "566",
+          "display" : "Nigeria"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "570",
+          "display" : "Niue"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "574",
+          "display" : "Norfolk Island"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "578",
+          "display" : "Norway"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "580",
+          "display" : "Northern Mariana Islands"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "581",
+          "display" : "United States Minor Outlying Islands"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "583",
+          "display" : "Micronesia, Federated States of"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "584",
+          "display" : "Marshall Islands"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "585",
+          "display" : "Palau"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "586",
+          "display" : "Pakistan"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "591",
+          "display" : "Panama"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "598",
+          "display" : "Papua New Guinea"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "600",
+          "display" : "Paraguay"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "604",
+          "display" : "Peru"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "608",
+          "display" : "Philippines"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "612",
+          "display" : "Pitcairn"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "616",
+          "display" : "Poland"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "620",
+          "display" : "Portugal"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "624",
+          "display" : "Guinea-Bissau"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "626",
+          "display" : "Timor-Leste"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "630",
+          "display" : "Puerto Rico"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "634",
+          "display" : "Qatar"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "638",
+          "display" : "Riunion"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "642",
+          "display" : "Romania"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "643",
+          "display" : "Russian Federation"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "646",
+          "display" : "Rwanda"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "652",
+          "display" : "Saint Barthilemy"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "654",
+          "display" : "Saint Helena, Ascension and Tristan da Cunha"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "659",
+          "display" : "Saint Kitts and Nevis"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "660",
+          "display" : "Anguilla"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "662",
+          "display" : "Saint Lucia"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "663",
+          "display" : "Saint Martin (French part)"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "666",
+          "display" : "Saint Pierre and Miquelon"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "670",
+          "display" : "Saint Vincent and the Grenadines"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "674",
+          "display" : "San Marino"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "678",
+          "display" : "Sao Tome and Principe"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "682",
+          "display" : "Saudi Arabia"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "686",
+          "display" : "Senegal"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "688",
+          "display" : "Serbia"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "690",
+          "display" : "Seychelles"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "694",
+          "display" : "Sierra Leone"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "702",
+          "display" : "Singapore"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "703",
+          "display" : "Slovakia"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "704",
+          "display" : "Viet Nam"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "705",
+          "display" : "Slovenia"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "706",
+          "display" : "Somalia"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "710",
+          "display" : "South Africa"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "716",
+          "display" : "Zimbabwe"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "724",
+          "display" : "Spain"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "728",
+          "display" : "South Sudan"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "729",
+          "display" : "Sudan"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "732",
+          "display" : "Western Sahara"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "740",
+          "display" : "Suriname"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "744",
+          "display" : "Svalbard and Jan Mayen"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "748",
+          "display" : "Swaziland"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "752",
+          "display" : "Sweden"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "756",
+          "display" : "Switzerland"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "760",
+          "display" : "Syrian Arab Republic"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "762",
+          "display" : "Tajikistan"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "764",
+          "display" : "Thailand"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "768",
+          "display" : "Togo"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "772",
+          "display" : "Tokelau"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "776",
+          "display" : "Tonga"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "780",
+          "display" : "Trinidad and Tobago"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "784",
+          "display" : "United Arab Emirates"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "788",
+          "display" : "Tunisia"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "792",
+          "display" : "Turkey"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "795",
+          "display" : "Turkmenistan"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "796",
+          "display" : "Turks and Caicos Islands"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "798",
+          "display" : "Tuvalu"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "800",
+          "display" : "Uganda"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "804",
+          "display" : "Ukraine"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "807",
+          "display" : "Macedonia, the former Yugoslav Republic of"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "818",
+          "display" : "Egypt"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "826",
+          "display" : "United Kingdom"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "831",
+          "display" : "Guernsey"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "832",
+          "display" : "Jersey"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "833",
+          "display" : "Isle of Man"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "834",
+          "display" : "Tanzania, United Republic of"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "840",
+          "display" : "United States of America"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "850",
+          "display" : "Virgin Islands, U.S."
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "854",
+          "display" : "Burkina Faso"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "858",
+          "display" : "Uruguay"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "860",
+          "display" : "Uzbekistan"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "862",
+          "display" : "Venezuela, Bolivarian Republic of"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "876",
+          "display" : "Wallis and Futuna"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "882",
+          "display" : "Samoa"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "887",
+          "display" : "Yemen"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "894",
+          "display" : "Zambia"
+        }]
+      }
+    }
+  }]
+}

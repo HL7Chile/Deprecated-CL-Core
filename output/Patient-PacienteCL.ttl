@@ -1,0 +1,106 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://core.hl7chile.cl/Patient/PacienteCL> a fhir:Patient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "PacienteCL"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://core.hl7chile.cl/StructureDefinition/CorePacienteCl";
+       fhir:index 0;
+       fhir:link <http://core.hl7chile.cl/StructureDefinition/CorePacienteCl>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: NNCH: 15.236.327-k (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Marietta María Ximena Rosales (OFFICIAL), Xime </p><p><b>telecom</b>: ph: 943561833(MOBILE), <a href=\"mailto:mariRosal@mimail.com\">mariRosal@mimail.com</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1983-03-24</p><p><b>address</b>: Av Los Chirimoyos, 32, casa 4 5101 5 152 (HOME)</p></div>"
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.type [
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://core.hl7chile.cl/StructureDefinition/CodigoPaises" ];
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.code [ fhir:value "152" ];
+             fhir:Coding.display [ fhir:value "Chile" ]
+           ]
+         ]
+       ];
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "NNCH" ]
+       ]
+     ];
+     fhir:Identifier.value [ fhir:value "15.236.327-k" ]
+  ];
+  fhir:Patient.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.use [ fhir:value "official" ];
+     fhir:HumanName.family [
+       fhir:value "Rosales";
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family" ];
+         fhir:Extension.valueString [ fhir:value "Bosh" ]
+       ]
+     ];
+     fhir:HumanName.given [
+       fhir:value "Marietta";
+       fhir:index 0
+     ], [
+       fhir:value "María";
+       fhir:index 1
+     ], [
+       fhir:value "Ximena";
+       fhir:index 2
+     ]
+  ], [
+     fhir:index 1;
+     fhir:HumanName.use [ fhir:value "usual" ];
+     fhir:HumanName.given [
+       fhir:value "Xime";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "943561833" ];
+     fhir:ContactPoint.use [ fhir:value "mobile" ]
+  ], [
+     fhir:index 1;
+     fhir:ContactPoint.system [ fhir:value "email" ];
+     fhir:ContactPoint.value [ fhir:value "mariRosal@mimail.com" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ];
+  fhir:Patient.gender [ fhir:value "female"];
+  fhir:Patient.birthDate [ fhir:value "1983-03-24"^^xsd:date];
+  fhir:Patient.address [
+     fhir:index 0;
+     fhir:Address.use [ fhir:value "home" ];
+     fhir:Address.line [
+       fhir:value "Av Los Chirimoyos, 32, casa 4";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "5101" ];
+     fhir:Address.district [ fhir:value "051" ];
+     fhir:Address.state [ fhir:value "5" ];
+     fhir:Address.country [ fhir:value "152" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://core.hl7chile.cl/Patient/PacienteCL.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

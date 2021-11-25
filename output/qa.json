@@ -1,0 +1,12 @@
+{
+  "url": "http://core.hl7chile.cl/ImplementationGuide/hl7.fhir.cl.CoreCH",
+  "name": "CoreCL",
+  "package-id": "hl7.fhir.cl.CoreCH",
+  "ig-ver": "0.85 (Ballot Pendiente)",
+  "date": "Wed, 27 Oct, 2021 20:46:13 -0300",
+  "errs": 2,
+  "warnings": 61,
+  "hints": 2,
+  "version": "4.0.1",
+  "tool": "4.6.0 (3)"
+}

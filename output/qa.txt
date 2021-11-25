@@ -1,0 +1,442 @@
+﻿CoreCL : Validation Results
+=========================================
+
+err = 2, warn = 61, info = 2
+IG Publisher Version: 1.1.80 Out of date - current version is 1.1.83
+Generated Wed Oct 27 20:47:09 CLST 2021. FHIR version 4.0.1 for hl7.fhir.cl.CoreCH#0.85 (Ballot Pendiente) (canonical = http://core.hl7chile.cl)
+
+ Build Errors : 319 / 9 / 0
+ C:\IGs\_FHIR_Core_CH\fsh-generated\resources\ImplementationGuide-hl7.fhir.cl.CoreCH : 0 / 1 / 1
+ C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Location-LocalizacionEjemploCL1 : 1 / 0 / 1
+ C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Medication-MedicamentoCl : 0 / 1 / 2
+ C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Medication-MedicamentoCl-2 : 0 / 0 / 2
+ C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Organization-OrganizacionCl : 0 / 0 / 1
+ C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteCL : 0 / 5 / 1
+ C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteCL2 : 0 / 6 / 1
+ C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteCl-3 : 0 / 6 / 1
+ C:\IGs\_FHIR_Core_CH\fsh-generated\resources\Practitioner-PrestadorCL : 0 / 6 / 1
+ C:\IGs\_FHIR_Core_CH\fsh-generated\resources\PractitionerRole-EspecialidadCL : 1 / 3 / 1
+ C:\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-CodigoPaises : 0 / 1 / 1
+ C:\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-CoreEspecialidadCl : 0 / 0 / 1
+ C:\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-CoreLocalizacionCl : 0 / 0 / 1
+ C:\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-CoreMedicamentoCl : 0 / 0 / 1
+ C:\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-CoreOrganizacionCl : 0 / 0 / 1
+ C:\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-CorePacienteCl : 0 / 6 / 1
+ C:\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-CorePrestadorCl : 0 / 6 / 1
+ C:\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-RecetaBundleCl : 0 / 3 / 1
+ C:\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-COD-Cert-RNPI : 0 / 0 / 1
+ C:\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-CodNacComunas : 0 / 2 / 1
+ C:\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-CodPais : 0 / 0 / 1
+ C:\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-CodProv : 0 / 2 / 1
+ C:\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-CodReg : 0 / 2 / 1
+ C:\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-Esp-Tabla-DEIS : 0 / 2 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource PractitionerRole/EspecialidadCL.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Location/LocalizacionEjemploCL1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Medication/MedicamentoCl.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Medication/MedicamentoCl-2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/OrganizacionCl.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/PacienteCL.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/PacienteCL2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/PacienteCl-3.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/PrestadorCL.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: C:\IGs\_FHIR_Core_CH\output\Alcances-Objetivos.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Alcances-Objetivos.html#/html/body/div/div/div/p/a at Line 268, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Aspectos-Generales.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Aspectos-Generales.html#/html/body/div/div/div/p/a at Line 480, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Balloting-Validadores.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Balloting-Validadores.html#/html/body/div/div/div/p/a at Line 262, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Balloting.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Balloting.html#/html/body/div/div/div/p/a at Line 346, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Consolidado-Operaciones.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Consolidado-Operaciones.html#/html/body/div/div/div/div/div/ul/li/a at Line 557, column 111: The link 'resource-operations.html' for "Resource Operations" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Consolidado-Operaciones.html#/html/body/div/div/div/p/a at Line 937, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Extensiones.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Extensiones.html#/html/body/div/div/div/p/a at Line 254, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Location-LocalizacionEjemploCL1.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Location-LocalizacionEjemploCL1.change.history.html#/html/body/div/div/div/p/a at Line 294, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Location-LocalizacionEjemploCL1.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Location-LocalizacionEjemploCL1.html#/html/body/div/div/div/p/a at Line 281, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Location-LocalizacionEjemploCL1.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Location-LocalizacionEjemploCL1.json.html#/html/body/div/div/div/p/a at Line 350, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Location-LocalizacionEjemploCL1.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Location-LocalizacionEjemploCL1.ttl.html#/html/body/div/div/div/p/a at Line 361, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Location-LocalizacionEjemploCL1.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Location-LocalizacionEjemploCL1.xml.html#/html/body/div/div/div/p/a at Line 333, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Medication-MedicamentoCl-2.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Medication-MedicamentoCl-2.change.history.html#/html/body/div/div/div/p/a at Line 294, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Medication-MedicamentoCl-2.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Medication-MedicamentoCl-2.html#/html/body/div/div/div/p/a at Line 281, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Medication-MedicamentoCl-2.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Medication-MedicamentoCl-2.json.html#/html/body/div/div/div/p/a at Line 317, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Medication-MedicamentoCl-2.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Medication-MedicamentoCl-2.ttl.html#/html/body/div/div/div/p/a at Line 329, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Medication-MedicamentoCl-2.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Medication-MedicamentoCl-2.xml.html#/html/body/div/div/div/p/a at Line 312, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Medication-MedicamentoCl.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Medication-MedicamentoCl.change.history.html#/html/body/div/div/div/p/a at Line 294, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Medication-MedicamentoCl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Medication-MedicamentoCl.html#/html/body/div/div/div/p/a at Line 281, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Medication-MedicamentoCl.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Medication-MedicamentoCl.json.html#/html/body/div/div/div/p/a at Line 318, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Medication-MedicamentoCl.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Medication-MedicamentoCl.ttl.html#/html/body/div/div/div/p/a at Line 330, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Medication-MedicamentoCl.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Medication-MedicamentoCl.xml.html#/html/body/div/div/div/p/a at Line 313, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Organization-OrganizacionCl.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Organization-OrganizacionCl.change.history.html#/html/body/div/div/div/p/a at Line 294, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Organization-OrganizacionCl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Organization-OrganizacionCl.html#/html/body/div/div/div/p/a at Line 281, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Organization-OrganizacionCl.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Organization-OrganizacionCl.json.html#/html/body/div/div/div/p/a at Line 325, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Organization-OrganizacionCl.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Organization-OrganizacionCl.ttl.html#/html/body/div/div/div/p/a at Line 338, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Organization-OrganizacionCl.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Organization-OrganizacionCl.xml.html#/html/body/div/div/div/p/a at Line 314, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Patient-PacienteCL.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Patient-PacienteCL.change.history.html#/html/body/div/div/div/p/a at Line 294, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Patient-PacienteCL.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Patient-PacienteCL.html#/html/body/div/div/div/p/a at Line 281, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Patient-PacienteCL.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Patient-PacienteCL.json.html#/html/body/div/div/div/p/a at Line 374, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Patient-PacienteCL.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Patient-PacienteCL.ttl.html#/html/body/div/div/div/p/a at Line 376, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Patient-PacienteCL.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Patient-PacienteCL.xml.html#/html/body/div/div/div/p/a at Line 348, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Patient-PacienteCL2.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Patient-PacienteCL2.change.history.html#/html/body/div/div/div/p/a at Line 294, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Patient-PacienteCL2.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Patient-PacienteCL2.html#/html/body/div/div/div/p/a at Line 281, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Patient-PacienteCL2.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Patient-PacienteCL2.json.html#/html/body/div/div/div/p/a at Line 377, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Patient-PacienteCL2.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Patient-PacienteCL2.ttl.html#/html/body/div/div/div/p/a at Line 375, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Patient-PacienteCL2.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Patient-PacienteCL2.xml.html#/html/body/div/div/div/p/a at Line 348, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Patient-PacienteCl-3.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Patient-PacienteCl-3.change.history.html#/html/body/div/div/div/p/a at Line 294, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Patient-PacienteCl-3.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Patient-PacienteCl-3.html#/html/body/div/div/div/p/a at Line 281, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Patient-PacienteCl-3.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Patient-PacienteCl-3.json.html#/html/body/div/div/div/p/a at Line 375, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Patient-PacienteCl-3.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Patient-PacienteCl-3.ttl.html#/html/body/div/div/div/p/a at Line 371, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Patient-PacienteCl-3.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Patient-PacienteCl-3.xml.html#/html/body/div/div/div/p/a at Line 348, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Perfiles.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Perfiles.html#/html/body/div/div/div/p/a at Line 262, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Practitioner-PrestadorCL.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Practitioner-PrestadorCL.change.history.html#/html/body/div/div/div/p/a at Line 294, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Practitioner-PrestadorCL.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Practitioner-PrestadorCL.html#/html/body/div/div/div/p/a at Line 281, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Practitioner-PrestadorCL.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Practitioner-PrestadorCL.json.html#/html/body/div/div/div/p/a at Line 387, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Practitioner-PrestadorCL.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Practitioner-PrestadorCL.ttl.html#/html/body/div/div/div/p/a at Line 386, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Practitioner-PrestadorCL.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Practitioner-PrestadorCL.xml.html#/html/body/div/div/div/p/a at Line 363, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\PractitionerRole-EspecialidadCL.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\PractitionerRole-EspecialidadCL.change.history.html#/html/body/div/div/div/p/a at Line 294, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\PractitionerRole-EspecialidadCL.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\PractitionerRole-EspecialidadCL.html#/html/body/div/div/div/p/a at Line 281, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\PractitionerRole-EspecialidadCL.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\PractitionerRole-EspecialidadCL.json.html#/html/body/div/div/div/p/a at Line 327, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\PractitionerRole-EspecialidadCL.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\PractitionerRole-EspecialidadCL.ttl.html#/html/body/div/div/div/p/a at Line 336, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\PractitionerRole-EspecialidadCL.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\PractitionerRole-EspecialidadCL.xml.html#/html/body/div/div/div/p/a at Line 318, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Set-De-Validacion-ValueSets.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Set-De-Validacion-ValueSets.html#/html/body/div/div/div/p/a at Line 263, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Set-Ejemplos.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Set-Ejemplos.html#/html/body/div/div/div/div/div/ul/li/a at Line 242, column 8: The link 'Organization-OrganizacionCL.html' for "Organización Prestadora de Salud" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Set-Ejemplos.html#/html/body/div/div/div/p/a at Line 297, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CodigoPaises-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CodigoPaises-definitions.html#/html/body/div/div/div/p/a at Line 344, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CodigoPaises-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CodigoPaises-mappings.html#/html/body/div/div/div/p/a at Line 304, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CodigoPaises.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CodigoPaises.html#/html/body/div/div/div/p/a at Line 549, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CodigoPaises.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CodigoPaises.profile.history.html#/html/body/div/div/div/p/a at Line 286, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CodigoPaises.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CodigoPaises.profile.json.html#/html/body/div/div/div/p/a at Line 655, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CodigoPaises.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CodigoPaises.profile.ttl.html#/html/body/div/div/div/p/a at Line 616, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CodigoPaises.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CodigoPaises.profile.xml.html#/html/body/div/div/div/p/a at Line 596, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreEspecialidadCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreEspecialidadCl-definitions.html#/html/body/div/div/div/p/a at Line 680, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreEspecialidadCl-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreEspecialidadCl-examples.html#/html/body/div/div/div/p/a at Line 312, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreEspecialidadCl-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreEspecialidadCl-mappings.html#/html/body/div/div/div/p/a at Line 367, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreEspecialidadCl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreEspecialidadCl.html#/html/body/div/div/div/p/a at Line 720, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreEspecialidadCl.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreEspecialidadCl.profile.history.html#/html/body/div/div/div/p/a at Line 290, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreEspecialidadCl.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreEspecialidadCl.profile.json.html#/html/body/div/div/div/p/a at Line 2202, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreEspecialidadCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreEspecialidadCl.profile.ttl.html#/html/body/div/div/div/p/a at Line 1961, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreEspecialidadCl.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreEspecialidadCl.profile.xml.html#/html/body/div/div/div/p/a at Line 1993, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreLocalizacionCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreLocalizacionCl-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 814, column 114: The link '' for "Iso3166-1-N" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreLocalizacionCl-definitions.html#/html/body/div/div/div/p/a at Line 1135, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreLocalizacionCl-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreLocalizacionCl-examples.html#/html/body/div/div/div/p/a at Line 312, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreLocalizacionCl-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreLocalizacionCl-mappings.html#/html/body/div/div/div/p/a at Line 392, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreLocalizacionCl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreLocalizacionCl.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 901, column 146: The link '??' for "Iso3166-1-N (missing link)" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreLocalizacionCl.html#/html/body/div/div/div/p/a at Line 970, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreLocalizacionCl.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreLocalizacionCl.profile.history.html#/html/body/div/div/div/p/a at Line 290, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreLocalizacionCl.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreLocalizacionCl.profile.json.html#/html/body/div/div/div/p/a at Line 4412, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreLocalizacionCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreLocalizacionCl.profile.ttl.html#/html/body/div/div/div/p/a at Line 3799, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreLocalizacionCl.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreLocalizacionCl.profile.xml.html#/html/body/div/div/div/p/a at Line 3938, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl-definitions.html#/html/body/div/div/div/p/a at Line 866, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl-examples.html#/html/body/div/div/div/p/a at Line 318, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl-mappings.html#/html/body/div/div/div/p/a at Line 429, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl.html#/html/body/div/div/div/p/a at Line 829, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl.profile.history.html#/html/body/div/div/div/p/a at Line 290, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl.profile.json.html#/html/body/div/div/div/p/a at Line 3178, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl.profile.ttl.html#/html/body/div/div/div/p/a at Line 2761, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreMedicamentoCl.profile.xml.html#/html/body/div/div/div/p/a at Line 2879, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 688, column 114: The link '' for "Iso3166-1-N" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl-definitions.html#/html/body/div/div/div/p/a at Line 864, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl-examples.html#/html/body/div/div/div/p/a at Line 312, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl-mappings.html#/html/body/div/div/div/p/a at Line 421, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 728, column 150: The link '??' for "Iso3166-1-N (missing link)" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl.html#/html/body/div/div/div/p/a at Line 795, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl.profile.history.html#/html/body/div/div/div/p/a at Line 290, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl.profile.json.html#/html/body/div/div/div/p/a at Line 3112, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl.profile.ttl.html#/html/body/div/div/div/p/a at Line 2707, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CoreOrganizacionCl.profile.xml.html#/html/body/div/div/div/p/a at Line 2789, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePacienteCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePacienteCl-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1048, column 114: The link '' for "Iso3166-1-N" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePacienteCl-definitions.html#/html/body/div/div/div/p/a at Line 1428, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePacienteCl-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePacienteCl-examples.html#/html/body/div/div/div/p/a at Line 324, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePacienteCl-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePacienteCl-mappings.html#/html/body/div/div/div/p/a at Line 506, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePacienteCl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePacienteCl.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1092, column 145: The link '??' for "Iso3166-1-N (missing link)" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePacienteCl.html#/html/body/div/div/div/p/a at Line 1172, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePacienteCl.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePacienteCl.profile.history.html#/html/body/div/div/div/p/a at Line 290, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePacienteCl.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePacienteCl.profile.json.html#/html/body/div/div/div/p/a at Line 6008, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePacienteCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePacienteCl.profile.ttl.html#/html/body/div/div/div/p/a at Line 5155, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePacienteCl.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePacienteCl.profile.xml.html#/html/body/div/div/div/p/a at Line 5412, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePrestadorCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePrestadorCl-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 897, column 114: The link '' for "Iso3166-1-N" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePrestadorCl-definitions.html#/html/body/div/div/div/p/a at Line 1601, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePrestadorCl-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePrestadorCl-examples.html#/html/body/div/div/div/p/a at Line 312, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePrestadorCl-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePrestadorCl-mappings.html#/html/body/div/div/div/p/a at Line 563, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePrestadorCl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePrestadorCl.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1173, column 150: The link '??' for "Iso3166-1-N (missing link)" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePrestadorCl.html#/html/body/div/div/div/p/a at Line 1247, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePrestadorCl.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePrestadorCl.profile.history.html#/html/body/div/div/div/p/a at Line 290, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePrestadorCl.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePrestadorCl.profile.json.html#/html/body/div/div/div/p/a at Line 6852, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePrestadorCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePrestadorCl.profile.ttl.html#/html/body/div/div/div/p/a at Line 5842, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePrestadorCl.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-CorePrestadorCl.profile.xml.html#/html/body/div/div/div/p/a at Line 6125, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-RecetaBundleCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-RecetaBundleCl-definitions.html#/html/body/div/div/div/p/a at Line 736, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-RecetaBundleCl-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-RecetaBundleCl-examples.html#/html/body/div/div/div/p/a at Line 297, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-RecetaBundleCl-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-RecetaBundleCl-mappings.html#/html/body/div/div/div/p/a at Line 337, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-RecetaBundleCl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-RecetaBundleCl.html#/html/body/div/div/div/p/a at Line 755, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-RecetaBundleCl.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-RecetaBundleCl.profile.history.html#/html/body/div/div/div/p/a at Line 286, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-RecetaBundleCl.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-RecetaBundleCl.profile.json.html#/html/body/div/div/div/p/a at Line 2284, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-RecetaBundleCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-RecetaBundleCl.profile.ttl.html#/html/body/div/div/div/p/a at Line 2071, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-RecetaBundleCl.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\StructureDefinition-RecetaBundleCl.profile.xml.html#/html/body/div/div/div/p/a at Line 2126, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Todas-Descargas.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Todas-Descargas.html#/html/body/div/div/div/div/div/p/a at Line 223, column 2: The link './package.tar' for "Paquete" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Todas-Descargas.html#/html/body/div/div/div/div/div/ul/li/a at Line 232, column 8: The link 'StructureDefinition-CoreOrganizacionrCl.sch' for "StructureDefinition Organizacion Genérica" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Todas-Descargas.html#/html/body/div/div/div/div/div/ul/li/a at Line 245, column 8: The link './ejemplosjson.tar' for "Ejemplos en json" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Todas-Descargas.html#/html/body/div/div/div/div/div/ul/li/a at Line 246, column 8: The link './ejemplosxml.tar' for "Ejemplos en xml" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\Todas-Descargas.html#/html/body/div/div/div/p/a at Line 291, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-COD-Cert-RNPI.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-COD-Cert-RNPI.change.history.html#/html/body/div/div/div/p/a at Line 294, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-COD-Cert-RNPI.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-COD-Cert-RNPI.html#/html/body/div/div/div/p/a at Line 342, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-COD-Cert-RNPI.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-COD-Cert-RNPI.json.html#/html/body/div/div/div/p/a at Line 320, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-COD-Cert-RNPI.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-COD-Cert-RNPI.ttl.html#/html/body/div/div/div/p/a at Line 328, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-COD-Cert-RNPI.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-COD-Cert-RNPI.xml.html#/html/body/div/div/div/p/a at Line 314, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodNacComunas.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodNacComunas.change.history.html#/html/body/div/div/div/p/a at Line 294, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodNacComunas.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodNacComunas.html#/html/body/div/div/div/p/a at Line 342, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodNacComunas.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodNacComunas.json.html#/html/body/div/div/div/p/a at Line 1713, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodNacComunas.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodNacComunas.ttl.html#/html/body/div/div/div/p/a at Line 1372, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodNacComunas.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodNacComunas.xml.html#/html/body/div/div/div/p/a at Line 1702, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodPais.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodPais.change.history.html#/html/body/div/div/div/p/a at Line 294, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodPais.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodPais.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 265, column 95: The link 'null' for "http://hl7.org/fhir/ValueSet/iso3166-1-N" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodPais.html#/html/body/div/div/div/p/a at Line 343, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodPais.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodPais.json.html#/html/body/div/div/div/p/a at Line 329, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodPais.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodPais.ttl.html#/html/body/div/div/div/p/a at Line 336, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodPais.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodPais.xml.html#/html/body/div/div/div/p/a at Line 318, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodProv.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodProv.change.history.html#/html/body/div/div/div/p/a at Line 294, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodProv.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodProv.html#/html/body/div/div/div/p/a at Line 342, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodProv.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodProv.json.html#/html/body/div/div/div/p/a at Line 553, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodProv.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodProv.ttl.html#/html/body/div/div/div/p/a at Line 502, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodProv.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodProv.xml.html#/html/body/div/div/div/p/a at Line 542, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodReg.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodReg.change.history.html#/html/body/div/div/div/p/a at Line 294, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodReg.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodReg.html#/html/body/div/div/div/p/a at Line 342, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodReg.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodReg.json.html#/html/body/div/div/div/p/a at Line 393, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodReg.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodReg.ttl.html#/html/body/div/div/div/p/a at Line 382, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodReg.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-CodReg.xml.html#/html/body/div/div/div/p/a at Line 382, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-Esp-Tabla-DEIS.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-Esp-Tabla-DEIS.change.history.html#/html/body/div/div/div/p/a at Line 294, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-Esp-Tabla-DEIS.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-Esp-Tabla-DEIS.html#/html/body/div/div/div/p/a at Line 344, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-Esp-Tabla-DEIS.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-Esp-Tabla-DEIS.json.html#/html/body/div/div/div/p/a at Line 545, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-Esp-Tabla-DEIS.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-Esp-Tabla-DEIS.ttl.html#/html/body/div/div/div/p/a at Line 496, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-Esp-Tabla-DEIS.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\ValueSet-Esp-Tabla-DEIS.xml.html#/html/body/div/div/div/p/a at Line 533, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\artifacts.html#/html/body/div/div/div/p/a at Line 474, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\index.html#/html/body/div/div/div/div/div/p/a at Line 229, column 5: The link 'balloting.html' for "Sobre Balotaje" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\index.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 273, column 12: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\index.html#/html/body/div/div/div/p/a at Line 363, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\toc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10: The link 'extensiones.html' for "Extensiones" cannot be resolved
+ERROR: C:\IGs\_FHIR_Core_CH\output\toc.html#/html/body/div/div/div/p/a at Line 232, column 34: The link 'ppizarro.delgado@minsal.cl' for "" cannot be resolved
+== fsh-generated\resources\ImplementationGuide-hl7.fhir.cl.CoreCH.json ==
+WARNING: ImplementationGuide/hl7.fhir.cl.CoreCH: ImplementationGuide.definition.resource[2].description: value should not start or finish with whitespace
+== fsh-generated\resources\Location-LocalizacionEjemploCL1.json ==
+ERROR: Location/LocalizacionEjemploCL1: Location.managingOrganization: Unable to resolve resource 'https://fhir.cens.cl/baseR4/Organization/ORG-000/'
+== fsh-generated\resources\Medication-MedicamentoCl.json ==
+WARNING: Medication/MedicamentoCl: Medication.identifier[1].value: value should not start or finish with whitespace
+INFORMATION: Medication/MedicamentoCl: Medication.code.coding[0]: Code System URI 'http://minsal.cl/semantikos/description-id' is unknown so the code cannot be validated
+== fsh-generated\resources\Medication-MedicamentoCl-2.json ==
+INFORMATION: Medication/MedicamentoCl-2: Medication.code.coding[0]: Code System URI 'http://minsal.cl/semantikos/description-id' is unknown so the code cannot be validated
+== fsh-generated\resources\Organization-OrganizacionCl.json ==
+== fsh-generated\resources\Patient-PacienteCL.json ==
+WARNING: Patient/PacienteCL: Patient.identifier[0].type.extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Patient/PacienteCL: Patient.identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Patient/PacienteCL: Patient.address[0].city: ValueSet https://apis.digital.gob.cl/dpa/comunas/ not found by validator
+WARNING: Patient/PacienteCL: Patient.address[0].district: ValueSet https://apis.digital.gob.cl/dpa/provincias/ not found by validator
+WARNING: Patient/PacienteCL: Patient.address[0].state: ValueSet https://apis.digital.gob.cl/dpa/regiones/ not found by validator
+== fsh-generated\resources\Patient-PacienteCL2.json ==
+WARNING: Patient/PacienteCL2: Patient.extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Patient/PacienteCL2: Patient.identifier[0].type.extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Patient/PacienteCL2: Patient.identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Patient/PacienteCL2: Patient.address[0].city: ValueSet https://apis.digital.gob.cl/dpa/comunas/ not found by validator
+WARNING: Patient/PacienteCL2: Patient.address[0].district: ValueSet https://apis.digital.gob.cl/dpa/provincias/ not found by validator
+WARNING: Patient/PacienteCL2: Patient.address[0].state: ValueSet https://apis.digital.gob.cl/dpa/regiones/ not found by validator
+== fsh-generated\resources\Patient-PacienteCl-3.json ==
+WARNING: Patient/PacienteCl-3: Patient.extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Patient/PacienteCl-3: Patient.identifier[0].type.extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Patient/PacienteCl-3: Patient.identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Patient/PacienteCl-3: Patient.address[0].city: ValueSet https://apis.digital.gob.cl/dpa/comunas/ not found by validator
+WARNING: Patient/PacienteCl-3: Patient.address[0].district: ValueSet https://apis.digital.gob.cl/dpa/provincias/ not found by validator
+WARNING: Patient/PacienteCl-3: Patient.address[0].state: ValueSet https://apis.digital.gob.cl/dpa/regiones/ not found by validator
+== fsh-generated\resources\Practitioner-PrestadorCL.json ==
+WARNING: Practitioner/PrestadorCL: Practitioner.address[0].city: ValueSet https://apis.digital.gob.cl/dpa/comunas/ not found by validator
+WARNING: Practitioner/PrestadorCL: Practitioner.address[0].district: ValueSet https://apis.digital.gob.cl/dpa/provincias/ not found by validator
+WARNING: Practitioner/PrestadorCL: Practitioner.address[0].state: ValueSet https://apis.digital.gob.cl/dpa/regiones/ not found by validator
+WARNING: Practitioner/PrestadorCL: Practitioner.qualification[0].code.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Practitioner/PrestadorCL: Practitioner.qualification[1].code.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Practitioner/PrestadorCL: Practitioner.qualification[2].code.coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated\resources\PractitionerRole-EspecialidadCL.json ==
+ERROR: PractitionerRole/EspecialidadCL: PractitionerRole.practitioner: Unable to resolve resource 'http://minsal/RNPI/Practitioner/3420'
+WARNING: PractitionerRole/EspecialidadCL: PractitionerRole.specialty[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: PractitionerRole/EspecialidadCL: PractitionerRole.specialty[1].coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: PractitionerRole/EspecialidadCL: PractitionerRole.specialty[2].coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated\resources\StructureDefinition-CodigoPaises.json ==
+WARNING: StructureDefinition/CodigoPaises: StructureDefinition: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\StructureDefinition-CoreEspecialidadCl.json ==
+== fsh-generated\resources\StructureDefinition-CoreLocalizacionCl.json ==
+== fsh-generated\resources\StructureDefinition-CoreMedicamentoCl.json ==
+== fsh-generated\resources\StructureDefinition-CoreOrganizacionCl.json ==
+== fsh-generated\resources\StructureDefinition-CorePacienteCl.json ==
+WARNING: StructureDefinition/CorePacienteCl: StructureDefinition.differential.element[35].binding: The valueSet reference https://apis.digital.gob.cl/dpa/comunas/ on element Patient.address.city could not be resolved
+WARNING: StructureDefinition/CorePacienteCl: StructureDefinition.differential.element[36].binding: The valueSet reference https://apis.digital.gob.cl/dpa/provincias/ on element Patient.address.district could not be resolved
+WARNING: StructureDefinition/CorePacienteCl: StructureDefinition.differential.element[37].binding: The valueSet reference https://apis.digital.gob.cl/dpa/regiones/ on element Patient.address.state could not be resolved
+WARNING: StructureDefinition/CorePacienteCl: StructureDefinition.snapshot.element[75].binding: The valueSet reference https://apis.digital.gob.cl/dpa/comunas/ on element Patient.address.city could not be resolved
+WARNING: StructureDefinition/CorePacienteCl: StructureDefinition.snapshot.element[76].binding: The valueSet reference https://apis.digital.gob.cl/dpa/provincias/ on element Patient.address.district could not be resolved
+WARNING: StructureDefinition/CorePacienteCl: StructureDefinition.snapshot.element[77].binding: The valueSet reference https://apis.digital.gob.cl/dpa/regiones/ on element Patient.address.state could not be resolved
+== fsh-generated\resources\StructureDefinition-CorePrestadorCl.json ==
+WARNING: StructureDefinition/CorePrestadorCl: StructureDefinition.differential.element[22].binding: The valueSet reference https://apis.digital.gob.cl/dpa/comunas/ on element Practitioner.address.city could not be resolved
+WARNING: StructureDefinition/CorePrestadorCl: StructureDefinition.differential.element[23].binding: The valueSet reference https://apis.digital.gob.cl/dpa/provincias/ on element Practitioner.address.district could not be resolved
+WARNING: StructureDefinition/CorePrestadorCl: StructureDefinition.differential.element[24].binding: The valueSet reference https://apis.digital.gob.cl/dpa/regiones/ on element Practitioner.address.state could not be resolved
+WARNING: StructureDefinition/CorePrestadorCl: StructureDefinition.snapshot.element[58].binding: The valueSet reference https://apis.digital.gob.cl/dpa/comunas/ on element Practitioner.address.city could not be resolved
+WARNING: StructureDefinition/CorePrestadorCl: StructureDefinition.snapshot.element[59].binding: The valueSet reference https://apis.digital.gob.cl/dpa/provincias/ on element Practitioner.address.district could not be resolved
+WARNING: StructureDefinition/CorePrestadorCl: StructureDefinition.snapshot.element[60].binding: The valueSet reference https://apis.digital.gob.cl/dpa/regiones/ on element Practitioner.address.state could not be resolved
+== fsh-generated\resources\StructureDefinition-RecetaBundleCl.json ==
+WARNING: StructureDefinition/RecetaBundleCl: StructureDefinition.snapshot.element[7].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/RecetaBundleCl: StructureDefinition.differential.element[3].short: value should not start or finish with whitespace
+WARNING: StructureDefinition.where(url = 'http://core.hl7chile.cl/StructureDefinition/RecetaBundleCl'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\ValueSet-COD-Cert-RNPI.json ==
+== fsh-generated\resources\ValueSet-CodNacComunas.json ==
+WARNING: ValueSet/CodNacComunas: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'CodNacComunas'): Error from server: Unable to provide support for code system https://apis.digital.gob.cl/dpa/comunas/
+== fsh-generated\resources\ValueSet-CodPais.json ==
+== fsh-generated\resources\ValueSet-CodProv.json ==
+WARNING: ValueSet/CodProv: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'CodProv'): Error from server: Unable to provide support for code system https://apis.digital.gob.cl/dpa/provincias/
+== fsh-generated\resources\ValueSet-CodReg.json ==
+WARNING: ValueSet/CodReg: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'CodReg'): Error from server: Unable to provide support for code system https://apis.digital.gob.cl/dpa/regiones/
+== fsh-generated\resources\ValueSet-Esp-Tabla-DEIS.json ==
+WARNING: ValueSet/Esp-Tabla-DEIS: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'Esp-Tabla-DEIS'): Error from server: Unable to provide support for code system https://minsal.cl/TablaEspecialidades

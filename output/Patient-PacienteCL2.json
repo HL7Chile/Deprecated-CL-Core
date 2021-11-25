@@ -1,0 +1,94 @@
+{
+  "resourceType": "Patient",
+  "id": "PacienteCL2",
+  "meta": {
+    "profile": [
+      "http://core.hl7chile.cl/StructureDefinition/CorePacienteCl"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Codigo de Identificación de países</b>: <span title=\"Codes: \">Salvadoreño</span></p><p><b>identifier</b>: Pasaporte: P3334521.2 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Wilmer Andres de Dios Cabrales (OFFICIAL)</p><p><b>telecom</b>: <a href=\"mailto:wilCAB12l@wilmermail.com\">wilCAB12l@wilmermail.com</a></p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1968-11-03</p><p><b>address</b>: Calle 4 Norte, 52, pieza 802 15101 15 152 (TEMP)</p></div>"
+  },
+  "extension": [
+    {
+      "url": "http://core.hl7chile.cl/StructureDefinition/CodigoPaises",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "222",
+            "display": "Salvadoreño"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "extension": [
+          {
+            "url": "http://core.hl7chile.cl/StructureDefinition/CodigoPaises",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "222",
+                  "display": "El Salvador"
+                }
+              ]
+            }
+          }
+        ],
+        "coding": [
+          {
+            "code": "PPN",
+            "display": "Pasaporte"
+          }
+        ]
+      },
+      "value": "P3334521.2"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "family": "Cabrales",
+      "_family": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family",
+            "valueString": "Rivas"
+          }
+        ]
+      },
+      "given": [
+        "Wilmer",
+        "Andres",
+        "de Dios"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "email",
+      "value": "wilCAB12l@wilmermail.com",
+      "use": "home"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1968-11-03",
+  "address": [
+    {
+      "use": "temp",
+      "line": [
+        "Calle 4 Norte, 52, pieza 802"
+      ],
+      "city": "15101",
+      "district": "151",
+      "state": "15",
+      "country": "152"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "resourceType": "Patient",
+  "id": "PacienteCL",
+  "meta": {
+    "profile": [
+      "http://core.hl7chile.cl/StructureDefinition/CorePacienteCl"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: NNCH: 15.236.327-k (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Marietta María Ximena Rosales (OFFICIAL), Xime </p><p><b>telecom</b>: ph: 943561833(MOBILE), <a href=\"mailto:mariRosal@mimail.com\">mariRosal@mimail.com</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1983-03-24</p><p><b>address</b>: Av Los Chirimoyos, 32, casa 4 5101 5 152 (HOME)</p></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "extension": [
+          {
+            "url": "http://core.hl7chile.cl/StructureDefinition/CodigoPaises",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "152",
+                  "display": "Chile"
+                }
+              ]
+            }
+          }
+        ],
+        "coding": [
+          {
+            "code": "NNCH"
+          }
+        ]
+      },
+      "value": "15.236.327-k"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "family": "Rosales",
+      "_family": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family",
+            "valueString": "Bosh"
+          }
+        ]
+      },
+      "given": [
+        "Marietta",
+        "María",
+        "Ximena"
+      ]
+    },
+    {
+      "use": "usual",
+      "given": [
+        "Xime"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "943561833",
+      "use": "mobile"
+    },
+    {
+      "system": "email",
+      "value": "mariRosal@mimail.com",
+      "use": "work"
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1983-03-24",
+  "address": [
+    {
+      "use": "home",
+      "line": [
+        "Av Los Chirimoyos, 32, casa 4"
+      ],
+      "city": "5101",
+      "district": "051",
+      "state": "5",
+      "country": "152"
+    }
+  ]
+}

@@ -1,0 +1,1438 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://core.hl7chile.cl/ValueSet/CodNacComunas> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "CodNacComunas"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://apis.digital.gob.cl/dpa/comunas/</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>05602</td><td>Algarrobo</td></tr><tr><td>13502</td><td>Alhué</td></tr><tr><td>08314</td><td>Alto Biobío</td></tr><tr><td>03302</td><td>Alto del Carmen</td></tr><tr><td>01107</td><td>Alto Hospicio</td></tr><tr><td>10202</td><td>Ancud</td></tr><tr><td>04103</td><td>Andacollo</td></tr><tr><td>09201</td><td>Angol</td></tr><tr><td>12202</td><td>Antartica</td></tr><tr><td>02101</td><td>Antofagasta</td></tr><tr><td>08302</td><td>Antuco</td></tr><tr><td>08202</td><td>Arauco</td></tr><tr><td>15101</td><td>Arica</td></tr><tr><td>11201</td><td>Aysén</td></tr><tr><td>13402</td><td>Buin</td></tr><tr><td>16102</td><td>Bulnes</td></tr><tr><td>05402</td><td>Cabildo</td></tr><tr><td>12201</td><td>Cabo de Hornos</td></tr><tr><td>08303</td><td>Cabrero</td></tr><tr><td>02201</td><td>Calama</td></tr><tr><td>10102</td><td>Calbuco</td></tr><tr><td>03102</td><td>Caldera</td></tr><tr><td>05502</td><td>Calera</td></tr><tr><td>13403</td><td>Calera de Tango</td></tr><tr><td>05302</td><td>Calle Larga</td></tr><tr><td>15102</td><td>Camarones</td></tr><tr><td>01402</td><td>Camiña</td></tr><tr><td>04202</td><td>Canela</td></tr><tr><td>08203</td><td>Cañete</td></tr><tr><td>09102</td><td>Carahue</td></tr><tr><td>05603</td><td>Cartagena</td></tr><tr><td>05102</td><td>Casablanca</td></tr><tr><td>10201</td><td>Castro</td></tr><tr><td>05702</td><td>Catemu</td></tr><tr><td>07201</td><td>Cauquenes</td></tr><tr><td>13102</td><td>Cerrillos</td></tr><tr><td>13103</td><td>Cerro Navia</td></tr><tr><td>10401</td><td>Chaitén</td></tr><tr><td>03201</td><td>Chañaral</td></tr><tr><td>07202</td><td>Chanco</td></tr><tr><td>06302</td><td>Chépica</td></tr><tr><td>08103</td><td>Chiguayante</td></tr><tr><td>11401</td><td>Chile Chico</td></tr><tr><td>16101</td><td>Chillán</td></tr><tr><td>16103</td><td>Chillán Viejo</td></tr><tr><td>06303</td><td>Chimbarongo</td></tr><tr><td>09121</td><td>Cholchol</td></tr><tr><td>10203</td><td>Chonchi</td></tr><tr><td>11202</td><td>Cisnes</td></tr><tr><td>16202</td><td>Cobquecura</td></tr><tr><td>10103</td><td>Cochamó</td></tr><tr><td>11301</td><td>Cochrane</td></tr><tr><td>06102</td><td>Codegua</td></tr><tr><td>16203</td><td>Coelemu</td></tr><tr><td>11101</td><td>Coihaique</td></tr><tr><td>16302</td><td>Coihueco</td></tr><tr><td>06103</td><td>Coinco</td></tr><tr><td>07402</td><td>Colbún</td></tr><tr><td>01403</td><td>Colchane</td></tr><tr><td>13301</td><td>Colina</td></tr><tr><td>09202</td><td>Collipulli</td></tr><tr><td>06104</td><td>Coltauco</td></tr><tr><td>04302</td><td>Combarbalá</td></tr><tr><td>08101</td><td>Concepción</td></tr><tr><td>13104</td><td>Conchalí</td></tr><tr><td>05103</td><td>Concón</td></tr><tr><td>07102</td><td>Constitución</td></tr><tr><td>08204</td><td>Contulmo</td></tr><tr><td>03101</td><td>Copiapó</td></tr><tr><td>04102</td><td>Coquimbo</td></tr><tr><td>08102</td><td>Coronel</td></tr><tr><td>14102</td><td>Corral</td></tr><tr><td>09103</td><td>Cunco</td></tr><tr><td>09203</td><td>Curacautín</td></tr><tr><td>13503</td><td>Curacaví</td></tr><tr><td>10204</td><td>Curaco de Vélez</td></tr><tr><td>08205</td><td>Curanilahue</td></tr><tr><td>09104</td><td>Curarrehue</td></tr><tr><td>07103</td><td>Curepto</td></tr><tr><td>07301</td><td>Curicó</td></tr><tr><td>10205</td><td>Dalcahue</td></tr><tr><td>03202</td><td>Diego de Almagro</td></tr><tr><td>06105</td><td>Doñihue</td></tr><tr><td>13105</td><td>El Bosque</td></tr><tr><td>16104</td><td>El Carmen</td></tr><tr><td>13602</td><td>El Monte</td></tr><tr><td>05604</td><td>El Quisco</td></tr><tr><td>05605</td><td>El Tabo</td></tr><tr><td>07104</td><td>Empedrado</td></tr><tr><td>09204</td><td>Ercilla</td></tr><tr><td>13106</td><td>Estacin Central</td></tr><tr><td>08104</td><td>Florida</td></tr><tr><td>09105</td><td>Freire</td></tr><tr><td>03303</td><td>Freirina</td></tr><tr><td>10104</td><td>Fresia</td></tr><tr><td>10105</td><td>Frutillar</td></tr><tr><td>10402</td><td>Futaleufú</td></tr><tr><td>14202</td><td>Futrono</td></tr><tr><td>09106</td><td>Galvarino</td></tr><tr><td>15202</td><td>General Lagos</td></tr><tr><td>09107</td><td>Gorbea</td></tr><tr><td>06106</td><td>Graneros</td></tr><tr><td>11203</td><td>Guaitecas</td></tr><tr><td>05503</td><td>Hijuelas</td></tr><tr><td>10403</td><td>Hualaihué</td></tr><tr><td>07302</td><td>Hualañé</td></tr><tr><td>08112</td><td>Hualpén</td></tr><tr><td>08105</td><td>Hualqui</td></tr><tr><td>01404</td><td>Huara</td></tr><tr><td>03304</td><td>Huasco</td></tr><tr><td>13107</td><td>Huechuraba</td></tr><tr><td>04201</td><td>Illapel</td></tr><tr><td>13108</td><td>Independencia</td></tr><tr><td>01101</td><td>Iquique</td></tr><tr><td>13603</td><td>Isla de Maipo</td></tr><tr><td>05201</td><td>Isla de Pascua</td></tr><tr><td>05104</td><td>Juan Fernández</td></tr><tr><td>13109</td><td>La Cisterna</td></tr><tr><td>05504</td><td>La Cruz</td></tr><tr><td>06202</td><td>La Estrella</td></tr><tr><td>13110</td><td>La Florida</td></tr><tr><td>13111</td><td>La Granja</td></tr><tr><td>04104</td><td>La Higuera</td></tr><tr><td>05401</td><td>La Ligua</td></tr><tr><td>13112</td><td>La Pintana</td></tr><tr><td>13113</td><td>La Reina</td></tr><tr><td>04101</td><td>La Serena</td></tr><tr><td>14201</td><td>La Unión</td></tr><tr><td>14203</td><td>Lago Ranco</td></tr><tr><td>11102</td><td>Lago Verde</td></tr><tr><td>12102</td><td>Laguna Blanca</td></tr><tr><td>08304</td><td>Laja</td></tr><tr><td>13302</td><td>Lampa</td></tr><tr><td>14103</td><td>Lanco</td></tr><tr><td>06107</td><td>Las Cabras</td></tr><tr><td>13114</td><td>Las Condes</td></tr><tr><td>09108</td><td>Lautaro</td></tr><tr><td>08201</td><td>Lebu</td></tr><tr><td>07303</td><td>Licantén</td></tr><tr><td>05802</td><td>Limache</td></tr><tr><td>07401</td><td>Linares</td></tr><tr><td>06203</td><td>Litueche</td></tr><tr><td>05703</td><td>Llaillay</td></tr><tr><td>10107</td><td>Llanquihue</td></tr><tr><td>13115</td><td>Lo Barnechea</td></tr><tr><td>13116</td><td>Lo Espejo</td></tr><tr><td>13117</td><td>Lo Prado</td></tr><tr><td>06304</td><td>Lolol</td></tr><tr><td>09109</td><td>Loncoche</td></tr><tr><td>07403</td><td>Longaví</td></tr><tr><td>09205</td><td>Lonquimay</td></tr><tr><td>08206</td><td>Los Álamos</td></tr><tr><td>05301</td><td>Los Andes</td></tr><tr><td>08301</td><td>Los Ángeles</td></tr><tr><td>14104</td><td>Los Lagos</td></tr><tr><td>10106</td><td>Los Muermos</td></tr><tr><td>09206</td><td>Los Sauces</td></tr><tr><td>04203</td><td>Los Vilos</td></tr><tr><td>08106</td><td>Lota</td></tr><tr><td>09207</td><td>Lumaco</td></tr><tr><td>06108</td><td>Machalí</td></tr><tr><td>13118</td><td>Macul</td></tr><tr><td>14105</td><td>Máfil</td></tr><tr><td>13119</td><td>Maipú</td></tr><tr><td>06109</td><td>Malloa</td></tr><tr><td>06204</td><td>Marchihue</td></tr><tr><td>02302</td><td>María Elena</td></tr><tr><td>13504</td><td>María Pinto</td></tr><tr><td>14106</td><td>Mariquina</td></tr><tr><td>07105</td><td>Maule</td></tr><tr><td>10108</td><td>Maullín</td></tr><tr><td>02102</td><td>Mejillones</td></tr><tr><td>09110</td><td>Melipeuco</td></tr><tr><td>13501</td><td>Melipilla</td></tr><tr><td>07304</td><td>Molina</td></tr><tr><td>04303</td><td>Monte Patria</td></tr><tr><td>06110</td><td>Mostazal</td></tr><tr><td>08305</td><td>Mulchén</td></tr><tr><td>08306</td><td>Nacimiento</td></tr><tr><td>06305</td><td>Nancagua</td></tr><tr><td>12401</td><td>Natales</td></tr><tr><td>06205</td><td>Navidad</td></tr><tr><td>08307</td><td>Negrete</td></tr><tr><td>16204</td><td>Ninhue</td></tr><tr><td>16303</td><td>Ñiquén</td></tr><tr><td>05506</td><td>Nogales</td></tr><tr><td>09111</td><td>Nueva Imperial</td></tr><tr><td>13120</td><td>ÑuÑoa</td></tr><tr><td>06111</td><td>Olivar</td></tr><tr><td>02202</td><td>Ollagüe</td></tr><tr><td>05803</td><td>Olmué</td></tr><tr><td>10301</td><td>Osorno</td></tr><tr><td>04301</td><td>Ovalle</td></tr><tr><td>11302</td><td>O'Higgins</td></tr><tr><td>13604</td><td>Padre Hurtado</td></tr><tr><td>09112</td><td>Padre las Casas</td></tr><tr><td>04105</td><td>Paiguano</td></tr><tr><td>14107</td><td>Paillaco</td></tr><tr><td>13404</td><td>Paine</td></tr><tr><td>10404</td><td>Palena</td></tr><tr><td>06306</td><td>Palmilla</td></tr><tr><td>14108</td><td>Panguipulli</td></tr><tr><td>05704</td><td>Panquehue</td></tr><tr><td>05403</td><td>Papudo</td></tr><tr><td>06206</td><td>Paredones</td></tr><tr><td>07404</td><td>Parral</td></tr><tr><td>13121</td><td>Pedro Aguirre Cerda</td></tr><tr><td>07106</td><td>Pelarco</td></tr><tr><td>07203</td><td>Pelluhue</td></tr><tr><td>16105</td><td>Pemuco</td></tr><tr><td>13605</td><td>Peñaflor</td></tr><tr><td>13122</td><td>Peñalolén</td></tr><tr><td>07107</td><td>Pencahue</td></tr><tr><td>08107</td><td>Penco</td></tr><tr><td>06307</td><td>Peralillo</td></tr><tr><td>09113</td><td>Perquenco</td></tr><tr><td>05404</td><td>Petorca</td></tr><tr><td>06112</td><td>Peumo</td></tr><tr><td>01405</td><td>Pica</td></tr><tr><td>06113</td><td>Pichidegua</td></tr><tr><td>06201</td><td>Pichilemu</td></tr><tr><td>16106</td><td>Pinto</td></tr><tr><td>13202</td><td>Pirque</td></tr><tr><td>09114</td><td>Pitrufquén</td></tr><tr><td>06308</td><td>Placilla</td></tr><tr><td>16205</td><td>Portezuelo</td></tr><tr><td>12301</td><td>Porvenir</td></tr><tr><td>01401</td><td>Pozo Almonte</td></tr><tr><td>12302</td><td>Primavera</td></tr><tr><td>13123</td><td>Providencia</td></tr><tr><td>05105</td><td>Puchuncaví</td></tr><tr><td>09115</td><td>Pucón</td></tr><tr><td>13124</td><td>Pudahuel</td></tr><tr><td>13201</td><td>Puente Alto</td></tr><tr><td>10101</td><td>Puerto Montt</td></tr><tr><td>10302</td><td>Puerto Octay</td></tr><tr><td>10109</td><td>Puerto Varas</td></tr><tr><td>06309</td><td>Pumanque</td></tr><tr><td>04304</td><td>Punitaqui</td></tr><tr><td>12101</td><td>Punta Arenas</td></tr><tr><td>10206</td><td>Puqueldón</td></tr><tr><td>09208</td><td>Purén</td></tr><tr><td>10303</td><td>Purranque</td></tr><tr><td>05705</td><td>Putaendo</td></tr><tr><td>15201</td><td>Putre</td></tr><tr><td>10304</td><td>Puyehue</td></tr><tr><td>10207</td><td>Queilén</td></tr><tr><td>10208</td><td>Quellón</td></tr><tr><td>10209</td><td>Quemchi</td></tr><tr><td>08308</td><td>Quilaco</td></tr><tr><td>13125</td><td>Quilicura</td></tr><tr><td>08309</td><td>Quilleco</td></tr><tr><td>16107</td><td>Quillón</td></tr><tr><td>05501</td><td>Quillota</td></tr><tr><td>05801</td><td>Quilpué</td></tr><tr><td>10210</td><td>Quinchao</td></tr><tr><td>06114</td><td>Quinta de Tilcoco</td></tr><tr><td>13126</td><td>Quinta Normal</td></tr><tr><td>05107</td><td>Quintero</td></tr><tr><td>16201</td><td>Quirihue</td></tr><tr><td>06101</td><td>Rancagua</td></tr><tr><td>16206</td><td>Ránquil</td></tr><tr><td>07305</td><td>Rauco</td></tr><tr><td>13127</td><td>Recoleta</td></tr><tr><td>09209</td><td>Renaico</td></tr><tr><td>13128</td><td>Renca</td></tr><tr><td>06115</td><td>Rengo</td></tr><tr><td>06116</td><td>Requínoa</td></tr><tr><td>07405</td><td>Retiro</td></tr><tr><td>05303</td><td>Rinconada</td></tr><tr><td>14204</td><td>Río Bueno</td></tr><tr><td>07108</td><td>Río Claro</td></tr><tr><td>04305</td><td>Río Hurtado</td></tr><tr><td>11402</td><td>Río Ibáñez</td></tr><tr><td>10305</td><td>Río Negro</td></tr><tr><td>12103</td><td>Río Verde</td></tr><tr><td>07306</td><td>Romeral</td></tr><tr><td>09116</td><td>Saavedra</td></tr><tr><td>07307</td><td>Sagrada Familia</td></tr><tr><td>04204</td><td>Salamanca</td></tr><tr><td>05601</td><td>San Antonio</td></tr><tr><td>13401</td><td>San Bernardo</td></tr><tr><td>16301</td><td>San Carlos</td></tr><tr><td>07109</td><td>San Clemente</td></tr><tr><td>05304</td><td>San Esteban</td></tr><tr><td>16304</td><td>San Fabián</td></tr><tr><td>05701</td><td>San Felipe</td></tr><tr><td>06301</td><td>San Fernando</td></tr><tr><td>12104</td><td>San Gregorio</td></tr><tr><td>16108</td><td>San Ignacio</td></tr><tr><td>07406</td><td>San Javier</td></tr><tr><td>13129</td><td>San Joaquín</td></tr><tr><td>13203</td><td>San José de Maipo</td></tr><tr><td>10306</td><td>San Juan de la Costa</td></tr><tr><td>13130</td><td>San Miguel</td></tr><tr><td>16305</td><td>San Nicolás</td></tr><tr><td>10307</td><td>San Pablo</td></tr><tr><td>13505</td><td>San Pedro</td></tr><tr><td>02203</td><td>San Pedro de Atacama</td></tr><tr><td>08108</td><td>San Pedro de la Paz</td></tr><tr><td>07110</td><td>San Rafael</td></tr><tr><td>13131</td><td>San Ramón</td></tr><tr><td>08310</td><td>San Rosendo</td></tr><tr><td>06117</td><td>San Vicente</td></tr><tr><td>08311</td><td>Santa Bárbara</td></tr><tr><td>06310</td><td>Santa Cruz</td></tr><tr><td>08109</td><td>Santa Juana</td></tr><tr><td>05706</td><td>Santa María</td></tr><tr><td>13101</td><td>Santiago Centro</td></tr><tr><td>05606</td><td>Santo Domingo</td></tr><tr><td>02103</td><td>Sierra Gorda</td></tr><tr><td>13601</td><td>Talagante</td></tr><tr><td>07101</td><td>Talca</td></tr><tr><td>08110</td><td>Talcahuano</td></tr><tr><td>02104</td><td>Taltal</td></tr><tr><td>09101</td><td>Temuco</td></tr><tr><td>07308</td><td>Teno</td></tr><tr><td>09117</td><td>Teodoro Schmidt</td></tr><tr><td>03103</td><td>Tierra Amarilla</td></tr><tr><td>13303</td><td>Tiltil</td></tr><tr><td>12303</td><td>Timaukel</td></tr><tr><td>08207</td><td>Tirúa</td></tr><tr><td>02301</td><td>Tocopilla</td></tr><tr><td>09118</td><td>Toltén</td></tr><tr><td>08111</td><td>Tomé</td></tr><tr><td>12402</td><td>Torres del Paine</td></tr><tr><td>11303</td><td>Tortel</td></tr><tr><td>09210</td><td>Traiguén</td></tr><tr><td>16207</td><td>Treguaco</td></tr><tr><td>08312</td><td>Tucapel</td></tr><tr><td>14101</td><td>Valdivia</td></tr><tr><td>03301</td><td>Vallenar</td></tr><tr><td>05101</td><td>Valparaíso</td></tr><tr><td>07309</td><td>Vichuqué</td></tr><tr><td>09211</td><td>Victoria</td></tr><tr><td>04106</td><td>Vicuña</td></tr><tr><td>09119</td><td>Vilcún</td></tr><tr><td>07407</td><td>Villa Alegre</td></tr><tr><td>05804</td><td>Villa Alemana</td></tr><tr><td>09120</td><td>Villarrica</td></tr><tr><td>05109</td><td>Viña del Mar</td></tr><tr><td>13132</td><td>Vitacura</td></tr><tr><td>07408</td><td>Yerbas Buenas</td></tr><tr><td>08313</td><td>Yumbel</td></tr><tr><td>16109</td><td>Yungay</td></tr><tr><td>05405</td><td>Zapallar</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://core.hl7chile.cl/ValueSet/CodNacComunas"];
+  fhir:ValueSet.version [ fhir:value "0.85 (Ballot Pendiente)"];
+  fhir:ValueSet.name [ fhir:value "CodComunas"];
+  fhir:ValueSet.title [ fhir:value "Códigos de Comunas en Chile"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2021-10-27T20:46:13-03:00"^^xsd:dateTime];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Pablo Pizzaro" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "ppizarro.delgado@minsal.cl" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Codigos definidos para identificar una comuna en Chile. Estos aún deben ser llevados a un ValueSet"];
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "CL" ];
+       fhir:Coding.display [ fhir:value "Chile" ]
+     ]
+  ];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://apis.digital.gob.cl/dpa/comunas/" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05602" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Algarrobo" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13502" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Alhué" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08314" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Alto Biobío" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "03302" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Alto del Carmen" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "01107" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Alto Hospicio" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10202" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ancud" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "04103" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Andacollo" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09201" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Angol" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12202" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Antartica" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "02101" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Antofagasta" ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08302" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Antuco" ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08202" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Arauco" ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15101" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Arica" ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11201" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aysén" ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13402" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Buin" ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16102" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bulnes" ]
+       ], [
+         fhir:index 16;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05402" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cabildo" ]
+       ], [
+         fhir:index 17;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12201" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cabo de Hornos" ]
+       ], [
+         fhir:index 18;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08303" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cabrero" ]
+       ], [
+         fhir:index 19;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "02201" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Calama" ]
+       ], [
+         fhir:index 20;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10102" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Calbuco" ]
+       ], [
+         fhir:index 21;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "03102" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Caldera" ]
+       ], [
+         fhir:index 22;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05502" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Calera" ]
+       ], [
+         fhir:index 23;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13403" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Calera de Tango" ]
+       ], [
+         fhir:index 24;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05302" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Calle Larga" ]
+       ], [
+         fhir:index 25;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15102" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Camarones" ]
+       ], [
+         fhir:index 26;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "01402" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Camiña" ]
+       ], [
+         fhir:index 27;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "04202" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Canela" ]
+       ], [
+         fhir:index 28;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08203" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cañete" ]
+       ], [
+         fhir:index 29;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09102" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Carahue" ]
+       ], [
+         fhir:index 30;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05603" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cartagena" ]
+       ], [
+         fhir:index 31;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05102" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Casablanca" ]
+       ], [
+         fhir:index 32;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10201" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Castro" ]
+       ], [
+         fhir:index 33;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05702" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Catemu" ]
+       ], [
+         fhir:index 34;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07201" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cauquenes" ]
+       ], [
+         fhir:index 35;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13102" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cerrillos" ]
+       ], [
+         fhir:index 36;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13103" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cerro Navia" ]
+       ], [
+         fhir:index 37;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10401" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chaitén" ]
+       ], [
+         fhir:index 38;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "03201" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chañaral" ]
+       ], [
+         fhir:index 39;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07202" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chanco" ]
+       ], [
+         fhir:index 40;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06302" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chépica" ]
+       ], [
+         fhir:index 41;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08103" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chiguayante" ]
+       ], [
+         fhir:index 42;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11401" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chile Chico" ]
+       ], [
+         fhir:index 43;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16101" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chillán" ]
+       ], [
+         fhir:index 44;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16103" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chillán Viejo" ]
+       ], [
+         fhir:index 45;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06303" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chimbarongo" ]
+       ], [
+         fhir:index 46;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09121" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cholchol" ]
+       ], [
+         fhir:index 47;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10203" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chonchi" ]
+       ], [
+         fhir:index 48;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11202" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cisnes" ]
+       ], [
+         fhir:index 49;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16202" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cobquecura" ]
+       ], [
+         fhir:index 50;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10103" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cochamó" ]
+       ], [
+         fhir:index 51;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11301" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cochrane" ]
+       ], [
+         fhir:index 52;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06102" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Codegua" ]
+       ], [
+         fhir:index 53;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16203" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Coelemu" ]
+       ], [
+         fhir:index 54;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11101" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Coihaique" ]
+       ], [
+         fhir:index 55;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16302" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Coihueco" ]
+       ], [
+         fhir:index 56;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06103" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Coinco" ]
+       ], [
+         fhir:index 57;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07402" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Colbún" ]
+       ], [
+         fhir:index 58;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "01403" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Colchane" ]
+       ], [
+         fhir:index 59;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13301" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Colina" ]
+       ], [
+         fhir:index 60;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09202" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Collipulli" ]
+       ], [
+         fhir:index 61;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06104" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Coltauco" ]
+       ], [
+         fhir:index 62;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "04302" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Combarbalá" ]
+       ], [
+         fhir:index 63;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08101" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Concepción" ]
+       ], [
+         fhir:index 64;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13104" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Conchalí" ]
+       ], [
+         fhir:index 65;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05103" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Concón" ]
+       ], [
+         fhir:index 66;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07102" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Constitución" ]
+       ], [
+         fhir:index 67;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08204" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Contulmo" ]
+       ], [
+         fhir:index 68;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "03101" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Copiapó" ]
+       ], [
+         fhir:index 69;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "04102" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Coquimbo" ]
+       ], [
+         fhir:index 70;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08102" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Coronel" ]
+       ], [
+         fhir:index 71;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14102" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Corral" ]
+       ], [
+         fhir:index 72;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09103" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cunco" ]
+       ], [
+         fhir:index 73;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09203" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Curacautín" ]
+       ], [
+         fhir:index 74;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13503" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Curacaví" ]
+       ], [
+         fhir:index 75;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10204" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Curaco de Vélez" ]
+       ], [
+         fhir:index 76;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08205" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Curanilahue" ]
+       ], [
+         fhir:index 77;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09104" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Curarrehue" ]
+       ], [
+         fhir:index 78;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07103" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Curepto" ]
+       ], [
+         fhir:index 79;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07301" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Curicó" ]
+       ], [
+         fhir:index 80;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10205" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dalcahue" ]
+       ], [
+         fhir:index 81;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "03202" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Diego de Almagro" ]
+       ], [
+         fhir:index 82;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06105" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Doñihue" ]
+       ], [
+         fhir:index 83;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13105" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "El Bosque" ]
+       ], [
+         fhir:index 84;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16104" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "El Carmen" ]
+       ], [
+         fhir:index 85;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13602" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "El Monte" ]
+       ], [
+         fhir:index 86;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05604" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "El Quisco" ]
+       ], [
+         fhir:index 87;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05605" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "El Tabo" ]
+       ], [
+         fhir:index 88;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07104" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Empedrado" ]
+       ], [
+         fhir:index 89;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09204" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ercilla" ]
+       ], [
+         fhir:index 90;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13106" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Estacin Central" ]
+       ], [
+         fhir:index 91;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08104" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Florida" ]
+       ], [
+         fhir:index 92;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09105" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Freire" ]
+       ], [
+         fhir:index 93;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "03303" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Freirina" ]
+       ], [
+         fhir:index 94;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10104" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fresia" ]
+       ], [
+         fhir:index 95;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10105" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Frutillar" ]
+       ], [
+         fhir:index 96;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10402" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Futaleufú" ]
+       ], [
+         fhir:index 97;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14202" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Futrono" ]
+       ], [
+         fhir:index 98;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09106" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Galvarino" ]
+       ], [
+         fhir:index 99;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15202" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "General Lagos" ]
+       ], [
+         fhir:index 100;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09107" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gorbea" ]
+       ], [
+         fhir:index 101;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06106" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Graneros" ]
+       ], [
+         fhir:index 102;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11203" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Guaitecas" ]
+       ], [
+         fhir:index 103;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05503" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hijuelas" ]
+       ], [
+         fhir:index 104;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10403" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hualaihué" ]
+       ], [
+         fhir:index 105;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07302" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hualañé" ]
+       ], [
+         fhir:index 106;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08112" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hualpén" ]
+       ], [
+         fhir:index 107;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08105" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hualqui" ]
+       ], [
+         fhir:index 108;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "01404" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Huara" ]
+       ], [
+         fhir:index 109;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "03304" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Huasco" ]
+       ], [
+         fhir:index 110;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13107" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Huechuraba" ]
+       ], [
+         fhir:index 111;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "04201" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Illapel" ]
+       ], [
+         fhir:index 112;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13108" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Independencia" ]
+       ], [
+         fhir:index 113;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "01101" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Iquique" ]
+       ], [
+         fhir:index 114;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13603" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Isla de Maipo" ]
+       ], [
+         fhir:index 115;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05201" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Isla de Pascua" ]
+       ], [
+         fhir:index 116;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05104" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Juan Fernández" ]
+       ], [
+         fhir:index 117;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13109" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "La Cisterna" ]
+       ], [
+         fhir:index 118;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05504" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "La Cruz" ]
+       ], [
+         fhir:index 119;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06202" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "La Estrella" ]
+       ], [
+         fhir:index 120;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13110" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "La Florida" ]
+       ], [
+         fhir:index 121;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13111" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "La Granja" ]
+       ], [
+         fhir:index 122;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "04104" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "La Higuera" ]
+       ], [
+         fhir:index 123;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05401" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "La Ligua" ]
+       ], [
+         fhir:index 124;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13112" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "La Pintana" ]
+       ], [
+         fhir:index 125;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13113" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "La Reina" ]
+       ], [
+         fhir:index 126;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "04101" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "La Serena" ]
+       ], [
+         fhir:index 127;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14201" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "La Unión" ]
+       ], [
+         fhir:index 128;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14203" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lago Ranco" ]
+       ], [
+         fhir:index 129;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11102" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lago Verde" ]
+       ], [
+         fhir:index 130;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12102" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Laguna Blanca" ]
+       ], [
+         fhir:index 131;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08304" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Laja" ]
+       ], [
+         fhir:index 132;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13302" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lampa" ]
+       ], [
+         fhir:index 133;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14103" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lanco" ]
+       ], [
+         fhir:index 134;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06107" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Las Cabras" ]
+       ], [
+         fhir:index 135;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13114" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Las Condes" ]
+       ], [
+         fhir:index 136;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09108" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lautaro" ]
+       ], [
+         fhir:index 137;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08201" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lebu" ]
+       ], [
+         fhir:index 138;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07303" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Licantén" ]
+       ], [
+         fhir:index 139;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05802" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Limache" ]
+       ], [
+         fhir:index 140;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07401" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Linares" ]
+       ], [
+         fhir:index 141;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06203" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Litueche" ]
+       ], [
+         fhir:index 142;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05703" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Llaillay" ]
+       ], [
+         fhir:index 143;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10107" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Llanquihue" ]
+       ], [
+         fhir:index 144;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13115" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lo Barnechea" ]
+       ], [
+         fhir:index 145;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13116" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lo Espejo" ]
+       ], [
+         fhir:index 146;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13117" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lo Prado" ]
+       ], [
+         fhir:index 147;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06304" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lolol" ]
+       ], [
+         fhir:index 148;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09109" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Loncoche" ]
+       ], [
+         fhir:index 149;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07403" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Longaví" ]
+       ], [
+         fhir:index 150;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09205" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lonquimay" ]
+       ], [
+         fhir:index 151;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08206" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Los Álamos" ]
+       ], [
+         fhir:index 152;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05301" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Los Andes" ]
+       ], [
+         fhir:index 153;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08301" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Los Ángeles" ]
+       ], [
+         fhir:index 154;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14104" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Los Lagos" ]
+       ], [
+         fhir:index 155;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10106" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Los Muermos" ]
+       ], [
+         fhir:index 156;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09206" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Los Sauces" ]
+       ], [
+         fhir:index 157;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "04203" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Los Vilos" ]
+       ], [
+         fhir:index 158;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08106" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lota" ]
+       ], [
+         fhir:index 159;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09207" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lumaco" ]
+       ], [
+         fhir:index 160;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06108" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Machalí" ]
+       ], [
+         fhir:index 161;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13118" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Macul" ]
+       ], [
+         fhir:index 162;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14105" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Máfil" ]
+       ], [
+         fhir:index 163;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13119" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Maipú" ]
+       ], [
+         fhir:index 164;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06109" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Malloa" ]
+       ], [
+         fhir:index 165;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06204" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Marchihue" ]
+       ], [
+         fhir:index 166;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "02302" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "María Elena" ]
+       ], [
+         fhir:index 167;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13504" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "María Pinto" ]
+       ], [
+         fhir:index 168;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14106" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mariquina" ]
+       ], [
+         fhir:index 169;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07105" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Maule" ]
+       ], [
+         fhir:index 170;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10108" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Maullín" ]
+       ], [
+         fhir:index 171;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "02102" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mejillones" ]
+       ], [
+         fhir:index 172;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09110" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Melipeuco" ]
+       ], [
+         fhir:index 173;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13501" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Melipilla" ]
+       ], [
+         fhir:index 174;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07304" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Molina" ]
+       ], [
+         fhir:index 175;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "04303" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Monte Patria" ]
+       ], [
+         fhir:index 176;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06110" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mostazal" ]
+       ], [
+         fhir:index 177;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08305" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mulchén" ]
+       ], [
+         fhir:index 178;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08306" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nacimiento" ]
+       ], [
+         fhir:index 179;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06305" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nancagua" ]
+       ], [
+         fhir:index 180;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12401" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Natales" ]
+       ], [
+         fhir:index 181;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06205" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Navidad" ]
+       ], [
+         fhir:index 182;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08307" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Negrete" ]
+       ], [
+         fhir:index 183;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16204" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ninhue" ]
+       ], [
+         fhir:index 184;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16303" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ñiquén" ]
+       ], [
+         fhir:index 185;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05506" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nogales" ]
+       ], [
+         fhir:index 186;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09111" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nueva Imperial" ]
+       ], [
+         fhir:index 187;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13120" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ÑuÑoa" ]
+       ], [
+         fhir:index 188;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06111" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Olivar" ]
+       ], [
+         fhir:index 189;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "02202" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ollagüe" ]
+       ], [
+         fhir:index 190;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05803" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Olmué" ]
+       ], [
+         fhir:index 191;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10301" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Osorno" ]
+       ], [
+         fhir:index 192;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "04301" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ovalle" ]
+       ], [
+         fhir:index 193;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11302" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "O'Higgins" ]
+       ], [
+         fhir:index 194;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13604" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Padre Hurtado" ]
+       ], [
+         fhir:index 195;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09112" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Padre las Casas" ]
+       ], [
+         fhir:index 196;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "04105" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Paiguano" ]
+       ], [
+         fhir:index 197;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14107" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Paillaco" ]
+       ], [
+         fhir:index 198;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13404" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Paine" ]
+       ], [
+         fhir:index 199;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10404" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Palena" ]
+       ], [
+         fhir:index 200;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06306" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Palmilla" ]
+       ], [
+         fhir:index 201;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14108" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Panguipulli" ]
+       ], [
+         fhir:index 202;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05704" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Panquehue" ]
+       ], [
+         fhir:index 203;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05403" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Papudo" ]
+       ], [
+         fhir:index 204;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06206" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Paredones" ]
+       ], [
+         fhir:index 205;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07404" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Parral" ]
+       ], [
+         fhir:index 206;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13121" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pedro Aguirre Cerda" ]
+       ], [
+         fhir:index 207;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07106" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pelarco" ]
+       ], [
+         fhir:index 208;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07203" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pelluhue" ]
+       ], [
+         fhir:index 209;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16105" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pemuco" ]
+       ], [
+         fhir:index 210;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13605" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Peñaflor" ]
+       ], [
+         fhir:index 211;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13122" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Peñalolén" ]
+       ], [
+         fhir:index 212;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07107" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pencahue" ]
+       ], [
+         fhir:index 213;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08107" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Penco" ]
+       ], [
+         fhir:index 214;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06307" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Peralillo" ]
+       ], [
+         fhir:index 215;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09113" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Perquenco" ]
+       ], [
+         fhir:index 216;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05404" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Petorca" ]
+       ], [
+         fhir:index 217;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06112" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Peumo" ]
+       ], [
+         fhir:index 218;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "01405" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pica" ]
+       ], [
+         fhir:index 219;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06113" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pichidegua" ]
+       ], [
+         fhir:index 220;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06201" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pichilemu" ]
+       ], [
+         fhir:index 221;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16106" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pinto" ]
+       ], [
+         fhir:index 222;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13202" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pirque" ]
+       ], [
+         fhir:index 223;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09114" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pitrufquén" ]
+       ], [
+         fhir:index 224;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06308" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Placilla" ]
+       ], [
+         fhir:index 225;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16205" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Portezuelo" ]
+       ], [
+         fhir:index 226;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12301" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Porvenir" ]
+       ], [
+         fhir:index 227;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "01401" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pozo Almonte" ]
+       ], [
+         fhir:index 228;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12302" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Primavera" ]
+       ], [
+         fhir:index 229;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13123" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Providencia" ]
+       ], [
+         fhir:index 230;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05105" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Puchuncaví" ]
+       ], [
+         fhir:index 231;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09115" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pucón" ]
+       ], [
+         fhir:index 232;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13124" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pudahuel" ]
+       ], [
+         fhir:index 233;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13201" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Puente Alto" ]
+       ], [
+         fhir:index 234;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10101" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Puerto Montt" ]
+       ], [
+         fhir:index 235;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10302" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Puerto Octay" ]
+       ], [
+         fhir:index 236;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10109" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Puerto Varas" ]
+       ], [
+         fhir:index 237;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06309" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pumanque" ]
+       ], [
+         fhir:index 238;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "04304" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Punitaqui" ]
+       ], [
+         fhir:index 239;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12101" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Punta Arenas" ]
+       ], [
+         fhir:index 240;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10206" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Puqueldón" ]
+       ], [
+         fhir:index 241;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09208" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Purén" ]
+       ], [
+         fhir:index 242;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10303" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Purranque" ]
+       ], [
+         fhir:index 243;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05705" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Putaendo" ]
+       ], [
+         fhir:index 244;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15201" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Putre" ]
+       ], [
+         fhir:index 245;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10304" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Puyehue" ]
+       ], [
+         fhir:index 246;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10207" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Queilén" ]
+       ], [
+         fhir:index 247;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10208" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Quellón" ]
+       ], [
+         fhir:index 248;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10209" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Quemchi" ]
+       ], [
+         fhir:index 249;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08308" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Quilaco" ]
+       ], [
+         fhir:index 250;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13125" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Quilicura" ]
+       ], [
+         fhir:index 251;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08309" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Quilleco" ]
+       ], [
+         fhir:index 252;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16107" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Quillón" ]
+       ], [
+         fhir:index 253;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05501" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Quillota" ]
+       ], [
+         fhir:index 254;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05801" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Quilpué" ]
+       ], [
+         fhir:index 255;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10210" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Quinchao" ]
+       ], [
+         fhir:index 256;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06114" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Quinta de Tilcoco" ]
+       ], [
+         fhir:index 257;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13126" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Quinta Normal" ]
+       ], [
+         fhir:index 258;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05107" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Quintero" ]
+       ], [
+         fhir:index 259;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16201" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Quirihue" ]
+       ], [
+         fhir:index 260;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06101" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rancagua" ]
+       ], [
+         fhir:index 261;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16206" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ránquil" ]
+       ], [
+         fhir:index 262;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07305" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rauco" ]
+       ], [
+         fhir:index 263;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13127" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Recoleta" ]
+       ], [
+         fhir:index 264;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09209" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Renaico" ]
+       ], [
+         fhir:index 265;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13128" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Renca" ]
+       ], [
+         fhir:index 266;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06115" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rengo" ]
+       ], [
+         fhir:index 267;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06116" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Requínoa" ]
+       ], [
+         fhir:index 268;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07405" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Retiro" ]
+       ], [
+         fhir:index 269;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05303" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rinconada" ]
+       ], [
+         fhir:index 270;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14204" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Río Bueno" ]
+       ], [
+         fhir:index 271;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07108" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Río Claro" ]
+       ], [
+         fhir:index 272;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "04305" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Río Hurtado" ]
+       ], [
+         fhir:index 273;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11402" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Río Ibáñez" ]
+       ], [
+         fhir:index 274;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10305" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Río Negro" ]
+       ], [
+         fhir:index 275;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12103" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Río Verde" ]
+       ], [
+         fhir:index 276;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07306" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Romeral" ]
+       ], [
+         fhir:index 277;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09116" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Saavedra" ]
+       ], [
+         fhir:index 278;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07307" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sagrada Familia" ]
+       ], [
+         fhir:index 279;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "04204" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Salamanca" ]
+       ], [
+         fhir:index 280;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05601" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "San Antonio" ]
+       ], [
+         fhir:index 281;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13401" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "San Bernardo" ]
+       ], [
+         fhir:index 282;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16301" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "San Carlos" ]
+       ], [
+         fhir:index 283;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07109" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "San Clemente" ]
+       ], [
+         fhir:index 284;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05304" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "San Esteban" ]
+       ], [
+         fhir:index 285;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16304" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "San Fabián" ]
+       ], [
+         fhir:index 286;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05701" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "San Felipe" ]
+       ], [
+         fhir:index 287;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06301" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "San Fernando" ]
+       ], [
+         fhir:index 288;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12104" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "San Gregorio" ]
+       ], [
+         fhir:index 289;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16108" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "San Ignacio" ]
+       ], [
+         fhir:index 290;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07406" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "San Javier" ]
+       ], [
+         fhir:index 291;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13129" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "San Joaquín" ]
+       ], [
+         fhir:index 292;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13203" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "San José de Maipo" ]
+       ], [
+         fhir:index 293;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10306" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "San Juan de la Costa" ]
+       ], [
+         fhir:index 294;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13130" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "San Miguel" ]
+       ], [
+         fhir:index 295;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16305" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "San Nicolás" ]
+       ], [
+         fhir:index 296;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10307" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "San Pablo" ]
+       ], [
+         fhir:index 297;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13505" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "San Pedro" ]
+       ], [
+         fhir:index 298;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "02203" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "San Pedro de Atacama" ]
+       ], [
+         fhir:index 299;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08108" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "San Pedro de la Paz" ]
+       ], [
+         fhir:index 300;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07110" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "San Rafael" ]
+       ], [
+         fhir:index 301;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13131" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "San Ramón" ]
+       ], [
+         fhir:index 302;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08310" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "San Rosendo" ]
+       ], [
+         fhir:index 303;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06117" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "San Vicente" ]
+       ], [
+         fhir:index 304;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08311" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Santa Bárbara" ]
+       ], [
+         fhir:index 305;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06310" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Santa Cruz" ]
+       ], [
+         fhir:index 306;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08109" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Santa Juana" ]
+       ], [
+         fhir:index 307;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05706" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Santa María" ]
+       ], [
+         fhir:index 308;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13101" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Santiago Centro" ]
+       ], [
+         fhir:index 309;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05606" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Santo Domingo" ]
+       ], [
+         fhir:index 310;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "02103" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sierra Gorda" ]
+       ], [
+         fhir:index 311;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13601" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Talagante" ]
+       ], [
+         fhir:index 312;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07101" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Talca" ]
+       ], [
+         fhir:index 313;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08110" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Talcahuano" ]
+       ], [
+         fhir:index 314;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "02104" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Taltal" ]
+       ], [
+         fhir:index 315;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09101" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Temuco" ]
+       ], [
+         fhir:index 316;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07308" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Teno" ]
+       ], [
+         fhir:index 317;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09117" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Teodoro Schmidt" ]
+       ], [
+         fhir:index 318;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "03103" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tierra Amarilla" ]
+       ], [
+         fhir:index 319;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13303" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tiltil" ]
+       ], [
+         fhir:index 320;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12303" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Timaukel" ]
+       ], [
+         fhir:index 321;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08207" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tirúa" ]
+       ], [
+         fhir:index 322;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "02301" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tocopilla" ]
+       ], [
+         fhir:index 323;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09118" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Toltén" ]
+       ], [
+         fhir:index 324;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08111" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tomé" ]
+       ], [
+         fhir:index 325;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12402" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Torres del Paine" ]
+       ], [
+         fhir:index 326;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11303" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tortel" ]
+       ], [
+         fhir:index 327;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09210" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Traiguén" ]
+       ], [
+         fhir:index 328;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16207" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Treguaco" ]
+       ], [
+         fhir:index 329;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08312" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tucapel" ]
+       ], [
+         fhir:index 330;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14101" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Valdivia" ]
+       ], [
+         fhir:index 331;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "03301" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vallenar" ]
+       ], [
+         fhir:index 332;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05101" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Valparaíso" ]
+       ], [
+         fhir:index 333;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07309" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vichuqué" ]
+       ], [
+         fhir:index 334;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09211" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Victoria" ]
+       ], [
+         fhir:index 335;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "04106" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vicuña" ]
+       ], [
+         fhir:index 336;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09119" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vilcún" ]
+       ], [
+         fhir:index 337;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07407" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Villa Alegre" ]
+       ], [
+         fhir:index 338;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05804" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Villa Alemana" ]
+       ], [
+         fhir:index 339;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09120" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Villarrica" ]
+       ], [
+         fhir:index 340;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05109" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Viña del Mar" ]
+       ], [
+         fhir:index 341;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13132" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vitacura" ]
+       ], [
+         fhir:index 342;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07408" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Yerbas Buenas" ]
+       ], [
+         fhir:index 343;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08313" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Yumbel" ]
+       ], [
+         fhir:index 344;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16109" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Yungay" ]
+       ], [
+         fhir:index 345;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05405" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Zapallar" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://core.hl7chile.cl/ValueSet/CodNacComunas.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

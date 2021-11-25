@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://core.hl7chile.cl/Medication/MedicamentoCl-2> a fhir:Medication;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "MedicamentoCl-2"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://core.hl7chile.cl/StructureDefinition/CoreMedicamentoCl";
+       fhir:index 0;
+       fhir:link <http://core.hl7chile.cl/StructureDefinition/CoreMedicamentoCl>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1703591000167111 (OFFICIAL), id: 696681000167108 (OFFICIAL)</p><p><b>code</b>: <span title=\"Codes: {http://minsal.cl/semantikos/description-id 1703591000167111}\">Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido</span></p></div>"
+  ];
+  fhir:Medication.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "http://minsal.cl/semantikos/description-id" ];
+     fhir:Identifier.value [ fhir:value "1703591000167111" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "http://minsal.cl/semantikos/concept-id" ];
+     fhir:Identifier.value [ fhir:value "696681000167108" ]
+  ];
+  fhir:Medication.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://minsal.cl/semantikos/description-id" ];
+       fhir:Coding.code [ fhir:value "1703591000167111" ];
+       fhir:Coding.display [ fhir:value "Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://core.hl7chile.cl/Medication/MedicamentoCl-2.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

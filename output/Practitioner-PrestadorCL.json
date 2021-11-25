@@ -1,0 +1,104 @@
+{
+  "resourceType": "Practitioner",
+  "id": "PrestadorCL",
+  "meta": {
+    "profile": [
+      "http://core.hl7chile.cl/StructureDefinition/CorePrestadorCl"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 8336277-3 (OFFICIAL), id: 999999 (SECONDARY)</p><p><b>active</b>: true</p><p><b>name</b>: Johanna Rosa null (OFFICIAL)</p><p><b>telecom</b>: ph: 9345666(MOBILE), <a href=\"mailto:DraSilva@mimail.com\">DraSilva@mimail.com</a></p><p><b>address</b>: Naranjos, 22, depto 32 091001 09 152 (HOME)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1974-08-12</p><blockquote><p><b>qualification</b></p><p><b>code</b>: <span title=\"Codes: \">Certificado(s)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>code</b>: <span title=\"Codes: \">Especialidad(es)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>code</b>: <span title=\"Codes: \">Especialidad(es)</span></p></blockquote></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://api_run/run",
+      "value": "8336277-3"
+    },
+    {
+      "use": "secondary",
+      "system": "https://apis.superdesalud.gob.cl/api/prestadores/registro/",
+      "value": "999999"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "_family": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family",
+            "valueString": "Reyes"
+          }
+        ]
+      },
+      "given": [
+        "Johanna",
+        "Rosa"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "9345666",
+      "use": "mobile"
+    },
+    {
+      "system": "email",
+      "value": "DraSilva@mimail.com",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "use": "home",
+      "line": [
+        "Naranjos, 22, depto 32"
+      ],
+      "city": "091001",
+      "district": "091",
+      "state": "09",
+      "country": "152"
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1974-08-12",
+  "qualification": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "2112",
+            "display": "Certificado Profesional Médico Cirujano"
+          }
+        ],
+        "text": "Certificado(s)"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "122",
+            "display": "Cardiólogia"
+          }
+        ],
+        "text": "Especialidad(es)"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "1234",
+            "display": "Medicina interna"
+          }
+        ],
+        "text": "Especialidad(es)"
+      }
+    }
+  ]
+}

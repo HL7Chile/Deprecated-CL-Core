@@ -1,0 +1,115 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://core.hl7chile.cl/Practitioner/PrestadorCL> a fhir:Practitioner;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "PrestadorCL"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://core.hl7chile.cl/StructureDefinition/CorePrestadorCl";
+       fhir:index 0;
+       fhir:link <http://core.hl7chile.cl/StructureDefinition/CorePrestadorCl>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 8336277-3 (OFFICIAL), id: 999999 (SECONDARY)</p><p><b>active</b>: true</p><p><b>name</b>: Johanna Rosa null (OFFICIAL)</p><p><b>telecom</b>: ph: 9345666(MOBILE), <a href=\"mailto:DraSilva@mimail.com\">DraSilva@mimail.com</a></p><p><b>address</b>: Naranjos, 22, depto 32 091001 09 152 (HOME)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1974-08-12</p><blockquote><p><b>qualification</b></p><p><b>code</b>: <span title=\"Codes: \">Certificado(s)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>code</b>: <span title=\"Codes: \">Especialidad(es)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>code</b>: <span title=\"Codes: \">Especialidad(es)</span></p></blockquote></div>"
+  ];
+  fhir:Practitioner.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "http://api_run/run" ];
+     fhir:Identifier.value [ fhir:value "8336277-3" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.use [ fhir:value "secondary" ];
+     fhir:Identifier.system [ fhir:value "https://apis.superdesalud.gob.cl/api/prestadores/registro/" ];
+     fhir:Identifier.value [ fhir:value "999999" ]
+  ];
+  fhir:Practitioner.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Practitioner.name [
+     fhir:index 0;
+     fhir:HumanName.use [ fhir:value "official" ];
+     fhir:HumanName.family [
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family" ];
+         fhir:Extension.valueString [ fhir:value "Reyes" ]
+       ]
+     ];
+     fhir:HumanName.given [
+       fhir:value "Johanna";
+       fhir:index 0
+     ], [
+       fhir:value "Rosa";
+       fhir:index 1
+     ]
+  ];
+  fhir:Practitioner.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "9345666" ];
+     fhir:ContactPoint.use [ fhir:value "mobile" ]
+  ], [
+     fhir:index 1;
+     fhir:ContactPoint.system [ fhir:value "email" ];
+     fhir:ContactPoint.value [ fhir:value "DraSilva@mimail.com" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ];
+  fhir:Practitioner.address [
+     fhir:index 0;
+     fhir:Address.use [ fhir:value "home" ];
+     fhir:Address.line [
+       fhir:value "Naranjos, 22, depto 32";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "091001" ];
+     fhir:Address.district [ fhir:value "091" ];
+     fhir:Address.state [ fhir:value "09" ];
+     fhir:Address.country [ fhir:value "152" ]
+  ];
+  fhir:Practitioner.gender [ fhir:value "female"];
+  fhir:Practitioner.birthDate [ fhir:value "1974-08-12"^^xsd:date];
+  fhir:Practitioner.qualification [
+     fhir:index 0;
+     fhir:Practitioner.qualification.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "2112" ];
+         fhir:Coding.display [ fhir:value "Certificado Profesional Médico Cirujano" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Certificado(s)" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Practitioner.qualification.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "122" ];
+         fhir:Coding.display [ fhir:value "Cardiólogia" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Especialidad(es)" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Practitioner.qualification.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "1234" ];
+         fhir:Coding.display [ fhir:value "Medicina interna" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Especialidad(es)" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://core.hl7chile.cl/Practitioner/PrestadorCL.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

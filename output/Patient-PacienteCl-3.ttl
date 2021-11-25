@@ -1,0 +1,99 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://core.hl7chile.cl/Patient/PacienteCl-3> a fhir:Patient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "PacienteCl-3"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "2" ];
+     fhir:Meta.lastUpdated [ fhir:value "2021-07-13T00:22:41.166Z"^^xsd:dateTime ];
+     fhir:Meta.profile [
+       fhir:value "http://core.hl7chile.cl/StructureDefinition/CorePacienteCl";
+       fhir:index 0;
+       fhir:link <http://core.hl7chile.cl/StructureDefinition/CorePacienteCl>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Codigo de Identificación de países</b>: <span title=\"Codes: \">Chilena</span></p><p><b>identifier</b>: DNI: 15602754-5 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: PABLO RODRIGO PIZARRO (OFFICIAL)</p><p><b>telecom</b>: <a href=\"mailto:ppizarro.delgado@minsal.cl\">ppizarro.delgado@minsal.cl</a></p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1983-08-04</p><p><b>deceased</b>: false</p><p><b>address</b>: 13120 13 152 (HOME)</p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://core.hl7chile.cl/StructureDefinition/CodigoPaises" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "152" ];
+         fhir:Coding.display [ fhir:value "Chilena" ]
+       ]
+     ]
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.type [
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://core.hl7chile.cl/StructureDefinition/CodigoPaises" ];
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.code [ fhir:value "152" ];
+             fhir:Coding.display [ fhir:value "Chile" ]
+           ]
+         ]
+       ];
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "NNCH152" ];
+         fhir:Coding.display [ fhir:value "DNI" ]
+       ]
+     ];
+     fhir:Identifier.value [ fhir:value "15602754-5" ]
+  ];
+  fhir:Patient.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.use [ fhir:value "official" ];
+     fhir:HumanName.family [
+       fhir:value "PIZARRO";
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family" ];
+         fhir:Extension.valueString [ fhir:value "DELGADO" ]
+       ]
+     ];
+     fhir:HumanName.given [
+       fhir:value "PABLO RODRIGO";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "email" ];
+     fhir:ContactPoint.value [ fhir:value "ppizarro.delgado@minsal.cl" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ];
+  fhir:Patient.gender [ fhir:value "male"];
+  fhir:Patient.birthDate [ fhir:value "1983-08-04"^^xsd:date];
+  fhir:Patient.deceasedBoolean [ fhir:value "false"^^xsd:boolean];
+  fhir:Patient.address [
+     fhir:index 0;
+     fhir:Address.use [ fhir:value "home" ];
+     fhir:Address.city [ fhir:value "13120" ];
+     fhir:Address.district [ fhir:value "131" ];
+     fhir:Address.state [ fhir:value "13" ];
+     fhir:Address.country [ fhir:value "152" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://core.hl7chile.cl/Patient/PacienteCl-3.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

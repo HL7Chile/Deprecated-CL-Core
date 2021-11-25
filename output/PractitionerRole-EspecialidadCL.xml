@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="EspecialidadCL"/>
+  <meta>
+    <profile value="http://core.hl7chile.cl/StructureDefinition/CoreEspecialidadCl"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>practitioner</b>: <a href="http://minsal/RNPI/Practitioner/3420">Johanna Rosa Silva Reyes</a></p><p><b>specialty</b>: <span title="Codes: ">Médico Cirujano</span>, <span title="Codes: ">Médico Cardiólogo</span>, <span title="Codes: ">Médico internista</span></p></div>
+  </text>
+  <active value="true"/>
+  <practitioner>
+    <reference value="http://minsal/RNPI/Practitioner/3420"/>
+    <display value="Johanna Rosa Silva Reyes"/>
+  </practitioner>
+  <specialty>
+    <coding>
+      <code value="110"/>
+    </coding>
+    <text value="Médico Cirujano"/>
+  </specialty>
+  <specialty>
+    <coding>
+      <code value="25"/>
+    </coding>
+    <text value="Médico Cardiólogo"/>
+  </specialty>
+  <specialty>
+    <coding>
+      <code value="27"/>
+    </coding>
+    <text value="Médico internista"/>
+  </specialty>
+</PractitionerRole>

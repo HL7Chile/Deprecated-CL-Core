@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>HL7.FHIR.CL.CORECH\Códigos de Comunas en Chile - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/fhir.css"/>
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"12.9"}
+    h3,h4,h5,h6{--heading-prefix:"12.9"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations 
+<div id="hl7-nav">
+    <a id="hl7-logo" no-external="true" href="http://hl7.org">
+        <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png" />
+    </a>
+</div> -->
+<div id="hl7-nav-left">
+    <a no-external="true" id="header-logo-left" href="http://minsal.cl">
+        <img src="minsal.png" alt="Visitar sitio web del Ministerio de Salud de Chile" height="80"/>
+    </a>
+</div>
+
+<div id="hl7-nav-right">
+    <a no-external="true" id="header-logo-righ" href="http://hl7chile.cl">
+        <img src="hl7chile.png" alt="Visitar HL7 Chile" height="80"/>
+    </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación Core-CL</span><br/>0.85 (Ballot Pendiente) - ci-build</p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Inicio</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Balloting
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Balloting.html">Balotaje</a>
+      </li>
+      <li>
+        <a href="Balloting-Validadores.html">Revisores</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="Alcances-Objetivos.html">Objetivos</a>
+  </li>
+  <li>
+    <a href="Aspectos-Generales.html">Generalidades</a>
+  </li>
+  <li>
+    <a href="Consolidado-Operaciones.html">Operaciones</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artefactos
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Perfiles.html">Perfiles</a>
+      </li>
+      <li><a name="l207">​</a>
+        <a href="extensiones.html">Extensiones</a>
+      </li>
+      <li>
+        <a href="Set-De-Validacion-ValueSets.html">Valuesets</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Perfiles
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="StructureDefinition-CorePacienteCl.html">Paciente</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-CorePrestadorCl.html">Prestador</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-CoreEspecialidadCl.html">Especialidad Prestador</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-CoreOrganizacionCl.html">Organización</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-CoreMedicamentoCl.html">Medicamento</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-CoreLocalizacionCl.html">Localización</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-RecetaBundleCl.html">Bundle</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="Set-Ejemplos.html">Ejemplos</a>
+  </li>
+  <li>
+    <a href="Todas-Descargas.html">Descargas</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Resumen de artefactos</b></a></li><li><b>Códigos de Comunas en Chile</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">Guía de Implementación Core-CL - Local Development build (v0.85 (Ballot Pendiente)). See the <a href="http://core.hl7chile.cl/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+  
+    <li>
+      <a href="ValueSet-CodNacComunas.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-CodNacComunas.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-CodNacComunas.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: Códigos de Comunas en Chile</h2>
+  <p>
+    <b>Summary</b>
+  </p>
+  <table class="grid">
+<tbody>
+<tr><td>Defining URL:</td><td>http://core.hl7chile.cl/ValueSet/CodNacComunas</td></tr>
+ <tr><td>Version:</td><td>0.85 (Ballot Pendiente)</td></tr>
+ <tr><td>Name:</td><td>CodComunas</td></tr>
+ <tr><td>Title:</td><td>Códigos de Comunas en Chile</td></tr>
+ <tr><td>Status:</td><td>Active as of 2021-10-27T20:46:13-03:00</td></tr>
+ <tr><td>Definition:</td><td><p>Codigos definidos para identificar una comuna en Chile. Estos aún deben ser llevados a un ValueSet</p>
+</td></tr>
+ <tr><td>Source Resource:</td><td><a href="ValueSet-CodNacComunas.xml.html">XML</a> / <a href="ValueSet-CodNacComunas.json.html">JSON</a> / <a href="ValueSet-CodNacComunas.ttl.html">Turtle</a></td></tr>
+</tbody></table>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<p>This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)</p>
+
+
+    <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+  <!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div><ul><li>Include these codes as defined in <code>https://apis.digital.gob.cl/dpa/comunas/</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>05602</td><td>Algarrobo</td></tr><tr><td>13502</td><td>Alhué</td></tr><tr><td>08314</td><td>Alto Biobío</td></tr><tr><td>03302</td><td>Alto del Carmen</td></tr><tr><td>01107</td><td>Alto Hospicio</td></tr><tr><td>10202</td><td>Ancud</td></tr><tr><td>04103</td><td>Andacollo</td></tr><tr><td>09201</td><td>Angol</td></tr><tr><td>12202</td><td>Antartica</td></tr><tr><td>02101</td><td>Antofagasta</td></tr><tr><td>08302</td><td>Antuco</td></tr><tr><td>08202</td><td>Arauco</td></tr><tr><td>15101</td><td>Arica</td></tr><tr><td>11201</td><td>Aysén</td></tr><tr><td>13402</td><td>Buin</td></tr><tr><td>16102</td><td>Bulnes</td></tr><tr><td>05402</td><td>Cabildo</td></tr><tr><td>12201</td><td>Cabo de Hornos</td></tr><tr><td>08303</td><td>Cabrero</td></tr><tr><td>02201</td><td>Calama</td></tr><tr><td>10102</td><td>Calbuco</td></tr><tr><td>03102</td><td>Caldera</td></tr><tr><td>05502</td><td>Calera</td></tr><tr><td>13403</td><td>Calera de Tango</td></tr><tr><td>05302</td><td>Calle Larga</td></tr><tr><td>15102</td><td>Camarones</td></tr><tr><td>01402</td><td>Camiña</td></tr><tr><td>04202</td><td>Canela</td></tr><tr><td>08203</td><td>Cañete</td></tr><tr><td>09102</td><td>Carahue</td></tr><tr><td>05603</td><td>Cartagena</td></tr><tr><td>05102</td><td>Casablanca</td></tr><tr><td>10201</td><td>Castro</td></tr><tr><td>05702</td><td>Catemu</td></tr><tr><td>07201</td><td>Cauquenes</td></tr><tr><td>13102</td><td>Cerrillos</td></tr><tr><td>13103</td><td>Cerro Navia</td></tr><tr><td>10401</td><td>Chaitén</td></tr><tr><td>03201</td><td>Chañaral</td></tr><tr><td>07202</td><td>Chanco</td></tr><tr><td>06302</td><td>Chépica</td></tr><tr><td>08103</td><td>Chiguayante</td></tr><tr><td>11401</td><td>Chile Chico</td></tr><tr><td>16101</td><td>Chillán</td></tr><tr><td>16103</td><td>Chillán Viejo</td></tr><tr><td>06303</td><td>Chimbarongo</td></tr><tr><td>09121</td><td>Cholchol</td></tr><tr><td>10203</td><td>Chonchi</td></tr><tr><td>11202</td><td>Cisnes</td></tr><tr><td>16202</td><td>Cobquecura</td></tr><tr><td>10103</td><td>Cochamó</td></tr><tr><td>11301</td><td>Cochrane</td></tr><tr><td>06102</td><td>Codegua</td></tr><tr><td>16203</td><td>Coelemu</td></tr><tr><td>11101</td><td>Coihaique</td></tr><tr><td>16302</td><td>Coihueco</td></tr><tr><td>06103</td><td>Coinco</td></tr><tr><td>07402</td><td>Colbún</td></tr><tr><td>01403</td><td>Colchane</td></tr><tr><td>13301</td><td>Colina</td></tr><tr><td>09202</td><td>Collipulli</td></tr><tr><td>06104</td><td>Coltauco</td></tr><tr><td>04302</td><td>Combarbalá</td></tr><tr><td>08101</td><td>Concepción</td></tr><tr><td>13104</td><td>Conchalí</td></tr><tr><td>05103</td><td>Concón</td></tr><tr><td>07102</td><td>Constitución</td></tr><tr><td>08204</td><td>Contulmo</td></tr><tr><td>03101</td><td>Copiapó</td></tr><tr><td>04102</td><td>Coquimbo</td></tr><tr><td>08102</td><td>Coronel</td></tr><tr><td>14102</td><td>Corral</td></tr><tr><td>09103</td><td>Cunco</td></tr><tr><td>09203</td><td>Curacautín</td></tr><tr><td>13503</td><td>Curacaví</td></tr><tr><td>10204</td><td>Curaco de Vélez</td></tr><tr><td>08205</td><td>Curanilahue</td></tr><tr><td>09104</td><td>Curarrehue</td></tr><tr><td>07103</td><td>Curepto</td></tr><tr><td>07301</td><td>Curicó</td></tr><tr><td>10205</td><td>Dalcahue</td></tr><tr><td>03202</td><td>Diego de Almagro</td></tr><tr><td>06105</td><td>Doñihue</td></tr><tr><td>13105</td><td>El Bosque</td></tr><tr><td>16104</td><td>El Carmen</td></tr><tr><td>13602</td><td>El Monte</td></tr><tr><td>05604</td><td>El Quisco</td></tr><tr><td>05605</td><td>El Tabo</td></tr><tr><td>07104</td><td>Empedrado</td></tr><tr><td>09204</td><td>Ercilla</td></tr><tr><td>13106</td><td>Estacin Central</td></tr><tr><td>08104</td><td>Florida</td></tr><tr><td>09105</td><td>Freire</td></tr><tr><td>03303</td><td>Freirina</td></tr><tr><td>10104</td><td>Fresia</td></tr><tr><td>10105</td><td>Frutillar</td></tr><tr><td>10402</td><td>Futaleufú</td></tr><tr><td>14202</td><td>Futrono</td></tr><tr><td>09106</td><td>Galvarino</td></tr><tr><td>15202</td><td>General Lagos</td></tr><tr><td>09107</td><td>Gorbea</td></tr><tr><td>06106</td><td>Graneros</td></tr><tr><td>11203</td><td>Guaitecas</td></tr><tr><td>05503</td><td>Hijuelas</td></tr><tr><td>10403</td><td>Hualaihué</td></tr><tr><td>07302</td><td>Hualañé</td></tr><tr><td>08112</td><td>Hualpén</td></tr><tr><td>08105</td><td>Hualqui</td></tr><tr><td>01404</td><td>Huara</td></tr><tr><td>03304</td><td>Huasco</td></tr><tr><td>13107</td><td>Huechuraba</td></tr><tr><td>04201</td><td>Illapel</td></tr><tr><td>13108</td><td>Independencia</td></tr><tr><td>01101</td><td>Iquique</td></tr><tr><td>13603</td><td>Isla de Maipo</td></tr><tr><td>05201</td><td>Isla de Pascua</td></tr><tr><td>05104</td><td>Juan Fernández</td></tr><tr><td>13109</td><td>La Cisterna</td></tr><tr><td>05504</td><td>La Cruz</td></tr><tr><td>06202</td><td>La Estrella</td></tr><tr><td>13110</td><td>La Florida</td></tr><tr><td>13111</td><td>La Granja</td></tr><tr><td>04104</td><td>La Higuera</td></tr><tr><td>05401</td><td>La Ligua</td></tr><tr><td>13112</td><td>La Pintana</td></tr><tr><td>13113</td><td>La Reina</td></tr><tr><td>04101</td><td>La Serena</td></tr><tr><td>14201</td><td>La Unión</td></tr><tr><td>14203</td><td>Lago Ranco</td></tr><tr><td>11102</td><td>Lago Verde</td></tr><tr><td>12102</td><td>Laguna Blanca</td></tr><tr><td>08304</td><td>Laja</td></tr><tr><td>13302</td><td>Lampa</td></tr><tr><td>14103</td><td>Lanco</td></tr><tr><td>06107</td><td>Las Cabras</td></tr><tr><td>13114</td><td>Las Condes</td></tr><tr><td>09108</td><td>Lautaro</td></tr><tr><td>08201</td><td>Lebu</td></tr><tr><td>07303</td><td>Licantén</td></tr><tr><td>05802</td><td>Limache</td></tr><tr><td>07401</td><td>Linares</td></tr><tr><td>06203</td><td>Litueche</td></tr><tr><td>05703</td><td>Llaillay</td></tr><tr><td>10107</td><td>Llanquihue</td></tr><tr><td>13115</td><td>Lo Barnechea</td></tr><tr><td>13116</td><td>Lo Espejo</td></tr><tr><td>13117</td><td>Lo Prado</td></tr><tr><td>06304</td><td>Lolol</td></tr><tr><td>09109</td><td>Loncoche</td></tr><tr><td>07403</td><td>Longaví</td></tr><tr><td>09205</td><td>Lonquimay</td></tr><tr><td>08206</td><td>Los Álamos</td></tr><tr><td>05301</td><td>Los Andes</td></tr><tr><td>08301</td><td>Los Ángeles</td></tr><tr><td>14104</td><td>Los Lagos</td></tr><tr><td>10106</td><td>Los Muermos</td></tr><tr><td>09206</td><td>Los Sauces</td></tr><tr><td>04203</td><td>Los Vilos</td></tr><tr><td>08106</td><td>Lota</td></tr><tr><td>09207</td><td>Lumaco</td></tr><tr><td>06108</td><td>Machalí</td></tr><tr><td>13118</td><td>Macul</td></tr><tr><td>14105</td><td>Máfil</td></tr><tr><td>13119</td><td>Maipú</td></tr><tr><td>06109</td><td>Malloa</td></tr><tr><td>06204</td><td>Marchihue</td></tr><tr><td>02302</td><td>María Elena</td></tr><tr><td>13504</td><td>María Pinto</td></tr><tr><td>14106</td><td>Mariquina</td></tr><tr><td>07105</td><td>Maule</td></tr><tr><td>10108</td><td>Maullín</td></tr><tr><td>02102</td><td>Mejillones</td></tr><tr><td>09110</td><td>Melipeuco</td></tr><tr><td>13501</td><td>Melipilla</td></tr><tr><td>07304</td><td>Molina</td></tr><tr><td>04303</td><td>Monte Patria</td></tr><tr><td>06110</td><td>Mostazal</td></tr><tr><td>08305</td><td>Mulchén</td></tr><tr><td>08306</td><td>Nacimiento</td></tr><tr><td>06305</td><td>Nancagua</td></tr><tr><td>12401</td><td>Natales</td></tr><tr><td>06205</td><td>Navidad</td></tr><tr><td>08307</td><td>Negrete</td></tr><tr><td>16204</td><td>Ninhue</td></tr><tr><td>16303</td><td>Ñiquén</td></tr><tr><td>05506</td><td>Nogales</td></tr><tr><td>09111</td><td>Nueva Imperial</td></tr><tr><td>13120</td><td>ÑuÑoa</td></tr><tr><td>06111</td><td>Olivar</td></tr><tr><td>02202</td><td>Ollagüe</td></tr><tr><td>05803</td><td>Olmué</td></tr><tr><td>10301</td><td>Osorno</td></tr><tr><td>04301</td><td>Ovalle</td></tr><tr><td>11302</td><td>O'Higgins</td></tr><tr><td>13604</td><td>Padre Hurtado</td></tr><tr><td>09112</td><td>Padre las Casas</td></tr><tr><td>04105</td><td>Paiguano</td></tr><tr><td>14107</td><td>Paillaco</td></tr><tr><td>13404</td><td>Paine</td></tr><tr><td>10404</td><td>Palena</td></tr><tr><td>06306</td><td>Palmilla</td></tr><tr><td>14108</td><td>Panguipulli</td></tr><tr><td>05704</td><td>Panquehue</td></tr><tr><td>05403</td><td>Papudo</td></tr><tr><td>06206</td><td>Paredones</td></tr><tr><td>07404</td><td>Parral</td></tr><tr><td>13121</td><td>Pedro Aguirre Cerda</td></tr><tr><td>07106</td><td>Pelarco</td></tr><tr><td>07203</td><td>Pelluhue</td></tr><tr><td>16105</td><td>Pemuco</td></tr><tr><td>13605</td><td>Peñaflor</td></tr><tr><td>13122</td><td>Peñalolén</td></tr><tr><td>07107</td><td>Pencahue</td></tr><tr><td>08107</td><td>Penco</td></tr><tr><td>06307</td><td>Peralillo</td></tr><tr><td>09113</td><td>Perquenco</td></tr><tr><td>05404</td><td>Petorca</td></tr><tr><td>06112</td><td>Peumo</td></tr><tr><td>01405</td><td>Pica</td></tr><tr><td>06113</td><td>Pichidegua</td></tr><tr><td>06201</td><td>Pichilemu</td></tr><tr><td>16106</td><td>Pinto</td></tr><tr><td>13202</td><td>Pirque</td></tr><tr><td>09114</td><td>Pitrufquén</td></tr><tr><td>06308</td><td>Placilla</td></tr><tr><td>16205</td><td>Portezuelo</td></tr><tr><td>12301</td><td>Porvenir</td></tr><tr><td>01401</td><td>Pozo Almonte</td></tr><tr><td>12302</td><td>Primavera</td></tr><tr><td>13123</td><td>Providencia</td></tr><tr><td>05105</td><td>Puchuncaví</td></tr><tr><td>09115</td><td>Pucón</td></tr><tr><td>13124</td><td>Pudahuel</td></tr><tr><td>13201</td><td>Puente Alto</td></tr><tr><td>10101</td><td>Puerto Montt</td></tr><tr><td>10302</td><td>Puerto Octay</td></tr><tr><td>10109</td><td>Puerto Varas</td></tr><tr><td>06309</td><td>Pumanque</td></tr><tr><td>04304</td><td>Punitaqui</td></tr><tr><td>12101</td><td>Punta Arenas</td></tr><tr><td>10206</td><td>Puqueldón</td></tr><tr><td>09208</td><td>Purén</td></tr><tr><td>10303</td><td>Purranque</td></tr><tr><td>05705</td><td>Putaendo</td></tr><tr><td>15201</td><td>Putre</td></tr><tr><td>10304</td><td>Puyehue</td></tr><tr><td>10207</td><td>Queilén</td></tr><tr><td>10208</td><td>Quellón</td></tr><tr><td>10209</td><td>Quemchi</td></tr><tr><td>08308</td><td>Quilaco</td></tr><tr><td>13125</td><td>Quilicura</td></tr><tr><td>08309</td><td>Quilleco</td></tr><tr><td>16107</td><td>Quillón</td></tr><tr><td>05501</td><td>Quillota</td></tr><tr><td>05801</td><td>Quilpué</td></tr><tr><td>10210</td><td>Quinchao</td></tr><tr><td>06114</td><td>Quinta de Tilcoco</td></tr><tr><td>13126</td><td>Quinta Normal</td></tr><tr><td>05107</td><td>Quintero</td></tr><tr><td>16201</td><td>Quirihue</td></tr><tr><td>06101</td><td>Rancagua</td></tr><tr><td>16206</td><td>Ránquil</td></tr><tr><td>07305</td><td>Rauco</td></tr><tr><td>13127</td><td>Recoleta</td></tr><tr><td>09209</td><td>Renaico</td></tr><tr><td>13128</td><td>Renca</td></tr><tr><td>06115</td><td>Rengo</td></tr><tr><td>06116</td><td>Requínoa</td></tr><tr><td>07405</td><td>Retiro</td></tr><tr><td>05303</td><td>Rinconada</td></tr><tr><td>14204</td><td>Río Bueno</td></tr><tr><td>07108</td><td>Río Claro</td></tr><tr><td>04305</td><td>Río Hurtado</td></tr><tr><td>11402</td><td>Río Ibáñez</td></tr><tr><td>10305</td><td>Río Negro</td></tr><tr><td>12103</td><td>Río Verde</td></tr><tr><td>07306</td><td>Romeral</td></tr><tr><td>09116</td><td>Saavedra</td></tr><tr><td>07307</td><td>Sagrada Familia</td></tr><tr><td>04204</td><td>Salamanca</td></tr><tr><td>05601</td><td>San Antonio</td></tr><tr><td>13401</td><td>San Bernardo</td></tr><tr><td>16301</td><td>San Carlos</td></tr><tr><td>07109</td><td>San Clemente</td></tr><tr><td>05304</td><td>San Esteban</td></tr><tr><td>16304</td><td>San Fabián</td></tr><tr><td>05701</td><td>San Felipe</td></tr><tr><td>06301</td><td>San Fernando</td></tr><tr><td>12104</td><td>San Gregorio</td></tr><tr><td>16108</td><td>San Ignacio</td></tr><tr><td>07406</td><td>San Javier</td></tr><tr><td>13129</td><td>San Joaquín</td></tr><tr><td>13203</td><td>San José de Maipo</td></tr><tr><td>10306</td><td>San Juan de la Costa</td></tr><tr><td>13130</td><td>San Miguel</td></tr><tr><td>16305</td><td>San Nicolás</td></tr><tr><td>10307</td><td>San Pablo</td></tr><tr><td>13505</td><td>San Pedro</td></tr><tr><td>02203</td><td>San Pedro de Atacama</td></tr><tr><td>08108</td><td>San Pedro de la Paz</td></tr><tr><td>07110</td><td>San Rafael</td></tr><tr><td>13131</td><td>San Ramón</td></tr><tr><td>08310</td><td>San Rosendo</td></tr><tr><td>06117</td><td>San Vicente</td></tr><tr><td>08311</td><td>Santa Bárbara</td></tr><tr><td>06310</td><td>Santa Cruz</td></tr><tr><td>08109</td><td>Santa Juana</td></tr><tr><td>05706</td><td>Santa María</td></tr><tr><td>13101</td><td>Santiago Centro</td></tr><tr><td>05606</td><td>Santo Domingo</td></tr><tr><td>02103</td><td>Sierra Gorda</td></tr><tr><td>13601</td><td>Talagante</td></tr><tr><td>07101</td><td>Talca</td></tr><tr><td>08110</td><td>Talcahuano</td></tr><tr><td>02104</td><td>Taltal</td></tr><tr><td>09101</td><td>Temuco</td></tr><tr><td>07308</td><td>Teno</td></tr><tr><td>09117</td><td>Teodoro Schmidt</td></tr><tr><td>03103</td><td>Tierra Amarilla</td></tr><tr><td>13303</td><td>Tiltil</td></tr><tr><td>12303</td><td>Timaukel</td></tr><tr><td>08207</td><td>Tirúa</td></tr><tr><td>02301</td><td>Tocopilla</td></tr><tr><td>09118</td><td>Toltén</td></tr><tr><td>08111</td><td>Tomé</td></tr><tr><td>12402</td><td>Torres del Paine</td></tr><tr><td>11303</td><td>Tortel</td></tr><tr><td>09210</td><td>Traiguén</td></tr><tr><td>16207</td><td>Treguaco</td></tr><tr><td>08312</td><td>Tucapel</td></tr><tr><td>14101</td><td>Valdivia</td></tr><tr><td>03301</td><td>Vallenar</td></tr><tr><td>05101</td><td>Valparaíso</td></tr><tr><td>07309</td><td>Vichuqué</td></tr><tr><td>09211</td><td>Victoria</td></tr><tr><td>04106</td><td>Vicuña</td></tr><tr><td>09119</td><td>Vilcún</td></tr><tr><td>07407</td><td>Villa Alegre</td></tr><tr><td>05804</td><td>Villa Alemana</td></tr><tr><td>09120</td><td>Villarrica</td></tr><tr><td>05109</td><td>Viña del Mar</td></tr><tr><td>13132</td><td>Vitacura</td></tr><tr><td>07408</td><td>Yerbas Buenas</td></tr><tr><td>08313</td><td>Yumbel</td></tr><tr><td>16109</td><td>Yungay</td></tr><tr><td>05405</td><td>Zapallar</td></tr></table></li></ul></div>
+
+  <p>&nbsp;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <p><span style="color: maroon; font-weight: bold" title="Publication Tooling Error: [Unable to expand imported value set: Error from server: Unable to provide support for code system https://apis.digital.gob.cl/dpa/comunas/, Error from server: Unable to provide support for code system https://apis.digital.gob.cl/dpa/comunas/]">No Expansion for this valueset (Unknown Code System  <!-- [Unable to expand imported value set: Error from server: Unable to provide support for code system https://apis.digital.gob.cl/dpa/comunas/, Error from server: Unable to provide support for code system https://apis.digital.gob.cl/dpa/comunas/] -->)</span></p>
+
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>Source</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+    <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+</div>
+  <!-- /inner-wrapper -->
+</div>
+  <!-- /row -->
+</div>
+  <!-- /container -->
+</div>
+  <!-- /segment-content -->
+
+<script src="assets/js/jquery.js" type="text/javascript">
+</script>
+  <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="assets/js/jquery-ui.min.js" type="text/javascript">
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        if (window.location.hash != "") {
+            $('a[href="' + window.location.hash + '"]').click()
+        }
+    });
+</script>
+<a name="bottom"> </a>
+<div igtool="footer" id="segment-footer" class="segment">
+      <!-- segment-footer -->
+    <div class="container">
+          <!-- container -->
+        
+        <div class="inner-wrapper">
+            <p><a name="l2340">​</a>
+                IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="ppizarro.delgado@minsal.cl"></a>. Package hl7.fhir.cl.CoreCH#0.85 (Ballot Pendiente)
+                basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generada el <span title="Wed, Oct 27, 2021 20:46-0300">27-10-2021</span>
+                <br/>
+                <span style="color: var(--footer-highlight-text-color)"></span>  Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de Contenidos</a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">Reportes QA</a> 
+                
+            </p>
+        </div>
+          <!-- /inner-wrapper -->
+    </div>
+      <!-- /container -->
+</div>
+  <!-- /segment-footer -->
+
+<div id="segment-post-footer" class="segment hidden">
+      <!-- segment-post-footer -->
+    <div class="container">
+          <!-- container -->
+    </div>
+      <!-- /container -->
+</div>
+  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="assets/js/bootstrap.min.js" type="text/javascript">
+</script>
+<script src="assets/js/respond.min.js" type="text/javascript">
+</script>
+<script src="assets/js/anchor.min.js" type="text/javascript">
+</script>
+<script>
+    anchors.options.visible = 'hover'
+    anchors.add()
+</script>
+
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+  <!-- Analytics Below
+  ================================================== -->
+</body>
+
+</html>

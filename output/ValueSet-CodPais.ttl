@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://core.hl7chile.cl/ValueSet/CodPais> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "CodPais"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Import all the codes that are contained in <a href=\"null\">http://hl7.org/fhir/ValueSet/iso3166-1-N</a></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://core.hl7chile.cl/ValueSet/CodPais"];
+  fhir:ValueSet.version [ fhir:value "0.85 (Ballot Pendiente)"];
+  fhir:ValueSet.name [ fhir:value "CodPaises"];
+  fhir:ValueSet.title [ fhir:value "Códigos de Países"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2021-10-27T20:46:13-03:00"^^xsd:dateTime];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Pablo Pizzaro" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "ppizarro.delgado@minsal.cl" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Codigos definidos para la identificación de países segun norma ISO3166-N"];
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "CL" ];
+       fhir:Coding.display [ fhir:value "Chile" ]
+     ]
+  ];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.valueSet [
+         fhir:value "http://hl7.org/fhir/ValueSet/iso3166-1-N";
+         fhir:index 0;
+         fhir:link <http://hl7.org/fhir/ValueSet/iso3166-1-N>
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://core.hl7chile.cl/ValueSet/CodPais.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

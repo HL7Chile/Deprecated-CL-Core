@@ -1,0 +1,92 @@
+{
+  "resourceType": "Patient",
+  "id": "PacienteCl-3",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2021-07-13T00:22:41.166Z",
+    "profile": [
+      "http://core.hl7chile.cl/StructureDefinition/CorePacienteCl"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Codigo de Identificación de países</b>: <span title=\"Codes: \">Chilena</span></p><p><b>identifier</b>: DNI: 15602754-5 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: PABLO RODRIGO PIZARRO (OFFICIAL)</p><p><b>telecom</b>: <a href=\"mailto:ppizarro.delgado@minsal.cl\">ppizarro.delgado@minsal.cl</a></p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1983-08-04</p><p><b>deceased</b>: false</p><p><b>address</b>: 13120 13 152 (HOME)</p></div>"
+  },
+  "extension": [
+    {
+      "url": "http://core.hl7chile.cl/StructureDefinition/CodigoPaises",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "152",
+            "display": "Chilena"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "extension": [
+          {
+            "url": "http://core.hl7chile.cl/StructureDefinition/CodigoPaises",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "152",
+                  "display": "Chile"
+                }
+              ]
+            }
+          }
+        ],
+        "coding": [
+          {
+            "code": "NNCH152",
+            "display": "DNI"
+          }
+        ]
+      },
+      "value": "15602754-5"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "family": "PIZARRO",
+      "_family": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family",
+            "valueString": "DELGADO"
+          }
+        ]
+      },
+      "given": [
+        "PABLO RODRIGO"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "email",
+      "value": "ppizarro.delgado@minsal.cl",
+      "use": "work"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1983-08-04",
+  "deceasedBoolean": false,
+  "address": [
+    {
+      "use": "home",
+      "city": "13120",
+      "district": "131",
+      "state": "13",
+      "country": "152"
+    }
+  ]
+}

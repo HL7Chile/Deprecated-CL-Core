@@ -1,0 +1,107 @@
+[
+  {
+    "id": "hl7.fhir.cl.CoreCH",
+    "type": "ImplementationGuide",
+    "url": "http://core.hl7chile.cl/ImplementationGuide/hl7.fhir.cl.CoreCH",
+    "version": "0.85 (Ballot Pendiente)",
+    "name": "CoreCL"
+  },
+  {
+    "id": "CodigoPaises",
+    "type": "StructureDefinition",
+    "url": "http://core.hl7chile.cl/StructureDefinition/CodigoPaises",
+    "version": "0.85 (Ballot Pendiente)",
+    "name": "PaisOrigen-Nacionalidad-Cl"
+  },
+  {
+    "id": "CoreEspecialidadCl",
+    "type": "StructureDefinition",
+    "url": "http://core.hl7chile.cl/StructureDefinition/CoreEspecialidadCl",
+    "version": "0.85 (Ballot Pendiente)",
+    "name": "EspecialidadCL"
+  },
+  {
+    "id": "CoreLocalizacionCl",
+    "type": "StructureDefinition",
+    "url": "http://core.hl7chile.cl/StructureDefinition/CoreLocalizacionCl",
+    "version": "0.85 (Ballot Pendiente)",
+    "name": "LocalizacionCL"
+  },
+  {
+    "id": "CoreMedicamentoCl",
+    "type": "StructureDefinition",
+    "url": "http://core.hl7chile.cl/StructureDefinition/CoreMedicamentoCl",
+    "version": "0.85 (Ballot Pendiente)",
+    "name": "MedicamentoCL"
+  },
+  {
+    "id": "CoreOrganizacionCl",
+    "type": "StructureDefinition",
+    "url": "http://core.hl7chile.cl/StructureDefinition/CoreOrganizacionCl",
+    "version": "0.85 (Ballot Pendiente)",
+    "name": "OrganizacionCL"
+  },
+  {
+    "id": "CorePacienteCl",
+    "type": "StructureDefinition",
+    "url": "http://core.hl7chile.cl/StructureDefinition/CorePacienteCl",
+    "version": "0.85 (Ballot Pendiente)",
+    "name": "PacienteCl"
+  },
+  {
+    "id": "CorePrestadorCl",
+    "type": "StructureDefinition",
+    "url": "http://core.hl7chile.cl/StructureDefinition/CorePrestadorCl",
+    "version": "0.85 (Ballot Pendiente)",
+    "name": "PrestadorCL"
+  },
+  {
+    "id": "RecetaBundleCl",
+    "type": "StructureDefinition",
+    "url": "http://core.hl7chile.cl/StructureDefinition/RecetaBundleCl",
+    "version": "0.85 (Ballot Pendiente)",
+    "name": "BundleRecetaCL"
+  },
+  {
+    "id": "COD-Cert-RNPI",
+    "type": "ValueSet",
+    "url": "http://core.hl7chile.cl/ValueSet/COD-Cert-RNPI",
+    "version": "0.85 (Ballot Pendiente)",
+    "name": "TituloID"
+  },
+  {
+    "id": "CodNacComunas",
+    "type": "ValueSet",
+    "url": "http://core.hl7chile.cl/ValueSet/CodNacComunas",
+    "version": "0.85 (Ballot Pendiente)",
+    "name": "CodComunas"
+  },
+  {
+    "id": "CodPais",
+    "type": "ValueSet",
+    "url": "http://core.hl7chile.cl/ValueSet/CodPais",
+    "version": "0.85 (Ballot Pendiente)",
+    "name": "CodPaises"
+  },
+  {
+    "id": "CodProv",
+    "type": "ValueSet",
+    "url": "http://core.hl7chile.cl/ValueSet/CodProv",
+    "version": "0.85 (Ballot Pendiente)",
+    "name": "CodProvincia"
+  },
+  {
+    "id": "CodReg",
+    "type": "ValueSet",
+    "url": "http://core.hl7chile.cl/ValueSet/CodReg",
+    "version": "0.85 (Ballot Pendiente)",
+    "name": "CodRegion"
+  },
+  {
+    "id": "Esp-Tabla-DEIS",
+    "type": "ValueSet",
+    "url": "http://core.hl7chile.cl/ValueSet/Esp-Tabla-DEIS",
+    "version": "0.85 (Ballot Pendiente)",
+    "name": "TablaEspecialidadesMedicasCl"
+  }
+]

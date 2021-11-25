@@ -1,0 +1,34 @@
+{
+  "resourceType": "Medication",
+  "id": "MedicamentoCl-2",
+  "meta": {
+    "profile": [
+      "http://core.hl7chile.cl/StructureDefinition/CoreMedicamentoCl"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1703591000167111 (OFFICIAL), id: 696681000167108 (OFFICIAL)</p><p><b>code</b>: <span title=\"Codes: {http://minsal.cl/semantikos/description-id 1703591000167111}\">Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido</span></p></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://minsal.cl/semantikos/description-id",
+      "value": "1703591000167111"
+    },
+    {
+      "use": "official",
+      "system": "http://minsal.cl/semantikos/concept-id",
+      "value": "696681000167108"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://minsal.cl/semantikos/description-id",
+        "code": "1703591000167111",
+        "display": "Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido"
+      }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://core.hl7chile.cl/PractitionerRole/EspecialidadCL> a fhir:PractitionerRole;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "EspecialidadCL"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://core.hl7chile.cl/StructureDefinition/CoreEspecialidadCl";
+       fhir:index 0;
+       fhir:link <http://core.hl7chile.cl/StructureDefinition/CoreEspecialidadCl>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>practitioner</b>: <a href=\"http://minsal/RNPI/Practitioner/3420\">Johanna Rosa Silva Reyes</a></p><p><b>specialty</b>: <span title=\"Codes: \">Médico Cirujano</span>, <span title=\"Codes: \">Médico Cardiólogo</span>, <span title=\"Codes: \">Médico internista</span></p></div>"
+  ];
+  fhir:PractitionerRole.active [ fhir:value "true"^^xsd:boolean];
+  fhir:PractitionerRole.practitioner [
+     fhir:link <http://minsal/RNPI/Practitioner/3420>;
+     fhir:Reference.reference [ fhir:value "http://minsal/RNPI/Practitioner/3420" ];
+     fhir:Reference.display [ fhir:value "Johanna Rosa Silva Reyes" ]
+  ];
+  fhir:PractitionerRole.specialty [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "110" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Médico Cirujano" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "25" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Médico Cardiólogo" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "27" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Médico internista" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://core.hl7chile.cl/PractitionerRole/EspecialidadCL.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,82 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://core.hl7chile.cl/Location/LocalizacionEjemploCL1> a fhir:Location;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "LocalizacionEjemploCL1"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://core.hl7chile.cl/StructureDefinition/CoreLocalizacionCl";
+       fhir:index 0;
+       fhir:link <http://core.hl7chile.cl/StructureDefinition/CoreLocalizacionCl>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 23144561</p><p><b>status</b>: active</p><p><b>name</b>: Gran Farmacia Gran</p><p><b>alias</b>: La gran</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode PHARM}\">Pharmacy</span></p><p><b>telecom</b>: ph: (+56) 234221678(WORK)</p><p><b>address</b>: Calle 10 Norte, 1240, Viña del Mar 05109 051 05 152 (WORK)</p><h3>Positions</h3><table class=\"grid\"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td>42.2565</td><td>-71.550261</td></tr></table><p><b>managingOrganization</b>: <a href=\"https://fhir.cens.cl/baseR4/Organization/ORG-000/\">https://fhir.cens.cl/baseR4/Organization/ORG-000/</a></p><h3>HoursOfOperations</h3><table class=\"grid\"><tr><td>-</td><td><b>DaysOfWeek</b></td><td><b>AllDay</b></td></tr><tr><td>*</td><td>fri</td><td>true</td></tr></table></div>"
+  ];
+  fhir:Location.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://miderfarm.cl/validador_id" ];
+     fhir:Identifier.value [ fhir:value "23144561" ]
+  ];
+  fhir:Location.status [ fhir:value "active"];
+  fhir:Location.name [ fhir:value "Gran Farmacia Gran"];
+  fhir:Location.alias [
+     fhir:value "La gran";
+     fhir:index 0
+  ];
+  fhir:Location.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-RoleCode" ];
+       fhir:Coding.code [ fhir:value "PHARM" ];
+       fhir:Coding.display [ fhir:value "Pharmacy" ]
+     ]
+  ];
+  fhir:Location.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "(+56) 234221678" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ];
+  fhir:Location.address [
+     fhir:Address.use [ fhir:value "work" ];
+     fhir:Address.line [
+       fhir:value "Calle 10 Norte, 1240, Viña del Mar";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "05109" ];
+     fhir:Address.state [ fhir:value "051" ];
+     fhir:Address.postalCode [ fhir:value "05" ];
+     fhir:Address.country [ fhir:value "152" ]
+  ];
+  fhir:Location.position [
+     fhir:Location.position.longitude [ fhir:value "42.2565"^^xsd:decimal ];
+     fhir:Location.position.latitude [ fhir:value "-71.550261"^^xsd:decimal ]
+  ];
+  fhir:Location.managingOrganization [
+     fhir:link <https://fhir.cens.cl/baseR4/Organization/ORG-000/>;
+     fhir:Reference.reference [ fhir:value "https://fhir.cens.cl/baseR4/Organization/ORG-000/" ]
+  ];
+  fhir:Location.hoursOfOperation [
+     fhir:index 0;
+     fhir:Location.hoursOfOperation.daysOfWeek [
+       fhir:value "fri";
+       fhir:index 0
+     ];
+     fhir:Location.hoursOfOperation.allDay [ fhir:value "true"^^xsd:boolean ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://core.hl7chile.cl/Location/LocalizacionEjemploCL1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

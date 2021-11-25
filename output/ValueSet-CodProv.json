@@ -1,0 +1,270 @@
+{
+  "resourceType": "ValueSet",
+  "id": "CodProv",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://apis.digital.gob.cl/dpa/provincias/</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>122</td><td>Antártica Chilena</td></tr><tr><td>021</td><td>Antofagasta</td></tr><tr><td>082</td><td>Arauco</td></tr><tr><td>151</td><td>Arica</td></tr><tr><td>112</td><td>Aysén</td></tr><tr><td>083</td><td>Biobío</td></tr><tr><td>061</td><td>Cachapoal</td></tr><tr><td>113</td><td>Capitán Prat</td></tr><tr><td>062</td><td>Cardenal Caro</td></tr><tr><td>072</td><td>Cauquenes</td></tr><tr><td>091</td><td>Cautín</td></tr><tr><td>133</td><td>Chacabuco</td></tr><tr><td>032</td><td>Chañaral</td></tr><tr><td>102</td><td>Chiloé</td></tr><tr><td>042</td><td>Choapa</td></tr><tr><td>111</td><td>Coihaique</td></tr><tr><td>063</td><td>Colchagua</td></tr><tr><td>081</td><td>Concepción</td></tr><tr><td>031</td><td>Copiapó</td></tr><tr><td>132</td><td>Cordillera</td></tr><tr><td>073</td><td>Curicó</td></tr><tr><td>161</td><td>Diguillín</td></tr><tr><td>022</td><td>El Loa</td></tr><tr><td>041</td><td>Elqui</td></tr><tr><td>114</td><td>General Carrera</td></tr><tr><td>033</td><td>Huasco</td></tr><tr><td>011</td><td>Iquique</td></tr><tr><td>052</td><td>Isla de Pascua</td></tr><tr><td>162</td><td>Itata</td></tr><tr><td>043</td><td>Limarí</td></tr><tr><td>074</td><td>Linares</td></tr><tr><td>101</td><td>Llanquihue</td></tr><tr><td>053</td><td>Los Andes</td></tr><tr><td>121</td><td>Magallanes</td></tr><tr><td>134</td><td>Maipo</td></tr><tr><td>092</td><td>Malleco</td></tr><tr><td>058</td><td>Marga Marga</td></tr><tr><td>135</td><td>Melipilla</td></tr><tr><td>103</td><td>Osorno</td></tr><tr><td>104</td><td>Palena</td></tr><tr><td>152</td><td>Parinacota</td></tr><tr><td>054</td><td>Petorca</td></tr><tr><td>163</td><td>Punilla</td></tr><tr><td>055</td><td>Quillota</td></tr><tr><td>142</td><td>Ranco</td></tr><tr><td>056</td><td>San Antonio</td></tr><tr><td>057</td><td>San Felipe de Aconcagua</td></tr><tr><td>131</td><td>Santiago</td></tr><tr><td>136</td><td>Talagante</td></tr><tr><td>071</td><td>Talca</td></tr><tr><td>014</td><td>Tamarugal</td></tr><tr><td>123</td><td>Tierra del Fuego</td></tr><tr><td>023</td><td>Tocopilla</td></tr><tr><td>124</td><td>última Esperanza</td></tr><tr><td>141</td><td>Valdivia</td></tr><tr><td>051</td><td>Valparaíso</td></tr></table></li></ul></div>"
+  },
+  "url": "http://core.hl7chile.cl/ValueSet/CodProv",
+  "version": "0.85 (Ballot Pendiente)",
+  "name": "CodProvincia",
+  "title": "Códigos de Provincias en Chile",
+  "status": "active",
+  "date": "2021-10-27T20:46:13-03:00",
+  "contact": [
+    {
+      "name": "Pablo Pizzaro",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "ppizarro.delgado@minsal.cl"
+        }
+      ]
+    }
+  ],
+  "description": "Codigos definidos para identificar una provincia en Chile. Estos aún deben ser llevados a un ValueSet",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "CL",
+          "display": "Chile"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://apis.digital.gob.cl/dpa/provincias/",
+        "concept": [
+          {
+            "code": "122",
+            "display": "Antártica Chilena"
+          },
+          {
+            "code": "021",
+            "display": "Antofagasta"
+          },
+          {
+            "code": "082",
+            "display": "Arauco"
+          },
+          {
+            "code": "151",
+            "display": "Arica"
+          },
+          {
+            "code": "112",
+            "display": "Aysén"
+          },
+          {
+            "code": "083",
+            "display": "Biobío"
+          },
+          {
+            "code": "061",
+            "display": "Cachapoal"
+          },
+          {
+            "code": "113",
+            "display": "Capitán Prat"
+          },
+          {
+            "code": "062",
+            "display": "Cardenal Caro"
+          },
+          {
+            "code": "072",
+            "display": "Cauquenes"
+          },
+          {
+            "code": "091",
+            "display": "Cautín"
+          },
+          {
+            "code": "133",
+            "display": "Chacabuco"
+          },
+          {
+            "code": "032",
+            "display": "Chañaral"
+          },
+          {
+            "code": "102",
+            "display": "Chiloé"
+          },
+          {
+            "code": "042",
+            "display": "Choapa"
+          },
+          {
+            "code": "111",
+            "display": "Coihaique"
+          },
+          {
+            "code": "063",
+            "display": "Colchagua"
+          },
+          {
+            "code": "081",
+            "display": "Concepción"
+          },
+          {
+            "code": "031",
+            "display": "Copiapó"
+          },
+          {
+            "code": "132",
+            "display": "Cordillera"
+          },
+          {
+            "code": "073",
+            "display": "Curicó"
+          },
+          {
+            "code": "161",
+            "display": "Diguillín"
+          },
+          {
+            "code": "022",
+            "display": "El Loa"
+          },
+          {
+            "code": "041",
+            "display": "Elqui"
+          },
+          {
+            "code": "114",
+            "display": "General Carrera"
+          },
+          {
+            "code": "033",
+            "display": "Huasco"
+          },
+          {
+            "code": "011",
+            "display": "Iquique"
+          },
+          {
+            "code": "052",
+            "display": "Isla de Pascua"
+          },
+          {
+            "code": "162",
+            "display": "Itata"
+          },
+          {
+            "code": "043",
+            "display": "Limarí"
+          },
+          {
+            "code": "074",
+            "display": "Linares"
+          },
+          {
+            "code": "101",
+            "display": "Llanquihue"
+          },
+          {
+            "code": "053",
+            "display": "Los Andes"
+          },
+          {
+            "code": "121",
+            "display": "Magallanes"
+          },
+          {
+            "code": "134",
+            "display": "Maipo"
+          },
+          {
+            "code": "092",
+            "display": "Malleco"
+          },
+          {
+            "code": "058",
+            "display": "Marga Marga"
+          },
+          {
+            "code": "135",
+            "display": "Melipilla"
+          },
+          {
+            "code": "103",
+            "display": "Osorno"
+          },
+          {
+            "code": "104",
+            "display": "Palena"
+          },
+          {
+            "code": "152",
+            "display": "Parinacota"
+          },
+          {
+            "code": "054",
+            "display": "Petorca"
+          },
+          {
+            "code": "163",
+            "display": "Punilla"
+          },
+          {
+            "code": "055",
+            "display": "Quillota"
+          },
+          {
+            "code": "142",
+            "display": "Ranco"
+          },
+          {
+            "code": "056",
+            "display": "San Antonio"
+          },
+          {
+            "code": "057",
+            "display": "San Felipe de Aconcagua"
+          },
+          {
+            "code": "131",
+            "display": "Santiago"
+          },
+          {
+            "code": "136",
+            "display": "Talagante"
+          },
+          {
+            "code": "071",
+            "display": "Talca"
+          },
+          {
+            "code": "014",
+            "display": "Tamarugal"
+          },
+          {
+            "code": "123",
+            "display": "Tierra del Fuego"
+          },
+          {
+            "code": "023",
+            "display": "Tocopilla"
+          },
+          {
+            "code": "124",
+            "display": "última Esperanza"
+          },
+          {
+            "code": "141",
+            "display": "Valdivia"
+          },
+          {
+            "code": "051",
+            "display": "Valparaíso"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "resourceType": "Medication",
+  "id": "MedicamentoCl",
+  "meta": {
+    "profile": [
+      "http://core.hl7chile.cl/StructureDefinition/CoreMedicamentoCl"
+    ]
+  },
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Medicamento: Tareg - D 160 / 25 comprimido recubierto (Novartis), codigo TFC: 1991971000167110 y código TFC de concepto: 840851000167103, definición SNOMED producto biológico/farmacéutico (producto), código SOMOMED: 373873005</div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://minsal.cl/semantikos/description-id",
+      "value": "1991971000167110"
+    },
+    {
+      "use": "official",
+      "system": "http://minsal.cl/semantikos/concept-id",
+      "value": " 840851000167103"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://minsal.cl/semantikos/description-id",
+        "code": "1991971000167110",
+        "display": "Tareg - D 160 / 25 comprimido recubierto (Novartis)"
+      }
+    ],
+    "text": "Tareg - D 160 / 25 comprimido recubierto (Novartis)"
+  }
+}

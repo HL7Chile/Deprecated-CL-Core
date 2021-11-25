@@ -1,0 +1,118 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://core.hl7chile.cl/ValueSet/CodReg> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "CodReg"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://apis.digital.gob.cl/dpa/regiones/</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>15</td><td>Arica y Parinacota</td></tr><tr><td>01</td><td>Tarapacá</td></tr><tr><td>02</td><td>Antofagasta</td></tr><tr><td>03</td><td>Atacama</td></tr><tr><td>04</td><td>Coquimbo</td></tr><tr><td>05</td><td>Valparaíso</td></tr><tr><td>13</td><td>Metropolitana de Santiago</td></tr><tr><td>06</td><td>Del Libertador Gral. Bernardo O'Higgins</td></tr><tr><td>07</td><td>Del Maule</td></tr><tr><td>08</td><td>Del Biobío</td></tr><tr><td>09</td><td>De la Araucanía</td></tr><tr><td>14</td><td>De los Ríos</td></tr><tr><td>10</td><td>De los Lagos</td></tr><tr><td>11</td><td>Aysén del Gral. Carlos Ibáñez del Campo</td></tr><tr><td>12</td><td>Magallanes y de la Antártica Chilena</td></tr><tr><td>16</td><td>Ñuble</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://core.hl7chile.cl/ValueSet/CodReg"];
+  fhir:ValueSet.version [ fhir:value "0.85 (Ballot Pendiente)"];
+  fhir:ValueSet.name [ fhir:value "CodRegion"];
+  fhir:ValueSet.title [ fhir:value "Códigos de Regiones en ChileEstos aún deben ser llevados a un ValueSet"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2021-10-27T20:46:13-03:00"^^xsd:dateTime];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Pablo Pizzaro" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "ppizarro.delgado@minsal.cl" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Codigos definidos para identificar una comuna en Chile"];
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "CL" ];
+       fhir:Coding.display [ fhir:value "Chile" ]
+     ]
+  ];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://apis.digital.gob.cl/dpa/regiones/" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Arica y Parinacota" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "01" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tarapacá" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "02" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Antofagasta" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "03" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Atacama" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "04" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Coquimbo" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Valparaíso" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Metropolitana de Santiago" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Del Libertador Gral. Bernardo O'Higgins" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Del Maule" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Del Biobío" ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "De la Araucanía" ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "De los Ríos" ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "De los Lagos" ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aysén del Gral. Carlos Ibáñez del Campo" ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Magallanes y de la Antártica Chilena" ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ñuble" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://core.hl7chile.cl/ValueSet/CodReg.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
