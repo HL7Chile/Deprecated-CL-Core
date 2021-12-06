@@ -18,7 +18,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * specialty 1..*
 * specialty ^short = "Definición de la especialidad médica según DEIS"
 * specialty ^definition = "Definición de la especialidad médica según DEIS, en el decreto correspondiete. la tabla sigue siendo extensible ante futuros elementos agregados a esta"
-* specialty from TablaEspecialidadesMedicasCl (extensible)
+* specialty.coding.system from VSEspecialidadesDeisCL (required)
 
 
 
@@ -31,13 +31,13 @@ InstanceOf : CoreEspecialidadCl
 * practitioner.reference = "http://minsal/RNPI/Practitioner/3420"
 * practitioner.display = "Johanna Rosa Silva Reyes"
 
-* specialty.coding.code = #110
-* specialty.text = "Médico Cirujano"
+* specialty.coding.code = #06
+* specialty.text = "Cirujano Cardiovascular"
 
 
-* specialty[1].coding.code = #25
+* specialty[1].coding.code = #03
 * specialty[1].text = "Médico Cardiólogo"
 
-* specialty[2].coding.code = #27
+* specialty[2].coding.code = #30
 * specialty[2].text = "Médico internista"
  

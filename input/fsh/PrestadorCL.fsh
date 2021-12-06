@@ -85,19 +85,20 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * address.use ^short = "Definición del tipo de domicilio home | work | temp | old (requerido)"
 * address.use ^definition = "Se especifica el tipo de dirección notificada. Esto debe ser segun los códigos definidos por HL7 FHIR"
 * address.line ^short = "Calle o avenida, numero y casa o depto"
+* address.line ^short = "Calle o avenida, numero y casa o depto"
 * address.line ^definition = "Aquí se escribe toda la dirección completa"
 * address.city ^short = "Campo para Comuna de residencia"
-* address.city ^definition = "Campo para Comuna de residencia. Se usa el valueSet de códigos de comunas definidos a nivel nacional. Este endPoint debe habilitarse "
-* address.city from COM (required)
+* address.city ^definition = "Campo para Comuna de residencia. Se usa el valueSet de códigos de comunas definidos a nivel naciona. Este endPoint debe habilitarse "
+* address.city from VSCodigosComunaCL (required)
 * address.district ^short = "Campo para Provincia de Residencia"
-* address.district ^definition = "Campo para Provincia de Residencia. Se usa el valueSet de códigos de Provincias definidos a nivel nacional. Este endPoint debe habilitarse"
-* address.district from PROV (required)
-* address.state ^short = "Campo para la Región de Residencia"
-* address.state ^definition = "Campo para la Región. Se usa el valueSet de códigos de Regiones  definidos a nivel nacional. Este endPoint debe habilitarse"
-* address.state from REG (required)
+* address.district ^definition = "Campo para Provincia de Residencia. Se usa el valueSet de códigos de comunas definidos a nivel naciona. Este endPoint debe habilitarse"
+* address.district from VSCodigosProvinciasCL (required)
+* address.state ^short = "Campo para Provincia de Región"
+* address.state ^definition = "Campo para Provincia de Región. Se usa el valueSet de códigos de comunas definidos a nivel naciona. Este endPoint debe habilitarse"
+* address.state from VSCodigosRegionesCL (required)
 * address.country ^short = "Campo para País de Residencia"
 * address.country ^definition = "Campo para País de Residencia"
-* address.country from CP (required)
+* address.country from CodPaises (required)
 
 
 
@@ -216,7 +217,7 @@ InstanceOf : CorePrestadorCl
 // Una sola dirección
 * address.use = #home
 * address.line = "Naranjos, 22, depto 32"
-* address.city = #091001  //codigo de comuna por binding (temuco)
+* address.city = #09101  //codigo de comuna por binding (temuco)
 * address.district = #091  //codigo de privincia por binding (cautin)
 * address.state = #09 //codigo por binding region (araucania)
 * address.country = #152

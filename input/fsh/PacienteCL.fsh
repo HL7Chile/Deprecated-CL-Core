@@ -9,13 +9,13 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 
 
-* extension contains PaisOrigen-Nacionalidad-Cl named nacionalidad 0..1   
+* extension contains PaisOrigenNacionalidadCl named nacionalidad 0..1   
 
 
 * extension ^short = "Extensión de Nacionalidad para pacientes extranjeros"
 * extension ^definition = "Para hacer uso de esta extensión se debe agregar el path: extension.url = ´nacionalidad´"
 
-//* extension[nacionalidad].valueCodeableConcept from  http://hl7.org/fhir/ValueSet/iso3166-1-N  
+//* extension[nacionalidad].valueCodeableConcept from  CodPaises  
 //* extension.valueCodeableConcept.coding.system ^short = "El sistema de códigos queda definido en la norma ISO3166-1-N"
 //* extension.valueCodeableConcept.coding.system ^definition = "El sistema de códigos queda definido en la norma ISO3166-1-N, en donde el código sería el numero correspondiente designado para el país"
 //* extension MS
@@ -45,7 +45,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * identifier.type.coding.code ^definition = "Código de Tipo de Documento"
 
 * identifier.type.extension ^definition = "Se usa esta extensión para agregarle al tipo de documento el país de origen de este" 
-* identifier.type.extension contains PaisOrigen-Nacionalidad-Cl named paises 1..1   
+* identifier.type.extension contains PaisOrigenNacionalidadCl named paises 1..1   
 
 
 
@@ -116,21 +116,21 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * address.line ^short = "Calle o avenida, numero y casa o depto"
 * address.line ^definition = "Aquí se escribe toda la dirección completa"
 * address.city ^short = "Campo para Comuna de residencia"
-* address.city ^definition = "Campo para Comuna de residencia. Se usa el valueSet de códigos de comunas definidos a nivel nacional. Este endPoint debe habilitarse "
-* address.city from COM (required)
+* address.city ^definition = "Campo para Comuna de residencia. Se usa el valueSet de códigos de comunas definidos a nivel naciona. Este endPoint debe habilitarse "
+* address.city from VSCodigosComunaCL (required)
 * address.district ^short = "Campo para Provincia de Residencia"
-* address.district ^definition = "Campo para Provincia de Residencia. Se usa el valueSet de códigos de Provincias definidos a nivel nacional. Este endPoint debe habilitarse"
-* address.district from PROV (required)
-* address.state ^short = "Campo para la Región de Residencia"
-* address.state ^definition = "Campo para la Región. Se usa el valueSet de códigos de Regiones  definidos a nivel nacional. Este endPoint debe habilitarse"
-* address.state from REG (required)
+* address.district ^definition = "Campo para Provincia de Residencia. Se usa el valueSet de códigos de comunas definidos a nivel naciona. Este endPoint debe habilitarse"
+* address.district from VSCodigosProvinciasCL (required)
+* address.state ^short = "Campo para Provincia de Región"
+* address.state ^definition = "Campo para Provincia de Región. Se usa el valueSet de códigos de comunas definidos a nivel naciona. Este endPoint debe habilitarse"
+* address.state from VSCodigosRegionesCL (required)
 * address.country ^short = "Campo para País de Residencia"
 * address.country ^definition = "Campo para País de Residencia"
-* address.country from CP (required)
+* address.country from CodPaises (required)
 
 
 
-Extension:   PaisOrigen-Nacionalidad-Cl
+Extension:   PaisOrigenNacionalidadCl
 Id:          CodigoPaises
 Title:       "Codigo de Identificación de países"
 Description: "Esta extensión incluye códigos de paises de origen"
@@ -189,9 +189,9 @@ Description: "Esta extensión incluye códigos de paises de origen"
 // Una sola dirección
 * address.use = #home
 * address.line = "Av Los Chirimoyos, 32, casa 4"
-* address.city = "5101"  //codigo de comuna por binding (valpo)
+* address.city = "05101"  //codigo de comuna por binding (valpo)
 * address.district = "051"  //codigo de comuna por binding (valpo)
-* address.state = "5" //codigo por binding region (valparaiso)
+* address.state = "05" //codigo por binding region (valparaiso)
 
 * address.country = #152
 

@@ -62,7 +62,7 @@ Description:    "Este perfil determina la ubicación especifica para un evento, 
 * address.state ^definition = "Campo para la Región. Se usa el valueSet de códigos de Regiones  definidos a nivel naciona. Este endPoint debe habilitarse"
 * address.country ^short = "Campo para País"
 * address.country ^definition = "Campo para País"
-* address.country from http://hl7.org/fhir/ValueSet/iso3166-1-N (required)
+* address.country from CodPaises (required)
 
 
 * position 0..1
@@ -119,7 +119,7 @@ InstanceOf : CoreLocalizacionCl
 * position.longitude = 42.2565
 * position.latitude = -71.550261
 
-* managingOrganization.reference = "https://fhir.cens.cl/baseR4/Organization/ORG-000/"
+* managingOrganization.reference = "https://minsal.cl/FHIRServer/Organization/ORG-000/"
 
 * hoursOfOperation.daysOfWeek = #mon
 * hoursOfOperation.daysOfWeek = #tue

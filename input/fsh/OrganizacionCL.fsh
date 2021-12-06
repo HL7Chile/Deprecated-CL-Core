@@ -36,16 +36,16 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * address.line ^definition = "Aquí se escribe toda la dirección completa"
 * address.city ^short = "Campo para Comuna de residencia"
 * address.city ^definition = "Campo para Comuna de residencia. Se usa el valueSet de códigos de comunas definidos a nivel naciona. Este endPoint debe habilitarse "
-//* address.city from CodComuna (required)
+* address.city from VSCodigosComunaCL (required)
 * address.district ^short = "Campo para Provincia de Residencia"
 * address.district ^definition = "Campo para Provincia de Residencia. Se usa el valueSet de códigos de comunas definidos a nivel naciona. Este endPoint debe habilitarse"
-//* address.district from CodProvinci (required)
+* address.district from VSCodigosProvinciasCL (required)
 * address.state ^short = "Campo para Provincia de Región"
 * address.state ^definition = "Campo para Provincia de Región. Se usa el valueSet de códigos de comunas definidos a nivel naciona. Este endPoint debe habilitarse"
-//* address.state from CodRegiones (required)
+* address.state from VSCodigosRegionesCL (required)
 * address.country ^short = "Campo para País de Residencia"
 * address.country ^definition = "Campo para País de Residencia"
-* address.country from http://hl7.org/fhir/ValueSet/iso3166-1-N (required)
+* address.country from CodPaises (required)
 
 
 
