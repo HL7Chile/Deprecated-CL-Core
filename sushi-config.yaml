@@ -5,12 +5,12 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.cl.CoreCH
 canonical: http://core.hl7chile.cl
-version: 0.85 (Ballot Pendiente)
+version: 0.9 (Ballot Pendiente)
 name: CoreCL
 
 title: Guía de Implementación Core-CL
 status: draft
-date: 2021-09
+date: 2021-12
 publisher: HL7 Chile / Ministerio de Salud, Chile  
 contact:
   - name: Pablo Pizzaro
@@ -44,7 +44,7 @@ menu:
   Operaciones: Consolidado-Operaciones.html
   Artefactos:
    Perfiles: Perfiles.html
-   Extensiones: extensiones.html
+   Extensiones: Extensiones.html
    Valuesets: Set-De-Validacion-ValueSets.html
   Perfiles: 
     Paciente: StructureDefinition-CorePacienteCl.html
