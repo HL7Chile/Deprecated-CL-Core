@@ -1,24 +1,24 @@
 ## Guía en Proceso de Balotaje
 <br>
 
-**Para información sobre este proceso de revisón y validación, que durará desde el 25 de octubre al 22 de noviembre, referirse a:**
+**Proceso de Balotaje Felizmente Cerrado. Agradecemos a Todos y Todas los/las que participaron de este proceso con sus opiniones y votación en el formulario. Todo lo entregado es un aporte feliz para nosotros. Los siguientes pasos son:**
 <br>
 
-[Sobre Balotaje](balloting.html)
-<br>
+* La Comisión de Revisión se reune y valida la votación de Balotaje:
+  
+  * Si la votación **supera el 60% de aprobación**, el *Core-CL se aprueba* y queda como STU (Standar Trial for Use) por un período no menor a 6 meses.
+  * Si la votación de aprobación **fue inferior al 60%**, el *Core-CL se rechaza* y deben hacerse modificaciones para volver a balotear en un plazo no menor a 6 meses.
 
-[Para Validadores](Balloting-Validadores.html)
-<br>
+* La Comisión deberá revisar cada uno de los comentarios y observaciones de la guía y agruparlos por gravedad y dificultad de correción.
 
-Documentos Adicionales:
+* La Comisión informa al Directorio de HL7 Chile sobre el resultado de su labor generando desde este nivel la instancia de corrección, ponderando esfuerzo según el informe entregado por la Comisión de Revisión.
 
-* [Documento de Balotaje](https://drive.google.com/file/d/1SvWrZ_IDq9Fr8FsBEa16W18__Nv68rrG/view?usp=sharing)
-
-* [Formulario de Inscripción Comité Revisor](https://docs.google.com/forms/d/1s1DxEKBv06rAPTQfdLobPwwsaVWs8BhkPfrTRXqQlHQ/edit)
-
-* [Formulario de Balotaje](https://docs.google.com/forms/d/1MIVWu9eJ8Zo1_SJVWiqs9LECxah4oO-UoDUTX9BfzXE/edit)
+* Tanto el informe, como la resolución del Directorio, serán publicados de manera que puedan ser vistos por todos quienes lo deseen
 <br>
 <br>
+
+**MUCHAS  GRACIAS A TODOS Y TODAS** 
+
 ### Introducción
 <br>
 
