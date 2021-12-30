@@ -51,6 +51,8 @@ menu:
     Medicamento: StructureDefinition-CoreMedicamentoCl.html
     Localización: StructureDefinition-CoreLocalizacionCl.html
     Bundle: StructureDefinition-RecetaBundleCl.html
+    Validación-Provenance: StructureDefinition-ValProcCl.html
+    Audit Event: StructureDefinition-AuditEventCl.html
   Ejemplos: Set-Ejemplos.html
   Descargas: Todas-Descargas.html
  
