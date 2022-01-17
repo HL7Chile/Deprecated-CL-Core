@@ -4,7 +4,7 @@
 # │  https://fshschool.org/docs/sushi/configuration/#full-configuration                            │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.cl.CoreCH
-canonical: http://core.hl7chile.cl
+canonical: https://hl7chile.cl/fhir/ig/CoreCL/
 version: 0.9 (Ballot Pendiente)
 name: CoreCL
 
