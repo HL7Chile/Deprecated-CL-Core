@@ -14,7 +14,7 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 
 
 * identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.discriminator.path = "use"
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Este slice permite agregar una identificacion basada RUN y/o basada en el RNPI"
 * identifier contains RUN 1..1 MS and RNPI 0..1 MS
@@ -29,8 +29,6 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * identifier[RUN].system ^short = "endPoint que valida el RUN"
 * identifier[RUN].system ^definition = "Define la url del endPoint a la cual apunta la API, para validar el RUN"
 * identifier[RUN].system ^comment = "Se define el el endPoint al cual debe apuntar a la API, con el fin de validar que el numero de RUN ingresado exista y que sea correcto. Por momento se usará la url = ´http://api_run/run´"
-* identifier[RUN].system = #http://api_run/run
-
 
 * identifier[RUN].value ^short = "Número de RUN"
 * identifier[RUN].value ^definition = "Valor del RUN en la Cédula de Identidad entregada por el Registro Civil, en formato sin puntos y con guión para diferencia el dígito verificador"
@@ -42,7 +40,7 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * identifier[RNPI].system ^short = "endPoint que valida el RNPI"
 * identifier[RNPI].system ^definition = "Define la url del endPoint a la cual apunta la API, para validar el RNPI"
 * identifier[RNPI].system ^comment = "Se define el endPoint al cual debe apuntar a la API, con el fin de validar que el RNPI ingresado exista y que sea correcto. Por momento se usará la url = ´https://apis.superdesalud.gob.cl/api/prestadores/registro/´"
-* identifier[RNPI].system = #https://apis.superdesalud.gob.cl/api/prestadores/registro/
+
 
 * identifier[RNPI].use ^short = "Se define el uso de este identificador"
 * identifier[RNPI].use ^definition = "Se definirá este uso siempre como ´secondary´ debido a que cualquier RNPI sera un identificador secundario y alternativo, ya que el oficial es el RUN"
@@ -81,20 +79,21 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * birthDate ^definition = "Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD (Ej: 1996-08-21)"
 
 * address and address.use and address.line and address.city and address.district and address.state and address.country MS
+* address ^short = "Dirección del Prestador"
+* address ^definition = "Se definirá la dirección en una línea y se podría codificar en city la comuna, en district la provincia y en state la región"
 * address.use 1..1
 * address.use ^short = "Definición del tipo de domicilio home | work | temp | old (requerido)"
 * address.use ^definition = "Se especifica el tipo de dirección notificada. Esto debe ser segun los códigos definidos por HL7 FHIR"
 * address.line ^short = "Calle o avenida, numero y casa o depto"
-* address.line ^short = "Calle o avenida, numero y casa o depto"
 * address.line ^definition = "Aquí se escribe toda la dirección completa"
 * address.city ^short = "Campo para Comuna de residencia"
-* address.city ^definition = "Campo para Comuna de residencia. Se usa el valueSet de códigos de comunas definidos a nivel naciona. Este endPoint debe habilitarse "
+* address.city ^definition = "Campo para Comuna de residencia. Se usa el valueSet de códigos de comunas definidos a nivel naciona."
 * address.city from VSCodigosComunaCL (required)
 * address.district ^short = "Campo para Provincia de Residencia"
-* address.district ^definition = "Campo para Provincia de Residencia. Se usa el valueSet de códigos de comunas definidos a nivel naciona. Este endPoint debe habilitarse"
+* address.district ^definition = "Campo para Provincia de Residencia. Se usa el valueSet de códigos de provicias definidos a nivel naciona."
 * address.district from VSCodigosProvinciasCL (required)
-* address.state ^short = "Campo para Provincia de Región"
-* address.state ^definition = "Campo para Provincia de Región. Se usa el valueSet de códigos de comunas definidos a nivel naciona. Este endPoint debe habilitarse"
+* address.state ^short = "Campo para la Región"
+* address.state ^definition = "Campo Región. Se usa el valueSet de códigos de regiones definidos a nivel naciona."
 * address.state from VSCodigosRegionesCL (required)
 * address.country ^short = "Campo para País de Residencia"
 * address.country ^definition = "Campo para País de Residencia"
@@ -127,7 +126,7 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * qualification[Cert].identifier.value ^definition = "Número de id del certificado"
 */
 * qualification[Cert].code.coding.system ^short = "El sistema sobre el cual se verificarán los titulos o certificados de los Prestadores"
-* qualification[Cert].code.coding.system ^definition = "la url sobre la cual se encuentra el endPoint para el acceso a  los códigos de titulos y/o certificados de prestadores. El perfil especifica que se debe usar la siguiente url:  ´https://api.minsal.cl/v1/catalogos/profesiones/´"
+* qualification[Cert].code.coding.system ^definition = "La url sobre la cual se encuentra el endPoint para el acceso a  los códigos de titulos y/o certificados de prestadores. El perfil especifica que se debe usar la siguiente url:  ´https://api.minsal.cl/v1/catalogos/profesiones/´"
 //* qualification[Cert].code.coding.system = "https://api.minsal.cl/v1/catalogos/profesiones/"
 
 * qualification[Cert].code.coding.display MS
@@ -161,21 +160,15 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 
 
 
-ValueSet:    TituloID
-Title:       "Códigos de tipos de certificaciones segun la Super Intendecia de Salud"
-Id:          COD-Cert-RNPI
-Description: "tipos de certficados reconocibles por la Super Intendecia como válidos para ejercer en Chile"
-//* codes from system https://rnpi.superdesalud.gob.cl
-
 
 
 
 Instance : PrestadorCL
 Title : "Ejemplo de Recurso Prestador como base para un Core Nacional"
+Description: "Ejemplo de un Prestador no Real con identificadores en Systemas con API´s no disponibles"
 InstanceOf : CorePrestadorCl
 
- 
-	
+* id = "3240"	
  
 //Identificación por Cédula Chilena
 * identifier[RUN].use = #official    //obligado
@@ -223,9 +216,14 @@ InstanceOf : CorePrestadorCl
 * address.country = #152
 
 //un titulo y una especialidad
+* qualification[Cert].code.coding.system = "https://api.minsal.cl/v1/catalogos/profesiones/"
 * qualification[Cert].code.coding.code = #2112  // endPoint definido por perfil
 * qualification[Cert].code.coding.display = "Certificado Profesional Médico Cirujano" //codigo de título profesional Universitario
+* qualification[Cert].code.text = "Certificado(s)"
+* qualification[Esp].code.coding.system = "https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/"
 * qualification[Esp].code.coding.code = #122  // endPoint definido por perfil
 * qualification[Esp].code.coding.display = "Cardiólogia"
+* qualification[Esp][1].code.coding.system = "https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/"
 * qualification[Esp][1].code.coding.code = #1234  // endPoint definido por perfil
 * qualification[Esp][1].code.coding.display = "Medicina interna"
+* qualification[Esp].code.text = "Especialidad(es)" 

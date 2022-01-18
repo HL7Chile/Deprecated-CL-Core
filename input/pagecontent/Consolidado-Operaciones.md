@@ -337,7 +337,7 @@ Las Operaciones que se pueden ejecutar como base en el manejo de recuros en FHIR
 Notas:
 
 *   N/A = no Presente, R = Requerido, O = opcional
-*   Para las operaciones definidas en todos los recursos, incluyendo acceso directo al meta elemento, ver  [Resource Operations](resource-operations.html)
+*   Para las operaciones definidas en todos los recursos, incluyendo acceso directo al meta elemento, ver  [Resource Operations](http://hl7.org/fhir/resource-operations.html)
 
 La aplicación específica de cada parametro, para cada una de las operaciones, dependen de cada recurso, en en los cuales el estándar especifica cuales se encuentran definidos para cada operción.
 

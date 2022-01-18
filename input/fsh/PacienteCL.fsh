@@ -35,17 +35,19 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 
 * identifier.type ^short = "Tipo de documento de Id (Extensible)"
-* identifier.type ^definition = "Se define como tipo de documento de Id, aquel definido en el Sistema de Codificación V2-0203 de Hl7. Este sistema es extensible"
-* identifier.type.coding.system = "http://terminology.hl7.org/ValueSet/v2-0203"
+* identifier.type ^definition = "Se define como tipo de documento de Id, aquel definido en el Sistema de Codificación V2-0203 de Hl7. Este sistema es extensible. Para pacientes sin documeto local deben especificar el de origen. Pacientes sin Id, deben usar el código MR = Local Medical Record, es decir numero del registro clínico abierto en el establecimiento"
+* identifier.type ^comment = "De haber RUN, este se debe usar. De haber Run temporal, se debe usar ese identificador. Pacientes sin identificador Chileno deben usar su CI o Pasaporte de origen. Pacientes sin identificación se debe registrar con el numero de registro clínico generado en el recinto de salud"
+* identifier.type.coding.system from  http://terminology.hl7.org/ValueSet/v2-0203 (extensible)
 * identifier.type.coding.system ^short = "Sistema de identificación de tipos de documentos"
 * identifier.type.coding.system ^definition = "Sistema mediante el cual se obtienen los códigos para un determinado tipo de documento"
-* identifier.type.coding.system ^comment = "En la URL del sistema se describe el set de códigos. Por ejemplo si se desea usar Cédula de identidad el código es NNxxx en donde xxx corresponde al identificador del país según la norma iso3166-1-N. Dado lo anterior si fuera Chile, el tipo de documento sería NN152"
+* identifier.type.coding.system ^comment = "En la URL del sistema se describe el set de códigos. Por ejemplo si se desea usar Cédula de identidad el código es NNxxx en donde xxx corresponde al identificador del país según la norma iso3166-1-N. Dado lo anterior si fuera Chile, el tipo de documento sería NNCL. En el Caso de Usar un Pasaporte este no requiere identificar país de origen dado que este es un elemento adicional, por lo que independiente del país el código será PPT según el VS indicado"
 * identifier.type.coding.code ^short = "Código de Tipo de Documento"
 * identifier.type.extension ^short = "País de Origen del Documento de Id" 
 * identifier.type.coding.code ^definition = "Código de Tipo de Documento"
 
 * identifier.type.extension ^definition = "Se usa esta extensión para agregarle al tipo de documento el país de origen de este" 
-* identifier.type.extension contains PaisOrigenNacionalidadCl named paises 1..1   
+* identifier.type.extension contains PaisOrigenNacionalidadCl named paises 1..1  
+//* identifier.type.extension[paises] from CodPaises (required)
 
 
 
@@ -83,7 +85,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * name[NombreSocial].use ^comment = "Para ser considerado como el slice determinado para el uso de nombre social, el use DEBE ser de valor de código ´usual´"
 * name[NombreSocial].text 0..0  
 * name[NombreSocial].family 0..0
-* name[NombreSocial].given 0..1
+* name[NombreSocial].given 1..*
 * name[NombreSocial].given ^short = "Nombre Social"
 * name[NombreSocial].given ^definition = "Nombre Social"
 * name[NombreSocial].prefix 0..0
@@ -94,10 +96,12 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * telecom and gender and birthDate  MS
 * telecom ^short = "Detalles de contacto del Paciente"
 * telecom ^definition = "Detalles del contacto de un paciente comunmente el o los mas usados (Ej: Teléfono fijo, móvil, email, etc.)"
-* telecom.use ^short = "home | work | temp | old | mobile (requerido)" 
+* telecom.use ^short = "home | work | temp | old | mobile" 
 * telecom.use ^definition = "Propósito para el contacto que se ha definido" 
-* telecom.system ^short = "phone | fax | email | pager | url | sms | other (requerido)"
+* telecom.use from  http://hl7.org/fhir/ValueSet/contact-point-use (required)
+* telecom.system ^short = "phone | fax | email | pager | url | sms | other"
 * telecom.system ^definition = "Forma de telecomunicación para el punto de contacto: qué sistema de comunicación se requiere para hacer uso del contacto."
+* telecom.system from  http://hl7.org/fhir/ValueSet/contact-point-system (required)
 * telecom.value ^short = "Dato del contato del paciente descrito"
 * telecom.value ^definition = "Valor del contacto como por ejemplo el numero de telefono fijo o de móvil o el email del Paciente"
 
@@ -110,19 +114,21 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * birthDate ^definition = "Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD (Ej: 1996-08-21)"
 
 * address and address.use and address.line and address.city and address.district and address.state and address.country MS
+* address ^short = "Dirección del paciente"
+* address ^definition = "Se definirá la dirección en una línea y se podría codificar en city la comuna, en district la provincia y en state la región"
 * address.use 1..1
 * address.use ^short = "Definición del tipo de domicilio home | work | temp | old (requerido)"
 * address.use ^definition = "Se especifica el tipo de dirección notificada. Esto debe ser segun los códigos definidos por HL7 FHIR"
 * address.line ^short = "Calle o avenida, numero y casa o depto"
 * address.line ^definition = "Aquí se escribe toda la dirección completa"
 * address.city ^short = "Campo para Comuna de residencia"
-* address.city ^definition = "Campo para Comuna de residencia. Se usa el valueSet de códigos de comunas definidos a nivel naciona. Este endPoint debe habilitarse "
+* address.city ^definition = "Campo para Comuna de residencia. Se usa el valueSet de códigos de comunas definidos a nivel naciona."
 * address.city from VSCodigosComunaCL (required)
 * address.district ^short = "Campo para Provincia de Residencia"
-* address.district ^definition = "Campo para Provincia de Residencia. Se usa el valueSet de códigos de comunas definidos a nivel naciona. Este endPoint debe habilitarse"
+* address.district ^definition = "Campo para Provincia de Residencia. Se usa el valueSet de códigos de provicias definidos a nivel naciona."
 * address.district from VSCodigosProvinciasCL (required)
-* address.state ^short = "Campo para Provincia de Región"
-* address.state ^definition = "Campo para Provincia de Región. Se usa el valueSet de códigos de comunas definidos a nivel naciona. Este endPoint debe habilitarse"
+* address.state ^short = "Campo para la Región"
+* address.state ^definition = "Campo Región. Se usa el valueSet de códigos de regiones definidos a nivel naciona."
 * address.state from VSCodigosRegionesCL (required)
 * address.country ^short = "Campo para País de Residencia"
 * address.country ^definition = "Campo para País de Residencia"
@@ -136,7 +142,7 @@ Title:       "Codigo de Identificación de países"
 Description: "Esta extensión incluye códigos de paises de origen"
 * value[x] only CodeableConcept
 * value[x] ^short = "Código de País"
-* valueCodeableConcept from CodPaises (extensible)
+* valueCodeableConcept.coding.system from CodPaises (extensible)
 
 
  
@@ -147,15 +153,21 @@ Description: "Esta extensión incluye códigos de paises de origen"
 
 	Instance : PacienteCL
 	Title : "Ejemplo de Recurso Paciente Nacional"
+	Description: "Paciente ficticio nacional CI Chilena, sin sistema de validación ´http://regcivil.cl/Validacion/RUN´ ficticio , cuyo nombre se decribe mediante el oficial y uno social. La dirección tampoco es Real"
 	InstanceOf : CorePacienteCl
 	Usage : #example
 
 	 
 	//Identificación por Cédula Chilena
 * identifier.use = #official    //obligado
+* identifier.type.extension[paises].valueCodeableConcept.coding.system =  "urn:iso:std:iso:3166"
 * identifier.type.extension[paises].valueCodeableConcept.coding.code = #152
 * identifier.type.extension[paises].valueCodeableConcept.coding.display = "Chile"
-* identifier.type.coding.code = #NNCH
+* identifier.type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+* identifier.type.coding.code = #NNxxx 
+* identifier.type.coding.display = #CHL
+
+* identifier.system = "http://regcivil.cl/Validacion/RUN"
 * identifier.value = "15.236.327-k"
 
 //registro de paciente activo
@@ -190,7 +202,7 @@ Description: "Esta extensión incluye códigos de paises de origen"
 * address.use = #home
 * address.line = "Av Los Chirimoyos, 32, casa 4"
 * address.city = "05101"  //codigo de comuna por binding (valpo)
-* address.district = "051"  //codigo de comuna por binding (valpo)
+* address.district = "051"  //codigo de provincia por binding (valpo)
 * address.state = "05" //codigo por binding region (valparaiso)
 
 * address.country = #152
@@ -198,22 +210,27 @@ Description: "Esta extensión incluye códigos de paises de origen"
 
 Instance : PacienteCL2
 Title : "Ejemplo de Recurso Paciente Extranjero"
+Description: "Paciente ficticio extrangero, con identificación Pasaporte de origen Salvadoreño sin sistema real de validación del número de Pasaporte."
 InstanceOf : CorePacienteCl
 Usage : #example
 
 // Nacionalidad por medio de la extensión
-
+* extension[nacionalidad].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
 * extension[nacionalidad].valueCodeableConcept.coding.code = #222
-* extension[nacionalidad].valueCodeableConcept.coding.display = "Salvadoreño"
+* extension[nacionalidad].valueCodeableConcept.coding.display = "El Salvador"
 
  
 //Identificación por Pasaporte Salvadoreño
 * identifier.use = #official    //obligado
+* identifier.type.extension[paises].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
 * identifier.type.extension[paises].valueCodeableConcept.coding.code = #222
 * identifier.type.extension[paises].valueCodeableConcept.coding.display = "El Salvador"
+* identifier.type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier.type.coding.code = #PPN
-* identifier.type.coding.display = "Pasaporte"
+* identifier.type.coding.display = "Passport number"
+* identifier.system = "http://Pasaportes.cl/Validacion/Pass"
 * identifier.value = "P3334521.2"
+
 
 //registro de paciente activo
 * active = true
@@ -250,20 +267,25 @@ Usage : #example
  
 Instance: PacienteCl-3
 InstanceOf: CorePacienteCl
+Description: "Paciente ficticio nacional CI Chilena con sistema de validación no real, cuyo nombre es solo el oficial. La dirección tampoco es Real"
 Title : "Paciente Nacional, con datos actualizados, declarando nacionalidad"
 Usage: #example
 
 * meta.versionId = "2"
 * meta.lastUpdated = "2021-07-13T00:22:41.166Z"
 
+* extension[nacionalidad].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
 * extension[nacionalidad].valueCodeableConcept.coding.code = #152
-* extension[nacionalidad].valueCodeableConcept.coding.display = "Chilena"
+* extension[nacionalidad].valueCodeableConcept.coding.display = "Chile"
 
 * identifier.use = #official
+* identifier.type.extension[paises].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
 * identifier.type.extension[paises].valueCodeableConcept.coding.code = #152
 * identifier.type.extension[paises].valueCodeableConcept.coding.display = "Chile"
-* identifier.type.coding.code = #NNCH152
-* identifier.type.coding.display = "DNI"
+* identifier.type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+* identifier.type.coding.code = #NNxxx
+* identifier.type.coding.display = #CHL
+* identifier.system = "http://regcivil.cl/Validacion/RUN"
 * identifier.value = "15602754-5"
 
 * active = true
@@ -272,7 +294,8 @@ Usage: #example
 
 * name[NombreOficial].family.extension[mothers-family].valueString = "DELGADO" //uso de la extensión
 
-* name[NombreOficial].given = "PABLO RODRIGO"
+* name[NombreOficial].given[0] = "PABLO"
+* name[NombreOficial].given[+] = "RODRIGO"
 
 * telecom.system = #email
 * telecom.value = "ppizarro.delgado@minsal.cl"

@@ -1,25 +1,50 @@
 {
-  "package-id": "fish",
-  "canonical": "http://example.org/fhir/fish",
-  "title": "Fish Implementation Guide",
-  "introduction": "An example of how FSH can be used to create an IG about fish",
+  "package-id": "hl7.fhir.cl.CoreCH",
+  "canonical": "http://core.hl7chile.cl",
+  "title": "Guía de Implementación Core-CL",
+  "introduction": "Guía de Implementación para los perfiles Core que se van a requerir a nivel de desarrollo Nacional",
   "list": [
     {
-      "version": "current",
-      "desc": "Continuous Integration Build (latest in version control)",
-      "path": "http://build.fhir.org/ig/example/example-ig",
-      "status": "ci-build",
-      "current": true
+      "version": "0"
     },
     {
-      "version": "0.0.1",
-      "date": "2099-01-01",
-      "desc": "Initial STU ballot (Mmm yyyy Ballot)",
-      "path": "http://example.org/fhir/STU1",
-      "status": "ballot",
-      "sequence": "STU 1",
-      "fhirversion": "4.0.1",
-      "current": true
+      "version": "1"
+    },
+    {
+      "version": "2"
+    },
+    {
+      "version": "3"
+    },
+    {
+      "version": "4"
+    },
+    {
+      "version": "5"
+    },
+    {
+      "version": "6"
+    },
+    {
+      "version": "7"
+    },
+    {
+      "version": "8"
+    },
+    {
+      "version": "9"
+    },
+    {
+      "version": "10"
+    },
+    {
+      "version": "11"
+    },
+    {
+      "version": "12"
+    },
+    {
+      "version": "13"
     }
   ]
 }

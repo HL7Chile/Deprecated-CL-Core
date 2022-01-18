@@ -55,19 +55,17 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 Instance : MedicamentoCl
 Title : "Ejemplo de comprimido Tareg - D 160"
+Description: "Medicamento comprimido Tareg -D160 referemciado como medicamento en la TFC, considerando el de 25 comprimidos"
 InstanceOf : CoreMedicamentoCl
 
-	 
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Medicamento: Tareg - D 160 / 25 comprimido recubierto (Novartis), codigo TFC: 1991971000167110 y código TFC de concepto:  840851000167103, definición  SNOMED producto biológico/farmacéutico (producto), código SOMOMED: 373873005 </div>"
-* text.status = #additional
-
+	
 * identifier[DescripcionId].use = #official
 * identifier[DescripcionId].system = "http://minsal.cl/semantikos/description-id"
 * identifier[DescripcionId].value = "1991971000167110"
 
 * identifier[ConceptId].use = #official
 * identifier[ConceptId].system = "http://minsal.cl/semantikos/concept-id"
-* identifier[ConceptId].value = " 840851000167103"
+* identifier[ConceptId].value = "840851000167103"
 
 * code.text = "Tareg - D 160 / 25 comprimido recubierto (Novartis)"
 * code.coding.system = "http://minsal.cl/semantikos/description-id"
@@ -80,6 +78,7 @@ Alias: $description-id = http://minsal.cl/semantikos/description-id
 
 Instance: MedicamentoCl-2
 Title : "Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido"
+Description: "Definición de Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido Código de descripción = 1703591000167111 y de Cocepto = 696681000167108 según TFC"
 InstanceOf: CoreMedicamentoCl
 Usage: #example
 

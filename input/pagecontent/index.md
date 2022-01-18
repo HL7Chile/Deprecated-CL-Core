@@ -1,33 +1,3 @@
-## Guía en Proceso de Balotaje
-<br>
-
-**Proceso de Balotaje Felizmente Cerrado. Agradecemos a Todos y Todas los/las que participaron de este proceso con sus opiniones y votación en el formulario. Todo lo entregado es un aporte feliz para nosotros. Los siguientes pasos son:**
-<br>
-
-* La Comisión de Revisión se reune y valida la votación de Balotaje:
-  
-  * Si la votación **supera el 60% de aprobación**, el *Core-CL se aprueba* y queda como STU (Standar Trial for Use) por un período no menor a 6 meses.
-  * Si la votación de aprobación **fue inferior al 60%**, el *Core-CL se rechaza* y deben hacerse modificaciones para volver a balotear en un plazo no menor a 6 meses.
-
-* La Comisión deberá revisar cada uno de los comentarios y observaciones de la guía y agruparlos por gravedad y dificultad de correción.
-
-* La Comisión informa al Directorio de HL7 Chile sobre el resultado de su labor generando desde este nivel la instancia de corrección, ponderando esfuerzo según el informe entregado por la Comisión de Revisión.
-
-* Tanto el informe, como la resolución del Directorio, serán publicados de manera que puedan ser vistos por todos quienes lo deseen
-<br>
-<br>
-
-**MUCHAS  GRACIAS A TODOS Y TODAS** 
-
-### Introducción
-<br>
-
-Esta **Guía Core-CL** nace de la necesidad de contar con perfiles de recursos transversales que cubran un amplio espectro de casos de uso que se deseen interoperar a nivel chileno. Si bien el origen de los recursos perfilados hace relación con los necesarios para levantar el proyecto de Receta Electrónica Nacional, la idea es irla amplando en base, en la medida que se vaya avanzando hacia lo necesario para el Registro Clínico Electrónico Nacional.
-
-Esta Guía se basa en la **Versión R4 de FHIR**, y define los requerimientos mínimos de conformidad para los recursos que se han generado para desarrollar la base de información transable para Receta Electrónica y un amplio espectro de proyectos de alcance nacional. Además, considera aspectos semánticos mínimos.
-
-En base a estos perfiles se genera la base fundamental para futuras Guías de Implementación y fueron producto del trabajo colaborativo entre el **Capítulo Chileno de HL7 (HL7 Chile)** y el **Ministerio de Salud de Chile (MINSAL)**.
-
 ### Cómo leer esta Guía
 <br>
 
@@ -40,7 +10,7 @@ Esta Guía sigue un formato especificado para **FHIR R4**, y se divide en varias
 * Operaciones: Define las operaciones más usadas para el intercambo, manejo, consulta, actualización, etc. de Recursos Generados en un servidor.
 * Artefactos: Estas páginas proveen descripciones detalladas y definiciones formales para los artefectos FHIR definidos en la guía.
     * [Perfiles](Perfiles.html): Descripción de los perfiles Core generados para Chile
-    * [Extensiones](extensiones.html): Descripción de todas las extensiones creadas para satisfacer las necesidades nacionales para los perfiles creados
+    * [Extensiones](Extensiones.html): Descripción de todas las extensiones creadas para satisfacer las necesidades nacionales para los perfiles creados
     * [ValueSets](Set-De-Validacion-ValueSets.html): Descripción de los sets de valores creados para poder hacer uso dentro de las necesidades locales de los perfiles creados.
 * [Ejemplos](Set-Ejemplos.html): Listado de ejemplos descritos a lo largo de la guía
 * [Descargas](Todas-Descargas.html): Schematrones para descarga local 

@@ -32,16 +32,19 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 
 
+* address and address.use and address.line and address.city and address.district and address.state and address.country MS
+* address ^short = "Dirección de la Organización"
+* address ^definition = "Se definirá la dirección en una línea y se podría codificar en city la comuna, en district la provincia y en state la región"
 * address.line ^short = "Calle o avenida, numero y casa o depto"
 * address.line ^definition = "Aquí se escribe toda la dirección completa"
 * address.city ^short = "Campo para Comuna de residencia"
-* address.city ^definition = "Campo para Comuna de residencia. Se usa el valueSet de códigos de comunas definidos a nivel naciona. Este endPoint debe habilitarse "
+* address.city ^definition = "Campo para Comuna de residencia. Se usa el valueSet de códigos de comunas definidos a nivel naciona."
 * address.city from VSCodigosComunaCL (required)
 * address.district ^short = "Campo para Provincia de Residencia"
-* address.district ^definition = "Campo para Provincia de Residencia. Se usa el valueSet de códigos de comunas definidos a nivel naciona. Este endPoint debe habilitarse"
+* address.district ^definition = "Campo para Provincia de Residencia. Se usa el valueSet de códigos de provicias definidos a nivel naciona."
 * address.district from VSCodigosProvinciasCL (required)
-* address.state ^short = "Campo para Provincia de Región"
-* address.state ^definition = "Campo para Provincia de Región. Se usa el valueSet de códigos de comunas definidos a nivel naciona. Este endPoint debe habilitarse"
+* address.state ^short = "Campo para la Región"
+* address.state ^definition = "Campo Región. Se usa el valueSet de códigos de regiones definidos a nivel naciona."
 * address.state from VSCodigosRegionesCL (required)
 * address.country ^short = "Campo para País de Residencia"
 * address.country ^definition = "Campo para País de Residencia"
@@ -51,11 +54,12 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 Instance : OrganizacionCl
 Title : "Ejemplo Organización Prestadora de Salud"
+Description: "CESFAM Rio Bueno (Ficticio) con ID DEIS no real"
 InstanceOf : CoreOrganizacionCl
 Usage : #example
 
 	 
-	
+* id = "ORG1"	
 * active = true
 * identifier.system = "http://minsal.cl/deis/codigodeis"
 * identifier.value = "1233"

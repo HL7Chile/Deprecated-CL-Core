@@ -17,7 +17,7 @@ Los siguientes ejemplos se publican con esta Guía y todos están disponibles pa
 * [Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido](Medication-MedicamentoCl-2.html)
 
 #### Organización
-* [Organización Prestadora de Salud](Organization-OrganizacionCL.html)
+* [Organización Prestadora de Salud](StructureDefinition-CoreOrganizacionCl-examples.html)
 
 #### Paciente
 * [Paciente Chileno](Patient-PacienteCL.html) <br>
@@ -27,4 +27,4 @@ Los siguientes ejemplos se publican con esta Guía y todos están disponibles pa
 * [Paciente Nacional, con datos actualizados, declarando nacionalidad](Patient-PacienteCl-3.html)
 
 #### Prestador
-* [Prestador Individual Médico](Practitioner-PrestadorCL.html)
+* [Prestador Individual Médico](StructureDefinition-CorePrestadorCl-examples.html)

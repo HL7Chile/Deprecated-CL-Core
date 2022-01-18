@@ -10,7 +10,7 @@ Los Set de Valores definidos localmente son los siguiente:
 * [Códigos País según Norma ISO-3166 N](ValueSet-CodPais.html)
 * [Códigos de Especialidad Según DEIS](ValueSet-VSEspecialidadesDeisCL.html)
 * [Códigos de Tipo de Documentos](http://terminology.hl7.org/ValueSet/v2-0203)
-* [Códigos de Tipo de Certificaciones Profesionales](ValueSet-COD-Cert-RNPI.html)
+
 
 ### Code Systems
 
