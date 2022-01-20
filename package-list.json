@@ -19,7 +19,8 @@
             "path": "https://hl7chile.cl/fhir/ig/CoreCL/2022Enero",
             "status": "draft",
             "sequence": "STU1",
-            "fhirversion": "4.0.1"
+            "fhirversion": "4.0.1",
+            "current": false
         },
         {
             "version": "1.0.0",
