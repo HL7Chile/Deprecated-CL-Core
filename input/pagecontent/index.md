@@ -32,6 +32,7 @@ Tambien se presenta una tabla jerárquica con una vista lógica del contenido co
 * [Organización_CL](StructureDefinition-CoreOrganizacionCl.html)
 * [Medicamento_CL](StructureDefinition-CoreMedicamentoCl.html) 
 * [Localización_CL](StructureDefinition-CoreLocalizacionCl.html)
+* [Bundle_CL](StructureDefinition-BundleCl.html)
 <br>
 <br>
 

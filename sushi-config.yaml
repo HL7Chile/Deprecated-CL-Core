@@ -5,10 +5,10 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.cl.CoreCH
 canonical: https://hl7chile.cl/fhir/ig/CoreCL
-version: 1.0.0 Standard Trial For Use (STU)
+version: 1.0.0 
 name: CoreCL
 
-title: Guía de Implementación Core-CL
+title: Guía de Implementación Core-CL FHIR R4 (Standard Trial For Use (STU))
 status: active
 date: 2022-01
 publisher: 
@@ -69,7 +69,7 @@ menu:
     Organización: StructureDefinition-CoreOrganizacionCl.html
     Medicamento: StructureDefinition-CoreMedicamentoCl.html
     Localización: StructureDefinition-CoreLocalizacionCl.html
-    Bundle: StructureDefinition-RecetaBundleCl.html
+    Bundle: StructureDefinition-BundleCl.html
   Ejemplos: Set-Ejemplos.html
   Descargas: Todas-Descargas.html
  

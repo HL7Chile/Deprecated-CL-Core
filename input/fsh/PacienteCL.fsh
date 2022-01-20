@@ -37,13 +37,17 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * identifier.type ^short = "Tipo de documento de Id (Extensible)"
 * identifier.type ^definition = "Se define como tipo de documento de Id, aquel definido en el Sistema de Codificación V2-0203 de Hl7. Este sistema es extensible. Para pacientes sin documeto local deben especificar el de origen. Pacientes sin Id, deben usar el código MR = Local Medical Record, es decir numero del registro clínico abierto en el establecimiento"
 * identifier.type ^comment = "De haber RUN, este se debe usar. De haber Run temporal, se debe usar ese identificador. Pacientes sin identificador Chileno deben usar su CI o Pasaporte de origen. Pacientes sin identificación se debe registrar con el numero de registro clínico generado en el recinto de salud"
-* identifier.type.coding.system from  http://terminology.hl7.org/ValueSet/v2-0203 (extensible)
+//* identifier.type.coding.system from  http://terminology.hl7.org/ValueSet/v2-0203 (extensible)
 * identifier.type.coding.system ^short = "Sistema de identificación de tipos de documentos"
 * identifier.type.coding.system ^definition = "Sistema mediante el cual se obtienen los códigos para un determinado tipo de documento"
 * identifier.type.coding.system ^comment = "En la URL del sistema se describe el set de códigos. Por ejemplo si se desea usar Cédula de identidad el código es NNxxx en donde xxx corresponde al identificador del país según la norma iso3166-1-N. Dado lo anterior si fuera Chile, el tipo de documento sería NNCL. En el Caso de Usar un Pasaporte este no requiere identificar país de origen dado que este es un elemento adicional, por lo que independiente del país el código será PPT según el VS indicado"
+
 * identifier.type.coding.code ^short = "Código de Tipo de Documento"
-* identifier.type.extension ^short = "País de Origen del Documento de Id" 
 * identifier.type.coding.code ^definition = "Código de Tipo de Documento"
+* identifier.type.coding.code from VSTiposDocumentos
+
+* identifier.type.extension ^short = "País de Origen del Documento de Id" 
+
 
 * identifier.type.extension ^definition = "Se usa esta extensión para agregarle al tipo de documento el país de origen de este" 
 * identifier.type.extension contains PaisOrigenNacionalidadCl named paises 1..1  
@@ -146,11 +150,7 @@ Description: "Esta extensión incluye códigos de paises de origen"
 
 
  
-   
-
-
-
-
+  
 	Instance : PacienteCL
 	Title : "Ejemplo de Recurso Paciente Nacional"
 	Description: "Paciente ficticio nacional CI Chilena, sin sistema de validación ´http://regcivil.cl/Validacion/RUN´ ficticio , cuyo nombre se decribe mediante el oficial y uno social. La dirección tampoco es Real"
@@ -163,9 +163,9 @@ Description: "Esta extensión incluye códigos de paises de origen"
 * identifier.type.extension[paises].valueCodeableConcept.coding.system =  "urn:iso:std:iso:3166"
 * identifier.type.extension[paises].valueCodeableConcept.coding.code = #152
 * identifier.type.extension[paises].valueCodeableConcept.coding.display = "Chile"
-* identifier.type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
-* identifier.type.coding.code = #NNxxx 
-* identifier.type.coding.display = #CHL
+* identifier.type.coding.system = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodigoDNI"
+* identifier.type.coding.code = #NNCHL
+* identifier.type.coding.display = "Chile"
 
 * identifier.system = "http://regcivil.cl/Validacion/RUN"
 * identifier.value = "15.236.327-k"
@@ -282,9 +282,9 @@ Usage: #example
 * identifier.type.extension[paises].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
 * identifier.type.extension[paises].valueCodeableConcept.coding.code = #152
 * identifier.type.extension[paises].valueCodeableConcept.coding.display = "Chile"
-* identifier.type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
-* identifier.type.coding.code = #NNxxx
-* identifier.type.coding.display = #CHL
+* identifier.type.coding.system = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodigoDNI"
+* identifier.type.coding.code = #NNCHL
+* identifier.type.coding.display = "Chile"
 * identifier.system = "http://regcivil.cl/Validacion/RUN"
 * identifier.value = "15602754-5"
 

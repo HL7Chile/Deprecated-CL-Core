@@ -40,9 +40,18 @@ Description:    "Este perfil determina la ubicación especifica para un evento, 
 * type.coding.display ^short = "Glosa del código"
 * type.coding.display ^definition = "Texto que identifica en glosa al código expresado"
 
-* telecom 0..* MS 
-* telecom ^short = "Contactos de la organiazación" 
-* telecom.use ^short = "Uso del contacto descrito (home | work | temp | old | mobile)" 
+* telecom MS
+* telecom ^short = "Detalles de contacto de la ubicación"
+* telecom ^definition = "Detalles de contacto para la ubicación comunmente el o los mas usados (Ej: Teléfono fijo, móvil, email, etc.)"
+* telecom.use ^short = "home | work | temp | old | mobile" 
+* telecom.use ^definition = "Propósito para el contacto que se ha definido" 
+* telecom.use from  http://hl7.org/fhir/ValueSet/contact-point-use (required)
+* telecom.system ^short = "phone | fax | email | pager | url | sms | other"
+* telecom.system ^definition = "Forma de telecomunicación para el punto de contacto: qué sistema de comunicación se requiere para hacer uso del contacto."
+* telecom.system from  http://hl7.org/fhir/ValueSet/contact-point-system (required)
+* telecom.value ^short = "Dato del contato de la ubicación descrita"
+* telecom.value ^definition = "Valor del contacto como por ejemplo el numero de telefono fijo o de móvil o el email del Paciente"
+
 
 
 * address and address.use and address.line and address.city and address.district and address.state and address.country MS
@@ -80,15 +89,19 @@ Description:    "Este perfil determina la ubicación especifica para un evento, 
 * managingOrganization ^short = "Organización a la cual la ubicación pertenece, si es el caso. Esta relación se hace en base a una referencia a una Orgaización"
 * managingOrganization ^definition = "La organización responsable de la localización."
 * managingOrganization ^comment = "Se puede usar para indicar la organzación jerárquica superior. Siempre debe existir una Organizacion jerarquicamente sobre la localizacion y en caso de no existir esta jerquia, se debe crear la organizacion, con los mismos datos del location."
-* managingOrganization.reference ^short = "Orgaización de referencia"
+* managingOrganization.reference ^short = "Orgaización de referencia."
 * managingOrganization.reference ^definition = "La organización responsable de la localización."
-* managingOrganization.display ^short = "Nombre de la organización de referencia"
-* managingOrganization.display ^definition = "Nombre de la Orgaización de referencia"
+* managingOrganization.display ^short = "Nombre de la organización de referencia."
+* managingOrganization.display ^definition = "Nombre de la Orgaización de referencia."
 
 
 * hoursOfOperation MS
-* hoursOfOperation ^short = "Horario de atención de la localizacion"
-* hoursOfOperation ^definition = "¿Qué días/horas de la semana suele estar abierto este local?"
+* hoursOfOperation ^short = "Horario de atención de la localizacion."
+* hoursOfOperation ^definition = "¿Qué días/horas de la semana suele estar abierto este local?."
+
+* availabilityExceptions MS
+* availabilityExceptions ^short = "Descripción de Excepciones de ubicación habilitada."
+* availabilityExceptions ^definition = "Una descripción de los casos en los que la apertura de los lugares es diferente a la normal, por ejemplo, la disponibilidad de los días festivos. Una descripción sucinta de todas las posibles excepciones a la disponibilidad normal del centro, tal y como se detalla en el horario de apertura."
 
 
 Instance : LocalizacionEjemploCL1

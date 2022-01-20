@@ -50,6 +50,30 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * address.country ^definition = "Campo para País de Residencia"
 * address.country from CodPaises (required)
 
+* contact 0..* MS
+* contact ^short = "Contacto de la Organización para ciertos propósitos"
+* contact ^definition = "Contacto de la Organización para ciertos propósitos"
+* contact.purpose MS
+* contact.purpose ^short = "El tipo de contacto"
+* contact.purpose ^definition = "El propósito mediante el cual el contacto puede ser alcanzado"
+* contact.purpose from http://hl7.org/fhir/ValueSet/contactentity-type (extensible)
+* contact.name MS
+* contact.name ^short = "Nombre asociado al contacto"
+* contact.name ^definition = "Nombre asociado al contacto"
+
+* contact.telecom  MS
+* contact.telecom ^short = "Detalles de contacto de la Organización"
+* contact.telecom ^definition = "Detalles del contacto de la Organización comunmente el o los mas usados (Ej: Teléfono fijo, móvil, email, etc.)"
+* contact.telecom.use ^short = "home | work | temp | old | mobile" 
+* contact.telecom.use ^definition = "Propósito para el contacto que se ha definido" 
+* contact.telecom.use from  http://hl7.org/fhir/ValueSet/contact-point-use (required)
+* contact.telecom.system ^short = "phone | fax | email | pager | url | sms | other"
+* contact.telecom.system ^definition = "Forma de telecomunicación para el punto de contacto: qué sistema de comunicación se requiere para hacer uso del contacto."
+* contact.telecom.system from  http://hl7.org/fhir/ValueSet/contact-point-system (required)
+* contact.telecom.value ^short = "Dato del contato del paciente descrito"
+* contact.telecom.value ^definition = "Valor del contacto como por ejemplo el numero de telefono fijo o de móvil o el email del Paciente"
+
+
 
 
 Instance : OrganizacionCl

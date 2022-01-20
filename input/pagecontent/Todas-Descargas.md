@@ -14,7 +14,7 @@ Los esquematrones en XML permiten tener un formato para validar la especificacio
 * [StructureDefinition Localizacion](StructureDefinition-CoreLocalizacionCl.sch)
 * [StructureDefinition Medicamento Definido TFC](StructureDefinition-CoreMedicamentoCl.sch)
 * [StructureDefinition Especialidad Clínica](StructureDefinition-CoreEspecialidadCl.sch)
-* [StructureDefinition Bundle](StructureDefinition-RecetaBundleCl.sch)
+* [StructureDefinition Bundle](StructureDefinition-BundleCl.sch)
 * [StructureDefinition Set de Valores Codigo de Países](StructureDefinition-CodigoPaises.sch)
 <br>
 

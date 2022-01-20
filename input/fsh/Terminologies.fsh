@@ -1,9 +1,79 @@
 
+ValueSet: VSTiposDocumentos
+Id: VSTiposDocumentos
+Title: "Tipos de Documentos"
+Description: "Tipos de Documentos para identificación según tabla HL7 V3 y CodeSystem local."
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSCodigoDNI
+* codes from system http://terminology.hl7.org/CodeSystem/v2-0203
+
+
+
+CodeSystem: CSCodigoDNI
+Id: CSCodigoDNI
+Title: "Códigos de Documentos DNI para LATAM y el Caribe"
+Description: "Códigos para los DNI de países de America Latina y el Caribe según indicaciones de VS HL7 de V3"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #NNBLZ "Belice"
+* #NNCRI "Costa Rica"
+* #NNSLV "El Salvador"
+* #NNGTM "Guatemala"
+* #NNHND "Honduras"
+* #NNMEX "México"
+* #NNNIC "Nicaragua"
+* #NNPAN "Panamá"
+* #NNARG "Argentina"
+* #NNBOL "Bolivia"
+* #NNBRA "Brasil"
+* #NNCOL "Colombia"
+* #NNECU "Ecuador"
+* #NNGUY "Guyana"
+* #NNPRY "Paraguay"
+* #NNPER "Perú"
+* #NNSUR "Surinam"
+* #NNURY "Uruguay"
+* #NNVEN "Venezuela"
+* #NNCHL "Chile"
+* #NNATG "Antigua y Barbuda"
+* #NNBHS "Bahamas"
+* #NNBRB "Barbados"
+* #NNCUB "Cuba"
+* #NNDMA "Dominica"
+* #NNGRD "Granada"
+* #NNHTI "Haití"
+* #NNJAM "Jamaica"
+* #NNDOM "República Dominicana"
+* #NNKNA "San Cristóbal y Nieves"
+* #NNLCA "Santa Lucía"
+* #NNVCT "San Vicente y las Granadinas"
+* #NNTTO "Trinidad y Tobago"
+
 
 ValueSet: CodPaises
 Id: CodPais
 Title: "Códigos de Países"
 Description: "Codigos definidos para la identificación de países segun norma ISO3166-N"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
 * include codes from system urn:iso:std:iso:3166
 
@@ -13,18 +83,29 @@ ValueSet: VSEspecialidadesDeisCL
 Id: VSEspecialidadesDeisCL
 Title: "Códigos de Especialidades"
 Description: "Códigos de especialidades médicas descritas según DEIS"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
 * codes from system CSEspecialidadesDeisCL
 
 CodeSystem: CSEspecialidadesDeisCL
 Id: CSEspecialidadesDeisCL
 Title: "Códigos de Especialidades"
 Description: "Códigos de especialidades médicas descritas según DEIS"
+* ^version = "1.0.0"
 * ^status = #active
-* ^date = "2021-09-16T12:26:49-03:00"
-* ^contact.name = "Pablo Pizzaro"
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
 * ^contact.telecom.system = #email
-* ^contact.telecom.value = "ppizarro.delgado@minsal.cl"
+* ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+
 * #01 "Anatomía Patológica"
 * #02 "Anestesiología"
 * #03 "Cardiología"
@@ -99,18 +180,28 @@ ValueSet: VSCodigosRegionesCL
 Id: VSCodigosRegionesCL
 Title: "Códigos de Regiones en Chile"
 Description:  "Códigos de Regiones para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
 * codes from system CSCodRegionCL
 
 CodeSystem: CSCodRegionCL
 Id: CSCodRegionCL
 Title: "Códigos de Regiones en ChileEstos aún deben ser llevados a un ValueSet"
 Description:  "Códigos de Regiones para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
+* ^version = "1.0.0"
 * ^status = #active
-* ^date = "2021-09-16T12:26:49-03:00"
-* ^contact.name = "Pablo Pizzaro"
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
 * ^contact.telecom.system = #email
-* ^contact.telecom.value = "ppizarro.delgado@minsal.cl"
+* ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
 * #15 "Arica y Parinacota"
 * #01 "Tarapacá"
 * #02 "Antofagasta"
@@ -132,18 +223,28 @@ ValueSet: VSCodigosProvinciasCL
 Id: VSCodigosProvinciasCL
 Title: "Códigos de Provincias en Chile"
 Description:  "Códigos de Provincias para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
 * codes from system CSCodProvinciasCL
 
 CodeSystem: CSCodProvinciasCL
 Id: CSCodProvinciasCL
 Title: "Códigos de Provincias en Chile"
 Description:  "Códigos de Provincias para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
+* ^version = "1.0.0"
 * ^status = #active
-* ^date = "2021-09-16T12:26:49-03:00"
-* ^contact.name = "Pablo Pizzaro"
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
 * ^contact.telecom.system = #email
-* ^contact.telecom.value = "ppizarro.delgado@minsal.cl"
+* ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
 * #122 "Antártica Chilena"
 * #021 "Antofagasta"
 * #082 "Arauco"
@@ -206,19 +307,28 @@ ValueSet: VSCodigosComunaCL
 Id: VSCodigosComunaCL
 Title: "Códigos de Comunas en Chile"
 Description:  "Códigos de Comunas para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
 * codes from system CSCodComunasCL
 
 CodeSystem: CSCodComunasCL
 Id: CSCodComunasCL
 Title: "Códigos de Comunas en Chile"
 Description:  "Códigos de Comunas para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
-* ^version = "0.85 (Ballot Pendiente)"
+* ^version = "1.0.0"
 * ^status = #active
-* ^date = "2021-09-16T12:26:49-03:00"
-* ^contact.name = "Pablo Pizzaro"
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
 * ^contact.telecom.system = #email
-* ^contact.telecom.value = "ppizarro.delgado@minsal.cl"
+* ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
 * #05602 "Algarrobo"
 * #13502 "Alhué"
 * #08314 "Alto Biobío"
