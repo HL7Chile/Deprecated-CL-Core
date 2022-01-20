@@ -30,6 +30,19 @@
             "sequence": "STU1",
             "fhirversion": "4.0.1",
             "current": true
-        }
+        },
+
+        {
+          "version": "0.8.5",
+          "date": "2021-15-10",
+          "descmd": "Guía Draft para balotaje a desarrollar durante consulta abierta",
+          "path": "https://hl7chile.cl/fhir/ig/CoreCL/0.8.5",
+          "status": "ballot",
+          "sequence": "STU1",
+          "fhirversion": "4.0.1",
+          "current": false
+      }
+
+
     ]
 }
