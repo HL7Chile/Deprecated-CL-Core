@@ -148,8 +148,6 @@ Description: "Esta extensión incluye códigos de paises de origen"
 * value[x] ^short = "Código de País"
 * valueCodeableConcept.coding.system from CodPaises (extensible)
 
-
- 
   
 	Instance : PacienteCL
 	Title : "Ejemplo de Recurso Paciente Nacional"
