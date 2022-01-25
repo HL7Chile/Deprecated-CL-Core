@@ -79,6 +79,10 @@ $ _genonce
 
 SUSHI utiliza el contenido de un **package.json** y un directorio **ig-data** creados por el usuario para generar las entradas del **IG Publisher**. Para un IG básico sin personalización, simplemente cree una carpeta **ig-data** vacía. Para un IG personalizado, cree y rellene la carpeta **ig-data** con contenido y configuraciones personalizadas.
 
+## Ejecutando Publisher
+Dentro de la carpeta history, existe un archivo llamado "history.html", el cual contiene la información relacionada con el historial de versiones publicadas.
+En caso de querer agregar nuevas versiones, se debe editar este mismo archivo, y agregar las nuevas entradas.
+
 ## Más Información
 Para mas información puede navegar por las páginas:
 
