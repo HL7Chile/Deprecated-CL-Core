@@ -1,3 +1,7 @@
+### Versión de Desarrollo
+<br>
+
+Esta Guía es la continuación de la versión 1.0.0 STU baloteada en diciembre del 2021, y agrega nuevos perfiles, permitiendo ir mejorando las cacacidades de la CORE en función de las nececidades del medio.
 ### Cómo leer esta Guía
 <br>
 
@@ -32,6 +36,8 @@ Tambien se presenta una tabla jerárquica con una vista lógica del contenido co
 * [Organización_CL](StructureDefinition-CoreOrganizacionCl.html)
 * [Medicamento_CL](StructureDefinition-CoreMedicamentoCl.html) 
 * [Localización_CL](StructureDefinition-CoreLocalizacionCl.html)
+* [Provenance_CL](StructureDefinition-ProvenanceCl.html)
+* [Auditoría_CL](StructureDefinition-AuditEventCl.html)
 * [Bundle_CL](StructureDefinition-BundleCl.html)
 <br>
 <br>

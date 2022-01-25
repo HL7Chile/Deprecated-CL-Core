@@ -28,3 +28,9 @@ Los siguientes ejemplos se publican con esta Guía y todos están disponibles pa
 
 #### Prestador
 * [Prestador Individual Médico](StructureDefinition-CorePrestadorCl-examples.html)
+
+#### Provenance
+* [Validación de Receta](StructureDefinition-ProvenanceCl-examples.html)
+
+#### Auditoria
+* [Audit-Event](AuditEvent-AuditEventEx.html)

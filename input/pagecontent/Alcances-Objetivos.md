@@ -8,9 +8,9 @@ Los perfiles FHIR básicos de Chile, están diseñados para ser el conjunto elem
 Los pasos a seguir serán los siguientes:
 <br>
 
-* Llevar la Guía a una versión preliminar estable
+* Seguir Generando nuevos contenidos para la CORE
 * Generar Ballot para las indicaciones
-* Llevar la Guía a una version estable
+* Llevar la Guía a una version normativa
 * Realizar una Conectatón local 
 
 

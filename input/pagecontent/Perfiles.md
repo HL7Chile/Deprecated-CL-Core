@@ -10,4 +10,6 @@ Los siguientes son el listado de perfiles definidos para el Core Nacional
 * [Organización_CL](StructureDefinition-CoreOrganizacionCl.html)
 * [Medicamento_CL](StructureDefinition-CoreMedicamentoCl.html) 
 * [Localización_CL](StructureDefinition-CoreLocalizacionCl.html)
+* [Provenance_CL](StructureDefinition-ProvenanceCl.html)
+* [Auditoría_CL](StructureDefinition-AuditEventCl.html)
 * [Bundle_CL](StructureDefinition-BundleCl.html)
