@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <title>HL7.FHIR.CL.CORECH\history - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="http://hl7.org/fhir" />
+
+    <link href="fhir.css" rel="stylesheet" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet" />
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet" />
+    <link href="assets/css/pygments-manni.css" rel="stylesheet" />
+    <link href="assets/css/jquery-ui.css" rel="stylesheet" />
+    <link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/fhir.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="fhir-table-scripts.js">
+    </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png" />
+    <link rel="shortcut icon" href="assets/ico/favicon.png" />
+</head>
+
+<body onload="document.body.style.opacity='1'">
+
+    <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">
+        h2 {
+            --heading-prefix: "2"
+        }
+        
+        h3,
+        h4,
+        h5,
+        h6 {
+            --heading-prefix: "2"
+        }
+    </style>
+    <div id="segment-header" class="segment">
+        <!-- segment-header -->
+        <div class="container">
+            <!-- container -->
+            <!-- Placeholder for child template header declarations 
+<div id="hl7-nav">
+    <a id="hl7-logo" no-external="true" href="http://hl7.org">
+        <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png" />
+    </a>
+</div>
+-->
+            <div id="hl7-nav-left">
+                <a id="header-logo-left" no-external="true" href="http://minsal.cl">
+                    <img height="80" alt="Visitar sitio web del Ministerio de Salud de Chile" src="minsal.png" />
+                </a>
+            </div>
+
+            <div id="hl7-nav-right">
+                <a id="header-logo-righ" no-external="true" href="http://hl7chile.cl">
+                    <img height="80" alt="Visitar HL7 Chile" src="hl7chile.png" />
+                </a>
+            </div>
+
+            <div id="ig-status">
+                <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación Core-CL FHIR R4 (Standard Trial For Use
+            (STU))</span><br />1.0.0 - CI Build</p>
+            </div>
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">
+        <!-- segment-navbar -->
+        <div id="stripe"> </div>
+        <div class="container">
+            <!-- container -->
+            <!-- HEADER CONTENT -->
+
+            <nav class="navbar navbar-inverse">
+                <!--status-bar-->
+                <div class="container">
+                    <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+            <span class="icon-bar"> </span>
+            <span class="icon-bar"> </span>
+            <span class="icon-bar"> </span>
+          </button>
+                    <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+                    <div class="nav-collapse collapse navbar-inverse-collapse">
+                        <!-- menu.xml  -->
+
+                        <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+                            <li>
+                                <a href="index.html">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="Alcances-Objetivos.html">Objetivos</a>
+                            </li>
+                            <li>
+                                <a href="Aspectos-Generales.html">Generalidades</a>
+                            </li>
+                            <li>
+                                <a href="Consolidado-Operaciones.html">Operaciones</a>
+                            </li>
+                            <li class="dropdown">
+                                <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artefactos
+                  <b class="caret"></b>
+                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="Perfiles.html">Perfiles</a>
+                                    </li>
+                                    <li>
+                                        <a href="Extensiones.html">Extensiones</a>
+                                    </li>
+                                    <li>
+                                        <a href="Set-De-Validacion-ValueSets.html">Valuesets</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a data-toggle="dropdown" href="#" class="dropdown-toggle">Perfiles
+                  <b class="caret"></b>
+                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="StructureDefinition-CorePacienteCl.html">Paciente</a>
+                                    </li>
+                                    <li>
+                                        <a href="StructureDefinition-CorePrestadorCl.html">Prestador</a>
+                                    </li>
+                                    <li>
+                                        <a href="StructureDefinition-CoreEspecialidadCl.html">Especialidad Prestador</a>
+                                    </li>
+                                    <li>
+                                        <a href="StructureDefinition-CoreOrganizacionCl.html">Organización</a>
+                                    </li>
+                                    <li>
+                                        <a href="StructureDefinition-CoreMedicamentoCl.html">Medicamento</a>
+                                    </li>
+                                    <li>
+                                        <a href="StructureDefinition-CoreLocalizacionCl.html">Localización</a>
+                                    </li>
+                                    <li>
+                                        <a href="StructureDefinition-BundleCl.html">Bundle</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="Set-Ejemplos.html">Ejemplos</a>
+                            </li>
+                            <li>
+                                <a href="Todas-Descargas.html">Descargas</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.nav-collapse -->
+                </div>
+                <!-- /.container -->
+            </nav>
+            <!-- /.navbar -->
+            <!-- /HEADER CONTENT -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">
+        <!-- segment-breadcrumb -->
+        <div class="container">
+            <!-- container -->
+            <ul class="breadcrumb">
+                <li><a href='toc.html'><b>Table of Contents</b></a></li>
+                <li><b>history</b></li>
+
+            </ul>
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">
+        <!-- segment-content -->
+        <div class="container">
+            <!-- container -->
+            <div class="row">
+                <div class="inner-wrapper">
+
+                    <style type="text/css">
+                        h2:before {
+                            color: silver;
+                            counter-increment: section;
+                            content: var(--heading-prefix) " ";
+                        }
+                        
+                        h3:before {
+                            color: silver;
+                            counter-increment: sub-section;
+                            content: var(--heading-prefix) "."counter(sub-section) " ";
+                        }
+                        
+                        h4:before {
+                            color: silver;
+                            counter-increment: composite;
+                            content: var(--heading-prefix) "."counter(sub-section) "."counter(composite) " ";
+                        }
+                        
+                        h5:before {
+                            color: silver;
+                            counter-increment: detail;
+                            content: var(--heading-prefix) "."counter(sub-section) "."counter(composite) "."counter(detail) " ";
+                        }
+                        
+                        h6:before {
+                            color: silver;
+                            counter-increment: more-detail;
+                            content: var(--heading-prefix) "."counter(sub-section) "."counter(composite) "."counter(detail) "."counter(more-detail)" ";
+                        }
+                    </style>
+                    <div class="col-12">
+                        <!--ReleaseHeader-->
+                        <p id="publish-box">Guía de Implementación Core-CL FHIR R4 (Standard Trial For Use (STU)) - Local Development build (v1.0.0). See the <a href="https://hl7chile.cl/fhir/ig/CoreCL/history.html">Directory of
+                published versions</a></p>
+                        <!--EndReleaseHeader-->
+                        <h2>Historial de versiones</h2>
+
+
+                        <p>
+                            <!-- white space is critical inside of capture -->
+                        </p>
+
+
+                        <h3 id="que-se-busca">Historial de versiones publicadas</h3>
+
+                        <p> A continuacion se listan las versiones publicadas de la Guía Core Chilena.
+                            <br />
+
+                        </p>
+
+
+                        <div>
+
+
+                            <style type="text/css">
+                                .tg {
+                                    border-collapse: collapse;
+                                    border-spacing: 0;
+                                }
+                                
+                                .tg td {
+                                    border-color: black;
+                                    border-style: solid;
+                                    border-width: 1px;
+                                    font-family: Arial, sans-serif;
+                                    font-size: 14px;
+                                    overflow: hidden;
+                                    padding: 3px 5px;
+                                    word-break: normal;
+                                }
+                                
+                                .tg th {
+                                    border-color: black;
+                                    border-style: solid;
+                                    border-width: 1px;
+                                    font-family: Arial, sans-serif;
+                                    font-size: 14px;
+                                    font-weight: normal;
+                                    overflow: hidden;
+                                    padding: 3px 5px;
+                                    word-break: normal;
+                                }
+                                
+                                .tg .tg-vfn0 {
+                                    background-color: #efefef;
+                                    border-color: #000000;
+                                    text-align: left;
+                                    vertical-align: top
+                                }
+                                
+                                .tg .tg-k7ar {
+                                    background-color: #c0c0c0;
+                                    border-color: #000000;
+                                    font-weight: bold;
+                                    text-align: center;
+                                    vertical-align: top
+                                }
+                                
+                                .tg .tg-73oq {
+                                    border-color: #000000;
+                                    text-align: left;
+                                    vertical-align: top
+                                }
+                                
+                                @media screen and (max-width: 767px) {
+                                    .tg {
+                                        width: auto !important;
+                                    }
+                                    .tg col {
+                                        width: auto !important;
+                                    }
+                                    .tg-wrap {
+                                        overflow-x: auto;
+                                        -webkit-overflow-scrolling: touch;
+                                    }
+                                }
+                            </style>
+                            <div class="tg-wrap">
+                                <table class="tg">
+                                    <thead>
+                                        <tr>
+                                            <th class="tg-k7ar">Fecha</th>
+                                            <th class="tg-k7ar">Versión</th>
+                                            <th class="tg-k7ar">Versión de FHIR<br></th>
+                                            <th class="tg-k7ar">Descripción</th>
+                                            <th class="tg-k7ar">Links</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="tg-vfn0" colspan="5"><span style="font-weight:bold">Versiones Actuales</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tg-73oq"><a href="https://hl7chile.cl/fhir/ig/CoreCL/" target="_blank" rel="noopener noreferrer">2022-01-20</a></td>
+                                            <td class="tg-73oq">1.0.0</td>
+                                            <td class="tg-73oq">R4</td>
+                                            <td class="tg-73oq">Guía Core Chilena, Verisón 1.0.0 STU</td>
+                                            <td>
+                                                <a title="Ir a la pagina" href="https://hl7chile.cl/fhir/ig/CoreCL"><img src="images_history/page.png"></a>
+                                                <a title="Donwload IG" href="https://hl7chile.cl/fhir/ig/CoreCL/full-ig.zip"><img src="images_history/download.gif"></a>
+                                                <a title="Download package" href="https://hl7chile.cl/fhir/ig/CoreCL/package.tgz"><img src="images_history/npm.png"></a>
+                                                <a title="QA" href="https://hl7chile.cl/fhir/ig/CoreCL/qa.html"><img src="images_history/qa.png"></a>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tg-73oq"><a href="https://hl7chile.cl/fhir/ig/CoreCL-dev-202201/" target="_blank" rel="noopener noreferrer">2022-01-25</a></td>
+                                            <td class="tg-73oq">1.0.1</td>
+                                            <td class="tg-73oq">R4</td>
+                                            <td class="tg-73oq">Verisón de desarrollo</td>
+                                            <td>
+                                                <a title="Ir a la pagina" href="https://hl7chile.cl/fhir/ig/CoreCL-dev-202201"><img src="images_history/page.png"></a>
+                                                <a title="Donwload IG" href="https://hl7chile.cl/fhir/ig/CoreCL-dev-202201/full-ig.zip"><img src="images_history/download.gif"></a>
+                                                <a title="Download package" href="https://hl7chile.cl/fhir/ig/CoreCL-dev-202201/package.tgz"><img src="images_history/npm.png"></a>
+                                                <a title="QA" href="https://hl7chile.cl/fhir/ig/CoreCL-dev-202201/qa.html"><img src="images_history/qa.png"></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tg-vfn0" colspan="5"><span style="font-weight:bold">Versiones anteriores</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tg-73oq"><a href="https://hl7chile.cl/fhir/ig/CoreCL-ballot-v0.85/" target="_blank" rel="noopener noreferrer">2021-10-15</a></td>
+                                            <td class="tg-73oq">0.8.5</td>
+                                            <td class="tg-73oq">R4</td>
+                                            <td class="tg-73oq">Version publicada para el proceso de <i>Ballotage</i></td>
+                                            <td>
+                                                <a title="Ir a la pagina" href="https://hl7chile.cl/fhir/ig/CoreCL-ballot-v0.85"><img src="images_history/page.png"></a>
+                                                <a title="Donwload IG" href="https://hl7chile.cl/fhir/ig/CoreCL-ballot-v0.85/full-ig.zip"><img src="images_history/download.gif"></a>
+                                                <a title="Download package" href="https://hl7chile.cl/fhir/ig/CoreCL-ballot-v0.85/package.tgz"><img src="images_history/npm.png"></a>
+                                                <a title="QA" href="https://hl7chile.cl/fhir/ig/CoreCL-ballot-v0.85/qa.html"><img src="images_history/qa.png"></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div>
+                                <p>
+                                    <br />
+                                    <br />
+                                </p>
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <!-- /inner-wrapper -->
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /segment-content -->
+
+    <script type="text/javascript" src="assets/js/jquery.js">
+    </script>
+    <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+    <script type="text/javascript" src="assets/js/jquery-ui.min.js">
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            if (window.location.hash != "") {
+                $('a[href="' + window.location.hash + '"]').click()
+            }
+        });
+    </script>
+    <a name="bottom"> </a>
+    <div id="segment-footer" igtool="footer" class="segment">
+        <!-- segment-footer -->
+        <div class="container">
+            <!-- container -->
+
+            <div class="inner-wrapper">
+                <p>
+                    IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7chile.cl">HL7 Chile</a>. Package hl7.fhir.cl.CoreCH#1.0.0 basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+                    Generada el <span title="Fri, Jan 21, 2022 09:53-0300">21-01-2022</span>
+                    <br />
+                    <span style="color: var(--footer-highlight-text-color)"></span> Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de Contenidos</a> |
+                    <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">Reportes QA</a>
+                    </span>
+                </p>
+            </div>
+            <!-- /inner-wrapper -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /segment-footer -->
+
+    <div id="segment-post-footer" class="segment hidden">
+        <!-- segment-post-footer -->
+        <div class="container">
+            <!-- container -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="assets/js/bootstrap.min.js">
+    </script>
+    <script type="text/javascript" src="assets/js/respond.min.js">
+    </script>
+    <script type="text/javascript" src="assets/js/anchor.min.js">
+    </script>
+    <script>
+        anchors.options.visible = 'hover'
+        anchors.add()
+    </script>
+
+    <!-- feedback form - Google forms -->
+    <!-- v0.1, 2021-01-09 -->
+
+
+
+    <!-- / feedback form  -->
+
+    <!-- Analytics Below
+  ================================================== -->
+</body>
+
+</html>
