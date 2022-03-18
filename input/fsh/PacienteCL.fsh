@@ -138,6 +138,36 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * address.country ^definition = "Campo para País de Residencia"
 * address.country from CodPaises (required)
 
+* contact MS 
+* contact ^short = "Contacto, tutor legal o representante del Paciente"
+* contact ^definition = "Contacto, tutor legal o representante del Paciente"
+* contact.extension contains IdentificacionContactoCl named IdContacto 1..*
+* contact.extension[IdContacto] ^short = "Identificación del Contacto"
+* contact.extension[IdContacto] ^definition = "Extensión para declarar identificación del contacto y la procedencia de esta"
+* contact.relationship 1..1 MS
+* contact.relationship ^short = "Relación entre el contacto y el paciente"
+* contact.relationship ^short = "Relación legal o de paretezco entre el contacto y el paciente"
+* contact.relationship from 	http://hl7.org/fhir/ValueSet/patient-contactrelationship
+* contact.name 1..1 MS 
+* contact.name ^short = "Nombre del Contacto"
+* contact.name ^definition = "Nombre del contacto asociado al paciente"
+
+* contact.name.use = #official
+* contact.name.use ^short = "uso del nombre del paciente"
+* contact.name.use ^definition = "Nombre registrado oficialmente en el Registro Civil"
+* contact.name.use ^comment = "El use DEBE ser de valor de código ´official´"
+
+* contact.name.family ^short = "1er Apellido"
+* contact.name.family ^definition = "Se define el primer apellido registrado al momento de nacer o aquel que se ha inscrito legalmente en el Registro Civil"
+* contact.name.family 1..1 MS
+* contact.name.family.extension contains http://hl7.org/fhir/StructureDefinition/humanname-mothers-family named mothers-family 0..1
+* contact.name.family.extension ^short = "Extensión para 2o apellido"
+* contact.name.family.extension ^definition = "Extensión para la declaracion de un segundo apellido"
+* contact.name.given 1.. MS
+* contact.name.given ^short = "Primer nombre y nombres del Contacto o Representante Legal"
+* contact.name.given ^definition = "Todos los nombres  no necesariamente solo el Primero"
+
+
 
 
 Extension:   PaisOrigenNacionalidadCl
@@ -148,6 +178,19 @@ Description: "Esta extensión incluye códigos de paises de origen"
 * value[x] ^short = "Código de País"
 * valueCodeableConcept.coding.system from CodPaises (extensible)
 
+
+Extension:   IdentificacionContactoCl
+Id:          IdContacto
+Title:       "Identificación del Contacto de un Paciente"
+Description: "Identificación de contacto de paciente en especial para casos en los cuales este actúa como Tutor Legal"
+* extension contains
+	tutId 1..* MS and
+	docProc 1..1 MS
+* extension[tutId] ^short = "Identificación del Tutor"
+* extension[tutId].value[x] only Identifier
+* extension[docProc] ^short = "País de procedencia del documento"
+* extension[docProc].value[x] only Coding
+* extension[docProc].valueCoding from CodPaises (required)
   
 Instance : PacienteCL
 Title : "Ejemplo de Recurso Paciente Nacional"
