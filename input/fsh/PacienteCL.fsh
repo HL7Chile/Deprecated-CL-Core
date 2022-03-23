@@ -1,19 +1,20 @@
-
-
 Profile:        PacienteCl
 Parent:         Patient
 Id:             CorePacienteCl
 Title:          "Perfil Paciente Para Core Nacional"
 Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso Paciente para un Historial Clínico Nacional"
 
-
+* identifier MS
+  * use and type MS
+    * coding MS
+      * system and code MS
 
 
 * extension contains PaisOrigenNacionalidadCl named nacionalidad 0..1   
 
 
 * extension ^short = "Extensión de Nacionalidad para pacientes extranjeros"
-* extension ^definition = "Para hacer uso de esta extensión se debe agregar el path: extension.url = ´nacionalidad´"
+* extension ^definition = "Para hacer uso de esta extensión se debe agregar el path: extension.url = \"nacionalidad\""
 
 //* extension[nacionalidad].valueCodeableConcept from  CodPaises  
 //* extension.valueCodeableConcept.coding.system ^short = "El sistema de códigos queda definido en la norma ISO3166-1-N"
@@ -29,7 +30,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 * identifier 1..* 
 * identifier.use ^short = "usual | official | temp | secondary | old (If known)"
-* identifier.use ^definition = "Se definirá este uso siempre como ´official´ debido a que cualquier ID presentado para motivos de este perfil deb ser de este tipo"
+* identifier.use ^definition = "Se definirá este uso siempre como \"official\" debido a que cualquier ID presentado para motivos de este perfil deb ser de este tipo"
 * identifier.use = #official 
 * identifier.use ^comment = "Se definirá como official pues en una primera etapa solo se considerarán los identidicadores en esa categoría. Para una segunda etapa se abrirá este elemento para cualquier clase de identificador" 
 
@@ -61,6 +62,10 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * name ^slicing.description = "Este slice se genera para diferenciar el nombre registrado Versus el nombre social"
 * name contains NombreOficial 1..1 MS and NombreSocial 0..1 MS
 
+* identifier.use ^definition = "Se definirá este uso siempre como \"official\" debido a que cualquier ID presentado para motivos de este perfil deb ser de este tipo"
+
+
+
 * name ^short = "Nombres y Apellidos del Paciente considerando, según el caso: 1er Nombre, Nombres, 1er Apellido y 2o Apellido"
 * name ^definition = "Nombre del Paciente considerando, según el caso: 1er Nombre, Nombres, 1er Apellido y 2o Apellido"
 
@@ -68,8 +73,8 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * name[NombreOficial] ^definition = "Determinación del nombre registrado oficialmente del Paciente"
 * name[NombreOficial].use = #official
 * name[NombreOficial].use ^short = "uso del nombre del paciente"
-* name[NombreOficial].use ^definition = "este slice corresponde al nombre registrado al momento de nacer, por lo que se fuerza el valor ´official´"
-* name[NombreOficial].use ^comment = "Para ser considerado como el slice determinado para el uso de nombre completo, el use DEBE ser de valor de código ´official´"
+* name[NombreOficial].use ^definition = "este slice corresponde al nombre registrado al momento de nacer, por lo que se fuerza el valor \"official\""
+* name[NombreOficial].use ^comment = "Para ser considerado como el slice determinado para el uso de nombre completo, el use DEBE ser de valor de código \"official\""
 * name[NombreOficial].family ^short = "1er Apellido"
 * name[NombreOficial].family ^definition = "Se define el primer apellido registrado al momento de nacer o aquel que se ha inscrito legalmente en el Registro Civil"
 * name[NombreOficial].family 1..1
@@ -86,7 +91,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * name[NombreSocial].use = #usual
 * name[NombreSocial].use ^short = "uso que se le da al nombre"
 * name[NombreSocial].use ^definition = "Este uso especifico se enfoca a la definición de un nombre social. Es por esta razón que el uso se fuerza a usual"
-* name[NombreSocial].use ^comment = "Para ser considerado como el slice determinado para el uso de nombre social, el use DEBE ser de valor de código ´usual´"
+* name[NombreSocial].use ^comment = "Para ser considerado como el slice determinado para el uso de nombre social, el use DEBE ser de valor de código \"usual\""
 * name[NombreSocial].text 0..0  
 * name[NombreSocial].family 0..0
 * name[NombreSocial].given 1..*
@@ -138,6 +143,36 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * address.country ^definition = "Campo para País de Residencia"
 * address.country from CodPaises (required)
 
+* contact MS 
+* contact ^short = "Contacto, tutor legal o representante del Paciente"
+* contact ^definition = "Contacto, tutor legal o representante del Paciente"
+* contact.extension contains IdentificacionContactoCl named IdContacto 1..*
+* contact.extension[IdContacto] ^short = "Identificación del Contacto"
+* contact.extension[IdContacto] ^definition = "Extensión para declarar identificación del contacto y la procedencia de esta"
+* contact.relationship 1..1 MS
+* contact.relationship ^short = "Relación entre el contacto y el paciente"
+* contact.relationship ^short = "Relación legal o de paretezco entre el contacto y el paciente"
+* contact.relationship from 	http://hl7.org/fhir/ValueSet/patient-contactrelationship
+* contact.name 1..1 MS 
+* contact.name ^short = "Nombre del Contacto"
+* contact.name ^definition = "Nombre del contacto asociado al paciente"
+
+* contact.name.use = #official
+* contact.name.use ^short = "uso del nombre del paciente"
+* contact.name.use ^definition = "Nombre registrado oficialmente en el Registro Civil"
+* contact.name.use ^comment = "El use DEBE ser de valor de código ´official´"
+
+* contact.name.family ^short = "1er Apellido"
+* contact.name.family ^definition = "Se define el primer apellido registrado al momento de nacer o aquel que se ha inscrito legalmente en el Registro Civil"
+* contact.name.family 1..1 MS
+* contact.name.family.extension contains http://hl7.org/fhir/StructureDefinition/humanname-mothers-family named mothers-family 0..1
+* contact.name.family.extension ^short = "Extensión para 2o apellido"
+* contact.name.family.extension ^definition = "Extensión para la declaracion de un segundo apellido"
+* contact.name.given 1.. MS
+* contact.name.given ^short = "Primer nombre y nombres del Contacto o Representante Legal"
+* contact.name.given ^definition = "Todos los nombres  no necesariamente solo el Primero"
+
+
 
 
 Extension:   PaisOrigenNacionalidadCl
@@ -148,10 +183,23 @@ Description: "Esta extensión incluye códigos de paises de origen"
 * value[x] ^short = "Código de País"
 * valueCodeableConcept.coding.system from CodPaises (extensible)
 
+
+Extension:   IdentificacionContactoCl
+Id:          IdContacto
+Title:       "Identificación del Contacto de un Paciente"
+Description: "Identificación de contacto de paciente en especial para casos en los cuales este actúa como Tutor Legal"
+* extension contains
+	tutId 1..* MS and
+	docProc 1..1 MS
+* extension[tutId] ^short = "Identificación del Tutor"
+* extension[tutId].value[x] only Identifier
+* extension[docProc] ^short = "País de procedencia del documento"
+* extension[docProc].value[x] only Coding
+* extension[docProc].valueCoding from CodPaises (required)
   
 Instance : PacienteCL
 Title : "Ejemplo de Recurso Paciente Nacional"
-Description: "Paciente ficticio nacional CI Chilena, sin sistema de validación ´http://regcivil.cl/Validacion/RUN´ ficticio , cuyo nombre se decribe mediante el oficial y uno social. La dirección tampoco es Real"
+Description: "Paciente ficticio nacional CI Chilena, sin sistema de validación \"http://regcivil.cl/Validacion/RUN\" ficticio , cuyo nombre se decribe mediante el oficial y uno social. La dirección tampoco es Real"
 InstanceOf : CorePacienteCl
 Usage : #example
 

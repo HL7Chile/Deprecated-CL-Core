@@ -19,7 +19,7 @@ Description:    "Este perfil determina la ubicación especifica para un evento, 
 * status  MS
 * status from http://hl7.org/fhir/ValueSet/location-status
 * status ^short = "active | suspended | inactive"
-* status ^definition = "Determina el estado de la localización conforme a los códigos definidos por el estándar. Existen los estados de ´activo | suspendido | inactivo´"
+* status ^definition = "Determina el estado de la localización conforme a los códigos definidos por el estándar. Existen los estados de \"activo | suspendido | inactivo\""
 
 * name and alias MS
 

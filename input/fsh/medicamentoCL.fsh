@@ -20,7 +20,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * identifier[DescripcionId] ^definition = "Este identificador se obtiene a travez del TFC por medio de un identificador de Descripción del fármaco"
 * identifier[DescripcionId].use = #official
 * identifier[DescripcionId].use ^short = "usual | official | temp | secondary | old"
-* identifier[DescripcionId].use ^definition = "Para este caso se fuerza a que su uso sea ´official´"
+* identifier[DescripcionId].use ^definition = "Para este caso se fuerza a que su uso sea \"official\""
 * identifier[DescripcionId].system   = "http://minsal.cl/semantikos/description-id"
 * identifier[DescripcionId].system ^short  = "http://minsal.cl/semantikos/description-id"
 * identifier[DescripcionId].system ^definition  = "http://minsal.cl/semantikos/description-id DEBE ser usada para este slice. Estos EndPoint deberán estar disponibles pronto"
@@ -32,7 +32,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * identifier[ConceptId] ^definition = "Este identificador se obtiene a travez del TFC por medio de un identificador del ConceptId del fármaco según SNOMED-CT"
 * identifier[ConceptId].use = #official
 * identifier[ConceptId].use ^short = "usual | official | temp | secondary | old"
-* identifier[ConceptId].use ^definition = "Para este caso se fuerza a que su uso sea ´official´"
+* identifier[ConceptId].use ^definition = "Para este caso se fuerza a que su uso sea \"official\""
 * identifier[ConceptId].system  = "http://minsal.cl/semantikos/concept-id"
 * identifier[ConceptId].system ^short = "http://minsal.cl/semantikos/concept-id"
 * identifier[ConceptId].system ^definition  = "http://minsal.cl/semantikos/concept-id DEBE ser usada para este slice. Estos EndPoint deberán estar disponibles pronto"
@@ -45,7 +45,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * code.text ^short = "Descripción del Fármaco según TFC. Se fuerza en este momento TFC"
 * code.text ^short = "Esto código define el fármaco que contiene el recurso. El código corresponde al determinado en la Termnología Frarmaceutica Chilena (TFC)"
 
-* code.coding.system ^short = "En principio el endPoint puede ser este, pero cada sistema localmente puede generar su TFC. ´http://minsal.cl/semantikos/description-id´"
+* code.coding.system ^short = "En principio el endPoint puede ser este, pero cada sistema localmente puede generar su TFC. \"http://minsal.cl/semantikos/description-id\""
 * code.coding.system  ^definition = "Si bien se dispondrá públicamente de un endPoint en el Servidor Semantikos del MINSAL, la BD de la TFC es libre distribución por lo que puede ser levantada Localmente "
 * code.coding.code ^short = "Código del farmaco desplegado por la TFC"
 * code.coding.code ^definition = "Código del farmaco desplegado por la TFC"

@@ -23,12 +23,12 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * identifier[RUN] ^short = "Identificador destinado a almacenar el número de RUN" 
 * identifier[RUN] ^definition = "Corresponde al identificador (RUN) otorgado el Registro Civil de Chile"
 * identifier[RUN].use ^short = "Se define el uso de este identificador"
-* identifier[RUN].use ^definition = "Se definirá este uso siempre como ´official´ debido a que cualquier ID presentado para motivos de este perfil deb ser de este tipo"
+* identifier[RUN].use ^definition = "Se definirá este uso siempre como \"official\" debido a que cualquier ID presentado para motivos de este perfil deb ser de este tipo"
 * identifier[RUN].use = #official
 
 * identifier[RUN].system ^short = "endPoint que valida el RUN"
 * identifier[RUN].system ^definition = "Define la url del endPoint a la cual apunta la API, para validar el RUN"
-* identifier[RUN].system ^comment = "Se define el el endPoint al cual debe apuntar a la API, con el fin de validar que el numero de RUN ingresado exista y que sea correcto. Por momento se usará la url = ´http://api_run/run´"
+* identifier[RUN].system ^comment = "Se define el el endPoint al cual debe apuntar a la API, con el fin de validar que el numero de RUN ingresado exista y que sea correcto. Por momento se usará la url = \"http://api_run/run\""
 
 * identifier[RUN].value ^short = "Número de RUN"
 * identifier[RUN].value ^definition = "Valor del RUN en la Cédula de Identidad entregada por el Registro Civil, en formato sin puntos y con guión para diferencia el dígito verificador"
@@ -39,11 +39,11 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 
 * identifier[RNPI].system ^short = "endPoint que valida el RNPI"
 * identifier[RNPI].system ^definition = "Define la url del endPoint a la cual apunta la API, para validar el RNPI"
-* identifier[RNPI].system ^comment = "Se define el endPoint al cual debe apuntar a la API, con el fin de validar que el RNPI ingresado exista y que sea correcto. Por momento se usará la url = ´https://apis.superdesalud.gob.cl/api/prestadores/registro/´"
+* identifier[RNPI].system ^comment = "Se define el endPoint al cual debe apuntar a la API, con el fin de validar que el RNPI ingresado exista y que sea correcto. Por momento se usará la url = \"https://apis.superdesalud.gob.cl/api/prestadores/registro/\""
 
 
 * identifier[RNPI].use ^short = "Se define el uso de este identificador"
-* identifier[RNPI].use ^definition = "Se definirá este uso siempre como ´secondary´ debido a que cualquier RNPI sera un identificador secundario y alternativo, ya que el oficial es el RUN"
+* identifier[RNPI].use ^definition = "Se definirá este uso siempre como \"secondary\" debido a que cualquier RNPI sera un identificador secundario y alternativo, ya que el oficial es el RUN"
 * identifier[RNPI].use = #secondary
 * identifier[RNPI].value ^short = "Valor identificador NRPI"
 * identifier[RNPI].value ^definition = "Valor del RUN en la Cédula de Identidad entregada por el Registro Civil, en formato sin puntos y con guión para diferencia el dígito verificador"
@@ -67,7 +67,7 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
  
 * telecom and gender and birthDate  MS
 * telecom ^definition = "Numero de contacto telefonico"
-* telecom.use ^short = "Uso del contacto descrito, de debe utilizar ´phone´ y ´email´, en caso que agreguemos los dos datos."
+* telecom.use ^short = "Uso del contacto descrito, de debe utilizar \"phone\" y \"email\", en caso que agreguemos los dos datos."
 
 
 * gender 1..1
@@ -126,7 +126,7 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * qualification[Cert].identifier.value ^definition = "Número de id del certificado"
 */
 * qualification[Cert].code.coding.system ^short = "El sistema sobre el cual se verificarán los titulos o certificados de los Prestadores"
-* qualification[Cert].code.coding.system ^definition = "La url sobre la cual se encuentra el endPoint para el acceso a  los códigos de titulos y/o certificados de prestadores. El perfil especifica que se debe usar la siguiente url:  ´https://api.minsal.cl/v1/catalogos/profesiones/´"
+* qualification[Cert].code.coding.system ^definition = "La url sobre la cual se encuentra el endPoint para el acceso a  los códigos de titulos y/o certificados de prestadores. El perfil especifica que se debe usar la siguiente url:  \"https://api.minsal.cl/v1/catalogos/profesiones/\""
 //* qualification[Cert].code.coding.system = "https://api.minsal.cl/v1/catalogos/profesiones/"
 
 * qualification[Cert].code.coding.display MS
@@ -151,7 +151,7 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * qualification[Esp].identifier.value ^short = "Codigo de la especialidad"
 
 * qualification[Esp].code.coding.system ^short = "El sistema sobre el cual se verificarán las especialidades de los Prestadores"
-* qualification[Esp].code.coding.system ^definition = "la url sobre la cual se encuentra el endPoint para el acceso a  los códigos de especialidades de prestadores. El perfil especifica  ´https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/´"
+* qualification[Esp].code.coding.system ^definition = "la url sobre la cual se encuentra el endPoint para el acceso a  los códigos de especialidades de prestadores. El perfil especifica  \"https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/\""
 //* qualification[Esp].code.coding.system = #https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/
 * qualification[Esp].code.coding.display MS
 * qualification[Esp].code.coding.display 1..1
@@ -165,7 +165,7 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 
 Instance : PrestadorCL
 Title : "Ejemplo de Recurso Prestador como base para un Core Nacional"
-Description: "Ejemplo de un Prestador no Real con identificadores en Systemas con API´s no disponibles"
+Description: "Ejemplo de un Prestador no Real con identificadores en Systemas con API\"s no disponibles"
 InstanceOf : CorePrestadorCl
 
 * id = "3240"	
