@@ -89,16 +89,18 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * address.city ^short = "Campo para Comuna de residencia"
 * address.city ^definition = "Campo para Comuna de residencia. Se usa el valueSet de códigos de comunas definidos a nivel naciona."
 * address.city from VSCodigosComunaCL (required)
+* address.city ^binding.description = "Códigos Comuna, Ministerio del Interior, 2018" 
 * address.district ^short = "Campo para Provincia de Residencia"
 * address.district ^definition = "Campo para Provincia de Residencia. Se usa el valueSet de códigos de provicias definidos a nivel naciona."
 * address.district from VSCodigosProvinciasCL (required)
+* address.district ^binding.description = "Códigos Provincia, Ministerio del Interior, 2018" 
 * address.state ^short = "Campo para la Región"
 * address.state ^definition = "Campo Región. Se usa el valueSet de códigos de regiones definidos a nivel naciona."
 * address.state from VSCodigosRegionesCL (required)
+* address.state ^binding.description = "Códigos Regiones, Ministerio del Interior, 2018" 
 * address.country ^short = "Campo para País de Residencia"
 * address.country ^definition = "Campo para País de Residencia"
 * address.country from CodPaises (required)
-
 
 
 * qualification MS
@@ -115,19 +117,10 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 
 * qualification[Cert] ^short = "Especificación de los Títulos o Certificados Profesionales que tiene el Prestador"
 * qualification[Cert] ^definition = "Listado de Títulos o Cetificados Profesionales que tiene el prestador. Solo se consideran aquellos que pueden ser demostrados en consulta a la casa de estudios pertinente"
-/*
-* qualification[Cert].identifier ^short = "Identificador del certificado o títulos"
-* qualification[Cert].identifier ^definition = "identificación de los títulos o certificados profesionales indicando procedencia y casa de estudios"
-* qualification[Cert].identifier.type from TituloID (extensible) //necesito esta api o tabla o lo que sean
-* qualification[Cert].identifier.type ^short = "Sistema de identificacion de certificados de prestadores"
-* qualification[Cert].identifier.type ^definition = "Sistema basado en la APi de RNPI correspondiente a los  certificados válidos según legislación chilena"
 
-* qualification[Cert].identifier.value ^short = "Número de id del certificado"
-* qualification[Cert].identifier.value ^definition = "Número de id del certificado"
-*/
 * qualification[Cert].code.coding.system ^short = "El sistema sobre el cual se verificarán los titulos o certificados de los Prestadores"
 * qualification[Cert].code.coding.system ^definition = "La url sobre la cual se encuentra el endPoint para el acceso a  los códigos de titulos y/o certificados de prestadores. El perfil especifica que se debe usar la siguiente url:  \"https://api.minsal.cl/v1/catalogos/profesiones/\""
-//* qualification[Cert].code.coding.system = "https://api.minsal.cl/v1/catalogos/profesiones/"
+
 
 * qualification[Cert].code.coding.display MS
 * qualification[Cert].code.coding.display 1..1
@@ -152,7 +145,7 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 
 * qualification[Esp].code.coding.system ^short = "El sistema sobre el cual se verificarán las especialidades de los Prestadores"
 * qualification[Esp].code.coding.system ^definition = "la url sobre la cual se encuentra el endPoint para el acceso a  los códigos de especialidades de prestadores. El perfil especifica  \"https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/\""
-//* qualification[Esp].code.coding.system = #https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/
+
 * qualification[Esp].code.coding.display MS
 * qualification[Esp].code.coding.display 1..1
 * qualification[Esp].code.coding.display ^short = "Nombre de la especialidad"
@@ -163,67 +156,3 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 
 
 
-Instance : PrestadorCL
-Title : "Ejemplo de Recurso Prestador como base para un Core Nacional"
-Description: "Ejemplo de un Prestador no Real con identificadores en Systemas con API\"s no disponibles"
-InstanceOf : CorePrestadorCl
-
-* id = "3240"	
- 
-//Identificación por Cédula Chilena
-* identifier[RUN].use = #official    //obligado
-//* identifier[RUN].system = "https://api.minsal.cl/v1/personas/datos/basicos/run"
-* identifier[RUN].value = "8336277-3" // endPoint definido por perfil
-* identifier[RUN].system = "http://api_run/run"
-* identifier[RNPI].use = #secondary    //obligado
-//* identifier[RNPI].system = "https://apis.superdesalud.gob.cl/api/prestadores/registro/"
-* identifier[RNPI].value = "999999"  // endPoint definido por perfil
-
-
-//registro de prestador activo
-* active = true
-
-//Nombre Prestador
-* name.use = #official
-
-
-* name.family.extension[mothers-family].valueString = "Reyes"
-
-* name.given = "Johanna"
-* name.given[1] = "Rosa"
-
-
-//dos contactos, un celular y un email
-
-* telecom.system = #phone
-* telecom.use = #mobile
-* telecom.value = "9345666"
-
-* telecom[1].system = #email
-* telecom[1].use = #work
-* telecom[1].value = "DraSilva@mimail.com"
-
-//sexo registrado al nacer y fecha de nacimiento
-* gender = #female
-* birthDate = "1974-08-12"
-
-// Una sola dirección
-* address.use = #home
-* address.line = "Naranjos, 22, depto 32"
-* address.city = #09101  //codigo de comuna por binding (temuco)
-* address.district = #091  //codigo de privincia por binding (cautin)
-* address.state = #09 //codigo por binding region (araucania)
-* address.country = #152
-
-//un titulo y una especialidad
-* qualification[Cert].code.coding.system = "https://api.minsal.cl/v1/catalogos/profesiones/"
-* qualification[Cert].code.coding.code = #2112  // endPoint definido por perfil
-* qualification[Cert].code.coding.display = "Certificado Profesional Médico Cirujano" //codigo de título profesional Universitario
-* qualification[Cert].code.text = "Certificado(s)"
-* qualification[Esp].code.coding.system = "https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/"
-* qualification[Esp].code.coding.code = #122  // endPoint definido por perfil
-* qualification[Esp].code.coding.display = "Cardiólogia"
-* qualification[Esp][1].code.coding.system = "https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/"
-* qualification[Esp][1].code.coding.code = #1234  // endPoint definido por perfil
-* qualification[Esp][1].code.coding.display = "Medicina interna"
-* qualification[Esp].code.text = "Especialidad(es)" 

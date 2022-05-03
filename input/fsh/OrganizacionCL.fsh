@@ -25,6 +25,14 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * telecom ^definition = "Contactos de la organización" 
 * telecom.system ^short = "phone | fax | email | pager | url | sms | other  ContactPointSystem (Required)" 
 * telecom.system ^definition = "El tipo de medio de contacto el cual se notifica"
+* telecom.use from  http://hl7.org/fhir/ValueSet/contact-point-use (required)
+* telecom.system ^short = "phone | fax | email | pager | url | sms | other"
+* telecom.system ^definition = "Forma de telecomunicación para el punto de contacto: qué sistema de comunicación se requiere para hacer uso del contacto."
+* telecom.system from  http://hl7.org/fhir/ValueSet/contact-point-system (required)
+* telecom.system ^binding.description = "VS HL7 FHIR tipos diferentes de medios de contacto" 
+* telecom.value ^short = "Dato del contato de la ubicación descrita"
+* telecom.value ^definition = "Valor del contacto como por ejemplo el numero de telefono fijo o de móvil o el email de Organiación"
+
 
 
 
@@ -33,22 +41,26 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 
 * address and address.use and address.line and address.city and address.district and address.state and address.country MS
-* address ^short = "Dirección de la Organización"
+* address ^short = "Dirección de la Localiación"
 * address ^definition = "Se definirá la dirección en una línea y se podría codificar en city la comuna, en district la provincia y en state la región"
 * address.line ^short = "Calle o avenida, numero y casa o depto"
 * address.line ^definition = "Aquí se escribe toda la dirección completa"
 * address.city ^short = "Campo para Comuna de residencia"
 * address.city ^definition = "Campo para Comuna de residencia. Se usa el valueSet de códigos de comunas definidos a nivel naciona."
 * address.city from VSCodigosComunaCL (required)
+* address.city ^binding.description = "Códigos Comuna, Ministerio del Interior, 2018" 
 * address.district ^short = "Campo para Provincia de Residencia"
 * address.district ^definition = "Campo para Provincia de Residencia. Se usa el valueSet de códigos de provicias definidos a nivel naciona."
 * address.district from VSCodigosProvinciasCL (required)
+* address.district ^binding.description = "Códigos Provincia, Ministerio del Interior, 2018" 
 * address.state ^short = "Campo para la Región"
 * address.state ^definition = "Campo Región. Se usa el valueSet de códigos de regiones definidos a nivel naciona."
 * address.state from VSCodigosRegionesCL (required)
+* address.state ^binding.description = "Códigos Regiones, Ministerio del Interior, 2018" 
 * address.country ^short = "Campo para País de Residencia"
 * address.country ^definition = "Campo para País de Residencia"
 * address.country from CodPaises (required)
+
 
 * contact 0..* MS
 * contact ^short = "Contacto de la Organización para ciertos propósitos"
@@ -57,6 +69,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * contact.purpose ^short = "El tipo de contacto"
 * contact.purpose ^definition = "El propósito mediante el cual el contacto puede ser alcanzado"
 * contact.purpose from http://hl7.org/fhir/ValueSet/contactentity-type (extensible)
+* contact.purpose ^binding.description = "Códigos del propósito del contacto, HL7 FHIR"
 * contact.name MS
 * contact.name ^short = "Nombre asociado al contacto"
 * contact.name ^definition = "Nombre asociado al contacto"
@@ -76,32 +89,3 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 
 
-Instance : OrganizacionCl
-Title : "Ejemplo Organización Prestadora de Salud"
-Description: "CESFAM Rio Bueno (Ficticio) con ID DEIS no real"
-InstanceOf : CoreOrganizacionCl
-Usage : #example
-
-	 
-* id = "ORG1"	
-* active = true
-* identifier.system = "http://minsal.cl/deis/codigodeis"
-* identifier.value = "1233"
-
-* name = "Centro de Salud Familiar Rio Bueno de Linares"	
-* alias = "Rio Bueno CESFAM"
-
-* telecom.system = #phone
-* telecom.use = #work
-* telecom.value = "45325775"
-	
-	
-
-* address.line = "Calle Central 33"
-* address.city = #07401  //codigo de comuna por binding (linares, no validable aun)
-* address.district = #074  //codigo de comuna por binding (linares, no validable aun)
-* address.state = #07 //codigo por binding region (maule)
-* address.country = #152	
-	
-	
-	

@@ -5,12 +5,12 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.cl.CoreCH
 canonical: https://hl7chile.cl/fhir/ig/CoreCL
-version: 1.2.0 
+version: 1.4.0 
 name: CoreCL-DEV
 
-title: Guía de Implementación Core-CL FHIR R4, Versión Evolutiva)
+title: Guía de Implementación Core-CL FHIR R4, (Versión Evolutiva)
 status: draft
-date: 2022-01
+date: 2022-05
 publisher: 
   name: HL7 Chile
   url: http://hl7chile.cl

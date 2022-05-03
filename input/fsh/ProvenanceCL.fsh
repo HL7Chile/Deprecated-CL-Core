@@ -29,6 +29,7 @@ Description:    "Este Perfil describe la forma de validación respecto a la proc
 * activity ^short = "Actividad que ocurrió" 
 * activity ^definition = "Una actividad es algo que ocurre durante un período de tiempo y actúa sobre o con entidades; puede incluir el consumo, el procesamiento, la transformación, la modificación, la reubicación, el uso o la generación de entidades."
 * activity.coding.code from http://hl7.org/fhir/ValueSet/provenance-activity-type (extensible)
+* activity.coding.code ^binding.description = "VS HL7 FHIR"
 
 //Quien envia
 
@@ -39,11 +40,13 @@ Description:    "Este Perfil describe la forma de validación respecto a la proc
 
 * agent.type 0..1
 * agent.type.coding.system from http://hl7.org/fhir/ValueSet/provenance-agent-type (extensible)
+* agent.type.coding.system ^binding.description = "VS HL7 FHIR, tipo de agente"
 * agent.type ^short = "Referencia a lo que ejecuta el actor"
 * agent.type ^definition = "participacion del actor, que rol cumple"
 
 * agent.role 0..1 
 * agent.role.coding.system from http://hl7.org/fhir/ValueSet/security-role-type (example)
+* agent.role.coding.system ^binding.description = "VS HL7 FHIR, tipo de código"
 * agent.role ^short = "El rol especifico del agente" 
 * agent.role ^definition = "La función del agente con respecto a la actividad. La función de seguridad que habilita al agente con respecto a la actividad."
 
@@ -60,6 +63,7 @@ Description:    "Este Perfil describe la forma de validación respecto a la proc
 * signature.type ^short = "Indicación de la razón por la que la entidad firmó el objeto o los objetos"
 * signature.type ^definition = "Indicación del motivo por el que la entidad ha firmado este documento. Puede incluirse explícitamente como parte de la información de la firma y puede utilizarse a la hora de determinar la responsabilidad de diversas acciones relativas al documento."
 * signature.type from http://hl7.org/fhir/ValueSet/signature-type (preferred)
+* signature.type ^binding.description = "VS Propósito de la firma"
 
 
 * signature.when 1..1
@@ -85,44 +89,3 @@ Description:    "Este Perfil describe la forma de validación respecto a la proc
 
 
 
-Instance : EjemplValidacionProvCl
-Title : "Ejemplo de la Validación de una Receta por medio del Prescriptor"
-Description: "Ejemplo de una Receta en Request Group que contiene una receta, en la cual el prestador que la ha desarollado genera una validación por medio de una firma" 
-InstanceOf : ProvenanceCl
-Usage: #example
-
-
-
-
-* target.reference = "RequestGroup/RG12224"
-
-* recorded =  2015-08-27T08:39:24+10:00
-
-* activity.coding.system = "http://terminology.hl7.org/CodeSystem/v3-DocumentCompletion"
-* activity.coding.code = #LA
-* activity.coding.display = "legally authenticated"
-
-* agent.type.coding.system = "http://terminology.hl7.org/CodeSystem/provenance-participant-type"   
-* agent.type.coding.code = #author
-* agent.type.coding.display = "author"
-* agent.who.reference = "Practitioner/3240"
-
-* signature.type.system = "urn:iso-astm:E1762-95:2013"
-* signature.type.code = #1.2.840.10065.1.12.1.1
-* signature.when = 2015-08-27T08:39:24+10:00
-
-* signature.who = Reference(Practitioner/3240)
-
-* signature.sigFormat = #application/signature+xml
-* signature.data = "Li4u"
-
-
-Instance: example
-InstanceOf: RequestGroup
-Description: "Solo un ejemplo"
-Usage: #example
-
-* id = "RG12224"
-
-* status = #draft
-* intent = #plan

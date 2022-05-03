@@ -33,26 +33,3 @@ Description:    "Este Perfil describe como debe ser el recurso Bundle que permit
 * entry ^short = "Se agregan los recursos que se desean adjuntar dentro del bundle en el elemento fullUrl"
 * entry.fullUrl ^short = "URL absoluta del recurso a vincular"
 
-Instance: BundleEx
-InstanceOf: BundleCl
-Title : "Ejemplo Simple de Bundle de Transacción"
-Description: "Bundle de Transacción con un recurso Practitioner y un Recurso Organization"
-Usage: #example
-
-* identifier.system = "http://sistema.cl/Transacciones/"
-* identifier.value = "Bundle-001"
-
-* type = #transaction
-* timestamp = "2020-09-25T00:00:00-03:00"
-
-* entry[0].fullUrl = "Organization/ORG1"
-
-
-* entry[=].request.method = #POST
-* entry[=].request.url = "Organization"
-
-* entry[+].fullUrl = "Practitioner/3020"
-
-* entry[=].request.method = #POST
-* entry[=].request.url = "Practitioner"
-

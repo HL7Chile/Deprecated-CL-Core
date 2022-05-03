@@ -10,6 +10,7 @@ Description: "Perfil para genererar un recurso que permita desarrollar logs de a
 * type ^short = "Tipo/identificación del Evento"
 * type ^definition = "Identificador de una familia del evento. Por ejemplo, un elemento de menú, un programa, una regla, una política, un código de función, un nombre de aplicación o una URL. Identifica la función realizada."
 * type from http://hl7.org/fhir/ValueSet/audit-event-type (extensible)
+* type ^binding.description = "Eventos de auditoría descritos en DICOM"
 * type.system  MS
 
 
@@ -33,6 +34,7 @@ Description: "Perfil para genererar un recurso que permita desarrollar logs de a
 * subtype.system ^definition = "Sistema de ejemplo de códigos que describen con mas detalle el evento"
 * subtype.code 1.. MS
 * subtype from http://hl7.org/fhir/ValueSet/audit-event-sub-type (extensible)
+* subtype ^binding.description = "Códigos de DICOM"
 
 * subtype.code ^short = "Codigo"
 * subtype.code ^definition = "Codigo del Subtipo"
@@ -43,6 +45,7 @@ Description: "Perfil para genererar un recurso que permita desarrollar logs de a
 
 * action 1..1 MS
 * action from  http://hl7.org/fhir/ValueSet/audit-event-action (required)
+* action ^binding.description = "Códigos fijos extraídos de DICOM"
 * action ^short = "Create| Read/View/Print | Update | Delete | Execute"
 * action ^definition = "Código de la acción"
 * period 0.. MS
@@ -54,7 +57,8 @@ Description: "Perfil para genererar un recurso que permita desarrollar logs de a
 
 * outcome 0..1 MS
 * outcome ^short = "Resultado de la operación"
-* outcome from http://hl7.org/fhir/ValueSet/audit-event-outcome 
+* outcome from http://hl7.org/fhir/ValueSet/audit-event-outcome
+* outcome ^binding.description = "Códigos extraídos de DICOM" 
 
 * agent 1..* MS
 * agent ^short = "Quienes actuaron en el evento"
@@ -74,6 +78,7 @@ Description: "Perfil para genererar un recurso que permita desarrollar logs de a
 * agent.network.type ^short = "Código del tipo de identificación"
 * agent.network.type ^definition = "Un tipo de identificador para el tipo de punto de acceso a la red que originó el evento de auditoría."
 * agent.network.type from http://hl7.org/fhir/ValueSet/network-type (required)
+* agent.network.type ^binding.description = "Códigos extraídos de DICOM" 
 
 * source 1..1 MS
 * source ^short = "Quien reporta el evento"
@@ -91,29 +96,3 @@ Description: "Perfil para genererar un recurso que permita desarrollar logs de a
 * entity.what ^definition = "Recurso o identificación de la entidad que registra la ocurrencia del evento"
 
 
-Instance: AuditEventEx
-InstanceOf: AuditEventCl
-Title : "Ejemplo de un Audit-Event Search."
-Description: "Log de Audición de una operacion Search."
-
-
-Usage: #example
-* type = http://terminology.hl7.org/CodeSystem/audit-event-type#rest "Restful Operation"
-* subtype = http://hl7.org/fhir/restful-interaction#search "search"
-* action = #E
-* recorded = "2021-08-22T23:42:24Z"
-* outcome = #0
-* agent[0].type = http://terminology.hl7.org/CodeSystem/extra-security-role-type#humanuser "human user"
-* agent[=].who.identifier.value = "95"
-* agent[=].altId = "601847123"
-* agent[=].name = "Grahame Grieve"
-* agent[=].requestor = true
-
-* agent[=].network.address = "Workstation1.ehr.familyclinic.com"
-* agent[=].network.type = #1
-
-
-* source.observer.reference = "Practitioner/3240"
-
-
-* entity.what.reference = "Organization/ORG1"

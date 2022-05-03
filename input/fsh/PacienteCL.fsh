@@ -16,10 +16,6 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * extension ^short = "Extensión de Nacionalidad para pacientes extranjeros"
 * extension ^definition = "Para hacer uso de esta extensión se debe agregar el path: extension.url = \"nacionalidad\""
 
-//* extension[nacionalidad].valueCodeableConcept from  CodPaises  
-//* extension.valueCodeableConcept.coding.system ^short = "El sistema de códigos queda definido en la norma ISO3166-1-N"
-//* extension.valueCodeableConcept.coding.system ^definition = "El sistema de códigos queda definido en la norma ISO3166-1-N, en donde el código sería el numero correspondiente designado para el país"
-//* extension MS
 
 
 * identifier  and identifier.use   and identifier.type and identifier.extension  MS
@@ -46,6 +42,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * identifier.type.coding.code ^short = "Código de Tipo de Documento"
 * identifier.type.coding.code ^definition = "Código de Tipo de Documento"
 * identifier.type.coding.code from VSTiposDocumentos
+* identifier.type.coding.code ^binding.description = "Value Set de Tipos de Documentos y CI Nacionales"
 
 * identifier.type.extension ^short = "País de Origen del Documento de Id" 
 
@@ -111,6 +108,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * telecom.system ^short = "phone | fax | email | pager | url | sms | other"
 * telecom.system ^definition = "Forma de telecomunicación para el punto de contacto: qué sistema de comunicación se requiere para hacer uso del contacto."
 * telecom.system from  http://hl7.org/fhir/ValueSet/contact-point-system (required)
+* telecom.system ^binding.description = "Tipo de contacto para HL7 FHIR"
 * telecom.value ^short = "Dato del contato del paciente descrito"
 * telecom.value ^definition = "Valor del contacto como por ejemplo el numero de telefono fijo o de móvil o el email del Paciente"
 
@@ -130,18 +128,38 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * address.use ^definition = "Se especifica el tipo de dirección notificada. Esto debe ser segun los códigos definidos por HL7 FHIR"
 * address.line ^short = "Calle o avenida, numero y casa o depto"
 * address.line ^definition = "Aquí se escribe toda la dirección completa"
+
 * address.city ^short = "Campo para Comuna de residencia"
-* address.city ^definition = "Campo para Comuna de residencia. Se usa el valueSet de códigos de comunas definidos a nivel naciona."
-* address.city from VSCodigosComunaCL (required)
+* address.city ^definition = "Campo para Comuna de residencia."
+* address.city.extension contains ComunasCl named comunas  0..1  MS
+* address.city.extension ^short = "Código de Comunas"
+* address.city.extension ^definition = "Código de Comunas"
+
+//* address.city from VSCodigosComunaCL (required)
+//* address.city ^binding.description = "Códigos Comuna, Ministerio del Interior, 2018" 
+
 * address.district ^short = "Campo para Provincia de Residencia"
 * address.district ^definition = "Campo para Provincia de Residencia. Se usa el valueSet de códigos de provicias definidos a nivel naciona."
-* address.district from VSCodigosProvinciasCL (required)
+* address.district.extension contains ProvinciasCl named provincias  0..1  MS
+* address.district.extension ^short = "Código de Regiones"
+* address.district.extension ^definition = "Código de Regiones"
+
 * address.state ^short = "Campo para la Región"
 * address.state ^definition = "Campo Región. Se usa el valueSet de códigos de regiones definidos a nivel naciona."
-* address.state from VSCodigosRegionesCL (required)
+//* address.state from VSCodigosRegionesCL (required)
+//* address.state ^binding.description = "Códigos Regiones, Ministerio del Interior, 2018" 
+* address.state.extension contains RegionesCl named regiones  0..1  MS
+* address.state.extension ^short = "Código de Regiones"
+* address.state.extension ^definition = "Código de Regiones"
+
 * address.country ^short = "Campo para País de Residencia"
 * address.country ^definition = "Campo para País de Residencia"
-* address.country from CodPaises (required)
+
+* address.country.extension contains CodigoPaises named paises  0..1  MS
+* address.country.extension ^short = "Código de Países"
+* address.country.extension ^definition = "Código de Países"
+
+
 
 * contact MS 
 * contact ^short = "Contacto, tutor legal o representante del Paciente"
@@ -153,6 +171,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * contact.relationship ^short = "Relación entre el contacto y el paciente"
 * contact.relationship ^short = "Relación legal o de paretezco entre el contacto y el paciente"
 * contact.relationship from 	http://hl7.org/fhir/ValueSet/patient-contactrelationship
+* contact.relationship ^binding.description = "VS FHIR para relación del contacto con el Paciente"
 * contact.name 1..1 MS 
 * contact.name ^short = "Nombre del Contacto"
 * contact.name ^definition = "Nombre del contacto asociado al paciente"
@@ -173,189 +192,6 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * contact.name.given ^definition = "Todos los nombres  no necesariamente solo el Primero"
 
 
-
-
-Extension:   PaisOrigenNacionalidadCl
-Id:          CodigoPaises
-Title:       "Codigo de Identificación de países"
-Description: "Esta extensión incluye códigos de paises de origen"
-* value[x] only CodeableConcept
-* value[x] ^short = "Código de País"
-* valueCodeableConcept.coding.system from CodPaises (extensible)
-
-
-Extension:   IdentificacionContactoCl
-Id:          IdContacto
-Title:       "Identificación del Contacto de un Paciente"
-Description: "Identificación de contacto de paciente en especial para casos en los cuales este actúa como Tutor Legal"
-* extension contains
-	tutId 1..* MS and
-	docProc 1..1 MS
-* extension[tutId] ^short = "Identificación del Tutor"
-* extension[tutId].value[x] only Identifier
-* extension[docProc] ^short = "País de procedencia del documento"
-* extension[docProc].value[x] only Coding
-* extension[docProc].valueCoding from CodPaises (required)
-  
-Instance : PacienteCL
-Title : "Ejemplo de Recurso Paciente Nacional"
-Description: "Paciente ficticio nacional CI Chilena, sin sistema de validación \"http://regcivil.cl/Validacion/RUN\" ficticio , cuyo nombre se decribe mediante el oficial y uno social. La dirección tampoco es Real"
-InstanceOf : CorePacienteCl
-Usage : #example
-
-	 
-	//Identificación por Cédula Chilena
-* identifier.use = #official    //obligado
-* identifier.type.extension[paises].valueCodeableConcept.coding.system =  "urn:iso:std:iso:3166"
-* identifier.type.extension[paises].valueCodeableConcept.coding.code = #152
-* identifier.type.extension[paises].valueCodeableConcept.coding.display = "Chile"
-* identifier.type.coding.system = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodigoDNI"
-* identifier.type.coding.code = #NNCHL
-* identifier.type.coding.display = "Chile"
-
-* identifier.system = "http://regcivil.cl/Validacion/RUN"
-* identifier.value = "15.236.327-k"
-
-//registro de paciente activo
-* active = true
-
-//Nombre Oficial
-* name[NombreOficial].use = #official
-* name[NombreOficial].family = "Rosales"
-* name[NombreOficial].family.extension[mothers-family].valueString	 = "Bosh" //uso de la extensión
-* name[NombreOficial].given = "Marietta"
-* name.given[1] = "María"
-* name.given[2] = "Ximena"
-
-//nombre social
-* name[NombreSocial].use = #usual
-* name[NombreSocial].given = "Xime"
-
-//dos contactos, un celular y un email
-* telecom.system = #phone
-* telecom.use = #mobile
-* telecom.value = "943561833"
-
-* telecom[1].system = #email
-* telecom[1].use = #work
-* telecom[1].value = "mariRosal@mimail.com"
-
-//sexo registrado al nacer y fecha de nacimiento
-* gender = #female
-* birthDate = "1983-03-24"
-
-// Una sola dirección
-* address.use = #home
-* address.line = "Av Los Chirimoyos, 32, casa 4"
-* address.city = "05101"  //codigo de comuna por binding (valpo)
-* address.district = "051"  //codigo de provincia por binding (valpo)
-* address.state = "05" //codigo por binding region (valparaiso)
-
-* address.country = #152
-
-
-Instance : PacienteCL2
-Title : "Ejemplo de Recurso Paciente Extranjero"
-Description: "Paciente ficticio extrangero, con identificación Pasaporte de origen Salvadoreño sin sistema real de validación del número de Pasaporte."
-InstanceOf : CorePacienteCl
-Usage : #example
-
-// Nacionalidad por medio de la extensión
-* extension[nacionalidad].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
-* extension[nacionalidad].valueCodeableConcept.coding.code = #222
-* extension[nacionalidad].valueCodeableConcept.coding.display = "El Salvador"
-
- 
-//Identificación por Pasaporte Salvadoreño
-* identifier.use = #official    //obligado
-* identifier.type.extension[paises].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
-* identifier.type.extension[paises].valueCodeableConcept.coding.code = #222
-* identifier.type.extension[paises].valueCodeableConcept.coding.display = "El Salvador"
-* identifier.type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
-* identifier.type.coding.code = #PPN
-* identifier.type.coding.display = "Passport number"
-* identifier.system = "http://Pasaportes.cl/Validacion/Pass"
-* identifier.value = "P3334521.2"
-
-
-//registro de paciente activo
-* active = true
-
-//Nombre Oficial
-* name[NombreOficial].use = #official
-* name[NombreOficial].family = "Cabrales"
-* name[NombreOficial].family.extension[mothers-family].valueString = "Rivas"
-* name[NombreOficial].given = "Wilmer"
-* name[NombreOficial].given[1] = "Andres"
-* name[NombreOficial].given[2] = "de Dios"
-
-
-//un contactos, un email
-
-* telecom.system = #email
-* telecom.use = #home
-* telecom.value = "wilCAB12l@wilmermail.com"
-
-//sexo registrado al nacer y fecha de nacimiento
-* gender = #male
-* birthDate = "1968-11-03"
-
-
-
-// Una sola dirección
-* address.use = #temp
-* address.line = "Calle 4 Norte, 52, pieza 802"
-* address.city = "15101"  //codigo de comuna por binding (Arica)
-* address.district = "151"  //codigo de comuna por binding (Arica)
-* address.state = "15" //codigo por binding region (Arica)
-* address.country = #152
-
- 
-Instance: PacienteCl-3
-InstanceOf: CorePacienteCl
-Description: "Paciente ficticio nacional CI Chilena con sistema de validación no real, cuyo nombre es solo el oficial. La dirección tampoco es Real"
-Title : "Paciente Nacional, con datos actualizados, declarando nacionalidad"
-Usage: #example
-
-* meta.versionId = "2"
-* meta.lastUpdated = "2021-07-13T00:22:41.166Z"
-
-* extension[nacionalidad].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
-* extension[nacionalidad].valueCodeableConcept.coding.code = #152
-* extension[nacionalidad].valueCodeableConcept.coding.display = "Chile"
-
-* identifier.use = #official
-* identifier.type.extension[paises].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
-* identifier.type.extension[paises].valueCodeableConcept.coding.code = #152
-* identifier.type.extension[paises].valueCodeableConcept.coding.display = "Chile"
-* identifier.type.coding.system = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodigoDNI"
-* identifier.type.coding.code = #NNCHL
-* identifier.type.coding.display = "Chile"
-* identifier.system = "http://regcivil.cl/Validacion/RUN"
-* identifier.value = "15602754-5"
-
-* active = true
-* name[NombreOficial].use = #official
-* name[NombreOficial].family = "PIZARRO"
-
-* name[NombreOficial].family.extension[mothers-family].valueString = "DELGADO" //uso de la extensión
-
-* name[NombreOficial].given[0] = "PABLO"
-* name[NombreOficial].given[+] = "RODRIGO"
-
-* telecom.system = #email
-* telecom.value = "ppizarro.delgado@minsal.cl"
-* telecom.use = #work
-
-* gender = #male
-* birthDate = "1983-08-04"
-
-* address.use = #home
-* address.city = "13120"
-* address.district = "131"
-* address.state = "13"
-* address.country = #152
-* deceasedBoolean = false 
 
 
 

@@ -46,29 +46,8 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * specialty ^short = "Definición de la especialidad médica según DEIS"
 * specialty ^definition = "Definición de la especialidad médica según DEIS, en el decreto correspondiete. la tabla sigue siendo extensible ante futuros elementos agregados a esta"
 * specialty.coding.code  from VSEspecialidadesDeisCL (required)
+* specialty.coding.code ^binding.description = "Códigos de Especialidad DEIS" 
 
 
 
 
-Instance : EspecialidadCL
-Title : "Ejemplo de Recurso de especialidad"
-Description: "Define el Rol de un Médico durante la Operación de un paciente en Urgencia"
-InstanceOf : CoreEspecialidadCl
-
-* active = true
-
-* practitioner.reference = "Practitioner/3240"
-* practitioner.display = "Johanna Rosa Silva Reyes"
-
-* specialty.coding.system = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSEspecialidadesDeisCL"
-* specialty.coding.code = #06
-* specialty.text = "Cirujano Cardiovascular"
-
-* specialty[1].coding.system = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSEspecialidadesDeisCL"
-* specialty[1].coding.code = #03
-* specialty[1].text = "Médico Cardiólogo"
-
-* specialty[2].coding.system = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSEspecialidadesDeisCL"
-* specialty[2].coding.code = #30
-* specialty[2].text = "Médico internista"
- 

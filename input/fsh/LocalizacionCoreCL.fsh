@@ -18,6 +18,7 @@ Description:    "Este perfil determina la ubicación especifica para un evento, 
 
 * status  MS
 * status from http://hl7.org/fhir/ValueSet/location-status
+* status ^binding.description = "Códigos del estado de la localización de HL7 FHIR" 
 * status ^short = "active | suspended | inactive"
 * status ^definition = "Determina el estado de la localización conforme a los códigos definidos por el estándar. Existen los estados de \"activo | suspendido | inactivo\""
 
@@ -33,6 +34,7 @@ Description:    "Este perfil determina la ubicación especifica para un evento, 
 * type ^short = "Tipo de la localización, según V3 Value SetServiceDeliveryLocationRoleType (Extensible)"
 * type ^definition = "Indica el tipo o función que se ejecuta en la locacalización"
 * type.coding.system from http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType (extensible)
+* type.coding.system ^binding.description = "Códigos V3 de Servicios brindados" 
 * type.coding.system ^short = "Sistema de códigos bajo el cual se identifica el tipo o función de la localización"
 * type.coding.system ^definition = "Tipos de localización segun tabla de HL7 Internacional. Es de tipo extensible para poder agregar mas elementos en caso de ser requerido"
 * type.coding.code ^short = "Código del tipo"
@@ -49,6 +51,7 @@ Description:    "Este perfil determina la ubicación especifica para un evento, 
 * telecom.system ^short = "phone | fax | email | pager | url | sms | other"
 * telecom.system ^definition = "Forma de telecomunicación para el punto de contacto: qué sistema de comunicación se requiere para hacer uso del contacto."
 * telecom.system from  http://hl7.org/fhir/ValueSet/contact-point-system (required)
+* telecom.system ^binding.description = "VS HL7 FHIR tipos diferentes de medios de contacto" 
 * telecom.value ^short = "Dato del contato de la ubicación descrita"
 * telecom.value ^definition = "Valor del contacto como por ejemplo el numero de telefono fijo o de móvil o el email del Paciente"
 
@@ -62,12 +65,15 @@ Description:    "Este perfil determina la ubicación especifica para un evento, 
 * address.city ^short = "Campo para Comuna de residencia"
 * address.city ^definition = "Campo para Comuna de residencia. Se usa el valueSet de códigos de comunas definidos a nivel naciona."
 * address.city from VSCodigosComunaCL (required)
+* address.city ^binding.description = "Códigos Comuna, Ministerio del Interior, 2018" 
 * address.district ^short = "Campo para Provincia de Residencia"
 * address.district ^definition = "Campo para Provincia de Residencia. Se usa el valueSet de códigos de provicias definidos a nivel naciona."
 * address.district from VSCodigosProvinciasCL (required)
+* address.district ^binding.description = "Códigos Provincia, Ministerio del Interior, 2018" 
 * address.state ^short = "Campo para la Región"
 * address.state ^definition = "Campo Región. Se usa el valueSet de códigos de regiones definidos a nivel naciona."
 * address.state from VSCodigosRegionesCL (required)
+* address.state ^binding.description = "Códigos Regiones, Ministerio del Interior, 2018" 
 * address.country ^short = "Campo para País de Residencia"
 * address.country ^definition = "Campo para País de Residencia"
 * address.country from CodPaises (required)
@@ -103,44 +109,4 @@ Description:    "Este perfil determina la ubicación especifica para un evento, 
 * availabilityExceptions ^short = "Descripción de Excepciones de ubicación habilitada."
 * availabilityExceptions ^definition = "Una descripción de los casos en los que la apertura de los lugares es diferente a la normal, por ejemplo, la disponibilidad de los días festivos. Una descripción sucinta de todas las posibles excepciones a la disponibilidad normal del centro, tal y como se detalla en el horario de apertura."
 
-
-Instance : LocalizacionEjemploCL1
-Title : "Ejemplo Localización Farmacia"
-Description: "Ejemplo de la localización relacionada con una Farmacia específica ubicada en la comuna de Viña del Mar"
-InstanceOf : CoreLocalizacionCl
-
-* identifier.value = "23144561"
-* identifier.system = "http://miderfarm.cl/validador_id"
-* status = #active
-* name = "Gran Farmacia Gran"
-* alias = "La gran"
-
-* type.coding.code = #PHARM
-* type.coding.system = "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
-* type.coding.display = "Pharmacy"
-
-* telecom.system = #phone
-* telecom.value = "(+56) 234221678"
-* telecom.use = #work
-
-* address.line = "Calle 10 Norte, 1240, Viña del Mar"
-* address.city = #05109 
-* address.district = #051
-* address.state = #05
-* address.country = #152
-
-* position.longitude = 42.2565
-* position.latitude = -71.550261
-
-* managingOrganization.reference = "Organization/ORG1"
-
-* hoursOfOperation.daysOfWeek = #mon
-* hoursOfOperation.daysOfWeek = #tue
-* hoursOfOperation.daysOfWeek = #wed
-* hoursOfOperation.daysOfWeek = #thu
-* hoursOfOperation.daysOfWeek = #fri
-* hoursOfOperation.daysOfWeek = #sat
-* hoursOfOperation.allDay = false
-* hoursOfOperation.openingTime = 09:00:00
-* hoursOfOperation.openingTime = 19:00:00
 
