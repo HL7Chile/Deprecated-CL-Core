@@ -310,6 +310,7 @@ Usage: #example
 * contact.name.given[+] = "Josefa"
 
 
+
 Instance: AuditEventEx
 InstanceOf: AuditEventCl
 Title : "Ejemplo de un Audit-Event Search."
