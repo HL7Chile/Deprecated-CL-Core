@@ -1,11 +1,10 @@
 {
     "name": "715.fhir.template",
     "version": "0.1.0",
-    "type": "fhir.template",    
+    "type": "fhir.template",
     "description": "715 FHIR Template - experimental",
     "base": "fhir.base.template",
     "dependencies": {
-      "fhir.base.template": "current"
+        "fhir.base.template": "current"
     }
-  }
-  
+}
