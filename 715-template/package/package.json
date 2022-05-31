@@ -1,5 +1,5 @@
 {
-    "name": "715.fhir.template",
+    "name": "715-template",
     "version": "0.1.0",
     "type": "fhir.template",
     "description": "715 FHIR Template - experimental",
