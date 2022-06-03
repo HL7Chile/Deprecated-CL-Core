@@ -10,26 +10,26 @@ Extension:   ComunasCl
 Id:          ComunasCl
 Title:       "Códigos para Comunas en Chile"
 Description: "Esta extensión que permite codiificar las Comunas en Chile en el campo de Dirección"
-* value[x] only CodeableConcept
+* value[x] only code
 * value[x] ^short = "Código de Comunas"
-* valueCodeableConcept.coding.system from VSCodigosComunaCL (extensible)
+* valueCode from VSCodigosComunaCL (extensible)
 
 
 Extension:   ProvinciasCl
 Id:          ProvinciasCl
 Title:       "Códigos para Provincias en Chile"
 Description: "Esta extensión que permite codificar las Provincias en Chile en el campo de Dirección"
-* value[x] only CodeableConcept
+* value[x] only code
 * value[x] ^short = "Código de Provincias"
-* valueCodeableConcept.coding.system from VSCodigosProvinciasCL (extensible)
+* valueCode  from VSCodigosProvinciasCL (extensible)
 
 Extension:   RegionesCl
 Id:          RegionesCl
 Title:       "Códigos para Regiones en Chile"
 Description: "Esta extensión que permite codificar las Regiones en Chile en el campo de Dirección"
-* value[x] only CodeableConcept
+* value[x] only code
 * value[x] ^short = "Código de Provincias"
-* valueCodeableConcept.coding.system from VSCodigosRegionesCL (extensible)
+* valueCode  from VSCodigosRegionesCL (extensible)
 
 Extension:   IdentificacionContactoCl
 Id:          IdContacto

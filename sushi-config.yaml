@@ -22,6 +22,7 @@ copyright: "Usado con el permiso de HL7 International, todos los derechos reseva
 license: CC0-1.0
 fhirVersion: 4.0.1
 
+
 pages: 
   index.md:
     title: Inicio

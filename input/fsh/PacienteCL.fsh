@@ -26,8 +26,8 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 * identifier 1..* 
 * identifier.use ^short = "usual | official | temp | secondary | old (If known)"
-* identifier.use ^definition = "Se definirá este uso siempre como \"official\" debido a que cualquier ID presentado para motivos de este perfil deb ser de este tipo"
-* identifier.use = #official 
+* identifier.use ^definition = "De contar el Paciente con una Cédula de Identidad Nacional, se sugiere el uso de esta como identificador"
+//* identifier.use = #official 
 * identifier.use ^comment = "Se definirá como official pues en una primera etapa solo se considerarán los identidicadores en esa categoría. Para una segunda etapa se abrirá este elemento para cualquier clase de identificador" 
 
 
@@ -190,6 +190,18 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * contact.name.given 1.. MS
 * contact.name.given ^short = "Primer nombre y nombres del Contacto o Representante Legal"
 * contact.name.given ^definition = "Todos los nombres  no necesariamente solo el Primero"
+
+* communication 0..*
+* communication ^short = "Lenguaje en el cual se puede comunicar con el paciente"
+* communication ^definition = "Lenguaje en el cual se puede comunicar con el paciente"
+  * language ^short = "Lenguaje específico"
+  * language ^definition = "Código del lenguaje específico"
+  * language from http://hl7.org/fhir/ValueSet/all-languages 
+  * language ^binding.description = "Value Set de HL7, # de elementos es muy grande para poder visualizarlo"
+
+* generalPractitioner 0..* 
+* generalPractitioner ^short = "Proveedor de Salud designado como principal"
+* generalPractitioner ^definition = "Proveedor de Salud designado como principal"
 
 
 

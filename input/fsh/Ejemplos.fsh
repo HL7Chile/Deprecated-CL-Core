@@ -24,9 +24,9 @@ Usage : #example
 * name[NombreOficial].use = #official
 * name[NombreOficial].family = "Rosales"
 * name[NombreOficial].family.extension[mothers-family].valueString	 = "Bosh" //uso de la extensión
-* name[NombreOficial].given = "Marietta"
-* name.given[1] = "María"
-* name.given[2] = "Ximena"
+* name[NombreOficial].given[0] = "Marietta"
+* name[NombreOficial].given[+] = "María"
+* name[NombreOficial].given[+] = "Ximena"
 
 //nombre social
 * name[NombreSocial].use = #usual
@@ -193,14 +193,14 @@ Usage: #example
 * identifier.value = "P102145874"
 
 * active = true
-* name[0].use = #official
-* name[=].family = "Ortega"
-* name[=].family.extension.url = "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family"
-* name[=].family.extension.valueString = "Callejas"
-* name[=].given[0] = "Juan"
-* name[=].given[+] = "José"
-* name[+].use = #usual
-* name[=].given = "JuanJo"
+* name[NombreOficial].use = #official
+* name[NombreOficial].family = "Ortega"
+* name[NombreOficial].family.extension.url = "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family"
+* name[NombreOficial].family.extension.valueString = "Callejas"
+* name[NombreOficial].given[0] = "Juan"
+* name[NombreOficial].given[+] = "José"
+* name[NombreSocial].use = #usual
+* name[NombreSocial].given = "JuanJo"
 * telecom.system = #email
 * telecom.value = "juan@jo.cl"
 * telecom.use = #home
@@ -266,14 +266,14 @@ Usage: #example
 * identifier.value = "P102145874"
 
 * active = true
-* name[0].use = #official
-* name[=].family = "Ortega"
-* name[=].family.extension.url = "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family"
-* name[=].family.extension.valueString = "Callejas"
-* name[=].given[0] = "Juan"
-* name[=].given[+] = "José"
-* name[+].use = #usual
-* name[=].given = "JuanJo"
+* name[NombreOficial].use = #official
+* name[NombreOficial].family = "Ortega"
+* name[NombreOficial].family.extension.url = "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family"
+* name[NombreOficial].family.extension.valueString = "Callejas"
+* name[NombreOficial].given[0] = "Juan"
+* name[NombreOficial].given[+] = "José"
+* name[NombreSocial].use = #usual
+* name[NombreSocial].given = "JuanJo"
 * telecom.system = #email
 * telecom.value = "juan@jo.cl"
 * telecom.use = #home
@@ -281,14 +281,15 @@ Usage: #example
 * birthDate = "1980-08-04"
 * address.use = #home
 * address.city = "Ñuñoa"
-* address.city.extension[comunas].valueCodeableConcept.coding.code = #13120
+* address.city.extension[comunas].valueCode = #13120
 * address.district = "Santiago"
-* address.district.extension[provincias].valueCodeableConcept.coding.code = #131
+* address.district.extension[provincias].valueCode = #131
 * address.state = "Metropolitana de Santiago"
-* address.state.extension[regiones].valueCodeableConcept.coding.code = #13
+* address.state.extension[regiones].valueCode = #13
 
 * address.country = "Chile"
 * address.country.extension[paises].valueCodeableConcept.coding.code = #152
+* address.country.extension[paises].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
 
 * contact.extension.url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/IdContacto"
 * contact.extension.extension[0].url = "tutId"
