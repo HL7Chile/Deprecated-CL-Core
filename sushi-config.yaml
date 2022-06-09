@@ -3,7 +3,7 @@
 # │  supported properties, see:                                                                    │
 # │  https://fshschool.org/docs/sushi/configuration/#full-configuration                            │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: hl7.fhir.cl.CoreCL
+id: hl7.fhir.cl.corecl
 canonical: https://hl7chile.cl/fhir/ig/CoreCL
 version: 1.4.0 
 name: CoreCL-DEV
