@@ -362,6 +362,7 @@ Usage: #example
 * entry[=].request.method = #POST
 * entry[=].request.url = "Practitioner"
 
+
 Instance : EspecialidadCL
 Title : "Ejemplo de Recurso de especialidad"
 Description: "Define el Rol de un Médico durante la Operación de un paciente en Urgencia"
@@ -383,7 +384,7 @@ InstanceOf : CoreEspecialidadCl
 * specialty[2].coding.system = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSEspecialidadesDeisCL"
 * specialty[2].coding.code = #30
 * specialty[2].text = "Médico internista"
- 
+
 
  Instance : LocalizacionEjemploCL1
 Title : "Ejemplo Localización Farmacia"

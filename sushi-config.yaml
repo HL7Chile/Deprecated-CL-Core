@@ -5,7 +5,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.cl.corecl
 canonical: https://hl7chile.cl/fhir/ig/CoreCL
-version: 1.4.0 
+version: 1.5.0 
 name: CoreCL-DEV
 
 title: Guía de Implementación Core-CL FHIR R4, (Versión Evolutiva)
@@ -72,6 +72,8 @@ menu:
     Medicamento: StructureDefinition-CoreMedicamentoCl.html
     Localización: StructureDefinition-CoreLocalizacionCl.html
     Provenance: StructureDefinition-ProvenanceCl.html
+    Encounter: StructureDefinition-EncounterCL.html
+    Inmunizacion: StructureDefinition-ImmunizationCL.html
     Auditoría: StructureDefinition-AuditEventCl.html
     Bundle: StructureDefinition-BundleCl.html
   Ejemplos: Set-Ejemplos.html

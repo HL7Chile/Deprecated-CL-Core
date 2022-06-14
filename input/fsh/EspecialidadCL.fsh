@@ -1,4 +1,4 @@
-Profile:        EspecialidadCL
+Profile:        CoreEspecialidadCl
 Parent:         PractitionerRole
 Id:             CoreEspecialidadCl
 Title:          "Perfil utilizaco para asignar una o mas especialidades medicas a un prestador de salud."
