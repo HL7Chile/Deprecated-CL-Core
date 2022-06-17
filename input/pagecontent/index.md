@@ -38,6 +38,9 @@ Tambien se presenta una tabla jerárquica con una vista lógica del contenido co
 * [Localización_CL](StructureDefinition-CoreLocalizacionCl.html)
 * [Provenance_CL](StructureDefinition-ProvenanceCl.html)
 * [Auditoría_CL](StructureDefinition-AuditEventCl.html)
+* [Encuetro_CL](StructureDefinition-EncuetroCL.html)
+* [Inmunizacion_CL](StructureDefinition-ImmunizationCL.html)
+* [Documento_CL](StructureDefinition-DocumentoCl.html)
 * [Bundle_CL](StructureDefinition-BundleCl.html)
 <br>
 <br>

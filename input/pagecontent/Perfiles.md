@@ -12,4 +12,7 @@ Los siguientes son el listado de perfiles definidos para el Core Nacional
 * [Localización_CL](StructureDefinition-CoreLocalizacionCl.html)
 * [Provenance_CL](StructureDefinition-ProvenanceCl.html)
 * [Auditoría_CL](StructureDefinition-AuditEventCl.html)
+* [Encuentro_CL](StructureDefinition-EncuetroCL.html)
+* [Inmunizacion_CL](StructureDefinition-ImmunizationCL.html)
+* [Documento_CL](StructureDefinition-DocumentoCl.html)
 * [Bundle_CL](StructureDefinition-BundleCl.html)

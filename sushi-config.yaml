@@ -72,8 +72,9 @@ menu:
     Medicamento: StructureDefinition-CoreMedicamentoCl.html
     Localización: StructureDefinition-CoreLocalizacionCl.html
     Provenance: StructureDefinition-ProvenanceCl.html
-    Encounter: StructureDefinition-EncounterCL.html
-    Inmunizacion: StructureDefinition-ImmunizationCL.html
+    Encuentro: StructureDefinition-EncuetroCL.html
+    Inmunización: StructureDefinition-ImmunizationCL.html
+    Documento: StructureDefinition-DocumentoCl.html
     Auditoría: StructureDefinition-AuditEventCl.html
     Bundle: StructureDefinition-BundleCl.html
   Ejemplos: Set-Ejemplos.html

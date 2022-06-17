@@ -1,3 +1,18 @@
+ValueSet: VSTiposDocClinic
+Id: VSTiposDocClinic
+Title: "Tipos de Documentos Clínicos"
+Description: "Tipos de Documentos clínicos para Composition. Se trae todo Loinc, se requerirá un VS específico"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-05-21T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system http://loinc.org
+
+
 ValueSet: VSTiposEncuentroCL
 Id: VSTiposEncuentro
 Title: "Códigos de Tipos de Encuentro"

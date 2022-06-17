@@ -1,8 +1,8 @@
-Profile: EncounterCL
+Profile: EncuentroCL
 Parent: Encounter
-Id: EncounterCL
-Title: "Encuentro CL"
-Description: "Definición de un Encuentro clínico remoto para las necesidades de interoperabilidad en Chile."
+Id: EncuetroCL
+Title: "Encuentro Clínico para Chile"
+Description: "Definición de un Encuentro clínico  para las necesidades de interoperabilidad en Chile."
 
 
 * identifier 0..* MS
