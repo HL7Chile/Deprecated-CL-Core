@@ -17,16 +17,16 @@ Usage:
     /* IHE changes from ig base project.css : 1-8, 21-28 */
     --ig-status-text-color: #1e0a37;
     /* 1. IG Title and status text color */
-    --navbar-bg-color: #8b3939;
+    --navbar-bg-color: #ad1f2f;
     /* 2. Header container color */
     --footer-bg-color: #706e72;
     /* 3. Footer background color*/
-    --footer-container-bg-color: #50398b;
+    --footer-container-bg-color: #ad1f2f;
     /* 4. Footer container color */
     --stripe-bg-color: #f5f5f5;
     /* 5. Header strip color */
     /* color from bar on www.ihe.net 50398b */
-    --btn-hover-color: #12c95e;
+    --btn-hover-color: #68151f;
     /* 6. Menu button hover color */
     --btn-active-color: #5c5cdf;
     /* 7. Menu button active color */
