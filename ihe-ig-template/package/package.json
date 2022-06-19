@@ -3,7 +3,7 @@
     "type": "fhir.template",
     "license": "CC0-1.0",
     "description": "HL7 Chile FHIR Template",
-    "author": "http://ihe.net",
+    "author": "https://hl7chile.cl",
     "canonical": "http://fhir.org/templates/ihe.fhir.template",
     "base": "fhir.base.template",
     "dependencies": {
