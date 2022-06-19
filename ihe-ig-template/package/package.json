@@ -4,10 +4,10 @@
     "license": "CC0-1.0",
     "description": "HL7 Chile FHIR Template",
     "author": "https://hl7chile.cl",
-    "canonical": "http://fhir.org/templates/ihe.fhir.template",
+    "canonical": "https://hl7chile.cl/fhir/ig/CoreCL/",
     "base": "fhir.base.template",
     "dependencies": {
         "fhir.base.template": "current"
     },
-    "version": "0.5.0"
+    "version": "0.1.0"
 }
