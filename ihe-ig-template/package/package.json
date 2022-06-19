@@ -1,5 +1,5 @@
 ﻿{
-    "name": "ihe.fhir.template",
+    "name": "hl7chile",
     "type": "fhir.template",
     "license": "CC0-1.0",
     "description": "IHE FHIR Template",
