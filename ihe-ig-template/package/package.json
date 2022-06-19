@@ -2,7 +2,7 @@
     "name": "hl7chile",
     "type": "fhir.template",
     "license": "CC0-1.0",
-    "description": "IHE FHIR Template",
+    "description": "HL7 Chile FHIR Template",
     "author": "http://ihe.net",
     "canonical": "http://fhir.org/templates/ihe.fhir.template",
     "base": "fhir.base.template",
