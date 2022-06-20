@@ -120,6 +120,10 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * birthDate ^short = "Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD"
 * birthDate ^definition = "Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD (Ej: 1996-08-21)"
 
+* address only BeAddress
+
+
+/*
 * address and address.use and address.line and address.city and address.district and address.state and address.country MS
 * address ^short = "Dirección del paciente"
 * address ^definition = "Se definirá la dirección en una línea y se podría codificar en city la comuna, en district la provincia y en state la región"
@@ -158,7 +162,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * address.country.extension contains CodigoPaises named paises  0..1  MS
 * address.country.extension ^short = "Código de Países"
 * address.country.extension ^definition = "Código de Países"
-
+*/
 
 
 * contact MS 
