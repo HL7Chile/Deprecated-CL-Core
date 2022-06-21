@@ -120,10 +120,6 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * birthDate ^short = "Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD"
 * birthDate ^definition = "Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD (Ej: 1996-08-21)"
 
-* address only BeAddress
-
-
-/*
 * address and address.use and address.line and address.city and address.district and address.state and address.country MS
 * address ^short = "Dirección del paciente"
 * address ^definition = "Se definirá la dirección en una línea y se podría codificar en city la comuna, en district la provincia y en state la región"
@@ -139,8 +135,8 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * address.city.extension ^short = "Código de Comunas"
 * address.city.extension ^definition = "Código de Comunas"
 
-//* address.city from VSCodigosComunaCL (required)
-//* address.city ^binding.description = "Códigos Comuna, Ministerio del Interior, 2018" 
+* address.city from VSCodigosComunaCL (required)
+* address.city ^binding.description = "Códigos Comuna, Ministerio del Interior, 2018" 
 
 * address.district ^short = "Campo para Provincia de Residencia"
 * address.district ^definition = "Campo para Provincia de Residencia. Se usa el valueSet de códigos de provicias definidos a nivel naciona."
@@ -162,7 +158,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * address.country.extension contains CodigoPaises named paises  0..1  MS
 * address.country.extension ^short = "Código de Países"
 * address.country.extension ^definition = "Código de Países"
-*/
+
 
 
 * contact MS 
@@ -194,6 +190,8 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * contact.name.given 1.. MS
 * contact.name.given ^short = "Primer nombre y nombres del Contacto o Representante Legal"
 * contact.name.given ^definition = "Todos los nombres  no necesariamente solo el Primero"
+* contact.address only BeAddress
+
 
 * communication 0..*
 * communication ^short = "Lenguaje en el cual se puede comunicar con el paciente"
