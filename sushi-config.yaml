@@ -47,7 +47,6 @@ parameters:
   apply-contact: true
   show-inherited-invariants: false
   excludettl: true
-  shownav: true
   generate: genExamples
 
 copyrightyear: '2021+'
