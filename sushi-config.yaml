@@ -26,10 +26,10 @@ fhirVersion: 4.0.1
 pages: 
   index.md:
     title: Inicio
-  Alcances-Objetivos.md:
-    title: Objetivos
   Aspectos-Generales.md:
     title: Generalidades
+  Alcances-Objetivos.md:
+    title: Objetivos
   Consolidado-Operaciones.md:
     title: Operaciones Básicas
   Extensiones.md:
@@ -43,8 +43,12 @@ pages:
 
 parameters:
   apply-publisher: true
+  no-broken-links: true
   apply-contact: true
   show-inherited-invariants: false
+  excludettl: true
+  shownav: true
+  generate: genExamples
 
 copyrightyear: '2021+'
 releaselabel: CI Build

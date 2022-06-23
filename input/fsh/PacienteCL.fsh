@@ -10,7 +10,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
       * system and code MS
 
 
-* extension contains PaisOrigenNacionalidadCl named nacionalidad 0..1   
+* extension contains PaisOrigenNacionalidadCl named nacionalidad 0..1 MS
 
 
 * extension ^short = "Extensión de Nacionalidad para pacientes extranjeros"
@@ -18,7 +18,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 
 
-* identifier  and identifier.use   and identifier.type and identifier.extension  MS
+* identifier and identifier.use and identifier.type and identifier.extension MS
 
 * identifier ^short = "Listados de Id de Paciente. De poseer una CI con RUN vigente, este DEBE ser ingresado"
 * identifier ^definition = "Este es el listado de Identificaciones de un paciente. Se procura como R2 el RUN, pero en caso de no existir ese identificador se debe ocupar otro nacional u otro otorgado por país extranjero"
@@ -27,7 +27,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * identifier 1..* 
 * identifier.use ^short = "usual | official | temp | secondary | old (If known)"
 * identifier.use ^definition = "De contar el Paciente con una Cédula de Identidad Nacional, se sugiere el uso de esta como identificador"
-//* identifier.use = #official 
+
 * identifier.use ^comment = "Se definirá como official pues en una primera etapa solo se considerarán los identidicadores en esa categoría. Para una segunda etapa se abrirá este elemento para cualquier clase de identificador" 
 
 
@@ -43,6 +43,11 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * identifier.type.coding.code ^definition = "Código de Tipo de Documento"
 * identifier.type.coding.code from VSTiposDocumentos
 * identifier.type.coding.code ^binding.description = "Value Set de Tipos de Documentos y CI Nacionales"
+
+* identifier.type.coding.display MS
+* identifier.type.coding.display ^short = "Glosa del Código Documento"
+* identifier.type.coding.display ^definition = "Glosa del Código Documento"
+
 
 * identifier.type.extension ^short = "País de Origen del Documento de Id" 
 
@@ -69,29 +74,32 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * name[NombreOficial] ^short = "Determinación del nombre registrado oficialmente del Paciente"
 * name[NombreOficial] ^definition = "Determinación del nombre registrado oficialmente del Paciente"
 * name[NombreOficial].use = #official
+* name[NombreOficial].use MS
 * name[NombreOficial].use ^short = "uso del nombre del paciente"
 * name[NombreOficial].use ^definition = "este slice corresponde al nombre registrado al momento de nacer, por lo que se fuerza el valor \"official\""
 * name[NombreOficial].use ^comment = "Para ser considerado como el slice determinado para el uso de nombre completo, el use DEBE ser de valor de código \"official\""
 * name[NombreOficial].family ^short = "1er Apellido"
 * name[NombreOficial].family ^definition = "Se define el primer apellido registrado al momento de nacer o aquel que se ha inscrito legalmente en el Registro Civil"
-* name[NombreOficial].family 1..1
-* name[NombreOficial].family.extension contains http://hl7.org/fhir/StructureDefinition/humanname-mothers-family named mothers-family 0..1
+* name[NombreOficial].family 1..1 MS
+* name[NombreOficial].family.extension contains http://hl7.org/fhir/StructureDefinition/humanname-mothers-family named mothers-family 0..1 MS
 * name[NombreOficial].family.extension ^short = "Extensión para 2o apellido"
 * name[NombreOficial].family.extension ^definition = "Extensión para la declaracion de un segundo apellido"
-* name[NombreOficial].given 1..
+* name[NombreOficial].given 1.. MS
 * name[NombreOficial].given ^short = "Primer nombre y nombres del Paciente"
 * name[NombreOficial].given ^definition = "Todos los nombres de los pacientes no necesariamente solo el Primer Nombre"
+
 
 * name[NombreSocial] ^short = "Nombre con el cual se identifica al paciente sin ser este oficial. Se especifica slo en el uso del nombre"
 * name[NombreSocial] ^definition = "Nombre con el cual se identifica al paciente sin ser este oficial. Se especifica slo en el uso del nombre"
 * name[NombreSocial] ^short = "nombre recurrente que usa el paciente"
 * name[NombreSocial].use = #usual
+* name[NombreSocial].use MS  
 * name[NombreSocial].use ^short = "uso que se le da al nombre"
 * name[NombreSocial].use ^definition = "Este uso especifico se enfoca a la definición de un nombre social. Es por esta razón que el uso se fuerza a usual"
 * name[NombreSocial].use ^comment = "Para ser considerado como el slice determinado para el uso de nombre social, el use DEBE ser de valor de código \"usual\""
 * name[NombreSocial].text 0..0  
 * name[NombreSocial].family 0..0
-* name[NombreSocial].given 1..*
+* name[NombreSocial].given 1..* MS
 * name[NombreSocial].given ^short = "Nombre Social"
 * name[NombreSocial].given ^definition = "Nombre Social"
 * name[NombreSocial].prefix 0..0
@@ -99,7 +107,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * name[NombreSocial].period 0..0
  
  
-* telecom and gender and birthDate  MS
+* telecom and telecom.system and telecom.value and telecom.use and gender and birthDate  MS
 * telecom ^short = "Detalles de contacto del Paciente"
 * telecom ^definition = "Detalles del contacto de un paciente comunmente el o los mas usados (Ej: Teléfono fijo, móvil, email, etc.)"
 * telecom.use ^short = "home | work | temp | old | mobile" 
@@ -120,51 +128,15 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * birthDate ^short = "Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD"
 * birthDate ^definition = "Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD (Ej: 1996-08-21)"
 
-* address and address.use and address.line and address.city and address.district and address.state and address.country MS
-* address ^short = "Dirección del paciente"
-* address ^definition = "Se definirá la dirección en una línea y se podría codificar en city la comuna, en district la provincia y en state la región"
-* address.use 1..1
-* address.use ^short = "Definición del tipo de domicilio home | work | temp | old (requerido)"
-* address.use ^definition = "Se especifica el tipo de dirección notificada. Esto debe ser segun los códigos definidos por HL7 FHIR"
-* address.line ^short = "Calle o avenida, numero y casa o depto"
-* address.line ^definition = "Aquí se escribe toda la dirección completa"
-
-* address.city ^short = "Campo para Comuna de residencia"
-* address.city ^definition = "Campo para Comuna de residencia."
-* address.city.extension contains ComunasCl named comunas  0..1  MS
-* address.city.extension ^short = "Código de Comunas"
-* address.city.extension ^definition = "Código de Comunas"
-
-* address.city from VSCodigosComunaCL (required)
-* address.city ^binding.description = "Códigos Comuna, Ministerio del Interior, 2018" 
-
-* address.district ^short = "Campo para Provincia de Residencia"
-* address.district ^definition = "Campo para Provincia de Residencia. Se usa el valueSet de códigos de provicias definidos a nivel naciona."
-* address.district.extension contains ProvinciasCl named provincias  0..1  MS
-* address.district.extension ^short = "Código de Regiones"
-* address.district.extension ^definition = "Código de Regiones"
-
-* address.state ^short = "Campo para la Región"
-* address.state ^definition = "Campo Región. Se usa el valueSet de códigos de regiones definidos a nivel naciona."
-//* address.state from VSCodigosRegionesCL (required)
-//* address.state ^binding.description = "Códigos Regiones, Ministerio del Interior, 2018" 
-* address.state.extension contains RegionesCl named regiones  0..1  MS
-* address.state.extension ^short = "Código de Regiones"
-* address.state.extension ^definition = "Código de Regiones"
-
-* address.country ^short = "Campo para País de Residencia"
-* address.country ^definition = "Campo para País de Residencia"
-
-* address.country.extension contains CodigoPaises named paises  0..1  MS
-* address.country.extension ^short = "Código de Países"
-* address.country.extension ^definition = "Código de Países"
-
+* address only ClAddress or Address
+* address 0..1 MS
 
 
 * contact MS 
 * contact ^short = "Contacto, tutor legal o representante del Paciente"
 * contact ^definition = "Contacto, tutor legal o representante del Paciente"
-* contact.extension contains IdentificacionContactoCl named IdContacto 1..*
+* contact.extension contains IdentificacionContactoCl named IdContacto 1..* MS
+* contact.extension[IdContacto] 1..* MS
 * contact.extension[IdContacto] ^short = "Identificación del Contacto"
 * contact.extension[IdContacto] ^definition = "Extensión para declarar identificación del contacto y la procedencia de esta"
 * contact.relationship 1..1 MS
@@ -176,6 +148,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * contact.name ^short = "Nombre del Contacto"
 * contact.name ^definition = "Nombre del contacto asociado al paciente"
 
+* contact.name.use MS 
 * contact.name.use = #official
 * contact.name.use ^short = "uso del nombre del paciente"
 * contact.name.use ^definition = "Nombre registrado oficialmente en el Registro Civil"
@@ -184,28 +157,42 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * contact.name.family ^short = "1er Apellido"
 * contact.name.family ^definition = "Se define el primer apellido registrado al momento de nacer o aquel que se ha inscrito legalmente en el Registro Civil"
 * contact.name.family 1..1 MS
-* contact.name.family.extension contains http://hl7.org/fhir/StructureDefinition/humanname-mothers-family named mothers-family 0..1
+* contact.name.family.extension contains http://hl7.org/fhir/StructureDefinition/humanname-mothers-family named mothers-family 0..1 MS
+* contact.name.family.extension 1..1 MS
 * contact.name.family.extension ^short = "Extensión para 2o apellido"
 * contact.name.family.extension ^definition = "Extensión para la declaracion de un segundo apellido"
 * contact.name.given 1.. MS
 * contact.name.given ^short = "Primer nombre y nombres del Contacto o Representante Legal"
 * contact.name.given ^definition = "Todos los nombres  no necesariamente solo el Primero"
-* contact.address only BeAddress
 
 
-* communication 0..*
+* communication 0..* MS
 * communication ^short = "Lenguaje en el cual se puede comunicar con el paciente"
 * communication ^definition = "Lenguaje en el cual se puede comunicar con el paciente"
+  * language MS
   * language ^short = "Lenguaje específico"
   * language ^definition = "Código del lenguaje específico"
-  * language from http://hl7.org/fhir/ValueSet/all-languages 
+  //* language from http://hl7.org/fhir/ValueSet/all-languages 
+  * language from VSCodigoslenguaje
   * language ^binding.description = "Value Set de HL7, # de elementos es muy grande para poder visualizarlo"
+  * language.coding 1..1
+  * language.coding MS
+  * language.coding.code 1..1
+  * language.coding.system 1..1
+  * language.coding.display 0..1
+  * language.coding.code and language.coding.system and language.coding.display MS
 
-* generalPractitioner 0..* 
+* generalPractitioner 0..* MS
+* generalPractitioner only Reference(Organization or Practitioner)
 * generalPractitioner ^short = "Proveedor de Salud designado como principal"
 * generalPractitioner ^definition = "Proveedor de Salud designado como principal"
-
-
+  * reference MS
+  * reference ..1
+  * reference ^short = "URI de referencia a la Organización o a un Médico"
+  * reference ^definition = "URI de referencia a la Organización o a un Médico"
+  * display MS
+  * display ^short = "Texto alternativo a la referencia"
+  * display ^definition = "Texto alternativo a la referencia"
 
 
 
