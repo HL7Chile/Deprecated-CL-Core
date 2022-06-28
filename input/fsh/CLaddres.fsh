@@ -22,9 +22,10 @@ Description: "Variable dirección"
 * city ^short = "Campo para Comuna de residencia"
 * city ^definition = "Campo para Comuna de residencia."
 * city 1..1 MS
-* city.extension contains ComunasCl named comunas  1..1  MS
+* city.extension contains ComunasCl named comunas 1..1  MS
 * city.extension ^short = "Código de Comunas"
 * city.extension ^definition = "Código de Comunas"
+//* city.extension.comunas.valueCode MS
 
 * district ^short = "Campo para Provincia de Residencia"
 * district ^definition = "Campo para Provincia de Residencia. Se usa el valueSet de códigos de provicias definidos a nivel naciona."

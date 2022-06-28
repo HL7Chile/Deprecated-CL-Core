@@ -128,8 +128,8 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * birthDate ^short = "Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD"
 * birthDate ^definition = "Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD (Ej: 1996-08-21)"
 
-* address only ClAddress or Address
-* address 0..1 MS
+* address only Address or ClAddress
+
 
 
 * contact MS 
@@ -144,6 +144,11 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * contact.relationship ^short = "Relación legal o de paretezco entre el contacto y el paciente"
 * contact.relationship from 	http://hl7.org/fhir/ValueSet/patient-contactrelationship
 * contact.relationship ^binding.description = "VS FHIR para relación del contacto con el Paciente"
+* contact.relationship.coding and contact.relationship.coding.code and contact.relationship.coding.system and contact.relationship.coding.display MS
+* contact.relationship.coding 1..1
+* contact.relationship.coding.code 1..1
+* contact.relationship.coding.system 1..1
+* contact.relationship.coding.display 0..1
 * contact.name 1..1 MS 
 * contact.name ^short = "Nombre del Contacto"
 * contact.name ^definition = "Nombre del contacto asociado al paciente"
