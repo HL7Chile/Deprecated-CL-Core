@@ -22,6 +22,11 @@ copyright: "Usado con el permiso de HL7 International, todos los derechos reseva
 license: CC0-1.0
 fhirVersion: 4.0.1
 
+#dependencies:
+#  hl7.fhir.cl.recetachile: 
+#    id: RecetaCL
+#    uri: https://build.fhir.org/ig/HL7Chile/CLReceta/
+#    version: 0.9
 
 pages: 
   index.md:
@@ -82,4 +87,3 @@ menu:
     Bundle: StructureDefinition-BundleCl.html
   Ejemplos: Set-Ejemplos.html
   Descargas: Todas-Descargas.html
- 
