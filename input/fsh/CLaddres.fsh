@@ -40,6 +40,7 @@ Description: "Variable dirección"
 * state.extension contains RegionesCl named regiones  1..1  MS
 * state.extension ^short = "Código de Regiones"
 * state.extension ^definition = "Código de Regiones"
+* state.extension.valueCode from VSCodigosRegionesCL (required)
 
 * country ^short = "Campo para País de Residencia"
 * country ^definition = "Campo para País de Residencia"

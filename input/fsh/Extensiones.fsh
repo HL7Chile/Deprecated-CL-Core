@@ -46,7 +46,7 @@ Description: "Esta extensión que permite codificar las Regiones en Chile en el 
 * value[x] ^short = "Código de Provincias"
 * valueCode 1..1 MS
 * url 1..1 MS
-* valueCode  from VSCodigosRegionesCL (extensible)
+* valueCode  from VSCodigosRegionesCL (required)
 
 Extension:   IdentificacionContactoCl
 Id:          IdContacto

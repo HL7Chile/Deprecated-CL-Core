@@ -4,8 +4,7 @@ Description: "Paciente ficticio nacional CI Chilena, sin sistema de validación 
 InstanceOf : CorePacienteCl
 Usage : #example
 
-	 
-	//Identificación por Cédula Chilena
+//Identificación por Cédula Chilena
 * identifier.use = #official    //obligado
 * identifier.type.extension[paises].valueCodeableConcept.coding.system =  "urn:iso:std:iso:3166"
 * identifier.type.extension[paises].valueCodeableConcept.coding.code = #152
@@ -55,7 +54,7 @@ Usage : #example
 * address.district.extension[ProvinciasCl].valueCode = #151 "Arica"
 
 * address.state.extension[RegionesCl].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/RegionesCl"
-* address.state.extension[RegionesCl].valueCode = #03 "Atacama"
+* address.state.extension[RegionesCl].valueCode = #03dfsdfsdfsdf333 "Atacsdfsdfdsfdfdfsdama"
 
 * address.country.extension[CodigoPaises].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises"
 * address.country.extension[CodigoPaises].valueCodeableConcept.coding.system = #CL "Chile"
