@@ -54,7 +54,7 @@ Usage : #example
 * address.district.extension[ProvinciasCl].valueCode = #151 "Arica"
 
 * address.state.extension[RegionesCl].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/RegionesCl"
-* address.state.extension[RegionesCl].valueCode = #03dfsdfsdfsdf333 "Atacsdfsdfdsfdfdfsdama"
+* address.state.extension[RegionesCl].valueCode = #03 "Atacassssma"
 
 * address.country.extension[CodigoPaises].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises"
 * address.country.extension[CodigoPaises].valueCodeableConcept.coding.system = #CL "Chile"
