@@ -1,7 +1,7 @@
 Profile:        PacienteCl
 Parent:         Patient
 Id:             CorePacienteCl
-Title:          "Perfil Paciente Para Core Nacional"
+Title:          "CL Paciente"
 Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso Paciente para un Historial Clínico Nacional"
 
 * identifier MS
@@ -34,6 +34,9 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * identifier.type ^short = "Tipo de documento de Id (Extensible)"
 * identifier.type ^definition = "Se define como tipo de documento de Id, aquel definido en el Sistema de Codificación V2-0203 de Hl7. Este sistema es extensible. Para pacientes sin documeto local deben especificar el de origen. Pacientes sin Id, deben usar el código MR = Local Medical Record, es decir numero del registro clínico abierto en el establecimiento"
 * identifier.type ^comment = "De haber RUN, este se debe usar. De haber Run temporal, se debe usar ese identificador. Pacientes sin identificador Chileno deben usar su CI o Pasaporte de origen. Pacientes sin identificación se debe registrar con el numero de registro clínico generado en el recinto de salud"
+* identifier.type from VSTiposDocumentos 
+* identifier.type ^binding.description = "Value Set de Tipos de Documentos y CI Nacionales"
+
 
 * identifier.type.coding.system ^short = "Sistema de identificación de tipos de documentos"
 * identifier.type.coding.system ^definition = "Sistema mediante el cual se obtienen los códigos para un determinado tipo de documento"
@@ -41,8 +44,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 * identifier.type.coding.code ^short = "Código de Tipo de Documento"
 * identifier.type.coding.code ^definition = "Código de Tipo de Documento"
-* identifier.type.coding.code from VSTiposDocumentos
-* identifier.type.coding.code ^binding.description = "Value Set de Tipos de Documentos y CI Nacionales"
+
 
 * identifier.type.coding.display MS
 * identifier.type.coding.display ^short = "Glosa del Código Documento"
@@ -53,9 +55,8 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 
 * identifier.type.extension ^definition = "Se usa esta extensión para agregarle al tipo de documento el país de origen de este" 
-* identifier.type.extension contains PaisOrigenNacionalidadCl named paises 1..1  
+* identifier.type.extension contains PaisOrigenNacionalidadCl named paises 1..1  MS
 //* identifier.type.extension[paises] from CodPaises (required)
-
 
 
 * name ^slicing.discriminator.type = #value
@@ -73,52 +74,52 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 * name[NombreOficial] ^short = "Determinación del nombre registrado oficialmente del Paciente"
 * name[NombreOficial] ^definition = "Determinación del nombre registrado oficialmente del Paciente"
-* name[NombreOficial].use = #official
-* name[NombreOficial].use MS
-* name[NombreOficial].use ^short = "uso del nombre del paciente"
-* name[NombreOficial].use ^definition = "este slice corresponde al nombre registrado al momento de nacer, por lo que se fuerza el valor \"official\""
-* name[NombreOficial].use ^comment = "Para ser considerado como el slice determinado para el uso de nombre completo, el use DEBE ser de valor de código \"official\""
-* name[NombreOficial].family ^short = "1er Apellido"
-* name[NombreOficial].family ^definition = "Se define el primer apellido registrado al momento de nacer o aquel que se ha inscrito legalmente en el Registro Civil"
-* name[NombreOficial].family 1..1 MS
-* name[NombreOficial].family.extension contains http://hl7.org/fhir/StructureDefinition/humanname-mothers-family named mothers-family 0..1 MS
-* name[NombreOficial].family.extension ^short = "Extensión para 2o apellido"
-* name[NombreOficial].family.extension ^definition = "Extensión para la declaracion de un segundo apellido"
-* name[NombreOficial].given 1.. MS
-* name[NombreOficial].given ^short = "Primer nombre y nombres del Paciente"
-* name[NombreOficial].given ^definition = "Todos los nombres de los pacientes no necesariamente solo el Primer Nombre"
+  * use = #official
+  * use MS
+  * use ^short = "uso del nombre del paciente"
+  * use ^definition = "este slice corresponde al nombre registrado al momento de nacer, por lo que se fuerza el valor \"official\""
+  * use ^comment = "Para ser considerado como el slice determinado para el uso de nombre completo, el use DEBE ser de valor de código \"official\""
+  * family ^short = "1er Apellido"
+  * family ^definition = "Se define el primer apellido registrado al momento de nacer o aquel que se ha inscrito legalmente en el Registro Civil"
+  * family 1..1 MS
+  * family.extension contains http://hl7.org/fhir/StructureDefinition/humanname-mothers-family named mothers-family 0..1 MS
+  * family.extension ^short = "Extensión para 2o apellido"
+  * family.extension ^definition = "Extensión para la declaracion de un segundo apellido"
+  * given 1.. MS
+  * given ^short = "Primer nombre y nombres del Paciente"
+  * given ^definition = "Todos los nombres de los pacientes no necesariamente solo el Primer Nombre"
 
 
 * name[NombreSocial] ^short = "Nombre con el cual se identifica al paciente sin ser este oficial. Se especifica slo en el uso del nombre"
 * name[NombreSocial] ^definition = "Nombre con el cual se identifica al paciente sin ser este oficial. Se especifica slo en el uso del nombre"
 * name[NombreSocial] ^short = "nombre recurrente que usa el paciente"
-* name[NombreSocial].use = #usual
-* name[NombreSocial].use MS  
-* name[NombreSocial].use ^short = "uso que se le da al nombre"
-* name[NombreSocial].use ^definition = "Este uso especifico se enfoca a la definición de un nombre social. Es por esta razón que el uso se fuerza a usual"
-* name[NombreSocial].use ^comment = "Para ser considerado como el slice determinado para el uso de nombre social, el use DEBE ser de valor de código \"usual\""
-* name[NombreSocial].text 0..0  
-* name[NombreSocial].family 0..0
-* name[NombreSocial].given 1..* MS
-* name[NombreSocial].given ^short = "Nombre Social"
-* name[NombreSocial].given ^definition = "Nombre Social"
-* name[NombreSocial].prefix 0..0
-* name[NombreSocial].suffix 0..0
-* name[NombreSocial].period 0..0
+  * use = #usual
+  * use MS  
+  * use ^short = "uso que se le da al nombre"
+  * use ^definition = "Este uso especifico se enfoca a la definición de un nombre social. Es por esta razón que el uso se fuerza a usual"
+  * use ^comment = "Para ser considerado como el slice determinado para el uso de nombre social, el use DEBE ser de valor de código \"usual\""
+  * text 0..0  
+  * family 0..0
+  * given 1..* MS
+  * given ^short = "Nombre Social"
+  * given ^definition = "Nombre Social"
+  * prefix 0..0
+  * suffix 0..0
+  * period 0..0
  
  
 * telecom and telecom.system and telecom.value and telecom.use and gender and birthDate  MS
 * telecom ^short = "Detalles de contacto del Paciente"
 * telecom ^definition = "Detalles del contacto de un paciente comunmente el o los mas usados (Ej: Teléfono fijo, móvil, email, etc.)"
-* telecom.use ^short = "home | work | temp | old | mobile" 
-* telecom.use ^definition = "Propósito para el contacto que se ha definido" 
-* telecom.use from  http://hl7.org/fhir/ValueSet/contact-point-use (required)
-* telecom.system ^short = "phone | fax | email | pager | url | sms | other"
-* telecom.system ^definition = "Forma de telecomunicación para el punto de contacto: qué sistema de comunicación se requiere para hacer uso del contacto."
-* telecom.system from  http://hl7.org/fhir/ValueSet/contact-point-system (required)
-* telecom.system ^binding.description = "Tipo de contacto para HL7 FHIR"
-* telecom.value ^short = "Dato del contato del paciente descrito"
-* telecom.value ^definition = "Valor del contacto como por ejemplo el numero de telefono fijo o de móvil o el email del Paciente"
+  * use ^short = "home | work | temp | old | mobile" 
+  * use ^definition = "Propósito para el contacto que se ha definido" 
+  * use from  http://hl7.org/fhir/ValueSet/contact-point-use (required)
+  * system ^short = "phone | fax | email | pager | url | sms | other"
+  * system ^definition = "Forma de telecomunicación para el punto de contacto: qué sistema de comunicación se requiere para hacer uso del contacto."
+  * system from  http://hl7.org/fhir/ValueSet/contact-point-system (required)
+  * system ^binding.description = "Tipo de contacto para HL7 FHIR"
+  * value ^short = "Dato del contato del paciente descrito"
+  * value ^definition = "Valor del contacto como por ejemplo el numero de telefono fijo o de móvil o el email del Paciente"
 
 * gender 1..1
 * gender ^short = "Sexo de nacimiento Registrado, male | female | other | unknown (requerido)"
@@ -129,46 +130,50 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * birthDate ^definition = "Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD (Ej: 1996-08-21)"
 
 * address only Address or ClAddress
+* address MS
 
 
 
 * contact MS 
+* contact.relationship.coding and contact.relationship.coding.code and contact.relationship.coding.system and contact.relationship.coding.display MS
+    
 * contact ^short = "Contacto, tutor legal o representante del Paciente"
 * contact ^definition = "Contacto, tutor legal o representante del Paciente"
-* contact.extension contains IdentificacionContactoCl named IdContacto 1..* MS
-* contact.extension[IdContacto] 1..* MS
-* contact.extension[IdContacto] ^short = "Identificación del Contacto"
-* contact.extension[IdContacto] ^definition = "Extensión para declarar identificación del contacto y la procedencia de esta"
-* contact.relationship 1..1 MS
-* contact.relationship ^short = "Relación entre el contacto y el paciente"
-* contact.relationship ^short = "Relación legal o de paretezco entre el contacto y el paciente"
-* contact.relationship from 	http://hl7.org/fhir/ValueSet/patient-contactrelationship
-* contact.relationship ^binding.description = "VS FHIR para relación del contacto con el Paciente"
-* contact.relationship.coding and contact.relationship.coding.code and contact.relationship.coding.system and contact.relationship.coding.display MS
-* contact.relationship.coding 1..1
-* contact.relationship.coding.code 1..1
-* contact.relationship.coding.system 1..1
-* contact.relationship.coding.display 0..1
-* contact.name 1..1 MS 
-* contact.name ^short = "Nombre del Contacto"
-* contact.name ^definition = "Nombre del contacto asociado al paciente"
+  * extension contains IdentificacionContactoCl named IdContacto 1..* MS
+  * extension[IdContacto] 1..* MS
+  * extension[IdContacto] ^short = "Identificación del Contacto"
+  * extension[IdContacto] ^definition = "Extensión para declarar identificación del contacto y la procedencia de esta"
+  * relationship 1..1 MS
+  * relationship ^short = "Relación entre el contacto y el paciente"
+  * relationship ^short = "Relación legal o de paretezco entre el contacto y el paciente"
+  * relationship from 	http://hl7.org/fhir/ValueSet/patient-contactrelationship
+  * relationship ^binding.description = "VS FHIR para relación del contacto con el Paciente"
 
-* contact.name.use MS 
-* contact.name.use = #official
-* contact.name.use ^short = "uso del nombre del paciente"
-* contact.name.use ^definition = "Nombre registrado oficialmente en el Registro Civil"
-* contact.name.use ^comment = "El use DEBE ser de valor de código ´official´"
+    * coding 1..1
+      * code 1..1
+      * system 1..1
+      * display 0..1
 
-* contact.name.family ^short = "1er Apellido"
-* contact.name.family ^definition = "Se define el primer apellido registrado al momento de nacer o aquel que se ha inscrito legalmente en el Registro Civil"
-* contact.name.family 1..1 MS
-* contact.name.family.extension contains http://hl7.org/fhir/StructureDefinition/humanname-mothers-family named mothers-family 0..1 MS
-* contact.name.family.extension 1..1 MS
-* contact.name.family.extension ^short = "Extensión para 2o apellido"
-* contact.name.family.extension ^definition = "Extensión para la declaracion de un segundo apellido"
-* contact.name.given 1.. MS
-* contact.name.given ^short = "Primer nombre y nombres del Contacto o Representante Legal"
-* contact.name.given ^definition = "Todos los nombres  no necesariamente solo el Primero"
+  * name 1..1 MS 
+  * name ^short = "Nombre del Contacto"
+  * name ^definition = "Nombre del contacto asociado al paciente"
+
+    * use MS 
+    * use = #official
+    * use ^short = "uso del nombre del paciente"
+    * use ^definition = "Nombre registrado oficialmente en el Registro Civil"
+    * use ^comment = "El use DEBE ser de valor de código ´official´"
+
+    * family ^short = "1er Apellido"
+    * family ^definition = "Se define el primer apellido registrado al momento de nacer o aquel que se ha inscrito legalmente en el Registro Civil"
+    * family 1..1 MS
+      * extension contains http://hl7.org/fhir/StructureDefinition/humanname-mothers-family named mothers-family 0..1 MS
+      * extension 1..1 MS
+      * extension ^short = "Extensión para 2o apellido"
+      * extension ^definition = "Extensión para la declaracion de un segundo apellido"
+    * given 1.. MS
+    * given ^short = "Primer nombre y nombres del Contacto o Representante Legal"
+    * given ^definition = "Todos los nombres  no necesariamente solo el Primero"
 
 
 * communication 0..* MS

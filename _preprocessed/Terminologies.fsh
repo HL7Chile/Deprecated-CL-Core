@@ -1,5 +1,4 @@
-
-
+// Originally defined on lines 3 - 16
 ValueSet: VSDiagnosticosSCT
 Id: VSDiagnosticosSCT
 Title: "Diagnósticos SNOMED y Ausente o Desconocido"
@@ -11,10 +10,11 @@ Description: "Diagnósticos definidos en Snomed-CT."
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement" 
-* codes from system http://snomed.info/sct 
-* codes from system http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
+* include codes from system http://snomed.info/sct
+* include codes from system http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips
 
+// Originally defined on lines 18 - 31
 ValueSet: VSTiposDocumentos
 Id: VSTiposDocumentos
 Title: "Tipos de Documentos"
@@ -26,12 +26,10 @@ Description: "Tipos de Documentos para identificación según tabla HL7 V3 y Cod
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* include codes from system CSCodigoDNI
+* include codes from system http://terminology.hl7.org/CodeSystem/v2-0203
 
-* codes from system CSCodigoDNI
-* codes from system http://terminology.hl7.org/CodeSystem/v2-0203
-
-
-
+// Originally defined on lines 35 - 79
 CodeSystem: CSCodigoDNI
 Id: CSCodigoDNI
 Title: "Códigos de Documentos DNI para LATAM y el Caribe"
@@ -43,7 +41,6 @@ Description: "Códigos para los DNI de países de America Latina y el Caribe seg
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
 * #NNBLZ "Belice"
 * #NNCRI "Costa Rica"
 * #NNSLV "El Salvador"
@@ -78,7 +75,7 @@ Description: "Códigos para los DNI de países de America Latina y el Caribe seg
 * #NNVCT "San Vicente y las Granadinas"
 * #NNTTO "Trinidad y Tobago"
 
-
+// Originally defined on lines 82 - 95
 ValueSet: CodPaises
 Id: CodPais
 Title: "Códigos de Países"
@@ -91,11 +88,9 @@ Description: "Codigos definidos para la identificación de países segun norma I
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 * ^copyright = "All content on ISO Online is copyright protected. The copyright is owned by ISO. Any use of the content, including copying of it in whole or in part, for example to another Internet site, is prohibited and would require written permission from ISO."
-
 * include codes from system urn:iso:std:iso:3166
 
-
-
+// Originally defined on lines 99 - 111
 ValueSet: VSEspecialidadesDeisCL
 Id: VSEspecialidadesDeisCL
 Title: "Códigos de Especialidades"
@@ -107,9 +102,9 @@ Description: "Códigos de especialidades médicas descritas según DEIS"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* include codes from system CSEspecialidadesDeisCL
 
-* codes from system CSEspecialidadesDeisCL
-
+// Originally defined on lines 113 - 193
 CodeSystem: CSEspecialidadesDeisCL
 Id: CSEspecialidadesDeisCL
 Title: "Códigos de Especialidades"
@@ -121,8 +116,6 @@ Description: "Códigos de especialidades médicas descritas según DEIS"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-
 * #01 "Anatomía Patológica"
 * #02 "Anestesiología"
 * #03 "Cardiología"
@@ -192,11 +185,11 @@ Description: "Códigos de especialidades médicas descritas según DEIS"
 * #67 "Traumatología y Ortopedia Pediátrica"
 * #68 "Urología Pediátrica"
 
-
+// Originally defined on lines 196 - 208
 ValueSet: VSCodigosRegionesCL
 Id: VSCodigosRegionesCL
 Title: "Códigos de Regiones en Chile"
-Description:  "Códigos de Regiones para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
+Description: "Códigos de Regiones para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
@@ -204,13 +197,13 @@ Description:  "Códigos de Regiones para Chile según Códigos Únicos Territori
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* include codes from system CSCodRegionCL
 
-* codes from system CSCodRegionCL
-
+// Originally defined on lines 210 - 237
 CodeSystem: CSCodRegionCL
 Id: CSCodRegionCL
 Title: "Códigos de Regiones en Chile"
-Description:  "Códigos de Regiones para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
+Description: "Códigos de Regiones para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
@@ -218,7 +211,6 @@ Description:  "Códigos de Regiones para Chile según Códigos Únicos Territori
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
 * #15 "Arica y Parinacota"
 * #01 "Tarapacá"
 * #02 "Antofagasta"
@@ -236,10 +228,11 @@ Description:  "Códigos de Regiones para Chile según Códigos Únicos Territori
 * #12 "Magallanes y de la Antártica Chilena"
 * #16 "Ñuble"
 
+// Originally defined on lines 239 - 251
 ValueSet: VSCodigosProvinciasCL
 Id: VSCodigosProvinciasCL
 Title: "Códigos de Provincias en Chile"
-Description:  "Códigos de Provincias para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
+Description: "Códigos de Provincias para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
@@ -247,13 +240,13 @@ Description:  "Códigos de Provincias para Chile según Códigos Únicos Territo
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* include codes from system CSCodProvinciasCL
 
-* codes from system CSCodProvinciasCL
-
+// Originally defined on lines 253 - 320
 CodeSystem: CSCodProvinciasCL
 Id: CSCodProvinciasCL
 Title: "Códigos de Provincias en Chile"
-Description:  "Códigos de Provincias para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
+Description: "Códigos de Provincias para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
@@ -261,7 +254,6 @@ Description:  "Códigos de Provincias para Chile según Códigos Únicos Territo
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
 * #122 "Antártica Chilena"
 * #021 "Antofagasta"
 * #082 "Arauco"
@@ -319,11 +311,11 @@ Description:  "Códigos de Provincias para Chile según Códigos Únicos Territo
 * #141 "Valdivia"
 * #051 "Valparaíso"
 
-
+// Originally defined on lines 323 - 335
 ValueSet: VSCodigosComunaCL
 Id: VSCodigosComunaCL
 Title: "Códigos de Comunas en Chile"
-Description:  "Códigos de Comunas para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
+Description: "Códigos de Comunas para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
@@ -331,13 +323,13 @@ Description:  "Códigos de Comunas para Chile según Códigos Únicos Territoria
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* include codes from system CSCodComunasCL
 
-* codes from system CSCodComunasCL
-
+// Originally defined on lines 337 - 694
 CodeSystem: CSCodComunasCL
 Id: CSCodComunasCL
 Title: "Códigos de Comunas en Chile"
-Description:  "Códigos de Comunas para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
+Description: "Códigos de Comunas para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
@@ -345,7 +337,6 @@ Description:  "Códigos de Comunas para Chile según Códigos Únicos Territoria
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
 * #05602 "Algarrobo"
 * #13502 "Alhué"
 * #08314 "Alto Biobío"
@@ -693,6 +684,7 @@ Description:  "Códigos de Comunas para Chile según Códigos Únicos Territoria
 * #16109 "Yungay"
 * #05405 "Zapallar"
 
+// Originally defined on lines 696 - 709
 ValueSet: VSTiposDocClinic
 Id: VSTiposDocClinic
 Title: "Tipos de Documentos Clínicos"
@@ -705,10 +697,9 @@ Description: "Tipos de Documentos clínicos para Composition. Se trae todo Loinc
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 * ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"
+* include codes from system http://loinc.org
 
-* codes from system http://loinc.org
-
-
+// Originally defined on lines 712 - 728
 CodeSystem: CSRazonNOencuentroCL
 Id: CSRazonNOT
 Title: "Razones Cancelación Atención Remota"
@@ -720,14 +711,13 @@ Description: "Códigos de las razones por la cual un encuentro remoto no pudo re
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* #pierdeLlam	"El participante pierde la llamada"
+* #pierdeLlam "El participante pierde la llamada"
 * #finaLlam "El participante finalizó la llamada abruptamente"
 * #problConex "El participante tuvo problemas de conexión a internet"
 * #medproblConex "Tuve problemas de conexión a internet"
 * #otros "Otros / texto libre"
 
-
+// Originally defined on lines 731 - 743
 ValueSet: VSTiposVacunasCL
 Id: VSTiposVacunas
 Title: "Tipos de Vacunas RNI"
@@ -739,9 +729,9 @@ Description: "Tipos de Vacunas utilizadas en Chile según CodeSystem local"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* include codes from system CSTiposVacunaCL
 
-* codes from system CSTiposVacunaCL
-
+// Originally defined on lines 745 - 835
 CodeSystem: CSTiposVacunaCL
 Id: CSCodigoVacunas
 Title: "Códigos de Vacunas RNI"
@@ -753,7 +743,6 @@ Description: "Códigos de las vacunas o inmunizaciones según indicaciones del M
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
 * #actacelPriv "Actacel (sector privado)"
 * #antirr "Antirrábica"
 * #antirrPriv "Antirrábica (sector privado)"
@@ -834,9 +823,7 @@ Description: "Códigos de las vacunas o inmunizaciones según indicaciones del M
 * #VPHTetraval "VPH Tetravalente"
 * #VPHTretavalPriv "VPH Tetravalente (sector privado)"
 
-
-
-
+// Originally defined on lines 840 - 852
 ValueSet: VSNombreCampanaCL
 Id: VSNombreCampana
 Title: "Campañas de Vacunación"
@@ -848,9 +835,9 @@ Description: "Campañas de Inmunización utilizada en Chile según CodeSystem lo
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* include codes from system CSNombreCampanaCL
 
-* codes from system CSNombreCampanaCL
-
+// Originally defined on lines 854 - 901
 CodeSystem: CSNombreCampanaCL
 Id: CSNombreCampana
 Title: "Campañas Inmunización"
@@ -862,7 +849,6 @@ Description: "Códigos de las campañas de vacunas o inmunizaciones según indic
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
 * #campanSARSCov_2_AstraZ "Campaña SARS-CoV-2 (AstraZeneca)"
 * #campanSARSCov_2_Cansino "Campaña SARS-CoV-2 (CanSino)"
 * #campanSARSCov_2_Intern "Campaña SARS-CoV-2 (Internacional)"
@@ -900,8 +886,7 @@ Description: "Códigos de las campañas de vacunas o inmunizaciones según indic
 * #tosConvul_brote_conting "Tos Convulsiva Brote-Contingencia"
 * #vacunaFiebAmar "Vacuna Fiebre Amarilla"
 
-
-
+// Originally defined on lines 905 - 917
 ValueSet: VSRazonNOTinmCL
 Id: VSRazonNOTinm
 Title: "Razones no Inmunización"
@@ -913,9 +898,9 @@ Description: "Razones por la que no se lleva a cabo la administración de una va
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* include codes from system CSRazonNOinmunizacionCL
 
-* codes from system CSRazonNOinmunizacionCL
-
+// Originally defined on lines 919 - 934
 CodeSystem: CSRazonNOinmunizacionCL
 Id: CSRazonNOTinm
 Title: "Razones no Inmunización"
@@ -927,19 +912,16 @@ Description: "Códigos de las razones por la cual el registro de inmunización n
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
 * #solicitudPaci "Solicitud del paciente"
 * #otras "Otras"
 * #contraindicación "Contraindicación"
 * #solicitudPad "Solicitud de los Padres"
 
-
-
-
+// Originally defined on lines 939 - 951
 ValueSet: VSCodigosServiciosSaludCL
 Id: VSCodigosServiciosSalud
 Title: "Servicos de Salud en Chile"
-Description:  "Códigos de Servicios de Salud que existen en Chile"
+Description: "Códigos de Servicios de Salud que existen en Chile"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-06-10T00:00:00-03:00"
@@ -947,13 +929,13 @@ Description:  "Códigos de Servicios de Salud que existen en Chile"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* include codes from system CSCodSSaludCL
 
-* codes from system CSCodSSaludCL
-
+// Originally defined on lines 953 - 992
 CodeSystem: CSCodSSaludCL
 Id: CSCodSSalud
 Title: "Servicios de Salud Chile"
-Description:  "Códigos del Sistema Nacional de Servicios de Salud"
+Description: "Códigos del Sistema Nacional de Servicios de Salud"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-06-10T00:00:00-03:00"
@@ -961,7 +943,6 @@ Description:  "Códigos del Sistema Nacional de Servicios de Salud"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
 * #SSA "Servicio de Salud Arica"
 * #SSAN "Servicio de Salud Antofagasta"
 * #SSAT "Servicio de Salud Atacama"
@@ -991,10 +972,11 @@ Description:  "Códigos del Sistema Nacional de Servicios de Salud"
 * #SSAY "Servicio de Salud Aysén"
 * #SSMA "Servicio de Salud Magallanes"
 
+// Originally defined on lines 994 - 1006
 ValueSet: VSCodigoslenguaje
 Id: VSCodigoslenguaje
 Title: "Codigos Lenguaje"
-Description:  "Códigos de leguaje"
+Description: "Códigos de leguaje"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-06-10T00:00:00-03:00"
@@ -1002,13 +984,13 @@ Description:  "Códigos de leguaje"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* include codes from system CSCodigoslenguaje
 
-* codes from system CSCodigoslenguaje
-
+// Originally defined on lines 1008 - 1072
 CodeSystem: CSCodigoslenguaje
 Id: CSCodigoslenguaje
 Title: "Codigos Lenguaje"
-Description:  "Codigoslenguaje"
+Description: "Codigoslenguaje"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-06-10T00:00:00-03:00"
@@ -1016,7 +998,6 @@ Description:  "Codigoslenguaje"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
 * #ar-SA "Arabic" "Saudi Arabia, Arabic (Saudi Arabia)"
 * #bn-BD "Bangla" "Bangladesh, Bangla (Bangladesh)"
 * #bn-IN "Bangla" "India, Bangla (India)"
@@ -1071,7 +1052,7 @@ Description:  "Codigoslenguaje"
 * #zh-HK "Chinese" "Hond Kong, Hong Kong, traditional characters"
 * #zh-TW "Chinese" "Taiwan, Taiwan, traditional characters"
 
-
+// Originally defined on lines 1075 - 1087
 ValueSet: VSTiposEncuentroCL
 Id: VSTiposEncuentroCL
 Title: "Tipos de Encuentro"
@@ -1083,9 +1064,9 @@ Description: "Códigos de Encuentros según MINSAL"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* include codes from system CSTiposEncuentroCL
 
-* codes from system CSTiposEncuentroCL
-
+// Originally defined on lines 1089 - 1103
 CodeSystem: CSTiposEncuentroCL
 Id: CSTiposEncuentroCL
 Title: "Tipos de Encuentro"
@@ -1097,12 +1078,11 @@ Description: "Códigos de Encuentros según MINSAL"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
 * #PR "Programada"
 * #SP "Espontánea"
 * #CO "Comité"
 
-
+// Originally defined on lines 1106 - 1118
 ValueSet: VSTiposServicioCL
 Id: VSTiposServicio
 Title: "Tipos de Servicios Remotos"
@@ -1114,9 +1094,9 @@ Description: "Tipos de Servicios para encuentro remoto según CodeSystem local"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* include codes from system CSCodServicioCL
 
-* codes from system CSCodServicioCL
-
+// Originally defined on lines 1120 - 1145
 CodeSystem: CSCodServicioCL
 Id: CSCodigoServicio
 Title: "Tipos de Servicios Remotos"
@@ -1128,23 +1108,22 @@ Description: "Códigos para los Servicios realizados en un encuentro remoto seg�
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* #nutINTA "Nutrición INTA"
+* #nedINTA "Medicina INTA"
+* #medInt "Medicina Interna"
+* #saludMDigital "Salud Mental Digital"
+* #medGen "Medicina General"
+* #derm "Dermatología"
+* #telDiabetes "Telemedicina Diabetes"
+* #telRehab "Tele rehabilitación"
+* #otorrin "Otorrinolaringología"
+* #neurInf "Neurología Infantil"
+* #atencUrgAPS "Atención de Urgencia APS"
+* #vih "VIH"
+* #geri "Geriatría"
+* #gine "Ginecología"
 
-* #nutINTA	"Nutrición INTA"
-* #nedINTA	"Medicina INTA"
-* #medInt	"Medicina Interna"
-* #saludMDigital	"Salud Mental Digital"
-* #medGen	"Medicina General"
-* #derm	"Dermatología"
-* #telDiabetes	"Telemedicina Diabetes"
-* #telRehab	"Tele rehabilitación"
-* #otorrin	"Otorrinolaringología"
-* #neurInf	"Neurología Infantil"
-* #atencUrgAPS	"Atención de Urgencia APS"
-* #vih	"VIH"
-* #geri	"Geriatría"
-* #gine	"Ginecología"
-
-
+// Originally defined on lines 1148 - 1160
 ValueSet: VSContactoSecundario
 Id: VSContactosec
 Title: "Contacto participantes"
@@ -1156,10 +1135,9 @@ Description: "Contacto telefónico o correo de los participantes"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
 * include codes from system ContactPointSystem
-	
 
+// Originally defined on lines 1163 - 1175
 ValueSet: VSRazonNOencuentro
 Id: VSRazonNOT
 Title: "Razones no Atención Remota"
@@ -1171,9 +1149,9 @@ Description: "Razones por la que no se lleva a cabo un encuentro remoto según C
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* include codes from system CSrazonnoencuentro
 
-* codes from system CSrazonnoencuentro
-
+// Originally defined on lines 1177 - 1193
 CodeSystem: CSrazonnoencuentro
 Id: csrazonnoencuentro
 Title: "Razón Encuentro Remoto no Realizado"
@@ -1185,13 +1163,9 @@ Description: "Códigos de las razones por la cual un encuentro remoto no pudo re
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
 * #pierdellam "Participante pierde llamada" "Indica la pérdida de una llamada con el paciete"
 * #finallam "El participante finalizó la llamada abruptamente" "Indica la finalización de una llamada de forma abrupta"
 * #problcon "El participante tuvo problemas de conexión a internet" "Indica que existieron problemas de conexión a internet para conectarse con el médico"
 * #medicoproblcon "Tuve problemas de conexión a internet" "Indica problemas de conexión a internet que tuvo el médico"
 * #otros "Otros, texto libre" "Cualquier otro motivo"
-
-
-
 
