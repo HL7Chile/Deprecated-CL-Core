@@ -4,15 +4,59 @@ Los siguientes son el listado de perfiles definidos para el Core Nacional
 <br>
 <br>
 
-* [Paciente_CL](StructureDefinition-CorePacienteCl.html)
-* [Prestador_CL](StructureDefinition-CorePrestadorCl.html)
-* [Especialidad_Prestador_CL](StructureDefinition-CoreEspecialidadCl.html)
-* [Organización_CL](StructureDefinition-CoreOrganizacionCl.html)
-* [Medicamento_CL](StructureDefinition-CoreMedicamentoCl.html) 
-* [Localización_CL](StructureDefinition-CoreLocalizacionCl.html)
-* [Provenance_CL](StructureDefinition-ProvenanceCl.html)
-* [Auditoría_CL](StructureDefinition-AuditEventCl.html)
-* [Encuentro_CL](StructureDefinition-EncuetroCL.html)
-* [Inmunizacion_CL](StructureDefinition-ImmunizationCL.html)
-* [Documento_CL](StructureDefinition-DocumentoCl.html)
-* [Bundle_CL](StructureDefinition-BundleCl.html)
+**A**
+<br>
+
+* [CL Auditoría](StructureDefinition-AuditEventCl.html)
+<br>
+
+**B**
+<br>
+
+* [CL Bundle](StructureDefinition-BundleCl.html)
+<br>
+
+**D**
+<br>
+
+* [CL Documento](StructureDefinition-DocumentoCl.html)
+* [CL Diagnóstico-Condición](StructureDefinition-CoreDiagnosticoCl.html)
+<br>
+
+**E**
+<br>
+
+* [CL Encuetro](StructureDefinition-EncuetroCL.html)
+* [CL Especialidad_Prestador](StructureDefinition-CoreEspecialidadCl.html)
+<br>
+
+**I**
+<br>
+
+* [CL Inmunizacion](StructureDefinition-ImmunizationCL.html)
+<br>
+
+**L**
+<br>
+
+* [CL Localización](StructureDefinition-CoreLocalizacionCl.html)
+<br>
+
+**M**
+<br>
+
+* [CL Medicamento](StructureDefinition-CoreMedicamentoCl.html)
+<br>
+
+**O**
+<br> 
+
+* [CL Organización](StructureDefinition-CoreOrganizacionCl.html)
+<br>
+
+**P**
+<br>
+
+* [CL Paciente](StructureDefinition-CorePacienteCl.html)
+* [CL Prestador](StructureDefinition-CorePrestadorCl.html)
+* [CL Provenance](StructureDefinition-ProvenanceCl.html)

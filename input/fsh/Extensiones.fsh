@@ -81,3 +81,81 @@ Description: "Identificación de contacto de paciente en especial para casos en 
 * extension[docProc].valueCodeableConcept.coding.code 1..1 MS
 * extension[docProc].valueCodeableConcept.coding.system 1..1 MS
 * extension[docProc].valueCodeableConcept.coding.display 0..1 MS
+
+Extension: TiposEncuentroRemotoCL
+Id: TiposEncuentro
+Title: "Código de tipos de encuentro remoto"
+Description: "Esta extensión incluye códigos de los tipos de encuentro que se realizan de forma remota"
+* valueCode from VSTiposEncuentroCL (extensible)
+
+Extension: TiposdeservicioCL
+Id: TiposServicio
+Title: "Código de los tipos de servicio que se atiende"
+Description: "Esta extensión incluye códigos de servicios que se entregan de forma remota"
+* value[x] only code
+* value[x] ^short = "Códigos de Tipos de Servicios de Salud"
+* valueCode from VSTiposServicio (extensible)
+
+Extension: EspecialidadCL
+Id: VSEspecialidadesDeisCL
+Title: "Especialidad del médico principal"
+Description: "Esta extensión incluye los códigos de las especialidades que puede tener el medico principal"
+* valueCoding from VSEspecialidadesDeisCL (extensible)
+
+Extension: ContactopartCL
+Id: ContactoParticipantes
+Title: "Contacto de los participantes secundarios del encuentro"
+Description: "Esta extensión incluye los códigos de los medios de contacto que se tiene para los participantes secundarios"
+* value[x] only ContactPoint
+* value[x] ^short = "Códigos de contactos"
+* valueContactPoint.system from VSContactosec 
+
+Extension: RazonNOTatencionCL
+Id: RazonNOrealizarse
+Title: "Código de las razones por la cual no se pudo realizar la atención"
+Description: "Esta extensión incluye códigos de razones por la cuales no pudo llevarse a cabo el encuentro remoto"
+* value[x] only code
+* value[x] ^short = "Códigos de razones por la cual el encuentro remoto no se pudo realizar"
+* valueCode from VSRazonNOT (extensible)
+
+Extension: NotasCL
+Id: NotasEncuentro
+Title: "Notas realizadas en un encuentro por Comité"
+Description: "Esta extensión incluye los códigos de los medios de contacto que se tiene para los participantes secundarios"
+* value[x] only string
+* value[x] ^short = "Notas realizadas en un encuentro por Comité"
+
+Extension: ObservacionesNotas
+Id: ObservacionesDiagnostico
+Title: "Observaciones o comentarios simples respecto a un diagnóstico"
+Description: "Esta extensión sirve para insertar comentarios acerca a un diagnóstico médico realizado en un encuentro remoto"
+* value[x] only string 
+
+Extension: TiposVacunaCL
+Id: TiposVacunaRNI
+Title: "Código de tipos de Vacunas en Chile"
+Description: "Esta extensión incluye códigos de los tipos de vacunas que existe en el Registro Nacional de Inmunizaciones RNI"
+* valueCode ^short = "Valor de la extensión"
+* valueCode from VSTiposVacunas (extensible)
+
+Extension:  NombreCampanaCL
+Id: NombreCampana
+Title: "Nombre de la Campaña de vacunación establecida por el RNI (Registro Nacional de Inmunizaciones)"
+Description: "Esta extensión incluye los nombres de las distintas Campañas que se realizan y estan registradas en el RNI"
+* valueCoding ^short = "Valor de la extensión"
+* valueCoding from VSNombreCampana (extensible)
+
+Extension: RazonNOTinmunizacionCL
+Id: RazonNOrealizarseInm
+Title: "Razones por las cuales no se pudo realizar la inmunización"
+Description: "Esta extensión incluye las razones por la cuales no pudo llevarse a cabo la inmunización" 
+* value[x] only code
+* value[x] ^short = "Códigos de razones por la cual la inmunización no se pudo realizar"
+* valueCode from VSRazonNOTinm (extensible)
+
+Extension: ServicioSaludCL
+Id: ServicioSalud 
+Title: "Sistema Nacional de Servicios de Salud"
+Description: "Esta extensión incluye los códigos de los Servicios de Salud que existen en el país"
+* valueCoding ^short = "Servicios de Salud de Chile"
+* valueCoding from VSCodigosServiciosSalud (extensible)

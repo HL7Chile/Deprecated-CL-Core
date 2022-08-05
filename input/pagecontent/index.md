@@ -30,18 +30,20 @@ Cada perfil define los elementos obligatorios mínimos, extensiones y requerimie
 
 Tambien se presenta una tabla jerárquica con una vista lógica del contenido como *Snapshot* y *Differential* . Para cada perfil también expresamos el conjunto de interacciones FHIR Restful asociadas (búsquedas, operaciones u otras interacciones)
 
-* [Paciente_CL](StructureDefinition-CorePacienteCl.html)
-* [Prestador_CL](StructureDefinition-CorePrestadorCl.html)
-* [Especialidad_Prestador_CL](StructureDefinition-CoreEspecialidadCl.html)
-* [Organización_CL](StructureDefinition-CoreOrganizacionCl.html)
-* [Medicamento_CL](StructureDefinition-CoreMedicamentoCl.html) 
-* [Localización_CL](StructureDefinition-CoreLocalizacionCl.html)
-* [Provenance_CL](StructureDefinition-ProvenanceCl.html)
-* [Auditoría_CL](StructureDefinition-AuditEventCl.html)
-* [Encuetro_CL](StructureDefinition-EncuetroCL.html)
-* [Inmunizacion_CL](StructureDefinition-ImmunizationCL.html)
-* [Documento_CL](StructureDefinition-DocumentoCl.html)
-* [Bundle_CL](StructureDefinition-BundleCl.html)
+* [CL Auditoría](StructureDefinition-AuditEventCl.html)
+* [CL Bundle](StructureDefinition-BundleCl.html)
+* [CL Documento](StructureDefinition-DocumentoCl.html)
+* [CL Diagnóstico-Condición](StructureDefinition-CoreDiagnosticoCl.html)
+* [CL Encuetro](StructureDefinition-EncuetroCL.html)
+* [CL Especialidad_Prestador](StructureDefinition-CoreEspecialidadCl.html)
+* [CL Inmunizacion](StructureDefinition-ImmunizationCL.html)
+* [CL Localización](StructureDefinition-CoreLocalizacionCl.html)
+* [CL Medicamento](StructureDefinition-CoreMedicamentoCl.html) 
+* [CL Organización](StructureDefinition-CoreOrganizacionCl.html)
+* [CL Paciente](StructureDefinition-CorePacienteCl.html)
+* [CL Prestador](StructureDefinition-CorePrestadorCl.html)
+* [CL Provenance](StructureDefinition-ProvenanceCl.html)
+
 <br>
 <br>
 

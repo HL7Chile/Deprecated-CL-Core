@@ -5,12 +5,12 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.cl.corecl
 canonical: https://hl7chile.cl/fhir/ig/CoreCL
-version: 1.5.0 
+version: 1.6.0 
 name: CoreCL-DEV
 
 title: Guía de Implementación Core-CL FHIR R4, (Versión Evolutiva)
 status: draft
-date: 2022-05
+date: 2022-08
 publisher: 
   name: HL7 Chile
   url: http://hl7chile.cl
@@ -66,18 +66,5 @@ menu:
    Perfiles: Perfiles.html
    Extensiones: Extensiones.html
    Valuesets: Set-De-Validacion-ValueSets.html
-  Perfiles: 
-    Paciente: StructureDefinition-CorePacienteCl.html
-    Prestador: StructureDefinition-CorePrestadorCl.html
-    Especialidad Prestador: StructureDefinition-CoreEspecialidadCl.html
-    Organización: StructureDefinition-CoreOrganizacionCl.html
-    Medicamento: StructureDefinition-CoreMedicamentoCl.html
-    Localización: StructureDefinition-CoreLocalizacionCl.html
-    Provenance: StructureDefinition-ProvenanceCl.html
-    Encuentro: StructureDefinition-EncuetroCL.html
-    Inmunización: StructureDefinition-ImmunizationCL.html
-    Documento: StructureDefinition-DocumentoCl.html
-    Auditoría: StructureDefinition-AuditEventCl.html
-    Bundle: StructureDefinition-BundleCl.html
   Ejemplos: Set-Ejemplos.html
   Descargas: Todas-Descargas.html

@@ -19,6 +19,8 @@ Define los sets de códigos para el uso terminológico de esta Guía
 | [Códigos de Tipos de Encuentro](ValueSet-VSTiposEncuentro.html "ValueSet/VSTiposEncuentro") | Códigos de Encuentros según Minsal |
 | [Tipos de Servicios](ValueSet-VSTiposServicio.html "ValueSet/VSTiposServicio") | Tipos de Servicios para encuentro remoto segun CodeSystem local. |
 | [Tipos de Vacunas RNI](ValueSet-VSTiposVacunas.html "ValueSet/VSTiposVacunas") | Tipos de Vacunas utilizadas en Chile según CodeSystem local |
+| [Lenguajes](ValueSet-VSCodigoslenguaje.html "ValueSet/VSCodigoslenguaje") | Códigos para tipos de lenguajes reconocidos |
+| [Diagnósticos](ValueSet-VSDiagnosticosSCT.html "ValueSet/VSDiagnosticosSCT") | Diagnósticos de SNOMED-CT + códigos de No se encuentra, no determinado, etc |
 
 ### Terminología: Code Systems
 
@@ -38,3 +40,4 @@ Define los códigos de sistemas para uso terminológico en esta Guía
 | [Códigos de razones por las cuales el registro de inmunización no se pudo llevar a cabo](CodeSystem-CSRazonNOTinm.html "CodeSystem/CSRazonNOTinm") | Códigos de las razones por la cual el registro de inmunización no pudo realizarse según indicaciones del Ministerio de Salud |
 | [Códigos de Tipos de Encuentro](CodeSystem-CSTiposEncuentro.html "CodeSystem/CSTiposEncuentro") | Códigos de Encuentros según Minsal |
 | [Códigos de Vacunas RNI](CodeSystem-CSCodigoVacunas.html "CodeSystem/CSCodigoVacunas") | Códigos de las vacunas o inmunizaciones según indicaciones del Ministerio de Salud |
+| [Códigos de Lenguajes](CodeSystem-CSCodigoslenguaje.html "CodeSystem/CSCodigoslenguaje") | Códigos de Lenguaje para definir la lengua con la cual se expresa una persona |
