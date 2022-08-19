@@ -30,7 +30,7 @@ Define los códigos de sistemas para uso terminológico en esta Guía
 | --- | --- |
 | [Códigos de Comunas en Chile](CodeSystem-CSCodComunasCL.html "CodeSystem/CSCodComunasCL") | Códigos de Comunas para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior |
 | [Códigos de Provincias en Chile](CodeSystem-CSCodProvinciasCL.html "CodeSystem/CSCodProvinciasCL") | Códigos de Provincias para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior |
-| [Códigos de Regiones en ChileEstos aún deben ser llevados a un ValueSet](CodeSystem-CSCodRegionCL.html "CodeSystem/CSCodRegionCL") | Códigos de Regiones para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior |
+| [Códigos de Regiones en Chile](CodeSystem-CSCodRegionCL.html "CodeSystem/CSCodRegionCL") | Códigos de Regiones para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior |
 | [Códigos del Sistema Nacional de Servicios de Salud](CodeSystem-CSCodSSalud.html "CodeSystem/CSCodSSalud") | Códigos del Sistema Nacional de Servicios de Salud |
 | [Códigos de Servicios para encuentros remotos](CodeSystem-CSCodigoServicio.html "CodeSystem/CSCodigoServicio") | Códigos para los Servicios realizados en un encuentro remoto según indicaciones del Ministerio de Salud |
 | [Códigos de Documentos DNI para LATAM y el Caribe](CodeSystem-CSCodigoDNI.html "CodeSystem/CSCodigoDNI") | Códigos para los DNI de países de America Latina y el Caribe según indicaciones de VS HL7 de V3 |

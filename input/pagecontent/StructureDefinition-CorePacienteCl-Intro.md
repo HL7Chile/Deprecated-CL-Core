@@ -11,8 +11,8 @@
 ### Elementos Mandatorios y Must Support
 <br>
 
-El perfil presenta una serie de elementos de datos que siemore deben estar presentes en cada recurso que se genere desde este perfil. Estos elementos denominados como **Mandatorios** se pueden observar en elperfil con cardinalidad de valor inicial *1*. 
-Los elementos que deben ser Soportados si la data esta presente en el recuso generado ([Must Support](http://hl7.org/fhir/R4/profiling.html#mustsupport)), y estos se expresan mediante la letra **S** en cada elemento que tiene esta categoría. Un elemento *Must Support* implica
+El perfil presenta una serie de elementos de datos que siempre deben estar presentes en cada recurso que se genere desde este perfil. Estos elementos denominados como **Mandatorios** se pueden observar en elperfil con cardinalidad de valor inicial *1*. 
+Los elementos que deben ser Soportados, si la data esta presente en el recuso generado, se denominan ([Must Support](http://hl7.org/fhir/R4/profiling.html#mustsupport)), y estos se expresan mediante la letra **S** en cada elemento que tiene esta categoría. Un elemento *Must Support* implica:
 
 * El sistema que recibe un recurso con un elemento *Must Support* debe almacearlo y
 * El sistema que recibe un recurso con un elemento *Must Support* debe poder hacer procesamiento de este elemento

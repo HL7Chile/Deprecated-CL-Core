@@ -12,7 +12,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * identifier ^short = "Slices definidos para la identificación del fármaco, ya sea por Descripción o por concepto"
 * identifier ^definition = "Slice defindos en base a el elemento value, el cual debe ser especifico para cada uno de los slices definidos"
 * identifier ^comment = "Slice defindos en base a el elemento value. Sólo  se pueden usar los discriminadores definidos para los dos slices generados"
-* identifier contains DescripcionId 1..1 MS and ConceptId 1..1 MS
+* identifier contains DescripcionId 0..1 MS and ConceptId 0..1 MS
 
 
 

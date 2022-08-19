@@ -19,6 +19,7 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * identifier ^slicing.description = "Este slice permite agregar una identificacion basada RUN y/o basada en el RNPI"
 * identifier contains RUN 1..1 MS and RNPI 0..1 MS
 
+* identifier[RUN].system and identifier[RUN].use and identifier[RUN].value MS
 * identifier[RUN] 1..1
 * identifier[RUN] ^short = "Identificador destinado a almacenar el número de RUN" 
 * identifier[RUN] ^definition = "Corresponde al identificador (RUN) otorgado el Registro Civil de Chile"
@@ -33,6 +34,7 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * identifier[RUN].value ^short = "Número de RUN"
 * identifier[RUN].value ^definition = "Valor del RUN en la Cédula de Identidad entregada por el Registro Civil, en formato sin puntos y con guión para diferencia el dígito verificador"
 
+* identifier[RNPI].system and identifier[RNPI].use and identifier[RNPI].value MS
 * identifier[RNPI] 0..1
 * identifier[RNPI] ^short = "Identificador destinado a almacenar el identificador del RNPI" 
 * identifier[RNPI] ^definition = "Corresponde al identificador otorgado por la Super Intendecia de  Salud a los prestadores válidos en chile"
@@ -52,7 +54,7 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * active MS
 
 
-* name  MS 
+* name and name.use and name.family and name.given  MS 
 
 * name.use ^short = "Uso del nombre del prestador"
 * name.use ^definition = "Este es el uso que se le da al nombre del Prestador considerando que puede ser nombre oficial, temporal, seudonimo, entre otros, Pero por motivos legales este uso es Oficial "
@@ -61,7 +63,7 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * name.family ^definition = "Se debe ingresar el primer apellido, segun indica su identificacion personal"
 * name.family 1..1
 
-* name.family.extension contains http://hl7.org/fhir/StructureDefinition/humanname-mothers-family named mothers-family 0..1
+* name.family.extension contains http://hl7.org/fhir/StructureDefinition/humanname-mothers-family named mothers-family 0..1 MS
 * name.family.extension ^short = "Extensión para segundo apellido"
 * name.given 1..
  
@@ -78,39 +80,17 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * birthDate ^short = "Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD"
 * birthDate ^definition = "Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD (Ej: 1996-08-21)"
 
-* address and address.use and address.line and address.city and address.district and address.state and address.country MS
-* address ^short = "Dirección del Prestador"
-* address ^definition = "Se definirá la dirección en una línea y se podría codificar en city la comuna, en district la provincia y en state la región"
-* address.use 1..1
-* address.use ^short = "Definición del tipo de domicilio home | work | temp | old (requerido)"
-* address.use ^definition = "Se especifica el tipo de dirección notificada. Esto debe ser segun los códigos definidos por HL7 FHIR"
-* address.line ^short = "Calle o avenida, numero y casa o depto"
-* address.line ^definition = "Aquí se escribe toda la dirección completa"
-* address.city ^short = "Campo para Comuna de residencia"
-* address.city ^definition = "Campo para Comuna de residencia. Se usa el valueSet de códigos de comunas definidos a nivel naciona."
-* address.city from VSCodigosComunaCL (required)
-* address.city ^binding.description = "Códigos Comuna, Ministerio del Interior, 2018" 
-* address.district ^short = "Campo para Provincia de Residencia"
-* address.district ^definition = "Campo para Provincia de Residencia. Se usa el valueSet de códigos de provicias definidos a nivel naciona."
-* address.district from VSCodigosProvinciasCL (required)
-* address.district ^binding.description = "Códigos Provincia, Ministerio del Interior, 2018" 
-* address.state ^short = "Campo para la Región"
-* address.state ^definition = "Campo Región. Se usa el valueSet de códigos de regiones definidos a nivel naciona."
-* address.state from VSCodigosRegionesCL (required)
-* address.state ^binding.description = "Códigos Regiones, Ministerio del Interior, 2018" 
-* address.country ^short = "Campo para País de Residencia"
-* address.country ^definition = "Campo para País de Residencia"
-* address.country from CodPaises (required)
-
+* address only Address or ClAddress
+* address MS
 
 * qualification MS
 * qualification ^short = "Certificados, títulos y/o Especialidad(es) obtenidas por el Prestador"
 * qualification ^definition = "Certificados, titulos y/o especialidades que el Prestador pueda validar"
 
 * qualification ^slicing.discriminator.type = #value
-* qualification ^slicing.discriminator.path = "code.text"
+* qualification ^slicing.discriminator.path = "identification.value"
 * qualification ^slicing.rules = #open
-* qualification ^slicing.description = "Debido a que los profeisonales de la salud pueden tener titulo y ademas poseer especialidades, es que se ha realizado un slice, con el fin de poder diferenciarlos."
+* qualification ^slicing.description = "Debido a que los profesisonales de la salud pueden tener titulo y ademas poseer especialidades, es que se ha realizado un slice, con el fin de poder diferenciarlos. El de Certificados tiene identifier.value el valor cert y el slice de especialidad el valor esp   "
 
 
 * qualification contains Cert 0..* MS and Esp 0..* MS
@@ -118,12 +98,21 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * qualification[Cert] ^short = "Especificación de los Títulos o Certificados Profesionales que tiene el Prestador"
 * qualification[Cert] ^definition = "Listado de Títulos o Cetificados Profesionales que tiene el prestador. Solo se consideran aquellos que pueden ser demostrados en consulta a la casa de estudios pertinente"
 
+* qualification[Cert].identifier 1..1 MS
+* qualification[Cert].identifier.value 1..1 MS
+* qualification[Cert].identifier.value = "cert"
+* qualification[Cert].identifier.value ^short = "Valor del tipo de calificación, en este caso cert"
+* qualification[Cert].identifier.value ^definition = "Valor del tipo de calificación, en este caso cert"
+
+* qualification[Cert].code.text 1..1 MS
+* qualification[Cert].code.coding.system MS
+* qualification[Cert].code.text ^short = "Texto libre del Título o Certificado Profesional especificado"
 * qualification[Cert].code.coding.system ^short = "El sistema sobre el cual se verificarán los titulos o certificados de los Prestadores"
 * qualification[Cert].code.coding.system ^definition = "La url sobre la cual se encuentra el endPoint para el acceso a  los códigos de titulos y/o certificados de prestadores. El perfil especifica que se debe usar la siguiente url:  \"https://api.minsal.cl/v1/catalogos/profesiones/\""
 
 
 * qualification[Cert].code.coding.display MS
-* qualification[Cert].code.coding.display 1..1
+* qualification[Cert].code.coding.display 0..1 MS
 * qualification[Cert].code.text = #Certificado(s)
 * qualification[Cert].code.coding.display ^short = "Nombre del titulo o certificado agregado"
 * qualification[Cert].code.coding.display ^definition = "Nombre del titulo o certificado agregado. Agregar un poco mas de informacion acerca del item que se esta agregando."
@@ -138,16 +127,24 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * qualification[Esp] ^short = "Especificación de la o las  especialidades que posea el prestador"
 * qualification[Esp] ^definition = "Listado de especialidades que posee el prestador. Solo se consideran aquellos que pueden ser demostrados en consulta a la casa de estudios pertinente"
 
-* qualification[Esp].identifier ^short = "Identificador de especialidades"
-* qualification[Esp].identifier ^definition = "Identificación especialidades profesionales indicando procedencia y casa de estudios"
+* qualification[Esp].identifier 1..1 MS
+* qualification[Esp].identifier.value 1..1 MS
+* qualification[Esp].identifier.value = "esp"
+* qualification[Esp].identifier.value ^short = "Valor del tipo de calificación, en este caso esp"
+* qualification[Esp].identifier.value ^definition = "Valor del tipo de calificación, en este caso esp"
 
-* qualification[Esp].identifier.value ^short = "Codigo de la especialidad"
+//* qualification[Esp].identifier ^short = "Identificador de especialidades"
+//* qualification[Esp].identifier ^definition = "Identificación especialidades profesionales indicando procedencia y casa de estudios"
 
+//* qualification[Esp].identifier.value ^short = "Codigo de la especialidad"
+
+* qualification[Esp].code.coding.system MS
 * qualification[Esp].code.coding.system ^short = "El sistema sobre el cual se verificarán las especialidades de los Prestadores"
 * qualification[Esp].code.coding.system ^definition = "la url sobre la cual se encuentra el endPoint para el acceso a  los códigos de especialidades de prestadores. El perfil especifica  \"https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/\""
-
+* qualification[Esp].code.text 1..1 MS
+* qualification[Esp].code.text ^short = "Texto libre de la especialidad del profesional"
 * qualification[Esp].code.coding.display MS
-* qualification[Esp].code.coding.display 1..1
+* qualification[Esp].code.coding.display 0..1
 * qualification[Esp].code.coding.display ^short = "Nombre de la especialidad"
 * qualification[Esp].code.coding.display ^definition = "Nombre la especialidad agregada. Agregar un poco mas de informacion acerca del item que se esta agregando."
 

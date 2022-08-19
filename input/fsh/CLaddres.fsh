@@ -9,7 +9,7 @@ Description: "Variable dirección"
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
-* extension ^definition = "The Human Language of the item. Can be used to express the same address in multiple languages (e.g. in a Brussels setting)"
+* extension ^definition = "Formato Chileno para la definición de direcciones"
 
 * use 0..1 MS
 * use ^short = "Definición del tipo de domicilio home | work | temp | old (requerido)"
@@ -40,7 +40,7 @@ Description: "Variable dirección"
 * state.extension contains RegionesCl named regiones  1..1  MS
 * state.extension ^short = "Código de Regiones"
 * state.extension ^definition = "Código de Regiones"
-* state.extension.valueCode from VSCodigosRegionesCL (required)
+
 
 * country ^short = "Campo para País de Residencia"
 * country ^definition = "Campo para País de Residencia"

@@ -7,10 +7,12 @@ Description: "Esta extensión incluye códigos de paises de origen"
 * value[x] only CodeableConcept
 * value[x] ^short = "Código de País"
 * url 1..1 MS
-* valueCodeableConcept 1..1 MS
 * valueCodeableConcept.coding 1..1 MS
-* valueCodeableConcept.coding.system 1..1 MS
-* valueCodeableConcept.coding.system from CodPaises (extensible)
+  * code 1..1 MS
+  * code from CodPais
+  * system 0..1 MS
+  * display 0..1 MS
+//* valueCodeableConcept.coding.system from CodPaises (extensible)
 
 /* 		Extension 		*/
 /*	Comunas Chile	*/
@@ -18,11 +20,15 @@ Extension:   ComunasCl
 Id:          ComunasCl
 Title:       "Códigos para Comunas en Chile"
 Description: "Esta extensión que permite codiificar las Comunas en Chile en el campo de Dirección"
-* value[x] only code
+* value[x] only CodeableConcept
 * value[x] ^short = "Código de Comunas"
-* valueCode 1..1 MS
 * url 1..1 MS
-* valueCode from VSCodigosComunaCL (extensible)
+* valueCodeableConcept.coding 1..1 MS
+  * code 1..1 MS
+  * code from VSCodigosComunaCL
+  * system 0..1 MS
+  * display 0..1 MS
+//* valueCodeableConcept.coding.system from VSCodigosComunaCL (extensible)
 
 /* 		Extension 		*/
 /*	Provincias Chile	*/
@@ -30,11 +36,15 @@ Extension:   ProvinciasCl
 Id:          ProvinciasCl
 Title:       "Códigos para Provincias en Chile"
 Description: "Esta extensión que permite codificar las Provincias en Chile en el campo de Dirección"
-* value[x] only code
+* value[x] only CodeableConcept
 * value[x] ^short = "Código de Provincias"
-* valueCode 1..1 MS
 * url 1..1 MS
-* valueCode  from VSCodigosProvinciasCL (extensible)
+* valueCodeableConcept.coding 1..1 MS
+  * code 1..1 MS
+  * code from VSCodigosProvinciasCL
+  * system 0..1 MS
+  * display 0..1 MS
+//* valueCodeableConcept.coding.system  from CSCodProvinciasCL (extensible)
 
 /* 		Extension 		*/
 /*	Regiones Chile	*/
@@ -42,11 +52,15 @@ Extension:   RegionesCl
 Id:          RegionesCl
 Title:       "Códigos para Regiones en Chile"
 Description: "Esta extensión que permite codificar las Regiones en Chile en el campo de Dirección"
-* value[x] only code
+* value[x] only CodeableConcept
 * value[x] ^short = "Código de Provincias"
-* valueCode 1..1 MS
 * url 1..1 MS
-* valueCode  from VSCodigosRegionesCL (required)
+* valueCodeableConcept.coding 1..1 MS
+  * code 1..1 MS
+  * code from VSCodigosRegionesCL
+  * system 0..1 MS
+  * display 0..1 MS
+//* valueCodeableConcept.coding.system  from CSCodRegionCL (required)
 
 Extension:   IdentificacionContactoCl
 Id:          IdContacto
