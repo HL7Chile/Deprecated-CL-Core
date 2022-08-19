@@ -17,7 +17,7 @@
             "path": "https://hl7chile.cl/fhir/ig/CoreCL/2022Enero",
             "changes": "changes.html",
             "status": "draft",
-            "sequence": "STU1",
+            "sequence": "STU2",
             "fhirversion": "4.0.1",
             "current": false
         }, {
@@ -27,7 +27,7 @@
             "path": "https://hl7chile.cl/fhir/ig/CoreCL/1.0.0",
             "changes": "changes2.html",
             "status": "trial-use",
-            "sequence": "STU1",
+            "sequence": "STU2",
             "fhirversion": "4.0.1",
             "current": true
         }, {
