@@ -14,9 +14,9 @@ Define los sets de códigos para el uso terminológico de esta Guía
 | [Campañas de vacunación que se realizan según RNI](ValueSet-VSNombreCampana.html "ValueSet/VSNombreCampana") | Campañas de Inmunización utilizada en Chile según CodeSystem local |
 | [Razones por las cuales no se pudo realizar la inmunización](ValueSet-VSRazonNOTinm.html "ValueSet/VSRazonNOTinm") | Razones por la que no se lleva a cabo la administración de una vacuna o registro de una inmunización según CodeSystem local |
 | [Razones por la que no se pudieron realizar la atención](ValueSet-VSRazonNOT.html "ValueSet/VSRazonNOT") | Razones por la que no se lleva a cabo un encuentro remoto según CodeSystem local. |
-| [Tipos de Documentos Clínicos](ValueSet-VSTiposDocClinic.html "ValueSet/VSTiposDocClinic") | Tipos de Documentos clínicos para Composition. Se trae todo Loinc, se requerirá un VS específico |
+| [Tipos de Documentos Clínicos](ValueSet-VSTiposEncuentroCL.html "ValueSet-VSTiposEncuentroCL.html") | Tipos de Documentos clínicos para Composition. Se trae todo Loinc, se requerirá un VS específico |
 | [Tipos de Documentos](ValueSet-VSTiposDocumentos.html "ValueSet/VSTiposDocumentos") | Tipos de Documentos para identificación según tabla HL7 V3 y CodeSystem local. |
-| [Códigos de Tipos de Encuentro](ValueSet-VSTiposEncuentro.html "ValueSet/VSTiposEncuentro") | Códigos de Encuentros según Minsal |
+| [Códigos de Tipos de Encuentro](ValueSet-VSTiposEncuentroCL.html "ValueSet-VSTiposEncuentroCL.html") | Códigos de Encuentros según Minsal |
 | [Tipos de Servicios](ValueSet-VSTiposServicio.html "ValueSet/VSTiposServicio") | Tipos de Servicios para encuentro remoto segun CodeSystem local. |
 | [Tipos de Vacunas RNI](ValueSet-VSTiposVacunas.html "ValueSet/VSTiposVacunas") | Tipos de Vacunas utilizadas en Chile según CodeSystem local |
 | [Lenguajes](ValueSet-VSCodigoslenguaje.html "ValueSet/VSCodigoslenguaje") | Códigos para tipos de lenguajes reconocidos |
@@ -38,6 +38,6 @@ Define los códigos de sistemas para uso terminológico en esta Guía
 | [Nombre de Campañas de Inmunización de RNI](CodeSystem-CSNombreCampana.html "CodeSystem/CSNombreCampana") | Códigos de las campañas de vacunas o inmunizaciones según indicaciones del Ministerio de Salud |
 | [Códigos de razones por la cuales el encuentro remoto no se pudo llevar a cabo](CodeSystem-CSRazonNOT.html "CodeSystem/CSRazonNOT") | Códigos de las razones por la cual un encuentro remoto no pudo realizarse según indicaciones del Ministerio de Salud |
 | [Códigos de razones por las cuales el registro de inmunización no se pudo llevar a cabo](CodeSystem-CSRazonNOTinm.html "CodeSystem/CSRazonNOTinm") | Códigos de las razones por la cual el registro de inmunización no pudo realizarse según indicaciones del Ministerio de Salud |
-| [Códigos de Tipos de Encuentro](CodeSystem-CSTiposEncuentro.html "CodeSystem/CSTiposEncuentro") | Códigos de Encuentros según Minsal |
+| [Códigos de Tipos de Encuentro](CodeSystem-CSTiposEncuentroCL.html "CodeSystem-CSTiposEncuentroCL.html") | Códigos de Encuentros según Minsal |
 | [Códigos de Vacunas RNI](CodeSystem-CSCodigoVacunas.html "CodeSystem/CSCodigoVacunas") | Códigos de las vacunas o inmunizaciones según indicaciones del Ministerio de Salud |
 | [Códigos de Lenguajes](CodeSystem-CSCodigoslenguaje.html "CodeSystem/CSCodigoslenguaje") | Códigos de Lenguaje para definir la lengua con la cual se expresa una persona |

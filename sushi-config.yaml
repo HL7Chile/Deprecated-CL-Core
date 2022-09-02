@@ -25,11 +25,7 @@ fhirVersion: 4.0.1
 dependencies:
  
   hl7.fhir.uv.ips: 1.0.0
- 
 
- 
- # uri: http://hl7.org/fhir/uv/ips
-    
 
 pages: 
   index.md:

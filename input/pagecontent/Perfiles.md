@@ -26,8 +26,8 @@ Los siguientes son el listado de perfiles definidos para el Core Nacional
 **E**
 <br>
 
-* [CL Encuetro](StructureDefinition-EncuetroCL.html)
-* [CL Especialidad_Prestador](StructureDefinition-CoreEspecialidadCl.html)
+* [CL Encuetro](StructureDefinition-EncounterCL.html)
+* [CL Especialidad_Prestador](StructureDefinition-VSEspecialidadesDeisCL.html)
 <br>
 
 **I**

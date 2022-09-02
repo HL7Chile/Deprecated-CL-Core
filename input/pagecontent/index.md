@@ -34,7 +34,7 @@ Tambien se presenta una tabla jerárquica con una vista lógica del contenido co
 * [CL Bundle](StructureDefinition-BundleCl.html)
 * [CL Documento](StructureDefinition-DocumentoCl.html)
 * [CL Diagnóstico-Condición](StructureDefinition-CoreDiagnosticoCl.html)
-* [CL Encuetro](StructureDefinition-EncuetroCL.html)
+* [CL Encuetro](StructureDefinition-EncounterCL.html)
 * [CL Especialidad_Prestador](StructureDefinition-CoreEspecialidadCl.html)
 * [CL Inmunizacion](StructureDefinition-ImmunizationCL.html)
 * [CL Localización](StructureDefinition-CoreLocalizacionCl.html)

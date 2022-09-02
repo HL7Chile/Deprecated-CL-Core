@@ -10,7 +10,7 @@ Estas definen  constraints en los tipos de datos de FHIR para los sistemas que h
 
 | [Códigos para Comunas en Chile](StructureDefinition-ComunasCl.html "StructureDefinition/ComunasCl") | Esta extensión que permite codiificar las Comunas en Chile en el campo de Dirección |
 | [Contacto de los participantes secundarios del encuentro](StructureDefinition-ContactoParticipantes.html "StructureDefinition/ContactoParticipantes") | Esta extensión incluye los codigos de los medios de contacto que se tiene para los participantes secundarios |
-| [Especialidad del medico principal](StructureDefinition-EspecialidadesMedico.html "StructureDefinition/EspecialidadesMedico") | Esta extensión incluye los codigos de las especialidades que puede tener el medico principal |
+| [Especialidad del medico principal](StructureDefinition-VSEspecialidadesDeisCL.html "StructureDefinition-VSEspecialidadesDeisCL.html") | Esta extensión incluye los codigos de las especialidades que puede tener el medico principal |
 | [Identificación del Contacto de un Paciente](StructureDefinition-IdContacto.html "StructureDefinition/IdContacto") | Identificación de contacto de paciente en especial para casos en los cuales este actúa como Tutor Legal |
 | [Nombre de la Campaña de vacunación establecida por el RNI (Registro Nacional de Inmunizaciones)](StructureDefinition-NombreCampana.html "StructureDefinition/NombreCampana") | Esta extensión incluye los nombres de las distintas Campañas que se realizan y estan registradas en el RNI |
 | [Notas realizadas en un encuentro por Comite](StructureDefinition-NotasEncuentro.html "StructureDefinition/NotasEncuentro") | Esta extensión incluye los codigos de los medios de contacto que se tiene para los participantes secundarios |
