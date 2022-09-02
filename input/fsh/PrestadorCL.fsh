@@ -88,9 +88,9 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * qualification ^definition = "Certificados, titulos y/o especialidades que el Prestador pueda validar"
 
 * qualification ^slicing.discriminator.type = #value
-* qualification ^slicing.discriminator.path = "identification.value"
+* qualification ^slicing.discriminator.path = "identifier.value"
 * qualification ^slicing.rules = #open
-* qualification ^slicing.description = "Debido a que los profesisonales de la salud pueden tener titulo y ademas poseer especialidades, es que se ha realizado un slice, con el fin de poder diferenciarlos. El de Certificados tiene identifier.value el valor cert y el slice de especialidad el valor esp   "
+* qualification ^slicing.description = "Debido a que los profesisonales de la salud pueden tener titulo y ademas poseer especialidades, es que se ha realizado un slice, con el fin de poder diferenciarlos. El de Certificados tiene identifier.value el valor cert y el slice de especialidad el valor esp"
 
 
 * qualification contains Cert 0..* MS and Esp 0..* MS

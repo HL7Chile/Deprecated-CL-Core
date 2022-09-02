@@ -22,11 +22,14 @@ copyright: "Usado con el permiso de HL7 International, todos los derechos reseva
 license: CC0-1.0
 fhirVersion: 4.0.1
 
-#dependencies:
-#  hl7.fhir.uv.ips: 
-#    id: InternationalPatientSummaryIG
-#    uri: http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips
-#    version: 1.0.0
+dependencies:
+ 
+  hl7.fhir.uv.ips: 1.0.0
+ 
+
+ 
+ # uri: http://hl7.org/fhir/uv/ips
+    
 
 pages: 
   index.md:

@@ -8,7 +8,7 @@ Description:    "Condicion o Diagnósticos de Pacientes para Registro Clínico E
 
 * clinicalStatus 1..1 MS
 * clinicalStatus ^short = "El estatus en el cual se encuentra la condición: active| recurrece | relapse | inactive | remission | resolved"
-* clinicalStatus  from http://hl7.org/fhir/ValueSet/condition-clinical (required)
+* clinicalStatus  from 	http://hl7.org/fhir/ValueSet/condition-clinical (required)
 * clinicalStatus ^binding.description = "Códigos requeridos por HL7-FHIR"
 * clinicalStatus ^definition = "El estatus en el cual se encuentra la condición de un Paciente"
 
@@ -53,6 +53,16 @@ Description:    "Condicion o Diagnósticos de Pacientes para Registro Clínico E
 * code ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * code ^binding.extension.valueString = "DiagnosticosSCT + Ausente o Desconocido"
 * code ^binding.description = "Diagósticos en SNOMED-CT. El ValueSet trae toda la terminología + Problema Ausente o Desconocido"
+  * coding.code MS
+  * coding.code ^short = "Códoigo del diagnóstico o problema"
+  * coding.code ^definition = "Códoigo del diagnóstico o problema"
+  * coding.system MS
+  * coding.system ^short = "Dominio de los códigos declarados"
+  * coding.system ^definition = "Dominio de los códigos declarados"
+  * coding.display MS
+  * coding.display ^short = "Glosa del código en la terminología."
+  * coding.display ^definition = "Glosa del código en la terminología."
+  
   * text 1..1 MS
   * text ^short = "Se debe al menos notificar el diagnóstico o Problema en Texto"
   * text ^definition = "Se debe al menos notificar el diagnóstico o Problema en Texto"

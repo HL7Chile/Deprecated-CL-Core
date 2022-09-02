@@ -95,7 +95,7 @@ Usage : #example
 * communication.language.coding.code = #es-CL "Spanish"
 * communication.language.coding.display = "Spanish"
 
-* generalPractitioner.reference = "ORG1"
+* generalPractitioner.reference = "Organization/ORG1"
 * generalPractitioner.display = "Hospital de la Vida"
 
 
@@ -165,7 +165,7 @@ Usage : #example
 * address.state.extension[RegionesCl].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/RegionesCl"
 * address.state.extension[RegionesCl].valueCodeableConcept.coding.system  = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodRegionCL" 
 * address.state.extension[RegionesCl].valueCodeableConcept.coding.code  = #15 
-* address.state.extension[RegionesCl].valueCodeableConcept.coding.display  = "Arica"
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.display  = "Arica y Parinacota"
 
 * address.country.extension[CodigoPaises].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises"
 * address.country.extension[CodigoPaises].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
@@ -235,7 +235,7 @@ Usage: #example
 * address.state.extension[RegionesCl].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/RegionesCl"
 * address.state.extension[RegionesCl].valueCodeableConcept.coding.system  = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodRegionCL" 
 * address.state.extension[RegionesCl].valueCodeableConcept.coding.code  = #15 
-* address.state.extension[RegionesCl].valueCodeableConcept.coding.display  = "Arica"
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.display  = "Arica y Parinacota"
 
 * address.country.extension[CodigoPaises].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises"
 * address.country.extension[CodigoPaises].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
@@ -246,7 +246,7 @@ Usage: #example
 
 * deceasedBoolean = false 
 
- /*
+ 
 Instance: PacienteCl-4
 InstanceOf: CorePacienteCl
 Title : "Ejemplo de Recurso de paciente Nacional con contacto declarado"
@@ -296,18 +296,27 @@ Usage: #example
 
 
 * address.use = #home
-//* address.line = "Calle 4 Norte, 52, pieza 802"
+* address.line = "Calle 4 Norte, 52, pieza 802"
 * address.city.extension[ComunasCl].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ComunasCl"
-* address.city.extension[ComunasCl].valueCode = #13120 
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodComunasCL"
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.code = #15101
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.display =  "Arica"
 
 * address.district.extension[ProvinciasCl].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ProvinciasCl"
-* address.district.extension[ProvinciasCl].valueCode = #131
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodProvinciasCL" 
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.code = #151
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.display = "Arica"
 
 * address.state.extension[RegionesCl].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/RegionesCl"
-* address.state.extension[RegionesCl].valueCode = #13 
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.system  = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodRegionCL" 
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.code  = #15 
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.display  = "Arica y Parinacota"
 
 * address.country.extension[CodigoPaises].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises"
-* address.country.extension[CodigoPaises].valueCodeableConcept.coding.system = #CL "Chile"
+* address.country.extension[CodigoPaises].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
+* address.country.extension[CodigoPaises].valueCodeableConcept.coding.code = #CL 
+* address.country.extension[CodigoPaises].valueCodeableConcept.coding.display = "Chile"
+
 
 
 * contact.extension.url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/IdContacto"
@@ -380,18 +389,26 @@ Usage: #example
 
 
 * address.use = #home
-//* address.line = "Calle 4 Norte, 52, pieza 802"
+* address.line = "Calle 4 Norte, 52, pieza 802"
 * address.city.extension[ComunasCl].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ComunasCl"
-* address.city.extension[ComunasCl].valueCode = #13120 "Ñunoa" 
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodComunasCL"
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.code = #15101
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.display =  "Arica"
 
 * address.district.extension[ProvinciasCl].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ProvinciasCl"
-* address.district.extension[ProvinciasCl].valueCode = #131 "Santiago"
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodProvinciasCL" 
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.code = #151
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.display = "Arica"
 
 * address.state.extension[RegionesCl].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/RegionesCl"
-* address.state.extension[RegionesCl].valueCode = #13 "Metropolitana de Santiago"
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.system  = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodRegionCL" 
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.code  = #15 
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.display  = "Arica y Parinacota"
 
 * address.country.extension[CodigoPaises].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises"
-* address.country.extension[CodigoPaises].valueCodeableConcept.coding.system = #CL "Chile"
+* address.country.extension[CodigoPaises].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
+* address.country.extension[CodigoPaises].valueCodeableConcept.coding.code = #CL 
+* address.country.extension[CodigoPaises].valueCodeableConcept.coding.display = "Chile"
 
 
 
@@ -442,6 +459,7 @@ Usage: #example
 
 
 * entity.what.reference = "Organization/ORG1"
+
 
 Instance: BundleEx
 InstanceOf: BundleCl
@@ -529,6 +547,7 @@ InstanceOf : CoreLocalizacionCl
 * hoursOfOperation.allDay = false
 * hoursOfOperation.openingTime = 09:00:00
 * hoursOfOperation.openingTime = 19:00:00
+
 
 Instance : MedicamentoCl
 Title : "Ejemplo de comprimido Tareg - D 160"
@@ -641,40 +660,49 @@ InstanceOf : CorePrestadorCl
 * birthDate = "1974-08-12"
 
 // Una sola dirección
-* address.use = #home
-* address.line = "Naranjos, 22, depto 32"
-* address.city = #09101  //codigo de comuna por binding (temuco)
-* address.district = #091  //codigo de privincia por binding (cautin)
-* address.state = #09 //codigo por binding region (araucania)
-* address.country = #152
 
-* address.use = #home
-* address.line = "Naranjos, 22, depto 32"
+
 * address.city.extension[ComunasCl].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ComunasCl"
-* address.city.extension[ComunasCl].valueCode = #09101 "Temuco"
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodComunasCL"
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.code = #05602
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.display =  "Algarrobo"
 
 * address.district.extension[ProvinciasCl].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ProvinciasCl"
-* address.district.extension[ProvinciasCl].valueCode = #091 "Cautín"
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodProvinciasCL" 
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.code = #056 
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.display = "San Antonio"
 
 * address.state.extension[RegionesCl].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/RegionesCl"
-* address.state.extension[RegionesCl].valueCode = #09 "Araucanía"
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.system  = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodRegionCL" 
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.code  = #05 
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.display  = "Valparaíso"
 
 * address.country.extension[CodigoPaises].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises"
-* address.country.extension[CodigoPaises].valueCodeableConcept.coding.system = #CL "Chile"
+* address.country.extension[CodigoPaises].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
+* address.country.extension[CodigoPaises].valueCodeableConcept.coding.code = #CL 
+* address.country.extension[CodigoPaises].valueCodeableConcept.coding.display = "Chile"
 
 
 //un titulo y una especialidad
+
+* qualification[Cert].identifier.value = "cert"
 * qualification[Cert].code.coding.system = "https://api.minsal.cl/v1/catalogos/profesiones/"
 * qualification[Cert].code.coding.code = #2112  // endPoint definido por perfil
 * qualification[Cert].code.coding.display = "Certificado Profesional Médico Cirujano" //codigo de título profesional Universitario
 * qualification[Cert].code.text = "Certificado(s)"
-* qualification[Esp].code.coding.system = "https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/"
-* qualification[Esp].code.coding.code = #122  // endPoint definido por perfil
-* qualification[Esp].code.coding.display = "Cardiólogia"
-* qualification[Esp][1].code.coding.system = "https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/"
-* qualification[Esp][1].code.coding.code = #1234  // endPoint definido por perfil
-* qualification[Esp][1].code.coding.display = "Medicina interna"
-* qualification[Esp].code.text = "Especialidad(es)" 
+
+* qualification[Esp][0].identifier.value = "esp"
+* qualification[Esp][0].code.coding.system = "https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/"
+* qualification[Esp][0].code.coding.code = #122  // endPoint definido por perfil
+* qualification[Esp][0].code.coding.display = "Cardiólogia"
+* qualification[Esp][0].code.text = "Especialidad(es)" 
+
+* qualification[Esp][+].identifier.value = "esp"
+* qualification[Esp][=].code.coding.system = "https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/"
+* qualification[Esp][=].code.coding.code = #1234  // endPoint definido por perfil
+* qualification[Esp][=].code.coding.display = "Medicina interna"
+* qualification[Esp][=].code.text = "Especialidad(es)" 
+
 
 
 Instance : EjemplValidacionProvCl
@@ -852,8 +880,8 @@ InstanceOf : ImmunizationCL
 Usage : #example
 
 //Extensión para nombre campaña
-* extension.url = "https://minsal.cl/fhir/HD/StructureDefinition/NombreCampana"
-* extension.valueCoding.system = "https://minsal.cl/fhir/HD/CodeSystem/CSNombreCampanaCL"
+* extension.url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/NombreCampana"
+* extension.valueCoding.system = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSNombreCampana"
 * extension.valueCoding.code = #hepatiA
 * extension.valueCoding.display = "Hepatitis A" 
 
@@ -865,9 +893,8 @@ Usage : #example
 * status = #completed 
 
 //Razón de no realizarse la inmunización
-//* statusReason.extension[statusReason].valueCode = #solicitudPaci
-//* statusReason.coding.system = "https://minsal.cl/fhir/HD/CodeSystem/CSRazonNOTinm"
-//* statusReason.coding.code = #solicitudPaci
+* statusReason.extension[statusReason].valueCode = #solicitudPaci
+
 
 //Paciente inmunizado
 * patient = Reference(Patient/11)
@@ -886,8 +913,8 @@ Usage : #example
 * location.extension.url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ServicioSalud"
 
 //Vacuna administrada
-* vaccineCode.extension.valueCoding.code = #hep_A 
-* vaccineCode.extension.valueCoding.system = "https://minsal.cl/fhir/HD/CodeSystem/CSCodigoVacunas"
+* vaccineCode.extension.valueCode = #hep_A 
+//* vaccineCode.extension.valueCode.system = "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSTiposVacunas"
 * vaccineCode.extension.url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/TiposVacunaRNI"
 //Organización 
 * performer.actor = Reference(Organization/f003)
@@ -1000,7 +1027,7 @@ Usage : #example
 
 Instance : DiagnosticoEj
 Title : "Ejemplo de Un Diagnóstico de hipertensión"
-Description: "Diagnóstico Confirmado de Hipertesión "
+Description: "Diagnóstico Confirmado de Hipertesión"
 InstanceOf : CoreDiagnosticoCl
 Usage : #example
 
@@ -1009,16 +1036,15 @@ Usage : #example
 * clinicalStatus.coding.code = #active
 * clinicalStatus.coding.display = "Active"
 
-* clinicalStatus.coding.system = "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+* verificationStatus.coding.system = "http://terminology.hl7.org/CodeSystem/condition-ver-status"
 * verificationStatus.coding.code = #confirmed
 * verificationStatus.coding.display = "Confirmed"
 
 * code.text = "Diagnóstico de Hipertensión Confirmada"
 * code.coding.system = "http://snomed.info/sct"
 * code.coding.code = #38341003
-* code.coding.display = "Hipertensión Arterial"
+* code.coding.display = "High blood pressure"
 * subject.reference = "Patient/11"
 
 * onsetDateTime = "2022-08-07"
 
-*/

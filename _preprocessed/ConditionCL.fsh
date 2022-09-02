@@ -25,14 +25,19 @@ Description: "Condicion o Diagnósticos de Pacientes para Registro Clínico Elec
 * subject.reference ^short = "Referencia al recurso del Paciente al cual se indica el diagnóstico o condicón"
 * subject.identifier ^short = "Identificador del paciente"
 * subject.display ^short = "Texto alternativo para el recurso"
-* code 1..1
+* code 0..1
 * code MS
 * code ^definition = "Identificación de la condición, el problema o el diagnóstico o registro del \"problema ausente\" o de los \"problemas desconocidos\"."
 * code ^short = "Condición de la persona en Código o no conocido"
 * code ^comment = "Se agregan los códigos no conocido o no presente"
 * code from VSDiagnosticosSCT (preferred)
-* code ^short = "Códigos de SOMED-CT y adicionales de ausente o desconocido"
-* code ^definition = "Códigos de toda la Terminología."
+  * coding.code ^short = "Códigos de SOMED-CT y adicionales de ausente o desconocido"
+  * coding.code ^definition = "Códigos de toda la Terminología."
+  * coding.system ^short = "Dominio al cual pertenecen los códigos."
+  * coding.system ^definition = "Dominio al cual pertenecen los códigos"
+  * coding.display ^short = "Texto definido para ese código en la terminología."
+  * coding.display ^definition = "Texto definido para ese código en la terminología."
+
 * code ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * code ^binding.extension.valueString = "DiagnosticosSCT + Ausente o Desconocido"
 * code ^binding.description = "Diagósticos en SNOMED-CT. El ValueSet trae toda la terminología + Problema Ausente o Desconocido"
