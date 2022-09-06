@@ -56,17 +56,17 @@ Los requerimientos de conformidad describen las expectativas sobre la funcionali
 
 **Autores Primarios: Jorge Mansilla (HL7 Chile), César Galindo (HL7 Chile), Pablo Pizarro (MINSAL), Nicolás Soto (MINSAL)**
 
-Autores Secundarios: Diego Olea (MINSAL), Franco Ulloa (MINSAL)
+*Autores Secundarios: Diego Olea (MINSAL), Franco Ulloa (MINSAL), Diego Kaminker (HL7 Argentina), Yanara Salinas (UV)*
 
 
 
 
 ### Recursos a Disposición
-[Ministerio de Salud de Chile] (http://www.minsal.cl)
+[Ministerio de Salud de Chile](http://www.minsal.cl)
 
 [Capítulo Chileno de HL7, HL7 Chile](http://hl7chile.cl)
 
-HL7 Internacional (http://hl7.org)
+[HL7 Internacional](http://hl7.org)
 
 [FHIR R4](http://hl7.org/fhir/)
 
