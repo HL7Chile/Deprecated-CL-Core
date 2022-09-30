@@ -102,7 +102,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
   * family 0..0
   * given 1..* MS
   * given ^short = "Nombre Social"
-  * given ^definition = "Nombre Social"
+  * given ^definition = "Nombre Social del Paciente"
   * prefix 0..0
   * suffix 0..0
   * period 0..0
