@@ -44,6 +44,8 @@ pages:
     title: Ejemplos
   Todas-Descargas.md:
     title: Descargas
+  Changes.md:
+    title: Historial de Cambios
 
 parameters:
   apply-publisher: true
@@ -73,3 +75,4 @@ menu:
    Valuesets: Set-De-Validacion-ValueSets.html
   Ejemplos: Set-Ejemplos.html
   Descargas: Todas-Descargas.html
+  Historial de cambios: Changes.html
