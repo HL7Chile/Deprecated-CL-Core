@@ -4,18 +4,18 @@
 # │  https://fshschool.org/docs/sushi/configuration/#full-configuration                            │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.cl.corecl
-canonical: https://hl7chile.cl/fhir/ig/CoreCL
-version: 1.7.0 
+canonical: https://hl7chile.cl/fhir/ig/corecl
+version: 1.7.0
 name: CoreCL-DEV
 
 title: Guía de Implementación Core-CL FHIR R4, (Versión Evolutiva)
 status: draft
 date: 2022-09
-publisher: 
+publisher:
   name: HL7 Chile
   url: http://hl7chile.cl
   email: chair@hl7chile.cl
-       
+
 description: "Guía de Implementación Versión de Desarrollo Sobre STU 1, para los perfiles Core que se van a requerir a nivel de desarrollo Nacional para Sistemas que Intercambien datos en estandar FHIR-R4"
 jurisdiction: urn:iso:std:iso:3166#CL "Chile"
 copyright: "Usado con el permiso de HL7 International, todos los derechos resevados en los Licencias de HL7 Internacional."
@@ -23,11 +23,9 @@ license: CC0-1.0
 fhirVersion: 4.0.1
 
 dependencies:
- 
   hl7.fhir.uv.ips: 1.0.0
 
-
-pages: 
+pages:
   index.md:
     title: Inicio
   Aspectos-Generales.md:
@@ -39,7 +37,7 @@ pages:
   Extensiones.md:
   Set-De-Validacion-ValueSets.md:
     title: CodeSystems/ValueSets
-  Perfiles.md: 
+  Perfiles.md:
   Set-Ejemplos.md:
     title: Ejemplos
   Todas-Descargas.md:
@@ -55,10 +53,8 @@ parameters:
   excludettl: true
   generate: genExamples
 
-copyrightyear: '2021+'
+copyrightyear: "2021+"
 releaselabel: CI Build
-
-
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
@@ -70,9 +66,9 @@ menu:
   Generalidades: Aspectos-Generales.html
   Operaciones: Consolidado-Operaciones.html
   Artefactos:
-   Perfiles: Perfiles.html
-   Extensiones: Extensiones.html
-   Valuesets: Set-De-Validacion-ValueSets.html
+    Perfiles: Perfiles.html
+    Extensiones: Extensiones.html
+    Valuesets: Set-De-Validacion-ValueSets.html
   Ejemplos: Set-Ejemplos.html
   Descargas: Todas-Descargas.html
   Historial de cambios: Changes.html
