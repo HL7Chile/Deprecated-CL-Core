@@ -627,9 +627,9 @@ InstanceOf : CorePrestadorCl
 //* identifier[RUN].system = "https://api.minsal.cl/v1/personas/datos/basicos/run"
 * identifier[RUN].value = "8336277-3" // endPoint definido por perfil
 * identifier[RUN].system = "http://api_run/run"
-* identifier[RNPI].use = #secondary    //obligado
+* identifier[OtrosID].use = #secondary    //obligado
 //* identifier[RNPI].system = "https://apis.superdesalud.gob.cl/api/prestadores/registro/"
-* identifier[RNPI].value = "999999"  // endPoint definido por perfil
+* identifier[OtrosID].value = "999999"  // endPoint definido por perfil
 
 
 //registro de prestador activo

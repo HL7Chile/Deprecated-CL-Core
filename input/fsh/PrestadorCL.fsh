@@ -7,7 +7,7 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 
 * identifier  MS
 
-* identifier 1..2 
+* identifier 1..* 
 * identifier ^short = "Id de los prestadores"
 * identifier ^definition = "Identificador para cada prestador. El identificador principal en Chile es el Registro Único Nacional (RUN), identificador que es obligatorio. Además, se puede ingresar un ID extra para cada prestador, disponibilizado por Registro Nacional de Prestadores Institucionales (NRPI), este identificador es opcional"
 * identifier ^comment = "Este elemento permite ingresar dos identificadores, uno de tipo RUN y uno de tipo RNPI" 
@@ -17,7 +17,7 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * identifier ^slicing.discriminator.path = "use"
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Este slice permite agregar una identificacion basada RUN y/o basada en el RNPI"
-* identifier contains RUN 1..1 MS and RNPI 0..1 MS
+* identifier contains RUN 1..1 MS and OtrosID 0..* MS
 
 * identifier[RUN].system and identifier[RUN].use and identifier[RUN].value MS
 * identifier[RUN] 1..1
@@ -34,21 +34,18 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * identifier[RUN].value ^short = "Número de RUN"
 * identifier[RUN].value ^definition = "Valor del RUN en la Cédula de Identidad entregada por el Registro Civil, en formato sin puntos y con guión para diferencia el dígito verificador"
 
-* identifier[RNPI].system and identifier[RNPI].use and identifier[RNPI].value MS
-* identifier[RNPI] 0..1
-* identifier[RNPI] ^short = "Identificador destinado a almacenar el identificador del RNPI" 
-* identifier[RNPI] ^definition = "Corresponde al identificador otorgado por la Super Intendecia de  Salud a los prestadores válidos en chile"
-
-* identifier[RNPI].system ^short = "endPoint que valida el RNPI"
-* identifier[RNPI].system ^definition = "Define la url del endPoint a la cual apunta la API, para validar el RNPI"
-* identifier[RNPI].system ^comment = "Se define el endPoint al cual debe apuntar a la API, con el fin de validar que el RNPI ingresado exista y que sea correcto. Por momento se usará la url = \"https://apis.superdesalud.gob.cl/api/prestadores/registro/\""
-
-
-* identifier[RNPI].use ^short = "Se define el uso de este identificador"
-* identifier[RNPI].use ^definition = "Se definirá este uso siempre como \"secondary\" debido a que cualquier RNPI sera un identificador secundario y alternativo, ya que el oficial es el RUN"
-* identifier[RNPI].use = #secondary
-* identifier[RNPI].value ^short = "Valor identificador NRPI"
-* identifier[RNPI].value ^definition = "Valor del RUN en la Cédula de Identidad entregada por el Registro Civil, en formato sin puntos y con guión para diferencia el dígito verificador"
+* identifier[OtrosID].system and identifier[OtrosID].use and identifier[OtrosID].value MS
+//* identifier[OtrosID] 0..*
+* identifier[OtrosID] ^short = "Para otros identificadores como: RNPI, Pasaporte o el que el notificador estime conveniente" 
+* identifier[OtrosID] ^definition = "Para otros identificadores como: RNPI, Pasaporte o el que el notificador estime conveniente"
+* identifier[OtrosID].system ^short = "endPoint para validar los códigos"
+* identifier[OtrosID].system ^definition = "Define la url del endPoint a la cual apunta la API"
+* identifier[OtrosID].system ^comment = "Se define el endPoint al cual debe apuntar a la API"
+* identifier[OtrosID].use ^short = "Se define el uso de este identificador"
+* identifier[OtrosID].use ^definition = "Se definirá este uso siempre como \"secondary\" debido a que cualquier RNPI sera un identificador secundario y alternativo, ya que el oficial es el RUN"
+* identifier[OtrosID].use = #secondary
+* identifier[OtrosID].value ^short = "Valor identificador"
+* identifier[OtrosID].value ^definition = "Valor identificador"
  
 
 * active MS
@@ -64,13 +61,15 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * name.family 1..1
 
 * name.family.extension contains http://hl7.org/fhir/StructureDefinition/humanname-mothers-family named mothers-family 0..1 MS
-* name.family.extension ^short = "Extensión para segundo apellido"
+* name.family.extension ^short = "Extensión para apellido materno"
+* name.family.extension contains http://hl7.org/fhir/StructureDefinition/humanname-fathers-family named father-family 0..1 MS
+* name.family.extension ^short = "Extensión para apellido paterno"
 * name.given 1..
  
 * telecom and gender and birthDate  MS
 * telecom ^definition = "Numero de contacto telefonico"
-* telecom.use ^short = "Uso del contacto descrito, de debe utilizar \"phone\" y \"email\", en caso que agreguemos los dos datos."
-
+* telecom.system ^short = "Uso del contacto descrito, de debe utilizar \"phone\" y \"email\", en caso que agreguemos los dos datos."
+* telecom.system MS and telecom.use MS and telecom.value MS
 
 * gender 1..1
 * gender ^short = "Sexo de nacimiento Registrado, male | female | other | unknown (requerido)"
@@ -93,7 +92,7 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * qualification ^slicing.description = "Debido a que los profesisonales de la salud pueden tener titulo y ademas poseer especialidades, es que se ha realizado un slice, con el fin de poder diferenciarlos. El de Certificados tiene identifier.value el valor cert y el slice de especialidad el valor esp"
 
 
-* qualification contains Cert 0..* MS and Esp 0..* MS
+* qualification contains Cert 0..* MS and Esp 0..* MS and SubEsp 0..* MS
 
 * qualification[Cert] ^short = "Especificación de los Títulos o Certificados Profesionales que tiene el Prestador"
 * qualification[Cert] ^definition = "Listado de Títulos o Cetificados Profesionales que tiene el prestador. Solo se consideran aquellos que pueden ser demostrados en consulta a la casa de estudios pertinente"
@@ -104,6 +103,7 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * qualification[Cert].identifier.value ^short = "Valor del tipo de calificación, en este caso cert"
 * qualification[Cert].identifier.value ^definition = "Valor del tipo de calificación, en este caso cert"
 
+* qualification[Cert].code 1..1 MS
 * qualification[Cert].code.text 1..1 MS
 * qualification[Cert].code.coding.system MS
 * qualification[Cert].code.text ^short = "Texto libre del Título o Certificado Profesional especificado"
@@ -111,11 +111,19 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * qualification[Cert].code.coding.system ^definition = "La url sobre la cual se encuentra el endPoint para el acceso a  los códigos de titulos y/o certificados de prestadores. El perfil especifica que se debe usar la siguiente url:  \"https://api.minsal.cl/v1/catalogos/profesiones/\""
 
 
+* qualification[Cert].code.coding 0..1 MS
+
 * qualification[Cert].code.coding.display MS
 * qualification[Cert].code.coding.display 0..1 MS
 * qualification[Cert].code.text = #Certificado(s)
 * qualification[Cert].code.coding.display ^short = "Nombre del titulo o certificado agregado"
 * qualification[Cert].code.coding.display ^definition = "Nombre del titulo o certificado agregado. Agregar un poco mas de informacion acerca del item que se esta agregando."
+
+* qualification[Cert].code.coding.code ^short = "Nombre del titulo o certificado agregado"
+* qualification[Cert].code.coding.code ^definition = "Nombre del titulo o certificado agregado. Agregar un poco mas de informacion acerca del item que se esta agregando."
+
+
+
 
 * qualification[Cert].issuer ^short = "Organizacion que entrega el certificado o título"
 * qualification[Cert].issuer.display ^short = "Nombre de la organizacion que entrega certificado o título"
@@ -147,7 +155,9 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * qualification[Esp].code.coding.display 0..1
 * qualification[Esp].code.coding.display ^short = "Nombre de la especialidad"
 * qualification[Esp].code.coding.display ^definition = "Nombre la especialidad agregada. Agregar un poco mas de informacion acerca del item que se esta agregando."
-
+* qualification[Esp].issuer ^short = "Organizacion que entrega el certificado o título"
+* qualification[Esp].issuer.display ^short = "Nombre de la organizacion que entrega certificado o título"
+* qualification[Esp].issuer.display ^definition = "Nombre de la organizacion que entrega el certificado o título válido para ejercer como prestdor. En este elemento solo se puede agregar texto libre"
 
 
 
