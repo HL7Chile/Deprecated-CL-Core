@@ -630,6 +630,8 @@ InstanceOf : CorePrestadorCl
 * identifier[OtrosID].use = #secondary    //obligado
 //* identifier[RNPI].system = "https://apis.superdesalud.gob.cl/api/prestadores/registro/"
 * identifier[OtrosID].value = "999999"  // endPoint definido por perfil
+* identifier[OtrosID].system = "http://example.org/api"  // endPoint definido por perfil
+* identifier[OtrosID].use = #secondary  // endPoint definido por perfil
 
 
 //registro de prestador activo
