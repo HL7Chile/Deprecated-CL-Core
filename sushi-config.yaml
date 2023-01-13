@@ -9,7 +9,7 @@ version: 1.7.1
 name: CoreCL-DEV
 
 title: Guía de Implementación Core-CL FHIR R4, (Versión Evolutiva)
-status: draft
+status: active
 date: 2023-01
 publisher:
   name: HL7 Chile

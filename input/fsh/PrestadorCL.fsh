@@ -21,9 +21,8 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 
 * identifier[RUN]
   * use 1..1 MS
-  * system 1..1 MS
+  * system 0..1 MS
   * value 1..1 MS
-* identifier[RUN].system and identifier[RUN].use and identifier[RUN].value MS
 * identifier[RUN] ^short = "Identificador destinado a almacenar el número de RUN" 
 * identifier[RUN] ^definition = "Corresponde al identificador (RUN) otorgado el Registro Civil de Chile"
 * identifier[RUN].use ^short = "Se define el uso de este identificador"
@@ -37,7 +36,7 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 
 * identifier[OtrosID]
   * use 1..1 MS
-  * system 1..1 MS
+  * system 0..1 MS
   * value 1..1 MS
 * identifier[OtrosID] ^short = "Para otros identificadores como: RNPI, Pasaporte o el que el notificador estime conveniente" 
 * identifier[OtrosID] ^definition = "Para otros identificadores como: RNPI, Pasaporte o el que el notificador estime conveniente"
@@ -62,11 +61,15 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * name.family ^short = "Primer Apellido"
 * name.family ^definition = "Se debe ingresar el primer apellido, segun indica su identificacion personal"
 * name.family 1..1
+* name.family.extension contains SegundoApellido named segundoApellido 0..1 MS
+* name.family.extension ^short = "Extensión para el segundo apellido"
 
-* name.family.extension contains http://hl7.org/fhir/StructureDefinition/humanname-mothers-family named mothers-family 0..1 MS
-* name.family.extension ^short = "Extensión para apellido materno"
-* name.family.extension contains http://hl7.org/fhir/StructureDefinition/humanname-fathers-family named father-family 0..1 MS
-* name.family.extension ^short = "Extensión para apellido paterno"
+
+
+//* name.family.extension contains http://hl7.org/fhir/StructureDefinition/humanname-mothers-family named mothers-family 0..1 MS
+//* name.family.extension ^short = "Extensión para apellido materno"
+//* name.family.extension contains http://hl7.org/fhir/StructureDefinition/humanname-fathers-family named father-family 0..1 MS
+//* name.family.extension ^short = "Extensión para apellido paterno"
 * name.given 1..
  
 * telecom and gender and birthDate  MS
@@ -112,10 +115,9 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * qualification[Cert].code 1..1 MS
   * coding 0..1 MS
     * code 1..1 MS
-    * system 1..1 MS
+    * system 0..1 MS
     * display 1..1 MS
   * text 1..1 MS
-* qualification[Cert].code.coding.system MS
 * qualification[Cert].code.text ^short = "Texto libre del Título o Certificado Profesional especificado"
 * qualification[Cert].code.coding.system ^short = "El sistema sobre el cual se verificarán los titulos o certificados de los Prestadores"
 * qualification[Cert].code.coding.system ^definition = "La url sobre la cual se encuentra el endPoint para el acceso a  los códigos de titulos y/o certificados de prestadores. El perfil especifica que se debe usar la siguiente url:  \"https://api.minsal.cl/v1/catalogos/profesiones/\""
@@ -142,7 +144,7 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * qualification[Esp].code 1..1 MS
   * coding 0..1 MS
     * code 1..1 MS
-    * system 1..1 MS
+    * system 0..1 MS
     * display 1..1 MS
   * text 1..1 MS
 * qualification[Esp].code.coding.system MS
@@ -168,7 +170,7 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * qualification[SubEsp].code 1..1 MS
   * coding 0..1 MS
     * code 1..1 MS
-    * system 1..1 MS
+    * system 0..1 MS
     * display 1..1 MS
   * text 1..1 MS
 * qualification[SubEsp].code.coding.system ^short = "El sistema sobre el cual se verificarán las especialidades de los Prestadores"

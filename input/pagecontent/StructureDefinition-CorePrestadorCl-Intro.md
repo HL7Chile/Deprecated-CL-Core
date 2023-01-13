@@ -26,16 +26,18 @@ La definición formal del Perfil en la legueta *Text Summary* indica cuantos de 
 ### Notas Adicionales
 <br>
 
-Consideraciones para la implementación
+Consideraciones para la implementaciónrn
 
 * La Idetificación del Prestador individual puede ser:
   * Basada en **RUN**, identificación que es obligatoria. Para este *slice* se requiere un *identifier.use = official*
-  * Basada en **RNPI**, identificación que no es obligatoria. Para este *slice* se requiere un *identifier.use = secondary*.
+  * Y una o varias opcional que puede ser del tipo **RNPI**, **Pasaporte** entre otros.
 * Para el elemento *name* se agega la extensión externa de 2o apellido en donde la url de esta es *http://hl7.org/fhir/StructureDefinition/humanname-mothers-family*.
 * El elemento *address* considera la creación de un nuevo **tipo de datos** denominado **ClAddress** que contiene lo mismo que el tipo original más las extensiones para codificar comunas, provincias, regiones y países.
-* Se entiende por *qualification* como los certificados/títulos y especialidades registradas por el prestador. Para diferenciar certificados de especialidades se ha optado por desarrollar dos *slice* para este elemento.
+* Se entiende por *qualification* como los certificados/títulos, especialidades y subespecialidades registradas por el prestador. Para diferenciar certificados de especialidades y subespecialidades se ha optado por desarrollar dos *slice* para este elemento.
   * El *slice* **Cert** se usa para la especificación de los Títulos o Certificados Profesionales que tiene el Prestador. Para desarrollar este *slice* se requiere que:
     * *qualification[Cert].coding.text = "Certificado(s)".
   * El *slice* **Esp** se usa para la especificación de la o las especialidades que posee el Prestador. Para desarrollar este *slice* se requiere que:
     * *qualification[Esp].coding.text = "Especialidad(es)". 
+  * El *slice* **SubEsp** se usa para la especificación de la o las subespecialidades que posee el Prestador. Para desarrollar este *slice* se requiere que:
+    * *qualification[Esp].coding.text = "SubEspecialidad(es)". 
 * El perfil posee todos los elementos que lo hacen compatible con un **Practitioner IPS**. 

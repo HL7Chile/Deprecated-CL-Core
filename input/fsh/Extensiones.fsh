@@ -173,3 +173,9 @@ Title: "Sistema Nacional de Servicios de Salud"
 Description: "Esta extensión incluye los códigos de los Servicios de Salud que existen en el país"
 * valueCoding ^short = "Servicios de Salud de Chile"
 * valueCoding from VSCodigosServiciosSalud (extensible)
+
+Extension: SegundoApellido
+Id: SegundoApellido
+Title: "Segundo Apellido"
+Description: "Segundo Apellido"
+* value[x] only string
