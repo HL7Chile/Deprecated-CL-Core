@@ -13,6 +13,9 @@ Description: "Diagnósticos definidos en Snomed-CT."
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 * ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement" 
+
+* ^experimental = false //dependera del uso que le den al codesystem
+
 * codes from system http://snomed.info/sct 
 * codes from system http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips
 
@@ -28,6 +31,8 @@ Description: "Tipos de Documentos para identificación según tabla HL7 V3 y Cod
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+//* ^caseSensitive = true
+* ^experimental = false //dependera del uso que le den al codesystem
 
 * codes from system CSCodigoDNI
 * codes from system http://terminology.hl7.org/CodeSystem/v2-0203
@@ -362,6 +367,8 @@ Description:  "Códigos de Comunas para Chile según Códigos Únicos Territoria
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* ^caseSensitive = true
+* ^experimental = false //dependera del uso que le den al codesystem
 
 * #05602 "Algarrobo"
 * #13502 "Alhué"

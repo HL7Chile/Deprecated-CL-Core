@@ -21,7 +21,7 @@ Description: "Variable dirección"
 
 * city ^short = "Campo para Comuna de residencia"
 * city ^definition = "Campo para Comuna de residencia."
-* city 1..1 MS
+* city 0..1 MS
 * city.extension contains ComunasCl named comunas 1..1  MS
 * city.extension ^short = "Código de Comunas"
 * city.extension ^definition = "Código de Comunas"
@@ -29,14 +29,14 @@ Description: "Variable dirección"
 
 * district ^short = "Campo para Provincia de Residencia"
 * district ^definition = "Campo para Provincia de Residencia. Se usa el valueSet de códigos de provicias definidos a nivel naciona."
-* district  1..1 MS
+* district  0..1 MS
 * district.extension contains ProvinciasCl named provincias  1..1  MS
 * district.extension ^short = "Código de Regiones"
 * district.extension ^definition = "Código de Regiones"
 
 * state ^short = "Campo para la Región"
 * state ^definition = "Campo Región. Se usa el valueSet de códigos de regiones definidos a nivel naciona."
-* state  1..1 MS
+* state  0..1 MS
 * state.extension contains RegionesCl named regiones  1..1  MS
 * state.extension ^short = "Código de Regiones"
 * state.extension ^definition = "Código de Regiones"
@@ -44,7 +44,7 @@ Description: "Variable dirección"
 
 * country ^short = "Campo para País de Residencia"
 * country ^definition = "Campo para País de Residencia"
-* country 1..1 MS
+* country 0..1 MS
 * country.extension contains CodigoPaises named paises  1..1  MS
 * country.extension ^short = "Código de Países"
 * country.extension ^definition = "Código de Países"
