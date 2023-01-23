@@ -4,6 +4,7 @@ ValueSet: VSDiagnosticosSCT
 Id: VSDiagnosticosSCT
 Title: "Diagnósticos SNOMED y Ausente o Desconocido"
 Description: "Diagnósticos definidos en Snomed-CT."
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-07-25T00:00:00-03:00"
@@ -22,6 +23,7 @@ ValueSet: VSTiposDocumentos
 Id: VSTiposDocumentos
 Title: "Tipos de Documentos"
 Description: "Tipos de Documentos para identificación según tabla HL7 V3 y CodeSystem local."
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
@@ -41,6 +43,8 @@ CodeSystem: CSCodigoDNI
 Id: CSCodigoDNI
 Title: "Códigos de Documentos DNI para LATAM y el Caribe"
 Description: "Códigos para los DNI de países de America Latina y el Caribe según indicaciones de VS HL7 de V3"
+* ^experimental = false
+* ^caseSensitive = true
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
@@ -88,6 +92,7 @@ ValueSet: CodPaises
 Id: CodPais
 Title: "Códigos de Países"
 Description: "Codigos definidos para la identificación de países segun norma ISO3166-N"
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
@@ -105,6 +110,7 @@ ValueSet: VSEspecialidadesDeisCL
 Id: VSEspecialidadesDeisCL
 Title: "Códigos de Especialidades"
 Description: "Códigos de especialidades médicas descritas según DEIS"
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
@@ -119,6 +125,8 @@ CodeSystem: CSEspecialidadesDeisCL
 Id: CSEspecialidadesDeisCL
 Title: "Códigos de Especialidades"
 Description: "Códigos de especialidades médicas descritas según DEIS"
+* ^experimental = false
+* ^caseSensitive = true
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
@@ -202,6 +210,7 @@ ValueSet: VSCodigosRegionesCL
 Id: VSCodigosRegionesCL
 Title: "Códigos de Regiones en Chile"
 Description:  "Códigos de Regiones para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
@@ -216,6 +225,8 @@ CodeSystem: CSCodRegionCL
 Id: CSCodRegionCL
 Title: "Códigos de Regiones en Chile"
 Description:  "Códigos de Regiones para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
+* ^experimental = false
+* ^caseSensitive = true
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
@@ -245,6 +256,7 @@ ValueSet: VSCodigosProvinciasCL
 Id: VSCodigosProvinciasCL
 Title: "Códigos de Provincias en Chile"
 Description:  "Códigos de Provincias para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
@@ -259,6 +271,8 @@ CodeSystem: CSCodProvinciasCL
 Id: CSCodProvinciasCL
 Title: "Códigos de Provincias en Chile"
 Description:  "Códigos de Provincias para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
+* ^experimental = false
+* ^caseSensitive = true
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
@@ -329,6 +343,7 @@ ValueSet: VSCodigosComunaCL
 Id: VSCodigosComunaCL
 Title: "Códigos de Comunas en Chile"
 Description:  "Códigos de Comunas para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
@@ -343,6 +358,8 @@ CodeSystem: CSCodComunasCL
 Id: CSCodComunasCL
 Title: "Códigos de Comunas en Chile"
 Description:  "Códigos de Comunas para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
+* ^experimental = false
+* ^caseSensitive = true
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
@@ -704,6 +721,7 @@ ValueSet: VSTiposDocClinic
 Id: VSTiposDocClinic
 Title: "Tipos de Documentos Clínicos"
 Description: "Tipos de Documentos clínicos para Composition. Se trae todo Loinc, se requerirá un VS específico"
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-05-21T00:00:00-03:00"
@@ -720,6 +738,8 @@ CodeSystem: CSRazonNOencuentroCL
 Id: CSRazonNOT
 Title: "Razones Cancelación Atención Remota"
 Description: "Códigos de las razones por la cual un encuentro remoto no pudo realizarse según indicaciones del Ministerio de Salud"
+* ^experimental = false
+* ^caseSensitive = true
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-05-22T00:00:00-03:00"
@@ -739,6 +759,7 @@ ValueSet: VSTiposVacunasCL
 Id: VSTiposVacunas
 Title: "Tipos de Vacunas RNI"
 Description: "Tipos de Vacunas utilizadas en Chile según CodeSystem local"
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-06-05T00:00:00-03:00"
@@ -753,6 +774,8 @@ CodeSystem: CSTiposVacunaCL
 Id: CSCodigoVacunas
 Title: "Códigos de Vacunas RNI"
 Description: "Códigos de las vacunas o inmunizaciones según indicaciones del Ministerio de Salud"
+* ^experimental = false
+* ^caseSensitive = true
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-06-05T00:00:00-03:00"
@@ -848,6 +871,7 @@ ValueSet: VSNombreCampanaCL
 Id: VSNombreCampana
 Title: "Campañas de Vacunación"
 Description: "Campañas de Inmunización utilizada en Chile según CodeSystem local"
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-06-05T00:00:00-03:00"
@@ -862,6 +886,8 @@ CodeSystem: CSNombreCampanaCL
 Id: CSNombreCampana
 Title: "Campañas Inmunización"
 Description: "Códigos de las campañas de vacunas o inmunizaciones según indicaciones del Ministerio de Salud"
+* ^experimental = false
+* ^caseSensitive = true
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-06-05T00:00:00-03:00"
@@ -913,6 +939,7 @@ ValueSet: VSRazonNOTinmCL
 Id: VSRazonNOTinm
 Title: "Razones no Inmunización"
 Description: "Razones por la que no se lleva a cabo la administración de una vacuna o registro de una inmunización según CodeSystem local"
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-06-08T00:00:00-03:00"
@@ -927,6 +954,8 @@ CodeSystem: CSRazonNOinmunizacionCL
 Id: CSRazonNOTinm
 Title: "Razones no Inmunización"
 Description: "Códigos de las razones por la cual el registro de inmunización no pudo realizarse según indicaciones del Ministerio de Salud"
+* ^experimental = false
+* ^caseSensitive = true
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-06-10T00:00:00-03:00"
@@ -947,6 +976,7 @@ ValueSet: VSCodigosServiciosSaludCL
 Id: VSCodigosServiciosSalud
 Title: "Servicos de Salud en Chile"
 Description:  "Códigos de Servicios de Salud que existen en Chile"
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-06-10T00:00:00-03:00"
@@ -961,6 +991,8 @@ CodeSystem: CSCodSSaludCL
 Id: CSCodSSalud
 Title: "Servicios de Salud Chile"
 Description:  "Códigos del Sistema Nacional de Servicios de Salud"
+* ^experimental = false
+* ^caseSensitive = true
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-06-10T00:00:00-03:00"
@@ -1002,6 +1034,7 @@ ValueSet: VSCodigoslenguaje
 Id: VSCodigoslenguaje
 Title: "Codigos Lenguaje"
 Description:  "Códigos de leguaje"
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-06-10T00:00:00-03:00"
@@ -1016,6 +1049,8 @@ CodeSystem: CSCodigoslenguaje
 Id: CSCodigoslenguaje
 Title: "Codigos Lenguaje"
 Description:  "Codigoslenguaje"
+* ^experimental = false
+* ^caseSensitive = true
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-06-10T00:00:00-03:00"
@@ -1083,6 +1118,7 @@ ValueSet: VSTiposEncuentroCL
 Id: VSTiposEncuentroCL
 Title: "Tipos de Encuentro"
 Description: "Códigos de Encuentros según MINSAL"
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-05-21T00:00:00-03:00"
@@ -1097,6 +1133,8 @@ CodeSystem: CSTiposEncuentroCL
 Id: CSTiposEncuentroCL
 Title: "Tipos de Encuentro"
 Description: "Códigos de Encuentros según MINSAL"
+* ^experimental = false
+* ^caseSensitive = true
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-05-21T00:00:00-03:00"
@@ -1114,6 +1152,7 @@ ValueSet: VSTiposServicioCL
 Id: VSTiposServicio
 Title: "Tipos de Servicios Remotos"
 Description: "Tipos de Servicios para encuentro remoto según CodeSystem local"
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-05-22T00:00:00-03:00"
@@ -1128,6 +1167,8 @@ CodeSystem: CSCodServicioCL
 Id: CSCodigoServicio
 Title: "Tipos de Servicios Remotos"
 Description: "Códigos para los Servicios realizados en un encuentro remoto según indicaciones del Ministerio de Salud"
+* ^experimental = false
+* ^caseSensitive = true
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-05-22T00:00:00-03:00"
@@ -1156,6 +1197,7 @@ ValueSet: VSContactoSecundario
 Id: VSContactosec
 Title: "Contacto participantes"
 Description: "Contacto telefónico o correo de los participantes"
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-05-25T00:00:00-03:00"
@@ -1171,6 +1213,7 @@ ValueSet: VSRazonNOencuentro
 Id: VSRazonNOT
 Title: "Razones no Atención Remota"
 Description: "Razones por la que no se lleva a cabo un encuentro remoto según CodeSystem local"
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-05-22T00:00:00-03:00"
@@ -1185,6 +1228,8 @@ CodeSystem: CSrazonnoencuentro
 Id: csrazonnoencuentro
 Title: "Razón Encuentro Remoto no Realizado"
 Description: "Códigos de las razones por la cual un encuentro remoto no pudo realizarse según indicaciones del Ministerio de Salud"
+* ^experimental = false
+* ^caseSensitive = true
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-05-22T00:00:00-03:00"

@@ -9,7 +9,7 @@ Usage : #example
 * identifier.type.extension[paises].valueCodeableConcept.coding.system =  "urn:iso:std:iso:3166"
 * identifier.type.extension[paises].valueCodeableConcept.coding.code = #152
 * identifier.type.extension[paises].valueCodeableConcept.coding.display = "Chile"
-* identifier.type.coding.system = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodigoDNI"
+* identifier.type.coding.system = "https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodigoDNI"
 * identifier.type.coding.code = #NNCHL
 * identifier.type.coding.display = "Chile"
 
@@ -49,31 +49,31 @@ Usage : #example
 * address.line = "Av Los Chirimoyos, 32, casa 4"
 
 
-* address.city.extension[ComunasCl].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ComunasCl"
-* address.city.extension[ComunasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodComunasCL"
+* address.city.extension[ComunasCl].url = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ComunasCl"
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodComunasCL"
 * address.city.extension[ComunasCl].valueCodeableConcept.coding.code = #05602
 * address.city.extension[ComunasCl].valueCodeableConcept.coding.display =  "Algarrobo"
 
-* address.district.extension[ProvinciasCl].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ProvinciasCl"
-* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodProvinciasCL" 
+* address.district.extension[ProvinciasCl].url = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ProvinciasCl"
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodProvinciasCL" 
 * address.district.extension[ProvinciasCl].valueCodeableConcept.coding.code = #056 
 * address.district.extension[ProvinciasCl].valueCodeableConcept.coding.display = "San Antonio"
 
-* address.state.extension[RegionesCl].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/RegionesCl"
-* address.state.extension[RegionesCl].valueCodeableConcept.coding.system  = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodRegionCL" 
+* address.state.extension[RegionesCl].url = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/RegionesCl"
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.system  = "https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodRegionCL" 
 * address.state.extension[RegionesCl].valueCodeableConcept.coding.code  = #05 
 * address.state.extension[RegionesCl].valueCodeableConcept.coding.display  = "Valparaíso"
 
-* address.country.extension[CodigoPaises].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises"
+* address.country.extension[CodigoPaises].url = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CodigoPaises"
 * address.country.extension[CodigoPaises].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
 * address.country.extension[CodigoPaises].valueCodeableConcept.coding.code = #CL 
 * address.country.extension[CodigoPaises].valueCodeableConcept.coding.display = "Chile"
 
 
-* contact.extension.url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/IdContacto"
+* contact.extension.url = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/IdContacto"
 
 * contact.extension.extension[0].url = "tutId"
-* contact.extension.extension[=].valueIdentifier.type = https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodigoDNI#NNCHL "Chile"
+* contact.extension.extension[=].valueIdentifier.type = https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodigoDNI#NNCHL "Chile"
 * contact.extension.extension[=].valueIdentifier.system = "http://regcivil.cl/Validacion/RUN"
 * contact.extension.extension[=].valueIdentifier.value = "8987321-7"
 
@@ -91,7 +91,7 @@ Usage : #example
 * contact.name.given[0] = "Juana"
 * contact.name.given[+] = "Josefa"
 
-* communication.language.coding.system = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodigoslenguaje"
+* communication.language.coding.system = "https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodigoslenguaje"
 * communication.language.coding.code = #es-CL "Spanish"
 * communication.language.coding.display = "Spanish"
 
@@ -152,22 +152,22 @@ Usage : #example
 * address.use = #temp
 * address.line = "Calle 4 Norte, 52, pieza 802"
 
-* address.city.extension[ComunasCl].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ComunasCl"
-* address.city.extension[ComunasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodComunasCL"
+* address.city.extension[ComunasCl].url = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ComunasCl"
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodComunasCL"
 * address.city.extension[ComunasCl].valueCodeableConcept.coding.code = #15101
 * address.city.extension[ComunasCl].valueCodeableConcept.coding.display =  "Arica"
 
-* address.district.extension[ProvinciasCl].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ProvinciasCl"
-* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodProvinciasCL" 
+* address.district.extension[ProvinciasCl].url = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ProvinciasCl"
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodProvinciasCL" 
 * address.district.extension[ProvinciasCl].valueCodeableConcept.coding.code = #151
 * address.district.extension[ProvinciasCl].valueCodeableConcept.coding.display = "Arica"
 
-* address.state.extension[RegionesCl].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/RegionesCl"
-* address.state.extension[RegionesCl].valueCodeableConcept.coding.system  = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodRegionCL" 
+* address.state.extension[RegionesCl].url = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/RegionesCl"
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.system  = "https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodRegionCL" 
 * address.state.extension[RegionesCl].valueCodeableConcept.coding.code  = #15 
 * address.state.extension[RegionesCl].valueCodeableConcept.coding.display  = "Arica y Parinacota"
 
-* address.country.extension[CodigoPaises].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises"
+* address.country.extension[CodigoPaises].url = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CodigoPaises"
 * address.country.extension[CodigoPaises].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
 * address.country.extension[CodigoPaises].valueCodeableConcept.coding.code = #CL 
 * address.country.extension[CodigoPaises].valueCodeableConcept.coding.display = "Chile"
@@ -192,7 +192,7 @@ Usage: #example
 * identifier.type.extension[paises].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
 * identifier.type.extension[paises].valueCodeableConcept.coding.code = #152
 * identifier.type.extension[paises].valueCodeableConcept.coding.display = "Chile"
-* identifier.type.coding.system = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodigoDNI"
+* identifier.type.coding.system = "https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodigoDNI"
 * identifier.type.coding.code = #NNCHL
 * identifier.type.coding.display = "Chile"
 * identifier.system = "http://regcivil.cl/Validacion/RUN"
@@ -222,22 +222,22 @@ Usage: #example
 
 * address.use = #home
 //* address.line = "Calle 4 Norte, 52, pieza 802"
-* address.city.extension[ComunasCl].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ComunasCl"
-* address.city.extension[ComunasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodComunasCL"
+* address.city.extension[ComunasCl].url = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ComunasCl"
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodComunasCL"
 * address.city.extension[ComunasCl].valueCodeableConcept.coding.code = #15101
 * address.city.extension[ComunasCl].valueCodeableConcept.coding.display =  "Arica"
 
-* address.district.extension[ProvinciasCl].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ProvinciasCl"
-* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodProvinciasCL" 
+* address.district.extension[ProvinciasCl].url = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ProvinciasCl"
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodProvinciasCL" 
 * address.district.extension[ProvinciasCl].valueCodeableConcept.coding.code = #151
 * address.district.extension[ProvinciasCl].valueCodeableConcept.coding.display = "Arica"
 
-* address.state.extension[RegionesCl].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/RegionesCl"
-* address.state.extension[RegionesCl].valueCodeableConcept.coding.system  = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodRegionCL" 
+* address.state.extension[RegionesCl].url = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/RegionesCl"
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.system  = "https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodRegionCL" 
 * address.state.extension[RegionesCl].valueCodeableConcept.coding.code  = #15 
 * address.state.extension[RegionesCl].valueCodeableConcept.coding.display  = "Arica y Parinacota"
 
-* address.country.extension[CodigoPaises].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises"
+* address.country.extension[CodigoPaises].url = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CodigoPaises"
 * address.country.extension[CodigoPaises].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
 * address.country.extension[CodigoPaises].valueCodeableConcept.coding.code = #CL 
 * address.country.extension[CodigoPaises].valueCodeableConcept.coding.display = "Chile"
@@ -259,9 +259,9 @@ Usage: #example
 
 * meta.versionId = "2"
 * meta.lastUpdated = "2021-07-13T00:22:41.166Z"
-* meta.profile = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CorePacienteCl"
+* meta.profile = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CorePacienteCl"
 
-* extension.url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises"
+* extension.url = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CodigoPaises"
 * extension.valueCodeableConcept.coding.system  = "urn:iso:std:iso:3166"
 * extension.valueCodeableConcept.coding.code  = #152
 * extension.valueCodeableConcept.coding.display  = "Chile"
@@ -297,31 +297,31 @@ Usage: #example
 
 * address.use = #home
 * address.line = "Calle 4 Norte, 52, pieza 802"
-* address.city.extension[ComunasCl].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ComunasCl"
-* address.city.extension[ComunasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodComunasCL"
+* address.city.extension[ComunasCl].url = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ComunasCl"
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodComunasCL"
 * address.city.extension[ComunasCl].valueCodeableConcept.coding.code = #15101
 * address.city.extension[ComunasCl].valueCodeableConcept.coding.display =  "Arica"
 
-* address.district.extension[ProvinciasCl].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ProvinciasCl"
-* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodProvinciasCL" 
+* address.district.extension[ProvinciasCl].url = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ProvinciasCl"
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodProvinciasCL" 
 * address.district.extension[ProvinciasCl].valueCodeableConcept.coding.code = #151
 * address.district.extension[ProvinciasCl].valueCodeableConcept.coding.display = "Arica"
 
-* address.state.extension[RegionesCl].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/RegionesCl"
-* address.state.extension[RegionesCl].valueCodeableConcept.coding.system  = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodRegionCL" 
+* address.state.extension[RegionesCl].url = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/RegionesCl"
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.system  = "https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodRegionCL" 
 * address.state.extension[RegionesCl].valueCodeableConcept.coding.code  = #15 
 * address.state.extension[RegionesCl].valueCodeableConcept.coding.display  = "Arica y Parinacota"
 
-* address.country.extension[CodigoPaises].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises"
+* address.country.extension[CodigoPaises].url = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CodigoPaises"
 * address.country.extension[CodigoPaises].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
 * address.country.extension[CodigoPaises].valueCodeableConcept.coding.code = #CL 
 * address.country.extension[CodigoPaises].valueCodeableConcept.coding.display = "Chile"
 
 
 
-* contact.extension.url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/IdContacto"
+* contact.extension.url = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/IdContacto"
 * contact.extension.extension[0].url = "tutId"
-* contact.extension.extension[=].valueIdentifier.type = https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodigoDNI#NNCHL "Chile"
+* contact.extension.extension[=].valueIdentifier.type = https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodigoDNI#NNCHL "Chile"
 * contact.extension.extension[=].valueIdentifier.system = "http://regcivil.cl/Validacion/RUN"
 * contact.extension.extension[=].valueIdentifier.value = "8987321-7"
 
@@ -352,9 +352,9 @@ Usage: #example
 
 * meta.versionId = "2"
 * meta.lastUpdated = "2021-07-13T00:22:41.166Z"
-* meta.profile = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CorePacienteCl"
+* meta.profile = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CorePacienteCl"
 
-* extension.url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises"
+* extension.url = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CodigoPaises"
 * extension.valueCodeableConcept.coding.system  = "urn:iso:std:iso:3166"
 * extension.valueCodeableConcept.coding.code  = #152
 * extension.valueCodeableConcept.coding.display  = "Chile"
@@ -390,31 +390,31 @@ Usage: #example
 
 * address.use = #home
 * address.line = "Calle 4 Norte, 52, pieza 802"
-* address.city.extension[ComunasCl].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ComunasCl"
-* address.city.extension[ComunasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodComunasCL"
+* address.city.extension[ComunasCl].url = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ComunasCl"
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodComunasCL"
 * address.city.extension[ComunasCl].valueCodeableConcept.coding.code = #15101
 * address.city.extension[ComunasCl].valueCodeableConcept.coding.display =  "Arica"
 
-* address.district.extension[ProvinciasCl].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ProvinciasCl"
-* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodProvinciasCL" 
+* address.district.extension[ProvinciasCl].url = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ProvinciasCl"
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodProvinciasCL" 
 * address.district.extension[ProvinciasCl].valueCodeableConcept.coding.code = #151
 * address.district.extension[ProvinciasCl].valueCodeableConcept.coding.display = "Arica"
 
-* address.state.extension[RegionesCl].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/RegionesCl"
-* address.state.extension[RegionesCl].valueCodeableConcept.coding.system  = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodRegionCL" 
+* address.state.extension[RegionesCl].url = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/RegionesCl"
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.system  = "https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodRegionCL" 
 * address.state.extension[RegionesCl].valueCodeableConcept.coding.code  = #15 
 * address.state.extension[RegionesCl].valueCodeableConcept.coding.display  = "Arica y Parinacota"
 
-* address.country.extension[CodigoPaises].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises"
+* address.country.extension[CodigoPaises].url = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CodigoPaises"
 * address.country.extension[CodigoPaises].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
 * address.country.extension[CodigoPaises].valueCodeableConcept.coding.code = #CL 
 * address.country.extension[CodigoPaises].valueCodeableConcept.coding.display = "Chile"
 
 
 
-* contact.extension.url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/IdContacto"
+* contact.extension.url = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/IdContacto"
 * contact.extension.extension[0].url = "tutId"
-* contact.extension.extension[=].valueIdentifier.type = https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodigoDNI#NNCHL "Chile"
+* contact.extension.extension[=].valueIdentifier.type = https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodigoDNI#NNCHL "Chile"
 * contact.extension.extension[=].valueIdentifier.system = "http://regcivil.cl/Validacion/RUN"
 * contact.extension.extension[=].valueIdentifier.value = "8987321-7"
 
@@ -495,15 +495,15 @@ InstanceOf : CoreEspecialidadCl
 * practitioner.reference = "Practitioner/3240"
 * practitioner.display = "Johanna Rosa Silva Reyes"
 
-* specialty.coding.system = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSEspecialidadesDeisCL"
+* specialty.coding.system = "https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSEspecialidadesDeisCL"
 * specialty.coding.code = #06
 * specialty.text = "Cirujano Cardiovascular"
 
-* specialty[1].coding.system = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSEspecialidadesDeisCL"
+* specialty[1].coding.system = "https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSEspecialidadesDeisCL"
 * specialty[1].coding.code = #03
 * specialty[1].text = "Médico Cardiólogo"
 
-* specialty[2].coding.system = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSEspecialidadesDeisCL"
+* specialty[2].coding.system = "https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSEspecialidadesDeisCL"
 * specialty[2].coding.code = #30
 * specialty[2].text = "Médico internista"
 
@@ -627,9 +627,11 @@ InstanceOf : CorePrestadorCl
 //* identifier[RUN].system = "https://api.minsal.cl/v1/personas/datos/basicos/run"
 * identifier[RUN].value = "8336277-3" // endPoint definido por perfil
 * identifier[RUN].system = "http://api_run/run"
-* identifier[RNPI].use = #secondary    //obligado
+* identifier[OtrosID].use = #secondary    //obligado
 //* identifier[RNPI].system = "https://apis.superdesalud.gob.cl/api/prestadores/registro/"
-* identifier[RNPI].value = "999999"  // endPoint definido por perfil
+* identifier[OtrosID].value = "999999"  // endPoint definido por perfil
+* identifier[OtrosID].system = "http://example.org/api"  // endPoint definido por perfil
+* identifier[OtrosID].use = #secondary  // endPoint definido por perfil
 
 
 //registro de prestador activo
@@ -662,22 +664,22 @@ InstanceOf : CorePrestadorCl
 // Una sola dirección
 
 
-* address.city.extension[ComunasCl].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ComunasCl"
-* address.city.extension[ComunasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodComunasCL"
+* address.city.extension[ComunasCl].url = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ComunasCl"
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodComunasCL"
 * address.city.extension[ComunasCl].valueCodeableConcept.coding.code = #05602
 * address.city.extension[ComunasCl].valueCodeableConcept.coding.display =  "Algarrobo"
 
-* address.district.extension[ProvinciasCl].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ProvinciasCl"
-* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodProvinciasCL" 
+* address.district.extension[ProvinciasCl].url = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ProvinciasCl"
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodProvinciasCL" 
 * address.district.extension[ProvinciasCl].valueCodeableConcept.coding.code = #056 
 * address.district.extension[ProvinciasCl].valueCodeableConcept.coding.display = "San Antonio"
 
-* address.state.extension[RegionesCl].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/RegionesCl"
-* address.state.extension[RegionesCl].valueCodeableConcept.coding.system  = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodRegionCL" 
+* address.state.extension[RegionesCl].url = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/RegionesCl"
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.system  = "https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodRegionCL" 
 * address.state.extension[RegionesCl].valueCodeableConcept.coding.code  = #05 
 * address.state.extension[RegionesCl].valueCodeableConcept.coding.display  = "Valparaíso"
 
-* address.country.extension[CodigoPaises].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises"
+* address.country.extension[CodigoPaises].url = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CodigoPaises"
 * address.country.extension[CodigoPaises].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
 * address.country.extension[CodigoPaises].valueCodeableConcept.coding.code = #CL 
 * address.country.extension[CodigoPaises].valueCodeableConcept.coding.display = "Chile"
@@ -773,7 +775,7 @@ Usage : #example
 * serviceType.extension[serviceType].valueCode = #nutINTA
 
 //Razon de no realizarse
-* reasonCode.extension[reasonCode].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/RazonNOrealizarse"
+* reasonCode.extension[reasonCode].url = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/RazonNOrealizarse"
 * reasonCode.extension[reasonCode].valueCode = #pierdellam
 
 //Notas del encuentro entre Profesionales
@@ -783,7 +785,7 @@ Usage : #example
 * subject.reference = "Patient/11"
 
 //Participante principal
-* participant[partPrincipal].extension[especialidad].valueCoding.system = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSEspecialidadesDeisCL"
+* participant[partPrincipal].extension[especialidad].valueCoding.system = "https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSEspecialidadesDeisCL"
 * participant[partPrincipal].extension[especialidad].valueCoding.code = #01
 * participant[partPrincipal].extension[especialidad].valueCoding.display = "Anatomía Patológica"
 * participant[partPrincipal].type.coding.system = "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
@@ -805,7 +807,7 @@ Usage : #example
 * reasonCode.text = "Consulta médica sobre nutrición de alimentos"
 
 //Diagnóstico
-* diagnosis.extension[observaciones].url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ObservacionesDiagnostico"
+* diagnosis.extension[observaciones].url = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ObservacionesDiagnostico"
 * diagnosis.extension[observaciones].valueString = "Buena atención"
 * diagnosis.condition.display = "Condition IPS"
 
@@ -880,8 +882,8 @@ InstanceOf : ImmunizationCL
 Usage : #example
 
 //Extensión para nombre campaña
-* extension.url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/NombreCampana"
-* extension.valueCoding.system = "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSNombreCampana"
+* extension.url = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/NombreCampana"
+* extension.valueCoding.system = "https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSNombreCampana"
 * extension.valueCoding.code = #hepatiA
 * extension.valueCoding.display = "Hepatitis A" 
 
@@ -910,12 +912,12 @@ Usage : #example
 * location.extension.valueCoding.code = #SSAN
 * location.extension.valueCoding.system = "https://minsal.cl/fhir/HD/CodeSystem/CSCodSSalud"
 * location.extension.valueCoding.display = "Servicio de Salud Antofagasta"
-* location.extension.url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ServicioSalud"
+* location.extension.url = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ServicioSalud"
 
 //Vacuna administrada
 * vaccineCode.extension.valueCode = #hep_A 
-//* vaccineCode.extension.valueCode.system = "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSTiposVacunas"
-* vaccineCode.extension.url = "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/TiposVacunaRNI"
+//* vaccineCode.extension.valueCode.system = "https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSTiposVacunas"
+* vaccineCode.extension.url = "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/TiposVacunaRNI"
 //Organización 
 * performer.actor = Reference(Organization/f003)
 

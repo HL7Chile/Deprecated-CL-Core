@@ -1,0 +1,10 @@
+{
+    "package-id": "hl7.fhir.cl.corecl",
+    "version": "1.7.0",
+    "desc": "Versión de desarrollo",
+    "path": "https://hl7chile.cl/fhir/ig/corecl/1.7.0",
+    "changes": "changes.html",
+    "status": "draft",
+    "sequence": "STU2",
+    "fhirversion": "4.0.1"
+}

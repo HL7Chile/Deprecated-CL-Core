@@ -4,41 +4,46 @@
     "canonical": "https://hl7chile.cl/fhir/ig/CoreCL",
     "introduction": "El Core FHIR Chileno nace de la necesidad de contar con una base de recursos FHIR para el desarrollo de interoperabilidad en diferentes casos de uso. Esta iniciativa nace específicamente de las necesidades de MINSAL para porder integrar información desde los casos de uso de Receta Electónica, desde donde HL7 Chile ve el espacio para levantar el Core Nacional",
     "category": "National Base",
-    "list": [{
-        "version": "current",
-        "desc": "Construcción de integración continua. Los cambios pueden ser temporales o incompletos",
-        "path": "https://hl7chile.cl/fhir/ig/CoreCL",
-        "status": "ci-build",
-        "current": true
-    }, {
-        "version": "1.2.0",
-        "date": "2022-01-20",
-        "desc": "Versión evolutiva que incorpora desde la versión baloteada nuevos Perfiles como el de Provenance y AuditEvent, además de agregar mas información respecto a terminilogías y Seguridad.",
-        "path": "https://hl7chile.cl/fhir/ig/CoreCL/2022Enero",
-        "changes": "changes.html",
-        "status": "draft",
-        "sequence": "STU2",
-        "fhirversion": "4.0.1",
-        "current": false
-    }, {
-        "version": "1.0.0",
-        "date": "2022-01-15",
-        "desc": "Esta Guía surge como resultado del balotaje de dicembre 2021, llegando a la primera versión STU de la Guía CORE-CL",
-        "path": "https://hl7chile.cl/fhir/ig/CoreCL/1.0.0",
-        "changes": "changes2.html",
-        "status": "trial-use",
-        "sequence": "STU2",
-        "fhirversion": "4.0.1",
-        "current": true
-    }, {
-        "version": "0.8.5",
-        "date": "2021-15-10",
-        "desc": "Guía Draft para balotaje a desarrollar durante consulta abierta",
-        "path": "https://hl7chile.cl/fhir/ig/CoreCL/0.8.5",
-        "changes": "changes3.html",
-        "status": "ballot",
-        "sequence": "STU1",
-        "fhirversion": "4.0.1",
-        "current": false
-    }]
+    "list": [
+        {
+            "version": "current",
+            "desc": "Construcción de integración continua. Los cambios pueden ser temporales o incompletos",
+            "path": "https://hl7chile.cl/fhir/ig/CoreCL",
+            "status": "ci-build",
+            "current": true
+        },
+        {
+            "version": "1.2.0",
+            "date": "2022-01-20",
+            "desc": "Versión evolutiva que incorpora desde la versión baloteada nuevos Perfiles como el de Provenance y AuditEvent, además de agregar mas información respecto a terminilogías y Seguridad.",
+            "path": "https://hl7chile.cl/fhir/ig/CoreCL/2022Enero",
+            "changes": "changes.html",
+            "status": "draft",
+            "sequence": "STU2",
+            "fhirversion": "4.0.1",
+            "current": false
+        },
+        {
+            "version": "1.0.0",
+            "date": "2022-01-15",
+            "desc": "Esta Guía surge como resultado del balotaje de dicembre 2021, llegando a la primera versión STU de la Guía CORE-CL",
+            "path": "https://hl7chile.cl/fhir/ig/CoreCL/1.0.0",
+            "changes": "changes2.html",
+            "status": "trial-use",
+            "sequence": "STU2",
+            "fhirversion": "4.0.1",
+            "current": true
+        },
+        {
+            "version": "0.8.5",
+            "date": "2021-15-10",
+            "desc": "Guía Draft para balotaje a desarrollar durante consulta abierta",
+            "path": "https://hl7chile.cl/fhir/ig/CoreCL/0.8.5",
+            "changes": "changes.html",
+            "status": "draft",
+            "sequence": "STU2",
+            "fhirversion": "4.0.1",
+            "current": false
+        }
+    ]
 }
