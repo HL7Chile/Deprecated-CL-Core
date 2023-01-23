@@ -13,7 +13,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * extension contains PaisOrigenNacionalidadCl named nacionalidad 0..1 MS
 
 
-* extension ^short = "Extensión de Nacionalidad para pacientes extranjeros"
+* extension[nacionalidad].url ^short = "Extensión de Nacionalidad para pacientes extranjeros"
 * extension ^definition = "Para hacer uso de esta extensión se debe agregar el path: extension.url = \"nacionalidad\""
 
 
