@@ -5,7 +5,7 @@ Title:          "CL Localización"
 Description:    "Este perfil determina la ubicación especifica para un evento, objeto o Infraestructura específica. Este perfil permite vinlcular la localización especifica con una organización o espacio físico específico"
 
 //Identifier
-* identifier and identifier.system MS 
+* identifier and identifier.system and identifier.value MS 
 * identifier 0..* 
 * identifier ^short = "Corresponde a un numero de identificación de la locación indicada"
 * identifier ^definition = "Es el número de identificación la localización de Recinto, Edificio, ubicación, etc"
