@@ -4,6 +4,11 @@ Id:             CorePacienteCl
 Title:          "CL Paciente"
 Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso Paciente para un Historial Clínico Nacional"
 
+
+* ^version = "1.7.1"
+* ^status = #active
+* ^publisher = "HL7 Chile"
+
 * identifier MS
   * use and type MS
     * coding MS
@@ -55,7 +60,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 
 * identifier.type.extension ^definition = "Se usa esta extensión para agregarle al tipo de documento el país de origen de este" 
-* identifier.type.extension contains PaisOrigenNacionalidadCl named paises 1..1  MS
+* identifier.type.extension contains PaisOrigenNacionalidadCl named paises 0..1  MS
 //* identifier.type.extension[paises] from CodPaises (required)
 * identifier.value ^short = "Número o valor de identificación"
 * identifier.value ^definition = "Número o valor de identificación"
