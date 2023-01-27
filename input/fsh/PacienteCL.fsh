@@ -89,8 +89,10 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
   * family ^short = "1er Apellido"
   * family ^definition = "Se define el primer apellido registrado al momento de nacer o aquel que se ha inscrito legalmente en el Registro Civil"
   * family 1..1 MS
-  * family.extension contains http://hl7.org/fhir/StructureDefinition/humanname-mothers-family named mothers-family 0..1 MS
-  * family.extension ^short = "Extensión para 2o apellido"
+  * family.extension contains SegundoApellido named segundoApellido 0..1 MS
+  * family.extension ^short = "Extensión para el segundo apellido"
+  //* family.extension contains http://hl7.org/fhir/StructureDefinition/humanname-mothers-family named mothers-family 0..1 MS
+  //* family.extension ^short = "Extensión para 2o apellido"
   * family.extension ^definition = "Extensión para la declaracion de un segundo apellido"
   * given 1.. MS
   * given ^short = "Primer nombre y nombres del Paciente"
